@@ -11,33 +11,75 @@
     "contexto": "Un terreno rectangular tiene un ancho desconocido que representaremos con la letra x, y su largo mide el doble del ancho más 2 metros.",
     "pregunta": "¿Cómo se representa algebraicamente el perímetro de ese terreno?"
   },
-  "sintesis": {
-    "explicacion": "En álgebra usamos letras (variables) para representar cantidades desconocidas o que cambian. Una expresión algebraica traduce una relación del lenguaje común: 'el doble de un número más 3' se escribe 2x + 3. El perímetro de una figura es la suma de todos sus lados.",
-    "formula": "Perímetro del rectángulo = 2(largo) + 2(ancho)",
-    "ejemploResuelto": "Si el ancho es x y el largo es 2x+2, el perímetro es 2(2x+2) + 2(x) = 4x+4+2x = 6x+4."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Del lenguaje común al algebraico",
+      "explicacion": "En álgebra usamos letras (variables) para representar cantidades desconocidas o que cambian. Una expresión algebraica traduce una relación del lenguaje común: frases como 'el doble de', 'el triple de' o 'la mitad de' se convierten en multiplicaciones o divisiones por la variable.",
+      "ejemplos": [
+        "'El doble de un número más 3' se escribe 2x + 3.",
+        "'El triple de un número menos 5' se escribe 3x - 5."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cómo se escribe algebraicamente 'el triple de un número menos 5'?",
         "opciones": ["3x - 5", "x - 5/3", "3(x-5)", "5 - 3x"],
         "respuestaCorrecta": 0,
         "retroalimentacion": "'El triple de un número' es 3x, y 'menos 5' se resta: 3x - 5."
-      },
+      }
+    },
+    {
+      "titulo": "Perímetros como expresiones algebraicas",
+      "explicacion": "El perímetro de una figura es la suma de todos sus lados. Cuando algún lado depende de una variable, el perímetro también se expresa algebraicamente sumando todos los lados.",
+      "formula": "Perímetro del rectángulo = 2(largo) + 2(ancho)",
+      "ejemplos": [
+        "Si el ancho es x y el largo es 2x+2, el perímetro es 2(2x+2) + 2(x) = 4x+4+2x = 6x+4.",
+        "Un cuadrado de lado x tiene 4 lados iguales, así que su perímetro es 4x."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "El perímetro de un cuadrado de lado x es ___.",
+        "respuestaCorrecta": "4x",
+        "retroalimentacion": "El cuadrado tiene 4 lados iguales, entonces el perímetro es 4x."
+      }
+    },
+    {
+      "titulo": "Simplificar expresiones de perímetro",
+      "explicacion": "Cuando los lados de una figura tienen expresiones distintas, el perímetro se obtiene sumándolas todas y simplificando (agrupando los términos semejantes).",
+      "ejemplos": [
+        "Un triángulo con lados x, x+3 y 2x: perímetro = x + (x+3) + 2x = 4x + 3."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "El perímetro de un triángulo con lados x, x+3 y 2x es 4x+3.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: x + (x+3) + 2x = 4x + 3."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Un cuadrado tiene lado x. ¿Cuál es la expresión algebraica de su perímetro?",
         "opciones": ["x²", "2x", "4x", "x/4"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "El cuadrado tiene 4 lados iguales, entonces el perímetro es 4x."
       },
       {
-        "pregunta": "Un triángulo tiene lados x, x+3 y 2x. ¿Cuál es la expresión de su perímetro simplificada?",
-        "opciones": ["4x+3", "3x+3", "4x", "x+3"],
-        "respuestaCorrecta": 0,
+        "tipo": "llenar_frase",
+        "frase": "El perímetro simplificado de un triángulo con lados x, x+3 y 2x es ___.",
+        "respuestaCorrecta": "4x+3",
         "retroalimentacion": "x + (x+3) + 2x = 4x + 3."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+        "columnaA": ["El doble de un número más 3", "El triple de un número menos 5", "La mitad de un número más 4"],
+        "columnaB": ["3x-5", "x/2+4", "2x+3"],
+        "parejasCorrectas": [2, 0, 1],
+        "retroalimentacion": "'El doble más 3' es 2x+3; 'el triple menos 5' es 3x-5; 'la mitad más 4' es x/2+4."
       }
     ]
   }

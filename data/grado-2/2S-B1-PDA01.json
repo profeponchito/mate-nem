@@ -11,33 +11,75 @@
     "contexto": "En un torneo de golf, los resultados se marcan respecto al par del campo: -3.5, -2, -1/2, 0, +1.25. Un jugador quiere saber quién va ganando (el marcador más bajo gana).",
     "pregunta": "¿Cómo ordenas de menor a mayor los marcadores -3.5, -2, -1/2, 0 y +1.25 para saber quién va en primer lugar?"
   },
-  "sintesis": {
-    "explicacion": "Los números con signo incluyen enteros, fracciones y decimales, y todos pueden ubicarse en la recta numérica. Para compararlos conviene expresarlos en la misma forma (todos decimales, por ejemplo). Además, entre dos números con signo siempre existe otro número (propiedad de densidad): por ejemplo, entre -2 y -1 está -1.5.",
-    "formula": "-1/2 = -0.5",
-    "ejemploResuelto": "Convirtiendo todo a decimal: -3.5, -2, -0.5, 0, 1.25. Ordenados de menor a mayor: -3.5 < -2 < -0.5 < 0 < 1.25."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Distintas formas de expresar números con signo",
+      "explicacion": "Los números con signo incluyen enteros, fracciones y decimales, y todos pueden ubicarse en la misma recta numérica. Para comparar números que están en formas distintas, conviene expresarlos todos de la misma manera (por ejemplo, convirtiendo las fracciones a decimales).",
+      "formula": "-1/2 = -0.5",
+      "ejemplos": [
+        "-3/4 = -0.75",
+        "Convirtiendo -3.5, -2, -1/2, 0, +1.25 todo a decimal: -3.5, -2, -0.5, 0, 1.25."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "-1/2 escrito como decimal es ___.",
+        "respuestaCorrecta": "-0.5",
+        "retroalimentacion": "-1/2 = -0.5."
+      }
+    },
+    {
+      "titulo": "Ordenar en la recta numérica",
+      "explicacion": "Una vez que todos los números están en la misma forma, se ordenan igual que los enteros: los negativos con mayor valor absoluto van primero (son los menores), después el cero, y al final los positivos de menor a mayor.",
+      "ejemplos": [
+        "-3.5, -2, -0.5, 0, 1.25 ordenados de menor a mayor: -3.5 < -2 < -0.5 < 0 < 1.25."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "Ordena de menor a mayor: -1/4, -1, 0.5, -0.75",
         "opciones": ["-1, -0.75, -1/4, 0.5", "0.5, -0.75, -1/4, -1", "-1, -1/4, -0.75, 0.5", "-0.75, -1, -1/4, 0.5"],
         "respuestaCorrecta": 0,
         "retroalimentacion": "-1/4 = -0.25. Ordenados: -1 < -0.75 < -0.25 < 0.5."
-      },
+      }
+    },
+    {
+      "titulo": "La densidad de los números con signo",
+      "explicacion": "Entre dos números con signo siempre existe otro número: a esto se le llama propiedad de densidad. A diferencia de los números enteros (donde entre -2 y -1 no hay otro entero), entre dos números con signo (incluyendo fracciones y decimales) siempre se puede encontrar uno más.",
+      "ejemplos": [
+        "Entre -2 y -1 está -1.5, y también -1.2, -1.9, etc.: hay infinitos números posibles.",
+        "Entre 0 y 1 está 0.5, y también 0.1, 0.99, etc."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "Entre -2 y -1 no existe ningún otro número.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Falso: por la propiedad de densidad, entre -2 y -1 existen infinitos números, por ejemplo -1.5."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Qué número está entre -2 y -1 en la recta numérica?",
         "opciones": ["-3", "-1.5", "0", "-2.5"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "-1.5 está entre -2 y -1, ya que -2 < -1.5 < -1."
       },
       {
-        "pregunta": "¿Cuál de estas comparaciones es correcta?",
-        "opciones": ["-7 > -3", "-3 < -7", "-2 > -5", "-5 > -2"],
-        "respuestaCorrecta": 2,
-        "retroalimentacion": "-2 está más a la derecha que -5 en la recta numérica, así que -2 > -5."
+        "tipo": "llenar_frase",
+        "frase": "-3/4 escrito como decimal es ___.",
+        "respuestaCorrecta": "-0.75",
+        "retroalimentacion": "-3/4 = -0.75."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada par de números con la comparación correcta.",
+        "columnaA": ["-7 y -3", "-2 y -5", "-1/4 y -0.75"],
+        "columnaB": ["-2 > -5", "-1/4 > -0.75", "-7 < -3"],
+        "parejasCorrectas": [2, 0, 1],
+        "retroalimentacion": "-7 < -3; -2 > -5; -1/4 (-0.25) > -0.75."
       }
     ]
   }

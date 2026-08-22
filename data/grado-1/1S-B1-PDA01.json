@@ -11,33 +11,78 @@
     "contexto": "En la tiendita de la escuela, una bolsa de cacahuates cuesta $12.50 y se puede pagar con 3/4 de una torta que vale $17. Los precios a veces se anuncian como fracción de una porción y otras como número decimal.",
     "pregunta": "Si una receta pide 3/4 de taza de aceite y solo tienes una taza graduada en decimales (0.1, 0.2, 0.3...), ¿qué cantidad decimal debes usar?"
   },
-  "sintesis": {
-    "explicacion": "Toda fracción puede escribirse como decimal dividiendo el numerador entre el denominador; todo decimal finito puede escribirse como fracción identificando el valor posicional de sus cifras y simplificando.",
-    "formula": "fracción a/b → a ÷ b = decimal",
-    "ejemploResuelto": "3/4 = 3 ÷ 4 = 0.75. Y 0.6 = 6/10 = 3/5 al simplificar."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
+  "subtemas": [
+    {
+      "titulo": "De fracción a decimal (dividir)",
+      "explicacion": "Toda fracción a/b puede escribirse como decimal dividiendo el numerador entre el denominador. Algunos resultados son decimales finitos (terminan) y otros son periódicos (se repite una cifra o un grupo de cifras infinitamente), como 1/3 = 0.333...",
+      "formula": "fracción a/b → a ÷ b = decimal",
+      "ejemplos": [
+        "3/4 = 3 ÷ 4 = 0.75 (decimal finito).",
+        "1/2 = 1 ÷ 2 = 0.5 (decimal finito).",
+        "1/3 = 1 ÷ 3 = 0.333... (decimal periódico)."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál es la expresión decimal de 1/4?",
+        "opciones": ["0.14", "0.25", "0.4", "1.4"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "1 ÷ 4 = 0.25."
+      }
+    },
+    {
+      "titulo": "De decimal a fracción",
+      "explicacion": "Todo decimal finito puede escribirse como fracción identificando el valor posicional de sus cifras: el numerador son las cifras después del punto y el denominador es una potencia de 10 (10, 100, 1000...) según cuántas cifras decimales haya. Después se simplifica dividiendo entre el máximo común divisor.",
+      "formula": "0.d₁d₂...dₙ = (dígitos) / 10ⁿ",
+      "ejemplos": [
+        "0.6 = 6/10, y simplificando entre 2 queda 3/5.",
+        "0.35 = 35/100, y simplificando entre 5 queda 7/20."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "0.75 escrito como fracción simplificada es ___.",
+        "respuestaCorrecta": "3/4",
+        "retroalimentacion": "0.75 = 75/100, y simplificando entre 25 queda 3/4."
+      }
+    },
+    {
+      "titulo": "Fracciones y decimales en situaciones reales",
+      "explicacion": "En la vida diaria las dos formas se mezclan: un marcador deportivo puede decir 'recorrió 0.2 de la pista' y en otro contexto se habla de '3/4 de taza'. Saber convertir entre ambas te permite comparar e interpretar cualquier cantidad sin importar cómo esté escrita.",
+      "ejemplos": [
+        "Un corredor recorrió 0.2 del total de una pista: 0.2 = 2/10 = 1/5 de la pista.",
+        "Una receta pide 3/4 de taza de aceite: en una taza graduada en decimales, eso equivale a 0.75."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "0.6 equivale a la fracción 3/5.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 0.6 = 6/10, y al simplificar entre 2 se obtiene 3/5."
+      }
+    }
+  ],
+  "reto": {
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es la expresión decimal de 5/8?",
         "opciones": ["0.58", "0.625", "0.85", "1.6"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "5 ÷ 8 = 0.625."
       },
       {
-        "pregunta": "¿Qué fracción representa 0.35?",
-        "opciones": ["35/100 = 7/20", "35/10", "3/5", "1/35"],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "0.35 = 35/100, que simplificado es 7/20."
+        "tipo": "llenar_frase",
+        "frase": "0.35 escrito como fracción simplificada es ___.",
+        "respuestaCorrecta": "7/20",
+        "retroalimentacion": "0.35 = 35/100, que simplificado entre 5 es 7/20."
       },
       {
-        "pregunta": "Un corredor recorrió 0.2 del total de una pista. ¿Qué fracción de la pista recorrió?",
-        "opciones": ["1/5", "2/5", "1/2", "1/10"],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "0.2 = 2/10 = 1/5."
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+        "columnaA": ["1/2", "1/4", "3/5"],
+        "columnaB": ["0.6", "0.25", "0.5"],
+        "parejasCorrectas": [2, 1, 0],
+        "retroalimentacion": "1/2 = 0.5; 1/4 = 0.25; 3/5 = 0.6."
       }
     ]
   }

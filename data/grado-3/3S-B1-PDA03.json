@@ -11,33 +11,73 @@
     "contexto": "Un jardín rectangular tiene un área de 40 m². Su largo mide 3 metros más que su ancho.",
     "pregunta": "¿Cuáles son las medidas del ancho y el largo del jardín?"
   },
-  "sintesis": {
-    "explicacion": "Una ecuación cuadrática tiene la forma Ax²+Bx+C=0. Se puede resolver factorizando (si es posible) o usando la fórmula general, que siempre funciona.",
-    "formula": "x = (−B ± √(B²−4AC)) / 2A",
-    "ejemploResuelto": "Si x es el ancho: x(x+3)=40 → x²+3x−40=0. Factorizando: (x+8)(x−5)=0 → x=5 (el ancho no puede ser negativo). El largo es 5+3=8 m."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Resolver por factorización",
+      "explicacion": "Una ecuación cuadrática tiene la forma Ax²+Bx+C=0. Cuando es posible, se puede factorizar como el producto de dos binomios; como el producto es cero, alguno de los dos factores debe ser cero, lo que da las dos soluciones.",
+      "ejemplos": [
+        "x² - 5x + 6 = 0 se factoriza como (x-2)(x-3)=0, así que x=2 o x=3."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "Factoriza y resuelve: x² - 5x + 6 = 0",
         "opciones": ["x=2, x=3", "x=1, x=6", "x=-2, x=-3", "x=6, x=-1"],
         "respuestaCorrecta": 0,
         "retroalimentacion": "(x-2)(x-3)=0 → x=2 o x=3."
-      },
+      }
+    },
+    {
+      "titulo": "La fórmula general",
+      "explicacion": "Cuando la ecuación no se puede factorizar fácilmente, siempre se puede usar la fórmula general, que funciona para cualquier ecuación cuadrática.",
+      "formula": "x = (−B ± √(B²−4AC)) / 2A",
+      "ejemplos": [
+        "x² - x - 6 = 0: A=1, B=-1, C=-6. x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Al resolver x² - x - 6 = 0 con la fórmula general, la solución positiva es x = ___.",
+        "respuestaCorrecta": "3",
+        "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2. La solución positiva es 3."
+      }
+    },
+    {
+      "titulo": "Aplicar ecuaciones cuadráticas a problemas geométricos",
+      "explicacion": "En problemas de áreas, plantear la ecuación cuadrática y resolverla suele dar dos soluciones matemáticas, pero solo una tiene sentido en el contexto (por ejemplo, una medida no puede ser negativa).",
+      "ejemplos": [
+        "Un jardín con área 40 m² y largo = ancho+3: x(x+3)=40 → x²+3x−40=0 → (x+8)(x−5)=0 → x=5 (se descarta x=-8 porque el ancho no puede ser negativo). El largo es 5+3=8 m."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "El área de un cuadrado es 81 m². Entonces su lado mide 9 m.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: x²=81 → x=9 (se descarta x=-9 porque una medida no puede ser negativa)."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - x - 6 = 0?",
         "opciones": ["x=3, x=-2", "x=2, x=-3", "x=6, x=-1", "x=1, x=-6"],
         "respuestaCorrecta": 0,
         "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
       },
       {
-        "pregunta": "El área de un cuadrado es 81 m². Si se representa como x²=81, ¿cuánto mide el lado?",
-        "opciones": ["8 m", "8.5 m", "9 m", "40.5 m"],
-        "respuestaCorrecta": 2,
-        "retroalimentacion": "x²=81 → x=9 (la raíz cuadrada de 81 es 9)."
+        "tipo": "llenar_frase",
+        "frase": "Un jardín rectangular tiene área 40 m² y su largo mide 3 metros más que su ancho. El ancho mide ___ m.",
+        "respuestaCorrecta": "5",
+        "retroalimentacion": "x(x+3)=40 → x²+3x−40=0 → (x+8)(x−5)=0 → x=5 (se descarta el valor negativo)."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada ecuación con sus soluciones.",
+        "columnaA": ["x² - 5x + 6 = 0", "x² - x - 6 = 0", "x² = 81"],
+        "columnaB": ["x = 9, x = -9", "x = 3, x = -2", "x = 2, x = 3"],
+        "parejasCorrectas": [2, 1, 0],
+        "retroalimentacion": "x²-5x+6=0 → x=2,3; x²-x-6=0 → x=3,-2; x²=81 → x=9,-9."
       }
     ]
   }

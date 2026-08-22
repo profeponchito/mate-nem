@@ -11,38 +11,85 @@
     "contexto": "En la cooperativa escolar, 4 paquetes de galletas cuestan $60. Un grupo de compañeros quiere comprar 10 paquetes para compartir en el salón.",
     "pregunta": "¿Cuánto deberán pagar en total por los 10 paquetes si el precio se mantiene proporcional?"
   },
-  "sintesis": {
-    "explicacion": "Dos cantidades son directamente proporcionales cuando, al multiplicar o dividir una de ellas por un número, la otra queda multiplicada o dividida por el mismo número. La razón entre ambas cantidades (la constante de proporcionalidad, k) se mantiene siempre igual.",
-    "formula": "y = k · x, donde k = y₁ / x₁",
-    "ejemploResuelto": "Si 4 paquetes cuestan $60, entonces k = 60 / 4 = 15 (precio por paquete). Para 10 paquetes: y = 15 × 10 = $150."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
+  "subtemas": [
+    {
+      "titulo": "¿Qué es la proporcionalidad directa?",
+      "explicacion": "Dos cantidades son directamente proporcionales cuando, al multiplicar o dividir una de ellas por un número, la otra queda multiplicada o dividida por ese mismo número. Es decir, su razón (cociente) se mantiene constante. En la vida diaria aparece en el precio según la cantidad, el tiempo de recorrido a velocidad constante según la distancia, o los ingredientes de una receta según el número de porciones.",
+      "formula": "y = k · x",
+      "ejemplos": [
+        "Si 2 boletos de camión cuestan $30, entonces 4 boletos (el doble de boletos) cuestan $60 (el doble de precio): la razón se mantiene.",
+        "En la cooperativa, 4 paquetes de galletas cuestan $60. Si compras el doble de paquetes (8), pagarás el doble: $120."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "Si 4 paquetes de galletas cuestan $60, entonces 8 paquetes cuestan $120.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: al duplicar los paquetes (4 → 8), el costo también se duplica (60 → 120), porque son cantidades proporcionales."
+      }
+    },
+    {
+      "titulo": "La constante de proporcionalidad (k)",
+      "explicacion": "La constante de proporcionalidad k es el valor que relaciona ambas cantidades: k = y ÷ x. Una vez que se conoce k, se puede calcular el valor de y para cualquier x multiplicando por k. Este método también se llama 'valor unitario', porque k representa cuánto corresponde a una sola unidad (por ejemplo, el precio de un solo paquete).",
+      "formula": "k = y₁ ÷ x₁        y = k · x",
+      "ejemplos": [
+        "Si 4 paquetes de galletas cuestan $60, entonces k = 60 ÷ 4 = 15 (precio de un paquete). Para 10 paquetes: y = 15 × 10 = $150.",
+        "Si 3 kg de manzanas cuestan $54, entonces k = 54 ÷ 3 = 18 (precio por kg). Para 7 kg: y = 18 × 7 = $126."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Si 6 boletos de cine cuestan $270, la constante de proporcionalidad (precio por boleto) es $___.",
+        "respuestaCorrecta": "45",
+        "retroalimentacion": "k = 270 ÷ 6 = 45. Cada boleto cuesta $45."
+      }
+    },
+    {
+      "titulo": "Resolver problemas con proporcionalidad directa",
+      "explicacion": "Para resolver un problema de proporcionalidad directa: 1) identifica las dos cantidades relacionadas, 2) calcula la constante k dividiendo un par de valores conocidos, y 3) usa y = k·x para encontrar el valor que falta. También puedes usar una regla de tres: si x₁ corresponde a y₁, entonces x₂ corresponde a y₂ = (x₂ × y₁) ÷ x₁.",
+      "ejemplos": [
+        "Una receta usa 2 tazas de harina para 12 panqués (k = 2/12 = 1/6 de taza por panqué). Para 30 panqués: y = 1/6 × 30 = 5 tazas.",
+        "Un grifo llena 45 litros en 9 minutos (k = 45/9 = 5 litros por minuto). En 15 minutos llenará: y = 5 × 15 = 75 litros."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
+        "pregunta": "Un auto recorre 180 km con 15 litros de gasolina. ¿Cuántos km recorre con 25 litros, manteniendo el mismo rendimiento?",
+        "opciones": ["240 km", "280 km", "300 km", "320 km"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "k = 180 ÷ 15 = 12 km por litro. Entonces 25 × 12 = 300 km."
+      }
+    }
+  ],
+  "reto": {
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Si 3 kg de manzanas cuestan $54, ¿cuánto cuestan 7 kg?",
         "opciones": ["$108", "$126", "$150", "$162"],
         "respuestaCorrecta": 1,
-        "retroalimentacion": "La constante k = 54/3 = 18 por kg. Entonces 7 × 18 = $126."
+        "retroalimentacion": "La constante k = 54 ÷ 3 = 18 por kg. Entonces 7 × 18 = $126."
       },
       {
-        "pregunta": "Una receta usa 2 tazas de harina para 12 panqués. ¿Cuántas tazas se necesitan para 30 panqués?",
-        "opciones": ["4", "5", "6", "7.5"],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "k = 2/12 = 1/6 taza por panqué. Para 30: 30 × 1/6 = 5 tazas."
+        "tipo": "llenar_frase",
+        "frase": "Si 5 cuadernos cuestan $75, entonces 8 cuadernos cuestan $___.",
+        "respuestaCorrecta": "120",
+        "retroalimentacion": "k = 75 ÷ 5 = 15 por cuaderno. Entonces 8 × 15 = $120."
       },
       {
-        "pregunta": "¿Cuál de las siguientes situaciones representa una proporcionalidad directa?",
-        "opciones": [
-          "El tiempo que tarda una tinaja en llenarse según el número de grifos abiertos",
-          "El costo total de boletos de cine según el número de boletos comprados",
-          "El tiempo de un viaje según la velocidad constante del auto",
-          "La edad de una persona según su estatura"
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada situación con su constante de proporcionalidad (k).",
+        "columnaA": [
+          "5 lápices cuestan $25",
+          "8 litros de gasolina cuestan $184",
+          "3 horas de trabajo pagan $270"
         ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "A más boletos, el costo aumenta en la misma proporción: es directamente proporcional. Las otras opciones son proporcionalidad inversa o no son proporcionales."
+        "columnaB": [
+          "$23 por litro",
+          "$90 por hora",
+          "$5 por lápiz"
+        ],
+        "parejasCorrectas": [2, 0, 1],
+        "retroalimentacion": "k = 25÷5 = $5 por lápiz; k = 184÷8 = $23 por litro; k = 270÷3 = $90 por hora."
       }
     ]
   }

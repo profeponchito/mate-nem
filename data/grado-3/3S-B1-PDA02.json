@@ -11,33 +11,75 @@
     "contexto": "Una caja rectangular tiene base cuadrada de lado x y altura h. El fabricante necesita saber el volumen en función de estas medidas para calcular cuánto material usar.",
     "pregunta": "¿Cuál es la expresión algebraica del volumen de esa caja?"
   },
-  "sintesis": {
-    "explicacion": "El volumen de un prisma se calcula multiplicando el área de la base por la altura. Cuando la base es un cuadrado de lado x, su área es x², por lo que el volumen del prisma es x²×h. Estas expresiones permiten despejar cualquiera de las variables si conocemos las otras.",
-    "formula": "Volumen del prisma = Área de la base × altura = x² × h",
-    "ejemploResuelto": "Si x=4 cm y h=10 cm, el volumen es 4²×10 = 16×10 = 160 cm³."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Volumen de un prisma con base cuadrada",
+      "explicacion": "El volumen de un prisma se calcula multiplicando el área de la base por la altura. Cuando la base es un cuadrado de lado x, su área es x², por lo que el volumen del prisma es x²×h.",
+      "formula": "Volumen = Área de la base × altura = x² × h",
+      "ejemplos": [
+        "Si x=4 cm y h=10 cm, el volumen es 4²×10 = 16×10 = 160 cm³."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "Una caja tiene volumen V=x²h. Si x=3 y h=7, ¿cuál es el volumen?",
         "opciones": ["21", "42", "63", "147"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "V = 3²×7 = 9×7 = 63."
-      },
-      {
-        "pregunta": "Si el volumen de un prisma es V=x²h y se sabe que V=100 y h=4, ¿cuánto vale x²?",
-        "opciones": ["20", "25", "96", "400"],
-        "respuestaCorrecta": 1,
+      }
+    },
+    {
+      "titulo": "Despejar una variable del volumen",
+      "explicacion": "Estas expresiones permiten despejar cualquiera de las variables si conocemos las otras. Por ejemplo, si conocemos el volumen y la altura, podemos despejar x² dividiendo el volumen entre la altura.",
+      "formula": "x² = V ÷ h",
+      "ejemplos": [
+        "Si V=100 y h=4, entonces x² = 100/4 = 25 (y por lo tanto x=5)."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Si el volumen de un prisma es V=x²h y se sabe que V=100 y h=4, entonces x² = ___.",
+        "respuestaCorrecta": "25",
         "retroalimentacion": "x² = V/h = 100/4 = 25."
-      },
+      }
+    },
+    {
+      "titulo": "Volumen del cubo",
+      "explicacion": "Un caso especial es cuando la altura es igual al lado de la base: se forma un cubo, cuyo volumen es la arista elevada al cubo.",
+      "formula": "Volumen del cubo = x³",
+      "ejemplos": [
+        "Un cubo con arista de 4 cm tiene volumen 4³ = 64 cm³."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "El volumen de un cubo con arista 4 cm es 64 cm³.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 4³ = 4×4×4 = 64 cm³."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Un cubo tiene arista x. ¿Cuál es la expresión algebraica de su volumen?",
         "opciones": ["3x", "x²", "x³", "6x²"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "El volumen de un cubo es la arista al cubo: x³."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "Una caja tiene volumen V=x²h. Si x=3 y h=7, el volumen es ___.",
+        "respuestaCorrecta": "63",
+        "retroalimentacion": "V = 3²×7 = 9×7 = 63."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada par de valores (x, h) con el volumen del prisma V=x²h.",
+        "columnaA": ["x=2, h=5", "x=5, h=2", "x=3, h=3"],
+        "columnaB": ["27", "50", "20"],
+        "parejasCorrectas": [2, 1, 0],
+        "retroalimentacion": "x=2,h=5: V=4×5=20. x=5,h=2: V=25×2=50. x=3,h=3: V=9×3=27."
       }
     ]
   }

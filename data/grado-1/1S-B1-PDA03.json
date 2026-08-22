@@ -11,33 +11,76 @@
     "contexto": "Un comerciante registra sus movimientos del día: vendió $450 (+450), pagó una deuda de $300 (-300), le devolvieron $120 por un producto defectuoso (+120) pero tuvo que pagar $80 de flete (-80).",
     "pregunta": "¿Cuál fue el balance final del día del comerciante?"
   },
-  "sintesis": {
-    "explicacion": "Al sumar números con signo, si tienen el mismo signo se suman sus valores absolutos y se conserva el signo; si tienen signos diferentes se restan los valores absolutos y se conserva el signo del mayor. La multiplicación y división siguen la regla de signos: signos iguales dan resultado positivo, signos diferentes dan resultado negativo.",
-    "formula": "(+)×(+)=+ ; (−)×(−)=+ ; (+)×(−)=− ; (−)×(+)=−",
-    "ejemploResuelto": "450 − 300 + 120 − 80 = 190. El balance final fue +$190."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Sumar y restar números con signo",
+      "explicacion": "Al sumar números con signo, si tienen el mismo signo se suman sus valores absolutos y se conserva el signo; si tienen signos diferentes se restan los valores absolutos y se conserva el signo del que tiene mayor valor absoluto.",
+      "ejemplos": [
+        "-8 + 5: signos diferentes, 8-5=3, se conserva el signo del mayor (negativo): -3.",
+        "450 − 300 + 120 − 80 = 190. El balance final del comerciante fue +$190."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuánto es -8 + 5?",
         "opciones": ["-13", "-3", "3", "13"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "Signos diferentes: 8-5=3, se conserva el signo del mayor (negativo): -3."
-      },
+      }
+    },
+    {
+      "titulo": "Multiplicar y dividir con signos",
+      "explicacion": "La multiplicación y la división siguen la regla de signos: signos iguales dan resultado positivo, signos diferentes dan resultado negativo.",
+      "formula": "(+)×(+)=+  ;  (−)×(−)=+  ;  (+)×(−)=−  ;  (−)×(+)=−",
+      "ejemplos": [
+        "(-6) × (-4) = 24, porque signos iguales (negativo por negativo) dan resultado positivo.",
+        "(-20) ÷ 5 = -4, porque signos diferentes dan resultado negativo."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "(-6) × (-4) = ___.",
+        "respuestaCorrecta": "24",
+        "retroalimentacion": "Signos iguales (negativo por negativo) dan resultado positivo: 24."
+      }
+    },
+    {
+      "titulo": "Jerarquía de operaciones con signos",
+      "explicacion": "Cuando una expresión combina varias operaciones, primero se resuelven las multiplicaciones y divisiones (de izquierda a derecha), y después las sumas y restas.",
+      "ejemplos": [
+        "2 + 3 × (-4): primero la multiplicación, 3×(-4)=-12; luego 2+(-12)=-10.",
+        "(-2 + 5) × 3: primero el paréntesis, -2+5=3; luego 3×3=9."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "En 2 + 3 × (-4), el resultado es -10.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: primero 3×(-4)=-12, luego 2+(-12)=-10."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
-        "pregunta": "¿Cuánto es (-6) × (-4)?",
-        "opciones": ["-24", "-10", "10", "24"],
-        "respuestaCorrecta": 3,
-        "retroalimentacion": "Signos iguales (negativo por negativo) da resultado positivo: 24."
-      },
-      {
+        "tipo": "opcion_multiple",
         "pregunta": "Resuelve aplicando jerarquía de operaciones: 2 + 3 × (-4)",
         "opciones": ["-20", "-10", "10", "20"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "Primero la multiplicación: 3×(-4)=-12; luego 2+(-12)=-10."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "El comerciante vendió $450, pagó una deuda de $300, le devolvieron $120 y pagó $80 de flete. Su balance final fue $___.",
+        "respuestaCorrecta": "190",
+        "retroalimentacion": "450 − 300 + 120 − 80 = 190."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada operación con su resultado.",
+        "columnaA": ["(-6) × (-4)", "-8 + 5", "(-20) ÷ 5"],
+        "columnaB": ["-4", "24", "-3"],
+        "parejasCorrectas": [1, 2, 0],
+        "retroalimentacion": "(-6)×(-4)=24; -8+5=-3; (-20)÷5=-4."
       }
     ]
   }

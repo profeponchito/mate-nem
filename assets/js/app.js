@@ -10,7 +10,7 @@
 import { ruta, rutaPorDefecto, navegar, init } from './router.js';
 import { guardarSesion, obtenerSesion, haySesion } from './session.js';
 import { cargarListaPDAs, cargarPDAporId } from './pda-loader.js';
-import { calcularResultado } from './gamification.js';
+import { calcularResultado, esRespuestaCorrecta } from './gamification.js';
 import { enviarRegistroPDA, reintentarPendientes } from './webhook.js';
 import { generarConstancia, descargarComoPDF } from './constancia.js';
 
@@ -142,7 +142,8 @@ async function vistaListaPDA({ grado }) {
 }
 
 // ============================================================
-// Vista: un PDA completo (problematización → síntesis → actividad → resultado)
+// Vista: un PDA completo
+// (problematización → subtemas [con checks formativos] → reto → resultado)
 // ============================================================
 async function vistaPDA({ grado, id }) {
   const sesion = obtenerSesion();
@@ -163,25 +164,37 @@ async function vistaPDA({ grado, id }) {
     return contenedorError;
   }
 
+  // Aplana el PDA en una secuencia lineal de pasos: problematización,
+  // cada subtema (más su check si tiene uno), el reto y el resultado.
+  // Esto es lo que permite calcular el % de avance de forma sencilla.
+  const pasos = [{ tipo: 'problematizacion' }];
+  pda.subtemas.forEach((subtema, si) => {
+    pasos.push({ tipo: 'subtema', subtemaIndex: si });
+    if (subtema.check) pasos.push({ tipo: 'check', subtemaIndex: si });
+  });
+  pasos.push({ tipo: 'reto' });
+  pasos.push({ tipo: 'resultado' });
+
   const raiz = document.createElement('div');
   const estado = {
-    fase: 'problematizacion', // 'problematizacion' -> 'sintesis' -> 'actividad' -> 'resultado'
-    respuestas: new Array(pda.actividad.reactivos.length).fill(null),
+    pasoIndex: 0,
     resultado: null,
     codigoVerificacion: null
   };
 
   function repintar() {
+    const paso = pasos[estado.pasoIndex];
     raiz.innerHTML = `
       ${encabezado_(sesion)}
       <div class="max-w-2xl mx-auto px-4 py-8">
         <a href="#/pda-lista/${encodeURIComponent(grado)}" class="text-sm text-amber-700 hover:underline">← ${escapeHTML_(grado)} secundaria</a>
-        ${indicadorFases_(estado.fase)}
+        ${barraAvance_(estado.pasoIndex, pasos.length)}
         <div class="bg-white rounded-2xl shadow-md p-6 mt-4">
-          ${estado.fase === 'problematizacion' ? panelProblematizacion_(pda) : ''}
-          ${estado.fase === 'sintesis' ? panelSintesis_(pda) : ''}
-          ${estado.fase === 'actividad' ? panelActividad_(pda) : ''}
-          ${estado.fase === 'resultado' ? panelResultado_(pda, estado) : ''}
+          ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda) : ''}
+          ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length) : ''}
+          ${paso.tipo === 'check' ? panelCheck_(pda.subtemas[paso.subtemaIndex].check, `check-${paso.subtemaIndex}`) : ''}
+          ${paso.tipo === 'reto' ? panelReto_(pda.reto) : ''}
+          ${paso.tipo === 'resultado' ? panelResultado_(pda, estado) : ''}
         </div>
       </div>
     `;
@@ -189,31 +202,50 @@ async function vistaPDA({ grado, id }) {
   }
 
   function conectarEventos_() {
-    raiz.querySelector('[data-accion="a-sintesis"]')?.addEventListener('click', () => {
-      estado.fase = 'sintesis';
+    // Avanza al siguiente paso (problematización, subtemas, y "continuar" tras un check)
+    raiz.querySelector('[data-accion="continuar"]')?.addEventListener('click', () => {
+      estado.pasoIndex++;
       repintar();
     });
 
-    raiz.querySelector('[data-accion="a-actividad"]')?.addEventListener('click', () => {
-      estado.fase = 'actividad';
-      repintar();
+    // Verifica la respuesta del check formativo de un subtema (no se califica,
+    // solo da retroalimentación inmediata antes de dejar continuar).
+    raiz.querySelector('[data-accion="verificar-check"]')?.addEventListener('click', () => {
+      const paso = pasos[estado.pasoIndex];
+      const pregunta = pda.subtemas[paso.subtemaIndex].check;
+      const prefijo = `check-${paso.subtemaIndex}`;
+      const respuesta = leerRespuesta_(raiz, prefijo, pregunta.tipo);
+
+      if (respuesta === null) {
+        alert('Responde antes de continuar.');
+        return;
+      }
+
+      const correcta = esRespuestaCorrecta(pregunta, respuesta);
+      const feedback = raiz.querySelector('[data-check-feedback]');
+      feedback.classList.remove('hidden');
+      feedback.innerHTML = `
+        <div class="text-sm px-3 py-2 rounded-lg ${correcta ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}">
+          ${correcta ? '✓ ¡Correcto!' : '✗ No es correcto.'} ${escapeHTML_(pregunta.retroalimentacion)}
+        </div>
+      `;
+      raiz.querySelector('[data-accion="verificar-check"]').classList.add('hidden');
+      raiz.querySelector('[data-accion="continuar"]').classList.remove('hidden');
     });
 
-    raiz.querySelectorAll('[data-reactivo]').forEach((input) => {
-      input.addEventListener('change', (evento) => {
-        const indiceReactivo = Number(evento.target.dataset.reactivo);
-        estado.respuestas[indiceReactivo] = Number(evento.target.value);
-      });
-    });
+    // Envía las respuestas del reto final: califica, guarda en Sheets y
+    // avanza al panel de resultado.
+    raiz.querySelector('[data-accion="enviar-reto"]')?.addEventListener('click', async () => {
+      const reto = pda.reto;
+      const respuestas = reto.reactivos.map((r, i) => leerRespuesta_(raiz, `reto-${i}`, r.tipo));
 
-    raiz.querySelector('[data-accion="enviar-actividad"]')?.addEventListener('click', async () => {
-      if (estado.respuestas.some((r) => r === null)) {
+      if (respuestas.some((r) => r === null)) {
         alert('Responde todos los reactivos antes de continuar.');
         return;
       }
 
-      estado.resultado = calcularResultado(pda, estado.respuestas);
-      estado.fase = 'resultado';
+      estado.resultado = calcularResultado(pda, respuestas);
+      estado.pasoIndex++; // avanza al paso 'resultado'
       repintar();
 
       try {
@@ -263,7 +295,7 @@ async function vistaPDA({ grado, id }) {
 }
 
 // ============================================================
-// Paneles de cada fase (usados por vistaPDA)
+// Paneles de cada paso (usados por vistaPDA)
 // ============================================================
 function panelProblematizacion_(pda) {
   return `
@@ -271,43 +303,55 @@ function panelProblematizacion_(pda) {
     <h3 class="text-lg font-semibold text-slate-800 mb-3">${escapeHTML_(pda.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-4">${escapeHTML_(pda.problematizacion.contexto)}</p>
     <p class="text-slate-800 font-medium mb-6">${escapeHTML_(pda.problematizacion.pregunta)}</p>
-    <button data-accion="a-sintesis" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
-      Ver el tema →
+    <button data-accion="continuar" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+      Comenzar el tema →
     </button>
   `;
 }
 
-function panelSintesis_(pda) {
+function panelSubtema_(subtema, indice, total) {
   return `
-    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-1">Síntesis</p>
-    <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(pda.sintesis.explicacion)}</p>
-    ${pda.sintesis.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-2 font-mono text-slate-800 mb-3">${escapeHTML_(pda.sintesis.formula)}</p>` : ''}
-    ${pda.sintesis.ejemploResuelto ? `<p class="text-slate-600 text-sm mb-6"><strong>Ejemplo:</strong> ${escapeHTML_(pda.sintesis.ejemploResuelto)}</p>` : ''}
-    <button data-accion="a-actividad" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
-      Ir al reto →
+    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-1">Tema · Parte ${indice + 1} de ${total}</p>
+    <h3 class="text-lg font-semibold text-slate-800 mb-3">${escapeHTML_(subtema.titulo)}</h3>
+    <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
+    ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-2 font-mono text-slate-800 mb-3">${escapeHTML_(subtema.formula)}</p>` : ''}
+    <div class="space-y-1 mb-6">
+      ${subtema.ejemplos.map((ejemplo) => `<p class="text-slate-600 text-sm"><strong>Ejemplo:</strong> ${escapeHTML_(ejemplo)}</p>`).join('')}
+    </div>
+    <button data-accion="continuar" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+      Continuar →
     </button>
   `;
 }
 
-function panelActividad_(pda) {
+function panelCheck_(pregunta, prefijo) {
   return `
-    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-4">Actividad gamificada</p>
+    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-3">Repaso rápido</p>
+    <div>${renderizarPregunta_(pregunta, prefijo)}</div>
+    <div data-check-feedback class="mt-3 hidden"></div>
+    <div class="mt-4 flex gap-2">
+      <button data-accion="verificar-check" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+        Verificar
+      </button>
+      <button data-accion="continuar" class="hidden bg-slate-700 hover:bg-slate-800 text-white font-semibold px-5 py-2 rounded-lg transition">
+        Continuar →
+      </button>
+    </div>
+  `;
+}
+
+function panelReto_(reto) {
+  return `
+    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-4">Reto</p>
     <div class="space-y-6">
-      ${pda.actividad.reactivos.map((reactivo, i) => `
-        <div>
-          <p class="text-slate-800 font-medium mb-2">${i + 1}. ${escapeHTML_(reactivo.pregunta)}</p>
-          <div class="space-y-1">
-            ${reactivo.opciones.map((opcion, j) => `
-              <label class="flex items-center gap-2 text-slate-700 cursor-pointer">
-                <input type="radio" name="reactivo-${i}" value="${j}" data-reactivo="${i}" class="accent-amber-600">
-                ${escapeHTML_(opcion)}
-              </label>
-            `).join('')}
-          </div>
+      ${reto.reactivos.map((reactivo, i) => `
+        <div class="border-t border-slate-100 pt-4 first:border-t-0 first:pt-0">
+          <p class="text-slate-400 text-xs mb-1">Reactivo ${i + 1}</p>
+          ${renderizarPregunta_(reactivo, `reto-${i}`)}
         </div>
       `).join('')}
     </div>
-    <button data-accion="enviar-actividad" class="mt-6 bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
+    <button data-accion="enviar-reto" class="mt-6 bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
       Enviar respuestas
     </button>
   `;
@@ -315,7 +359,7 @@ function panelActividad_(pda) {
 
 function panelResultado_(pda, estado) {
   const r = estado.resultado;
-  const estrellasMax = pda.actividad.estrellasMax || 3;
+  const estrellasMax = pda.reto.estrellasMax || 3;
 
   return `
     <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-2">Resultado</p>
@@ -325,7 +369,7 @@ function panelResultado_(pda, estado) {
     <div class="space-y-2 mb-6">
       ${r.detalle.map((d) => `
         <div class="text-sm px-3 py-2 rounded-lg ${d.esCorrecta ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}">
-          ${d.esCorrecta ? '✓' : '✗'} ${escapeHTML_(d.pregunta)}
+          ${d.esCorrecta ? '✓' : '✗'} ${escapeHTML_(d.resumen)}
           ${d.retroalimentacion ? `<br><span class="text-xs opacity-80">${escapeHTML_(d.retroalimentacion)}</span>` : ''}
         </div>
       `).join('')}
@@ -343,23 +387,103 @@ function panelResultado_(pda, estado) {
   `;
 }
 
-function indicadorFases_(faseActual) {
-  const fases = [
-    { clave: 'problematizacion', etiqueta: 'Reto' },
-    { clave: 'sintesis', etiqueta: 'Tema' },
-    { clave: 'actividad', etiqueta: 'Actividad' },
-    { clave: 'resultado', etiqueta: 'Resultado' }
-  ];
-  const indiceActual = fases.findIndex((f) => f.clave === faseActual);
+// ============================================================
+// Renderizador genérico de preguntas (4 tipos) + lectura del DOM
+// ============================================================
 
+/** Devuelve el HTML de una pregunta según su tipo. `prefijo` identifica sus inputs en el DOM. */
+function renderizarPregunta_(pregunta, prefijo) {
+  switch (pregunta.tipo) {
+    case 'opcion_multiple':
+      return `
+        <p class="text-slate-800 font-medium mb-2">${escapeHTML_(pregunta.pregunta)}</p>
+        <div class="space-y-1">
+          ${pregunta.opciones.map((opcion, j) => `
+            <label class="flex items-center gap-2 text-slate-700 cursor-pointer">
+              <input type="radio" name="preg-${prefijo}" value="${j}" data-preg="${prefijo}" class="accent-amber-600">
+              ${escapeHTML_(opcion)}
+            </label>
+          `).join('')}
+        </div>
+      `;
+
+    case 'verdadero_falso':
+      return `
+        <p class="text-slate-800 font-medium mb-2">${escapeHTML_(pregunta.enunciado)}</p>
+        <div class="flex gap-4">
+          <label class="flex items-center gap-2 text-slate-700 cursor-pointer">
+            <input type="radio" name="preg-${prefijo}" value="true" data-preg="${prefijo}" class="accent-amber-600"> Verdadero
+          </label>
+          <label class="flex items-center gap-2 text-slate-700 cursor-pointer">
+            <input type="radio" name="preg-${prefijo}" value="false" data-preg="${prefijo}" class="accent-amber-600"> Falso
+          </label>
+        </div>
+      `;
+
+    case 'llenar_frase': {
+      const [antes, despues] = pregunta.frase.split('___');
+      return `
+        <p class="text-slate-800 font-medium mb-2">
+          ${escapeHTML_(antes || '')}<input type="text" data-preg="${prefijo}"
+            class="inline-block border-b-2 border-amber-500 focus:outline-none px-1 mx-1 w-24 text-center">${escapeHTML_(despues || '')}
+        </p>
+      `;
+    }
+
+    case 'relacionar_columnas':
+      return `
+        <p class="text-slate-800 font-medium mb-3">${escapeHTML_(pregunta.instruccion || 'Relaciona cada elemento con su pareja correcta.')}</p>
+        <div class="space-y-2">
+          ${pregunta.columnaA.map((item) => `
+            <div class="flex items-center gap-3">
+              <span class="text-slate-700 flex-1">${escapeHTML_(item)}</span>
+              <select data-preg="${prefijo}" class="border border-slate-300 rounded-lg px-2 py-1 text-sm bg-white">
+                <option value="">Selecciona…</option>
+                ${pregunta.columnaB.map((opcion, j) => `<option value="${j}">${escapeHTML_(opcion)}</option>`).join('')}
+              </select>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+    default:
+      return '';
+  }
+}
+
+/** Lee del DOM la respuesta capturada para una pregunta, según su tipo. Devuelve null si falta algo. */
+function leerRespuesta_(raiz, prefijo, tipo) {
+  if (tipo === 'opcion_multiple' || tipo === 'verdadero_falso') {
+    const marcado = raiz.querySelector(`input[data-preg="${prefijo}"]:checked`);
+    if (!marcado) return null;
+    return tipo === 'verdadero_falso' ? marcado.value === 'true' : Number(marcado.value);
+  }
+
+  if (tipo === 'llenar_frase') {
+    const input = raiz.querySelector(`input[data-preg="${prefijo}"]`);
+    const valor = input ? input.value.trim() : '';
+    return valor === '' ? null : valor;
+  }
+
+  if (tipo === 'relacionar_columnas') {
+    const selects = raiz.querySelectorAll(`select[data-preg="${prefijo}"]`);
+    const valores = Array.from(selects).map((s) => (s.value === '' ? null : Number(s.value)));
+    return valores.some((v) => v === null) ? null : valores;
+  }
+
+  return null;
+}
+
+function barraAvance_(pasoIndex, totalPasos) {
+  const porcentaje = Math.round((pasoIndex / (totalPasos - 1)) * 100);
   return `
-    <div class="flex items-center gap-2 mt-3 text-xs flex-wrap">
-      ${fases.map((f, i) => `
-        <span class="px-2 py-1 rounded-full ${i <= indiceActual ? 'bg-amber-600 text-white' : 'bg-slate-200 text-slate-500'}">
-          ${f.etiqueta}
-        </span>
-        ${i < fases.length - 1 ? '<span class="text-slate-300">→</span>' : ''}
-      `).join('')}
+    <div class="mt-3">
+      <div class="flex justify-between text-xs text-slate-500 mb-1">
+        <span>Avance</span><span>${porcentaje}%</span>
+      </div>
+      <div class="w-full bg-slate-200 rounded-full h-2">
+        <div class="bg-amber-600 h-2 rounded-full transition-all" style="width:${porcentaje}%"></div>
+      </div>
     </div>
   `;
 }

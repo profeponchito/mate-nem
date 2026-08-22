@@ -11,33 +11,75 @@
     "contexto": "Un terreno cuadrado tiene lado (x+3) metros. El dueño quiere saber cuánto pasto necesita comprar para cubrir toda la superficie, en función de x.",
     "pregunta": "¿Cuál es la expresión algebraica del área de ese terreno cuadrado?"
   },
-  "sintesis": {
-    "explicacion": "El área de un cuadrado de lado (x+a) se calcula elevando el binomio al cuadrado: (x+a)² = x² + 2ax + a². Además, al multiplicar potencias de la misma base se suman los exponentes, y al elevar una potencia a otra potencia se multiplican los exponentes.",
-    "formula": "(x+a)² = x² + 2ax + a²  ;  xᵐ × xⁿ = xᵐ⁺ⁿ  ;  (xᵐ)ⁿ = xᵐˣⁿ",
-    "ejemploResuelto": "(x+3)² = x² + 2(3)x + 3² = x² + 6x + 9 metros cuadrados."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "El cuadrado de un binomio",
+      "explicacion": "El área de un cuadrado de lado (x+a) se calcula elevando el binomio al cuadrado: se multiplica el binomio por sí mismo y se obtienen tres términos: el cuadrado del primero, el doble producto de ambos, y el cuadrado del segundo.",
+      "formula": "(x+a)² = x² + 2ax + a²",
+      "ejemplos": [
+        "(x+3)² = x² + 2(3)x + 3² = x² + 6x + 9 metros cuadrados."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es el desarrollo de (x+5)²?",
         "opciones": ["x²+25", "x²+5x+25", "x²+10x+25", "2x+10"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "(x+5)² = x² + 2(5)x + 5² = x² + 10x + 25."
-      },
+      }
+    },
+    {
+      "titulo": "Multiplicar potencias de la misma base",
+      "explicacion": "Al multiplicar dos potencias que tienen la misma base, se conserva la base y se suman los exponentes.",
+      "formula": "xᵐ × xⁿ = xᵐ⁺ⁿ",
+      "ejemplos": [
+        "x³ × x⁴ = x^(3+4) = x⁷."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Al simplificar x³ × x⁴ se obtiene x elevado a la ___.",
+        "respuestaCorrecta": "7",
+        "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 3+4=7."
+      }
+    },
+    {
+      "titulo": "Potencia de una potencia",
+      "explicacion": "Cuando una potencia se eleva a otro exponente, se conserva la base y se multiplican los exponentes.",
+      "formula": "(xᵐ)ⁿ = xᵐˣⁿ",
+      "ejemplos": [
+        "(x²)⁵ = x^(2×5) = x¹⁰."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "(x²)⁵ es igual a x¹⁰.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: al elevar una potencia a otra potencia se multiplican los exponentes: 2×5=10."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Simplifica: x³ × x⁴",
         "opciones": ["x⁷", "x¹²", "x⁴³", "2x⁷"],
         "respuestaCorrecta": 0,
         "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 3+4=7."
       },
       {
-        "pregunta": "Simplifica: (x²)⁵",
-        "opciones": ["x⁷", "x¹⁰", "x²⁵", "2x²"],
-        "respuestaCorrecta": 1,
+        "tipo": "llenar_frase",
+        "frase": "Simplifica: (x²)⁵ = x elevado a la ___.",
+        "respuestaCorrecta": "10",
         "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 2×5=10."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+        "columnaA": ["(x+5)²", "x³×x⁴", "(x²)⁵"],
+        "columnaB": ["x¹⁰", "x²+10x+25", "x⁷"],
+        "parejasCorrectas": [1, 2, 0],
+        "retroalimentacion": "(x+5)²=x²+10x+25; x³×x⁴=x⁷; (x²)⁵=x¹⁰."
       }
     ]
   }

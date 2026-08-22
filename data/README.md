@@ -60,21 +60,48 @@ Fuentes consultadas:
 
 ## Cómo agregar un PDA nuevo
 
-1. Copia cualquier archivo existente, por ejemplo `grado-2/2S-B1-PDA01.json`, como plantilla.
+1. Copia cualquier archivo existente, por ejemplo `grado-2/2S-B1-PDA03.json`, como plantilla.
 2. Completa los campos siguiendo `schema/pda.schema.json`
    (puedes validar con cualquier validador de JSON Schema online).
 3. Reemplaza `contenido` y `pda` con el enunciado oficial del fascículo
-   NEM correspondiente — los textos de `problematizacion`, `sintesis` y
-   `actividad` son responsabilidad del docente y deben mantener el
-   enfoque situacional/activo característico de la NEM.
+   NEM correspondiente — los textos de `problematizacion`, `subtemas` y
+   `reto` son responsabilidad del docente y deben mantener el enfoque
+   situacional/activo característico de la NEM.
 4. Agrega el nombre del archivo al arreglo `archivos` en el `index.json`
    de esa carpeta de grado.
 
-## Las tres fases obligatorias
+## Estructura de un PDA (v2)
 
-- **problematizacion** → desafío o contexto real (fase A).
-- **sintesis** → explicación teórica breve, con fórmula y ejemplo resuelto (fase B).
-- **actividad** → reto gamificado con reactivos, puntaje y estrellas (fase C).
+Cada PDA sigue este flujo lineal, que es el que recorre `app.js` mostrando
+una barra de avance (%) en todo momento:
 
-Este orden es el que renderizará `pda-loader.js` en el siguiente paso del
-proyecto (navegación PDA → problematización → síntesis → actividad → constancia).
+- **problematizacion** → desafío o contexto real que engancha al alumno antes
+  de explicar el tema (contexto + pregunta).
+- **subtemas** (arreglo, normalmente 3) → el tema explicado a profundidad,
+  seccionado en partes. Cada subtema tiene `titulo`, `explicacion` (más
+  desarrollada que una síntesis breve), `ejemplos` (uno o más resueltos) y,
+  opcionalmente, `formula`. Puede terminar en un `check`: una pregunta corta
+  de repaso formativo (no se califica, solo da retroalimentación inmediata)
+  antes de dejar avanzar al alumno.
+- **reto** → la actividad final gamificada y calificada. Tiene
+  `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos`; se recomienda
+  mezclar al menos 2 tipos de pregunta distintos.
+
+### Los 4 tipos de pregunta
+
+Tanto los `check` de los subtemas como los `reactivos` del `reto` usan la
+misma estructura de pregunta (`definitions.pregunta` en el schema), con
+`tipo` igual a uno de estos 4 valores:
+
+- `opcion_multiple` — `pregunta`, `opciones[]`, `respuestaCorrecta` (índice).
+- `verdadero_falso` — `enunciado`, `respuestaCorrecta` (booleano).
+- `llenar_frase` — `frase` (con un hueco marcado `___`), `respuestaCorrecta` (texto).
+- `relacionar_columnas` — `instruccion`, `columnaA[]`, `columnaB[]`,
+  `parejasCorrectas[]` (índice en `columnaB` de la pareja de cada fila de
+  `columnaA`; usa valores únicos en `columnaB` para que no haya ambigüedad).
+
+Todas requieren `retroalimentacion` (se muestra tras responder, sea correcta
+o no).
+
+Este es el flujo que renderiza `app.js`: problematización → subtemas (con
+sus checks) → reto → resultado (puntaje, estrellas) → constancia.

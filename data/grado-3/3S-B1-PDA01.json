@@ -11,33 +11,78 @@
     "contexto": "Un científico mide que una bacteria tiene un tamaño de 0.000002 metros, mientras que la distancia de la Tierra al Sol es de aproximadamente 150,000,000,000 metros.",
     "pregunta": "¿Cómo se pueden escribir estas cantidades de forma más práctica, sin tener que contar tantos ceros?"
   },
-  "sintesis": {
-    "explicacion": "La notación científica expresa números muy grandes o muy pequeños como a × 10ⁿ, donde 1≤a<10 y n es un entero. Un exponente negativo indica un número menor a 1 (x⁻ⁿ = 1/xⁿ). La raíz cuadrada de un número es el valor que multiplicado por sí mismo da ese número.",
-    "formula": "a × 10ⁿ  ;  x⁻ⁿ = 1/xⁿ  ;  √x × √x = x",
-    "ejemploResuelto": "150,000,000,000 = 1.5 × 10¹¹ metros. 0.000002 = 2 × 10⁻⁶ metros."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Exponentes negativos",
+      "explicacion": "Un exponente negativo indica un número menor a 1: significa tomar el recíproco (1 entre la base elevada al exponente positivo).",
+      "formula": "x⁻ⁿ = 1/xⁿ",
+      "ejemplos": [
+        "2⁻³ = 1/2³ = 1/8.",
+        "10⁻² = 1/10² = 1/100 = 0.01."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es el resultado de 2⁻³?",
         "opciones": ["-6", "-8", "1/8", "8"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "2⁻³ = 1/2³ = 1/8."
-      },
-      {
-        "pregunta": "¿Cuál es la raíz cuadrada de 144?",
-        "opciones": ["11", "12", "14", "72"],
-        "respuestaCorrecta": 1,
+      }
+    },
+    {
+      "titulo": "Raíz cuadrada",
+      "explicacion": "La raíz cuadrada de un número es el valor que, multiplicado por sí mismo, da ese número.",
+      "formula": "√x × √x = x",
+      "ejemplos": [
+        "√144 = 12, porque 12 × 12 = 144.",
+        "√81 = 9, porque 9 × 9 = 81."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "La raíz cuadrada de 144 es ___.",
+        "respuestaCorrecta": "12",
         "retroalimentacion": "12 × 12 = 144."
-      },
+      }
+    },
+    {
+      "titulo": "Notación científica",
+      "explicacion": "La notación científica expresa números muy grandes o muy pequeños como a × 10ⁿ, donde 1≤a<10 y n es un entero. Un exponente positivo indica un número grande; uno negativo, un número pequeño (menor que 1).",
+      "formula": "a × 10ⁿ",
+      "ejemplos": [
+        "150,000,000,000 = 1.5 × 10¹¹ metros.",
+        "0.000002 = 2 × 10⁻⁶ metros."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "45,000 en notación científica se escribe 4.5 × 10⁴.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 45,000 = 4.5 × 10,000 = 4.5 × 10⁴."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cómo se escribe 45,000 en notación científica?",
         "opciones": ["45 × 10³", "4.5 × 10⁴", "4.5 × 10³", "0.45 × 10⁵"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "45,000 = 4.5 × 10,000 = 4.5 × 10⁴."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "2⁻³ escrito como fracción es ___.",
+        "respuestaCorrecta": "1/8",
+        "retroalimentacion": "2⁻³ = 1/2³ = 1/8."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada cantidad con su notación científica.",
+        "columnaA": ["150,000,000,000", "0.000002", "45,000"],
+        "columnaB": ["4.5 × 10⁴", "1.5 × 10¹¹", "2 × 10⁻⁶"],
+        "parejasCorrectas": [1, 2, 0],
+        "retroalimentacion": "150,000,000,000 = 1.5×10¹¹; 0.000002 = 2×10⁻⁶; 45,000 = 4.5×10⁴."
       }
     ]
   }

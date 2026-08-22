@@ -1,94 +1,103 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "PDA MATE-NEM",
-  "description": "Estructura modular de un Proceso de Desarrollo de Aprendizaje (PDA) de Matemáticas, NEM. Cada archivo en data/grado-X/ debe cumplir este esquema.",
+  "title": "PDA MATE-NEM (v2)",
+  "description": "Estructura modular de un Proceso de Desarrollo de Aprendizaje (PDA) de Matemáticas, NEM. Flujo: problematización (gancho de contexto real) → subtemas (tema explicado en 2-3 partes, cada uno con ejemplos y un check rápido opcional) → reto (actividad final calificada, con reactivos de tipo mixto).",
   "type": "object",
-  "required": ["id", "grado", "campoFormativo", "eje", "titulo", "problematizacion", "sintesis", "actividad"],
+  "required": ["id", "grado", "campoFormativo", "eje", "titulo", "problematizacion", "subtemas", "reto"],
   "properties": {
     "id": {
       "type": "string",
       "description": "Identificador único, convención: '<grado>S-B<bloque>-PDA<num>', ej. '2S-B1-PDA03'"
     },
-    "grado": {
-      "type": "string",
-      "enum": ["1°", "2°", "3°"]
-    },
-    "trimestre": {
-      "type": "string",
-      "enum": ["1", "2", "3"],
-      "description": "Trimestre o bloque del ciclo escolar en que se ubica el PDA"
-    },
-    "campoFormativo": {
-      "type": "string",
-      "const": "Saberes y Pensamiento Científico",
-      "description": "Campo formativo NEM al que pertenece Matemáticas"
-    },
-    "eje": {
-      "type": "string",
-      "description": "Eje articulador o de contenido, ej. 'Sentido numérico y pensamiento algebraico'"
-    },
-    "titulo": {
-      "type": "string",
-      "description": "Nombre corto y amigable del PDA, usado en la navegación y en la constancia"
-    },
-    "contenido": {
-      "type": "string",
-      "description": "Enunciado oficial del Contenido de la NEM (fascículo correspondiente)"
-    },
-    "pda": {
-      "type": "string",
-      "description": "Enunciado oficial del Proceso de Desarrollo de Aprendizaje"
-    },
+    "grado": { "type": "string", "enum": ["1°", "2°", "3°"] },
+    "trimestre": { "type": "string", "enum": ["1", "2", "3"] },
+    "campoFormativo": { "type": "string", "const": "Saberes y Pensamiento Científico" },
+    "eje": { "type": "string" },
+    "titulo": { "type": "string" },
+    "contenido": { "type": "string", "description": "Enunciado oficial del Contenido de la NEM" },
+    "pda": { "type": "string", "description": "Enunciado oficial del Proceso de Desarrollo de Aprendizaje" },
+
     "problematizacion": {
       "type": "object",
-      "description": "Fase A: desafío o contexto real que introduce el tema",
+      "description": "Fase 1: gancho de contexto real que despierta interés, antes de explicar el tema.",
       "required": ["contexto", "pregunta"],
       "properties": {
         "contexto": { "type": "string" },
-        "imagen": { "type": "string", "description": "Ruta opcional a una imagen de apoyo" },
         "pregunta": { "type": "string" }
       }
     },
-    "sintesis": {
-      "type": "object",
-      "description": "Fase B: síntesis conceptual/teórica corta",
-      "required": ["explicacion"],
-      "properties": {
-        "explicacion": { "type": "string" },
-        "formula": { "type": "string" },
-        "ejemploResuelto": { "type": "string" }
+
+    "subtemas": {
+      "type": "array",
+      "description": "Fase 2: el tema explicado a profundidad, seccionado en 2-3 subtemas cuando el contenido lo amerita. Cada subtema puede terminar con un 'check' rápido (repaso formativo, no calificado).",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["titulo", "explicacion", "ejemplos"],
+        "properties": {
+          "titulo": { "type": "string" },
+          "explicacion": { "type": "string", "description": "Explicación del subtema, más desarrollada que una síntesis breve." },
+          "formula": { "type": "string" },
+          "ejemplos": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" },
+            "description": "Uno o más ejemplos resueltos que ilustran el subtema."
+          },
+          "check": {
+            "$ref": "#/definitions/pregunta",
+            "description": "Pregunta corta de repaso mostrada justo después de este subtema. Opcional, no se califica."
+          }
+        }
       }
     },
-    "actividad": {
+
+    "reto": {
       "type": "object",
-      "description": "Fase C: actividad gamificada",
-      "required": ["tipo", "reactivos", "puntosPorReactivo"],
+      "description": "Fase 3: actividad gamificada final, calificada. Genera puntaje, estrellas y dispara el envío a Sheets + constancia.",
+      "required": ["puntosPorReactivo", "estrellasMax", "reactivos"],
       "properties": {
-        "tipo": {
-          "type": "string",
-          "enum": ["opcion_multiple", "arrastrar_soltar", "completar", "problema_paso_a_paso"]
-        },
         "puntosPorReactivo": { "type": "integer" },
         "estrellasMax": { "type": "integer", "default": 3 },
         "reactivos": {
           "type": "array",
           "minItems": 1,
-          "items": {
-            "type": "object",
-            "required": ["pregunta", "opciones", "respuestaCorrecta"],
-            "properties": {
-              "pregunta": { "type": "string" },
-              "opciones": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
-              "respuestaCorrecta": {
-                "type": "integer",
-                "description": "Índice (base 0) de la opción correcta dentro de 'opciones'"
-              },
-              "retroalimentacion": {
-                "type": "string",
-                "description": "Explicación breve que se muestra tras responder, correcta o incorrectamente"
-              }
-            }
-          }
+          "items": { "$ref": "#/definitions/pregunta" },
+          "description": "Se recomienda mezclar al menos 2 tipos distintos de pregunta."
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "pregunta": {
+      "type": "object",
+      "description": "Una pregunta de cualquiera de los 4 tipos soportados. Los campos requeridos varían según 'tipo'.",
+      "required": ["tipo", "retroalimentacion"],
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": ["opcion_multiple", "verdadero_falso", "llenar_frase", "relacionar_columnas"]
+        },
+        "retroalimentacion": { "type": "string", "description": "Explicación mostrada después de responder, sea correcta o incorrecta." },
+
+        "pregunta": { "type": "string", "description": "[opcion_multiple] El enunciado de la pregunta." },
+        "opciones": { "type": "array", "items": { "type": "string" }, "description": "[opcion_multiple] Lista de opciones." },
+        "respuestaCorrecta": {
+          "description": "[opcion_multiple] índice (entero, base 0) de la opción correcta. [verdadero_falso] booleano. [llenar_frase] string esperado."
+        },
+
+        "enunciado": { "type": "string", "description": "[verdadero_falso] La afirmación a evaluar." },
+
+        "frase": { "type": "string", "description": "[llenar_frase] Frase con un solo hueco marcado como '___'." },
+
+        "instruccion": { "type": "string", "description": "[relacionar_columnas] Instrucción para el alumno." },
+        "columnaA": { "type": "array", "items": { "type": "string" }, "description": "[relacionar_columnas] Elementos a relacionar." },
+        "columnaB": { "type": "array", "items": { "type": "string" }, "description": "[relacionar_columnas] Opciones de pareja (se muestran en un <select> por fila)." },
+        "parejasCorrectas": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "description": "[relacionar_columnas] Mismo orden que columnaA; cada valor es el índice en columnaB de su pareja correcta."
         }
       }
     }

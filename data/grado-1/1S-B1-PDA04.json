@@ -11,33 +11,75 @@
     "contexto": "Un panadero acomoda charolas de pan en una repisa: en la primera fila pone 3 panes, en la segunda 6, en la tercera 9, y así sucesivamente, siempre 3 panes más que en la fila anterior.",
     "pregunta": "¿Cuántos panes habrá en la fila número 10, y cómo lo puedes calcular sin dibujar las 10 filas?"
   },
-  "sintesis": {
-    "explicacion": "Una sucesión con progresión aritmética aumenta (o disminuye) siempre la misma cantidad constante entre un término y el siguiente. Se puede representar algebraicamente como término_n = a + (n-1)d, donde a es el primer término y d es la diferencia constante.",
-    "formula": "término_n = a + (n − 1) × d",
-    "ejemploResuelto": "Sucesión 3, 6, 9, 12...: a=3, d=3. término_10 = 3 + (10-1)×3 = 3+27 = 30 panes."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "¿Qué es una sucesión con progresión aritmética?",
+      "explicacion": "Una sucesión con progresión aritmética aumenta (o disminuye) siempre la misma cantidad constante entre un término y el siguiente. A esa cantidad constante se le llama 'diferencia' (d) y se obtiene restando dos términos consecutivos.",
+      "ejemplos": [
+        "3, 6, 9, 12...: cada término aumenta 3 respecto al anterior, así que d=3.",
+        "5, 8, 11, 14...: 8-5=3, 11-8=3, 14-11=3, entonces d=3."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "En la sucesión 5, 8, 11, 14..., ¿cuál es la diferencia constante d?",
         "opciones": ["2", "3", "5", "8"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "Cada término aumenta 3 respecto al anterior: 8-5=3."
-      },
+      }
+    },
+    {
+      "titulo": "La fórmula del término n",
+      "explicacion": "En vez de sumar la diferencia una y otra vez hasta llegar al término que buscamos, se puede usar una fórmula que lo calcule directamente, donde a es el primer término, d es la diferencia constante y n es la posición del término que queremos.",
+      "formula": "término_n = a + (n − 1) × d",
+      "ejemplos": [
+        "Sucesión 3, 6, 9, 12...: a=3, d=3. término_10 = 3 + (10-1)×3 = 3+27 = 30 panes.",
+        "Con a=4 y d=5: término_6 = 4 + (6-1)×5 = 4+25 = 29."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Con a=4 y d=5, el término 6 de la sucesión es ___.",
+        "respuestaCorrecta": "29",
+        "retroalimentacion": "término_6 = 4 + (6-1)×5 = 4+25 = 29."
+      }
+    },
+    {
+      "titulo": "Aplicar la fórmula a problemas con figuras",
+      "explicacion": "Muchos problemas de sucesiones se presentan con figuras hechas de palillos, fichas o macetas. El primer paso siempre es identificar el primer término (a) y la diferencia (d) contando cuánto crece la figura en cada paso, y luego aplicar la fórmula.",
+      "ejemplos": [
+        "Una sucesión de figuras con palillos empieza en 4 palillos y aumenta 3 en cada figura: a=4, d=3. término_7 = 4 + (7-1)×3 = 4+18 = 22 palillos."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "Una sucesión de figuras con palillos que empieza en 4 y aumenta 3 en cada figura tiene 25 palillos en la figura 7.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Falso: término_7 = 4 + (7-1)×3 = 4+18 = 22 palillos, no 25."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Con a=4 y d=5, ¿cuál es el término 6 de la sucesión?",
         "opciones": ["24", "29", "30", "34"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "término_6 = 4 + (6-1)×5 = 4+25 = 29."
       },
       {
-        "pregunta": "Una sucesión de figuras con palillos empieza en 4 palillos y aumenta 3 en cada figura. ¿Cuántos palillos tiene la figura 7?",
-        "opciones": ["21", "22", "25", "28"],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "término_7 = 4 + (7-1)×3 = 4+18 = 22."
+        "tipo": "llenar_frase",
+        "frase": "En la sucesión 5, 8, 11, 14..., el término 10 es ___.",
+        "respuestaCorrecta": "32",
+        "retroalimentacion": "a=5, d=3. término_10 = 5 + (10-1)×3 = 5+27 = 32."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada sucesión (dado su primer término a y diferencia d) con el valor de su término 5.",
+        "columnaA": ["a=2, d=4", "a=10, d=-2", "a=1, d=1"],
+        "columnaB": ["5", "2", "18"],
+        "parejasCorrectas": [2, 1, 0],
+        "retroalimentacion": "a=2,d=4: término_5=2+16=18. a=10,d=-2: término_5=10-8=2. a=1,d=1: término_5=1+4=5."
       }
     ]
   }

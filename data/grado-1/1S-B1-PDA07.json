@@ -11,17 +11,30 @@
     "contexto": "En una papelería, el precio de los cuadernos es siempre $15 cada uno sin importar cuántos compres. En cambio, en un taxi, la tarifa inicial es de $12 más $2 por cada kilómetro recorrido.",
     "pregunta": "¿Cuál de las dos situaciones (el precio de los cuadernos o la tarifa del taxi) es una relación proporcional, y cuál no? ¿Por qué?"
   },
-  "sintesis": {
-    "explicacion": "Una relación es proporcional cuando, al aumentar una cantidad, la otra aumenta en la misma proporción y la razón entre ambas siempre es constante (y pasa por el origen: cuando x=0, y=0). Si hay un valor fijo inicial que se suma, como la tarifa base del taxi, la relación no es proporcional.",
-    "formula": "Proporcional: y = kx.  No proporcional (con valor inicial): y = kx + b",
-    "ejemploResuelto": "Cuadernos: y=15x (proporcional, si compras 0 pagas 0). Taxi: y=12+2x (no proporcional, aunque no viajes pagas los $12 iniciales)."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "¿Qué hace proporcional a una relación?",
+      "explicacion": "Una relación es proporcional cuando, al aumentar una cantidad, la otra aumenta en la misma proporción y la razón entre ambas siempre es constante. Una señal clara: si x=0, entonces y=0 (la recta pasa por el origen).",
+      "formula": "Proporcional: y = kx",
+      "ejemplos": [
+        "Cuadernos a $15 cada uno: y=15x. Si compras 0 cuadernos, pagas $0: es proporcional."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "Si compras 0 cuadernos a $15 cada uno, pagas $0; por eso esta relación es proporcional.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: como y=15x pasa por (0,0), es una relación proporcional."
+      }
+    },
+    {
+      "titulo": "Relaciones no proporcionales (con valor inicial)",
+      "explicacion": "Si hay un valor fijo inicial que se suma, como la tarifa base de un taxi, la relación no es proporcional, porque aunque x=0 (no viajas nada), y no es 0 (igual pagas la tarifa base).",
+      "formula": "No proporcional: y = kx + b  (con b ≠ 0)",
+      "ejemplos": [
+        "Taxi: y=12+2x. Aunque no viajes (x=0), pagas los $12 iniciales: no es proporcional."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuál de estas es una relación proporcional?",
         "opciones": [
           "El costo de la renta de una bici: $20 fijos más $5 por hora",
@@ -31,14 +44,29 @@
         ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "El costo de las manzanas es y=18x: si compras 0 kg pagas $0, es proporcional."
-      },
-      {
-        "pregunta": "En una tabla, x=2 → y=10 y x=4 → y=20. ¿Cuál es la constante de proporcionalidad k?",
-        "opciones": ["2", "5", "8", "10"],
-        "respuestaCorrecta": 1,
+      }
+    },
+    {
+      "titulo": "Identificar la constante k y reconocer gráficas",
+      "explicacion": "En una relación proporcional, la constante k se calcula dividiendo y entre x en cualquier par de valores de la tabla. En una gráfica, una relación proporcional siempre es una recta que pasa por el origen (0,0); si la recta no pasa por el origen, no es proporcional.",
+      "formula": "k = y ÷ x",
+      "ejemplos": [
+        "En una tabla, x=2 → y=10 y x=4 → y=20: k = 10/2 = 5 (y también 20/4 = 5, se confirma que es constante)."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "En una tabla, x=2 → y=10 y x=4 → y=20. La constante de proporcionalidad k es ___.",
+        "respuestaCorrecta": "5",
         "retroalimentacion": "k = y/x = 10/2 = 5."
-      },
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuál gráfica representa una relación NO proporcional?",
         "opciones": [
           "Una recta que pasa por el origen (0,0)",
@@ -48,6 +76,20 @@
         ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "Si la recta no pasa por el origen, existe un valor inicial fijo, por lo que no es proporcional."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "La tarifa de taxi con $12 fijos más $2 por km es una relación proporcional.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Falso: tiene un cargo fijo ($12) que se paga aunque no se recorra ningún km, así que no es proporcional."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada situación con el tipo de relación que representa.",
+        "columnaA": ["Cuadernos a $15 c/u", "Taxi: $12 + $2/km", "Manzanas a $18/kg"],
+        "columnaB": ["No proporcional (tiene cargo fijo)", "Proporcional (y=18x)", "Proporcional (y=15x)"],
+        "parejasCorrectas": [2, 0, 1],
+        "retroalimentacion": "Cuadernos y manzanas son proporcionales (y=kx); el taxi no lo es, porque tiene un cargo fijo."
       }
     ]
   }

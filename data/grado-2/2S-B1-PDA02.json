@@ -11,33 +11,76 @@
     "contexto": "Una maestra quiere formar equipos iguales con 24 niñas y 36 niños, de manera que cada equipo tenga el mismo número de niñas y el mismo número de niños, usando la mayor cantidad de equipos posible.",
     "pregunta": "¿Cuántos equipos puede formar como máximo, y cuántas niñas y niños tendrá cada equipo?"
   },
-  "sintesis": {
-    "explicacion": "El máximo común divisor (MCD) de dos números es el mayor número que divide exactamente a ambos; sirve para repartir en partes iguales. El mínimo común múltiplo (mcm) es el menor número que es múltiplo de ambos; sirve para sincronizar eventos que se repiten. Las operaciones cumplen propiedades: conmutativa (a+b=b+a), asociativa ((a+b)+c=a+(b+c)) y distributiva (a×(b+c)=a×b+a×c).",
-    "formula": "MCD(24,36)=12 ; mcm(24,36)=72",
-    "ejemploResuelto": "24=2³×3, 36=2²×3². MCD=2²×3=12. Con 12 equipos: 24÷12=2 niñas y 36÷12=3 niños por equipo."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Máximo común divisor (MCD)",
+      "explicacion": "El máximo común divisor (MCD) de dos números es el mayor número que divide exactamente a ambos. Sirve para repartir o agrupar cosas en partes iguales usando la mayor cantidad de grupos posible.",
+      "formula": "MCD(24,36) = 12",
+      "ejemplos": [
+        "24 = 2³×3, 36 = 2²×3². El MCD toma los factores comunes con el menor exponente: 2²×3 = 12.",
+        "Con 12 equipos: 24÷12 = 2 niñas y 36÷12 = 3 niños por equipo."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es el MCD de 18 y 30?",
         "opciones": ["3", "6", "9", "90"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "18=2×3², 30=2×3×5. MCD = 2×3 = 6."
-      },
+      }
+    },
+    {
+      "titulo": "Mínimo común múltiplo (mcm)",
+      "explicacion": "El mínimo común múltiplo (mcm) es el menor número que es múltiplo de ambos números a la vez. Sirve para sincronizar eventos que se repiten con distinta frecuencia, como saber cada cuántos días coinciden dos actividades.",
+      "formula": "mcm(24,36) = 72",
+      "ejemplos": [
+        "Múltiplos de 4: 4, 8, 12, 16... Múltiplos de 6: 6, 12, 18, 24... El menor común es 12, así que mcm(4,6)=12."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "El mcm de 4 y 6 es ___.",
+        "respuestaCorrecta": "12",
+        "retroalimentacion": "Múltiplos de 4: 4,8,12... de 6: 6,12,18... El menor común es 12."
+      }
+    },
+    {
+      "titulo": "Propiedades de las operaciones",
+      "explicacion": "Las operaciones cumplen propiedades: la conmutativa dice que el orden no altera el resultado en sumas y multiplicaciones (a+b=b+a); la asociativa dice que se pueden agrupar de distintas formas ((a+b)+c=a+(b+c)); y la distributiva reparte una multiplicación sobre una suma (a×(b+c)=a×b+a×c).",
+      "ejemplos": [
+        "5×(3+2) = 5×3 + 5×2 = 15+10 = 25: es la propiedad distributiva.",
+        "3+4 = 4+3: es la propiedad conmutativa."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "5×(3+2) = 5×3 + 5×2 es un ejemplo de la propiedad distributiva.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: es la propiedad distributiva de la multiplicación sobre la suma."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es el mcm de 4 y 6?",
         "opciones": ["2", "10", "12", "24"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "Múltiplos de 4: 4,8,12... de 6: 6,12,18... El menor común es 12."
       },
       {
-        "pregunta": "¿Qué propiedad se muestra en: 5×(3+2) = 5×3 + 5×2?",
-        "opciones": ["Conmutativa", "Asociativa", "Distributiva", "Ninguna"],
-        "respuestaCorrecta": 2,
-        "retroalimentacion": "Es la propiedad distributiva de la multiplicación sobre la suma."
+        "tipo": "llenar_frase",
+        "frase": "El MCD de 18 y 30 es ___.",
+        "respuestaCorrecta": "6",
+        "retroalimentacion": "18=2×3², 30=2×3×5. MCD = 2×3 = 6."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada ejemplo con la propiedad que muestra.",
+        "columnaA": ["5×(3+2)=5×3+5×2", "3+4=4+3", "(2+3)+5=2+(3+5)"],
+        "columnaB": ["Asociativa", "Distributiva", "Conmutativa"],
+        "parejasCorrectas": [1, 2, 0],
+        "retroalimentacion": "El primero es distributiva, el segundo conmutativa, el tercero asociativa."
       }
     ]
   }

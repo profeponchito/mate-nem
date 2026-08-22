@@ -11,33 +11,74 @@
     "contexto": "Una tienda anuncia una playera con 20% de descuento. Después del descuento, el precio final quedó en $240.",
     "pregunta": "¿Cuál era el precio original de la playera antes del descuento?"
   },
-  "sintesis": {
-    "explicacion": "Muchos problemas cotidianos se pueden modelar con una ecuación lineal: se representa la cantidad desconocida con una variable y se traduce el problema en una igualdad. Para problemas de porcentaje, si un precio p tiene un descuento del r%, el precio final es p − (r/100)p = p(1 − r/100).",
-    "formula": "precio final = precio original × (1 − descuento/100)",
-    "ejemploResuelto": "240 = x(1 − 0.20) = 0.80x  →  x = 240 ÷ 0.80 = 300. El precio original era $300."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "Modelar problemas con ecuaciones lineales",
+      "explicacion": "Muchos problemas cotidianos se pueden modelar con una ecuación lineal: se representa la cantidad desconocida con una variable y se traduce el problema en una igualdad, para después despejar la variable.",
+      "ejemplos": [
+        "'Un número más el doble de sí mismo es 27' se traduce como x + 2x = 27 → 3x=27 → x=9."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "Un número más el doble de sí mismo es 27 (x + 2x = 27). ¿Cuál es el número?",
         "opciones": ["7", "9", "13.5", "27"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "3x=27 → x=9."
-      },
-      {
-        "pregunta": "Un artículo cuesta $150 y tiene 15% de descuento. ¿Cuál es el precio final?",
-        "opciones": ["$127.50", "$135", "$142.50", "$165"],
-        "respuestaCorrecta": 0,
+      }
+    },
+    {
+      "titulo": "Porcentaje de descuento",
+      "explicacion": "Si un precio p tiene un descuento del r%, el precio final es el precio original menos ese porcentaje, lo que equivale a multiplicar por (1 − r/100).",
+      "formula": "precio final = precio original × (1 − descuento/100)",
+      "ejemplos": [
+        "Un artículo de $150 con 15% de descuento: 150 × (1 − 0.15) = 150 × 0.85 = $127.50."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Un artículo cuesta $150 y tiene 15% de descuento. Su precio final es $___.",
+        "respuestaCorrecta": "127.50",
         "retroalimentacion": "150 × (1 − 0.15) = 150 × 0.85 = $127.50."
-      },
+      }
+    },
+    {
+      "titulo": "Despejar el precio original a partir de un porcentaje",
+      "explicacion": "Cuando se conoce el precio final después de un descuento o aumento, se puede despejar el precio original dividiendo entre el factor correspondiente (1 − descuento/100, o 1 + aumento/100).",
+      "ejemplos": [
+        "Playera con 20% de descuento y precio final $240: 240 = x(1 − 0.20) = 0.80x → x = 240 ÷ 0.80 = $300.",
+        "Producto con aumento del 10% que ahora cuesta $88: 88 = x×1.10 → x = 88÷1.10 = $80."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "Si un producto tuvo un aumento del 10% y ahora cuesta $88, entonces costaba $80 antes del aumento.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 88 = x×1.10 → x = 88÷1.10 = 80."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Después de un aumento del 10%, un producto cuesta $88. ¿Cuánto costaba antes del aumento?",
         "opciones": ["$78.80", "$79.20", "$80", "$97"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "88 = x×1.10 → x = 88÷1.10 = 80."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "Una playera con 20% de descuento quedó en $240. Su precio original era $___.",
+        "respuestaCorrecta": "300",
+        "retroalimentacion": "240 = x(1 − 0.20) = 0.80x → x = 240 ÷ 0.80 = $300."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada planteamiento con su resultado.",
+        "columnaA": ["x + 2x = 27", "150 × (1 − 0.15)", "x × 1.10 = 88"],
+        "columnaB": ["80", "127.50", "9"],
+        "parejasCorrectas": [2, 1, 0],
+        "retroalimentacion": "x+2x=27 → x=9; 150×0.85=127.50; x×1.10=88 → x=80."
       }
     ]
   }

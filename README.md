@@ -2,18 +2,22 @@
 
 Aplicación web pública y gamificada para la enseñanza de Matemáticas en
 Educación Secundaria, alineada a la Nueva Escuela Mexicana (NEM). Acceso
-libre por enlace (sin contraseñas), registro ligero del alumno, PDAs
-estructurados en tres fases, gamificación con puntos/estrellas, y
-constancias descargables con código QR de verificación.
+libre por enlace (sin contraseñas), registro ligero del alumno, PDAs con el
+tema explicado en subtemas, preguntas de repaso y un reto final gamificado
+con puntos/estrellas, y constancias descargables con código QR de verificación.
 
 ## Estado del proyecto
 
 Este repositorio se construye por pasos. Ya está completo el flujo principal:
-registro del alumno → selección de grado → PDA (problematización → síntesis →
-actividad) → resultado con puntos/estrellas → envío a Sheets → constancia
-con QR. El Trimestre 1 completo (17 PDAs: 7 en 1°, 6 en 2°, 4 en 3°) ya está
-cargado. Falta la página de verificación de folios y el despliegue real del
-backend.
+registro del alumno → selección de grado → PDA (problematización → subtemas
+con checks formativos → reto final con reactivos mixtos) → resultado con
+puntos/estrellas → envío a Sheets → constancia con QR. Cada PDA muestra una
+barra de avance (%) durante todo el recorrido. El Trimestre 1 completo (17
+PDAs: 7 en 1°, 6 en 2°, 4 en 3°) ya está cargado con el diseño ampliado:
+tema explicado en subtemas con ejemplos, preguntas de repaso entre subtemas
+y un reto final que mezcla los 4 tipos de reactivo soportados (opción
+múltiple, verdadero/falso, llenar frase, relacionar columnas). Falta la
+página de verificación de folios y el despliegue real del backend.
 
 ## Árbol del repositorio
 
@@ -87,7 +91,8 @@ el sitio ya se sirve por `https://`.
 3. ✅ Router + carga dinámica de PDAs (`pda-loader.js`) y motor de gamificación.
 4. ✅ Integración final: flujo completo PDA → actividad → envío a Sheets → constancia (probado de punta a punta).
 5. ✅ Trimestre 1 completo en los 3 grados (17 PDAs, transcritos del Programa Sintético Fase 6 — ver `data/README.md` sobre la distribución por grado).
-6. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
-7. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad").
-8. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
-9. ⏳ Pruebas en dispositivos móviles reales.
+6. ✅ Rediseño de los PDA: tema explicado en subtemas (con ejemplos y checks formativos de 4 tipos de pregunta), barra de % de avance y reto final con reactivos mixtos — aplicado a los 17 PDAs existentes y probado de punta a punta.
+7. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
+8. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad").
+9. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
+10. ⏳ Pruebas en dispositivos móviles reales.

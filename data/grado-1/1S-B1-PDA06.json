@@ -11,33 +11,74 @@
     "contexto": "Ana tiene cierta cantidad de dinero ahorrado (x). Su tía le regala $150 y ahora tiene $430 en total.",
     "pregunta": "¿Cuánto dinero tenía Ana ahorrado antes del regalo de su tía?"
   },
-  "sintesis": {
-    "explicacion": "Una ecuación es una igualdad con una incógnita. Para resolverla, se aplican las propiedades de la igualdad: lo que se hace de un lado de la igualdad se debe hacer también del otro, para 'despejar' la variable.",
-    "formula": "Ax + B = C  →  x = (C − B) / A",
-    "ejemploResuelto": "x + 150 = 430  →  x = 430 − 150 = 280. Ana tenía $280 ahorrados."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "¿Qué es una ecuación?",
+      "explicacion": "Una ecuación es una igualdad con una incógnita. Para resolverla, se aplican las propiedades de la igualdad: lo que se hace de un lado de la igualdad se debe hacer también del otro, para 'despejar' la variable.",
+      "ejemplos": [
+        "5x = 45: para despejar x, se divide ambos lados entre 5: x = 45 ÷ 5 = 9."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "Resuelve: 5x = 45",
         "opciones": ["x=5", "x=9", "x=40", "x=225"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "x = 45 ÷ 5 = 9."
-      },
+      }
+    },
+    {
+      "titulo": "Ecuaciones de la forma Ax + B = C",
+      "explicacion": "Cuando la ecuación tiene un término que se suma o resta además del que multiplica a x, primero se despeja ese término (pasándolo al otro lado con la operación inversa) y después se despeja x dividiendo.",
+      "formula": "Ax + B = C  →  x = (C − B) / A",
+      "ejemplos": [
+        "x + 150 = 430  →  x = 430 − 150 = 280. Ana tenía $280 ahorrados.",
+        "3x + 4 = 19  →  3x = 19-4=15  →  x=15÷3=5."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Resuelve: 3x + 4 = 19. x = ___.",
+        "respuestaCorrecta": "5",
+        "retroalimentacion": "3x = 19-4=15; x=15÷3=5."
+      }
+    },
+    {
+      "titulo": "Ecuaciones con la variable en ambos lados",
+      "explicacion": "Cuando la variable aparece en ambos lados de la igualdad (Ax+B=Cx+D), primero se agrupan los términos con x de un lado y los términos numéricos del otro, y después se despeja x.",
+      "ejemplos": [
+        "2x + 3 = x + 10  →  2x - x = 10 - 3  →  x = 7."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "La solución de 2x + 3 = x + 10 es x = 7.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 2x - x = 10 - 3 → x = 7."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "Resuelve: 3x + 4 = 19",
         "opciones": ["x=5", "x=6.33", "x=7.67", "x=15"],
         "respuestaCorrecta": 0,
         "retroalimentacion": "3x = 19-4=15; x=15÷3=5."
       },
       {
-        "pregunta": "Resuelve: 2x + 3 = x + 10",
-        "opciones": ["x=3", "x=7", "x=13", "x=-7"],
-        "respuestaCorrecta": 1,
+        "tipo": "llenar_frase",
+        "frase": "Resuelve: 2x + 3 = x + 10. x = ___.",
+        "respuestaCorrecta": "7",
         "retroalimentacion": "2x - x = 10 - 3 → x = 7."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada ecuación con su solución.",
+        "columnaA": ["5x = 45", "x + 150 = 430", "2x + 3 = x + 10"],
+        "columnaB": ["280", "7", "9"],
+        "parejasCorrectas": [2, 0, 1],
+        "retroalimentacion": "5x=45 → x=9; x+150=430 → x=280; 2x+3=x+10 → x=7."
       }
     ]
   }

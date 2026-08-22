@@ -1,21 +1,26 @@
 /**
  * MATE-NEM · Motor de gamificación
  * ----------------------------------------------------
- * Calcula puntaje, estrellas y retroalimentación a partir de las
- * respuestas del alumno a los reactivos de la fase "actividad" de un PDA.
+ * Calcula puntaje, estrellas y retroalimentación del "reto" final de un PDA,
+ * y evalúa preguntas individuales (usado también por los checks formativos
+ * entre subtemas). Soporta 4 tipos de reactivo:
+ *   - opcion_multiple    : respuesta = índice de la opción elegida
+ *   - verdadero_falso    : respuesta = boolean
+ *   - llenar_frase       : respuesta = string (se compara sin mayúsculas/acentos)
+ *   - relacionar_columnas: respuesta = array de índices (uno por fila de columnaA)
  */
 
 /**
- * @param {Object} pda - el PDA completo (usa pda.actividad)
- * @param {number[]} respuestas - índice de opción elegida por reactivo, mismo orden que pda.actividad.reactivos
+ * @param {Object} pda - el PDA completo (usa pda.reto)
+ * @param {Array} respuestas - una respuesta por reactivo de pda.reto.reactivos, mismo orden
  * @returns {{correctas:number, total:number, porcentaje:number, puntaje:number, estrellas:number, detalle:Array}}
  */
 export function calcularResultado(pda, respuestas) {
-  const { reactivos, puntosPorReactivo, estrellasMax = 3 } = pda.actividad;
+  const { reactivos, puntosPorReactivo, estrellasMax = 3 } = pda.reto;
 
   const detalle = reactivos.map((reactivo, i) => ({
-    pregunta: reactivo.pregunta,
-    esCorrecta: respuestas[i] === reactivo.respuestaCorrecta,
+    resumen: resumenPregunta_(reactivo),
+    esCorrecta: esRespuestaCorrecta(reactivo, respuestas[i]),
     retroalimentacion: reactivo.retroalimentacion || ''
   }));
 
@@ -26,6 +31,41 @@ export function calcularResultado(pda, respuestas) {
   const estrellas = calcularEstrellas_(porcentaje, estrellasMax);
 
   return { correctas, total, porcentaje, puntaje, estrellas, detalle };
+}
+
+/** Evalúa una sola pregunta (de cualquier tipo) contra la respuesta capturada del DOM. */
+export function esRespuestaCorrecta(reactivo, respuesta) {
+  if (respuesta === null || respuesta === undefined) return false;
+
+  switch (reactivo.tipo) {
+    case 'opcion_multiple':
+      return Number(respuesta) === reactivo.respuestaCorrecta;
+
+    case 'verdadero_falso':
+      return Boolean(respuesta) === Boolean(reactivo.respuestaCorrecta);
+
+    case 'llenar_frase':
+      return normalizarTexto_(respuesta) === normalizarTexto_(reactivo.respuestaCorrecta);
+
+    case 'relacionar_columnas':
+      if (!Array.isArray(respuesta) || respuesta.length !== reactivo.parejasCorrectas.length) return false;
+      return respuesta.every((valor, i) => Number(valor) === reactivo.parejasCorrectas[i]);
+
+    default:
+      return false;
+  }
+}
+
+function resumenPregunta_(reactivo) {
+  return reactivo.pregunta || reactivo.enunciado || reactivo.frase || reactivo.instruccion || '';
+}
+
+function normalizarTexto_(texto = '') {
+  return String(texto)
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, ''); // quita acentos para comparar "area" con "área"
 }
 
 function calcularEstrellas_(porcentaje, estrellasMax) {

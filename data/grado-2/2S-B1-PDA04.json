@@ -11,33 +11,74 @@
     "contexto": "Un jardinero acomoda macetas en arreglos cuadrados: en el arreglo 1 usa 1 maceta, en el arreglo 2 usa 4 macetas, en el arreglo 3 usa 9 macetas, formando siempre un cuadrado perfecto.",
     "pregunta": "¿Cuántas macetas necesitará para el arreglo número 8, sin tener que acomodarlas todas?"
   },
-  "sintesis": {
-    "explicacion": "En una progresión cuadrática, los términos no aumentan una cantidad constante, sino que siguen un patrón relacionado con el cuadrado de la posición del término. Cuando los términos son 1, 4, 9, 16..., la expresión algebraica es n², donde n es la posición del término.",
-    "formula": "término_n = n²  (en progresiones cuadráticas simples)",
-    "ejemploResuelto": "Para el arreglo 8: término_8 = 8² = 64 macetas."
-  },
-  "actividad": {
-    "tipo": "opcion_multiple",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
+  "subtemas": [
+    {
+      "titulo": "¿Qué es una progresión cuadrática?",
+      "explicacion": "En una progresión cuadrática, los términos no aumentan una cantidad constante (como en la progresión aritmética), sino que siguen un patrón relacionado con el cuadrado de la posición del término. Cuando los términos son 1, 4, 9, 16..., la expresión algebraica es n², donde n es la posición del término.",
+      "formula": "término_n = n²  (en progresiones cuadráticas simples)",
+      "ejemplos": [
+        "1²=1, 2²=4, 3²=9, 4²=16: cada término es el cuadrado de su posición.",
+        "Para el arreglo 8 de macetas: término_8 = 8² = 64 macetas."
+      ],
+      "check": {
+        "tipo": "opcion_multiple",
         "pregunta": "En la sucesión 1, 4, 9, 16, 25..., ¿cuál es el término 6?",
         "opciones": ["30", "36", "32", "40"],
         "respuestaCorrecta": 1,
         "retroalimentacion": "término_6 = 6² = 36."
-      },
+      }
+    },
+    {
+      "titulo": "Progresiones cuadráticas con coeficiente",
+      "explicacion": "Algunas progresiones cuadráticas no son exactamente n², sino un múltiplo de n² (por ejemplo 2n²). Para reconocerlas, se compara cada término con el cuadrado de su posición y se busca el factor constante que los relaciona.",
+      "ejemplos": [
+        "Una sucesión de figuras cuadradas usa 2n² fichas: figura 1 → 2(1)²=2; figura 2 → 2(2)²=8; figura 5 → 2(5)²=2×25=50."
+      ],
+      "check": {
+        "tipo": "llenar_frase",
+        "frase": "Una sucesión de figuras cuadradas usa 2n² fichas. La figura 5 usa ___ fichas.",
+        "respuestaCorrecta": "50",
+        "retroalimentacion": "2×(5²) = 2×25 = 50."
+      }
+    },
+    {
+      "titulo": "Reconocer la expresión algebraica de una progresión cuadrática",
+      "explicacion": "Para saber si una sucesión es cuadrática, se compara con los cuadrados 1, 4, 9, 16... Si los términos coinciden exactamente, la expresión es n²; si son el doble, el triple, etc., se multiplica n² por ese factor.",
+      "ejemplos": [
+        "La sucesión 1, 4, 9, 16... coincide exactamente con n², no con una expresión lineal como 2n."
+      ],
+      "check": {
+        "tipo": "verdadero_falso",
+        "enunciado": "La expresión algebraica que representa la sucesión 1, 4, 9, 16... es 2n.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Falso: 2n daría 2, 4, 6, 8..., no 1, 4, 9, 16. La expresión correcta es n²."
+      }
+    }
+  ],
+  "reto": {
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
       {
+        "tipo": "opcion_multiple",
         "pregunta": "¿Qué expresión algebraica representa la sucesión 1, 4, 9, 16...?",
         "opciones": ["2n", "n+3", "n²", "2n²"],
         "respuestaCorrecta": 2,
         "retroalimentacion": "Cada término es el cuadrado de su posición: 1²=1, 2²=4, 3²=9, 4²=16."
       },
       {
-        "pregunta": "Una sucesión de figuras cuadradas usa 2n² fichas. ¿Cuántas fichas usa la figura 5?",
-        "opciones": ["10", "25", "50", "100"],
-        "respuestaCorrecta": 2,
-        "retroalimentacion": "2×(5²) = 2×25 = 50."
+        "tipo": "llenar_frase",
+        "frase": "En la sucesión 1, 4, 9, 16, 25..., el término 6 es ___.",
+        "respuestaCorrecta": "36",
+        "retroalimentacion": "término_6 = 6² = 36."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada expresión algebraica con el valor de su término 4.",
+        "columnaA": ["n²", "2n²", "n²+1"],
+        "columnaB": ["17", "32", "16"],
+        "parejasCorrectas": [2, 1, 0],
+        "retroalimentacion": "n²: 4²=16. 2n²: 2×16=32. n²+1: 16+1=17."
       }
     ]
   }
