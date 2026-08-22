@@ -1,0 +1,49 @@
+{
+  "id": "2S-B1-PDA03",
+  "grado": "2°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Proporcionalidad directa en la vida cotidiana",
+  "contenido": "Resolución de problemas de proporcionalidad directa.",
+  "pda": "Resuelve problemas de proporcionalidad directa mediante el valor unitario, la constante de proporcionalidad y otros procedimientos.",
+  "problematizacion": {
+    "contexto": "En la cooperativa escolar, 4 paquetes de galletas cuestan $60. Un grupo de compañeros quiere comprar 10 paquetes para compartir en el salón.",
+    "pregunta": "¿Cuánto deberán pagar en total por los 10 paquetes si el precio se mantiene proporcional?"
+  },
+  "sintesis": {
+    "explicacion": "Dos cantidades son directamente proporcionales cuando, al multiplicar o dividir una de ellas por un número, la otra queda multiplicada o dividida por el mismo número. La razón entre ambas cantidades (la constante de proporcionalidad, k) se mantiene siempre igual.",
+    "formula": "y = k · x, donde k = y₁ / x₁",
+    "ejemploResuelto": "Si 4 paquetes cuestan $60, entonces k = 60 / 4 = 15 (precio por paquete). Para 10 paquetes: y = 15 × 10 = $150."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "Si 3 kg de manzanas cuestan $54, ¿cuánto cuestan 7 kg?",
+        "opciones": ["$108", "$126", "$150", "$162"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "La constante k = 54/3 = 18 por kg. Entonces 7 × 18 = $126."
+      },
+      {
+        "pregunta": "Una receta usa 2 tazas de harina para 12 panqués. ¿Cuántas tazas se necesitan para 30 panqués?",
+        "opciones": ["4", "5", "6", "7.5"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "k = 2/12 = 1/6 taza por panqué. Para 30: 30 × 1/6 = 5 tazas."
+      },
+      {
+        "pregunta": "¿Cuál de las siguientes situaciones representa una proporcionalidad directa?",
+        "opciones": [
+          "El tiempo que tarda una tinaja en llenarse según el número de grifos abiertos",
+          "El costo total de boletos de cine según el número de boletos comprados",
+          "El tiempo de un viaje según la velocidad constante del auto",
+          "La edad de una persona según su estatura"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "A más boletos, el costo aumenta en la misma proporción: es directamente proporcional. Las otras opciones son proporcionalidad inversa o no son proporcionales."
+      }
+    ]
+  }
+}

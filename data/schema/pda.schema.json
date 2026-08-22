@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PDA MATE-NEM",
+  "description": "Estructura modular de un Proceso de Desarrollo de Aprendizaje (PDA) de Matemáticas, NEM. Cada archivo en data/grado-X/ debe cumplir este esquema.",
+  "type": "object",
+  "required": ["id", "grado", "campoFormativo", "eje", "titulo", "problematizacion", "sintesis", "actividad"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador único, convención: '<grado>S-B<bloque>-PDA<num>', ej. '2S-B1-PDA03'"
+    },
+    "grado": {
+      "type": "string",
+      "enum": ["1°", "2°", "3°"]
+    },
+    "trimestre": {
+      "type": "string",
+      "enum": ["1", "2", "3"],
+      "description": "Trimestre o bloque del ciclo escolar en que se ubica el PDA"
+    },
+    "campoFormativo": {
+      "type": "string",
+      "const": "Saberes y Pensamiento Científico",
+      "description": "Campo formativo NEM al que pertenece Matemáticas"
+    },
+    "eje": {
+      "type": "string",
+      "description": "Eje articulador o de contenido, ej. 'Sentido numérico y pensamiento algebraico'"
+    },
+    "titulo": {
+      "type": "string",
+      "description": "Nombre corto y amigable del PDA, usado en la navegación y en la constancia"
+    },
+    "contenido": {
+      "type": "string",
+      "description": "Enunciado oficial del Contenido de la NEM (fascículo correspondiente)"
+    },
+    "pda": {
+      "type": "string",
+      "description": "Enunciado oficial del Proceso de Desarrollo de Aprendizaje"
+    },
+    "problematizacion": {
+      "type": "object",
+      "description": "Fase A: desafío o contexto real que introduce el tema",
+      "required": ["contexto", "pregunta"],
+      "properties": {
+        "contexto": { "type": "string" },
+        "imagen": { "type": "string", "description": "Ruta opcional a una imagen de apoyo" },
+        "pregunta": { "type": "string" }
+      }
+    },
+    "sintesis": {
+      "type": "object",
+      "description": "Fase B: síntesis conceptual/teórica corta",
+      "required": ["explicacion"],
+      "properties": {
+        "explicacion": { "type": "string" },
+        "formula": { "type": "string" },
+        "ejemploResuelto": { "type": "string" }
+      }
+    },
+    "actividad": {
+      "type": "object",
+      "description": "Fase C: actividad gamificada",
+      "required": ["tipo", "reactivos", "puntosPorReactivo"],
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": ["opcion_multiple", "arrastrar_soltar", "completar", "problema_paso_a_paso"]
+        },
+        "puntosPorReactivo": { "type": "integer" },
+        "estrellasMax": { "type": "integer", "default": 3 },
+        "reactivos": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["pregunta", "opciones", "respuestaCorrecta"],
+            "properties": {
+              "pregunta": { "type": "string" },
+              "opciones": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+              "respuestaCorrecta": {
+                "type": "integer",
+                "description": "Índice (base 0) de la opción correcta dentro de 'opciones'"
+              },
+              "retroalimentacion": {
+                "type": "string",
+                "description": "Explicación breve que se muestra tras responder, correcta o incorrectamente"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "grado": "2°",
+  "descripcion": "Manifiesto de PDAs disponibles para 2° de secundaria. pda-loader.js lee este archivo para saber qué .json cargar (GitHub Pages no permite listar directorios dinámicamente).",
+  "archivos": [
+    "2S-B1-PDA03.json"
+  ]
+}
