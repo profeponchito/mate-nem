@@ -1,0 +1,44 @@
+{
+  "id": "1S-B1-PDA03",
+  "grado": "1°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Sumar, restar, multiplicar y dividir con signos",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Reconoce el significado de las cuatro operaciones básicas al operar números con signo. Comprueba las propiedades conmutativa, asociativa y distributiva, e identifica y aplica la jerarquía de operaciones.",
+  "problematizacion": {
+    "contexto": "Un comerciante registra sus movimientos del día: vendió $450 (+450), pagó una deuda de $300 (-300), le devolvieron $120 por un producto defectuoso (+120) pero tuvo que pagar $80 de flete (-80).",
+    "pregunta": "¿Cuál fue el balance final del día del comerciante?"
+  },
+  "sintesis": {
+    "explicacion": "Al sumar números con signo, si tienen el mismo signo se suman sus valores absolutos y se conserva el signo; si tienen signos diferentes se restan los valores absolutos y se conserva el signo del mayor. La multiplicación y división siguen la regla de signos: signos iguales dan resultado positivo, signos diferentes dan resultado negativo.",
+    "formula": "(+)×(+)=+ ; (−)×(−)=+ ; (+)×(−)=− ; (−)×(+)=−",
+    "ejemploResuelto": "450 − 300 + 120 − 80 = 190. El balance final fue +$190."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "¿Cuánto es -8 + 5?",
+        "opciones": ["-13", "-3", "3", "13"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "Signos diferentes: 8-5=3, se conserva el signo del mayor (negativo): -3."
+      },
+      {
+        "pregunta": "¿Cuánto es (-6) × (-4)?",
+        "opciones": ["-24", "-10", "10", "24"],
+        "respuestaCorrecta": 3,
+        "retroalimentacion": "Signos iguales (negativo por negativo) da resultado positivo: 24."
+      },
+      {
+        "pregunta": "Resuelve aplicando jerarquía de operaciones: 2 + 3 × (-4)",
+        "opciones": ["-20", "-10", "10", "20"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "Primero la multiplicación: 3×(-4)=-12; luego 2+(-12)=-10."
+      }
+    ]
+  }
+}

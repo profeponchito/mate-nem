@@ -1,0 +1,44 @@
+{
+  "id": "1S-B1-PDA05",
+  "grado": "1°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Del lenguaje cotidiano al lenguaje algebraico",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "Un terreno rectangular tiene un ancho desconocido que representaremos con la letra x, y su largo mide el doble del ancho más 2 metros.",
+    "pregunta": "¿Cómo se representa algebraicamente el perímetro de ese terreno?"
+  },
+  "sintesis": {
+    "explicacion": "En álgebra usamos letras (variables) para representar cantidades desconocidas o que cambian. Una expresión algebraica traduce una relación del lenguaje común: 'el doble de un número más 3' se escribe 2x + 3. El perímetro de una figura es la suma de todos sus lados.",
+    "formula": "Perímetro del rectángulo = 2(largo) + 2(ancho)",
+    "ejemploResuelto": "Si el ancho es x y el largo es 2x+2, el perímetro es 2(2x+2) + 2(x) = 4x+4+2x = 6x+4."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "¿Cómo se escribe algebraicamente 'el triple de un número menos 5'?",
+        "opciones": ["3x - 5", "x - 5/3", "3(x-5)", "5 - 3x"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "'El triple de un número' es 3x, y 'menos 5' se resta: 3x - 5."
+      },
+      {
+        "pregunta": "Un cuadrado tiene lado x. ¿Cuál es la expresión algebraica de su perímetro?",
+        "opciones": ["x²", "2x", "4x", "x/4"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "El cuadrado tiene 4 lados iguales, entonces el perímetro es 4x."
+      },
+      {
+        "pregunta": "Un triángulo tiene lados x, x+3 y 2x. ¿Cuál es la expresión de su perímetro simplificada?",
+        "opciones": ["4x+3", "3x+3", "4x", "x+3"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "x + (x+3) + 2x = 4x + 3."
+      }
+    ]
+  }
+}

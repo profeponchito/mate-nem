@@ -11,7 +11,9 @@ constancias descargables con código QR de verificación.
 Este repositorio se construye por pasos. Ya está completo el flujo principal:
 registro del alumno → selección de grado → PDA (problematización → síntesis →
 actividad) → resultado con puntos/estrellas → envío a Sheets → constancia
-con QR. Falta la página de verificación de folios y el despliegue real.
+con QR. El Trimestre 1 completo (17 PDAs: 7 en 1°, 6 en 2°, 4 en 3°) ya está
+cargado. Falta la página de verificación de folios y el despliegue real del
+backend.
 
 ## Árbol del repositorio
 
@@ -34,16 +36,12 @@ mate-nem/
 ├── components/
 │   └── constancia.html            ✅ incluido — demo aislado de la constancia
 ├── data/
-│   ├── README.md                  ✅ incluido — cómo agregar PDAs
+│   ├── README.md                  ✅ incluido — cómo agregar PDAs + fuente curricular
 │   ├── schema/
 │   │   └── pda.schema.json        ✅ incluido — esquema formal de un PDA
-│   ├── grado-1/
-│   │   └── index.json             ✅ incluido (vacío, listo para llenar)
-│   ├── grado-2/
-│   │   ├── index.json             ✅ incluido
-│   │   └── 2S-B1-PDA03.json       ✅ incluido — ejemplo funcional (proporcionalidad)
-│   └── grado-3/
-│       └── index.json             ✅ incluido (vacío, listo para llenar)
+│   ├── grado-1/                   ✅ 7 PDAs — Trimestre 1 completo (1S-B1-PDA01…07)
+│   ├── grado-2/                   ✅ 6 PDAs — Trimestre 1 completo (2S-B1-PDA01…06)
+│   └── grado-3/                   ✅ 4 PDAs — Trimestre 1 completo (3S-B1-PDA01…04)
 └── backend/
     └── google-apps-script/
         ├── Code.gs                ✅ incluido — Web Endpoint (doPost/doGet)
@@ -71,18 +69,16 @@ python3 -m http.server 8000
 Y abre `http://localhost:8000/`. En GitHub Pages esto no es problema, porque
 el sitio ya se sirve por `https://`.
 
-1. **Flujo completo:** regístrate con cualquier nombre/grado/grupo, entra a
-   2° de secundaria (es el único grado con un PDA de ejemplo cargado),
-   resuelve "Proporcionalidad directa en la vida cotidiana" y genera tu
-   constancia. Sin el Web Endpoint desplegado, el envío a Sheets fallará
-   silenciosamente y el folio dirá `PENDIENTE-...`: es el comportamiento
-   esperado hasta que sigas el paso 2.
+1. **Flujo completo:** regístrate con cualquier nombre/grado/grupo, elige tu
+   grado — los 3 ya tienen el Trimestre 1 completo — resuelve cualquier PDA
+   y genera tu constancia. Sin el Web Endpoint desplegado, el envío a Sheets
+   fallará silenciosamente y el folio dirá `PENDIENTE-...`: es el
+   comportamiento esperado hasta que sigas el paso 2.
 2. **Backend:** sigue `backend/google-apps-script/README.md` para desplegar
    el Web Endpoint, prueba la URL `.../exec` en el navegador y pégala en
    `assets/js/webhook.js` (`WEBHOOK_URL`).
-3. **Datos:** revisa `data/grado-2/2S-B1-PDA03.json` como referencia para
-   escribir nuevos PDAs; valida contra `data/schema/pda.schema.json`. Añade
-   el nombre del archivo al `index.json` de la carpeta del grado correspondiente.
+3. **Datos:** revisa `data/README.md` — incluye la fuente curricular usada
+   y cómo agregar más PDAs; valida contra `data/schema/pda.schema.json`.
 
 ## Hoja de ruta (según se acordó en el proyecto)
 
@@ -90,7 +86,8 @@ el sitio ya se sirve por `https://`.
 2. ✅ Interfaz web: `index.html`, registro del alumno, navegación por grado.
 3. ✅ Router + carga dinámica de PDAs (`pda-loader.js`) y motor de gamificación.
 4. ✅ Integración final: flujo completo PDA → actividad → envío a Sheets → constancia (probado de punta a punta).
-5. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
-6. ⏳ Completar los PDAs oficiales de la NEM para 1°, 2° y 3° (hoy solo hay 1 de ejemplo).
-7. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
-8. ⏳ Pruebas en dispositivos móviles reales.
+5. ✅ Trimestre 1 completo en los 3 grados (17 PDAs, transcritos del Programa Sintético Fase 6 — ver `data/README.md` sobre la distribución por grado).
+6. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
+7. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad").
+8. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
+9. ⏳ Pruebas en dispositivos móviles reales.

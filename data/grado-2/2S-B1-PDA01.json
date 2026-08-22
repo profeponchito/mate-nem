@@ -1,0 +1,44 @@
+{
+  "id": "2S-B1-PDA01",
+  "grado": "2°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Ordenando enteros, fracciones y decimales con signo",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Compara y ordena números con signo (enteros, fracciones y decimales) en la recta numérica y analiza en qué casos se cumple la propiedad de densidad.",
+  "problematizacion": {
+    "contexto": "En un torneo de golf, los resultados se marcan respecto al par del campo: -3.5, -2, -1/2, 0, +1.25. Un jugador quiere saber quién va ganando (el marcador más bajo gana).",
+    "pregunta": "¿Cómo ordenas de menor a mayor los marcadores -3.5, -2, -1/2, 0 y +1.25 para saber quién va en primer lugar?"
+  },
+  "sintesis": {
+    "explicacion": "Los números con signo incluyen enteros, fracciones y decimales, y todos pueden ubicarse en la recta numérica. Para compararlos conviene expresarlos en la misma forma (todos decimales, por ejemplo). Además, entre dos números con signo siempre existe otro número (propiedad de densidad): por ejemplo, entre -2 y -1 está -1.5.",
+    "formula": "-1/2 = -0.5",
+    "ejemploResuelto": "Convirtiendo todo a decimal: -3.5, -2, -0.5, 0, 1.25. Ordenados de menor a mayor: -3.5 < -2 < -0.5 < 0 < 1.25."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "Ordena de menor a mayor: -1/4, -1, 0.5, -0.75",
+        "opciones": ["-1, -0.75, -1/4, 0.5", "0.5, -0.75, -1/4, -1", "-1, -1/4, -0.75, 0.5", "-0.75, -1, -1/4, 0.5"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "-1/4 = -0.25. Ordenados: -1 < -0.75 < -0.25 < 0.5."
+      },
+      {
+        "pregunta": "¿Qué número está entre -2 y -1 en la recta numérica?",
+        "opciones": ["-3", "-1.5", "0", "-2.5"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "-1.5 está entre -2 y -1, ya que -2 < -1.5 < -1."
+      },
+      {
+        "pregunta": "¿Cuál de estas comparaciones es correcta?",
+        "opciones": ["-7 > -3", "-3 < -7", "-2 > -5", "-5 > -2"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "-2 está más a la derecha que -5 en la recta numérica, así que -2 > -5."
+      }
+    ]
+  }
+}

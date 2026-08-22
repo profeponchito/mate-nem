@@ -1,0 +1,44 @@
+{
+  "id": "2S-B1-PDA06",
+  "grado": "2°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Ecuaciones para resolver problemas de la vida diaria",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
+  "problematizacion": {
+    "contexto": "Una tienda anuncia una playera con 20% de descuento. Después del descuento, el precio final quedó en $240.",
+    "pregunta": "¿Cuál era el precio original de la playera antes del descuento?"
+  },
+  "sintesis": {
+    "explicacion": "Muchos problemas cotidianos se pueden modelar con una ecuación lineal: se representa la cantidad desconocida con una variable y se traduce el problema en una igualdad. Para problemas de porcentaje, si un precio p tiene un descuento del r%, el precio final es p − (r/100)p = p(1 − r/100).",
+    "formula": "precio final = precio original × (1 − descuento/100)",
+    "ejemploResuelto": "240 = x(1 − 0.20) = 0.80x  →  x = 240 ÷ 0.80 = 300. El precio original era $300."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "Un número más el doble de sí mismo es 27 (x + 2x = 27). ¿Cuál es el número?",
+        "opciones": ["7", "9", "13.5", "27"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "3x=27 → x=9."
+      },
+      {
+        "pregunta": "Un artículo cuesta $150 y tiene 15% de descuento. ¿Cuál es el precio final?",
+        "opciones": ["$127.50", "$135", "$142.50", "$165"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "150 × (1 − 0.15) = 150 × 0.85 = $127.50."
+      },
+      {
+        "pregunta": "Después de un aumento del 10%, un producto cuesta $88. ¿Cuánto costaba antes del aumento?",
+        "opciones": ["$78.80", "$79.20", "$80", "$97"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "88 = x×1.10 → x = 88÷1.10 = 80."
+      }
+    ]
+  }
+}

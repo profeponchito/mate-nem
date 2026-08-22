@@ -1,0 +1,44 @@
+{
+  "id": "1S-B1-PDA02",
+  "grado": "1°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Arriba y abajo del cero",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Reconoce la necesidad de los números negativos a partir de usar cantidades que tienen al cero como referencia. Compara y ordena números con signo en la recta numérica.",
+  "problematizacion": {
+    "contexto": "En un día de invierno en Chihuahua la temperatura marcó -3°C en la madrugada y subió a 8°C al mediodía. En la Ciudad de México, un elevador del metro baja hasta el nivel -2 (dos pisos bajo tierra).",
+    "pregunta": "Si el nivel del mar es la referencia 0, y un buzo está a -15 metros mientras un dron vuela a 40 metros, ¿cuál de los dos está más lejos del nivel del mar?"
+  },
+  "sintesis": {
+    "explicacion": "Los números con signo permiten representar cantidades opuestas a partir de una referencia (el cero): ganancias/pérdidas, alturas/profundidades, temperaturas arriba/abajo de cero. En la recta numérica, entre dos números el mayor es el que está más a la derecha.",
+    "formula": "En la recta numérica: ... -3 < -2 < -1 < 0 < 1 < 2 ...",
+    "ejemploResuelto": "Comparar -5 y -2: -5 está más a la izquierda, entonces -5 < -2, aunque 5 sea mayor que 2 en valor absoluto."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "¿Cuál de las siguientes temperaturas es la más baja?",
+        "opciones": ["-8°C", "-3°C", "0°C", "2°C"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "-8 está más a la izquierda en la recta numérica que -3, 0 y 2."
+      },
+      {
+        "pregunta": "Ordena de menor a mayor: -4, 3, -1, 0",
+        "opciones": ["-4, -1, 0, 3", "3, 0, -1, -4", "-1, -4, 0, 3", "0, -1, -4, 3"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "De menor a mayor: -4 < -1 < 0 < 3."
+      },
+      {
+        "pregunta": "Un submarino está a -120 m y otro a -85 m. ¿Cuál está más profundo?",
+        "opciones": ["El de -120 m", "El de -85 m", "Están igual", "No se puede saber"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "-120 está más lejos del 0 hacia abajo: -120 < -85, así que -120 m es más profundo."
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "2S-B1-PDA04",
+  "grado": "2°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Patrones que crecen como cuadrados",
+  "contenido": "Regularidades y Patrones.",
+  "pda": "Representa algebraicamente una sucesión con progresión cuadrática de figuras y números.",
+  "problematizacion": {
+    "contexto": "Un jardinero acomoda macetas en arreglos cuadrados: en el arreglo 1 usa 1 maceta, en el arreglo 2 usa 4 macetas, en el arreglo 3 usa 9 macetas, formando siempre un cuadrado perfecto.",
+    "pregunta": "¿Cuántas macetas necesitará para el arreglo número 8, sin tener que acomodarlas todas?"
+  },
+  "sintesis": {
+    "explicacion": "En una progresión cuadrática, los términos no aumentan una cantidad constante, sino que siguen un patrón relacionado con el cuadrado de la posición del término. Cuando los términos son 1, 4, 9, 16..., la expresión algebraica es n², donde n es la posición del término.",
+    "formula": "término_n = n²  (en progresiones cuadráticas simples)",
+    "ejemploResuelto": "Para el arreglo 8: término_8 = 8² = 64 macetas."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "En la sucesión 1, 4, 9, 16, 25..., ¿cuál es el término 6?",
+        "opciones": ["30", "36", "32", "40"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "término_6 = 6² = 36."
+      },
+      {
+        "pregunta": "¿Qué expresión algebraica representa la sucesión 1, 4, 9, 16...?",
+        "opciones": ["2n", "n+3", "n²", "2n²"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "Cada término es el cuadrado de su posición: 1²=1, 2²=4, 3²=9, 4²=16."
+      },
+      {
+        "pregunta": "Una sucesión de figuras cuadradas usa 2n² fichas. ¿Cuántas fichas usa la figura 5?",
+        "opciones": ["10", "25", "50", "100"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "2×(5²) = 2×25 = 50."
+      }
+    ]
+  }
+}

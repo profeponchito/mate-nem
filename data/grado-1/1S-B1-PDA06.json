@@ -1,0 +1,44 @@
+{
+  "id": "1S-B1-PDA06",
+  "grado": "1°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Encuentra el valor desconocido",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax=B, Ax+B=C, Ax+B=Cx+D con el uso de las propiedades de la igualdad.",
+  "problematizacion": {
+    "contexto": "Ana tiene cierta cantidad de dinero ahorrado (x). Su tía le regala $150 y ahora tiene $430 en total.",
+    "pregunta": "¿Cuánto dinero tenía Ana ahorrado antes del regalo de su tía?"
+  },
+  "sintesis": {
+    "explicacion": "Una ecuación es una igualdad con una incógnita. Para resolverla, se aplican las propiedades de la igualdad: lo que se hace de un lado de la igualdad se debe hacer también del otro, para 'despejar' la variable.",
+    "formula": "Ax + B = C  →  x = (C − B) / A",
+    "ejemploResuelto": "x + 150 = 430  →  x = 430 − 150 = 280. Ana tenía $280 ahorrados."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "Resuelve: 5x = 45",
+        "opciones": ["x=5", "x=9", "x=40", "x=225"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "x = 45 ÷ 5 = 9."
+      },
+      {
+        "pregunta": "Resuelve: 3x + 4 = 19",
+        "opciones": ["x=5", "x=6.33", "x=7.67", "x=15"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "3x = 19-4=15; x=15÷3=5."
+      },
+      {
+        "pregunta": "Resuelve: 2x + 3 = x + 10",
+        "opciones": ["x=3", "x=7", "x=13", "x=-7"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "2x - x = 10 - 3 → x = 7."
+      }
+    ]
+  }
+}

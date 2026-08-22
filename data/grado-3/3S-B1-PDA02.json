@@ -1,0 +1,44 @@
+{
+  "id": "3S-B1-PDA02",
+  "grado": "3°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Volúmenes en función de una variable",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas y volúmenes de cuerpos geométricos y calcula el valor de una variable en función de las otras.",
+  "problematizacion": {
+    "contexto": "Una caja rectangular tiene base cuadrada de lado x y altura h. El fabricante necesita saber el volumen en función de estas medidas para calcular cuánto material usar.",
+    "pregunta": "¿Cuál es la expresión algebraica del volumen de esa caja?"
+  },
+  "sintesis": {
+    "explicacion": "El volumen de un prisma se calcula multiplicando el área de la base por la altura. Cuando la base es un cuadrado de lado x, su área es x², por lo que el volumen del prisma es x²×h. Estas expresiones permiten despejar cualquiera de las variables si conocemos las otras.",
+    "formula": "Volumen del prisma = Área de la base × altura = x² × h",
+    "ejemploResuelto": "Si x=4 cm y h=10 cm, el volumen es 4²×10 = 16×10 = 160 cm³."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "Una caja tiene volumen V=x²h. Si x=3 y h=7, ¿cuál es el volumen?",
+        "opciones": ["21", "42", "63", "147"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "V = 3²×7 = 9×7 = 63."
+      },
+      {
+        "pregunta": "Si el volumen de un prisma es V=x²h y se sabe que V=100 y h=4, ¿cuánto vale x²?",
+        "opciones": ["20", "25", "96", "400"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "x² = V/h = 100/4 = 25."
+      },
+      {
+        "pregunta": "Un cubo tiene arista x. ¿Cuál es la expresión algebraica de su volumen?",
+        "opciones": ["3x", "x²", "x³", "6x²"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "El volumen de un cubo es la arista al cubo: x³."
+      }
+    ]
+  }
+}

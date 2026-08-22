@@ -1,7 +1,12 @@
 {
   "grado": "2°",
-  "descripcion": "Manifiesto de PDAs disponibles para 2° de secundaria. pda-loader.js lee este archivo para saber qué .json cargar (GitHub Pages no permite listar directorios dinámicamente).",
+  "descripcion": "Manifiesto de PDAs disponibles para 2° de secundaria. Trimestre 1 completo (eje: Sentido numérico y pensamiento algebraico).",
   "archivos": [
-    "2S-B1-PDA03.json"
+    "2S-B1-PDA01.json",
+    "2S-B1-PDA02.json",
+    "2S-B1-PDA03.json",
+    "2S-B1-PDA04.json",
+    "2S-B1-PDA05.json",
+    "2S-B1-PDA06.json"
   ]
 }

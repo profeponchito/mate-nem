@@ -1,5 +1,13 @@
 {
   "grado": "1°",
-  "descripcion": "Manifiesto de PDAs disponibles para 1° de secundaria.",
-  "archivos": []
+  "descripcion": "Manifiesto de PDAs disponibles para 1° de secundaria. Trimestre 1 completo (eje: Sentido numérico y pensamiento algebraico).",
+  "archivos": [
+    "1S-B1-PDA01.json",
+    "1S-B1-PDA02.json",
+    "1S-B1-PDA03.json",
+    "1S-B1-PDA04.json",
+    "1S-B1-PDA05.json",
+    "1S-B1-PDA06.json",
+    "1S-B1-PDA07.json"
+  ]
 }

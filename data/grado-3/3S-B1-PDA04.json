@@ -1,0 +1,44 @@
+{
+  "id": "3S-B1-PDA04",
+  "grado": "3°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repartos proporcionales y variación",
+  "contenido": "Funciones.",
+  "pda": "Relaciona e interpreta la variación de dos cantidades a partir de su representación tabular, gráfica y algebraica. Explora diversos procedimientos para resolver problemas de reparto proporcional.",
+  "problematizacion": {
+    "contexto": "Tres amigos formaron un negocio y aportaron capital distinto: Juan aportó $3,000, Luis $5,000 y Marco $2,000. Al final del año ganaron $2,000 pesos de utilidad que quieren repartir de forma proporcional a lo que aportó cada quien.",
+    "pregunta": "¿Cuánto le corresponde a cada uno de la utilidad, de forma proporcional a su aportación?"
+  },
+  "sintesis": {
+    "explicacion": "El reparto proporcional distribuye una cantidad total entre varias partes, en proporción a un valor de referencia (como la aportación de cada socio). Se calcula sumando todas las partes de referencia, y luego dividiendo la cantidad total entre esa suma para obtener el valor de cada 'parte', que se multiplica por la aportación de cada quien.",
+    "formula": "parte de cada quien = (aportación individual / suma total de aportaciones) × cantidad a repartir",
+    "ejemploResuelto": "Suma total = 3000+5000+2000 = 10,000. Juan: (3000/10000)×2000 = $600. Luis: (5000/10000)×2000 = $1,000. Marco: (2000/10000)×2000 = $400."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "Se reparten $900 de forma proporcional entre dos personas que aportaron $200 y $400. ¿Cuánto le toca a la que aportó $400?",
+        "opciones": ["$300", "$450", "$600", "$700"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "Suma=600. (400/600)×900 = $600."
+      },
+      {
+        "pregunta": "En una tabla, cuando x se duplica, y también se duplica. ¿Qué tipo de variación representa esto?",
+        "opciones": ["Inversa", "Directa", "Constante", "No hay relación"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "Cuando ambas cantidades aumentan en la misma proporción, es una variación directa."
+      },
+      {
+        "pregunta": "Se reparten 60 dulces proporcionalmente entre 3 niños según sus edades: 4, 5 y 6 años. ¿Cuántos dulces le tocan al niño de 6 años?",
+        "opciones": ["16", "20", "24", "30"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "Suma de edades=15. (6/15)×60 = 24 dulces."
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "1S-B1-PDA01",
+  "grado": "1°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "De fracciones a decimales, y de regreso",
+  "contenido": "Expresión de fracciones como decimales y de decimales como fracciones.",
+  "pda": "Usa diversas estrategias al convertir números fraccionarios a decimales y viceversa.",
+  "problematizacion": {
+    "contexto": "En la tiendita de la escuela, una bolsa de cacahuates cuesta $12.50 y se puede pagar con 3/4 de una torta que vale $17. Los precios a veces se anuncian como fracción de una porción y otras como número decimal.",
+    "pregunta": "Si una receta pide 3/4 de taza de aceite y solo tienes una taza graduada en decimales (0.1, 0.2, 0.3...), ¿qué cantidad decimal debes usar?"
+  },
+  "sintesis": {
+    "explicacion": "Toda fracción puede escribirse como decimal dividiendo el numerador entre el denominador; todo decimal finito puede escribirse como fracción identificando el valor posicional de sus cifras y simplificando.",
+    "formula": "fracción a/b → a ÷ b = decimal",
+    "ejemploResuelto": "3/4 = 3 ÷ 4 = 0.75. Y 0.6 = 6/10 = 3/5 al simplificar."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "¿Cuál es la expresión decimal de 5/8?",
+        "opciones": ["0.58", "0.625", "0.85", "1.6"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "5 ÷ 8 = 0.625."
+      },
+      {
+        "pregunta": "¿Qué fracción representa 0.35?",
+        "opciones": ["35/100 = 7/20", "35/10", "3/5", "1/35"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "0.35 = 35/100, que simplificado es 7/20."
+      },
+      {
+        "pregunta": "Un corredor recorrió 0.2 del total de una pista. ¿Qué fracción de la pista recorrió?",
+        "opciones": ["1/5", "2/5", "1/2", "1/10"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "0.2 = 2/10 = 1/5."
+      }
+    ]
+  }
+}

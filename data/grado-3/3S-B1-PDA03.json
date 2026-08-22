@@ -1,0 +1,44 @@
+{
+  "id": "3S-B1-PDA03",
+  "grado": "3°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Resolviendo ecuaciones cuadráticas",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax²+Bx+C=0 por factorización y fórmula general. Resuelve problemas cuyo planteamiento es una ecuación cuadrática.",
+  "problematizacion": {
+    "contexto": "Un jardín rectangular tiene un área de 40 m². Su largo mide 3 metros más que su ancho.",
+    "pregunta": "¿Cuáles son las medidas del ancho y el largo del jardín?"
+  },
+  "sintesis": {
+    "explicacion": "Una ecuación cuadrática tiene la forma Ax²+Bx+C=0. Se puede resolver factorizando (si es posible) o usando la fórmula general, que siempre funciona.",
+    "formula": "x = (−B ± √(B²−4AC)) / 2A",
+    "ejemploResuelto": "Si x es el ancho: x(x+3)=40 → x²+3x−40=0. Factorizando: (x+8)(x−5)=0 → x=5 (el ancho no puede ser negativo). El largo es 5+3=8 m."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "Factoriza y resuelve: x² - 5x + 6 = 0",
+        "opciones": ["x=2, x=3", "x=1, x=6", "x=-2, x=-3", "x=6, x=-1"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "(x-2)(x-3)=0 → x=2 o x=3."
+      },
+      {
+        "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - x - 6 = 0?",
+        "opciones": ["x=3, x=-2", "x=2, x=-3", "x=6, x=-1", "x=1, x=-6"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
+      },
+      {
+        "pregunta": "El área de un cuadrado es 81 m². Si se representa como x²=81, ¿cuánto mide el lado?",
+        "opciones": ["8 m", "8.5 m", "9 m", "40.5 m"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "x²=81 → x=9 (la raíz cuadrada de 81 es 9)."
+      }
+    ]
+  }
+}

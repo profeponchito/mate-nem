@@ -1,0 +1,44 @@
+{
+  "id": "3S-B1-PDA01",
+  "grado": "3°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Números muy grandes y muy pequeños",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
+  "problematizacion": {
+    "contexto": "Un científico mide que una bacteria tiene un tamaño de 0.000002 metros, mientras que la distancia de la Tierra al Sol es de aproximadamente 150,000,000,000 metros.",
+    "pregunta": "¿Cómo se pueden escribir estas cantidades de forma más práctica, sin tener que contar tantos ceros?"
+  },
+  "sintesis": {
+    "explicacion": "La notación científica expresa números muy grandes o muy pequeños como a × 10ⁿ, donde 1≤a<10 y n es un entero. Un exponente negativo indica un número menor a 1 (x⁻ⁿ = 1/xⁿ). La raíz cuadrada de un número es el valor que multiplicado por sí mismo da ese número.",
+    "formula": "a × 10ⁿ  ;  x⁻ⁿ = 1/xⁿ  ;  √x × √x = x",
+    "ejemploResuelto": "150,000,000,000 = 1.5 × 10¹¹ metros. 0.000002 = 2 × 10⁻⁶ metros."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "¿Cuál es el resultado de 2⁻³?",
+        "opciones": ["-6", "-8", "1/8", "8"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "2⁻³ = 1/2³ = 1/8."
+      },
+      {
+        "pregunta": "¿Cuál es la raíz cuadrada de 144?",
+        "opciones": ["11", "12", "14", "72"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "12 × 12 = 144."
+      },
+      {
+        "pregunta": "¿Cómo se escribe 45,000 en notación científica?",
+        "opciones": ["45 × 10³", "4.5 × 10⁴", "4.5 × 10³", "0.45 × 10⁵"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "45,000 = 4.5 × 10,000 = 4.5 × 10⁴."
+      }
+    ]
+  }
+}

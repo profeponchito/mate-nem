@@ -1,0 +1,44 @@
+{
+  "id": "2S-B1-PDA05",
+  "grado": "2°",
+  "trimestre": "1",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Áreas que se expresan con expresiones cuadráticas",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
+  "problematizacion": {
+    "contexto": "Un terreno cuadrado tiene lado (x+3) metros. El dueño quiere saber cuánto pasto necesita comprar para cubrir toda la superficie, en función de x.",
+    "pregunta": "¿Cuál es la expresión algebraica del área de ese terreno cuadrado?"
+  },
+  "sintesis": {
+    "explicacion": "El área de un cuadrado de lado (x+a) se calcula elevando el binomio al cuadrado: (x+a)² = x² + 2ax + a². Además, al multiplicar potencias de la misma base se suman los exponentes, y al elevar una potencia a otra potencia se multiplican los exponentes.",
+    "formula": "(x+a)² = x² + 2ax + a²  ;  xᵐ × xⁿ = xᵐ⁺ⁿ  ;  (xᵐ)ⁿ = xᵐˣⁿ",
+    "ejemploResuelto": "(x+3)² = x² + 2(3)x + 3² = x² + 6x + 9 metros cuadrados."
+  },
+  "actividad": {
+    "tipo": "opcion_multiple",
+    "puntosPorReactivo": 10,
+    "estrellasMax": 3,
+    "reactivos": [
+      {
+        "pregunta": "¿Cuál es el desarrollo de (x+5)²?",
+        "opciones": ["x²+25", "x²+5x+25", "x²+10x+25", "2x+10"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "(x+5)² = x² + 2(5)x + 5² = x² + 10x + 25."
+      },
+      {
+        "pregunta": "Simplifica: x³ × x⁴",
+        "opciones": ["x⁷", "x¹²", "x⁴³", "2x⁷"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 3+4=7."
+      },
+      {
+        "pregunta": "Simplifica: (x²)⁵",
+        "opciones": ["x⁷", "x¹⁰", "x²⁵", "2x²"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 2×5=10."
+      }
+    ]
+  }
+}
