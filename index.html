@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATE-NEM · Matemáticas NEM</title>
+<meta name="description" content="Plataforma gamificada de Matemáticas para Secundaria, alineada a la Nueva Escuela Mexicana.">
+
+<!-- Tailwind CSS vía CDN: sin build step, funciona directo en GitHub Pages -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- QR y exportación a PDF para el módulo de constancias -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="app" class="min-h-screen"></div>
+
+  <!-- type="module" habilita import/export en app.js y sus dependencias.
+       Nota: esto requiere servirse por http(s), no funciona con doble clic
+       (file://) por la política CORS de los navegadores para módulos. -->
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

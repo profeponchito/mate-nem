@@ -1,0 +1,20 @@
+/* MATE-NEM · Estilos globales complementarios a Tailwind (cargado por CDN) */
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #f8fafc;
+}
+
+/* Foco visible y accesible en navegación por teclado (importante en móviles con teclado externo) */
+:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* Oculta elementos de navegación al imprimir/exportar la constancia */
+@media print {
+  header,
+  .no-imprimir {
+    display: none !important;
+  }
+}
