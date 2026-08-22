@@ -8,8 +8,8 @@
   "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
   "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
   "problematizacion": {
-    "contexto": "Una maestra quiere formar equipos iguales con 24 niñas y 36 niños, de manera que cada equipo tenga el mismo número de niñas y el mismo número de niños, usando la mayor cantidad de equipos posible.",
-    "pregunta": "¿Cuántos equipos puede formar como máximo, y cuántas niñas y niños tendrá cada equipo?"
+    "contexto": "Una maestra tiene 24 niñas y 36 niños, y quiere formar equipos: todos del mismo tamaño, con el mismo número de niñas y el mismo número de niños en cada uno.",
+    "pregunta": "¿Cuál es la mayor cantidad de equipos que puede formar, y cuántas niñas y niños tendrá cada equipo?"
   },
   "subtemas": [
     {
@@ -58,6 +58,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: el máximo común divisor (MCD) es el mayor número que divide exactamente a dos números, y sirve para repartir en partes iguales. El mínimo común múltiplo (mcm) es el menor número que es múltiplo de ambos, y sirve para sincronizar eventos que se repiten. Además, las operaciones cumplen las propiedades conmutativa (a+b=b+a), asociativa ((a+b)+c=a+(b+c)) y distributiva (a×(b+c)=a×b+a×c).",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

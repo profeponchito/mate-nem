@@ -8,8 +8,8 @@
   "contenido": "Introducción al álgebra.",
   "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
   "problematizacion": {
-    "contexto": "Un terreno rectangular tiene un ancho desconocido que representaremos con la letra x, y su largo mide el doble del ancho más 2 metros.",
-    "pregunta": "¿Cómo se representa algebraicamente el perímetro de ese terreno?"
+    "contexto": "Tu tío quiere poner una cerca alrededor de un terreno rectangular, pero no sabe todavía las medidas exactas: solo sabe que el largo mide el doble del ancho, más 2 metros.",
+    "pregunta": "¿Cómo puedes expresar cuánta cerca se necesita (el perímetro) si no conoces el ancho exacto?"
   },
   "subtemas": [
     {
@@ -57,6 +57,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: en álgebra usamos letras para representar cantidades desconocidas, y frases como 'el doble de' o 'el triple de' se traducen en multiplicaciones. El perímetro de una figura es la suma de todos sus lados: cuando algún lado depende de una variable, sumas y simplificas las expresiones agrupando los términos semejantes.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

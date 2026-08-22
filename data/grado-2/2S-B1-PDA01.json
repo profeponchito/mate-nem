@@ -8,8 +8,8 @@
   "contenido": "Extensión de los números a positivos y negativos y su orden.",
   "pda": "Compara y ordena números con signo (enteros, fracciones y decimales) en la recta numérica y analiza en qué casos se cumple la propiedad de densidad.",
   "problematizacion": {
-    "contexto": "En un torneo de golf, los resultados se marcan respecto al par del campo: -3.5, -2, -1/2, 0, +1.25. Un jugador quiere saber quién va ganando (el marcador más bajo gana).",
-    "pregunta": "¿Cómo ordenas de menor a mayor los marcadores -3.5, -2, -1/2, 0 y +1.25 para saber quién va en primer lugar?"
+    "contexto": "Cinco amigos compiten en un juego, y sus puntajes son estos: -3.5, -2, -1/2, 0 y +1.25. En este juego, gana el que tenga el puntaje más bajo.",
+    "pregunta": "¿Cómo ordenas esos 5 puntajes de menor a mayor para saber quién va ganando?"
   },
   "subtemas": [
     {
@@ -57,6 +57,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: para comparar números con signo que están en distintas formas (enteros, fracciones, decimales), conviene expresarlos todos igual, por ejemplo convirtiendo las fracciones a decimales. Los negativos con mayor valor absoluto son los menores, y entre dos números con signo siempre existe otro número más (la propiedad de densidad).",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

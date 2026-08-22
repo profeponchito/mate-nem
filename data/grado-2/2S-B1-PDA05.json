@@ -8,8 +8,8 @@
   "contenido": "Introducción al álgebra.",
   "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
   "problematizacion": {
-    "contexto": "Un terreno cuadrado tiene lado (x+3) metros. El dueño quiere saber cuánto pasto necesita comprar para cubrir toda la superficie, en función de x.",
-    "pregunta": "¿Cuál es la expresión algebraica del área de ese terreno cuadrado?"
+    "contexto": "Un terreno cuadrado tiene un lado que mide 3 metros más que cierto valor desconocido. El dueño quiere saber cuánto pasto comprar para cubrirlo todo.",
+    "pregunta": "¿Cómo puedes calcular el área de ese terreno si no conoces la medida exacta del lado?"
   },
   "subtemas": [
     {
@@ -57,6 +57,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: el área de un cuadrado de lado (x+a) es (x+a)² = x² + 2ax + a². Además, al multiplicar potencias de la misma base se suman los exponentes (xᵐ×xⁿ=xᵐ⁺ⁿ), y al elevar una potencia a otra potencia se multiplican los exponentes ((xᵐ)ⁿ=xᵐˣⁿ).",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

@@ -8,8 +8,8 @@
   "contenido": "Funciones.",
   "pda": "Relaciona e interpreta la variación de dos cantidades a partir de su representación tabular, gráfica y algebraica. Explora diversos procedimientos para resolver problemas de reparto proporcional.",
   "problematizacion": {
-    "contexto": "Tres amigos formaron un negocio y aportaron capital distinto: Juan aportó $3,000, Luis $5,000 y Marco $2,000. Al final del año ganaron $2,000 pesos de utilidad que quieren repartir de forma proporcional a lo que aportó cada quien.",
-    "pregunta": "¿Cuánto le corresponde a cada uno de la utilidad, de forma proporcional a su aportación?"
+    "contexto": "Tres amigos pusieron un negocio: Juan aportó $3,000, Luis $5,000 y Marco $2,000. Al final del año ganaron $2,000 de utilidad, y quieren repartirla en proporción a lo que aportó cada quien.",
+    "pregunta": "¿Cuánto le toca a cada uno de esos $2,000?"
   },
   "subtemas": [
     {
@@ -55,6 +55,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: para hacer un reparto proporcional, suma todos los valores de referencia (aportaciones, edades, etc.), divide la cantidad total entre esa suma, y multiplica ese resultado por la parte de cada quien. El mismo método funciona sin importar cuántas partes haya. Además, cuando dos cantidades aumentan siempre en la misma proporción (si una se duplica, la otra también), se dice que hay una variación directa entre ellas.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

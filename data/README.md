@@ -83,9 +83,19 @@ una barra de avance (%) en todo momento:
   opcionalmente, `formula`. Puede terminar en un `check`: una pregunta corta
   de repaso formativo (no se califica, solo da retroalimentación inmediata)
   antes de dejar avanzar al alumno.
-- **reto** → la actividad final gamificada y calificada. Tiene
+- **reto** → la actividad final gamificada y calificada. Tiene `sintesis`
+  (un recordatorio teórico, a modo de mini-síntesis, que recapitula las
+  ideas clave de los subtemas y se muestra antes de los reactivos),
   `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos`; se recomienda
   mezclar al menos 2 tipos de pregunta distintos.
+
+Cada pantalla del recorrido muestra un título claro y una explicación antes
+de la parte interactiva: la problematización usa `pda.titulo` y su propio
+`contexto` (redactado de forma sencilla, como gancho); cada subtema usa su
+`titulo` y `explicacion`; el `check` de un subtema reutiliza el `titulo` y
+la `explicacion` de ese mismo subtema como recordatorio antes de la
+pregunta (no hace falta escribir nada aparte para eso); y el reto usa
+`pda.titulo` y `reto.sintesis` como recordatorio antes de los reactivos.
 
 ### Los 4 tipos de pregunta
 

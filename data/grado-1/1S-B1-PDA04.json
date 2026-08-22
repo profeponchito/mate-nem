@@ -8,8 +8,8 @@
   "contenido": "Regularidades y Patrones.",
   "pda": "Representa algebraicamente una sucesión con progresión aritmética de figuras y números.",
   "problematizacion": {
-    "contexto": "Un panadero acomoda charolas de pan en una repisa: en la primera fila pone 3 panes, en la segunda 6, en la tercera 9, y así sucesivamente, siempre 3 panes más que en la fila anterior.",
-    "pregunta": "¿Cuántos panes habrá en la fila número 10, y cómo lo puedes calcular sin dibujar las 10 filas?"
+    "contexto": "Un panadero acomoda el pan en filas: en la fila 1 pone 3 panes, en la fila 2 pone 6, en la fila 3 pone 9. Cada fila tiene 3 panes más que la anterior.",
+    "pregunta": "¿Cuántos panes habrá en la fila 10, sin tener que dibujar las 10 filas?"
   },
   "subtemas": [
     {
@@ -57,6 +57,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: en una progresión aritmética cada término aumenta siempre la misma cantidad constante (la diferencia, d) respecto al anterior. En vez de ir sumando d una y otra vez, puedes usar la fórmula término_n = a + (n − 1) × d, donde a es el primer término y n es la posición que buscas — funciona igual para números sueltos que para figuras hechas con palillos, fichas u otros objetos.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

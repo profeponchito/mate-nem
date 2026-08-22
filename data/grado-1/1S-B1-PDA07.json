@@ -8,8 +8,8 @@
   "contenido": "Funciones.",
   "pda": "Relaciona e interpreta relaciones proporcional y no proporcional a partir de su representación tabular, gráfica y con diagramas.",
   "problematizacion": {
-    "contexto": "En una papelería, el precio de los cuadernos es siempre $15 cada uno sin importar cuántos compres. En cambio, en un taxi, la tarifa inicial es de $12 más $2 por cada kilómetro recorrido.",
-    "pregunta": "¿Cuál de las dos situaciones (el precio de los cuadernos o la tarifa del taxi) es una relación proporcional, y cuál no? ¿Por qué?"
+    "contexto": "En la papelería, cada cuaderno cuesta $15. En un taxi, pagas $12 solo por subirte, más $2 por cada kilómetro.",
+    "pregunta": "¿Cuál de las dos, el precio de los cuadernos o la tarifa del taxi, es una relación proporcional? ¿Por qué la otra no lo es?"
   },
   "subtemas": [
     {
@@ -62,6 +62,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: una relación es proporcional cuando la razón entre las dos cantidades siempre es la misma y, si x=0, entonces y=0 (no hay ningún cargo fijo). Si existe un valor inicial que se suma (como la tarifa base del taxi), la relación no es proporcional. En una gráfica, lo proporcional siempre es una recta que pasa por el origen (0,0).",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

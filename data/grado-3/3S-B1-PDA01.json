@@ -8,8 +8,8 @@
   "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
   "pda": "Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
   "problematizacion": {
-    "contexto": "Un científico mide que una bacteria tiene un tamaño de 0.000002 metros, mientras que la distancia de la Tierra al Sol es de aproximadamente 150,000,000,000 metros.",
-    "pregunta": "¿Cómo se pueden escribir estas cantidades de forma más práctica, sin tener que contar tantos ceros?"
+    "contexto": "Una bacteria mide 0.000002 metros. La distancia de la Tierra al Sol es de casi 150,000,000,000 metros.",
+    "pregunta": "¿Cómo puedes escribir estas dos cantidades sin tener que contar tantos ceros?"
   },
   "subtemas": [
     {
@@ -60,6 +60,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: un exponente negativo significa tomar el recíproco (x⁻ⁿ = 1/xⁿ), y la raíz cuadrada de un número es el valor que multiplicado por sí mismo da ese número. La notación científica escribe números muy grandes o muy pequeños como a × 10ⁿ (con 1≤a<10): un exponente positivo indica un número grande, y uno negativo, un número menor que 1.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

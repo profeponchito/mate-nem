@@ -192,8 +192,8 @@ async function vistaPDA({ grado, id }) {
         <div class="bg-white rounded-2xl shadow-md p-6 mt-4">
           ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda) : ''}
           ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length) : ''}
-          ${paso.tipo === 'check' ? panelCheck_(pda.subtemas[paso.subtemaIndex].check, `check-${paso.subtemaIndex}`) : ''}
-          ${paso.tipo === 'reto' ? panelReto_(pda.reto) : ''}
+          ${paso.tipo === 'check' ? panelCheck_(pda.subtemas[paso.subtemaIndex], `check-${paso.subtemaIndex}`) : ''}
+          ${paso.tipo === 'reto' ? panelReto_(pda) : ''}
           ${paso.tipo === 'resultado' ? panelResultado_(pda, estado) : ''}
         </div>
       </div>
@@ -324,10 +324,16 @@ function panelSubtema_(subtema, indice, total) {
   `;
 }
 
-function panelCheck_(pregunta, prefijo) {
+function panelCheck_(subtema, prefijo) {
+  const pregunta = subtema.check;
   return `
-    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-3">Repaso rápido</p>
-    <div>${renderizarPregunta_(pregunta, prefijo)}</div>
+    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-1">Repaso rápido</p>
+    <h3 class="text-lg font-semibold text-slate-800 mb-3">${escapeHTML_(subtema.titulo)}</h3>
+    <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
+    ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-lg px-4 py-2 font-mono text-slate-800 mb-4">${escapeHTML_(subtema.formula)}</p>` : ''}
+    <div class="border-t border-slate-100 pt-4">
+      ${renderizarPregunta_(pregunta, prefijo)}
+    </div>
     <div data-check-feedback class="mt-3 hidden"></div>
     <div class="mt-4 flex gap-2">
       <button data-accion="verificar-check" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-5 py-2 rounded-lg transition">
@@ -340,9 +346,12 @@ function panelCheck_(pregunta, prefijo) {
   `;
 }
 
-function panelReto_(reto) {
+function panelReto_(pda) {
+  const reto = pda.reto;
   return `
-    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-4">Reto</p>
+    <p class="text-xs uppercase tracking-wide text-amber-600 font-medium mb-1">Reto</p>
+    <h3 class="text-lg font-semibold text-slate-800 mb-3">${escapeHTML_(pda.titulo)}</h3>
+    <p class="text-slate-700 leading-relaxed mb-4">${escapeHTML_(reto.sintesis)}</p>
     <div class="space-y-6">
       ${reto.reactivos.map((reactivo, i) => `
         <div class="border-t border-slate-100 pt-4 first:border-t-0 first:pt-0">

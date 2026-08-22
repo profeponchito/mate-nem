@@ -8,8 +8,8 @@
   "contenido": "Ecuaciones lineales y cuadráticas.",
   "pda": "Resuelve ecuaciones de la forma Ax=B, Ax+B=C, Ax+B=Cx+D con el uso de las propiedades de la igualdad.",
   "problematizacion": {
-    "contexto": "Ana tiene cierta cantidad de dinero ahorrado (x). Su tía le regala $150 y ahora tiene $430 en total.",
-    "pregunta": "¿Cuánto dinero tenía Ana ahorrado antes del regalo de su tía?"
+    "contexto": "Ana tenía algo de dinero ahorrado. Su tía le regaló $150, y ahora en total tiene $430.",
+    "pregunta": "¿Cuánto dinero tenía Ana ahorrado antes del regalo?"
   },
   "subtemas": [
     {
@@ -56,6 +56,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: una ecuación es una igualdad con una incógnita, y para resolverla aplicas la misma operación en ambos lados hasta despejar la variable. Si la x aparece en los dos lados de la igualdad, primero agrupa los términos con x de un lado y los números del otro, y después despeja.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

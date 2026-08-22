@@ -8,8 +8,8 @@
   "contenido": "Extensión de los números a positivos y negativos y su orden.",
   "pda": "Reconoce la necesidad de los números negativos a partir de usar cantidades que tienen al cero como referencia. Compara y ordena números con signo en la recta numérica.",
   "problematizacion": {
-    "contexto": "En un día de invierno en Chihuahua la temperatura marcó -3°C en la madrugada y subió a 8°C al mediodía. En la Ciudad de México, un elevador del metro baja hasta el nivel -2 (dos pisos bajo tierra).",
-    "pregunta": "Si el nivel del mar es la referencia 0, y un buzo está a -15 metros mientras un dron vuela a 40 metros, ¿cuál de los dos está más lejos del nivel del mar?"
+    "contexto": "El nivel del mar es el punto de referencia 0. Un buzo nada por debajo del mar y un dron vuela por arriba.",
+    "pregunta": "Si el buzo está a -15 metros y el dron vuela a 40 metros, ¿cuál de los dos está más lejos del nivel del mar (del 0)?"
   },
   "subtemas": [
     {
@@ -58,6 +58,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: en la recta numérica, el número mayor es el que está más a la derecha; entre dos negativos, el que parece 'más grande' (mayor valor absoluto) en realidad es el menor. Para ordenar o comparar varios números con signo, ubícalos mentalmente en la recta: primero los negativos (el más negativo va primero), luego el cero, y al final los positivos.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

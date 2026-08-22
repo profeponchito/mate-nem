@@ -8,8 +8,8 @@
   "contenido": "Regularidades y Patrones.",
   "pda": "Representa algebraicamente una sucesión con progresión cuadrática de figuras y números.",
   "problematizacion": {
-    "contexto": "Un jardinero acomoda macetas en arreglos cuadrados: en el arreglo 1 usa 1 maceta, en el arreglo 2 usa 4 macetas, en el arreglo 3 usa 9 macetas, formando siempre un cuadrado perfecto.",
-    "pregunta": "¿Cuántas macetas necesitará para el arreglo número 8, sin tener que acomodarlas todas?"
+    "contexto": "Un jardinero acomoda macetas formando cuadrados: en el arreglo 1 usa 1 maceta, en el arreglo 2 usa 4, en el arreglo 3 usa 9.",
+    "pregunta": "¿Cuántas macetas necesitará para el arreglo 8, sin acomodarlas todas para contarlas?"
   },
   "subtemas": [
     {
@@ -56,6 +56,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: en una progresión cuadrática los términos siguen el patrón del cuadrado de su posición (n²): 1, 4, 9, 16... Si la sucesión es un múltiplo de eso, como 2n², compara cada término con n² para encontrar el factor constante que los relaciona.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

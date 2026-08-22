@@ -9,7 +9,7 @@
   "pda": "Resuelve ecuaciones de la forma Ax²+Bx+C=0 por factorización y fórmula general. Resuelve problemas cuyo planteamiento es una ecuación cuadrática.",
   "problematizacion": {
     "contexto": "Un jardín rectangular tiene un área de 40 m². Su largo mide 3 metros más que su ancho.",
-    "pregunta": "¿Cuáles son las medidas del ancho y el largo del jardín?"
+    "pregunta": "¿Cuánto miden el ancho y el largo del jardín?"
   },
   "subtemas": [
     {
@@ -55,6 +55,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: una ecuación cuadrática tiene la forma Ax²+Bx+C=0. Si se puede factorizar como producto de dos binomios, cada factor igualado a cero te da una solución. Si no, siempre puedes usar la fórmula general x = (−B ± √(B²−4AC)) / 2A. En problemas de áreas, la ecuación suele dar dos soluciones matemáticas, pero solo una tiene sentido (una medida no puede ser negativa).",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

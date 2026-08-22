@@ -55,8 +55,12 @@
     "reto": {
       "type": "object",
       "description": "Fase 3: actividad gamificada final, calificada. Genera puntaje, estrellas y dispara el envío a Sheets + constancia.",
-      "required": ["puntosPorReactivo", "estrellasMax", "reactivos"],
+      "required": ["sintesis", "puntosPorReactivo", "estrellasMax", "reactivos"],
       "properties": {
+        "sintesis": {
+          "type": "string",
+          "description": "Explicación teórica que recapitula (a modo de mini-síntesis) las ideas clave de los subtemas, mostrada como recordatorio antes de los reactivos del reto."
+        },
         "puntosPorReactivo": { "type": "integer" },
         "estrellasMax": { "type": "integer", "default": 3 },
         "reactivos": {

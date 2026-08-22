@@ -8,8 +8,8 @@
   "contenido": "Introducción al álgebra.",
   "pda": "Representa algebraicamente áreas y volúmenes de cuerpos geométricos y calcula el valor de una variable en función de las otras.",
   "problematizacion": {
-    "contexto": "Una caja rectangular tiene base cuadrada de lado x y altura h. El fabricante necesita saber el volumen en función de estas medidas para calcular cuánto material usar.",
-    "pregunta": "¿Cuál es la expresión algebraica del volumen de esa caja?"
+    "contexto": "Un fabricante hace cajas con base cuadrada y cierta altura. Antes de fabricarlas, necesita saber cuánto material va a usar según esas medidas.",
+    "pregunta": "¿Cómo puedes calcular el volumen de la caja si no conoces las medidas exactas todavía?"
   },
   "subtemas": [
     {
@@ -57,6 +57,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: el volumen de un prisma es el área de la base por la altura. Si la base es un cuadrado de lado x, su área es x², así que el volumen es x²×h. De ahí puedes despejar cualquier variable si conoces las otras (por ejemplo, x² = V ÷ h). Un caso especial es el cubo, donde la altura es igual al lado: su volumen es x³.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

@@ -8,8 +8,8 @@
   "contenido": "Resolución de problemas de proporcionalidad directa.",
   "pda": "Resuelve problemas de proporcionalidad directa mediante el valor unitario, la constante de proporcionalidad y otros procedimientos.",
   "problematizacion": {
-    "contexto": "En la cooperativa escolar, 4 paquetes de galletas cuestan $60. Un grupo de compañeros quiere comprar 10 paquetes para compartir en el salón.",
-    "pregunta": "¿Cuánto deberán pagar en total por los 10 paquetes si el precio se mantiene proporcional?"
+    "contexto": "En la cooperativa escolar, 4 paquetes de galletas cuestan $60.",
+    "pregunta": "Si el precio se mantiene igual por paquete, ¿cuánto costarán 10 paquetes?"
   },
   "subtemas": [
     {
@@ -59,6 +59,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: dos cantidades son directamente proporcionales cuando su razón se mantiene constante (la constante de proporcionalidad, k = y ÷ x). Para resolver un problema, calcula k con un par de datos conocidos y luego multiplica por el valor que buscas: y = k × x.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

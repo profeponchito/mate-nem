@@ -16,8 +16,12 @@ barra de avance (%) durante todo el recorrido. El Trimestre 1 completo (17
 PDAs: 7 en 1°, 6 en 2°, 4 en 3°) ya está cargado con el diseño ampliado:
 tema explicado en subtemas con ejemplos, preguntas de repaso entre subtemas
 y un reto final que mezcla los 4 tipos de reactivo soportados (opción
-múltiple, verdadero/falso, llenar frase, relacionar columnas). Falta la
-página de verificación de folios y el despliegue real del backend.
+múltiple, verdadero/falso, llenar frase, relacionar columnas). Cada pantalla
+del recorrido (problematización, cada subtema, cada check y el reto) muestra
+un título claro y una explicación teórica antes del contenido interactivo, y
+la problematización de los 17 PDAs está redactada con lenguaje sencillo, como
+gancho inicial antes de entrar al tema. Falta la página de verificación de
+folios y el despliegue real del backend.
 
 ## Árbol del repositorio
 

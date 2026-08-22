@@ -8,8 +8,8 @@
   "contenido": "Expresión de fracciones como decimales y de decimales como fracciones.",
   "pda": "Usa diversas estrategias al convertir números fraccionarios a decimales y viceversa.",
   "problematizacion": {
-    "contexto": "En la tiendita de la escuela, una bolsa de cacahuates cuesta $12.50 y se puede pagar con 3/4 de una torta que vale $17. Los precios a veces se anuncian como fracción de una porción y otras como número decimal.",
-    "pregunta": "Si una receta pide 3/4 de taza de aceite y solo tienes una taza graduada en decimales (0.1, 0.2, 0.3...), ¿qué cantidad decimal debes usar?"
+    "contexto": "Vas a preparar una receta y necesitas 3/4 de taza de aceite. Pero en tu casa solo hay una taza medidora con números decimales: 0.1, 0.2, 0.3...",
+    "pregunta": "¿Qué número decimal debes usar en esa taza para poner exactamente 3/4 de aceite?"
   },
   "subtemas": [
     {
@@ -60,6 +60,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: para pasar de fracción a decimal, divides el numerador entre el denominador (a÷b); para pasar de decimal a fracción, escribes las cifras decimales sobre la potencia de 10 correspondiente y simplificas. Ambas conversiones sirven para comparar e interpretar cantidades en la vida diaria, sin importar en qué forma te las encuentres.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [

@@ -8,8 +8,8 @@
   "contenido": "Ecuaciones lineales y cuadráticas.",
   "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
   "problematizacion": {
-    "contexto": "Una tienda anuncia una playera con 20% de descuento. Después del descuento, el precio final quedó en $240.",
-    "pregunta": "¿Cuál era el precio original de la playera antes del descuento?"
+    "contexto": "Una playera tiene 20% de descuento, y después del descuento cuesta $240.",
+    "pregunta": "¿Cuánto costaba la playera antes del descuento?"
   },
   "subtemas": [
     {
@@ -56,6 +56,7 @@
     }
   ],
   "reto": {
+    "sintesis": "Recuerda: muchos problemas se resuelven planteando una ecuación lineal con la cantidad desconocida como variable. Para porcentajes, si un precio p tiene un descuento del r%, el precio final es p × (1 − r/100); si conoces el precio final, puedes despejar el precio original dividiendo entre ese mismo factor.",
     "puntosPorReactivo": 10,
     "estrellasMax": 3,
     "reactivos": [
