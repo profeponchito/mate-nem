@@ -37,7 +37,12 @@
       "check": {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cuál de las siguientes temperaturas es la más baja?",
-        "opciones": ["-8°C", "-3°C", "0°C", "2°C"],
+        "opciones": [
+          "-8°C",
+          "-3°C",
+          "0°C",
+          "2°C"
+        ],
         "respuestaCorrecta": 0,
         "retroalimentacion": "-8 está más a la izquierda en la recta numérica que -3, 0 y 2."
       }
@@ -65,7 +70,12 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "Ordena de menor a mayor: -4, 3, -1, 0",
-        "opciones": ["-4, -1, 0, 3", "3, 0, -1, -4", "-1, -4, 0, 3", "0, -1, -4, 3"],
+        "opciones": [
+          "-4, -1, 0, 3",
+          "3, 0, -1, -4",
+          "-1, -4, 0, 3",
+          "0, -1, -4, 3"
+        ],
         "respuestaCorrecta": 0,
         "retroalimentacion": "De menor a mayor: -4 < -1 < 0 < 3."
       },
@@ -78,9 +88,21 @@
       {
         "tipo": "relacionar_columnas",
         "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
-        "columnaA": ["-8°C", "-3°C", "2°C"],
-        "columnaB": ["Es la más caliente", "Es la más fría", "Es templada, bajo cero"],
-        "parejasCorrectas": [1, 2, 0],
+        "columnaA": [
+          "-8°C",
+          "-3°C",
+          "2°C"
+        ],
+        "columnaB": [
+          "Es la más caliente",
+          "Es la más fría",
+          "Es templada, bajo cero"
+        ],
+        "parejasCorrectas": [
+          1,
+          2,
+          0
+        ],
         "retroalimentacion": "-8°C es la más fría (más a la izquierda); -3°C es templada bajo cero; 2°C es la más caliente."
       },
       {
@@ -92,9 +114,170 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
-        "opciones": ["5, -2, -7, -10", "-10, -7, -2, 5", "-2, -7, 5, -10", "5, -10, -2, -7"],
+        "opciones": [
+          "5, -2, -7, -10",
+          "-10, -7, -2, 5",
+          "-2, -7, 5, -10",
+          "5, -10, -2, -7"
+        ],
         "respuestaCorrecta": 0,
         "retroalimentacion": "De mayor a menor: 5 > -2 > -7 > -10."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "El número menor entre 2, 19, -11, -10 es ___.",
+        "respuestaCorrecta": "-11",
+        "retroalimentacion": "-11 está más a la izquierda en la recta numérica, así que es el menor."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "El número menor entre 18, -9, 4, 15 es ___.",
+        "respuestaCorrecta": "-9",
+        "retroalimentacion": "-9 está más a la izquierda en la recta numérica, así que es el menor."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "El número menor entre 16, 19, -2, 7 es ___.",
+        "respuestaCorrecta": "-2",
+        "retroalimentacion": "-2 está más a la izquierda en la recta numérica, así que es el menor."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "El número menor entre 17, 13, -18, 14 es ___.",
+        "respuestaCorrecta": "-18",
+        "retroalimentacion": "-18 está más a la izquierda en la recta numérica, así que es el menor."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+        "opciones": [
+          "19, 13, 4, -9",
+          "4, 13, -9, 19",
+          "4, 19, 13, -9",
+          "4, 13, 19, -9"
+        ],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "De mayor a menor: 19 > 13 > 4 > -9."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+        "opciones": [
+          "-16, 20, -5, 10",
+          "20, 10, -5, -16",
+          "-5, -16, 10, 20",
+          "20, -5, 10, -16"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "De mayor a menor: 20 > 10 > -5 > -16."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+        "opciones": [
+          "20, -16, 17, -5",
+          "20, 17, -5, -16",
+          "-16, 17, -5, 20",
+          "-16, 17, 20, -5"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "De mayor a menor: 20 > 17 > -5 > -16."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+        "opciones": [
+          "-5, 18, -7, 5",
+          "-7, 5, -5, 18",
+          "-5, 5, 18, -7",
+          "18, 5, -5, -7"
+        ],
+        "respuestaCorrecta": 3,
+        "retroalimentacion": "De mayor a menor: 18 > 5 > -5 > -7."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "-4 es mayor que 6.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "-4 < 6 en la recta numérica."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "-7 es menor que 0.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "-7 < 0 en la recta numérica."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "-8 es mayor que -10.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "-8 > -10 en la recta numérica."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "13 es mayor que 6.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "13 > 6 en la recta numérica."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+        "columnaA": [
+          "0°C",
+          "4°C",
+          "-11°C"
+        ],
+        "columnaB": [
+          "Es la temperatura intermedia",
+          "Es la más fría",
+          "Es la más caliente"
+        ],
+        "parejasCorrectas": [
+          0,
+          2,
+          1
+        ],
+        "retroalimentacion": "De frío a caliente: -11°C < 0°C < 4°C."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+        "columnaA": [
+          "-8°C",
+          "-15°C",
+          "-13°C"
+        ],
+        "columnaB": [
+          "Es la más fría",
+          "Es la más caliente",
+          "Es la temperatura intermedia"
+        ],
+        "parejasCorrectas": [
+          1,
+          0,
+          2
+        ],
+        "retroalimentacion": "De frío a caliente: -15°C < -13°C < -8°C."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+        "columnaA": [
+          "9°C",
+          "-12°C",
+          "-11°C"
+        ],
+        "columnaB": [
+          "Es la temperatura intermedia",
+          "Es la más caliente",
+          "Es la más fría"
+        ],
+        "parejasCorrectas": [
+          1,
+          2,
+          0
+        ],
+        "retroalimentacion": "De frío a caliente: -12°C < -11°C < 9°C."
       }
     ]
   },
@@ -108,7 +291,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "Un dron vuela a 25 m y un buzo está a -10 m. ¿Cuál está más lejos del nivel del mar (0)?",
-      "opciones": ["El dron (más lejos)", "El buzo (más lejos)", "Ambos están a la misma distancia", "No se puede saber"],
+      "opciones": [
+        "El dron (más lejos)",
+        "El buzo (más lejos)",
+        "Ambos están a la misma distancia",
+        "No se puede saber"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "El dron está a 25 m de distancia del 0, y el buzo a 10 m; 25 es mayor que 10, así que el dron está más lejos."
     },
@@ -121,9 +309,21 @@
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
-      "columnaA": ["-12°C", "-1°C", "4°C"],
-      "columnaB": ["Es la más caliente", "Es templada, bajo cero", "Es la más fría"],
-      "parejasCorrectas": [2, 1, 0],
+      "columnaA": [
+        "-12°C",
+        "-1°C",
+        "4°C"
+      ],
+      "columnaB": [
+        "Es la más caliente",
+        "Es templada, bajo cero",
+        "Es la más fría"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
       "retroalimentacion": "-12°C es la más fría; -1°C es templada bajo cero; 4°C es la más caliente."
     }
   ]

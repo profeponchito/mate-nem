@@ -6,10 +6,14 @@
  * o un HTMLElement ya armado (cuando necesita mantener estado interno,
  * como la vista de un PDA con sus fases).
  *
- * Diseño: paleta índigo/violeta como marca, con un acento distinto por
- * grado (índigo, fucsia, esmeralda) para que la app se sienta vistosa y
- * fácil de ubicar. Los íconos son SVG dibujados a mano (sin librería
- * externa) y las animaciones vienen de las clases `mn-*` de styles.css.
+ * Diseño: cada FASE del recorrido de un PDA tiene su propio color de acento
+ * (problematización=ámbar, tema=azul, repaso=violeta, reto=rosa,
+ * resultado=oro, práctica extra=verde azulado), para que de un vistazo se
+ * note en qué parte del recorrido estás — además de la marca general
+ * índigo/violeta y el acento por grado (distinto en cada uno de los 3
+ * grados) en las pantallas de navegación. Los íconos son SVG dibujados a
+ * mano (sin librería externa) y las animaciones vienen de las clases
+ * `mn-*` de styles.css.
  */
 
 import { ruta, rutaPorDefecto, navegar, init } from './router.js';
@@ -20,7 +24,7 @@ import { enviarRegistroPDA, reintentarPendientes } from './webhook.js';
 import { generarConstancia, descargarComoPDF } from './constancia.js';
 
 // ============================================================
-// Sistema visual: acentos por grado + íconos SVG dibujados a mano
+// Sistema visual: acento por grado (navegación) + acento por fase (PDA)
 // ============================================================
 const TEMAS_GRADO = {
   '1°': {
@@ -46,6 +50,57 @@ const TEMAS_GRADO = {
 function temaGrado_(grado) {
   return TEMAS_GRADO[grado] || TEMAS_GRADO['1°'];
 }
+
+// Un color distinto por FASE del recorrido de un PDA: además de vistoso,
+// ayuda a ubicarse ("¿en qué parte voy?") de un vistazo, sin leer texto.
+const PASO_COLOR = {
+  problematizacion: {
+    chip: 'bg-amber-50 text-amber-700', texto: 'text-amber-600',
+    grad: 'from-amber-500 to-orange-600', suave: 'bg-amber-50 border-amber-200',
+    accent: 'accent-amber-600', hover: 'hover:bg-amber-50',
+    inputBorder: 'border-amber-500', inputFocus: 'focus:border-orange-600 bg-amber-50/50',
+    ring: 'focus:ring-amber-500'
+  },
+  subtema: {
+    chip: 'bg-sky-50 text-sky-700', texto: 'text-sky-600',
+    grad: 'from-sky-500 to-blue-600', suave: 'bg-sky-50 border-sky-200',
+    accent: 'accent-sky-600', hover: 'hover:bg-sky-50',
+    inputBorder: 'border-sky-500', inputFocus: 'focus:border-blue-600 bg-sky-50/50',
+    ring: 'focus:ring-sky-500'
+  },
+  check: {
+    chip: 'bg-violet-50 text-violet-700', texto: 'text-violet-600',
+    grad: 'from-violet-500 to-purple-600', suave: 'bg-violet-50 border-violet-200',
+    accent: 'accent-violet-600', hover: 'hover:bg-violet-50',
+    inputBorder: 'border-violet-500', inputFocus: 'focus:border-purple-600 bg-violet-50/50',
+    ring: 'focus:ring-violet-500'
+  },
+  reto: {
+    chip: 'bg-rose-50 text-rose-700', texto: 'text-rose-600',
+    grad: 'from-rose-500 to-pink-600', suave: 'bg-rose-50 border-rose-200',
+    accent: 'accent-rose-600', hover: 'hover:bg-rose-50',
+    inputBorder: 'border-rose-500', inputFocus: 'focus:border-pink-600 bg-rose-50/50',
+    ring: 'focus:ring-rose-500'
+  },
+  resultado: {
+    chip: 'bg-amber-50 text-amber-700', texto: 'text-amber-600',
+    grad: 'from-amber-500 to-yellow-600', suave: 'bg-amber-50 border-amber-200',
+    accent: 'accent-amber-600', hover: 'hover:bg-amber-50',
+    inputBorder: 'border-amber-500', inputFocus: 'focus:border-yellow-600 bg-amber-50/50',
+    ring: 'focus:ring-amber-500'
+  },
+  practicaExtra: {
+    chip: 'bg-teal-50 text-teal-700', texto: 'text-teal-600',
+    grad: 'from-teal-500 to-emerald-600', suave: 'bg-teal-50 border-teal-200',
+    accent: 'accent-teal-600', hover: 'hover:bg-teal-50',
+    inputBorder: 'border-teal-500', inputFocus: 'focus:border-emerald-600 bg-teal-50/50',
+    ring: 'focus:ring-teal-500'
+  }
+};
+
+/** Cuántos reactivos del reto se muestran juntos por página (el reto se
+ * responde "de 5 en 5" en vez de todos juntos o uno por uno). */
+const TAM_PAGINA_RETO = 5;
 
 /** Íconos SVG originales (trazo, sin relleno) para cada tipo de paso. */
 function icono_(nombre, clase = 'w-5 h-5') {
@@ -239,7 +294,9 @@ async function vistaPDA({ grado, id }) {
 
   // Aplana el PDA en una secuencia lineal de pasos: problematización,
   // cada subtema (más su check si tiene uno), el reto y el resultado.
-  // Esto es lo que permite calcular el % de avance de forma sencilla.
+  // Esto es lo que permite calcular el % de avance de forma sencilla. El
+  // reto internamente se navega "de 5 en 5" (ver retoPagina en estado),
+  // pero cuenta como un solo paso aquí para la barra de avance general.
   const pasos = [{ tipo: 'problematizacion' }];
   pda.subtemas.forEach((subtema, si) => {
     pasos.push({ tipo: 'subtema', subtemaIndex: si });
@@ -252,8 +309,30 @@ async function vistaPDA({ grado, id }) {
   const estado = {
     pasoIndex: 0,
     resultado: null,
-    codigoVerificacion: null
+    codigoVerificacion: null,
+    retoPagina: 0,
+    respuestasReto: new Array(pda.reto.reactivos.length).fill(null)
   };
+
+  /** Lee y guarda las respuestas de la página actual del reto (de 5 en 5).
+   * Si `parcial` es true (al ir "Atrás"), guarda lo que haya sin exigir que
+   * esté completa. Si falta algo y no es parcial, avisa y no avanza. */
+  function guardarPaginaReto_(parcial = false) {
+    const inicio = estado.retoPagina * TAM_PAGINA_RETO;
+    const fin = Math.min(inicio + TAM_PAGINA_RETO, pda.reto.reactivos.length);
+    const respuestasPagina = [];
+    for (let i = inicio; i < fin; i++) {
+      respuestasPagina.push(leerRespuesta_(raiz, `reto-${i}`, pda.reto.reactivos[i].tipo));
+    }
+    if (!parcial && respuestasPagina.some((r) => r === null)) {
+      alert('Responde todos los reactivos de esta página antes de continuar.');
+      return false;
+    }
+    respuestasPagina.forEach((r, idx) => {
+      if (r !== null) estado.respuestasReto[inicio + idx] = r;
+    });
+    return true;
+  }
 
   function repintar() {
     const paso = pasos[estado.pasoIndex];
@@ -266,13 +345,13 @@ async function vistaPDA({ grado, id }) {
         </a>
         ${barraAvance_(estado.pasoIndex, pasos.length, tema)}
         <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4">
-          ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda, tema) : ''}
-          ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, tema) : ''}
-          ${paso.tipo === 'check' ? panelCheck_(pda.subtemas[paso.subtemaIndex], `check-${paso.subtemaIndex}`, tema) : ''}
-          ${paso.tipo === 'reto' ? panelReto_(pda, tema) : ''}
-          ${esResultado ? panelResultado_(pda, estado, tema) : ''}
+          ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda, PASO_COLOR.problematizacion) : ''}
+          ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, PASO_COLOR.subtema) : ''}
+          ${paso.tipo === 'check' ? panelCheck_(pda.subtemas[paso.subtemaIndex], `check-${paso.subtemaIndex}`, PASO_COLOR.check) : ''}
+          ${paso.tipo === 'reto' ? panelReto_(pda, estado, PASO_COLOR.reto) : ''}
+          ${esResultado ? panelResultado_(pda, estado, PASO_COLOR.resultado) : ''}
         </div>
-        ${esResultado && Array.isArray(pda.practicaExtra) && pda.practicaExtra.length > 0 ? panelPracticaExtra_(pda, tema) : ''}
+        ${esResultado && Array.isArray(pda.practicaExtra) && pda.practicaExtra.length > 0 ? panelPracticaExtra_(pda, PASO_COLOR.practicaExtra) : ''}
       </div>
     `;
     conectarEventos_();
@@ -310,18 +389,30 @@ async function vistaPDA({ grado, id }) {
       raiz.querySelector('[data-accion="continuar"]').classList.remove('hidden');
     });
 
-    // Envía las respuestas del reto final: califica, guarda en Sheets y
-    // avanza al panel de resultado.
-    raiz.querySelector('[data-accion="enviar-reto"]')?.addEventListener('click', async () => {
-      const reto = pda.reto;
-      const respuestas = reto.reactivos.map((r, i) => leerRespuesta_(raiz, `reto-${i}`, r.tipo));
+    // Reto: avanzar a la siguiente página de 5 reactivos (exige la página completa).
+    raiz.querySelector('[data-accion="reto-siguiente"]')?.addEventListener('click', () => {
+      if (!guardarPaginaReto_()) return;
+      estado.retoPagina++;
+      repintar();
+    });
 
-      if (respuestas.some((r) => r === null)) {
+    // Reto: regresar a la página anterior (guarda lo respondido sin exigirlo completo).
+    raiz.querySelector('[data-accion="reto-anterior"]')?.addEventListener('click', () => {
+      guardarPaginaReto_(true);
+      estado.retoPagina--;
+      repintar();
+    });
+
+    // Envía las respuestas del reto final (última página): califica, guarda en
+    // Sheets y avanza al panel de resultado.
+    raiz.querySelector('[data-accion="enviar-reto"]')?.addEventListener('click', async () => {
+      if (!guardarPaginaReto_()) return;
+      if (estado.respuestasReto.some((r) => r === null)) {
         alert('Responde todos los reactivos antes de continuar.');
         return;
       }
 
-      estado.resultado = calcularResultado(pda, respuestas);
+      estado.resultado = calcularResultado(pda, estado.respuestasReto);
       estado.pasoIndex++; // avanza al paso 'resultado'
       repintar();
 
@@ -401,59 +492,68 @@ async function vistaPDA({ grado, id }) {
 // ============================================================
 // Paneles de cada paso (usados por vistaPDA)
 // ============================================================
-function overline_(texto, iconoNombre, tema) {
+function overline_(texto, iconoNombre, color) {
   return `
-    <p class="inline-flex items-center gap-1.5 text-xs uppercase tracking-wide ${tema.texto} font-bold mb-2 px-2.5 py-1 rounded-full ${tema.chip}">
+    <p class="inline-flex items-center gap-1.5 text-xs uppercase tracking-wide ${color.texto} font-bold mb-2 px-2.5 py-1 rounded-full ${color.chip}">
       ${icono_(iconoNombre, 'w-3.5 h-3.5')} ${texto}
     </p>
   `;
 }
 
-function botonPrimario_(texto, dataAccion) {
+function botonPrimario_(texto, dataAccion, color) {
   return `
     <button data-accion="${dataAccion}"
-            class="mn-elevar bg-gradient-to-r from-indigo-600 to-fuchsia-600 hover:from-indigo-700 hover:to-fuchsia-700 text-white font-heading font-bold px-6 py-2.5 rounded-xl shadow-md shadow-indigo-200 transition">
+            class="mn-elevar bg-gradient-to-r ${color.grad} text-white font-heading font-bold px-6 py-2.5 rounded-xl shadow-md transition">
       ${texto}
     </button>
   `;
 }
 
-function panelProblematizacion_(pda, tema) {
+function botonSecundario_(texto, dataAccion) {
   return `
-    ${overline_('Problematización', 'foco', tema)}
-    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(pda.titulo)}</h3>
-    <p class="text-slate-700 leading-relaxed mb-4">${escapeHTML_(pda.problematizacion.contexto)}</p>
-    <p class="text-slate-800 font-semibold mb-6 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3">${escapeHTML_(pda.problematizacion.pregunta)}</p>
-    ${botonPrimario_('Comenzar el tema →', 'continuar')}
+    <button data-accion="${dataAccion}"
+            class="mn-elevar bg-white border-2 border-slate-300 text-slate-600 hover:bg-slate-50 font-heading font-bold px-5 py-2.5 rounded-xl transition">
+      ${texto}
+    </button>
   `;
 }
 
-function panelSubtema_(subtema, indice, total, tema) {
+function panelProblematizacion_(pda, color) {
   return `
-    ${overline_(`Tema · Parte ${indice + 1} de ${total}`, 'libro', tema)}
+    ${overline_('Problematización', 'foco', color)}
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(pda.titulo)}</h3>
+    <p class="text-slate-700 leading-relaxed mb-4">${escapeHTML_(pda.problematizacion.contexto)}</p>
+    <p class="text-slate-800 font-semibold mb-6 ${color.suave} border rounded-xl px-4 py-3">${escapeHTML_(pda.problematizacion.pregunta)}</p>
+    ${botonPrimario_('Comenzar el tema →', 'continuar', color)}
+  `;
+}
+
+function panelSubtema_(subtema, indice, total, color) {
+  return `
+    ${overline_(`Tema · Parte ${indice + 1} de ${total}`, 'libro', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(subtema.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
     ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 font-mono text-slate-800 mb-3">${escapeHTML_(subtema.formula)}</p>` : ''}
     <div class="space-y-1.5 mb-6">
-      ${subtema.ejemplos.map((ejemplo) => `<p class="text-slate-600 text-sm bg-indigo-50/60 rounded-lg px-3 py-2"><strong class="text-indigo-700">Ejemplo:</strong> ${escapeHTML_(ejemplo)}</p>`).join('')}
+      ${subtema.ejemplos.map((ejemplo) => `<p class="text-slate-600 text-sm ${color.suave.split(' ')[0]} rounded-lg px-3 py-2"><strong class="${color.texto}">Ejemplo:</strong> ${escapeHTML_(ejemplo)}</p>`).join('')}
     </div>
-    ${botonPrimario_('Continuar →', 'continuar')}
+    ${botonPrimario_('Continuar →', 'continuar', color)}
   `;
 }
 
-function panelCheck_(subtema, prefijo, tema) {
+function panelCheck_(subtema, prefijo, color) {
   const pregunta = subtema.check;
   return `
-    ${overline_('Repaso rápido', 'lupa', tema)}
+    ${overline_('Repaso rápido', 'lupa', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(subtema.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
     ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 font-mono text-slate-800 mb-4">${escapeHTML_(subtema.formula)}</p>` : ''}
     <div class="border-t border-dashed border-slate-200 pt-4">
-      ${renderizarPregunta_(pregunta, prefijo)}
+      ${renderizarPregunta_(pregunta, prefijo, color)}
     </div>
     <div data-check-feedback class="mt-3 hidden"></div>
     <div class="mt-4 flex gap-2">
-      <button data-accion="verificar-check" class="mn-elevar bg-gradient-to-r from-indigo-600 to-fuchsia-600 hover:from-indigo-700 hover:to-fuchsia-700 text-white font-heading font-bold px-6 py-2.5 rounded-xl shadow-md shadow-indigo-200 transition">
+      <button data-accion="verificar-check" class="mn-elevar bg-gradient-to-r ${color.grad} text-white font-heading font-bold px-6 py-2.5 rounded-xl shadow-md transition">
         Verificar
       </button>
       <button data-accion="continuar" class="hidden bg-slate-700 hover:bg-slate-800 text-white font-heading font-bold px-6 py-2.5 rounded-xl transition">
@@ -463,33 +563,55 @@ function panelCheck_(subtema, prefijo, tema) {
   `;
 }
 
-function panelReto_(pda, tema) {
+function panelReto_(pda, estado, color) {
   const reto = pda.reto;
+  const totalPaginas = Math.ceil(reto.reactivos.length / TAM_PAGINA_RETO);
+  const pagina = estado.retoPagina;
+  const inicio = pagina * TAM_PAGINA_RETO;
+  const fin = Math.min(inicio + TAM_PAGINA_RETO, reto.reactivos.length);
+  const esUltimaPagina = pagina === totalPaginas - 1;
+
   return `
-    ${overline_('Reto', 'trofeo', tema)}
+    ${overline_('Reto', 'trofeo', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(pda.titulo)}</h3>
-    <p class="text-slate-700 leading-relaxed mb-4 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">${escapeHTML_(reto.sintesis)}</p>
+    ${pagina === 0 ? `<p class="text-slate-700 leading-relaxed mb-4 ${color.suave} border rounded-xl px-4 py-3">${escapeHTML_(reto.sintesis)}</p>` : ''}
+
+    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+      <p class="text-sm font-bold ${color.texto}">Reactivos ${inicio + 1}–${fin} de ${reto.reactivos.length}</p>
+      <div class="flex gap-1.5">
+        ${Array.from({ length: totalPaginas }).map((_, i) => `
+          <span class="w-2.5 h-2.5 rounded-full ${i <= pagina ? `bg-gradient-to-r ${color.grad}` : 'bg-slate-200'}"></span>
+        `).join('')}
+      </div>
+    </div>
+
     <div class="space-y-6">
-      ${reto.reactivos.map((reactivo, i) => `
+      ${reto.reactivos.slice(inicio, fin).map((reactivo, j) => {
+        const i = inicio + j;
+        return `
         <div class="border-t border-slate-100 pt-4 first:border-t-0 first:pt-0">
           <p class="text-slate-400 text-xs font-bold mb-1">REACTIVO ${i + 1} DE ${reto.reactivos.length}</p>
-          ${renderizarPregunta_(reactivo, `reto-${i}`)}
+          ${renderizarPregunta_(reactivo, `reto-${i}`, color, estado.respuestasReto[i])}
         </div>
-      `).join('')}
+      `;
+      }).join('')}
     </div>
-    <div class="mt-6">
-      ${botonPrimario_('Enviar respuestas', 'enviar-reto')}
+    <div class="mt-6 flex gap-2 flex-wrap">
+      ${pagina > 0 ? botonSecundario_('← Atrás', 'reto-anterior') : ''}
+      ${esUltimaPagina
+        ? botonPrimario_('Enviar respuestas', 'enviar-reto', color)
+        : botonPrimario_(`Siguiente (${fin}/${reto.reactivos.length}) →`, 'reto-siguiente', color)}
     </div>
   `;
 }
 
-function panelResultado_(pda, estado, tema) {
+function panelResultado_(pda, estado, color) {
   const r = estado.resultado;
   const estrellasMax = pda.reto.estrellasMax || 3;
   const perfecto = r.estrellas >= estrellasMax;
 
   return `
-    ${overline_('Resultado', 'medalla', tema)}
+    ${overline_('Resultado', 'medalla', color)}
     <p class="font-heading text-2xl sm:text-3xl font-bold text-slate-800 mb-2">${r.correctas} / ${r.total} correctas</p>
     <div class="relative inline-block mb-1">
       ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-300/50 blur-xl"></div>` : ''}
@@ -499,7 +621,7 @@ function panelResultado_(pda, estado, tema) {
     </div>
     <p class="text-slate-600 font-semibold mb-4">${r.puntaje} pts</p>
 
-    <div class="space-y-2 mb-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
       ${r.detalle.map((d) => `
         <div class="text-sm px-4 py-3 rounded-xl border ${d.esCorrecta ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-rose-50 text-rose-800 border-rose-200'}">
           <span class="font-bold">${d.esCorrecta ? '✓' : '✗'}</span> ${escapeHTML_(d.resumen)}
@@ -509,7 +631,7 @@ function panelResultado_(pda, estado, tema) {
     </div>
 
     ${!estado.codigoVerificacion ? '<p class="text-slate-400 text-sm">Guardando tu avance…</p>' : `
-      ${botonPrimario_('Generar mi constancia', 'ver-constancia')}
+      ${botonPrimario_('Generar mi constancia', 'ver-constancia', color)}
       <button data-accion="descargar-pdf" class="hidden mn-elevar bg-slate-700 hover:bg-slate-800 text-white font-heading font-bold px-6 py-2.5 rounded-xl transition ml-2">
         Descargar PDF
       </button>
@@ -518,20 +640,20 @@ function panelResultado_(pda, estado, tema) {
   `;
 }
 
-function panelPracticaExtra_(pda, tema) {
+function panelPracticaExtra_(pda, color) {
   return `
-    <div class="mn-panel mt-4 bg-gradient-to-br from-violet-50 to-fuchsia-50 border border-violet-200 rounded-3xl p-6 sm:p-7">
-      ${overline_('Práctica extra', 'chispas', tema)}
+    <div class="mn-panel mt-4 bg-gradient-to-br from-teal-50 to-emerald-50 border border-teal-200 rounded-3xl p-6 sm:p-7">
+      ${overline_('Práctica extra', 'chispas', color)}
       <h3 class="font-heading text-xl font-bold text-slate-800 mb-1">¿Quieres seguir practicando?</h3>
       <p class="text-slate-600 text-sm mb-5">Estos reactivos son opcionales y no cambian tu calificación ni tus estrellas: son solo para reforzar lo que aprendiste.</p>
       <div class="space-y-5">
         ${pda.practicaExtra.map((pregunta, i) => `
           <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-4 sm:p-5">
             <p class="text-slate-400 text-xs font-bold mb-2">PRÁCTICA ${i + 1} DE ${pda.practicaExtra.length}</p>
-            ${renderizarPregunta_(pregunta, `practica-${i}`)}
+            ${renderizarPregunta_(pregunta, `practica-${i}`, color)}
             <div data-practica-feedback="${i}" class="mt-3 hidden"></div>
             <button data-accion="verificar-practica" data-indice="${i}"
-                    class="mt-4 mn-elevar bg-white border-2 border-violet-500 text-violet-700 hover:bg-violet-50 font-heading font-bold px-5 py-2 rounded-xl transition">
+                    class="mt-4 mn-elevar bg-white border-2 border-teal-500 text-teal-700 hover:bg-teal-50 font-heading font-bold px-5 py-2 rounded-xl transition">
               Verificar
             </button>
           </div>
@@ -545,16 +667,20 @@ function panelPracticaExtra_(pda, tema) {
 // Renderizador genérico de preguntas (4 tipos) + lectura del DOM
 // ============================================================
 
-/** Devuelve el HTML de una pregunta según su tipo. `prefijo` identifica sus inputs en el DOM. */
-function renderizarPregunta_(pregunta, prefijo) {
+/** Devuelve el HTML de una pregunta según su tipo, con el acento de color de
+ * su fase. `prefijo` identifica sus inputs en el DOM. `valorPrevio` (opcional)
+ * pre-llena la respuesta si el alumno ya la había capturado antes (por
+ * ejemplo, al regresar a una página anterior del reto). */
+function renderizarPregunta_(pregunta, prefijo, color, valorPrevio) {
+  const c = color || PASO_COLOR.check;
   switch (pregunta.tipo) {
     case 'opcion_multiple':
       return `
         <p class="text-slate-800 font-medium mb-2">${escapeHTML_(pregunta.pregunta)}</p>
         <div class="space-y-1.5">
           ${pregunta.opciones.map((opcion, j) => `
-            <label class="flex items-center gap-2 text-slate-700 cursor-pointer rounded-lg px-2 py-1.5 hover:bg-indigo-50 transition">
-              <input type="radio" name="preg-${prefijo}" value="${j}" data-preg="${prefijo}" class="accent-indigo-600 w-4 h-4">
+            <label class="flex items-center gap-2 text-slate-700 cursor-pointer rounded-lg px-2 py-1.5 ${c.hover} transition">
+              <input type="radio" name="preg-${prefijo}" value="${j}" data-preg="${prefijo}" class="${c.accent} w-4 h-4" ${Number(valorPrevio) === j ? 'checked' : ''}>
               ${escapeHTML_(opcion)}
             </label>
           `).join('')}
@@ -565,21 +691,22 @@ function renderizarPregunta_(pregunta, prefijo) {
       return `
         <p class="text-slate-800 font-medium mb-2">${escapeHTML_(pregunta.enunciado)}</p>
         <div class="flex gap-4">
-          <label class="flex items-center gap-2 text-slate-700 cursor-pointer rounded-lg px-3 py-1.5 hover:bg-indigo-50 transition">
-            <input type="radio" name="preg-${prefijo}" value="true" data-preg="${prefijo}" class="accent-indigo-600 w-4 h-4"> Verdadero
+          <label class="flex items-center gap-2 text-slate-700 cursor-pointer rounded-lg px-3 py-1.5 ${c.hover} transition">
+            <input type="radio" name="preg-${prefijo}" value="true" data-preg="${prefijo}" class="${c.accent} w-4 h-4" ${valorPrevio === true ? 'checked' : ''}> Verdadero
           </label>
-          <label class="flex items-center gap-2 text-slate-700 cursor-pointer rounded-lg px-3 py-1.5 hover:bg-indigo-50 transition">
-            <input type="radio" name="preg-${prefijo}" value="false" data-preg="${prefijo}" class="accent-indigo-600 w-4 h-4"> Falso
+          <label class="flex items-center gap-2 text-slate-700 cursor-pointer rounded-lg px-3 py-1.5 ${c.hover} transition">
+            <input type="radio" name="preg-${prefijo}" value="false" data-preg="${prefijo}" class="${c.accent} w-4 h-4" ${valorPrevio === false ? 'checked' : ''}> Falso
           </label>
         </div>
       `;
 
     case 'llenar_frase': {
       const [antes, despues] = pregunta.frase.split('___');
+      const valor = valorPrevio != null ? escapeHTML_(String(valorPrevio)) : '';
       return `
         <p class="text-slate-800 font-medium mb-2">
-          ${escapeHTML_(antes || '')}<input type="text" data-preg="${prefijo}"
-            class="inline-block border-b-2 border-indigo-500 focus:outline-none focus:border-fuchsia-500 px-1 mx-1 w-24 text-center bg-indigo-50/50 rounded-t">${escapeHTML_(despues || '')}
+          ${escapeHTML_(antes || '')}<input type="text" data-preg="${prefijo}" value="${valor}"
+            class="inline-block border-b-2 ${c.inputBorder} focus:outline-none ${c.inputFocus} px-1 mx-1 w-24 text-center rounded-t">${escapeHTML_(despues || '')}
         </p>
       `;
     }
@@ -588,12 +715,12 @@ function renderizarPregunta_(pregunta, prefijo) {
       return `
         <p class="text-slate-800 font-medium mb-3">${escapeHTML_(pregunta.instruccion || 'Relaciona cada elemento con su pareja correcta.')}</p>
         <div class="space-y-2">
-          ${pregunta.columnaA.map((item) => `
+          ${pregunta.columnaA.map((item, idx) => `
             <div class="flex items-center gap-3">
               <span class="text-slate-700 flex-1">${escapeHTML_(item)}</span>
-              <select data-preg="${prefijo}" class="border border-slate-300 rounded-lg px-2 py-1.5 text-sm bg-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+              <select data-preg="${prefijo}" class="border border-slate-300 rounded-lg px-2 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 ${c.ring}">
                 <option value="">Selecciona…</option>
-                ${pregunta.columnaB.map((opcion, j) => `<option value="${j}">${escapeHTML_(opcion)}</option>`).join('')}
+                ${pregunta.columnaB.map((opcion, j) => `<option value="${j}" ${Array.isArray(valorPrevio) && valorPrevio[idx] === j ? 'selected' : ''}>${escapeHTML_(opcion)}</option>`).join('')}
               </select>
             </div>
           `).join('')}

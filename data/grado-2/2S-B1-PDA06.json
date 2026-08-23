@@ -21,7 +21,12 @@
       "check": {
         "tipo": "opcion_multiple",
         "pregunta": "Un número más el doble de sí mismo es 27 (x + 2x = 27). ¿Cuál es el número?",
-        "opciones": ["7", "9", "13.5", "27"],
+        "opciones": [
+          "7",
+          "9",
+          "13.5",
+          "27"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "3x=27 → x=9."
       }
@@ -63,7 +68,12 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "Después de un aumento del 10%, un producto cuesta $88. ¿Cuánto costaba antes del aumento?",
-        "opciones": ["$78.80", "$79.20", "$80", "$97"],
+        "opciones": [
+          "$78.80",
+          "$79.20",
+          "$80",
+          "$97"
+        ],
         "respuestaCorrecta": 2,
         "retroalimentacion": "88 = x×1.10 → x = 88÷1.10 = 80."
       },
@@ -76,9 +86,21 @@
       {
         "tipo": "relacionar_columnas",
         "instruccion": "Relaciona cada planteamiento con su resultado.",
-        "columnaA": ["x + 2x = 27", "150 × (1 − 0.15)", "x × 1.10 = 88"],
-        "columnaB": ["80", "127.50", "9"],
-        "parejasCorrectas": [2, 1, 0],
+        "columnaA": [
+          "x + 2x = 27",
+          "150 × (1 − 0.15)",
+          "x × 1.10 = 88"
+        ],
+        "columnaB": [
+          "80",
+          "127.50",
+          "9"
+        ],
+        "parejasCorrectas": [
+          2,
+          1,
+          0
+        ],
         "retroalimentacion": "x+2x=27 → x=9; 150×0.85=127.50; x×1.10=88 → x=80."
       },
       {
@@ -90,9 +112,170 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "Un artículo cuesta $180 y tiene 25% de descuento. ¿Cuál es su precio final?",
-        "opciones": ["$45", "$135", "$155", "$225"],
+        "opciones": [
+          "$45",
+          "$135",
+          "$155",
+          "$225"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "180 × (1 − 0.25) = 180 × 0.75 = $135."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "Resuelve: 3x + 8 = 23. x = ___.",
+        "respuestaCorrecta": "5",
+        "retroalimentacion": "3x = 15; x = 15÷3 = 5."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "Resuelve: 4x - 8 = 52. x = ___.",
+        "respuestaCorrecta": "15",
+        "retroalimentacion": "4x = 60; x = 60÷4 = 15."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "Resuelve: 4x - 7 = 17. x = ___.",
+        "respuestaCorrecta": "6",
+        "retroalimentacion": "4x = 24; x = 24÷4 = 6."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "Resuelve: 5x + 8 = 23. x = ___.",
+        "respuestaCorrecta": "3",
+        "retroalimentacion": "5x = 15; x = 15÷5 = 3."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Un artículo de $170 tiene 15% de aumento. ¿Cuál es su precio final?",
+        "opciones": [
+          "$195.5",
+          "$178.5",
+          "$187",
+          "$212.5"
+        ],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "170 × (1 + 0.15) = $195.5."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Un artículo de $210 tiene 15% de descuento. ¿Cuál es su precio final?",
+        "opciones": [
+          "$189",
+          "$178.5",
+          "$199.5",
+          "$168"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "210 × (1 − 0.15) = $178.5."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Un artículo de $270 tiene 5% de descuento. ¿Cuál es su precio final?",
+        "opciones": [
+          "$229.5",
+          "$270",
+          "$256.5",
+          "$243"
+        ],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "270 × (1 − 0.05) = $256.5."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Un artículo de $360 tiene 10% de descuento. ¿Cuál es su precio final?",
+        "opciones": [
+          "$288",
+          "$342",
+          "$306",
+          "$324"
+        ],
+        "respuestaCorrecta": 3,
+        "retroalimentacion": "360 × (1 − 0.10) = $324."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "La solución de 7x - 14 = 28 es x = 6.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "7x = 42; x = 6."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "La solución de 2x + 2 = 4 es x = -1.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "2x = 2; x = 1."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "La solución de 7x + 12 = 47 es x = 4.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "7x = 35; x = 5."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "La solución de 2x + 9 = 21 es x = 6.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "2x = 12; x = 6."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada ecuación con su solución.",
+        "columnaA": [
+          "8x + 8 = 104",
+          "2x - 2 = 0",
+          "6x - 5 = 43"
+        ],
+        "columnaB": [
+          "x=8",
+          "x=12",
+          "x=1"
+        ],
+        "parejasCorrectas": [
+          1,
+          2,
+          0
+        ],
+        "retroalimentacion": "8x + 8 = 104 → x=12; 2x - 2 = 0 → x=1; 6x - 5 = 43 → x=8."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada ecuación con su solución.",
+        "columnaA": [
+          "2x - 15 = -7",
+          "4x + 5 = 49",
+          "5x - 4 = 11"
+        ],
+        "columnaB": [
+          "x=3",
+          "x=4",
+          "x=11"
+        ],
+        "parejasCorrectas": [
+          1,
+          2,
+          0
+        ],
+        "retroalimentacion": "2x - 15 = -7 → x=4; 4x + 5 = 49 → x=11; 5x - 4 = 11 → x=3."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada ecuación con su solución.",
+        "columnaA": [
+          "9x - 2 = 34",
+          "5x - 7 = 68",
+          "3x + 2 = 11"
+        ],
+        "columnaB": [
+          "x=4",
+          "x=3",
+          "x=15"
+        ],
+        "parejasCorrectas": [
+          0,
+          2,
+          1
+        ],
+        "retroalimentacion": "9x - 2 = 34 → x=4; 5x - 7 = 68 → x=15; 3x + 2 = 11 → x=3."
       }
     ]
   },
@@ -106,7 +289,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "Un número menos su mitad es 15 (x − x/2 = 15). ¿Cuál es el número?",
-      "opciones": ["7.5", "15", "30", "45"],
+      "opciones": [
+        "7.5",
+        "15",
+        "30",
+        "45"
+      ],
       "respuestaCorrecta": 2,
       "retroalimentacion": "x − x/2 = x/2 = 15 → x = 30."
     },
@@ -119,9 +307,21 @@
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada planteamiento con su resultado.",
-      "columnaA": ["x + 3x = 32", "200 × (1 − 0.25)", "x × 1.20 = 96"],
-      "columnaB": ["150", "80", "8"],
-      "parejasCorrectas": [2, 0, 1],
+      "columnaA": [
+        "x + 3x = 32",
+        "200 × (1 − 0.25)",
+        "x × 1.20 = 96"
+      ],
+      "columnaB": [
+        "150",
+        "80",
+        "8"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
       "retroalimentacion": "x+3x=32 → x=8; 200×0.75=150; x×1.20=96 → x=80."
     }
   ]

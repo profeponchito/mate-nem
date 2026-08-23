@@ -22,7 +22,12 @@
       "check": {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cuánto es -8 + 5?",
-        "opciones": ["-13", "-3", "3", "13"],
+        "opciones": [
+          "-13",
+          "-3",
+          "3",
+          "13"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "Signos diferentes: 8-5=3, se conserva el signo del mayor (negativo): -3."
       }
@@ -65,7 +70,12 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "Resuelve aplicando jerarquía de operaciones: 2 + 3 × (-4)",
-        "opciones": ["-20", "-10", "10", "20"],
+        "opciones": [
+          "-20",
+          "-10",
+          "10",
+          "20"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "Primero la multiplicación: 3×(-4)=-12; luego 2+(-12)=-10."
       },
@@ -78,9 +88,21 @@
       {
         "tipo": "relacionar_columnas",
         "instruccion": "Relaciona cada operación con su resultado.",
-        "columnaA": ["(-6) × (-4)", "-8 + 5", "(-20) ÷ 5"],
-        "columnaB": ["-4", "24", "-3"],
-        "parejasCorrectas": [1, 2, 0],
+        "columnaA": [
+          "(-6) × (-4)",
+          "-8 + 5",
+          "(-20) ÷ 5"
+        ],
+        "columnaB": [
+          "-4",
+          "24",
+          "-3"
+        ],
+        "parejasCorrectas": [
+          1,
+          2,
+          0
+        ],
         "retroalimentacion": "(-6)×(-4)=24; -8+5=-3; (-20)÷5=-4."
       },
       {
@@ -92,9 +114,170 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "Resuelve aplicando jerarquía de operaciones: 10 - 2 × (-3)",
-        "opciones": ["4", "16", "-16", "24"],
+        "opciones": [
+          "4",
+          "16",
+          "-16",
+          "24"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "Primero la multiplicación: 2×(-3)=-6; luego 10-(-6)=16."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "(15) - (12) = ___.",
+        "respuestaCorrecta": "3",
+        "retroalimentacion": "(15) - (12) = 3."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "(-15) - (11) = ___.",
+        "respuestaCorrecta": "-26",
+        "retroalimentacion": "(-15) - (11) = -26."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "(8) + (14) = ___.",
+        "respuestaCorrecta": "22",
+        "retroalimentacion": "(8) + (14) = 22."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "(-8) - (3) = ___.",
+        "respuestaCorrecta": "-11",
+        "retroalimentacion": "(-8) - (3) = -11."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Resuelve: (-2) × (-5)",
+        "opciones": [
+          "10",
+          "7",
+          "14",
+          "6"
+        ],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "(-2) × (-5) = 10. Signos iguales dan positivo."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Resuelve: (5) × (-3)",
+        "opciones": [
+          "-18",
+          "-15",
+          "-12",
+          "-17"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "(5) × (-3) = -15. Signos diferentes dan negativo."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Resuelve: (6) × (-9)",
+        "opciones": [
+          "-54",
+          "-50",
+          "-51",
+          "-57"
+        ],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "(6) × (-9) = -54. Signos diferentes dan negativo."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Resuelve: (-4) × (6)",
+        "opciones": [
+          "-28",
+          "-24",
+          "-22",
+          "-26"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "(-4) × (6) = -24. Signos diferentes dan negativo."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "En la expresión 5 + 3 × (-8), el resultado es -17.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Primero la multiplicación: 3×(-8)=-24; luego 5+(-24)=-19."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "En la expresión 9 + 8 × (9), el resultado es 83.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Primero la multiplicación: 8×(9)=72; luego 9+(72)=81."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "En la expresión 3 + 2 × (6), el resultado es 15.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Primero la multiplicación: 2×(6)=12; luego 3+(12)=15."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "En la expresión 9 - 5 × (-5), el resultado es 32.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Primero la multiplicación: -5×(-5)=25; luego 9+(25)=34."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada operación con su resultado.",
+        "columnaA": [
+          "(1) + (8)",
+          "(-4) × (-7)",
+          "(-3) × (6)"
+        ],
+        "columnaB": [
+          "-18",
+          "9",
+          "28"
+        ],
+        "parejasCorrectas": [
+          1,
+          2,
+          0
+        ],
+        "retroalimentacion": "(1) + (8)=9; (-4) × (-7)=28; (-3) × (6)=-18."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada operación con su resultado.",
+        "columnaA": [
+          "(6) - (12)",
+          "(4) × (3)",
+          "(11) - (7)"
+        ],
+        "columnaB": [
+          "-6",
+          "4",
+          "12"
+        ],
+        "parejasCorrectas": [
+          0,
+          2,
+          1
+        ],
+        "retroalimentacion": "(6) - (12)=-6; (4) × (3)=12; (11) - (7)=4."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada operación con su resultado.",
+        "columnaA": [
+          "(8) × (6)",
+          "(13) + (6)",
+          "(-4) × (9)"
+        ],
+        "columnaB": [
+          "19",
+          "48",
+          "-36"
+        ],
+        "parejasCorrectas": [
+          1,
+          0,
+          2
+        ],
+        "retroalimentacion": "(8) × (6)=48; (13) + (6)=19; (-4) × (9)=-36."
       }
     ]
   },
@@ -108,7 +291,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "¿Cuál es el resultado de (-36) ÷ 6?",
-      "opciones": ["-6", "6", "-30", "30"],
+      "opciones": [
+        "-6",
+        "6",
+        "-30",
+        "30"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "Signos diferentes dan resultado negativo: (-36) ÷ 6 = -6."
     },
@@ -121,9 +309,21 @@
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada operación con su resultado.",
-      "columnaA": ["(-9) + (-4)", "(-36) ÷ 6", "5 + 2 × (-3)"],
-      "columnaB": ["-1", "-13", "-6"],
-      "parejasCorrectas": [1, 2, 0],
+      "columnaA": [
+        "(-9) + (-4)",
+        "(-36) ÷ 6",
+        "5 + 2 × (-3)"
+      ],
+      "columnaB": [
+        "-1",
+        "-13",
+        "-6"
+      ],
+      "parejasCorrectas": [
+        1,
+        2,
+        0
+      ],
       "retroalimentacion": "(-9)+(-4)=-13; (-36)÷6=-6; 5+2×(-3)=-1."
     }
   ]

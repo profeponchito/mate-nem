@@ -85,9 +85,13 @@ una barra de avance (%) en todo momento:
   antes de dejar avanzar al alumno.
 - **reto** → la actividad final gamificada y calificada. Tiene `sintesis`
   (un recordatorio teórico, a modo de mini-síntesis, que recapitula las
-  ideas clave de los subtemas y se muestra antes de los reactivos),
-  `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos` (los 17 PDAs
-  actuales usan 5, mezclando los 4 tipos de pregunta soportados).
+  ideas clave de los subtemas y se muestra antes de los reactivos, solo en
+  la primera página), `puntosPorReactivo`, `estrellasMax` y un arreglo
+  `reactivos` (los 17 PDAs actuales usan 20, mezclando los 4 tipos de
+  pregunta soportados). `app.js` los presenta paginados de 5 en 5 (4
+  páginas), con botones "Atrás/Siguiente" que conservan las respuestas ya
+  capturadas al navegar entre páginas; el envío y calificación final ocurre
+  al terminar la última página.
 - **practicaExtra** (opcional) → arreglo de reactivos adicionales, ungraded
   (no calificados), mostrados en una sección aparte después del panel de
   resultado, para quien quiera seguir practicando el mismo tema. No afectan

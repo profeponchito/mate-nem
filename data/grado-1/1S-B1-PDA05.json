@@ -22,7 +22,12 @@
       "check": {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cómo se escribe algebraicamente 'el triple de un número menos 5'?",
-        "opciones": ["3x - 5", "x - 5/3", "3(x-5)", "5 - 3x"],
+        "opciones": [
+          "3x - 5",
+          "x - 5/3",
+          "3(x-5)",
+          "5 - 3x"
+        ],
         "respuestaCorrecta": 0,
         "retroalimentacion": "'El triple de un número' es 3x, y 'menos 5' se resta: 3x - 5."
       }
@@ -64,7 +69,12 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "Un cuadrado tiene lado x. ¿Cuál es la expresión algebraica de su perímetro?",
-        "opciones": ["x²", "2x", "4x", "x/4"],
+        "opciones": [
+          "x²",
+          "2x",
+          "4x",
+          "x/4"
+        ],
         "respuestaCorrecta": 2,
         "retroalimentacion": "El cuadrado tiene 4 lados iguales, entonces el perímetro es 4x."
       },
@@ -77,9 +87,21 @@
       {
         "tipo": "relacionar_columnas",
         "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
-        "columnaA": ["El doble de un número más 3", "El triple de un número menos 5", "La mitad de un número más 4"],
-        "columnaB": ["3x-5", "x/2+4", "2x+3"],
-        "parejasCorrectas": [2, 0, 1],
+        "columnaA": [
+          "El doble de un número más 3",
+          "El triple de un número menos 5",
+          "La mitad de un número más 4"
+        ],
+        "columnaB": [
+          "3x-5",
+          "x/2+4",
+          "2x+3"
+        ],
+        "parejasCorrectas": [
+          2,
+          0,
+          1
+        ],
         "retroalimentacion": "'El doble más 3' es 2x+3; 'el triple menos 5' es 3x-5; 'la mitad más 4' es x/2+4."
       },
       {
@@ -91,9 +113,170 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cómo se escribe algebraicamente 'el doble de un número menos 7'?",
-        "opciones": ["2x-7", "x-14", "7-2x", "2(x-7)"],
+        "opciones": [
+          "2x-7",
+          "x-14",
+          "7-2x",
+          "2(x-7)"
+        ],
         "respuestaCorrecta": 0,
         "retroalimentacion": "'El doble de un número' es 2x, y 'menos 7' se resta: 2x-7."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "'El triple de un número menos 6' se escribe ___.",
+        "respuestaCorrecta": "3x-6",
+        "retroalimentacion": "'el triple de un número menos 6' se traduce como 3x-6."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "'El triple de un número menos 2' se escribe ___.",
+        "respuestaCorrecta": "3x-2",
+        "retroalimentacion": "'el triple de un número menos 2' se traduce como 3x-2."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "'El doble de un número más 5' se escribe ___.",
+        "respuestaCorrecta": "2x+5",
+        "retroalimentacion": "'el doble de un número más 5' se traduce como 2x+5."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "'El triple de un número menos 6' se escribe ___.",
+        "respuestaCorrecta": "3x-6",
+        "retroalimentacion": "'el triple de un número menos 6' se traduce como 3x-6."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cómo se escribe algebraicamente 'el cuádruple de un número más 3'?",
+        "opciones": [
+          "4x+5",
+          "4x+3",
+          "4x-3",
+          "xx+3"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "'el cuádruple de un número más 3' se traduce como 4x+3."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cómo se escribe algebraicamente 'el doble de un número más 7'?",
+        "opciones": [
+          "2x+7",
+          "2x-7",
+          "2x+9",
+          "xx+7"
+        ],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "'el doble de un número más 7' se traduce como 2x+7."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cómo se escribe algebraicamente 'el triple de un número menos 7'?",
+        "opciones": [
+          "3x+7",
+          "xx-7",
+          "3x-9",
+          "3x-7"
+        ],
+        "respuestaCorrecta": 3,
+        "retroalimentacion": "'el triple de un número menos 7' se traduce como 3x-7."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cómo se escribe algebraicamente 'la mitad de un número más 3'?",
+        "opciones": [
+          "x/2+3",
+          "x/2-3",
+          "x/2+12",
+          "x/2+5"
+        ],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "'la mitad de un número más 3' se traduce como x/2+3."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "El perímetro de un cuadrado de lado x es 4x.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "El perímetro de un rectángulo con ancho x y largo x+8 es 4x+16.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "El perímetro de un rectángulo con ancho x y largo x+8 es 4x+16.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "Un triángulo con lados x, x+4 y 4x tiene perímetro 5x+4.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+        "columnaA": [
+          "El triple de un número menos 5",
+          "La mitad de un número más 9",
+          "El doble de un número menos 2"
+        ],
+        "columnaB": [
+          "3x-5",
+          "x/2+9",
+          "2x-2"
+        ],
+        "parejasCorrectas": [
+          0,
+          1,
+          2
+        ],
+        "retroalimentacion": "'El triple de un número menos 5' es 3x-5; 'La mitad de un número más 9' es x/2+9; 'El doble de un número menos 2' es 2x-2."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+        "columnaA": [
+          "El cuádruple de un número más 3",
+          "La mitad de un número más 2",
+          "El triple de un número menos 9"
+        ],
+        "columnaB": [
+          "4x+3",
+          "3x-9",
+          "x/2+2"
+        ],
+        "parejasCorrectas": [
+          0,
+          2,
+          1
+        ],
+        "retroalimentacion": "'El cuádruple de un número más 3' es 4x+3; 'La mitad de un número más 2' es x/2+2; 'El triple de un número menos 9' es 3x-9."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+        "columnaA": [
+          "El cuádruple de un número más 9",
+          "El triple de un número menos 4",
+          "El doble de un número más 4"
+        ],
+        "columnaB": [
+          "3x-4",
+          "2x+4",
+          "4x+9"
+        ],
+        "parejasCorrectas": [
+          2,
+          0,
+          1
+        ],
+        "retroalimentacion": "'El cuádruple de un número más 9' es 4x+9; 'El triple de un número menos 4' es 3x-4; 'El doble de un número más 4' es 2x+4."
       }
     ]
   },
@@ -113,16 +296,33 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "Un triángulo tiene lados x, 2x-1 y x+4. ¿Cuál es su perímetro simplificado?",
-      "opciones": ["4x+3", "4x+4", "3x+3", "4x-3"],
+      "opciones": [
+        "4x+3",
+        "4x+4",
+        "3x+3",
+        "4x-3"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "x + (2x-1) + (x+4) = 4x+3."
     },
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
-      "columnaA": ["El triple de un número más 2", "El cuádruple de un número menos 1", "La mitad de un número menos 3"],
-      "columnaB": ["4x-1", "x/2-3", "3x+2"],
-      "parejasCorrectas": [2, 0, 1],
+      "columnaA": [
+        "El triple de un número más 2",
+        "El cuádruple de un número menos 1",
+        "La mitad de un número menos 3"
+      ],
+      "columnaB": [
+        "4x-1",
+        "x/2-3",
+        "3x+2"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
       "retroalimentacion": "'El triple más 2' es 3x+2; 'el cuádruple menos 1' es 4x-1; 'la mitad menos 3' es x/2-3."
     }
   ]

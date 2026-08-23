@@ -24,7 +24,12 @@
       "check": {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es la expresión decimal de 1/4?",
-        "opciones": ["0.14", "0.25", "0.4", "1.4"],
+        "opciones": [
+          "0.14",
+          "0.25",
+          "0.4",
+          "1.4"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "1 ÷ 4 = 0.25."
       }
@@ -67,7 +72,12 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es la expresión decimal de 5/8?",
-        "opciones": ["0.58", "0.625", "0.85", "1.6"],
+        "opciones": [
+          "0.58",
+          "0.625",
+          "0.85",
+          "1.6"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "5 ÷ 8 = 0.625."
       },
@@ -80,9 +90,21 @@
       {
         "tipo": "relacionar_columnas",
         "instruccion": "Relaciona cada fracción con su equivalente decimal.",
-        "columnaA": ["1/2", "1/4", "3/5"],
-        "columnaB": ["0.6", "0.25", "0.5"],
-        "parejasCorrectas": [2, 1, 0],
+        "columnaA": [
+          "1/2",
+          "1/4",
+          "3/5"
+        ],
+        "columnaB": [
+          "0.6",
+          "0.25",
+          "0.5"
+        ],
+        "parejasCorrectas": [
+          2,
+          1,
+          0
+        ],
         "retroalimentacion": "1/2 = 0.5; 1/4 = 0.25; 3/5 = 0.6."
       },
       {
@@ -94,9 +116,170 @@
       {
         "tipo": "opcion_multiple",
         "pregunta": "¿Cuál es la fracción simplificada de 0.4?",
-        "opciones": ["4/100", "2/5", "4/10", "1/4"],
+        "opciones": [
+          "4/100",
+          "2/5",
+          "4/10",
+          "1/4"
+        ],
         "respuestaCorrecta": 1,
         "retroalimentacion": "0.4 = 4/10, y simplificando entre 2 queda 2/5."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "5/8 escrito como decimal es ___.",
+        "respuestaCorrecta": "0.625",
+        "retroalimentacion": "5 ÷ 8 = 0.625."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "1/2 escrito como decimal es ___.",
+        "respuestaCorrecta": "0.5",
+        "retroalimentacion": "1 ÷ 2 = 0.5."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "3/8 escrito como decimal es ___.",
+        "respuestaCorrecta": "0.375",
+        "retroalimentacion": "3 ÷ 8 = 0.375."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "23/25 escrito como decimal es ___.",
+        "respuestaCorrecta": "0.92",
+        "retroalimentacion": "23 ÷ 25 = 0.92."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál es la expresión decimal de 3/25?",
+        "opciones": [
+          "0.12",
+          "0.32",
+          "0.02",
+          "0.22"
+        ],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "3 ÷ 25 = 0.12."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál es la expresión decimal de 1/8?",
+        "opciones": [
+          "0.325",
+          "0.125",
+          "0.075",
+          "0.175"
+        ],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "1 ÷ 8 = 0.125."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál es la expresión decimal de 7/10?",
+        "opciones": [
+          "0.5",
+          "0.8",
+          "0.65",
+          "0.7"
+        ],
+        "respuestaCorrecta": 3,
+        "retroalimentacion": "7 ÷ 10 = 0.7."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál es la expresión decimal de 1/16?",
+        "opciones": [
+          "0.362",
+          "0.012",
+          "0.263",
+          "0.0625"
+        ],
+        "respuestaCorrecta": 3,
+        "retroalimentacion": "1 ÷ 16 = 0.0625."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "3/10 equivale a 0.3.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 3 ÷ 10 = 0.3."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "1/4 equivale a 0.25.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 1 ÷ 4 = 0.25."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "9/16 equivale a 0.662.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Falso: 9 ÷ 16 = 0.5625, no 0.662."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "21/25 equivale a 0.84.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 21 ÷ 25 = 0.84."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+        "columnaA": [
+          "2/5",
+          "3/20",
+          "2/25"
+        ],
+        "columnaB": [
+          "0.08",
+          "0.15",
+          "0.4"
+        ],
+        "parejasCorrectas": [
+          2,
+          1,
+          0
+        ],
+        "retroalimentacion": "2/5 = 0.4; 3/20 = 0.15; 2/25 = 0.08."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+        "columnaA": [
+          "3/4",
+          "1/5",
+          "7/8"
+        ],
+        "columnaB": [
+          "0.75",
+          "0.875",
+          "0.2"
+        ],
+        "parejasCorrectas": [
+          0,
+          2,
+          1
+        ],
+        "retroalimentacion": "3/4 = 0.75; 1/5 = 0.2; 7/8 = 0.875."
+      },
+      {
+        "tipo": "relacionar_columnas",
+        "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+        "columnaA": [
+          "15/16",
+          "13/20",
+          "3/5"
+        ],
+        "columnaB": [
+          "0.6",
+          "0.65",
+          "0.9375"
+        ],
+        "parejasCorrectas": [
+          2,
+          1,
+          0
+        ],
+        "retroalimentacion": "15/16 = 0.9375; 13/20 = 0.65; 3/5 = 0.6."
       }
     ]
   },
@@ -110,7 +293,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "¿Cuál es la expresión decimal de 9/20?",
-      "opciones": ["0.45", "0.9", "0.29", "4.5"],
+      "opciones": [
+        "0.45",
+        "0.9",
+        "0.29",
+        "4.5"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "9 ÷ 20 = 0.45."
     },
@@ -123,9 +311,21 @@
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada fracción con su equivalente decimal.",
-      "columnaA": ["1/5", "3/10", "7/8"],
-      "columnaB": ["0.3", "0.875", "0.2"],
-      "parejasCorrectas": [2, 0, 1],
+      "columnaA": [
+        "1/5",
+        "3/10",
+        "7/8"
+      ],
+      "columnaB": [
+        "0.3",
+        "0.875",
+        "0.2"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
       "retroalimentacion": "1/5 = 0.2; 3/10 = 0.3; 7/8 = 0.875."
     }
   ]
