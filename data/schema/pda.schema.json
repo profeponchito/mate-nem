@@ -11,6 +11,10 @@
     },
     "grado": { "type": "string", "enum": ["1°", "2°", "3°"] },
     "trimestre": { "type": "string", "enum": ["1", "2", "3"] },
+    "numero": {
+      "type": "integer",
+      "description": "Número de tema dentro de su grado (1, 2, 3…), en el orden en que se recorren los PDAs de ese grado. Se muestra en la interfaz como 'Tema N'."
+    },
     "campoFormativo": { "type": "string", "const": "Saberes y Pensamiento Científico" },
     "eje": { "type": "string" },
     "titulo": { "type": "string" },
@@ -35,6 +39,10 @@
         "type": "object",
         "required": ["titulo", "explicacion", "ejemplos"],
         "properties": {
+          "numero": {
+            "type": "string",
+            "description": "Número jerárquico del subtema, formato '<numero del PDA>.<consecutivo>' (ej. '3.2' = subtema 2 del tema 3). Se muestra en la interfaz junto al título del subtema."
+          },
           "titulo": { "type": "string" },
           "explicacion": { "type": "string", "description": "Explicación del subtema, más desarrollada que una síntesis breve." },
           "formula": { "type": "string" },

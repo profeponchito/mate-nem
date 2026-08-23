@@ -2,6 +2,7 @@
   "id": "2S-B1-PDA05",
   "grado": "2°",
   "trimestre": "1",
+  "numero": 5,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Áreas que se expresan con expresiones cuadráticas",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "5.1",
       "titulo": "El cuadrado de un binomio",
       "explicacion": "El área de un cuadrado de lado (x+a) se calcula elevando el binomio al cuadrado: se multiplica el binomio por sí mismo y se obtienen tres términos: el cuadrado del primero, el doble producto de ambos, y el cuadrado del segundo.",
       "formula": "(x+a)² = x² + 2ax + a²",
@@ -33,6 +35,7 @@
       }
     },
     {
+      "numero": "5.2",
       "titulo": "Multiplicar potencias de la misma base",
       "explicacion": "Al multiplicar dos potencias que tienen la misma base, se conserva la base y se suman los exponentes.",
       "formula": "xᵐ × xⁿ = xᵐ⁺ⁿ",
@@ -47,6 +50,7 @@
       }
     },
     {
+      "numero": "5.3",
       "titulo": "Potencia de una potencia",
       "explicacion": "Cuando una potencia se eleva a otro exponente, se conserva la base y se multiplican los exponentes.",
       "formula": "(xᵐ)ⁿ = xᵐˣⁿ",

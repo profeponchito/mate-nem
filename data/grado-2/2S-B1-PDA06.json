@@ -2,6 +2,7 @@
   "id": "2S-B1-PDA06",
   "grado": "2°",
   "trimestre": "1",
+  "numero": 6,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Ecuaciones para resolver problemas de la vida diaria",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "6.1",
       "titulo": "Modelar problemas con ecuaciones lineales",
       "explicacion": "Muchos problemas cotidianos se pueden modelar con una ecuación lineal: se representa la cantidad desconocida con una variable y se traduce el problema en una igualdad, para después despejar la variable.",
       "ejemplos": [
@@ -32,6 +34,7 @@
       }
     },
     {
+      "numero": "6.2",
       "titulo": "Porcentaje de descuento",
       "explicacion": "Si un precio p tiene un descuento del r%, el precio final es el precio original menos ese porcentaje, lo que equivale a multiplicar por (1 − r/100).",
       "formula": "precio final = precio original × (1 − descuento/100)",
@@ -46,6 +49,7 @@
       }
     },
     {
+      "numero": "6.3",
       "titulo": "Despejar el precio original a partir de un porcentaje",
       "explicacion": "Cuando se conoce el precio final después de un descuento o aumento, se puede despejar el precio original dividiendo entre el factor correspondiente (1 − descuento/100, o 1 + aumento/100).",
       "ejemplos": [

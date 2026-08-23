@@ -2,6 +2,7 @@
   "id": "1S-B1-PDA05",
   "grado": "1°",
   "trimestre": "1",
+  "numero": 5,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Del lenguaje cotidiano al lenguaje algebraico",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "5.1",
       "titulo": "Del lenguaje común al algebraico",
       "explicacion": "En álgebra usamos letras (variables) para representar cantidades desconocidas o que cambian. Una expresión algebraica traduce una relación del lenguaje común: frases como 'el doble de', 'el triple de' o 'la mitad de' se convierten en multiplicaciones o divisiones por la variable.",
       "ejemplos": [
@@ -33,6 +35,7 @@
       }
     },
     {
+      "numero": "5.2",
       "titulo": "Perímetros como expresiones algebraicas",
       "explicacion": "El perímetro de una figura es la suma de todos sus lados. Cuando algún lado depende de una variable, el perímetro también se expresa algebraicamente sumando todos los lados.",
       "formula": "Perímetro del rectángulo = 2(largo) + 2(ancho)",
@@ -48,6 +51,7 @@
       }
     },
     {
+      "numero": "5.3",
       "titulo": "Simplificar expresiones de perímetro",
       "explicacion": "Cuando los lados de una figura tienen expresiones distintas, el perímetro se obtiene sumándolas todas y simplificando (agrupando los términos semejantes).",
       "ejemplos": [

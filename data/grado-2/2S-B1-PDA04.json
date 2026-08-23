@@ -2,6 +2,7 @@
   "id": "2S-B1-PDA04",
   "grado": "2°",
   "trimestre": "1",
+  "numero": 4,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Patrones que crecen como cuadrados",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "4.1",
       "titulo": "¿Qué es una progresión cuadrática?",
       "explicacion": "En una progresión cuadrática, los términos no aumentan una cantidad constante (como en la progresión aritmética), sino que siguen un patrón relacionado con el cuadrado de la posición del término. Cuando los términos son 1, 4, 9, 16..., la expresión algebraica es n², donde n es la posición del término.",
       "formula": "término_n = n²  (en progresiones cuadráticas simples)",
@@ -34,6 +36,7 @@
       }
     },
     {
+      "numero": "4.2",
       "titulo": "Progresiones cuadráticas con coeficiente",
       "explicacion": "Algunas progresiones cuadráticas no son exactamente n², sino un múltiplo de n² (por ejemplo 2n²). Para reconocerlas, se compara cada término con el cuadrado de su posición y se busca el factor constante que los relaciona.",
       "ejemplos": [
@@ -47,6 +50,7 @@
       }
     },
     {
+      "numero": "4.3",
       "titulo": "Reconocer la expresión algebraica de una progresión cuadrática",
       "explicacion": "Para saber si una sucesión es cuadrática, se compara con los cuadrados 1, 4, 9, 16... Si los términos coinciden exactamente, la expresión es n²; si son el doble, el triple, etc., se multiplica n² por ese factor.",
       "ejemplos": [

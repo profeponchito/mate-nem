@@ -2,6 +2,7 @@
   "id": "1S-B1-PDA06",
   "grado": "1°",
   "trimestre": "1",
+  "numero": 6,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Encuentra el valor desconocido",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "6.1",
       "titulo": "¿Qué es una ecuación?",
       "explicacion": "Una ecuación es una igualdad con una incógnita. Para resolverla, se aplican las propiedades de la igualdad: lo que se hace de un lado de la igualdad se debe hacer también del otro, para 'despejar' la variable.",
       "ejemplos": [
@@ -32,6 +34,7 @@
       }
     },
     {
+      "numero": "6.2",
       "titulo": "Ecuaciones de la forma Ax + B = C",
       "explicacion": "Cuando la ecuación tiene un término que se suma o resta además del que multiplica a x, primero se despeja ese término (pasándolo al otro lado con la operación inversa) y después se despeja x dividiendo.",
       "formula": "Ax + B = C  →  x = (C − B) / A",
@@ -47,6 +50,7 @@
       }
     },
     {
+      "numero": "6.3",
       "titulo": "Ecuaciones con la variable en ambos lados",
       "explicacion": "Cuando la variable aparece en ambos lados de la igualdad (Ax+B=Cx+D), primero se agrupan los términos con x de un lado y los términos numéricos del otro, y después se despeja x.",
       "ejemplos": [

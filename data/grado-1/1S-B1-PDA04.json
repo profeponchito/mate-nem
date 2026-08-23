@@ -2,6 +2,7 @@
   "id": "1S-B1-PDA04",
   "grado": "1°",
   "trimestre": "1",
+  "numero": 4,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "El patrón detrás de los números",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "4.1",
       "titulo": "¿Qué es una sucesión con progresión aritmética?",
       "explicacion": "Una sucesión con progresión aritmética aumenta (o disminuye) siempre la misma cantidad constante entre un término y el siguiente. A esa cantidad constante se le llama 'diferencia' (d) y se obtiene restando dos términos consecutivos.",
       "ejemplos": [
@@ -33,6 +35,7 @@
       }
     },
     {
+      "numero": "4.2",
       "titulo": "La fórmula del término n",
       "explicacion": "En vez de sumar la diferencia una y otra vez hasta llegar al término que buscamos, se puede usar una fórmula que lo calcule directamente, donde a es el primer término, d es la diferencia constante y n es la posición del término que queremos.",
       "formula": "término_n = a + (n − 1) × d",
@@ -48,6 +51,7 @@
       }
     },
     {
+      "numero": "4.3",
       "titulo": "Aplicar la fórmula a problemas con figuras",
       "explicacion": "Muchos problemas de sucesiones se presentan con figuras hechas de palillos, fichas o macetas. El primer paso siempre es identificar el primer término (a) y la diferencia (d) contando cuánto crece la figura en cada paso, y luego aplicar la fórmula.",
       "ejemplos": [

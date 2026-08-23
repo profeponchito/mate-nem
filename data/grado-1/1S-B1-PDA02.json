@@ -2,6 +2,7 @@
   "id": "1S-B1-PDA02",
   "grado": "1°",
   "trimestre": "1",
+  "numero": 2,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Arriba y abajo del cero",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "2.1",
       "titulo": "¿Por qué necesitamos números negativos?",
       "explicacion": "Los números con signo permiten representar cantidades opuestas a partir de una referencia (el cero): ganancias/pérdidas, alturas/profundidades, temperaturas arriba/abajo de cero. Sin ellos, no podríamos distinguir '3 pisos abajo del nivel de la calle' de '3 pisos arriba'.",
       "ejemplos": [
@@ -27,6 +29,7 @@
       }
     },
     {
+      "numero": "2.2",
       "titulo": "Comparar y ordenar en la recta numérica",
       "explicacion": "En la recta numérica, entre dos números el mayor es el que está más a la derecha. Esto significa que, entre dos negativos, el que tiene mayor valor absoluto (está 'más lejos' del cero) en realidad es el menor.",
       "formula": "... -3 < -2 < -1 < 0 < 1 < 2 ...",
@@ -48,6 +51,7 @@
       }
     },
     {
+      "numero": "2.3",
       "titulo": "Ordenar listas de varios números con signo",
       "explicacion": "Para ordenar una lista con positivos, negativos y el cero, ubica primero los negativos (el de mayor valor absoluto va primero, porque es el menor), después el cero, y al final los positivos de menor a mayor.",
       "ejemplos": [

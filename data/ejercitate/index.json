@@ -1,0 +1,11 @@
+{
+  "_comentario": "Manifiesto del apartado 'Ejercítate' (operaciones básicas), independiente de los PDAs por grado. Numeración propia con prefijo 'E' para no confundirse con el número de Tema de un PDA (ej. 'Tema 3' vs 'E.2'). Cada item listado aquí corresponde a un futuro archivo data/ejercitate/<id>.json con la misma estructura que un PDA (problematizacion/subtemas/reto), aún por construir como parte del rediseño estilo Duolingo.",
+  "titulo": "Ejercítate",
+  "descripcion": "Práctica libre de operaciones básicas, disponible para cualquier grado. Se califica igual que un PDA (puntos, estrellas, envío a Sheets y constancia), pero no bloquea ni forma parte de la ruta curricular de ningún grado en particular.",
+  "items": [
+    { "numero": "E.1", "id": "EJ-OP01", "titulo": "Suma", "operacion": "suma" },
+    { "numero": "E.2", "id": "EJ-OP02", "titulo": "Resta", "operacion": "resta" },
+    { "numero": "E.3", "id": "EJ-OP03", "titulo": "Multiplicación", "operacion": "multiplicacion" },
+    { "numero": "E.4", "id": "EJ-OP04", "titulo": "División", "operacion": "division" }
+  ]
+}

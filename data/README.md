@@ -37,6 +37,19 @@ el contenido de una carpeta. Por eso cada carpeta `grado-X/` incluye un
 = 2° de secundaria, bloque/trimestre 1, PDA número 3. El mismo valor se
 usa como nombre de archivo y como campo `id` dentro del JSON.
 
+## Numeración de temas y subtemas
+
+Cada PDA tiene un campo `numero` (entero) — el número de tema **dentro de
+su grado**, en el orden en que aparece en `index.json` (1, 2, 3… hasta 7 en
+1°, 6 en 2°, 4 en 3°; no es un número global de 1 a 17). `app.js` lo muestra
+como "Tema N." antes del título en la lista de PDAs, la problematización y
+el reto.
+
+Cada `subtema` dentro de un PDA tiene su propio campo `numero` (string),
+con formato jerárquico `<numero del PDA>.<consecutivo>` — por ejemplo `3.2`
+es el segundo subtema del Tema 3. Se muestra junto al título del subtema y
+de su `check`.
+
 ## Fuente curricular
 
 Los 17 PDAs incluidos (Trimestre 1, eje "Sentido numérico y pensamiento
@@ -125,3 +138,22 @@ o no).
 Este es el flujo que renderiza `app.js`: problematización → subtemas (con
 sus checks) → reto → resultado (puntaje, estrellas) → práctica extra
 (opcional, si el PDA la incluye) → constancia.
+
+## Apartado "Ejercítate" (operaciones básicas) — en construcción
+
+Independiente de los PDAs por grado, habrá un apartado de práctica libre de
+operaciones básicas (suma, resta, multiplicación, división), calificado
+igual que un PDA pero sin pertenecer a la ruta curricular de ningún grado
+en particular ni bloquear nada. Su manifiesto ya existe en
+`data/ejercitate/index.json`, con numeración propia (`E.1`…`E.4`, prefijo
+"E" para no confundirse con el número de Tema de un PDA):
+
+- `E.1` Suma
+- `E.2` Resta
+- `E.3` Multiplicación
+- `E.4` División
+
+Cada item apunta a un futuro `data/ejercitate/<id>.json` con la misma
+estructura que un PDA (`problematizacion`/`subtemas`/`reto`), todavía por
+construir — es parte del rediseño de la interfaz estilo Duolingo que sigue
+en curso.

@@ -2,6 +2,7 @@
   "id": "1S-B1-PDA01",
   "grado": "1°",
   "trimestre": "1",
+  "numero": 1,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "De fracciones a decimales, y de regreso",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "1.1",
       "titulo": "De fracción a decimal (dividir)",
       "explicacion": "Toda fracción a/b puede escribirse como decimal dividiendo el numerador entre el denominador. Algunos resultados son decimales finitos (terminan) y otros son periódicos (se repite una cifra o un grupo de cifras infinitamente), como 1/3 = 0.333...",
       "formula": "fracción a/b → a ÷ b = decimal",
@@ -35,6 +37,7 @@
       }
     },
     {
+      "numero": "1.2",
       "titulo": "De decimal a fracción",
       "explicacion": "Todo decimal finito puede escribirse como fracción identificando el valor posicional de sus cifras: el numerador son las cifras después del punto y el denominador es una potencia de 10 (10, 100, 1000...) según cuántas cifras decimales haya. Después se simplifica dividiendo entre el máximo común divisor.",
       "formula": "0.d₁d₂...dₙ = (dígitos) / 10ⁿ",
@@ -50,6 +53,7 @@
       }
     },
     {
+      "numero": "1.3",
       "titulo": "Fracciones y decimales en situaciones reales",
       "explicacion": "En la vida diaria las dos formas se mezclan: un marcador deportivo puede decir 'recorrió 0.2 de la pista' y en otro contexto se habla de '3/4 de taza'. Saber convertir entre ambas te permite comparar e interpretar cualquier cantidad sin importar cómo esté escrita.",
       "ejemplos": [

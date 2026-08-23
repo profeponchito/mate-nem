@@ -258,9 +258,12 @@ async function vistaListaPDA({ grado }) {
       <div class="space-y-3">
         ${pdas.map((pda, i) => `
           <a href="#/pda/${encodeURIComponent(grado)}/${encodeURIComponent(pda.id)}" ${retraso_(i, 60)}
-             class="mn-tarjeta mn-elevar block bg-white rounded-2xl shadow-sm border border-slate-100 p-4 border-l-4 ${tema.borde}">
-            <p class="text-xs uppercase tracking-wide ${tema.texto} font-bold">${escapeHTML_(pda.eje)}</p>
-            <p class="text-slate-800 font-semibold font-heading text-lg">${escapeHTML_(pda.titulo)}</p>
+             class="mn-tarjeta mn-elevar flex items-center gap-3 bg-white rounded-2xl shadow-sm border border-slate-100 p-4 border-l-4 ${tema.borde}">
+            ${pda.numero !== undefined ? `<span class="flex-none w-9 h-9 rounded-full ${tema.chip} font-heading font-bold flex items-center justify-center">${pda.numero}</span>` : ''}
+            <div>
+              <p class="text-xs uppercase tracking-wide ${tema.texto} font-bold">${escapeHTML_(pda.eje)}</p>
+              <p class="text-slate-800 font-semibold font-heading text-lg">${escapeHTML_(pda.titulo)}</p>
+            </div>
           </a>
         `).join('')}
       </div>
@@ -520,10 +523,16 @@ function botonSecundario_(texto, dataAccion) {
   `;
 }
 
+/** Prefijo numerado ("Tema 3" / "3.2") mostrado antes de un título; vacío si no hay número. */
+function numeroChip_(numero, etiqueta = 'Tema') {
+  if (numero === undefined || numero === null) return '';
+  return `<span class="inline-block">${etiqueta ? `${etiqueta} ${numero}.` : `${numero}`}</span> `;
+}
+
 function panelProblematizacion_(pda, color) {
   return `
     ${overline_('Problematización', 'foco', color)}
-    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(pda.titulo)}</h3>
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(pda.numero)}${escapeHTML_(pda.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-4">${escapeHTML_(pda.problematizacion.contexto)}</p>
     <p class="text-slate-800 font-semibold mb-6 ${color.suave} border rounded-xl px-4 py-3">${escapeHTML_(pda.problematizacion.pregunta)}</p>
     ${botonPrimario_('Comenzar el tema →', 'continuar', color)}
@@ -533,7 +542,7 @@ function panelProblematizacion_(pda, color) {
 function panelSubtema_(subtema, indice, total, color) {
   return `
     ${overline_(`Tema · Parte ${indice + 1} de ${total}`, 'libro', color)}
-    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(subtema.titulo)}</h3>
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
     ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 font-mono text-slate-800 mb-3">${escapeHTML_(subtema.formula)}</p>` : ''}
     <div class="space-y-1.5 mb-6">
@@ -547,7 +556,7 @@ function panelCheck_(subtema, prefijo, color) {
   const pregunta = subtema.check;
   return `
     ${overline_('Repaso rápido', 'lupa', color)}
-    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(subtema.titulo)}</h3>
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
     ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 font-mono text-slate-800 mb-4">${escapeHTML_(subtema.formula)}</p>` : ''}
     <div class="border-t border-dashed border-slate-200 pt-4">
@@ -575,7 +584,7 @@ function panelReto_(pda, estado, color) {
 
   return `
     ${overline_('Reto', 'trofeo', color)}
-    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${escapeHTML_(pda.titulo)}</h3>
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(pda.numero)}${escapeHTML_(pda.titulo)}</h3>
     ${pagina === 0 ? `<p class="text-slate-700 leading-relaxed mb-4 ${color.suave} border rounded-xl px-4 py-3">${escapeHTML_(reto.sintesis)}</p>` : ''}
 
     <div class="flex items-center justify-between mb-4 flex-wrap gap-2">

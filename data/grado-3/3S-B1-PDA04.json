@@ -2,6 +2,7 @@
   "id": "3S-B1-PDA04",
   "grado": "3°",
   "trimestre": "1",
+  "numero": 4,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Repartos proporcionales y variación",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "4.1",
       "titulo": "¿Qué es el reparto proporcional?",
       "explicacion": "El reparto proporcional distribuye una cantidad total entre varias partes, en proporción a un valor de referencia (como la aportación de cada socio). Se calcula sumando todas las partes de referencia, y dividiendo la cantidad total entre esa suma para obtener el valor de cada 'parte', que se multiplica por la aportación de cada quien.",
       "formula": "parte de cada quien = (aportación individual / suma total de aportaciones) × cantidad a repartir",
@@ -33,6 +35,7 @@
       }
     },
     {
+      "numero": "4.2",
       "titulo": "Variación directa entre dos cantidades",
       "explicacion": "Cuando dos cantidades varían de forma que al duplicar una, la otra también se duplica (o al triplicar una, la otra también se triplica), se dice que hay una variación directa entre ellas: su razón siempre es constante.",
       "ejemplos": [
@@ -46,6 +49,7 @@
       }
     },
     {
+      "numero": "4.3",
       "titulo": "Repartos proporcionales con más de dos partes",
       "explicacion": "El mismo método del reparto proporcional funciona sin importar cuántas partes haya: se suman todos los valores de referencia (edades, aportaciones, horas trabajadas, etc.) y se reparte la cantidad total en esa misma proporción.",
       "ejemplos": [

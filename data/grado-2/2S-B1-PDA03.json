@@ -2,6 +2,7 @@
   "id": "2S-B1-PDA03",
   "grado": "2°",
   "trimestre": "1",
+  "numero": 3,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Proporcionalidad directa en la vida cotidiana",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "3.1",
       "titulo": "¿Qué es la proporcionalidad directa?",
       "explicacion": "Dos cantidades son directamente proporcionales cuando, al multiplicar o dividir una de ellas por un número, la otra queda multiplicada o dividida por ese mismo número. Es decir, su razón (cociente) se mantiene constante. En la vida diaria aparece en el precio según la cantidad, el tiempo de recorrido a velocidad constante según la distancia, o los ingredientes de una receta según el número de porciones.",
       "formula": "y = k · x",
@@ -28,6 +30,7 @@
       }
     },
     {
+      "numero": "3.2",
       "titulo": "La constante de proporcionalidad (k)",
       "explicacion": "La constante de proporcionalidad k es el valor que relaciona ambas cantidades: k = y ÷ x. Una vez que se conoce k, se puede calcular el valor de y para cualquier x multiplicando por k. Este método también se llama 'valor unitario', porque k representa cuánto corresponde a una sola unidad (por ejemplo, el precio de un solo paquete).",
       "formula": "k = y₁ ÷ x₁        y = k · x",
@@ -43,6 +46,7 @@
       }
     },
     {
+      "numero": "3.3",
       "titulo": "Resolver problemas con proporcionalidad directa",
       "explicacion": "Para resolver un problema de proporcionalidad directa: 1) identifica las dos cantidades relacionadas, 2) calcula la constante k dividiendo un par de valores conocidos, y 3) usa y = k·x para encontrar el valor que falta. También puedes usar una regla de tres: si x₁ corresponde a y₁, entonces x₂ corresponde a y₂ = (x₂ × y₁) ÷ x₁.",
       "ejemplos": [

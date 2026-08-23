@@ -2,6 +2,7 @@
   "id": "1S-B1-PDA03",
   "grado": "1°",
   "trimestre": "1",
+  "numero": 3,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Sumar, restar, multiplicar y dividir con signos",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "3.1",
       "titulo": "Sumar y restar números con signo",
       "explicacion": "Al sumar números con signo, si tienen el mismo signo se suman sus valores absolutos y se conserva el signo; si tienen signos diferentes se restan los valores absolutos y se conserva el signo del que tiene mayor valor absoluto.",
       "ejemplos": [
@@ -33,6 +35,7 @@
       }
     },
     {
+      "numero": "3.2",
       "titulo": "Multiplicar y dividir con signos",
       "explicacion": "La multiplicación y la división siguen la regla de signos: signos iguales dan resultado positivo, signos diferentes dan resultado negativo.",
       "formula": "(+)×(+)=+  ;  (−)×(−)=+  ;  (+)×(−)=−  ;  (−)×(+)=−",
@@ -48,6 +51,7 @@
       }
     },
     {
+      "numero": "3.3",
       "titulo": "Jerarquía de operaciones con signos",
       "explicacion": "Cuando una expresión combina varias operaciones, primero se resuelven las multiplicaciones y divisiones (de izquierda a derecha), y después las sumas y restas.",
       "ejemplos": [

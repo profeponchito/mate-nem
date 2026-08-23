@@ -2,6 +2,7 @@
   "id": "2S-B1-PDA02",
   "grado": "2°",
   "trimestre": "1",
+  "numero": 2,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Divisibilidad, MCD y mcm en la vida diaria",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "2.1",
       "titulo": "Máximo común divisor (MCD)",
       "explicacion": "El máximo común divisor (MCD) de dos números es el mayor número que divide exactamente a ambos. Sirve para repartir o agrupar cosas en partes iguales usando la mayor cantidad de grupos posible.",
       "formula": "MCD(24,36) = 12",
@@ -34,6 +36,7 @@
       }
     },
     {
+      "numero": "2.2",
       "titulo": "Mínimo común múltiplo (mcm)",
       "explicacion": "El mínimo común múltiplo (mcm) es el menor número que es múltiplo de ambos números a la vez. Sirve para sincronizar eventos que se repiten con distinta frecuencia, como saber cada cuántos días coinciden dos actividades.",
       "formula": "mcm(24,36) = 72",
@@ -48,6 +51,7 @@
       }
     },
     {
+      "numero": "2.3",
       "titulo": "Propiedades de las operaciones",
       "explicacion": "Las operaciones cumplen propiedades: la conmutativa dice que el orden no altera el resultado en sumas y multiplicaciones (a+b=b+a); la asociativa dice que se pueden agrupar de distintas formas ((a+b)+c=a+(b+c)); y la distributiva reparte una multiplicación sobre una suma (a×(b+c)=a×b+a×c).",
       "ejemplos": [

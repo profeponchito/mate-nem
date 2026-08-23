@@ -2,6 +2,7 @@
   "id": "3S-B1-PDA02",
   "grado": "3°",
   "trimestre": "1",
+  "numero": 2,
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
   "titulo": "Volúmenes en función de una variable",
@@ -13,6 +14,7 @@
   },
   "subtemas": [
     {
+      "numero": "2.1",
       "titulo": "Volumen de un prisma con base cuadrada",
       "explicacion": "El volumen de un prisma se calcula multiplicando el área de la base por la altura. Cuando la base es un cuadrado de lado x, su área es x², por lo que el volumen del prisma es x²×h.",
       "formula": "Volumen = Área de la base × altura = x² × h",
@@ -33,6 +35,7 @@
       }
     },
     {
+      "numero": "2.2",
       "titulo": "Despejar una variable del volumen",
       "explicacion": "Estas expresiones permiten despejar cualquiera de las variables si conocemos las otras. Por ejemplo, si conocemos el volumen y la altura, podemos despejar x² dividiendo el volumen entre la altura.",
       "formula": "x² = V ÷ h",
@@ -47,6 +50,7 @@
       }
     },
     {
+      "numero": "2.3",
       "titulo": "Volumen del cubo",
       "explicacion": "Un caso especial es cuando la altura es igual al lado de la base: se forma un cubo, cuyo volumen es la arista elevada al cubo.",
       "formula": "Volumen del cubo = x³",
