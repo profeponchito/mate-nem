@@ -112,7 +112,8 @@ function icono_(nombre, clase = 'w-5 h-5') {
     medalla: `<circle cx="12" cy="14.5" r="6"/><path d="m9 8.5-3-5"/><path d="m15 8.5 3-5"/><path d="M12 12.2 13.2 14.6 15.8 15l-1.9 1.8.4 2.6-2.3-1.2-2.3 1.2.4-2.6L8.2 15l2.6-.4 1.2-2.4Z"/>`,
     chispas: `<path d="M12 3v4M12 17v4M4.5 12h4M15.5 12h4"/><path d="M7 7l2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/><circle cx="12" cy="12" r="2.2"/>`,
     salida: `<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h12"/>`,
-    flecha: `<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>`
+    flecha: `<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>`,
+    descarga: `<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19.5h16"/>`
   };
   return `<svg viewBox="0 0 24 24" class="${clase}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${iconos[nombre] || ''}</svg>`;
 }
@@ -446,12 +447,13 @@ async function vistaPDA({ grado, id }) {
         pdaNombre: pda.titulo,
         eje: pda.eje,
         puntaje: estado.resultado.puntaje,
+        puntajeMax: estado.resultado.puntajeMax,
         estrellas: estado.resultado.estrellas,
         estrellasMax: pda.reto.estrellasMax || 3,
         codigoVerificacion: estado.codigoVerificacion
       });
       raiz.querySelector('[data-accion="ver-constancia"]')?.classList.add('hidden');
-      raiz.querySelector('[data-accion="descargar-pdf"]')?.classList.remove('hidden');
+      raiz.querySelector('[data-accion-contenedor="descargar-pdf"]')?.classList.remove('hidden');
     });
 
     raiz.querySelector('[data-accion="descargar-pdf"]')?.addEventListener('click', () => {
@@ -619,7 +621,7 @@ function panelResultado_(pda, estado, color) {
         ${Array.from({ length: r.estrellas }).map((_, i) => `<span class="mn-estrella" ${retraso_(i, 120)}>★</span>`).join('')}${'☆'.repeat(Math.max(0, estrellasMax - r.estrellas))}
       </p>
     </div>
-    <p class="text-slate-600 font-semibold mb-4">${r.puntaje} pts</p>
+    <p class="text-slate-600 font-semibold mb-4">${r.puntaje} de ${r.puntajeMax} pts</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
       ${r.detalle.map((d) => `
@@ -632,10 +634,12 @@ function panelResultado_(pda, estado, color) {
 
     ${!estado.codigoVerificacion ? '<p class="text-slate-400 text-sm">Guardando tu avance…</p>' : `
       ${botonPrimario_('Generar mi constancia', 'ver-constancia', color)}
-      <button data-accion="descargar-pdf" class="hidden mn-elevar bg-slate-700 hover:bg-slate-800 text-white font-heading font-bold px-6 py-2.5 rounded-xl transition ml-2">
-        Descargar PDF
-      </button>
       <div id="contenedor-constancia" class="mt-6"></div>
+      <div data-accion-contenedor="descargar-pdf" class="hidden mt-4">
+        <button data-accion="descargar-pdf" class="mn-elevar inline-flex items-center gap-2 bg-gradient-to-r ${color.grad} text-white font-heading font-bold px-6 py-3 rounded-xl transition shadow-lg">
+          ${icono_('descarga', 'w-5 h-5')} Descargar constancia en PDF
+        </button>
+      </div>
     `}
   `;
 }

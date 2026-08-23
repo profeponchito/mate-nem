@@ -20,7 +20,7 @@ const URL_BASE_VERIFICACION = 'https://TU-USUARIO.github.io/mate-nem/verificar.h
  * @param {HTMLElement} contenedor - Elemento donde se renderiza la constancia.
  * @param {Object} datos - {
  *   nombre, grado, grupo, pdaNombre, eje,
- *   puntaje, estrellas, estrellasMax, codigoVerificacion, fecha
+ *   puntaje, puntajeMax, estrellas, estrellasMax, codigoVerificacion, fecha
  * }
  */
 export function generarConstancia(contenedor, datos) {
@@ -47,7 +47,7 @@ export function generarConstancia(contenedor, datos) {
         <p class="constancia__eje">${escapeHTML_(datos.eje || '')}</p>
 
         <div class="constancia__resultados">
-          <span>Puntaje: <strong>${datos.puntaje ?? '—'}</strong></span>
+          <span>Puntaje: <strong>${datos.puntaje ?? '—'}${datos.puntajeMax != null ? ` de ${datos.puntajeMax}` : ''}</strong></span>
           <span>Estrellas: <strong>${'★'.repeat(datos.estrellas || 0)}${'☆'.repeat(Math.max(0, (datos.estrellasMax || 3) - (datos.estrellas || 0)))}</strong></span>
         </div>
 

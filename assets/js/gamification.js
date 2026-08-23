@@ -13,7 +13,7 @@
 /**
  * @param {Object} pda - el PDA completo (usa pda.reto)
  * @param {Array} respuestas - una respuesta por reactivo de pda.reto.reactivos, mismo orden
- * @returns {{correctas:number, total:number, porcentaje:number, puntaje:number, estrellas:number, detalle:Array}}
+ * @returns {{correctas:number, total:number, porcentaje:number, puntaje:number, puntajeMax:number, estrellas:number, detalle:Array}}
  */
 export function calcularResultado(pda, respuestas) {
   const { reactivos, puntosPorReactivo, estrellasMax = 3 } = pda.reto;
@@ -28,9 +28,12 @@ export function calcularResultado(pda, respuestas) {
   const total = reactivos.length;
   const porcentaje = total > 0 ? correctas / total : 0;
   const puntaje = correctas * puntosPorReactivo;
+  // Puntaje máximo posible (todas las respuestas correctas), para mostrar
+  // "puntaje obtenido de puntaje total" (ej. "170 de 200") junto al resultado.
+  const puntajeMax = total * puntosPorReactivo;
   const estrellas = calcularEstrellas_(porcentaje, estrellasMax);
 
-  return { correctas, total, porcentaje, puntaje, estrellas, detalle };
+  return { correctas, total, porcentaje, puntaje, puntajeMax, estrellas, detalle };
 }
 
 /** Evalúa una sola pregunta (de cualquier tipo) contra la respuesta capturada del DOM. */

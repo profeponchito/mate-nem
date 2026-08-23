@@ -140,6 +140,43 @@ async function responder(page, prefijo, pregunta) {
           throw new Error(`no se ven las ${estrellasMax} estrellas máximas`);
         }
 
+        // puntaje: debe mostrar "obtenido de máximo" (ej. "200 de 200 pts"), no solo el obtenido
+        const puntajeMaxEsperado = reactivos.length * pda.reto.puntosPorReactivo;
+        const etiquetaPuntaje = `de ${puntajeMaxEsperado} pts`;
+        if (!bodyText.includes(etiquetaPuntaje)) {
+          throw new Error(`no se ve la comparación de puntaje "${etiquetaPuntaje}" en: ${bodyText.slice(0, 300)}`);
+        }
+
+        // constancia: debe generarse con el mismo formato "obtenido de máximo",
+        // y el botón de descargar PDF debe aparecer (visible, ya no oculto).
+        // Sin internet real en el sandbox, el webhook tarda en fallar antes de
+        // asignar el folio "PENDIENTE-...", así que se espera activamente al
+        // botón (en vez de un timeout fijo) para no depender de la latencia
+        // variable de la conexión bloqueada.
+        const botonGenerar = page.locator('[data-accion="ver-constancia"]');
+        await botonGenerar.waitFor({ state: 'visible', timeout: 8000 }).catch(() => {});
+        if (await botonGenerar.count() > 0 && await botonGenerar.isVisible()) {
+          await botonGenerar.click();
+          await page.waitForTimeout(150);
+          bodyText = await page.innerText('body');
+          if (!bodyText.includes(etiquetaPuntaje.replace(' pts', ''))) {
+            // en la constancia el formato es "Puntaje: X de Y" (sin "pts")
+            const etiquetaConstancia = `de ${puntajeMaxEsperado}`;
+            if (!bodyText.includes(etiquetaConstancia)) {
+              throw new Error(`la constancia no muestra "${etiquetaConstancia}" en: ${bodyText.slice(0, 400)}`);
+            }
+          }
+          const botonPDF = page.locator('[data-accion="descargar-pdf"]');
+          if (await botonPDF.count() === 0) {
+            throw new Error('no existe el botón de descargar PDF tras generar la constancia');
+          }
+          if (!(await botonPDF.isVisible())) {
+            throw new Error('el botón de descargar PDF sigue oculto tras generar la constancia');
+          }
+        } else {
+          throw new Error('no se encontró (o no es visible) el botón "Generar mi constancia"');
+        }
+
         // práctica extra: sección opcional, no calificada, debajo del resultado
         if (Array.isArray(pda.practicaExtra) && pda.practicaExtra.length > 0) {
           if (!bodyText.includes('¿Quieres seguir practicando?')) {
