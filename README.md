@@ -29,19 +29,22 @@ extra opcional (3-4 reactivos más, sin calificar) aparece después del
 resultado global para quien quiera seguir practicando.
 
 La interfaz tiene un diseño visual propio e intuitivo: tipografía Baloo 2
-para encabezados e Inter para texto, paleta índigo/violeta como marca con un
-acento de color distinto por grado, y además **un color distinto por fase
-del recorrido** (ámbar para la problematización, azul cielo para los
-subtemas, rosa para las mini-actividades/mini-resultados, ámbar para el
-resultado global y verde azulado para la práctica extra y para "Ejercítate")
-para que sea más fácil distinguir en qué parte del PDA está el alumno de un
-vistazo. Incluye íconos dibujados a mano por tipo de pantalla (sin librería
-externa de íconos), animaciones de entrada suaves y estrellas con efecto
-"pop" en los resultados, y una constancia con fecha y hora de generación,
-código QR y descarga en PDF. Falta la página de verificación de folios, el
-contenido interactivo de "Ejercítate" (por ahora solo un acceso visible con
-aviso de "en construcción"), el trazado en "serpiente" del camino de
-PDAs/actividades y el despliegue real del backend.
+para encabezados e Inter para texto, marca índigo/violeta en la navegación,
+y una paleta propia **"Aula NEM"** — original y deliberadamente distinta a
+la de Duolingo (azul pizarrón, cobre, verde bosque y grafito por grado/
+Ejercítate; ámbar/ocre, azul, vino y verde azulado por fase del recorrido)
+— para que sea más fácil distinguir en qué parte del PDA está el alumno de
+un vistazo. La lista de PDAs de cada grado se muestra como un **camino
+serpenteante** (curva SVG suave con un nodo numerado por PDA, ninguno
+bloqueado — el docente puede pedir cualquier PDA en cualquier momento), y
+dentro de cada PDA el avance también se ve "en serpiente" al bajar de
+actividad en actividad. Incluye íconos dibujados a mano por tipo de
+pantalla (sin librería externa de íconos), animaciones de entrada suaves y
+estrellas con efecto "pop" en los resultados, y una constancia con fecha y
+hora de generación, código QR y descarga en PDF. Falta la página de
+verificación de folios, el contenido interactivo de "Ejercítate" (por ahora
+solo un acceso visible con aviso de "en construcción") y el despliegue real
+del backend.
 
 ## Árbol del repositorio
 
@@ -121,8 +124,8 @@ el sitio ya se sirve por `https://`.
 9. ✅ Reto ampliado de 5 a **20 reactivos por PDA**, presentados en 4 páginas de 5 con navegación Atrás/Siguiente que conserva las respuestas, y un color distinto por fase del recorrido para hacer la interfaz más intuitiva — aplicado a los 17 PDAs y probado de punta a punta (incluida la restauración de respuestas al navegar hacia atrás).
 10. ✅ Constancia con comparación de puntaje ("X de Y pts") y botón de descarga en PDF reubicado justo debajo del diploma; numeración de Temas y subtemas (`Tema N`, `N.1`…) en toda la app; manifiesto y numeración propia (`E.1`…`E.4`) para el futuro apartado "Ejercítate".
 11. ✅ Rediseño Duolingo (primera etapa): cada PDA pasó de "3 subtemas + 1 reto de 20 preguntas paginado" a **4 subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad calificada de 5 preguntas** (20 en total) con orden de preguntas/opciones aleatorio en cada intento, más un **resultado global** (suma de los 4 mini-resultados) que alimenta la constancia; constancia con fecha y hora; acceso a "Ejercítate" ya visible en la pantalla de selección de grado (contenido interactivo aún pendiente) — aplicado a los 17 PDAs y probado de punta a punta.
-12. ⏳ Camino de PDAs en forma de "serpiente" (visual estilo Duolingo) y paleta de colores propia, distinta a la de Duolingo.
-13. ⏳ Contenido interactivo del apartado "Ejercítate" (operaciones básicas: suma, resta, multiplicación, división).
+12. ✅ Camino de PDAs en forma de "serpiente" (curva SVG suave con nodos numerados, ninguno bloqueado — el docente puede pedir cualquier PDA en cualquier momento), un indicador de avance también "en serpiente" al bajar de actividad en actividad dentro de un PDA, y una paleta de colores propia ("Aula NEM": azul pizarrón, cobre, verde bosque, grafito, vino, ocre) deliberadamente distinta a la de Duolingo — aplicado a los 3 grados y probado de punta a punta.
+13. ⏳ Contenido interactivo del apartado "Ejercítate": 36 temas (básicos de 1°, intermedios de 2°, avanzados de 3° y estadística/probabilidad), con la misma dinámica que un PDA (problematización + 4 subtemas × 5 reactivos).
 14. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
 15. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad").
 16. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.

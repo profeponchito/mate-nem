@@ -4,6 +4,7 @@ import { readdirSync, readFileSync } from 'fs';
 const BASE = 'http://localhost:8123';
 const gradoDir = { '1°': 'grado-1', '2°': 'grado-2', '3°': 'grado-3' };
 const resultados = [];
+const caminoVerificado = new Set(); // grados cuyo camino de PDAs ya se probó
 
 function respuestaCorrecta(p) {
   switch (p.tipo) {
@@ -104,6 +105,32 @@ async function responder(page, prefijo, pregunta) {
             throw new Error('la ruta /ejercitate cayó en el 404 (falta registrar la ruta)');
           }
           await page.goto(`${BASE}/#/grados`, { waitUntil: 'load' });
+        }
+
+        // Camino serpenteante de PDAs (vistaListaPDA → caminoPDAs_): debe haber
+        // un nodo clickeable por PDA del grado y el trazo SVG de fondo, y hacer
+        // clic en el primer nodo debe llevar a ese PDA (sin bloqueos: ningún
+        // nodo debe estar deshabilitado o inaccesible). Se verifica una vez por
+        // grado (con el primer PDA de cada uno).
+        if (!caminoVerificado.has(grado)) {
+          caminoVerificado.add(grado);
+          await page.goto(`${BASE}/#/pda-lista/${encodeURIComponent(grado)}`, { waitUntil: 'load' });
+          await page.waitForTimeout(200);
+          const nodosCamino = page.locator('a[href^="#/pda/"]');
+          const totalNodos = await nodosCamino.count();
+          if (totalNodos !== archivos.length) {
+            throw new Error(`camino de PDAs de ${grado}: se esperaban ${archivos.length} nodos, hay ${totalNodos}`);
+          }
+          const trazoSVG = await page.locator('svg path[stroke]').count();
+          if (trazoSVG === 0) {
+            throw new Error(`camino de PDAs de ${grado}: no se encontró el trazo SVG del sendero`);
+          }
+          const primerHref = await nodosCamino.first().getAttribute('href');
+          if (!primerHref || !primerHref.startsWith('#/pda/')) {
+            throw new Error(`camino de PDAs de ${grado}: el primer nodo no enlaza a una ruta de PDA válida (href="${primerHref}")`);
+          }
+          await nodosCamino.first().click();
+          await page.waitForURL('**/#/pda/**'); // confirma que el nodo es clickeable y navega, sin bloqueos
         }
 
         await page.goto(`${BASE}/#/pda/${encodeURIComponent(grado)}/${encodeURIComponent(pda.id)}`, { waitUntil: 'load' });

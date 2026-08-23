@@ -25,26 +25,46 @@ import { generarConstancia, descargarComoPDF } from './constancia.js';
 
 // ============================================================
 // Sistema visual: acento por grado (navegación) + acento por fase (PDA)
+// ----------------------------------------------------------------
+// Paleta "Aula NEM": original y deliberadamente distinta a la de Duolingo
+// (evita su verde #58CC02, azul #1CB0F6, dorado #FFC800 y rojo #FF4B4B) —
+// tonos más profundos y terrosos (azul pizarrón, cobre, verde bosque,
+// grafito, vino, ocre) para una sensación "de estudio", no infantil.
+// `pista` es el color (hex, para el trazo SVG del camino) de cada grado.
 // ============================================================
 const TEMAS_GRADO = {
   '1°': {
-    grad: 'from-indigo-500 via-violet-500 to-purple-600',
-    texto: 'text-indigo-600',
-    chip: 'bg-indigo-50 text-indigo-700',
-    borde: 'border-indigo-200'
+    grad: 'from-blue-700 to-blue-900',
+    texto: 'text-blue-700',
+    chip: 'bg-blue-50 text-blue-800',
+    borde: 'border-blue-200',
+    pista: '#1d4ed8'
   },
   '2°': {
-    grad: 'from-fuchsia-500 via-pink-500 to-rose-500',
-    texto: 'text-fuchsia-600',
-    chip: 'bg-fuchsia-50 text-fuchsia-700',
-    borde: 'border-fuchsia-200'
+    grad: 'from-orange-700 to-amber-900',
+    texto: 'text-orange-700',
+    chip: 'bg-orange-50 text-orange-800',
+    borde: 'border-orange-200',
+    pista: '#c2410c'
   },
   '3°': {
-    grad: 'from-emerald-500 via-teal-500 to-cyan-600',
-    texto: 'text-emerald-600',
-    chip: 'bg-emerald-50 text-emerald-700',
-    borde: 'border-emerald-200'
+    grad: 'from-emerald-800 to-teal-900',
+    texto: 'text-emerald-800',
+    chip: 'bg-emerald-50 text-emerald-800',
+    borde: 'border-emerald-200',
+    pista: '#065f46'
   }
+};
+
+/** Acento propio de "Ejercítate" (grafito) — deliberadamente distinto del
+ * de los 3 grados y del de `practicaExtra`, para que se distinga como su
+ * propia sección, sin pertenecer a la ruta curricular de ningún grado. */
+const COLOR_EJERCITATE = {
+  grad: 'from-slate-600 to-slate-800',
+  texto: 'text-slate-700',
+  chip: 'bg-slate-100 text-slate-700',
+  borde: 'border-slate-300',
+  pista: '#334155'
 };
 
 function temaGrado_(grado) {
@@ -55,46 +75,46 @@ function temaGrado_(grado) {
 // ayuda a ubicarse ("¿en qué parte voy?") de un vistazo, sin leer texto.
 const PASO_COLOR = {
   problematizacion: {
-    chip: 'bg-amber-50 text-amber-700', texto: 'text-amber-600',
-    grad: 'from-amber-500 to-orange-600', suave: 'bg-amber-50 border-amber-200',
-    accent: 'accent-amber-600', hover: 'hover:bg-amber-50',
-    inputBorder: 'border-amber-500', inputFocus: 'focus:border-orange-600 bg-amber-50/50',
-    ring: 'focus:ring-amber-500'
+    chip: 'bg-amber-50 text-amber-800', texto: 'text-amber-700',
+    grad: 'from-amber-700 to-orange-800', suave: 'bg-amber-50 border-amber-200',
+    accent: 'accent-amber-700', hover: 'hover:bg-amber-50',
+    inputBorder: 'border-amber-600', inputFocus: 'focus:border-orange-700 bg-amber-50/50',
+    ring: 'focus:ring-amber-600'
   },
   subtema: {
-    chip: 'bg-sky-50 text-sky-700', texto: 'text-sky-600',
-    grad: 'from-sky-500 to-blue-600', suave: 'bg-sky-50 border-sky-200',
-    accent: 'accent-sky-600', hover: 'hover:bg-sky-50',
-    inputBorder: 'border-sky-500', inputFocus: 'focus:border-blue-600 bg-sky-50/50',
-    ring: 'focus:ring-sky-500'
+    chip: 'bg-blue-50 text-blue-800', texto: 'text-blue-700',
+    grad: 'from-blue-700 to-indigo-900', suave: 'bg-blue-50 border-blue-200',
+    accent: 'accent-blue-700', hover: 'hover:bg-blue-50',
+    inputBorder: 'border-blue-600', inputFocus: 'focus:border-indigo-800 bg-blue-50/50',
+    ring: 'focus:ring-blue-600'
   },
   check: {
-    chip: 'bg-violet-50 text-violet-700', texto: 'text-violet-600',
-    grad: 'from-violet-500 to-purple-600', suave: 'bg-violet-50 border-violet-200',
-    accent: 'accent-violet-600', hover: 'hover:bg-violet-50',
-    inputBorder: 'border-violet-500', inputFocus: 'focus:border-purple-600 bg-violet-50/50',
-    ring: 'focus:ring-violet-500'
+    chip: 'bg-violet-50 text-violet-800', texto: 'text-violet-700',
+    grad: 'from-violet-700 to-purple-900', suave: 'bg-violet-50 border-violet-200',
+    accent: 'accent-violet-700', hover: 'hover:bg-violet-50',
+    inputBorder: 'border-violet-600', inputFocus: 'focus:border-purple-800 bg-violet-50/50',
+    ring: 'focus:ring-violet-600'
   },
   reto: {
-    chip: 'bg-rose-50 text-rose-700', texto: 'text-rose-600',
-    grad: 'from-rose-500 to-pink-600', suave: 'bg-rose-50 border-rose-200',
-    accent: 'accent-rose-600', hover: 'hover:bg-rose-50',
-    inputBorder: 'border-rose-500', inputFocus: 'focus:border-pink-600 bg-rose-50/50',
-    ring: 'focus:ring-rose-500'
+    chip: 'bg-rose-50 text-rose-800', texto: 'text-rose-700',
+    grad: 'from-rose-800 to-red-900', suave: 'bg-rose-50 border-rose-200',
+    accent: 'accent-rose-800', hover: 'hover:bg-rose-50',
+    inputBorder: 'border-rose-700', inputFocus: 'focus:border-red-900 bg-rose-50/50',
+    ring: 'focus:ring-rose-700'
   },
   resultado: {
-    chip: 'bg-amber-50 text-amber-700', texto: 'text-amber-600',
-    grad: 'from-amber-500 to-yellow-600', suave: 'bg-amber-50 border-amber-200',
+    chip: 'bg-amber-50 text-amber-800', texto: 'text-amber-700',
+    grad: 'from-amber-600 to-yellow-800', suave: 'bg-amber-50 border-amber-200',
     accent: 'accent-amber-600', hover: 'hover:bg-amber-50',
-    inputBorder: 'border-amber-500', inputFocus: 'focus:border-yellow-600 bg-amber-50/50',
-    ring: 'focus:ring-amber-500'
+    inputBorder: 'border-amber-600', inputFocus: 'focus:border-yellow-700 bg-amber-50/50',
+    ring: 'focus:ring-amber-600'
   },
   practicaExtra: {
-    chip: 'bg-teal-50 text-teal-700', texto: 'text-teal-600',
-    grad: 'from-teal-500 to-emerald-600', suave: 'bg-teal-50 border-teal-200',
-    accent: 'accent-teal-600', hover: 'hover:bg-teal-50',
-    inputBorder: 'border-teal-500', inputFocus: 'focus:border-emerald-600 bg-teal-50/50',
-    ring: 'focus:ring-teal-500'
+    chip: 'bg-teal-50 text-teal-800', texto: 'text-teal-700',
+    grad: 'from-teal-700 to-emerald-900', suave: 'bg-teal-50 border-teal-200',
+    accent: 'accent-teal-700', hover: 'hover:bg-teal-50',
+    inputBorder: 'border-teal-600', inputFocus: 'focus:border-emerald-800 bg-teal-50/50',
+    ring: 'focus:ring-teal-600'
   }
 };
 
@@ -163,6 +183,91 @@ function icono_(nombre, clase = 'w-5 h-5') {
 /** Genera `style="animation-delay:...ms"` para escalonar animaciones de listas. */
 function retraso_(indice, pasoMs = 70) {
   return `style="animation-delay:${indice * pasoMs}ms"`;
+}
+
+// ============================================================
+// Camino serpenteante estilo Duolingo (sin bloqueo de nodos: el docente
+// puede pedir cualquier PDA/nivel en cualquier momento, así que TODOS los
+// nodos se ven y son clickeables siempre — nunca hay candados).
+// ============================================================
+
+/** Calcula las posiciones (x,y) de `n` nodos en un sendero vertical
+ * ondulante (onda seno, periodo de 4 filas: centro → derecha → centro →
+ * izquierda → …), en el sistema de coordenadas `anchoBase`×(altoFila×n). */
+function posicionesCamino_(n, anchoBase, altoFila, amplitud) {
+  const centroX = anchoBase / 2;
+  const puntos = [];
+  for (let i = 0; i < n; i++) {
+    const angulo = (i * Math.PI) / 2;
+    puntos.push({
+      x: centroX + Math.sin(angulo) * amplitud,
+      y: altoFila * i + altoFila / 2
+    });
+  }
+  return puntos;
+}
+
+/** Traza una curva SVG suave (tipo Catmull-Rom → Bézier cúbica) que pasa
+ * por cada uno de los puntos dados, para dibujar el sendero como una línea
+ * fluida en vez de un zigzag de segmentos rectos. */
+function trazoSuave_(puntos) {
+  if (puntos.length < 2) return '';
+  let d = `M ${puntos[0].x},${puntos[0].y}`;
+  for (let i = 0; i < puntos.length - 1; i++) {
+    const p0 = puntos[i - 1] || puntos[i];
+    const p1 = puntos[i];
+    const p2 = puntos[i + 1];
+    const p3 = puntos[i + 2] || p2;
+    const cp1x = p1.x + (p2.x - p0.x) / 6;
+    const cp1y = p1.y + (p2.y - p0.y) / 6;
+    const cp2x = p2.x - (p3.x - p1.x) / 6;
+    const cp2y = p2.y - (p3.y - p1.y) / 6;
+    d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${p2.x},${p2.y}`;
+  }
+  return d;
+}
+
+/** Renderiza la lista de PDAs de un grado como un camino serpenteante:
+ * un trazo curvo (SVG) de fondo con un nodo circular numerado por PDA
+ * (ninguno bloqueado) y su título como etiqueta. Las coordenadas de los
+ * nodos se expresan en % (no en px) para que el camino sea responsive,
+ * mientras que la proporción del contenedor se fija con `aspect-ratio`
+ * para que esos % siempre coincidan con el trazo del SVG. */
+function caminoPDAs_(pdas, grado, tema) {
+  const ANCHO = 320;
+  const ALTO_FILA = 136;
+  const AMPLITUD = 92;
+  const puntos = posicionesCamino_(pdas.length, ANCHO, ALTO_FILA, AMPLITUD);
+  const alturaTotal = ALTO_FILA * pdas.length;
+  const trazo = trazoSuave_(puntos);
+
+  const nodos = pdas.map((pda, i) => {
+    const xPct = (puntos[i].x / ANCHO) * 100;
+    const yPct = (puntos[i].y / alturaTotal) * 100;
+    return `
+      <a href="#/pda/${encodeURIComponent(grado)}/${encodeURIComponent(pda.id)}"
+         class="group absolute flex flex-col items-center"
+         style="left:${xPct}%; top:${yPct}%; transform:translate(-50%,-50%);">
+        <span class="mn-tarjeta w-16 h-16 rounded-full bg-gradient-to-br ${tema.grad} shadow-lg flex items-center justify-center font-heading font-extrabold text-white text-xl border-4 border-white group-hover:scale-105 group-active:scale-95 transition-transform"
+              style="animation-delay:${i * 90}ms">
+          ${pda.numero ?? (i + 1)}
+        </span>
+        <span class="mt-2 w-28 text-center text-xs font-semibold ${tema.texto} bg-white/95 backdrop-blur px-2 py-1 rounded-full shadow-sm border ${tema.borde} mn-clamp-2">
+          ${escapeHTML_(pda.titulo)}
+        </span>
+      </a>
+    `;
+  }).join('');
+
+  return `
+    <p class="text-center text-xs text-slate-400 mb-3">Elige cualquier tema del camino — nada está bloqueado.</p>
+    <div class="relative mx-auto" style="max-width:${ANCHO}px; aspect-ratio:${ANCHO}/${alturaTotal};">
+      <svg viewBox="0 0 ${ANCHO} ${alturaTotal}" class="absolute inset-0 w-full h-full" aria-hidden="true">
+        <path d="${trazo}" fill="none" stroke="${tema.pista}" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 16" opacity="0.35"/>
+      </svg>
+      ${nodos}
+    </div>
+  `;
 }
 
 // ============================================================
@@ -245,7 +350,7 @@ function vistaSeleccionGrado() {
   if (!sesion) { navegar('/'); return ''; }
 
   const grados = ['1°', '2°', '3°'];
-  const ej = PASO_COLOR.practicaExtra;
+  const ej = COLOR_EJERCITATE;
 
   return `
     ${encabezado_(sesion)}
@@ -292,7 +397,7 @@ function vistaSeleccionGrado() {
 function vistaEjercitate() {
   const sesion = obtenerSesion();
   if (!sesion) { navegar('/'); return ''; }
-  const ej = PASO_COLOR.practicaExtra;
+  const ej = COLOR_EJERCITATE;
 
   return `
     ${encabezado_(sesion)}
@@ -340,18 +445,7 @@ async function vistaListaPDA({ grado }) {
       <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-6">PDAs de ${escapeHTML_(grado)} de secundaria</h2>
       ${error ? `<p class="text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-4 py-3">No se pudieron cargar los PDAs: ${escapeHTML_(error)}</p>` : ''}
       ${(!error && pdas.length === 0) ? `<p class="text-slate-500">Todavía no hay PDAs cargados para este grado. Vuelve pronto.</p>` : ''}
-      <div class="space-y-3">
-        ${pdas.map((pda, i) => `
-          <a href="#/pda/${encodeURIComponent(grado)}/${encodeURIComponent(pda.id)}" ${retraso_(i, 60)}
-             class="mn-tarjeta mn-elevar flex items-center gap-3 bg-white rounded-2xl shadow-sm border border-slate-100 p-4 border-l-4 ${tema.borde}">
-            ${pda.numero !== undefined ? `<span class="flex-none w-9 h-9 rounded-full ${tema.chip} font-heading font-bold flex items-center justify-center">${pda.numero}</span>` : ''}
-            <div>
-              <p class="text-xs uppercase tracking-wide ${tema.texto} font-bold">${escapeHTML_(pda.eje)}</p>
-              <p class="text-slate-800 font-semibold font-heading text-lg">${escapeHTML_(pda.titulo)}</p>
-            </div>
-          </a>
-        `).join('')}
-      </div>
+      ${!error && pdas.length > 0 ? caminoPDAs_(pdas, grado, tema) : ''}
     </div>
   `;
 }
@@ -421,7 +515,7 @@ async function vistaPDA({ grado, id }) {
         <a href="#/pda-lista/${encodeURIComponent(grado)}" class="inline-flex items-center gap-1 text-sm font-semibold ${tema.texto} hover:underline">
           ${icono_('flecha', 'w-4 h-4 rotate-180')} ${escapeHTML_(grado)} secundaria
         </a>
-        ${barraAvance_(estado.pasoIndex, pasos.length, tema)}
+        ${caminoPasos_(estado.pasoIndex, pasos.length, tema)}
         <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4">
           ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda, PASO_COLOR.problematizacion) : ''}
           ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, PASO_COLOR.subtema) : ''}
@@ -658,8 +752,8 @@ function panelMiniResultado_(subtema, resultado, esUltimo, color) {
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <p class="font-heading text-2xl font-bold text-slate-800 mb-2">${resultado.correctas} / ${resultado.total} correctas</p>
     <div class="relative inline-block mb-1">
-      ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-300/50 blur-xl"></div>` : ''}
-      <p class="relative text-amber-500 text-xl">
+      ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-400/40 blur-xl"></div>` : ''}
+      <p class="relative text-amber-600 text-xl">
         ${Array.from({ length: resultado.estrellas }).map((_, i) => `<span class="mn-estrella" ${retraso_(i, 120)}>★</span>`).join('')}${'☆'.repeat(Math.max(0, resultado.estrellasMax - resultado.estrellas))}
       </p>
     </div>
@@ -684,8 +778,8 @@ function panelResultado_(pda, estado, color) {
     ${overline_('Resultado global del PDA', 'medalla', color)}
     <p class="font-heading text-2xl sm:text-3xl font-bold text-slate-800 mb-2">${r.correctas} / ${r.total} correctas</p>
     <div class="relative inline-block mb-1">
-      ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-300/50 blur-xl"></div>` : ''}
-      <p class="relative text-amber-500 text-2xl">
+      ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-400/40 blur-xl"></div>` : ''}
+      <p class="relative text-amber-600 text-2xl">
         ${Array.from({ length: r.estrellas }).map((_, i) => `<span class="mn-estrella" ${retraso_(i, 120)}>★</span>`).join('')}${'☆'.repeat(Math.max(0, r.estrellasMax - r.estrellas))}
       </p>
     </div>
@@ -828,16 +922,29 @@ function leerRespuesta_(raiz, prefijo, tipo) {
   return null;
 }
 
-function barraAvance_(pasoIndex, totalPasos, tema) {
-  const porcentaje = Math.round((pasoIndex / (totalPasos - 1)) * 100);
+/** Indicador de avance "en serpiente": una fila de puntos que ondulan
+ * suavemente arriba/abajo (eco compacto del camino de PDAs) mientras se
+ * baja de actividad en actividad dentro de un PDA — completados llenos,
+ * el actual más grande y resaltado, los que faltan solo con contorno. */
+function caminoPasos_(pasoIndex, totalPasos, tema) {
+  const puntos = Array.from({ length: totalPasos }, (_, i) => {
+    const completado = i < pasoIndex;
+    const actual = i === pasoIndex;
+    const offset = i % 4 === 1 ? -5 : i % 4 === 3 ? 5 : 0;
+    const clase = actual
+      ? `w-4 h-4 border-2 border-white shadow-md bg-gradient-to-br ${tema.grad}`
+      : completado
+        ? `w-2.5 h-2.5 bg-gradient-to-br ${tema.grad} opacity-45`
+        : `w-2.5 h-2.5 bg-white border-2 border-slate-300`;
+    return `<span class="rounded-full shrink-0 transition-all duration-300 ${clase}" style="transform:translateY(${offset}px)"></span>`;
+  }).join('');
+
   return `
     <div class="mt-3">
-      <div class="flex justify-between text-xs text-slate-500 mb-1 font-medium">
-        <span>Avance</span><span>${porcentaje}%</span>
+      <div class="flex justify-between text-xs text-slate-500 mb-1.5 font-medium">
+        <span>Tu camino</span><span>Paso ${pasoIndex + 1} de ${totalPasos}</span>
       </div>
-      <div class="w-full bg-slate-200 rounded-full h-2.5 overflow-hidden">
-        <div class="mn-barra-avance h-2.5 rounded-full bg-gradient-to-r ${tema.grad}" style="width:${porcentaje}%"></div>
-      </div>
+      <div class="flex items-center gap-2 flex-wrap">${puntos}</div>
     </div>
   `;
 }

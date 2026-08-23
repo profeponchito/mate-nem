@@ -1,19 +1,30 @@
 /* MATE-NEM · Estilos globales complementarios a Tailwind (cargado por CDN)
  * ----------------------------------------------------------------------
  * Sistema visual: tipografía Baloo 2 (encabezados, amigable/creativa) +
- * Inter (texto), paleta índigo/violeta como marca, ámbar para estrellas y
- * logros, con animaciones suaves de entrada para que cada pantalla del
- * recorrido se sienta viva sin distraer del contenido.
+ * Inter (texto), marca índigo/violeta en la navegación, y una paleta
+ * "Aula NEM" propia (azul pizarrón, cobre, verde bosque, grafito, vino,
+ * ocre) para el camino de PDAs y las fases del recorrido — original y
+ * deliberadamente distinta a la de Duolingo, con animaciones suaves de
+ * entrada para que cada pantalla se sienta viva sin distraer del contenido.
  */
 
 body {
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  background: #f1f0fb;
+  background: #f7f4ec;
   background-image:
-    radial-gradient(circle at 10% 0%, rgba(99, 102, 241, 0.10), transparent 40%),
-    radial-gradient(circle at 90% 10%, rgba(217, 70, 239, 0.08), transparent 40%),
-    radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.06), transparent 40%);
+    radial-gradient(circle at 10% 0%, rgba(29, 78, 216, 0.09), transparent 40%),
+    radial-gradient(circle at 90% 10%, rgba(194, 65, 12, 0.07), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(6, 95, 70, 0.06), transparent 40%);
   background-attachment: fixed;
+}
+
+/* Recorta un bloque de texto a 2 líneas (etiquetas de los nodos del camino),
+ * sin depender del plugin line-clamp de Tailwind. */
+.mn-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 h1, h2, h3, .font-heading {
