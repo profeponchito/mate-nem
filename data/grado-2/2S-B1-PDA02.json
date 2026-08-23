@@ -82,7 +82,49 @@
         "columnaB": ["Asociativa", "Distributiva", "Conmutativa"],
         "parejasCorrectas": [1, 2, 0],
         "retroalimentacion": "El primero es distributiva, el segundo conmutativa, el tercero asociativa."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "El MCD de 20 y 30 es 10.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 20=2²×5, 30=2×3×5. MCD = 2×5 = 10."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál es el mcm de 8 y 12?",
+        "opciones": ["4", "24", "48", "96"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "Múltiplos de 8: 8,16,24... de 12: 12,24,36... El menor común es 24."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "El MCD de 16 y 24 es ___.",
+      "respuestaCorrecta": "8",
+      "retroalimentacion": "16=2⁴, 24=2³×3. MCD = 2³ = 8."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál ejemplo muestra la propiedad conmutativa?",
+      "opciones": ["2×(4+3)=2×4+2×3", "(1+2)+3=1+(2+3)", "6+9=9+6", "(2×3)×4=2×(3×4)"],
+      "respuestaCorrecta": 2,
+      "retroalimentacion": "La conmutativa dice que el orden no altera el resultado: 6+9=9+6."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El mcm de 5 y 7 es 35.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: como 5 y 7 no comparten factores, su mcm es el producto: 5×7=35."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": ["MCD de 12 y 18", "mcm de 6 y 8", "MCD de 9 y 15"],
+      "columnaB": ["3", "24", "6"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "MCD(12,18)=6; mcm(6,8)=24; MCD(9,15)=3."
+    }
+  ]
 }

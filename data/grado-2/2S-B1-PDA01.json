@@ -81,7 +81,49 @@
         "columnaB": ["-2 > -5", "-1/4 > -0.75", "-7 < -3"],
         "parejasCorrectas": [2, 0, 1],
         "retroalimentacion": "-7 < -3; -2 > -5; -1/4 (-0.25) > -0.75."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "Entre 0.2 y 0.3 no existe ningún otro número.",
+        "respuestaCorrecta": false,
+        "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.2 y 0.3 existen infinitos números, por ejemplo 0.25."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Ordena de menor a mayor: -0.5, 1/4, -2, 0",
+        "opciones": ["-2, -0.5, 0, 1/4", "1/4, 0, -0.5, -2", "-0.5, -2, 0, 1/4", "0, -0.5, -2, 1/4"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "1/4 = 0.25. Ordenados: -2 < -0.5 < 0 < 0.25."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "-5/2 escrito como decimal es ___.",
+      "respuestaCorrecta": "-2.5",
+      "retroalimentacion": "-5/2 = -2.5."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Qué número está entre -0.5 y 0?",
+      "opciones": ["-1", "-0.25", "0.5", "-0.75"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "-0.25 está entre -0.5 y 0, ya que -0.5 < -0.25 < 0."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "-3 es menor que -1/2.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: -1/2 = -0.5, y -3 está más a la izquierda: -3 < -0.5."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada par de números con la comparación correcta.",
+      "columnaA": ["-9 y -4", "-3 y -6", "1/2 y -0.75"],
+      "columnaB": ["1/2 > -0.75", "-3 > -6", "-9 < -4"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "-9 < -4; -3 > -6; 1/2 (0.5) > -0.75."
+    }
+  ]
 }

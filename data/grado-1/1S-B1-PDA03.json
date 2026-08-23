@@ -82,7 +82,49 @@
         "columnaB": ["-4", "24", "-3"],
         "parejasCorrectas": [1, 2, 0],
         "retroalimentacion": "(-6)×(-4)=24; -8+5=-3; (-20)÷5=-4."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "(-15) ÷ (-3) = 5.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: signos iguales (negativo entre negativo) dan resultado positivo: 5."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Resuelve aplicando jerarquía de operaciones: 10 - 2 × (-3)",
+        "opciones": ["4", "16", "-16", "24"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "Primero la multiplicación: 2×(-3)=-6; luego 10-(-6)=16."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "(-9) + (-4) = ___.",
+      "respuestaCorrecta": "-13",
+      "retroalimentacion": "Mismo signo: se suman los valores absolutos y se conserva el signo negativo: -13."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es el resultado de (-36) ÷ 6?",
+      "opciones": ["-6", "6", "-30", "30"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Signos diferentes dan resultado negativo: (-36) ÷ 6 = -6."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "En la expresión 5 + 2 × (-3), el resultado es -1.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: primero 2×(-3)=-6, luego 5+(-6)=-1."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": ["(-9) + (-4)", "(-36) ÷ 6", "5 + 2 × (-3)"],
+      "columnaB": ["-1", "-13", "-6"],
+      "parejasCorrectas": [1, 2, 0],
+      "retroalimentacion": "(-9)+(-4)=-13; (-36)÷6=-6; 5+2×(-3)=-1."
+    }
+  ]
 }

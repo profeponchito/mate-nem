@@ -80,7 +80,49 @@
         "columnaB": ["80", "127.50", "9"],
         "parejasCorrectas": [2, 1, 0],
         "retroalimentacion": "x+2x=27 → x=9; 150×0.85=127.50; x×1.10=88 → x=80."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "Un número más el triple de sí mismo es 32 (x + 3x = 32) implica que x = 8.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 4x=32 → x=8."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Un artículo cuesta $180 y tiene 25% de descuento. ¿Cuál es su precio final?",
+        "opciones": ["$45", "$135", "$155", "$225"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "180 × (1 − 0.25) = 180 × 0.75 = $135."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "Un producto con 30% de descuento quedó en $210. Su precio original era $___.",
+      "respuestaCorrecta": "300",
+      "retroalimentacion": "210 = x × (1 − 0.30) = 0.70x → x = 210 ÷ 0.70 = $300."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un número menos su mitad es 15 (x − x/2 = 15). ¿Cuál es el número?",
+      "opciones": ["7.5", "15", "30", "45"],
+      "respuestaCorrecta": 2,
+      "retroalimentacion": "x − x/2 = x/2 = 15 → x = 30."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Un producto con 8% de aumento que ahora cuesta $108 costaba $100 antes del aumento.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 108 = x × 1.08 → x = 108 ÷ 1.08 = 100."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada planteamiento con su resultado.",
+      "columnaA": ["x + 3x = 32", "200 × (1 − 0.25)", "x × 1.20 = 96"],
+      "columnaB": ["150", "80", "8"],
+      "parejasCorrectas": [2, 0, 1],
+      "retroalimentacion": "x+3x=32 → x=8; 200×0.75=150; x×1.20=96 → x=80."
+    }
+  ]
 }

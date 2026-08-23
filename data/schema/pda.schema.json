@@ -70,6 +70,12 @@
           "description": "Se recomienda mezclar al menos 2 tipos distintos de pregunta."
         }
       }
+    },
+
+    "practicaExtra": {
+      "type": "array",
+      "description": "Fase opcional, no calificada: reactivos adicionales mostrados después del resultado del reto, para quien quiera seguir practicando el mismo tema. No afectan el puntaje ni las estrellas.",
+      "items": { "$ref": "#/definitions/pregunta" }
     }
   },
 

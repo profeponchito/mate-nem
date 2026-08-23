@@ -10,28 +10,37 @@ con puntos/estrellas, y constancias descargables con código QR de verificación
 
 Este repositorio se construye por pasos. Ya está completo el flujo principal:
 registro del alumno → selección de grado → PDA (problematización → subtemas
-con checks formativos → reto final con reactivos mixtos) → resultado con
-puntos/estrellas → envío a Sheets → constancia con QR. Cada PDA muestra una
-barra de avance (%) durante todo el recorrido. El Trimestre 1 completo (17
-PDAs: 7 en 1°, 6 en 2°, 4 en 3°) ya está cargado con el diseño ampliado:
-tema explicado en subtemas con ejemplos, preguntas de repaso entre subtemas
-y un reto final que mezcla los 4 tipos de reactivo soportados (opción
-múltiple, verdadero/falso, llenar frase, relacionar columnas). Cada pantalla
-del recorrido (problematización, cada subtema, cada check y el reto) muestra
-un título claro y una explicación teórica antes del contenido interactivo, y
-la problematización de los 17 PDAs está redactada con lenguaje sencillo, como
-gancho inicial antes de entrar al tema. Falta la página de verificación de
-folios y el despliegue real del backend.
+con checks formativos → reto final con reactivos mixtos → práctica extra
+opcional) → resultado con puntos/estrellas → envío a Sheets → constancia con
+QR. Cada PDA muestra una barra de avance (%) durante todo el recorrido. El
+Trimestre 1 completo (17 PDAs: 7 en 1°, 6 en 2°, 4 en 3°) ya está cargado con
+el diseño ampliado: tema explicado en subtemas con ejemplos, preguntas de
+repaso entre subtemas, un reto final de 5 reactivos que mezcla los 4 tipos
+soportados (opción múltiple, verdadero/falso, llenar frase, relacionar
+columnas), y una sección de práctica extra opcional (3-4 reactivos más, sin
+calificar) que aparece después del resultado para quien quiera seguir
+practicando. Cada pantalla del recorrido (problematización, cada subtema,
+cada check y el reto) muestra un título claro y una explicación teórica antes
+del contenido interactivo, y la problematización de los 17 PDAs está
+redactada con lenguaje sencillo, como gancho inicial antes de entrar al tema.
+
+La interfaz tiene un diseño visual propio: tipografía Baloo 2 para
+encabezados e Inter para texto, paleta índigo/violeta como marca con un
+acento de color distinto por grado, íconos dibujados a mano por tipo de
+pantalla (sin librería externa de íconos), animaciones de entrada suaves y
+estrellas con efecto "pop" en el resultado, y una constancia rediseñada a
+juego con el resto de la app. Falta la página de verificación de folios y el
+despliegue real del backend.
 
 ## Árbol del repositorio
 
 ```
 mate-nem/
 ├── README.md
-├── index.html                     ✅ incluido — registro + arranque de la SPA
+├── index.html                     ✅ incluido — registro + arranque de la SPA + fuentes Baloo 2/Inter
 ├── assets/
 │   ├── css/
-│   │   └── styles.css             ✅ incluido — estilos globales complementarios a Tailwind
+│   │   └── styles.css             ✅ incluido — diseño visual, animaciones y estilos de la constancia
 │   ├── img/                       (vacío — logos/íconos opcionales)
 │   └── js/
 │       ├── app.js                 ✅ incluido — vistas y flujo completo de la SPA
@@ -96,7 +105,9 @@ el sitio ya se sirve por `https://`.
 4. ✅ Integración final: flujo completo PDA → actividad → envío a Sheets → constancia (probado de punta a punta).
 5. ✅ Trimestre 1 completo en los 3 grados (17 PDAs, transcritos del Programa Sintético Fase 6 — ver `data/README.md` sobre la distribución por grado).
 6. ✅ Rediseño de los PDA: tema explicado en subtemas (con ejemplos y checks formativos de 4 tipos de pregunta), barra de % de avance y reto final con reactivos mixtos — aplicado a los 17 PDAs existentes y probado de punta a punta.
-7. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
-8. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad").
-9. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
-10. ⏳ Pruebas en dispositivos móviles reales.
+7. ✅ Título y explicación teórica al inicio de cada pantalla del recorrido, problematización redactada en lenguaje sencillo.
+8. ✅ Reto ampliado a 5 reactivos, sección de práctica extra opcional después del resultado, y diseño visual propio (tipografía, colores por grado, íconos, animaciones, constancia rediseñada) — aplicado a los 17 PDAs y probado de punta a punta.
+9. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
+10. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad").
+11. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
+12. ⏳ Pruebas en dispositivos móviles reales.

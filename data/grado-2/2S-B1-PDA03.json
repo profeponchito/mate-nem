@@ -91,7 +91,49 @@
         ],
         "parejasCorrectas": [2, 0, 1],
         "retroalimentacion": "k = 25÷5 = $5 por lápiz; k = 184÷8 = $23 por litro; k = 270÷3 = $90 por hora."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "Si 6 boletos de autobús cuestan $90, entonces 10 boletos cuestan $150.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: k = 90÷6 = 15 por boleto; 10×15 = $150."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Un grifo llena 60 litros en 12 minutos. ¿Cuántos litros llena en 20 minutos, con el mismo rendimiento?",
+        "opciones": ["80 L", "90 L", "100 L", "110 L"],
+        "respuestaCorrecta": 2,
+        "retroalimentacion": "k = 60÷12 = 5 litros por minuto. 20×5 = 100 litros."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "Si 4 kg de arroz cuestan $88, entonces 7 kg cuestan $___.",
+      "respuestaCorrecta": "154",
+      "retroalimentacion": "k = 88÷4 = 22 por kg. 7×22 = $154."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Una receta usa 3 tazas de harina para 18 galletas. ¿Cuántas tazas se necesitan para 30 galletas?",
+      "opciones": ["4 tazas", "5 tazas", "6 tazas", "9 tazas"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "k = 3÷18 = 1/6 de taza por galleta. 30 × 1/6 = 5 tazas."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Un auto que recorre 150 km con 10 litros de gasolina recorrerá 225 km con 15 litros, manteniendo el mismo rendimiento.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: k = 150÷10 = 15 km por litro. 15×15 = 225 km."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada situación con su constante de proporcionalidad (k).",
+      "columnaA": ["7 plumas cuestan $63", "9 litros de leche cuestan $153", "4 horas de clase cuestan $260"],
+      "columnaB": ["$65 por hora", "$9 por pluma", "$17 por litro"],
+      "parejasCorrectas": [1, 2, 0],
+      "retroalimentacion": "k = 63÷7 = $9 por pluma; k = 153÷9 = $17 por litro; k = 260÷4 = $65 por hora."
+    }
+  ]
 }

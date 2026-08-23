@@ -81,7 +81,49 @@
         "columnaB": ["3x-5", "x/2+4", "2x+3"],
         "parejasCorrectas": [2, 0, 1],
         "retroalimentacion": "'El doble más 3' es 2x+3; 'el triple menos 5' es 3x-5; 'la mitad más 4' es x/2+4."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "El perímetro de un rectángulo con ancho x y largo x+5 es ___.",
+        "respuestaCorrecta": "4x+10",
+        "retroalimentacion": "2(x) + 2(x+5) = 2x + 2x + 10 = 4x+10."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cómo se escribe algebraicamente 'el doble de un número menos 7'?",
+        "opciones": ["2x-7", "x-14", "7-2x", "2(x-7)"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "'El doble de un número' es 2x, y 'menos 7' se resta: 2x-7."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "La expresión algebraica de 'la mitad de un número más 4' es x/2 + 4.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 'la mitad de un número' es x/2, y 'más 4' se suma: x/2+4."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "El perímetro de un pentágono regular (5 lados iguales) de lado x es ___.",
+      "respuestaCorrecta": "5x",
+      "retroalimentacion": "Al tener 5 lados iguales de longitud x, el perímetro es 5x."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un triángulo tiene lados x, 2x-1 y x+4. ¿Cuál es su perímetro simplificado?",
+      "opciones": ["4x+3", "4x+4", "3x+3", "4x-3"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "x + (2x-1) + (x+4) = 4x+3."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+      "columnaA": ["El triple de un número más 2", "El cuádruple de un número menos 1", "La mitad de un número menos 3"],
+      "columnaB": ["4x-1", "x/2-3", "3x+2"],
+      "parejasCorrectas": [2, 0, 1],
+      "retroalimentacion": "'El triple más 2' es 3x+2; 'el cuádruple menos 1' es 4x-1; 'la mitad menos 3' es x/2-3."
+    }
+  ]
 }

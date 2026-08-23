@@ -81,7 +81,49 @@
         "columnaB": ["x¹⁰", "x²+10x+25", "x⁷"],
         "parejasCorrectas": [1, 2, 0],
         "retroalimentacion": "(x+5)²=x²+10x+25; x³×x⁴=x⁷; (x²)⁵=x¹⁰."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "(x+4)² = x² + 8x + 16.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 2(4)=8 y 4²=16, entonces (x+4)² = x²+8x+16."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "Simplifica: x⁵ × x²",
+        "opciones": ["x⁷", "x¹⁰", "x³", "2x⁷"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 5+2=7."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "El desarrollo de (x+6)² es x² + 12x + ___.",
+      "respuestaCorrecta": "36",
+      "retroalimentacion": "El tercer término es el cuadrado del segundo: 6² = 36."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Simplifica: (x³)⁴",
+      "opciones": ["x⁷", "x¹²", "x⁸¹", "x⁶⁴"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 3×4=12."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "x² × x² es igual a x⁴.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: se suman los exponentes: 2+2=4."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+      "columnaA": ["(x+2)²", "x⁴×x³", "(x²)³"],
+      "columnaB": ["x⁶", "x²+4x+4", "x⁷"],
+      "parejasCorrectas": [1, 2, 0],
+      "retroalimentacion": "(x+2)²=x²+4x+4; x⁴×x³=x⁷; (x²)³=x⁶."
+    }
+  ]
 }

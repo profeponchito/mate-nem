@@ -82,7 +82,49 @@
         "columnaB": ["Es la más caliente", "Es la más fría", "Es templada, bajo cero"],
         "parejasCorrectas": [1, 2, 0],
         "retroalimentacion": "-8°C es la más fría (más a la izquierda); -3°C es templada bajo cero; 2°C es la más caliente."
+      },
+      {
+        "tipo": "llenar_frase",
+        "frase": "El número menor entre -7, -2, 5, -10 es ___.",
+        "respuestaCorrecta": "-10",
+        "retroalimentacion": "-10 está más a la izquierda que -7, -2 y 5, así que es el menor."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+        "opciones": ["5, -2, -7, -10", "-10, -7, -2, 5", "-2, -7, 5, -10", "5, -10, -2, -7"],
+        "respuestaCorrecta": 0,
+        "retroalimentacion": "De mayor a menor: 5 > -2 > -7 > -10."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "-15 es mayor que -20.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: -15 está más a la derecha en la recta numérica que -20, así que -15 > -20."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un dron vuela a 25 m y un buzo está a -10 m. ¿Cuál está más lejos del nivel del mar (0)?",
+      "opciones": ["El dron (más lejos)", "El buzo (más lejos)", "Ambos están a la misma distancia", "No se puede saber"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "El dron está a 25 m de distancia del 0, y el buzo a 10 m; 25 es mayor que 10, así que el dron está más lejos."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Ordenados de mayor a menor, el segundo número de la lista 6, -3, 0, -8 es ___.",
+      "respuestaCorrecta": "0",
+      "retroalimentacion": "De mayor a menor: 6, 0, -3, -8. El segundo lugar es el 0."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+      "columnaA": ["-12°C", "-1°C", "4°C"],
+      "columnaB": ["Es la más caliente", "Es templada, bajo cero", "Es la más fría"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "-12°C es la más fría; -1°C es templada bajo cero; 4°C es la más caliente."
+    }
+  ]
 }

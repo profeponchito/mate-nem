@@ -70,7 +70,7 @@ Fuentes consultadas:
 4. Agrega el nombre del archivo al arreglo `archivos` en el `index.json`
    de esa carpeta de grado.
 
-## Estructura de un PDA (v2)
+## Estructura de un PDA (v3)
 
 Cada PDA sigue este flujo lineal, que es el que recorre `app.js` mostrando
 una barra de avance (%) en todo momento:
@@ -86,8 +86,13 @@ una barra de avance (%) en todo momento:
 - **reto** → la actividad final gamificada y calificada. Tiene `sintesis`
   (un recordatorio teórico, a modo de mini-síntesis, que recapitula las
   ideas clave de los subtemas y se muestra antes de los reactivos),
-  `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos`; se recomienda
-  mezclar al menos 2 tipos de pregunta distintos.
+  `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos` (los 17 PDAs
+  actuales usan 5, mezclando los 4 tipos de pregunta soportados).
+- **practicaExtra** (opcional) → arreglo de reactivos adicionales, ungraded
+  (no calificados), mostrados en una sección aparte después del panel de
+  resultado, para quien quiera seguir practicando el mismo tema. No afectan
+  el puntaje ni las estrellas del PDA. Los 17 PDAs actuales incluyen entre
+  3 y 4 cada uno.
 
 Cada pantalla del recorrido muestra un título claro y una explicación antes
 de la parte interactiva: la problematización usa `pda.titulo` y su propio
@@ -114,4 +119,5 @@ Todas requieren `retroalimentacion` (se muestra tras responder, sea correcta
 o no).
 
 Este es el flujo que renderiza `app.js`: problematización → subtemas (con
-sus checks) → reto → resultado (puntaje, estrellas) → constancia.
+sus checks) → reto → resultado (puntaje, estrellas) → práctica extra
+(opcional, si el PDA la incluye) → constancia.

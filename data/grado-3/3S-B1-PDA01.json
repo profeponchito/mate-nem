@@ -84,7 +84,49 @@
         "columnaB": ["4.5 × 10⁴", "1.5 × 10¹¹", "2 × 10⁻⁶"],
         "parejasCorrectas": [1, 2, 0],
         "retroalimentacion": "150,000,000,000 = 1.5×10¹¹; 0.000002 = 2×10⁻⁶; 45,000 = 4.5×10⁴."
+      },
+      {
+        "tipo": "verdadero_falso",
+        "enunciado": "√225 = 15.",
+        "respuestaCorrecta": true,
+        "retroalimentacion": "Correcto: 15 × 15 = 225."
+      },
+      {
+        "tipo": "opcion_multiple",
+        "pregunta": "¿Cuál es el resultado de 5⁻²?",
+        "opciones": ["-10", "1/25", "25", "1/10"],
+        "respuestaCorrecta": 1,
+        "retroalimentacion": "5⁻² = 1/5² = 1/25."
       }
     ]
-  }
+  },
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "La raíz cuadrada de 196 es ___.",
+      "respuestaCorrecta": "14",
+      "retroalimentacion": "14 × 14 = 196."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cómo se escribe 0.00031 en notación científica?",
+      "opciones": ["3.1 × 10⁻⁴", "31 × 10⁻⁵", "3.1 × 10⁴", "0.31 × 10⁻³"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "0.00031 = 3.1 × 10⁻⁴."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "3⁻³ = 1/27.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 3⁻³ = 1/3³ = 1/27."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada expresión con su resultado.",
+      "columnaA": ["√64", "4⁻²", "2,300,000"],
+      "columnaB": ["2.3 × 10⁶", "1/16", "8"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "√64=8; 4⁻²=1/16; 2,300,000 = 2.3×10⁶."
+    }
+  ]
 }

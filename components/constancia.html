@@ -4,13 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MATE-NEM · Vista previa de Constancia</title>
+
+<!-- Misma tipografía y hoja de estilos que usa la app completa, para que
+     esta vista previa se vea exactamente igual que la constancia real. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+
 <style>
-  :root {
-    --oro: #b8860b;
-    --oro-claro: #f5e7c8;
-    --tinta: #1f2937;
-  }
-  * { box-sizing: border-box; }
   body {
     margin: 0;
     padding: 24px;
@@ -19,103 +21,24 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background: #eef1f5;
-    font-family: 'Georgia', 'Times New Roman', serif;
   }
-
-  .constancia {
-    width: 100%;
-    max-width: 780px;
-  }
-  .constancia__marco {
-    background: #fffdf7;
-    border: 3px double var(--oro);
-    border-radius: 8px;
-    padding: clamp(20px, 5vw, 48px);
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  }
-  .constancia__sello {
-    letter-spacing: 4px;
-    color: var(--oro);
-    font-weight: bold;
-    font-size: 0.85rem;
-    margin: 0 0 8px;
-  }
-  .constancia__titulo {
-    margin: 0;
-    font-size: clamp(1.5rem, 5vw, 2.2rem);
-    color: var(--tinta);
-  }
-  .constancia__subtitulo {
-    margin: 4px 0 20px;
-    color: #6b7280;
-    font-style: italic;
-  }
-  .constancia__texto {
-    color: var(--tinta);
-    margin: 8px 0;
-  }
-  .constancia__nombre {
-    margin: 10px 0;
-    font-size: clamp(1.4rem, 6vw, 2rem);
-    color: var(--oro);
-    border-bottom: 1px solid var(--oro-claro);
-    display: inline-block;
-    padding-bottom: 6px;
-  }
-  .constancia__pda {
-    margin: 12px 0 4px;
-    color: var(--tinta);
-  }
-  .constancia__eje {
-    margin: 0 0 16px;
-    color: #6b7280;
-    font-size: 0.9rem;
-  }
-  .constancia__resultados {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    margin: 16px 0;
-    font-size: 0.95rem;
-  }
-  .constancia__pie {
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid var(--oro-claro);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .constancia__fecha,
-  .constancia__folio {
-    font-size: 0.8rem;
-    color: #6b7280;
-  }
-  .constancia__qr {
-    display: flex;
-    justify-content: center;
-  }
-
   .acciones {
     display: flex;
     gap: 12px;
   }
   .acciones button {
-    font-family: inherit;
+    font-family: 'Baloo 2', system-ui, sans-serif;
+    font-weight: 700;
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border: none;
-    border-radius: 6px;
-    background: var(--oro);
+    border-radius: 10px;
+    background: linear-gradient(90deg, #4f46e5, #c026d3);
     color: white;
     cursor: pointer;
+    box-shadow: 0 8px 20px -6px rgba(79, 70, 229, 0.5);
   }
-  .acciones button:hover { opacity: 0.9; }
+  .acciones button:hover { opacity: 0.92; }
 
   @media print {
     body { background: white; padding: 0; }
@@ -148,6 +71,7 @@
       eje: 'Sentido numérico y pensamiento algebraico',
       puntaje: 95,
       estrellas: 3,
+      estrellasMax: 3,
       codigoVerificacion: (crypto.randomUUID ? crypto.randomUUID() : 'DEMO-0000-0000')
     };
 
