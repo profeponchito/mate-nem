@@ -1,22 +1,29 @@
 /**
  * MATE-NEM · Motor de gamificación
  * ----------------------------------------------------
- * Calcula puntaje, estrellas y retroalimentación del "reto" final de un PDA,
- * y evalúa preguntas individuales (usado también por los checks formativos
- * entre subtemas). Soporta 4 tipos de reactivo:
+ * Calcula puntaje, estrellas y retroalimentación de una mini-actividad
+ * calificada (los 5 reactivos de un subtema, o cualquier lote de
+ * reactivos), y evalúa preguntas individuales. Soporta 4 tipos de reactivo:
  *   - opcion_multiple    : respuesta = índice de la opción elegida
  *   - verdadero_falso    : respuesta = boolean
  *   - llenar_frase       : respuesta = string (se compara sin mayúsculas/acentos)
  *   - relacionar_columnas: respuesta = array de índices (uno por fila de columnaA)
+ *
+ * Cada PDA tiene 4 subtemas, cada uno con su propia mini-actividad
+ * calificada (5 reactivos, resultado independiente). `calcularResultado()`
+ * se usa una vez por subtema; `combinarResultados()` suma esos 4
+ * mini-resultados en el resultado GLOBAL del PDA (mostrado al terminar el
+ * subtema 4, y el que dispara constancia/webhook de PDA completo).
  */
 
 /**
- * @param {Object} pda - el PDA completo (usa pda.reto)
- * @param {Array} respuestas - una respuesta por reactivo de pda.reto.reactivos, mismo orden
- * @returns {{correctas:number, total:number, porcentaje:number, puntaje:number, puntajeMax:number, estrellas:number, detalle:Array}}
+ * @param {Object} actividad - objeto con {reactivos, puntosPorReactivo, estrellasMax} —
+ *   normalmente un subtema (mini-actividad de 5 reactivos), pero sirve para cualquier lote.
+ * @param {Array} respuestas - una respuesta por reactivo de actividad.reactivos, mismo orden
+ * @returns {{correctas:number, total:number, porcentaje:number, puntaje:number, puntajeMax:number, estrellas:number, estrellasMax:number, detalle:Array}}
  */
-export function calcularResultado(pda, respuestas) {
-  const { reactivos, puntosPorReactivo, estrellasMax = 3 } = pda.reto;
+export function calcularResultado(actividad, respuestas) {
+  const { reactivos, puntosPorReactivo, estrellasMax = 3 } = actividad;
 
   const detalle = reactivos.map((reactivo, i) => ({
     resumen: resumenPregunta_(reactivo),
@@ -33,7 +40,27 @@ export function calcularResultado(pda, respuestas) {
   const puntajeMax = total * puntosPorReactivo;
   const estrellas = calcularEstrellas_(porcentaje, estrellasMax);
 
-  return { correctas, total, porcentaje, puntaje, puntajeMax, estrellas, detalle };
+  return { correctas, total, porcentaje, puntaje, puntajeMax, estrellas, estrellasMax, detalle };
+}
+
+/**
+ * Suma los 4 mini-resultados (uno por subtema) en el resultado GLOBAL del
+ * PDA: correctas/total/puntaje/puntajeMax/estrellas/estrellasMax se suman,
+ * y `detalle` concatena los 20 reactivos en orden de subtema. Es una suma
+ * directa de resultados ya calculados — no vuelve a calificar nada.
+ * @param {Array} resultados - resultados de `calcularResultado()`, uno por subtema (en orden).
+ */
+export function combinarResultados(resultados) {
+  return resultados.reduce((acc, r) => ({
+    correctas: acc.correctas + r.correctas,
+    total: acc.total + r.total,
+    porcentaje: (acc.total + r.total) > 0 ? (acc.correctas + r.correctas) / (acc.total + r.total) : 0,
+    puntaje: acc.puntaje + r.puntaje,
+    puntajeMax: acc.puntajeMax + r.puntajeMax,
+    estrellas: acc.estrellas + r.estrellas,
+    estrellasMax: acc.estrellasMax + r.estrellasMax,
+    detalle: acc.detalle.concat(r.detalle)
+  }), { correctas: 0, total: 0, porcentaje: 0, puntaje: 0, puntajeMax: 0, estrellas: 0, estrellasMax: 0, detalle: [] });
 }
 
 /** Evalúa una sola pregunta (de cualquier tipo) contra la respuesta capturada del DOM. */

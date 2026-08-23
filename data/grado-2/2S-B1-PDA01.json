@@ -22,12 +22,40 @@
         "-3/4 = -0.75",
         "Convirtiendo -3.5, -2, -1/2, 0, +1.25 todo a decimal: -3.5, -2, -0.5, 0, 1.25."
       ],
-      "check": {
-        "tipo": "llenar_frase",
-        "frase": "-1/2 escrito como decimal es ___.",
-        "respuestaCorrecta": "-0.5",
-        "retroalimentacion": "-1/2 = -0.5."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre 0.2 y 0.3 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.2 y 0.3 existen infinitos números, por ejemplo 0.25."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -1.2 y -1.12 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -1.2 y -1.12 existen infinitos números, por ejemplo -1.16."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre 4.3 y 4.55 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre 4.3 y 4.55 existen infinitos números, por ejemplo 4.425."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre 0.3 y 0.37 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.3 y 0.37 existen infinitos números, por ejemplo 0.335."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -0.2 y 0.05 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -0.2 y 0.05 existen infinitos números, por ejemplo -0.075."
+        }
+      ]
     },
     {
       "numero": "1.2",
@@ -36,18 +64,40 @@
       "ejemplos": [
         "-3.5, -2, -0.5, 0, 1.25 ordenados de menor a mayor: -3.5 < -2 < -0.5 < 0 < 1.25."
       ],
-      "check": {
-        "tipo": "opcion_multiple",
-        "pregunta": "Ordena de menor a mayor: -1/4, -1, 0.5, -0.75",
-        "opciones": [
-          "-1, -0.75, -1/4, 0.5",
-          "0.5, -0.75, -1/4, -1",
-          "-1, -1/4, -0.75, 0.5",
-          "-0.75, -1, -1/4, 0.5"
-        ],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "-1/4 = -0.25. Ordenados: -1 < -0.75 < -0.25 < 0.5."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "-3/4 escrito como decimal es ___.",
+          "respuestaCorrecta": "-0.75",
+          "retroalimentacion": "-3/4 = -0.75."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 0, -1/2, -4, 8 es ___.",
+          "respuestaCorrecta": "-4",
+          "retroalimentacion": "-4 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 1/2, 0.1, -1/2, 10 es ___.",
+          "respuestaCorrecta": "-1/2",
+          "retroalimentacion": "-1/2 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -1/2, -3.2, 8, -6/10 es ___.",
+          "respuestaCorrecta": "-3.2",
+          "retroalimentacion": "-3.2 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -10, 6/8, 1/5, 1.7 es ___.",
+          "respuestaCorrecta": "-10",
+          "retroalimentacion": "-10 está más a la izquierda en la recta numérica, así que es el menor."
+        }
+      ]
     },
     {
       "numero": "1.3",
@@ -57,233 +107,176 @@
         "Entre -2 y -1 está -1.5, y también -1.2, -1.9, etc.: hay infinitos números posibles.",
         "Entre 0 y 1 está 0.5, y también 0.1, 0.99, etc."
       ],
-      "check": {
-        "tipo": "verdadero_falso",
-        "enunciado": "Entre -2 y -1 no existe ningún otro número.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Falso: por la propiedad de densidad, entre -2 y -1 existen infinitos números, por ejemplo -1.5."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número está entre -2 y -1 en la recta numérica?",
+          "opciones": [
+            "-3",
+            "-1.5",
+            "0",
+            "-2.5"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "-1.5 está entre -2 y -1, ya que -2 < -1.5 < -1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -0.5, 1/4, -2, 0",
+          "opciones": [
+            "-2, -0.5, 0, 1/4",
+            "1/4, 0, -0.5, -2",
+            "-0.5, -2, 0, 1/4",
+            "0, -0.5, -2, 1/4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1/4 = 0.25. Ordenados: -2 < -0.5 < 0 < 0.25."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor:",
+          "opciones": [
+            "-2.2, -0.7, 5, -1",
+            "5, -0.7, -1, -2.2",
+            "-1, 5, -2.2, -0.7",
+            "-0.7, -1, 5, -2.2"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "De mayor a menor: 5 > -0.7 > -1 > -2.2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor:",
+          "opciones": [
+            "-5, 1/2, -9/10, -3.2",
+            "1/2, -9/10, -3.2, -5",
+            "1/2, -5, -9/10, -3.2",
+            "-9/10, -3.2, 1/2, -5"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "De mayor a menor: 1/2 > -9/10 > -3.2 > -5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor:",
+          "opciones": [
+            "2.8, 1.2, -1/2, -1",
+            "2.8, -1/2, -1, 1.2",
+            "1.2, 2.8, -1/2, -1",
+            "-1, 2.8, -1/2, 1.2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 2.8 > 1.2 > -1/2 > -1."
+        }
+      ]
+    },
+    {
+      "numero": "1.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: para comparar números con signo que están en distintas formas (enteros, fracciones, decimales), conviene expresarlos todos igual, por ejemplo convirtiendo las fracciones a decimales. Los negativos con mayor valor absoluto son los menores, y entre dos números con signo siempre existe otro número más (la propiedad de densidad).",
+      "ejemplos": [
+        "Entre 0.2 y 0.3 no existe ningún otro número. Falso: por la propiedad de densidad, entre 0.2 y 0.3 existen infinitos números, por ejemplo 0.25."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor:",
+          "opciones": [
+            "6, 3/5, -1.1, 8",
+            "8, 6, 3/5, -1.1",
+            "8, 3/5, -1.1, 6",
+            "6, 3/5, 8, -1.1"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "De mayor a menor: 8 > 6 > 3/5 > -1.1."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con la comparación correcta.",
+          "columnaA": [
+            "-7 y -3",
+            "-2 y -5",
+            "-1/4 y -0.75"
+          ],
+          "columnaB": [
+            "-2 > -5",
+            "-1/4 > -0.75",
+            "-7 < -3"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "-7 < -3; -2 > -5; -1/4 (-0.25) > -0.75."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con la comparación correcta.",
+          "columnaA": [
+            "-1/5 y 7",
+            "10 y -2/5",
+            "-10 y 1.7"
+          ],
+          "columnaB": [
+            "-1/5 < 7",
+            "10 > -2/5",
+            "-10 < 1.7"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-1/5 y 7: -1/5 < 7; 10 y -2/5: 10 > -2/5; -10 y 1.7: -10 < 1.7."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con la comparación correcta.",
+          "columnaA": [
+            "-7 y -2.8",
+            "-3.7 y -2",
+            "-4 y 8"
+          ],
+          "columnaB": [
+            "-3.7 < -2",
+            "-7 < -2.8",
+            "-4 < 8"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "-7 y -2.8: -7 < -2.8; -3.7 y -2: -3.7 < -2; -4 y 8: -4 < 8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con la comparación correcta.",
+          "columnaA": [
+            "-1/2 y 1/2",
+            "-0.4 y 8",
+            "1.6 y 4"
+          ],
+          "columnaB": [
+            "-1/2 < 1/2",
+            "-0.4 < 8",
+            "1.6 < 4"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-1/2 y 1/2: -1/2 < 1/2; -0.4 y 8: -0.4 < 8; 1.6 y 4: 1.6 < 4."
+        }
+      ]
     }
   ],
-  "reto": {
-    "sintesis": "Recuerda: para comparar números con signo que están en distintas formas (enteros, fracciones, decimales), conviene expresarlos todos igual, por ejemplo convirtiendo las fracciones a decimales. Los negativos con mayor valor absoluto son los menores, y entre dos números con signo siempre existe otro número más (la propiedad de densidad).",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "¿Qué número está entre -2 y -1 en la recta numérica?",
-        "opciones": [
-          "-3",
-          "-1.5",
-          "0",
-          "-2.5"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "-1.5 está entre -2 y -1, ya que -2 < -1.5 < -1."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "-3/4 escrito como decimal es ___.",
-        "respuestaCorrecta": "-0.75",
-        "retroalimentacion": "-3/4 = -0.75."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada par de números con la comparación correcta.",
-        "columnaA": [
-          "-7 y -3",
-          "-2 y -5",
-          "-1/4 y -0.75"
-        ],
-        "columnaB": [
-          "-2 > -5",
-          "-1/4 > -0.75",
-          "-7 < -3"
-        ],
-        "parejasCorrectas": [
-          2,
-          0,
-          1
-        ],
-        "retroalimentacion": "-7 < -3; -2 > -5; -1/4 (-0.25) > -0.75."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Entre 0.2 y 0.3 no existe ningún otro número.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.2 y 0.3 existen infinitos números, por ejemplo 0.25."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Ordena de menor a mayor: -0.5, 1/4, -2, 0",
-        "opciones": [
-          "-2, -0.5, 0, 1/4",
-          "1/4, 0, -0.5, -2",
-          "-0.5, -2, 0, 1/4",
-          "0, -0.5, -2, 1/4"
-        ],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "1/4 = 0.25. Ordenados: -2 < -0.5 < 0 < 0.25."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "El número menor entre 0, -1/2, -4, 8 es ___.",
-        "respuestaCorrecta": "-4",
-        "retroalimentacion": "-4 está más a la izquierda en la recta numérica, así que es el menor."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "El número menor entre 1/2, 0.1, -1/2, 10 es ___.",
-        "respuestaCorrecta": "-1/2",
-        "retroalimentacion": "-1/2 está más a la izquierda en la recta numérica, así que es el menor."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "El número menor entre -1/2, -3.2, 8, -6/10 es ___.",
-        "respuestaCorrecta": "-3.2",
-        "retroalimentacion": "-3.2 está más a la izquierda en la recta numérica, así que es el menor."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "El número menor entre -10, 6/8, 1/5, 1.7 es ___.",
-        "respuestaCorrecta": "-10",
-        "retroalimentacion": "-10 está más a la izquierda en la recta numérica, así que es el menor."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Ordena de mayor a menor:",
-        "opciones": [
-          "-2.2, -0.7, 5, -1",
-          "5, -0.7, -1, -2.2",
-          "-1, 5, -2.2, -0.7",
-          "-0.7, -1, 5, -2.2"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "De mayor a menor: 5 > -0.7 > -1 > -2.2."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Ordena de mayor a menor:",
-        "opciones": [
-          "-5, 1/2, -9/10, -3.2",
-          "1/2, -9/10, -3.2, -5",
-          "1/2, -5, -9/10, -3.2",
-          "-9/10, -3.2, 1/2, -5"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "De mayor a menor: 1/2 > -9/10 > -3.2 > -5."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Ordena de mayor a menor:",
-        "opciones": [
-          "2.8, 1.2, -1/2, -1",
-          "2.8, -1/2, -1, 1.2",
-          "1.2, 2.8, -1/2, -1",
-          "-1, 2.8, -1/2, 1.2"
-        ],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "De mayor a menor: 2.8 > 1.2 > -1/2 > -1."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Ordena de mayor a menor:",
-        "opciones": [
-          "6, 3/5, -1.1, 8",
-          "8, 6, 3/5, -1.1",
-          "8, 3/5, -1.1, 6",
-          "6, 3/5, 8, -1.1"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "De mayor a menor: 8 > 6 > 3/5 > -1.1."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Entre -1.2 y -1.12 no existe ningún otro número.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Falso: por la propiedad de densidad, entre -1.2 y -1.12 existen infinitos números, por ejemplo -1.16."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Entre 4.3 y 4.55 no existe ningún otro número.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Falso: por la propiedad de densidad, entre 4.3 y 4.55 existen infinitos números, por ejemplo 4.425."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Entre 0.3 y 0.37 no existe ningún otro número.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.3 y 0.37 existen infinitos números, por ejemplo 0.335."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Entre -0.2 y 0.05 no existe ningún otro número.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Falso: por la propiedad de densidad, entre -0.2 y 0.05 existen infinitos números, por ejemplo -0.075."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada par de números con la comparación correcta.",
-        "columnaA": [
-          "-1/5 y 7",
-          "10 y -2/5",
-          "-10 y 1.7"
-        ],
-        "columnaB": [
-          "-1/5 < 7",
-          "10 > -2/5",
-          "-10 < 1.7"
-        ],
-        "parejasCorrectas": [
-          0,
-          1,
-          2
-        ],
-        "retroalimentacion": "-1/5 y 7: -1/5 < 7; 10 y -2/5: 10 > -2/5; -10 y 1.7: -10 < 1.7."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada par de números con la comparación correcta.",
-        "columnaA": [
-          "-7 y -2.8",
-          "-3.7 y -2",
-          "-4 y 8"
-        ],
-        "columnaB": [
-          "-3.7 < -2",
-          "-7 < -2.8",
-          "-4 < 8"
-        ],
-        "parejasCorrectas": [
-          1,
-          0,
-          2
-        ],
-        "retroalimentacion": "-7 y -2.8: -7 < -2.8; -3.7 y -2: -3.7 < -2; -4 y 8: -4 < 8."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada par de números con la comparación correcta.",
-        "columnaA": [
-          "-1/2 y 1/2",
-          "-0.4 y 8",
-          "1.6 y 4"
-        ],
-        "columnaB": [
-          "-1/2 < 1/2",
-          "-0.4 < 8",
-          "1.6 < 4"
-        ],
-        "parejasCorrectas": [
-          0,
-          1,
-          2
-        ],
-        "retroalimentacion": "-1/2 y 1/2: -1/2 < 1/2; -0.4 y 8: -0.4 < 8; 1.6 y 4: 1.6 < 4."
-      }
-    ]
-  },
   "practicaExtra": [
     {
       "tipo": "llenar_frase",

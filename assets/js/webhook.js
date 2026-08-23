@@ -10,7 +10,10 @@ const WEBHOOK_URL = 'https://script.google.com/macros/s/TU_ID_DE_IMPLEMENTACION/
 
 /**
  * @param {Object} registro - { nombre, grado, grupo, pdaId, pdaNombre, eje,
+ *                              tipo ('subtema' | 'pda_completo'), subtema (ej. '3.2', vacío si tipo='pda_completo'),
  *                              puntaje, estrellas, codigoVerificacion }
+ *   Se llama una vez por cada subtema concluido (tipo='subtema', su propio mini-resultado)
+ *   y una vez más al terminar el PDA completo (tipo='pda_completo', resultado global).
  * @returns {Promise<Object>} - { status, codigoVerificacion, timestamp }
  */
 export async function enviarRegistroPDA(registro) {

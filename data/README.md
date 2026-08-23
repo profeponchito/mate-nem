@@ -47,8 +47,8 @@ el reto.
 
 Cada `subtema` dentro de un PDA tiene su propio campo `numero` (string),
 con formato jerárquico `<numero del PDA>.<consecutivo>` — por ejemplo `3.2`
-es el segundo subtema del Tema 3. Se muestra junto al título del subtema y
-de su `check`.
+es el segundo subtema (nivel Intermedio) del Tema 3. Se muestra junto al
+título del subtema, en su mini-actividad y en su mini-resultado.
 
 ## Fuente curricular
 
@@ -83,47 +83,51 @@ Fuentes consultadas:
 4. Agrega el nombre del archivo al arreglo `archivos` en el `index.json`
    de esa carpeta de grado.
 
-## Estructura de un PDA (v3)
+## Estructura de un PDA (v4)
 
 Cada PDA sigue este flujo lineal, que es el que recorre `app.js` mostrando
 una barra de avance (%) en todo momento:
 
 - **problematizacion** → desafío o contexto real que engancha al alumno antes
   de explicar el tema (contexto + pregunta).
-- **subtemas** (arreglo, normalmente 3) → el tema explicado a profundidad,
-  seccionado en partes. Cada subtema tiene `titulo`, `explicacion` (más
-  desarrollada que una síntesis breve), `ejemplos` (uno o más resueltos) y,
-  opcionalmente, `formula`. Puede terminar en un `check`: una pregunta corta
-  de repaso formativo (no se califica, solo da retroalimentación inmediata)
-  antes de dejar avanzar al alumno.
-- **reto** → la actividad final gamificada y calificada. Tiene `sintesis`
-  (un recordatorio teórico, a modo de mini-síntesis, que recapitula las
-  ideas clave de los subtemas y se muestra antes de los reactivos, solo en
-  la primera página), `puntosPorReactivo`, `estrellasMax` y un arreglo
-  `reactivos` (los 17 PDAs actuales usan 20, mezclando los 4 tipos de
-  pregunta soportados). `app.js` los presenta paginados de 5 en 5 (4
-  páginas), con botones "Atrás/Siguiente" que conservan las respuestas ya
-  capturadas al navegar entre páginas; el envío y calificación final ocurre
-  al terminar la última página.
+- **subtemas** (arreglo, siempre 4, de menor a mayor dificultad) → el tema
+  explicado a profundidad, dividido en 4 niveles: Introductorio, Intermedio,
+  Avanzado y Síntesis (el 4.º subtema es una síntesis/aplicación de todo el
+  tema, no un tema nuevo). Cada subtema tiene `titulo`, `explicacion`,
+  `ejemplos` (uno o más resueltos) y, opcionalmente, `formula` — y es, a la
+  vez, su propia **mini-actividad calificada**: `puntosPorReactivo`,
+  `estrellasMax` y un arreglo `reactivos` de **exactamente 5** preguntas
+  (4 subtemas × 5 = las 20 preguntas del PDA). Cada subtema se califica de
+  forma **independiente** (su propio resultado: correctas/total, puntaje,
+  estrellas) y, al terminar los 4, `app.js` calcula además un **resultado
+  GLOBAL** (suma de los 4 mini-resultados vía `combinarResultados()` en
+  `gamification.js`), que es el que alimenta la constancia final.
 - **practicaExtra** (opcional) → arreglo de reactivos adicionales, ungraded
-  (no calificados), mostrados en una sección aparte después del panel de
-  resultado, para quien quiera seguir practicando el mismo tema. No afectan
-  el puntaje ni las estrellas del PDA. Los 17 PDAs actuales incluyen entre
-  3 y 4 cada uno.
+  (no calificados), mostrados en una sección aparte después del resultado
+  global del PDA, para quien quiera seguir practicando el mismo tema. No
+  afectan el puntaje ni las estrellas de ningún subtema. Los 17 PDAs
+  actuales incluyen entre 3 y 4 cada uno.
+
+No existe ya un objeto `reto` a nivel de PDA — se eliminó al pasar de "3
+subtemas + 1 reto de 20 preguntas paginado" a "4 subtemas, cada uno con su
+propia mini-actividad de 5 preguntas".
+
+En el navegador, cada intento de un subtema baraja el orden de sus 5
+preguntas y el de las opciones dentro de cada pregunta (`variarReactivos_`/
+`variarOpciones_` en `app.js`), así que rehacer un subtema no se ve idéntico
+la segunda vez — el JSON fuente no necesita (ni debe) tener el orden
+"correcto"; el que importa es el que arma `app.js` en cada intento.
 
 Cada pantalla del recorrido muestra un título claro y una explicación antes
 de la parte interactiva: la problematización usa `pda.titulo` y su propio
 `contexto` (redactado de forma sencilla, como gancho); cada subtema usa su
-`titulo` y `explicacion`; el `check` de un subtema reutiliza el `titulo` y
-la `explicacion` de ese mismo subtema como recordatorio antes de la
-pregunta (no hace falta escribir nada aparte para eso); y el reto usa
-`pda.titulo` y `reto.sintesis` como recordatorio antes de los reactivos.
+`titulo` y `explicacion` antes de sus 5 preguntas.
 
 ### Los 4 tipos de pregunta
 
-Tanto los `check` de los subtemas como los `reactivos` del `reto` usan la
-misma estructura de pregunta (`definitions.pregunta` en el schema), con
-`tipo` igual a uno de estos 4 valores:
+Los `reactivos` de cada subtema (y los de `practicaExtra`) usan la misma
+estructura de pregunta (`definitions.pregunta` en el schema), con `tipo`
+igual a uno de estos 4 valores:
 
 - `opcion_multiple` — `pregunta`, `opciones[]`, `respuestaCorrecta` (índice).
 - `verdadero_falso` — `enunciado`, `respuestaCorrecta` (booleano).
@@ -135,25 +139,40 @@ misma estructura de pregunta (`definitions.pregunta` en el schema), con
 Todas requieren `retroalimentacion` (se muestra tras responder, sea correcta
 o no).
 
-Este es el flujo que renderiza `app.js`: problematización → subtemas (con
-sus checks) → reto → resultado (puntaje, estrellas) → práctica extra
-(opcional, si el PDA la incluye) → constancia.
+**Importante al redactar los 5 reactivos de un mismo subtema:** aunque
+varios reactivos compartan un enunciado "plantilla" (por ejemplo, cuatro
+`relacionar_columnas` con la misma instrucción, o varios `opcion_multiple`
+con la misma pregunta pero distintos números), cada uno debe representar
+contenido genuinamente distinto — mismo texto de pregunta/instrucción está
+bien, pero los datos concretos (números, opciones, pares correctos) deben
+diferir. Dos reactivos idénticos en el mismo subtema hacen que el alumno
+vea, en los hechos, la misma pregunta dos veces dentro de una actividad de
+solo 5 preguntas.
 
-## Apartado "Ejercítate" (operaciones básicas) — en construcción
+Este es el flujo que renderiza `app.js`: problematización → (por cada uno
+de los 4 subtemas: teoría → 5 preguntas → mini-resultado) → resultado
+GLOBAL (suma de los 4) → práctica extra (opcional, si el PDA la incluye) →
+constancia (con fecha y hora de generación).
 
-Independiente de los PDAs por grado, habrá un apartado de práctica libre de
+## Apartado "Ejercítate" (operaciones básicas) — acceso ya disponible, contenido en construcción
+
+Independiente de los PDAs por grado, hay un apartado de práctica libre de
 operaciones básicas (suma, resta, multiplicación, división), calificado
 igual que un PDA pero sin pertenecer a la ruta curricular de ningún grado
-en particular ni bloquear nada. Su manifiesto ya existe en
-`data/ejercitate/index.json`, con numeración propia (`E.1`…`E.4`, prefijo
-"E" para no confundirse con el número de Tema de un PDA):
+en particular ni bloquear nada. Ya es accesible desde la pantalla de
+selección de grado (tarjeta "Ejercítate", ruta `#/ejercitate`) — por ahora
+muestra un aviso de "en construcción" con la vista previa de sus 4 items.
+Su manifiesto ya existe en `data/ejercitate/index.json`, con numeración
+propia (`E.1`…`E.4`, prefijo "E" para no confundirse con el número de Tema
+de un PDA):
 
 - `E.1` Suma
 - `E.2` Resta
 - `E.3` Multiplicación
 - `E.4` División
 
-Cada item apunta a un futuro `data/ejercitate/<id>.json` con la misma
-estructura que un PDA (`problematizacion`/`subtemas`/`reto`), todavía por
-construir — es parte del rediseño de la interfaz estilo Duolingo que sigue
-en curso.
+Cada item apuntará a un futuro `data/ejercitate/<id>.json` con la misma
+estructura que un PDA v4 (`problematizacion`/`subtemas` de 4×5 reactivos),
+todavía por construir — es parte del rediseño de la interfaz estilo
+Duolingo que sigue en curso (falta también el trazado en "serpiente" del
+camino de PDAs/actividades y la paleta de colores propia).

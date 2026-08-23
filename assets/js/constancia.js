@@ -24,8 +24,15 @@ const URL_BASE_VERIFICACION = 'https://TU-USUARIO.github.io/mate-nem/verificar.h
  * }
  */
 export function generarConstancia(contenedor, datos) {
-  const fecha = datos.fecha || new Date().toLocaleDateString('es-MX', {
+  const ahora = datos.fecha ? new Date(datos.fecha) : new Date();
+  const fecha = ahora.toLocaleDateString('es-MX', {
     year: 'numeric', month: 'long', day: 'numeric'
+  });
+  // hour12: false fuerza formato de 24 horas (ej. "21:43"), evitando que
+  // 'es-MX' agregue su propio sufijo "a.m."/"p.m." (que quedaría redundante
+  // junto a la "h" que se agrega después, en el template).
+  const hora = ahora.toLocaleTimeString('es-MX', {
+    hour: '2-digit', minute: '2-digit', hour12: false
   });
 
   contenedor.innerHTML = `
@@ -52,7 +59,7 @@ export function generarConstancia(contenedor, datos) {
         </div>
 
         <div class="constancia__pie">
-          <div class="constancia__fecha">${fecha}</div>
+          <div class="constancia__fecha">${fecha} · ${hora} h</div>
           <div id="constancia-qr" class="constancia__qr"></div>
           <div class="constancia__folio">Folio: ${escapeHTML_(datos.codigoVerificacion)}</div>
         </div>

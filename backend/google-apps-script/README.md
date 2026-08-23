@@ -6,8 +6,12 @@ como Web Endpoint gratuito y Google Sheets como base de datos.
 
 ## Esquema de la hoja "Registros"
 
-Cada vez que un alumno concluye un PDA, el frontend hace un `POST` con el
-resultado y `Code.gs` agrega una fila con estas columnas exactas:
+Cada PDA tiene 4 subtemas, cada uno con su propia mini-actividad calificada
+(5 reactivos). El frontend hace un `POST` **una vez por cada subtema
+concluido** (fila con `Tipo de Registro = Subtema`) **y una vez más al
+terminar el PDA completo** (fila con `Tipo de Registro = PDA completo`,
+el resultado global = suma de los 4 subtemas). `Code.gs` agrega una fila
+por cada `POST` con estas columnas exactas:
 
 | # | Columna | Tipo | Descripción |
 |---|---|---|---|
@@ -18,10 +22,12 @@ resultado y `Code.gs` agrega una fila con estas columnas exactas:
 | E | PDA ID | Texto | Identificador del PDA, ej. `2S-B1-PDA03` |
 | F | PDA Concluido | Texto | Título/nombre legible del PDA |
 | G | Eje / Contenido | Texto | Eje articulador o contenido curricular NEM asociado |
-| H | Puntaje | Número | Calificación obtenida en la actividad gamificada |
-| I | Estrellas | Número | 0–3, usado para la mecánica de gamificación |
-| J | Codigo Verificacion | Texto (UUID) | Folio único de la constancia; se genera en el backend con `Utilities.getUuid()` si el frontend no envía uno |
-| K | User Agent | Texto | Referencia técnica del dispositivo, útil para depurar incidencias |
+| H | Tipo de Registro | Texto | `Subtema` (mini-actividad de 5 reactivos) o `PDA completo` (resultado global, suma de los 4 subtemas) |
+| I | Subtema | Texto | Número del subtema (ej. `3.2`); vacío en las filas de `PDA completo` |
+| J | Puntaje | Número | Calificación obtenida (del subtema, o global si `Tipo de Registro = PDA completo`) |
+| K | Estrellas | Número | Estrellas obtenidas (del subtema, o la suma de las 4 si es el registro global) |
+| L | Codigo Verificacion | Texto (UUID) | Folio único de la constancia; se genera en el backend con `Utilities.getUuid()` si el frontend no envía uno |
+| M | User Agent | Texto | Referencia técnica del dispositivo, útil para depurar incidencias |
 
 La fila 1 (encabezados) se crea automáticamente la primera vez que se
 recibe un registro, así que la hoja puede empezar completamente vacía.

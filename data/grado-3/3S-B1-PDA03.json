@@ -20,18 +20,40 @@
       "ejemplos": [
         "x² - 5x + 6 = 0 se factoriza como (x-2)(x-3)=0, así que x=2 o x=3."
       ],
-      "check": {
-        "tipo": "opcion_multiple",
-        "pregunta": "Factoriza y resuelve: x² - 5x + 6 = 0",
-        "opciones": [
-          "x=2, x=3",
-          "x=1, x=6",
-          "x=-2, x=-3",
-          "x=6, x=-1"
-        ],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "(x-2)(x-3)=0 → x=2 o x=3."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 7x + 12 = 0 son x=3 y x=4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-3)(x-4)=x²-7x+12=0, así que x=3 o x=4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + 5x - 24 = 0 son x=4 y x=-8.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Las soluciones reales son x=3 y x=-8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + 11x + 28 = 0 son x=-3 y x=-7.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Las soluciones reales son x=-4 y x=-7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + 5x - 6 = 0 son x=-6 y x=1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Las soluciones reales son x=-6 y x=1."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + 5x + 4 = 0 son x=-4 y x=-1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Las soluciones reales son x=-4 y x=-1."
+        }
+      ]
     },
     {
       "numero": "3.2",
@@ -41,12 +63,40 @@
       "ejemplos": [
         "x² - x - 6 = 0: A=1, B=-1, C=-6. x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
       ],
-      "check": {
-        "tipo": "llenar_frase",
-        "frase": "Al resolver x² - x - 6 = 0 con la fórmula general, la solución positiva es x = ___.",
-        "respuestaCorrecta": "3",
-        "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2. La solución positiva es 3."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un jardín rectangular tiene área 40 m² y su largo mide 3 metros más que su ancho. El ancho mide ___ m.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "x(x+3)=40 → x²+3x−40=0 → (x+8)(x−5)=0 → x=5 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 10x + 16 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-8",
+          "retroalimentacion": "Las soluciones son x=-8 y x=-2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 10x + 21 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "Las soluciones son x=-3 y x=-7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 8x - 9 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-1",
+          "retroalimentacion": "Las soluciones son x=9 y x=-1."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 16x + 63 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "Las soluciones son x=9 y x=7."
+        }
+      ]
     },
     {
       "numero": "3.3",
@@ -55,233 +105,176 @@
       "ejemplos": [
         "Un jardín con área 40 m² y largo = ancho+3: x(x+3)=40 → x²+3x−40=0 → (x+8)(x−5)=0 → x=5 (se descarta x=-8 porque el ancho no puede ser negativo). El largo es 5+3=8 m."
       ],
-      "check": {
-        "tipo": "verdadero_falso",
-        "enunciado": "El área de un cuadrado es 81 m². Entonces su lado mide 9 m.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "Correcto: x²=81 → x=9 (se descarta x=-9 porque una medida no puede ser negativa)."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - x - 6 = 0?",
+          "opciones": [
+            "x=3, x=-2",
+            "x=2, x=-3",
+            "x=6, x=-1",
+            "x=1, x=-6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene área 121 m². ¿Cuánto mide su lado?",
+          "opciones": [
+            "10 m",
+            "11 m",
+            "12 m",
+            "21 m"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "x²=121 → x=11 (se descarta el valor negativo, una medida no puede ser negativa)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² + 1x - 12 = 0",
+          "opciones": [
+            "x=4, x=-2",
+            "x=1, x=-6",
+            "x=4, x=-3",
+            "x=3, x=-4"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "Las soluciones son x=3 y x=-4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² + 9x + 0 = 0",
+          "opciones": [
+            "x=0, x=-9",
+            "x=-1, x=-7",
+            "x=-2, x=-7",
+            "x=1, x=-10"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Las soluciones son x=0 y x=-9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² - 9x + 0 = 0",
+          "opciones": [
+            "x=11, x=-1",
+            "x=10, x=2",
+            "x=9, x=0",
+            "x=10, x=-1"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "(x-9)(x-0)=0 → x=9 o x=0."
+        }
+      ]
+    },
+    {
+      "numero": "3.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: una ecuación cuadrática tiene la forma Ax²+Bx+C=0. Si se puede factorizar como producto de dos binomios, cada factor igualado a cero te da una solución. Si no, siempre puedes usar la fórmula general x = (−B ± √(B²−4AC)) / 2A. En problemas de áreas, la ecuación suele dar dos soluciones matemáticas, pero solo una tiene sentido (una medida no puede ser negativa).",
+      "ejemplos": [
+        "Las soluciones de x² - 7x + 12 = 0 son x=3 y x=4. Correcto: (x-3)(x-4)=x²-7x+12=0, así que x=3 o x=4."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² + 5x - 14 = 0",
+          "opciones": [
+            "x=0, x=-8",
+            "x=4, x=-8",
+            "x=3, x=-8",
+            "x=2, x=-7"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "Las soluciones son x=2 y x=-7."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² - 5x + 6 = 0",
+            "x² - x - 6 = 0",
+            "x² = 81"
+          ],
+          "columnaB": [
+            "x = 9, x = -9",
+            "x = 3, x = -2",
+            "x = 2, x = 3"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "x²-5x+6=0 → x=2,3; x²-x-6=0 → x=3,-2; x²=81 → x=9,-9."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² + 2x - 63 = 0",
+            "x² + 10x + 9 = 0",
+            "x² + 1x - 72 = 0"
+          ],
+          "columnaB": [
+            "x = 8, x = -9",
+            "x = -9, x = -1",
+            "x = -9, x = 7"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "x² + 2x - 63 = 0 → x = -9, x = 7; x² + 10x + 9 = 0 → x = -9, x = -1; x² + 1x - 72 = 0 → x = 8, x = -9."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² - 4x - 21 = 0",
+            "x² + 1x - 12 = 0",
+            "x² + 2x - 48 = 0"
+          ],
+          "columnaB": [
+            "x = -4, x = 3",
+            "x = -3, x = 7",
+            "x = -8, x = 6"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "x² - 4x - 21 = 0 → x = -3, x = 7; x² + 1x - 12 = 0 → x = -4, x = 3; x² + 2x - 48 = 0 → x = -8, x = 6."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² - 5x - 36 = 0",
+            "x² - 2x - 63 = 0",
+            "x² + 1x - 42 = 0"
+          ],
+          "columnaB": [
+            "x = -7, x = 6",
+            "x = 9, x = -4",
+            "x = 9, x = -7"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x² - 5x - 36 = 0 → x = 9, x = -4; x² - 2x - 63 = 0 → x = 9, x = -7; x² + 1x - 42 = 0 → x = -7, x = 6."
+        }
+      ]
     }
   ],
-  "reto": {
-    "sintesis": "Recuerda: una ecuación cuadrática tiene la forma Ax²+Bx+C=0. Si se puede factorizar como producto de dos binomios, cada factor igualado a cero te da una solución. Si no, siempre puedes usar la fórmula general x = (−B ± √(B²−4AC)) / 2A. En problemas de áreas, la ecuación suele dar dos soluciones matemáticas, pero solo una tiene sentido (una medida no puede ser negativa).",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - x - 6 = 0?",
-        "opciones": [
-          "x=3, x=-2",
-          "x=2, x=-3",
-          "x=6, x=-1",
-          "x=1, x=-6"
-        ],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Un jardín rectangular tiene área 40 m² y su largo mide 3 metros más que su ancho. El ancho mide ___ m.",
-        "respuestaCorrecta": "5",
-        "retroalimentacion": "x(x+3)=40 → x²+3x−40=0 → (x+8)(x−5)=0 → x=5 (se descarta el valor negativo)."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada ecuación con sus soluciones.",
-        "columnaA": [
-          "x² - 5x + 6 = 0",
-          "x² - x - 6 = 0",
-          "x² = 81"
-        ],
-        "columnaB": [
-          "x = 9, x = -9",
-          "x = 3, x = -2",
-          "x = 2, x = 3"
-        ],
-        "parejasCorrectas": [
-          2,
-          1,
-          0
-        ],
-        "retroalimentacion": "x²-5x+6=0 → x=2,3; x²-x-6=0 → x=3,-2; x²=81 → x=9,-9."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Las soluciones de x² - 7x + 12 = 0 son x=3 y x=4.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "Correcto: (x-3)(x-4)=x²-7x+12=0, así que x=3 o x=4."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Un terreno cuadrado tiene área 121 m². ¿Cuánto mide su lado?",
-        "opciones": [
-          "10 m",
-          "11 m",
-          "12 m",
-          "21 m"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "x²=121 → x=11 (se descarta el valor negativo, una medida no puede ser negativa)."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Factoriza y resuelve: x² + 10x + 16 = 0. La solución menor es x = ___.",
-        "respuestaCorrecta": "-8",
-        "retroalimentacion": "Las soluciones son x=-8 y x=-2."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Factoriza y resuelve: x² + 10x + 21 = 0. La solución menor es x = ___.",
-        "respuestaCorrecta": "-7",
-        "retroalimentacion": "Las soluciones son x=-3 y x=-7."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Factoriza y resuelve: x² - 8x - 9 = 0. La solución menor es x = ___.",
-        "respuestaCorrecta": "-1",
-        "retroalimentacion": "Las soluciones son x=9 y x=-1."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Factoriza y resuelve: x² - 16x + 63 = 0. La solución menor es x = ___.",
-        "respuestaCorrecta": "7",
-        "retroalimentacion": "Las soluciones son x=9 y x=7."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Resuelve: x² + 1x - 12 = 0",
-        "opciones": [
-          "x=4, x=-2",
-          "x=1, x=-6",
-          "x=4, x=-3",
-          "x=3, x=-4"
-        ],
-        "respuestaCorrecta": 3,
-        "retroalimentacion": "Las soluciones son x=3 y x=-4."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Resuelve: x² + 9x + 0 = 0",
-        "opciones": [
-          "x=0, x=-9",
-          "x=-1, x=-7",
-          "x=-2, x=-7",
-          "x=1, x=-10"
-        ],
-        "respuestaCorrecta": 0,
-        "retroalimentacion": "Las soluciones son x=0 y x=-9."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Resuelve: x² - 9x + 0 = 0",
-        "opciones": [
-          "x=11, x=-1",
-          "x=10, x=2",
-          "x=9, x=0",
-          "x=10, x=-1"
-        ],
-        "respuestaCorrecta": 2,
-        "retroalimentacion": "(x-9)(x-0)=0 → x=9 o x=0."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Resuelve: x² + 5x - 14 = 0",
-        "opciones": [
-          "x=0, x=-8",
-          "x=4, x=-8",
-          "x=3, x=-8",
-          "x=2, x=-7"
-        ],
-        "respuestaCorrecta": 3,
-        "retroalimentacion": "Las soluciones son x=2 y x=-7."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Las soluciones de x² + 5x - 24 = 0 son x=4 y x=-8.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Las soluciones reales son x=3 y x=-8."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Las soluciones de x² + 11x + 28 = 0 son x=-3 y x=-7.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Las soluciones reales son x=-4 y x=-7."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Las soluciones de x² + 5x - 6 = 0 son x=-6 y x=1.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "Las soluciones reales son x=-6 y x=1."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "Las soluciones de x² + 5x + 4 = 0 son x=-4 y x=-1.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "Las soluciones reales son x=-4 y x=-1."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada ecuación con sus soluciones.",
-        "columnaA": [
-          "x² + 2x - 63 = 0",
-          "x² + 10x + 9 = 0",
-          "x² + 1x - 72 = 0"
-        ],
-        "columnaB": [
-          "x = 8, x = -9",
-          "x = -9, x = -1",
-          "x = -9, x = 7"
-        ],
-        "parejasCorrectas": [
-          2,
-          1,
-          0
-        ],
-        "retroalimentacion": "x² + 2x - 63 = 0 → x = -9, x = 7; x² + 10x + 9 = 0 → x = -9, x = -1; x² + 1x - 72 = 0 → x = 8, x = -9."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada ecuación con sus soluciones.",
-        "columnaA": [
-          "x² - 4x - 21 = 0",
-          "x² + 1x - 12 = 0",
-          "x² + 2x - 48 = 0"
-        ],
-        "columnaB": [
-          "x = -4, x = 3",
-          "x = -3, x = 7",
-          "x = -8, x = 6"
-        ],
-        "parejasCorrectas": [
-          1,
-          0,
-          2
-        ],
-        "retroalimentacion": "x² - 4x - 21 = 0 → x = -3, x = 7; x² + 1x - 12 = 0 → x = -4, x = 3; x² + 2x - 48 = 0 → x = -8, x = 6."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada ecuación con sus soluciones.",
-        "columnaA": [
-          "x² - 5x - 36 = 0",
-          "x² - 2x - 63 = 0",
-          "x² + 1x - 42 = 0"
-        ],
-        "columnaB": [
-          "x = -7, x = 6",
-          "x = 9, x = -4",
-          "x = 9, x = -7"
-        ],
-        "parejasCorrectas": [
-          1,
-          2,
-          0
-        ],
-        "retroalimentacion": "x² - 5x - 36 = 0 → x = 9, x = -4; x² - 2x - 63 = 0 → x = 9, x = -7; x² + 1x - 42 = 0 → x = -7, x = 6."
-      }
-    ]
-  },
   "practicaExtra": [
     {
       "tipo": "llenar_frase",

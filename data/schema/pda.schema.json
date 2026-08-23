@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "PDA MATE-NEM (v2)",
-  "description": "Estructura modular de un Proceso de Desarrollo de Aprendizaje (PDA) de Matemáticas, NEM. Flujo: problematización (gancho de contexto real) → subtemas (tema explicado en 2-3 partes, cada uno con ejemplos y un check rápido opcional) → reto (actividad final calificada, con reactivos de tipo mixto).",
+  "title": "PDA MATE-NEM (v4)",
+  "description": "Estructura modular de un Proceso de Desarrollo de Aprendizaje (PDA) de Matemáticas, NEM. Flujo: problematización (gancho de contexto real) → 4 subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad calificada de 5 reactivos (mini-resultado independiente con puntos y estrellas) → resultado global del PDA (suma de los 4 mini-resultados).",
   "type": "object",
-  "required": ["id", "grado", "campoFormativo", "eje", "titulo", "problematizacion", "subtemas", "reto"],
+  "required": ["id", "grado", "campoFormativo", "eje", "titulo", "problematizacion", "subtemas"],
   "properties": {
     "id": {
       "type": "string",
@@ -33,18 +33,19 @@
 
     "subtemas": {
       "type": "array",
-      "description": "Fase 2: el tema explicado a profundidad, seccionado en 2-3 subtemas cuando el contenido lo amerita. Cada subtema puede terminar con un 'check' rápido (repaso formativo, no calificado).",
-      "minItems": 1,
+      "description": "El tema explicado y evaluado en 4 partes, de menor a mayor dificultad. Cada subtema es una mini-actividad autocontenida: teoría (titulo/explicacion/ejemplos) + su propia mini-actividad calificada de 5 reactivos, con resultado (puntos, estrellas) independiente de los otros 3 subtemas. Al completar los 4, el PDA muestra un resultado global (suma de los 4 mini-resultados).",
+      "minItems": 4,
+      "maxItems": 4,
       "items": {
         "type": "object",
-        "required": ["titulo", "explicacion", "ejemplos"],
+        "required": ["titulo", "explicacion", "ejemplos", "puntosPorReactivo", "estrellasMax", "reactivos"],
         "properties": {
           "numero": {
             "type": "string",
-            "description": "Número jerárquico del subtema, formato '<numero del PDA>.<consecutivo>' (ej. '3.2' = subtema 2 del tema 3). Se muestra en la interfaz junto al título del subtema."
+            "description": "Número jerárquico del subtema, formato '<numero del PDA>.<consecutivo>' (ej. '3.2' = subtema 2 del tema 3, '3.4' = el más difícil de ese tema). Se muestra en la interfaz junto al título del subtema."
           },
           "titulo": { "type": "string" },
-          "explicacion": { "type": "string", "description": "Explicación del subtema, más desarrollada que una síntesis breve." },
+          "explicacion": { "type": "string", "description": "Explicación del subtema, más desarrollada que una síntesis breve. El subtema 4 ('Síntesis y aplicación') recapitula las ideas clave de los subtemas 1-3." },
           "formula": { "type": "string" },
           "ejemplos": {
             "type": "array",
@@ -52,37 +53,22 @@
             "items": { "type": "string" },
             "description": "Uno o más ejemplos resueltos que ilustran el subtema."
           },
-          "check": {
-            "$ref": "#/definitions/pregunta",
-            "description": "Pregunta corta de repaso mostrada justo después de este subtema. Opcional, no se califica."
+          "puntosPorReactivo": { "type": "integer", "description": "Puntos otorgados por cada reactivo correcto de ESTE subtema (mini-actividad independiente)." },
+          "estrellasMax": { "type": "integer", "default": 3, "description": "Estrellas máximas de ESTE subtema (mini-actividad independiente)." },
+          "reactivos": {
+            "type": "array",
+            "minItems": 5,
+            "maxItems": 5,
+            "items": { "$ref": "#/definitions/pregunta" },
+            "description": "Los 5 reactivos calificados de este subtema (nivel de dificultad creciente del subtema 1 al 4 dentro del mismo PDA)."
           }
-        }
-      }
-    },
-
-    "reto": {
-      "type": "object",
-      "description": "Fase 3: actividad gamificada final, calificada. Genera puntaje, estrellas y dispara el envío a Sheets + constancia.",
-      "required": ["sintesis", "puntosPorReactivo", "estrellasMax", "reactivos"],
-      "properties": {
-        "sintesis": {
-          "type": "string",
-          "description": "Explicación teórica que recapitula (a modo de mini-síntesis) las ideas clave de los subtemas, mostrada como recordatorio antes de los reactivos del reto."
-        },
-        "puntosPorReactivo": { "type": "integer" },
-        "estrellasMax": { "type": "integer", "default": 3 },
-        "reactivos": {
-          "type": "array",
-          "minItems": 1,
-          "items": { "$ref": "#/definitions/pregunta" },
-          "description": "Se recomienda mezclar al menos 2 tipos distintos de pregunta."
         }
       }
     },
 
     "practicaExtra": {
       "type": "array",
-      "description": "Fase opcional, no calificada: reactivos adicionales mostrados después del resultado del reto, para quien quiera seguir practicando el mismo tema. No afectan el puntaje ni las estrellas.",
+      "description": "Fase opcional, no calificada: reactivos adicionales mostrados después del resultado global del PDA, para quien quiera seguir practicando el mismo tema. No afectan el puntaje ni las estrellas.",
       "items": { "$ref": "#/definitions/pregunta" }
     }
   },

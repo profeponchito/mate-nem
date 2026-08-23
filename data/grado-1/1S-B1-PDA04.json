@@ -21,18 +21,40 @@
         "3, 6, 9, 12...: cada término aumenta 3 respecto al anterior, así que d=3.",
         "5, 8, 11, 14...: 8-5=3, 11-8=3, 14-11=3, entonces d=3."
       ],
-      "check": {
-        "tipo": "opcion_multiple",
-        "pregunta": "En la sucesión 5, 8, 11, 14..., ¿cuál es la diferencia constante d?",
-        "opciones": [
-          "2",
-          "3",
-          "5",
-          "8"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "Cada término aumenta 3 respecto al anterior: 8-5=3."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=7 y d=-2, el término 4 es 1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: término_4 = 7 + (4-1)×(-2) = 7-6 = 1."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=6 y d=-3, el término 7 es -12.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "término_7 = 6 + (7-1)×-3 = -12."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=2 y d=2, el término 6 es 10.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "término_6 = 2 + (6-1)×2 = 12."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=4 y d=3, el término 4 es 13.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "término_4 = 4 + (4-1)×3 = 13."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=1 y d=-3, el término 6 es -14.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "término_6 = 1 + (6-1)×-3 = -14."
+        }
+      ]
     },
     {
       "numero": "4.2",
@@ -43,12 +65,40 @@
         "Sucesión 3, 6, 9, 12...: a=3, d=3. término_10 = 3 + (10-1)×3 = 3+27 = 30 panes.",
         "Con a=4 y d=5: término_6 = 4 + (6-1)×5 = 4+25 = 29."
       ],
-      "check": {
-        "tipo": "llenar_frase",
-        "frase": "Con a=4 y d=5, el término 6 de la sucesión es ___.",
-        "respuestaCorrecta": "29",
-        "retroalimentacion": "término_6 = 4 + (6-1)×5 = 4+25 = 29."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión 5, 8, 11, 14..., el término 10 es ___.",
+          "respuestaCorrecta": "32",
+          "retroalimentacion": "a=5, d=3. término_10 = 5 + (10-1)×3 = 5+27 = 32."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=1 y d=-3, el término 5 de la sucesión es ___.",
+          "respuestaCorrecta": "-11",
+          "retroalimentacion": "término_5 = 1 + (5-1)×-3 = -11."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=12 y d=-3, el término 5 de la sucesión es ___.",
+          "respuestaCorrecta": "0",
+          "retroalimentacion": "término_5 = 12 + (5-1)×-3 = 0."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=7 y d=4, el término 4 de la sucesión es ___.",
+          "respuestaCorrecta": "19",
+          "retroalimentacion": "término_4 = 7 + (4-1)×4 = 19."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=12 y d=3, el término 4 de la sucesión es ___.",
+          "respuestaCorrecta": "21",
+          "retroalimentacion": "término_4 = 12 + (4-1)×3 = 21."
+        }
+      ]
     },
     {
       "numero": "4.3",
@@ -57,233 +107,176 @@
       "ejemplos": [
         "Una sucesión de figuras con palillos empieza en 4 palillos y aumenta 3 en cada figura: a=4, d=3. término_7 = 4 + (7-1)×3 = 4+18 = 22 palillos."
       ],
-      "check": {
-        "tipo": "verdadero_falso",
-        "enunciado": "Una sucesión de figuras con palillos que empieza en 4 y aumenta 3 en cada figura tiene 25 palillos en la figura 7.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "Falso: término_7 = 4 + (7-1)×3 = 4+18 = 22 palillos, no 25."
-      }
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con a=4 y d=5, ¿cuál es el término 6 de la sucesión?",
+          "opciones": [
+            "24",
+            "29",
+            "30",
+            "34"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "término_6 = 4 + (6-1)×5 = 4+25 = 29."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesión de figuras con fichas empieza en 6 fichas y aumenta 4 en cada figura. ¿Cuántas fichas tiene la figura 8?",
+          "opciones": [
+            "30",
+            "34",
+            "38",
+            "28"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "a=6, d=4. término_8 = 6 + (8-1)×4 = 6+28 = 34."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con a=3 y d=2, ¿cuál es el término 5 de la sucesión?",
+          "opciones": [
+            "13",
+            "14",
+            "11",
+            "9"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "término_5 = 3 + (5-1)×2 = 11."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con a=4 y d=-2, ¿cuál es el término 6 de la sucesión?",
+          "opciones": [
+            "-8",
+            "-6",
+            "-9",
+            "-10"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "término_6 = 4 + (6-1)×-2 = -6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con a=7 y d=2, ¿cuál es el término 7 de la sucesión?",
+          "opciones": [
+            "15",
+            "19",
+            "23",
+            "16"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "término_7 = 7 + (7-1)×2 = 19."
+        }
+      ]
+    },
+    {
+      "numero": "4.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: en una progresión aritmética cada término aumenta siempre la misma cantidad constante (la diferencia, d) respecto al anterior. En vez de ir sumando d una y otra vez, puedes usar la fórmula término_n = a + (n − 1) × d, donde a es el primer término y n es la posición que buscas — funciona igual para números sueltos que para figuras hechas con palillos, fichas u otros objetos.",
+      "ejemplos": [
+        "En la sucesión con a=7 y d=-2, el término 4 es 1. Correcto: término_4 = 7 + (4-1)×(-2) = 7-6 = 1."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con a=2 y d=2, ¿cuál es el término 8 de la sucesión?",
+          "opciones": [
+            "18",
+            "14",
+            "12",
+            "16"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "término_8 = 2 + (8-1)×2 = 16."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sucesión (dado su primer término a y diferencia d) con el valor de su término 5.",
+          "columnaA": [
+            "a=2, d=4",
+            "a=10, d=-2",
+            "a=1, d=1"
+          ],
+          "columnaB": [
+            "5",
+            "2",
+            "18"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "a=2,d=4: término_5=2+16=18. a=10,d=-2: término_5=10-8=2. a=1,d=1: término_5=1+4=5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sucesión (dado a y d) con el término indicado.",
+          "columnaA": [
+            "a=3, d=-2 → término 4",
+            "a=4, d=-3 → término 6",
+            "a=2, d=2 → término 4"
+          ],
+          "columnaB": [
+            "-11",
+            "8",
+            "-3"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "a=3, d=-2 → término 4: -3; a=4, d=-3 → término 6: -11; a=2, d=2 → término 4: 8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sucesión (dado a y d) con el término indicado.",
+          "columnaA": [
+            "a=3, d=3 → término 3",
+            "a=2, d=-2 → término 6",
+            "a=9, d=-2 → término 4"
+          ],
+          "columnaB": [
+            "9",
+            "-8",
+            "3"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "a=3, d=3 → término 3: 9; a=2, d=-2 → término 6: -8; a=9, d=-2 → término 4: 3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sucesión (dado a y d) con el término indicado.",
+          "columnaA": [
+            "a=5, d=2 → término 3",
+            "a=8, d=-3 → término 3",
+            "a=10, d=2 → término 5"
+          ],
+          "columnaB": [
+            "2",
+            "18",
+            "9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "a=5, d=2 → término 3: 9; a=8, d=-3 → término 3: 2; a=10, d=2 → término 5: 18."
+        }
+      ]
     }
   ],
-  "reto": {
-    "sintesis": "Recuerda: en una progresión aritmética cada término aumenta siempre la misma cantidad constante (la diferencia, d) respecto al anterior. En vez de ir sumando d una y otra vez, puedes usar la fórmula término_n = a + (n − 1) × d, donde a es el primer término y n es la posición que buscas — funciona igual para números sueltos que para figuras hechas con palillos, fichas u otros objetos.",
-    "puntosPorReactivo": 10,
-    "estrellasMax": 3,
-    "reactivos": [
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Con a=4 y d=5, ¿cuál es el término 6 de la sucesión?",
-        "opciones": [
-          "24",
-          "29",
-          "30",
-          "34"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "término_6 = 4 + (6-1)×5 = 4+25 = 29."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "En la sucesión 5, 8, 11, 14..., el término 10 es ___.",
-        "respuestaCorrecta": "32",
-        "retroalimentacion": "a=5, d=3. término_10 = 5 + (10-1)×3 = 5+27 = 32."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada sucesión (dado su primer término a y diferencia d) con el valor de su término 5.",
-        "columnaA": [
-          "a=2, d=4",
-          "a=10, d=-2",
-          "a=1, d=1"
-        ],
-        "columnaB": [
-          "5",
-          "2",
-          "18"
-        ],
-        "parejasCorrectas": [
-          2,
-          1,
-          0
-        ],
-        "retroalimentacion": "a=2,d=4: término_5=2+16=18. a=10,d=-2: término_5=10-8=2. a=1,d=1: término_5=1+4=5."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "En la sucesión con a=7 y d=-2, el término 4 es 1.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "Correcto: término_4 = 7 + (4-1)×(-2) = 7-6 = 1."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Una sucesión de figuras con fichas empieza en 6 fichas y aumenta 4 en cada figura. ¿Cuántas fichas tiene la figura 8?",
-        "opciones": [
-          "30",
-          "34",
-          "38",
-          "28"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "a=6, d=4. término_8 = 6 + (8-1)×4 = 6+28 = 34."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Con a=1 y d=-3, el término 5 de la sucesión es ___.",
-        "respuestaCorrecta": "-11",
-        "retroalimentacion": "término_5 = 1 + (5-1)×-3 = -11."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Con a=12 y d=-3, el término 5 de la sucesión es ___.",
-        "respuestaCorrecta": "0",
-        "retroalimentacion": "término_5 = 12 + (5-1)×-3 = 0."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Con a=7 y d=4, el término 4 de la sucesión es ___.",
-        "respuestaCorrecta": "19",
-        "retroalimentacion": "término_4 = 7 + (4-1)×4 = 19."
-      },
-      {
-        "tipo": "llenar_frase",
-        "frase": "Con a=12 y d=3, el término 4 de la sucesión es ___.",
-        "respuestaCorrecta": "21",
-        "retroalimentacion": "término_4 = 12 + (4-1)×3 = 21."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Con a=3 y d=2, ¿cuál es el término 5 de la sucesión?",
-        "opciones": [
-          "13",
-          "14",
-          "11",
-          "9"
-        ],
-        "respuestaCorrecta": 2,
-        "retroalimentacion": "término_5 = 3 + (5-1)×2 = 11."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Con a=4 y d=-2, ¿cuál es el término 6 de la sucesión?",
-        "opciones": [
-          "-8",
-          "-6",
-          "-9",
-          "-10"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "término_6 = 4 + (6-1)×-2 = -6."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Con a=7 y d=2, ¿cuál es el término 7 de la sucesión?",
-        "opciones": [
-          "15",
-          "19",
-          "23",
-          "16"
-        ],
-        "respuestaCorrecta": 1,
-        "retroalimentacion": "término_7 = 7 + (7-1)×2 = 19."
-      },
-      {
-        "tipo": "opcion_multiple",
-        "pregunta": "Con a=2 y d=2, ¿cuál es el término 8 de la sucesión?",
-        "opciones": [
-          "18",
-          "14",
-          "12",
-          "16"
-        ],
-        "respuestaCorrecta": 3,
-        "retroalimentacion": "término_8 = 2 + (8-1)×2 = 16."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "En la sucesión con a=6 y d=-3, el término 7 es -12.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "término_7 = 6 + (7-1)×-3 = -12."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "En la sucesión con a=2 y d=2, el término 6 es 10.",
-        "respuestaCorrecta": false,
-        "retroalimentacion": "término_6 = 2 + (6-1)×2 = 12."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "En la sucesión con a=4 y d=3, el término 4 es 13.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "término_4 = 4 + (4-1)×3 = 13."
-      },
-      {
-        "tipo": "verdadero_falso",
-        "enunciado": "En la sucesión con a=1 y d=-3, el término 6 es -14.",
-        "respuestaCorrecta": true,
-        "retroalimentacion": "término_6 = 1 + (6-1)×-3 = -14."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada sucesión (dado a y d) con el término indicado.",
-        "columnaA": [
-          "a=3, d=-2 → término 4",
-          "a=4, d=-3 → término 6",
-          "a=2, d=2 → término 4"
-        ],
-        "columnaB": [
-          "-11",
-          "8",
-          "-3"
-        ],
-        "parejasCorrectas": [
-          2,
-          0,
-          1
-        ],
-        "retroalimentacion": "a=3, d=-2 → término 4: -3; a=4, d=-3 → término 6: -11; a=2, d=2 → término 4: 8."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada sucesión (dado a y d) con el término indicado.",
-        "columnaA": [
-          "a=3, d=3 → término 3",
-          "a=2, d=-2 → término 6",
-          "a=9, d=-2 → término 4"
-        ],
-        "columnaB": [
-          "9",
-          "-8",
-          "3"
-        ],
-        "parejasCorrectas": [
-          0,
-          1,
-          2
-        ],
-        "retroalimentacion": "a=3, d=3 → término 3: 9; a=2, d=-2 → término 6: -8; a=9, d=-2 → término 4: 3."
-      },
-      {
-        "tipo": "relacionar_columnas",
-        "instruccion": "Relaciona cada sucesión (dado a y d) con el término indicado.",
-        "columnaA": [
-          "a=5, d=2 → término 3",
-          "a=8, d=-3 → término 3",
-          "a=10, d=2 → término 5"
-        ],
-        "columnaB": [
-          "2",
-          "18",
-          "9"
-        ],
-        "parejasCorrectas": [
-          2,
-          0,
-          1
-        ],
-        "retroalimentacion": "a=5, d=2 → término 3: 9; a=8, d=-3 → término 3: 2; a=10, d=2 → término 5: 18."
-      }
-    ]
-  },
   "practicaExtra": [
     {
       "tipo": "llenar_frase",

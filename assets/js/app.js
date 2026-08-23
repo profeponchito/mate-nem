@@ -19,7 +19,7 @@
 import { ruta, rutaPorDefecto, navegar, init } from './router.js';
 import { guardarSesion, obtenerSesion, haySesion } from './session.js';
 import { cargarListaPDAs, cargarPDAporId } from './pda-loader.js';
-import { calcularResultado, esRespuestaCorrecta } from './gamification.js';
+import { calcularResultado, combinarResultados, esRespuestaCorrecta } from './gamification.js';
 import { enviarRegistroPDA, reintentarPendientes } from './webhook.js';
 import { generarConstancia, descargarComoPDF } from './constancia.js';
 
@@ -98,9 +98,50 @@ const PASO_COLOR = {
   }
 };
 
-/** Cuántos reactivos del reto se muestran juntos por página (el reto se
- * responde "de 5 en 5" en vez de todos juntos o uno por uno). */
-const TAM_PAGINA_RETO = 5;
+/** Etiqueta de dificultad de cada uno de los 4 subtemas de un PDA (de menor
+ * a mayor), mostrada junto a su número para que se note la progresión. */
+const NIVEL_DIFICULTAD = ['Introductorio', 'Intermedio', 'Avanzado', 'Síntesis'];
+
+/** Devuelve una copia de `arr` con sus elementos en orden aleatorio (Fisher–Yates). */
+function barajar_(arr) {
+  const copia = arr.slice();
+  for (let i = copia.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copia[i], copia[j]] = [copia[j], copia[i]];
+  }
+  return copia;
+}
+
+/** Devuelve una copia de un reactivo con sus opciones (opcion_multiple) o
+ * columnaB (relacionar_columnas) en orden aleatorio, ajustando los índices
+ * de respuesta correcta para que sigan apuntando al lugar correcto. Los
+ * demás tipos (verdadero_falso, llenar_frase) no tienen opciones que mezclar. */
+function variarOpciones_(reactivo) {
+  if (reactivo.tipo === 'opcion_multiple') {
+    const indices = barajar_(reactivo.opciones.map((_, i) => i));
+    return {
+      ...reactivo,
+      opciones: indices.map((i) => reactivo.opciones[i]),
+      respuestaCorrecta: indices.indexOf(reactivo.respuestaCorrecta)
+    };
+  }
+  if (reactivo.tipo === 'relacionar_columnas') {
+    const indices = barajar_(reactivo.columnaB.map((_, i) => i));
+    return {
+      ...reactivo,
+      columnaB: indices.map((i) => reactivo.columnaB[i]),
+      parejasCorrectas: reactivo.parejasCorrectas.map((idxOriginal) => indices.indexOf(idxOriginal))
+    };
+  }
+  return reactivo;
+}
+
+/** Prepara los 5 reactivos de la mini-actividad de un subtema para un
+ * intento: orden de las preguntas y de sus opciones mezclado, así rehacer
+ * un subtema no se ve idéntico la segunda vez. */
+function variarReactivos_(reactivos) {
+  return barajar_(reactivos).map(variarOpciones_);
+}
 
 /** Íconos SVG originales (trazo, sin relleno) para cada tipo de paso. */
 function icono_(nombre, clase = 'w-5 h-5') {
@@ -113,7 +154,8 @@ function icono_(nombre, clase = 'w-5 h-5') {
     chispas: `<path d="M12 3v4M12 17v4M4.5 12h4M15.5 12h4"/><path d="M7 7l2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/><circle cx="12" cy="12" r="2.2"/>`,
     salida: `<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h12"/>`,
     flecha: `<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>`,
-    descarga: `<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19.5h16"/>`
+    descarga: `<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19.5h16"/>`,
+    operaciones: `<path d="M6 4v6M3 7h6"/><path d="M4 17h6M4 20h6"/><path d="M15 8h6"/><circle cx="18" cy="4.5" r="0.7" fill="currentColor"/><circle cx="18" cy="11.5" r="0.7" fill="currentColor"/><path d="M15 15l6 6M21 15l-6 6"/>`
   };
   return `<svg viewBox="0 0 24 24" class="${clase}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${iconos[nombre] || ''}</svg>`;
 }
@@ -203,13 +245,14 @@ function vistaSeleccionGrado() {
   if (!sesion) { navegar('/'); return ''; }
 
   const grados = ['1°', '2°', '3°'];
+  const ej = PASO_COLOR.practicaExtra;
 
   return `
     ${encabezado_(sesion)}
-    <div class="max-w-2xl mx-auto px-4 py-8">
+    <div class="max-w-3xl mx-auto px-4 py-8">
       <h2 class="font-heading text-2xl font-bold text-slate-800 mb-1">Hola, ${escapeHTML_(sesion.nombre.split(' ')[0])} 👋</h2>
-      <p class="text-slate-500 mb-6">Elige tu grado para ver los PDAs disponibles.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <p class="text-slate-500 mb-6">Elige tu grado para ver los PDAs disponibles, o practica operaciones básicas sin importar tu grado.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         ${grados.map((grado, i) => {
           const tema = temaGrado_(grado);
           return `
@@ -225,6 +268,48 @@ function vistaSeleccionGrado() {
           </a>
         `;
         }).join('')}
+        <a href="#/ejercitate" ${retraso_(3, 90)}
+           class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${ej.grad} shadow-lg">
+          <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full flex flex-col items-center justify-center">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl ${ej.chip} mb-2">${icono_('operaciones', 'w-6 h-6')}</span>
+            <span class="font-heading text-xl font-extrabold bg-gradient-to-br ${ej.grad} bg-clip-text text-transparent">Ejercítate</span>
+            <p class="text-slate-500 mt-1 font-medium text-sm">Operaciones básicas</p>
+            <p class="mt-3 inline-flex items-center gap-1 text-sm font-semibold ${ej.texto}">
+              Practicar ${icono_('flecha', 'w-4 h-4 group-hover:translate-x-1 transition-transform')}
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  `;
+}
+
+// ============================================================
+// Vista: Ejercítate (operaciones básicas) — acceso ya disponible desde la
+// pantalla de selección de grado; el contenido interactivo (problematización
+// + subtemas calificados de cada operación) todavía está en construcción.
+// ============================================================
+function vistaEjercitate() {
+  const sesion = obtenerSesion();
+  if (!sesion) { navegar('/'); return ''; }
+  const ej = PASO_COLOR.practicaExtra;
+
+  return `
+    ${encabezado_(sesion)}
+    <div class="max-w-2xl mx-auto px-4 py-8">
+      <a href="#/grados" class="inline-flex items-center gap-1 text-sm font-semibold ${ej.texto} hover:underline">
+        ${icono_('flecha', 'w-4 h-4 rotate-180')} Volver
+      </a>
+      <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4 text-center">
+        <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl ${ej.chip} mb-3">${icono_('operaciones', 'w-7 h-7')}</span>
+        <h2 class="font-heading text-2xl font-bold text-slate-800 mb-2">Ejercítate: operaciones básicas</h2>
+        <p class="text-slate-600 mb-4">Suma, resta, multiplicación y división — práctica libre, calificada igual que un PDA, disponible para cualquier grado.</p>
+        <p class="text-slate-400 text-sm">Estamos construyendo el contenido interactivo de esta sección. Muy pronto podrás practicar aquí.</p>
+        <div class="mt-5 grid grid-cols-2 gap-2 max-w-xs mx-auto text-left">
+          ${['E.1 Suma', 'E.2 Resta', 'E.3 Multiplicación', 'E.4 División'].map((item) => `
+            <div class="text-sm px-3 py-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-500">${escapeHTML_(item)}</div>
+          `).join('')}
+        </div>
       </div>
     </div>
   `;
@@ -296,46 +381,35 @@ async function vistaPDA({ grado, id }) {
     return contenedorError;
   }
 
-  // Aplana el PDA en una secuencia lineal de pasos: problematización,
-  // cada subtema (más su check si tiene uno), el reto y el resultado.
-  // Esto es lo que permite calcular el % de avance de forma sencilla. El
-  // reto internamente se navega "de 5 en 5" (ver retoPagina en estado),
-  // pero cuenta como un solo paso aquí para la barra de avance general.
+  // Aplana el PDA en una secuencia lineal de pasos: problematización, y por
+  // cada uno de los 4 subtemas (de menor a mayor dificultad) su teoría, su
+  // mini-actividad calificada (5 reactivos) y su mini-resultado propio; al
+  // final, el resultado GLOBAL del PDA (suma de los 4 mini-resultados).
   const pasos = [{ tipo: 'problematizacion' }];
   pda.subtemas.forEach((subtema, si) => {
     pasos.push({ tipo: 'subtema', subtemaIndex: si });
-    if (subtema.check) pasos.push({ tipo: 'check', subtemaIndex: si });
+    pasos.push({ tipo: 'actividad', subtemaIndex: si });
+    pasos.push({ tipo: 'miniResultado', subtemaIndex: si });
   });
-  pasos.push({ tipo: 'reto' });
   pasos.push({ tipo: 'resultado' });
 
   const raiz = document.createElement('div');
   const estado = {
     pasoIndex: 0,
-    resultado: null,
+    resultadosSubtemas: new Array(pda.subtemas.length).fill(null),
+    resultado: null, // resultado global, se calcula al terminar el subtema 4
     codigoVerificacion: null,
-    retoPagina: 0,
-    respuestasReto: new Array(pda.reto.reactivos.length).fill(null)
+    reactivosVariados: {} // { [subtemaIndex]: reactivos de esa mini-actividad, ya barajados para este intento }
   };
 
-  /** Lee y guarda las respuestas de la página actual del reto (de 5 en 5).
-   * Si `parcial` es true (al ir "Atrás"), guarda lo que haya sin exigir que
-   * esté completa. Si falta algo y no es parcial, avisa y no avanza. */
-  function guardarPaginaReto_(parcial = false) {
-    const inicio = estado.retoPagina * TAM_PAGINA_RETO;
-    const fin = Math.min(inicio + TAM_PAGINA_RETO, pda.reto.reactivos.length);
-    const respuestasPagina = [];
-    for (let i = inicio; i < fin; i++) {
-      respuestasPagina.push(leerRespuesta_(raiz, `reto-${i}`, pda.reto.reactivos[i].tipo));
+  /** Reactivos (orden + opciones mezclados) de la mini-actividad de un
+   * subtema para el intento actual — se calculan una sola vez por intento
+   * y se reutilizan en repintados posteriores del mismo paso. */
+  function reactivosDeActividad_(subtemaIndex) {
+    if (!estado.reactivosVariados[subtemaIndex]) {
+      estado.reactivosVariados[subtemaIndex] = variarReactivos_(pda.subtemas[subtemaIndex].reactivos);
     }
-    if (!parcial && respuestasPagina.some((r) => r === null)) {
-      alert('Responde todos los reactivos de esta página antes de continuar.');
-      return false;
-    }
-    respuestasPagina.forEach((r, idx) => {
-      if (r !== null) estado.respuestasReto[inicio + idx] = r;
-    });
-    return true;
+    return estado.reactivosVariados[subtemaIndex];
   }
 
   function repintar() {
@@ -351,8 +425,8 @@ async function vistaPDA({ grado, id }) {
         <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4">
           ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda, PASO_COLOR.problematizacion) : ''}
           ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, PASO_COLOR.subtema) : ''}
-          ${paso.tipo === 'check' ? panelCheck_(pda.subtemas[paso.subtemaIndex], `check-${paso.subtemaIndex}`, PASO_COLOR.check) : ''}
-          ${paso.tipo === 'reto' ? panelReto_(pda, estado, PASO_COLOR.reto) : ''}
+          ${paso.tipo === 'actividad' ? panelActividad_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, reactivosDeActividad_(paso.subtemaIndex), PASO_COLOR.reto) : ''}
+          ${paso.tipo === 'miniResultado' ? panelMiniResultado_(pda.subtemas[paso.subtemaIndex], estado.resultadosSubtemas[paso.subtemaIndex], paso.subtemaIndex === pda.subtemas.length - 1, PASO_COLOR.reto) : ''}
           ${esResultado ? panelResultado_(pda, estado, PASO_COLOR.resultado) : ''}
         </div>
         ${esResultado && Array.isArray(pda.practicaExtra) && pda.practicaExtra.length > 0 ? panelPracticaExtra_(pda, PASO_COLOR.practicaExtra) : ''}
@@ -362,83 +436,80 @@ async function vistaPDA({ grado, id }) {
   }
 
   function conectarEventos_() {
-    // Avanza al siguiente paso (problematización, subtemas, y "continuar" tras un check)
-    raiz.querySelector('[data-accion="continuar"]')?.addEventListener('click', () => {
+    // Avanza al siguiente paso (problematización → subtema, subtema → actividad,
+    // y mini-resultado → siguiente subtema). Caso especial: al salir del
+    // mini-resultado del ÚLTIMO subtema, primero calcula el resultado GLOBAL
+    // del PDA (suma de los 4) y envía ese registro final antes de avanzar.
+    raiz.querySelector('[data-accion="continuar"]')?.addEventListener('click', async () => {
+      const paso = pasos[estado.pasoIndex];
+      const esUltimoSubtema = paso.subtemaIndex === pda.subtemas.length - 1;
+
+      if (paso.tipo === 'miniResultado' && esUltimoSubtema) {
+        estado.resultado = combinarResultados(estado.resultadosSubtemas);
+        estado.pasoIndex++; // avanza al paso 'resultado' (global)
+        repintar();
+
+        try {
+          const respuestaServidor = await enviarRegistroPDA({
+            nombre: sesion.nombre,
+            grado: sesion.grado,
+            grupo: sesion.grupo,
+            pdaId: pda.id,
+            pdaNombre: pda.titulo,
+            eje: pda.eje,
+            tipo: 'pda_completo',
+            puntaje: estado.resultado.puntaje,
+            estrellas: estado.resultado.estrellas
+          });
+          estado.codigoVerificacion = respuestaServidor.codigoVerificacion;
+        } catch {
+          // Sin conexión al webhook (aún no desplegado o sin internet): se genera
+          // un folio provisional para no bloquear la constancia; el registro
+          // queda guardado en localStorage por webhook.js para reintentar después.
+          estado.codigoVerificacion = 'PENDIENTE-' + Date.now();
+        }
+        repintar();
+        return;
+      }
+
       estado.pasoIndex++;
       repintar();
     });
 
-    // Verifica la respuesta del check formativo de un subtema (no se califica,
-    // solo da retroalimentación inmediata antes de dejar continuar).
-    raiz.querySelector('[data-accion="verificar-check"]')?.addEventListener('click', () => {
+    // Envía las 5 respuestas de la mini-actividad de un subtema: la califica,
+    // guarda su mini-resultado, avanza al panel de "mini-resultado" y registra
+    // ese subtema en Sheets en segundo plano (no bloquea la navegación).
+    raiz.querySelector('[data-accion="enviar-actividad"]')?.addEventListener('click', () => {
       const paso = pasos[estado.pasoIndex];
-      const pregunta = pda.subtemas[paso.subtemaIndex].check;
-      const prefijo = `check-${paso.subtemaIndex}`;
-      const respuesta = leerRespuesta_(raiz, prefijo, pregunta.tipo);
+      const subtema = pda.subtemas[paso.subtemaIndex];
+      const reactivos = reactivosDeActividad_(paso.subtemaIndex);
+      const respuestas = reactivos.map((reactivo, i) => leerRespuesta_(raiz, `act-${paso.subtemaIndex}-${i}`, reactivo.tipo));
 
-      if (respuesta === null) {
-        alert('Responde antes de continuar.');
+      if (respuestas.some((r) => r === null)) {
+        alert('Responde los 5 reactivos antes de continuar.');
         return;
       }
 
-      const correcta = esRespuestaCorrecta(pregunta, respuesta);
-      const feedback = raiz.querySelector('[data-check-feedback]');
-      feedback.classList.remove('hidden');
-      feedback.innerHTML = `
-        <div class="text-sm px-4 py-3 rounded-xl border ${correcta ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-rose-50 text-rose-800 border-rose-200'}">
-          <span class="font-bold">${correcta ? '✓ ¡Correcto!' : '✗ No es correcto.'}</span> ${escapeHTML_(pregunta.retroalimentacion)}
-        </div>
-      `;
-      raiz.querySelector('[data-accion="verificar-check"]').classList.add('hidden');
-      raiz.querySelector('[data-accion="continuar"]').classList.remove('hidden');
-    });
-
-    // Reto: avanzar a la siguiente página de 5 reactivos (exige la página completa).
-    raiz.querySelector('[data-accion="reto-siguiente"]')?.addEventListener('click', () => {
-      if (!guardarPaginaReto_()) return;
-      estado.retoPagina++;
-      repintar();
-    });
-
-    // Reto: regresar a la página anterior (guarda lo respondido sin exigirlo completo).
-    raiz.querySelector('[data-accion="reto-anterior"]')?.addEventListener('click', () => {
-      guardarPaginaReto_(true);
-      estado.retoPagina--;
-      repintar();
-    });
-
-    // Envía las respuestas del reto final (última página): califica, guarda en
-    // Sheets y avanza al panel de resultado.
-    raiz.querySelector('[data-accion="enviar-reto"]')?.addEventListener('click', async () => {
-      if (!guardarPaginaReto_()) return;
-      if (estado.respuestasReto.some((r) => r === null)) {
-        alert('Responde todos los reactivos antes de continuar.');
-        return;
-      }
-
-      estado.resultado = calcularResultado(pda, estado.respuestasReto);
-      estado.pasoIndex++; // avanza al paso 'resultado'
+      const resultado = calcularResultado(
+        { reactivos, puntosPorReactivo: subtema.puntosPorReactivo, estrellasMax: subtema.estrellasMax },
+        respuestas
+      );
+      estado.resultadosSubtemas[paso.subtemaIndex] = resultado;
+      estado.pasoIndex++; // avanza a 'miniResultado'
       repintar();
 
-      try {
-        const respuestaServidor = await enviarRegistroPDA({
-          nombre: sesion.nombre,
-          grado: sesion.grado,
-          grupo: sesion.grupo,
-          pdaId: pda.id,
-          pdaNombre: pda.titulo,
-          eje: pda.eje,
-          puntaje: estado.resultado.puntaje,
-          estrellas: estado.resultado.estrellas
-        });
-        estado.codigoVerificacion = respuestaServidor.codigoVerificacion;
-      } catch {
-        // Sin conexión al webhook (aún no desplegado o sin internet): se genera
-        // un folio provisional para no bloquear la constancia; el registro
-        // queda guardado en localStorage por webhook.js para reintentar después.
-        estado.codigoVerificacion = 'PENDIENTE-' + Date.now();
-      }
-      repintar();
+      enviarRegistroPDA({
+        nombre: sesion.nombre,
+        grado: sesion.grado,
+        grupo: sesion.grupo,
+        pdaId: pda.id,
+        pdaNombre: pda.titulo,
+        eje: pda.eje,
+        tipo: 'subtema',
+        subtema: subtema.numero,
+        puntaje: resultado.puntaje,
+        estrellas: resultado.estrellas
+      }).catch(() => {}); // si falla, webhook.js ya lo dejó pendiente en localStorage
     });
 
     raiz.querySelector('[data-accion="ver-constancia"]')?.addEventListener('click', () => {
@@ -452,7 +523,7 @@ async function vistaPDA({ grado, id }) {
         puntaje: estado.resultado.puntaje,
         puntajeMax: estado.resultado.puntajeMax,
         estrellas: estado.resultado.estrellas,
-        estrellasMax: pda.reto.estrellasMax || 3,
+        estrellasMax: estado.resultado.estrellasMax,
         codigoVerificacion: estado.codigoVerificacion
       });
       raiz.querySelector('[data-accion="ver-constancia"]')?.classList.add('hidden');
@@ -539,98 +610,87 @@ function panelProblematizacion_(pda, color) {
   `;
 }
 
+/** Chip "Nivel N de 4 · <etiqueta>" que marca la dificultad creciente de un subtema. */
+function nivelChip_(indice, total) {
+  const etiqueta = NIVEL_DIFICULTAD[indice] || '';
+  return `Nivel ${indice + 1} de ${total} · ${etiqueta}`;
+}
+
 function panelSubtema_(subtema, indice, total, color) {
   return `
-    ${overline_(`Tema · Parte ${indice + 1} de ${total}`, 'libro', color)}
+    ${overline_(nivelChip_(indice, total), 'libro', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
     ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 font-mono text-slate-800 mb-3">${escapeHTML_(subtema.formula)}</p>` : ''}
     <div class="space-y-1.5 mb-6">
       ${subtema.ejemplos.map((ejemplo) => `<p class="text-slate-600 text-sm ${color.suave.split(' ')[0]} rounded-lg px-3 py-2"><strong class="${color.texto}">Ejemplo:</strong> ${escapeHTML_(ejemplo)}</p>`).join('')}
     </div>
-    ${botonPrimario_('Continuar →', 'continuar', color)}
+    ${botonPrimario_('Empezar las 5 preguntas →', 'continuar', color)}
   `;
 }
 
-function panelCheck_(subtema, prefijo, color) {
-  const pregunta = subtema.check;
+/** Mini-actividad calificada de un subtema: sus 5 reactivos (ya barajados
+ * para este intento), calificados de forma independiente al resto del PDA. */
+function panelActividad_(subtema, indice, total, reactivos, color) {
   return `
-    ${overline_('Repaso rápido', 'lupa', color)}
-    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
-    <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
-    ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 font-mono text-slate-800 mb-4">${escapeHTML_(subtema.formula)}</p>` : ''}
-    <div class="border-t border-dashed border-slate-200 pt-4">
-      ${renderizarPregunta_(pregunta, prefijo, color)}
-    </div>
-    <div data-check-feedback class="mt-3 hidden"></div>
-    <div class="mt-4 flex gap-2">
-      <button data-accion="verificar-check" class="mn-elevar bg-gradient-to-r ${color.grad} text-white font-heading font-bold px-6 py-2.5 rounded-xl shadow-md transition">
-        Verificar
-      </button>
-      <button data-accion="continuar" class="hidden bg-slate-700 hover:bg-slate-800 text-white font-heading font-bold px-6 py-2.5 rounded-xl transition">
-        Continuar →
-      </button>
-    </div>
-  `;
-}
-
-function panelReto_(pda, estado, color) {
-  const reto = pda.reto;
-  const totalPaginas = Math.ceil(reto.reactivos.length / TAM_PAGINA_RETO);
-  const pagina = estado.retoPagina;
-  const inicio = pagina * TAM_PAGINA_RETO;
-  const fin = Math.min(inicio + TAM_PAGINA_RETO, reto.reactivos.length);
-  const esUltimaPagina = pagina === totalPaginas - 1;
-
-  return `
-    ${overline_('Reto', 'trofeo', color)}
-    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(pda.numero)}${escapeHTML_(pda.titulo)}</h3>
-    ${pagina === 0 ? `<p class="text-slate-700 leading-relaxed mb-4 ${color.suave} border rounded-xl px-4 py-3">${escapeHTML_(reto.sintesis)}</p>` : ''}
-
-    <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
-      <p class="text-sm font-bold ${color.texto}">Reactivos ${inicio + 1}–${fin} de ${reto.reactivos.length}</p>
-      <div class="flex gap-1.5">
-        ${Array.from({ length: totalPaginas }).map((_, i) => `
-          <span class="w-2.5 h-2.5 rounded-full ${i <= pagina ? `bg-gradient-to-r ${color.grad}` : 'bg-slate-200'}"></span>
-        `).join('')}
-      </div>
-    </div>
-
+    ${overline_(nivelChip_(indice, total), 'trofeo', color)}
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-4">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <div class="space-y-6">
-      ${reto.reactivos.slice(inicio, fin).map((reactivo, j) => {
-        const i = inicio + j;
-        return `
+      ${reactivos.map((reactivo, i) => `
         <div class="border-t border-slate-100 pt-4 first:border-t-0 first:pt-0">
-          <p class="text-slate-400 text-xs font-bold mb-1">REACTIVO ${i + 1} DE ${reto.reactivos.length}</p>
-          ${renderizarPregunta_(reactivo, `reto-${i}`, color, estado.respuestasReto[i])}
+          <p class="text-slate-400 text-xs font-bold mb-1">REACTIVO ${i + 1} DE ${reactivos.length}</p>
+          ${renderizarPregunta_(reactivo, `act-${indice}-${i}`, color)}
         </div>
-      `;
-      }).join('')}
+      `).join('')}
     </div>
-    <div class="mt-6 flex gap-2 flex-wrap">
-      ${pagina > 0 ? botonSecundario_('← Atrás', 'reto-anterior') : ''}
-      ${esUltimaPagina
-        ? botonPrimario_('Enviar respuestas', 'enviar-reto', color)
-        : botonPrimario_(`Siguiente (${fin}/${reto.reactivos.length}) →`, 'reto-siguiente', color)}
+    <div class="mt-6">
+      ${botonPrimario_('Enviar respuestas', 'enviar-actividad', color)}
     </div>
+  `;
+}
+
+/** Mini-resultado de un subtema recién concluido: sus propios puntos y
+ * estrellas, independiente de los otros 3 subtemas del PDA. */
+function panelMiniResultado_(subtema, resultado, esUltimo, color) {
+  const perfecto = resultado.estrellas >= resultado.estrellasMax;
+  return `
+    ${overline_('¡Actividad concluida!', 'medalla', color)}
+    <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
+    <p class="font-heading text-2xl font-bold text-slate-800 mb-2">${resultado.correctas} / ${resultado.total} correctas</p>
+    <div class="relative inline-block mb-1">
+      ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-300/50 blur-xl"></div>` : ''}
+      <p class="relative text-amber-500 text-xl">
+        ${Array.from({ length: resultado.estrellas }).map((_, i) => `<span class="mn-estrella" ${retraso_(i, 120)}>★</span>`).join('')}${'☆'.repeat(Math.max(0, resultado.estrellasMax - resultado.estrellas))}
+      </p>
+    </div>
+    <p class="text-slate-600 font-semibold mb-6">${resultado.puntaje} de ${resultado.puntajeMax} pts</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
+      ${resultado.detalle.map((d) => `
+        <div class="text-sm px-4 py-3 rounded-xl border ${d.esCorrecta ? 'bg-emerald-50 text-emerald-800 border-emerald-200' : 'bg-rose-50 text-rose-800 border-rose-200'}">
+          <span class="font-bold">${d.esCorrecta ? '✓' : '✗'}</span> ${escapeHTML_(d.resumen)}
+          ${d.retroalimentacion ? `<br><span class="text-xs opacity-80">${escapeHTML_(d.retroalimentacion)}</span>` : ''}
+        </div>
+      `).join('')}
+    </div>
+    ${botonPrimario_(esUltimo ? 'Ver resultado global →' : 'Siguiente subtema →', 'continuar', color)}
   `;
 }
 
 function panelResultado_(pda, estado, color) {
   const r = estado.resultado;
-  const estrellasMax = pda.reto.estrellasMax || 3;
-  const perfecto = r.estrellas >= estrellasMax;
+  const perfecto = r.estrellas >= r.estrellasMax;
 
   return `
-    ${overline_('Resultado', 'medalla', color)}
+    ${overline_('Resultado global del PDA', 'medalla', color)}
     <p class="font-heading text-2xl sm:text-3xl font-bold text-slate-800 mb-2">${r.correctas} / ${r.total} correctas</p>
     <div class="relative inline-block mb-1">
       ${perfecto ? `<div class="mn-resplandor absolute inset-0 -m-3 rounded-full bg-amber-300/50 blur-xl"></div>` : ''}
       <p class="relative text-amber-500 text-2xl">
-        ${Array.from({ length: r.estrellas }).map((_, i) => `<span class="mn-estrella" ${retraso_(i, 120)}>★</span>`).join('')}${'☆'.repeat(Math.max(0, estrellasMax - r.estrellas))}
+        ${Array.from({ length: r.estrellas }).map((_, i) => `<span class="mn-estrella" ${retraso_(i, 120)}>★</span>`).join('')}${'☆'.repeat(Math.max(0, r.estrellasMax - r.estrellas))}
       </p>
     </div>
     <p class="text-slate-600 font-semibold mb-4">${r.puntaje} de ${r.puntajeMax} pts</p>
+    <p class="text-slate-400 text-xs mb-4">Suma de los 4 subtemas (5 preguntas cada uno).</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
       ${r.detalle.map((d) => `
@@ -829,6 +889,7 @@ ruta('/', vistaRegistro);
 ruta('/grados', vistaSeleccionGrado);
 ruta('/pda-lista/:grado', vistaListaPDA);
 ruta('/pda/:grado/:id', vistaPDA);
+ruta('/ejercitate', vistaEjercitate);
 rutaPorDefecto(vista404);
 
 document.addEventListener('DOMContentLoaded', () => {
