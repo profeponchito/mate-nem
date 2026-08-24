@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "PDA MATE-NEM (v4)",
-  "description": "Estructura modular de un Proceso de Desarrollo de Aprendizaje (PDA) de Matemáticas, NEM. Flujo: problematización (gancho de contexto real) → 4 subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad calificada de 5 reactivos (mini-resultado independiente con puntos y estrellas) → resultado global del PDA (suma de los 4 mini-resultados).",
+  "title": "PDA MATE-NEM (v5)",
+  "description": "Estructura modular de un Proceso de Desarrollo de Aprendizaje (PDA) de Matemáticas, NEM. Flujo: problematización (gancho de contexto real) → de 1 a 7 subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad calificada de 5 reactivos (mini-resultado independiente con puntos y estrellas) → resultado global del PDA (suma de los mini-resultados). Un PDA curricular por grado trae 4-7 subtemas; una 'tarjeta dividida' de camino (Paso 15) trae exactamente 1.",
   "type": "object",
   "required": ["id", "grado", "campoFormativo", "eje", "titulo", "problematizacion", "subtemas"],
   "properties": {
@@ -42,8 +42,8 @@
 
     "subtemas": {
       "type": "array",
-      "description": "El tema explicado y evaluado en un mínimo de 4 partes 'núcleo', de menor a mayor dificultad (Introductorio/Intermedio/Avanzado/Síntesis). Cada subtema es una mini-actividad autocontenida: teoría (titulo/explicacion/ejemplos) + su propia mini-actividad calificada de 5 reactivos, con resultado (puntos, estrellas) independiente de los demás. Al completar todos, el PDA muestra un resultado global (suma de todos los mini-resultados). Opcionalmente puede haber hasta 3 subtemas adicionales de REPASO después de los 4 núcleo (índice ≥ 4, numerados <N>.5..<N>.7) — no introducen contenido nuevo, repasan lo ya visto en los 4 anteriores, pero se califican y cuentan para el resultado global igual que cualquier otro subtema (ver Paso 13 en la documentación del proyecto).",
-      "minItems": 4,
+      "description": "El tema explicado y evaluado en partes, de menor a mayor dificultad (Introductorio/Intermedio/Avanzado/Síntesis). Cada subtema es una mini-actividad autocontenida: teoría (titulo/explicacion/ejemplos) + su propia mini-actividad calificada de 5 reactivos, con resultado (puntos, estrellas) independiente de los demás. Al completar todos, el PDA muestra un resultado global (suma de todos los mini-resultados). Un PDA 'completo' (curricular por grado) tiene 4 subtemas núcleo + hasta 3 de REPASO (índice ≥ 4, numerados <N>.5..<N>.7) — ver Paso 13. Desde el Paso 15, un PDA también puede tener un SOLO subtema (minItems 1): es una 'tarjeta dividida' del camino — resultado de partir un PDA de 7 subtemas en 7 tarjetas independientes para alargar el recorrido de un grado sin inventar contenido nuevo (ver Paso 15). En ese caso el subtema trae su propio campo 'nivelEtiqueta' (ver abajo) porque su posición real (p.ej. 'Avanzado') no puede deducirse de su índice dentro de un arreglo de un solo elemento.",
+      "minItems": 1,
       "maxItems": 7,
       "items": {
         "type": "object",
@@ -52,6 +52,10 @@
           "numero": {
             "type": "string",
             "description": "Número jerárquico del subtema, formato '<numero del PDA>.<consecutivo>' (ej. '3.2' = subtema 2 del tema 3, '3.4' = el más difícil/de síntesis de ese tema). Si el PDA tiene subtemas de repaso opcionales, continúan la numeración a partir de .5 (ej. '3.5', '3.6', '3.7'). Se muestra en la interfaz junto al título del subtema."
+          },
+          "nivelEtiqueta": {
+            "type": "string",
+            "description": "Etiqueta fija de nivel/dificultad a mostrar en vez de calcularla por índice (ver nivelChip_ en app.js) — solo necesaria en PDAs 'tarjeta dividida' de un solo subtema (Paso 15), donde el índice dentro del arreglo (siempre 0) no revela la posición real del subtema en su PDA de origen. Formato idéntico al que generaría el motor, ej. 'Nivel 3 de 4 · Avanzado' o 'Repaso 2 de 3'. Si se omite, la etiqueta se calcula por índice/longitud del arreglo como de costumbre."
           },
           "titulo": { "type": "string" },
           "explicacion": { "type": "string", "description": "Explicación del subtema, más desarrollada que una síntesis breve. El subtema 4 ('Síntesis y aplicación') recapitula las ideas clave de los subtemas 1-3." },
