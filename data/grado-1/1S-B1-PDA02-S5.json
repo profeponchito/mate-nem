@@ -59,6 +59,42 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "El mirador está a 30 m de distancia del 0, y la cueva a 18 m; 30 es mayor que 18, así que el excursionista está más lejos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-25 es menor que -18.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -25 < -18, porque -25 está más a la izquierda en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una torre a 45 m está más lejos del suelo (0) que un sótano a -30 m.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la torre está a 45 m del 0 y el sótano a 30 m; 45 es mayor que 30."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -8, -21, 6, -15 es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "6 es el único positivo de la lista, así que está más a la derecha y es el mayor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 9, -17, 2, -4 es ___.",
+          "respuestaCorrecta": "-17",
+          "retroalimentacion": "-17 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un globo aerostático vuela a 55 m de altura y un buzo está a -40 m de profundidad, ambos respecto al nivel del suelo/mar. ¿Quién está más lejos del nivel de referencia (del 0)?",
+          "opciones": [
+            "El globo aerostático",
+            "El buzo",
+            "Ambos están a la misma distancia",
+            "No se puede saber"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El globo está a 55 m del 0 y el buzo a 40 m; 55 es mayor que 40, así que el globo está más lejos."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

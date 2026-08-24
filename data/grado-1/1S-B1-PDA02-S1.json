@@ -53,6 +53,56 @@
           "enunciado": "13 es mayor que 6.",
           "respuestaCorrecta": true,
           "retroalimentacion": "13 > 6 en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-15 es menor que -9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -15 < -9 en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-2 es mayor que 5.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: -2 < 5 en la recta numérica."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una cueva está al nivel -6 respecto al suelo. Esto significa que está ___ metros por debajo del nivel del suelo.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "El nivel -6 indica 6 metros por debajo de la referencia (0)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una montaña tiene una cima a 300 m y una mina a -150 m respecto al nivel del mar. ¿Cuál está más lejos del nivel del mar (0)?",
+          "opciones": [
+            "La cima (300 m)",
+            "La mina (-150 m)",
+            "Ambas están a la misma distancia",
+            "No se puede saber"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La cima está a 300 m del 0 y la mina a 150 m; 300 es mayor que 150, así que la cima está más lejos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada número con su ubicación en la recta numérica respecto al cero.",
+          "columnaA": [
+            "-8",
+            "0",
+            "6"
+          ],
+          "columnaB": [
+            "A la derecha del cero",
+            "Es el cero mismo",
+            "A la izquierda del cero"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "-8 está a la izquierda del cero; 0 es el cero mismo; 6 está a la derecha del cero."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

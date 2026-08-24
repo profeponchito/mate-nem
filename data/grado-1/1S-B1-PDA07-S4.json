@@ -114,6 +114,62 @@
             1
           ],
           "retroalimentacion": "Es proporcional si no tiene cargo fijo (pasa por el origen); si lo tiene, no lo es."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes situaciones es proporcional?",
+          "opciones": [
+            "La renta de un salón: $50 fijos + $30/hora",
+            "El consumo de luz: $50 fijos + consumo",
+            "El boleto con $50 de descuento fijo",
+            "El costo de refrescos a $30 c/u"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "El costo de refrescos es y=30x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La renta de una bicicleta con $10 fijos más $5 por hora es una relación proporcional.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: tiene un cargo fijo ($10) que se paga aunque no se use ninguna hora, así que no es proporcional."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El costo de camisetas a $45 cada una es una relación proporcional porque si compras 0 camisetas, pagas $___.",
+          "respuestaCorrecta": "0",
+          "retroalimentacion": "Como no hay ningún cargo fijo, si compras 0 camisetas pagas $0, por eso es proporcional (y=45x)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Clasifica cada situación como proporcional o no proporcional.",
+          "columnaA": [
+            "Renta con $19 fijos + $8/hora",
+            "Chocolates a $9 c/u",
+            "Renta con $33 fijos + $11/hora"
+          ],
+          "columnaB": [
+            "Proporcional (y=9x)",
+            "No proporcional ($33 fijos)",
+            "No proporcional ($19 fijos)"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "Los chocolates son proporcionales (y=9x); las dos rentas tienen un cargo fijo, así que no lo son."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de estas relaciones NO es proporcional?",
+          "opciones": [
+            "El costo de plátanos a $13/kg",
+            "La renta de lancha: $45 fijos + $20/hora",
+            "y=7x",
+            "El costo de dulces a $3 c/u"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La renta de lancha tiene un cargo fijo de $45 que se paga aunque no se use ninguna hora, así que no es proporcional."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

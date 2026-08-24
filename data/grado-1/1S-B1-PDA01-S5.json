@@ -59,6 +59,42 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "11 ÷ 20 = 0.55."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "7/8 equivale a 0.875.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 7 ÷ 8 = 0.875."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "3/5 equivale a 0.35.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: 3 ÷ 5 = 0.6, no 0.35."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "9/16 escrito como decimal es ___.",
+          "respuestaCorrecta": "0.5625",
+          "retroalimentacion": "9 ÷ 16 = 0.5625."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.44 escrito como fracción simplificada es ___.",
+          "respuestaCorrecta": "11/25",
+          "retroalimentacion": "0.44 = 44/100, que simplificado entre 4 es 11/25."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la expresión decimal de 13/25?",
+          "opciones": [
+            "0.52",
+            "0.13",
+            "0.25",
+            "1.3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "13 ÷ 25 = 0.52."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

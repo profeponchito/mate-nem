@@ -53,6 +53,62 @@
           "frase": "El perímetro simplificado de un triángulo con lados x, x+3 y 2x es ___.",
           "respuestaCorrecta": "4x+3",
           "retroalimentacion": "x + (x+3) + 2x = 4x + 3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un rectángulo tiene ancho x y largo x+6. ¿Cuál es la expresión simplificada de su perímetro?",
+          "opciones": [
+            "4x+12",
+            "4x+6",
+            "2x+12",
+            "3x+12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2(x) + 2(x+6) = 2x + 2x + 12 = 4x+12."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe algebraicamente 'el triple de un número más 4'?",
+          "opciones": [
+            "3x+4",
+            "x+12",
+            "3x-4",
+            "4x+3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el triple de un número más 4' se traduce como 3x+4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un triángulo con lados x, 3x y x+5 es 5x+5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "x + 3x + (x+5) = 5x + 5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro simplificado de un rectángulo con ancho x y largo 2x+1 es ___.",
+          "respuestaCorrecta": "6x+2",
+          "retroalimentacion": "2(x) + 2(2x+1) = 2x + 4x + 2 = 6x+2."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada figura con su perímetro simplificado.",
+          "columnaA": [
+            "Cuadrado de lado x+1",
+            "Rectángulo con ancho x y largo x+4",
+            "Triángulo con lados x, x+2, 2x"
+          ],
+          "columnaB": [
+            "4x+8",
+            "4x+2",
+            "4x+4"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "Cuadrado x+1: 4(x+1)=4x+4. Rectángulo x,x+4: 2x+2(x+4)=4x+8. Triángulo x,x+2,2x: x+(x+2)+2x=4x+2."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

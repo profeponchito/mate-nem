@@ -83,6 +83,62 @@
           ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "El costo de plumas es y=23x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una tabla, x=5 → y=40. La constante de proporcionalidad k = ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "k = y/x = 40/5 = 8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una gráfica de proporcionalidad directa, la recta siempre pasa por el punto (0,0).",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: toda relación proporcional (y=kx) tiene y=0 cuando x=0, así que su gráfica pasa por el origen."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una tabla, x=3 → y=33 y x=6 → y=66. ¿Cuál es la constante de proporcionalidad k?",
+          "opciones": [
+            "11",
+            "3",
+            "6",
+            "33"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k = y/x = 33/3 = 11 (se confirma con 66/6 = 11)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada tabla con su constante de proporcionalidad k.",
+          "columnaA": [
+            "x=2 → y=14",
+            "x=5 → y=30",
+            "x=3 → y=27"
+          ],
+          "columnaB": [
+            "6",
+            "9",
+            "7"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x=2,y=14: k=7. x=5,y=30: k=6. x=3,y=27: k=9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes opciones representa una relación proporcional?",
+          "opciones": [
+            "El boleto de cine con $15 de descuento fijo",
+            "El consumo de agua: $15 fijos + consumo",
+            "La renta de cancha: $15 fijos + $10/hora",
+            "El costo de dulces a $10 c/u"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "El costo de dulces es y=10x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

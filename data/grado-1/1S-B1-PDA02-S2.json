@@ -54,6 +54,56 @@
           "frase": "El número menor entre 17, 13, -18, 14 es ___.",
           "respuestaCorrecta": "-18",
           "retroalimentacion": "-18 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -3, -8, 2, -1 es ___.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "2 es el único positivo de la lista, así que está más a la derecha y es el mayor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -6, 10, -12, 5 es ___.",
+          "respuestaCorrecta": "-12",
+          "retroalimentacion": "-12 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -5 y -2, el número -5 es mayor.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: -5 < -2, porque -5 está más a la izquierda en la recta numérica."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes números es el mayor: -20, -3, -15, -8?",
+          "opciones": [
+            "-20",
+            "-3",
+            "-15",
+            "-8"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "-3 es el menos negativo de la lista, así que es el mayor."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con el símbolo de comparación correcto.",
+          "columnaA": [
+            "-7 ___ -2",
+            "4 ___ -4",
+            "-9 ___ -9"
+          ],
+          "columnaB": [
+            "<",
+            ">",
+            "="
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-7 < -2; 4 > -4; -9 = -9."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

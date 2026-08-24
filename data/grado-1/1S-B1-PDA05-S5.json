@@ -58,6 +58,56 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "'la mitad de un numero menos 7' se traduce como x/2-7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Como se escribe algebraicamente 'el triple de un numero menos 4'?",
+          "opciones": [
+            "3x-4",
+            "3x+4",
+            "4-3x",
+            "3(x-4)"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el triple de un numero menos 4' se traduce como 3x-4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "'El cuadruple de un numero menos 3' se escribe como 4x-3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "'el cuadruple de un numero' es 4x, y 'menos 3' se resta: 4x-3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "'La mitad de un numero mas 10' se escribe como x/2+20.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "'la mitad de un numero mas 10' es x/2+10, no x/2+20."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El doble de un numero mas 11' se escribe ___.",
+          "respuestaCorrecta": "2x+11",
+          "retroalimentacion": "'el doble de un numero mas 11' se traduce como 2x+11."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase con su expresión algebraica.",
+          "columnaA": [
+            "El triple de un número más 5",
+            "El cuádruple de un número menos 2",
+            "La mitad de un número menos 6"
+          ],
+          "columnaB": [
+            "x/2-6",
+            "3x+5",
+            "4x-2"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "'El triple más 5' es 3x+5; 'el cuádruple menos 2' es 4x-2; 'la mitad menos 6' es x/2-6."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

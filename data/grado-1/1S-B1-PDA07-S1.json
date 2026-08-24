@@ -53,6 +53,56 @@
           "enunciado": "La relación y = 5x + 14 es proporcional.",
           "respuestaCorrecta": false,
           "retroalimentacion": "Una relación es proporcional solo si es de la forma y=kx (pasa por el origen), sin ningún valor fijo sumado."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes es la característica principal de una relación proporcional?",
+          "opciones": [
+            "Su gráfica es una recta que pasa por el origen (0,0)",
+            "Su gráfica es una recta que no pasa por el origen",
+            "Su gráfica siempre es una curva",
+            "Tiene un valor fijo que se suma"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Toda relación proporcional es de la forma y=kx, cuya gráfica es una recta que pasa por el origen (0,0)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La relación y = 3x es proporcional.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: es de la forma y=kx (con k=3) y pasa por el origen (0,0)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una relación proporcional, si x = 0, entonces y = ___.",
+          "respuestaCorrecta": "0",
+          "retroalimentacion": "En toda relación proporcional (y=kx), si x=0 entonces y=0, porque no hay ningún valor fijo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada relación con su tipo (proporcional o no proporcional).",
+          "columnaA": [
+            "y = 8x",
+            "y = 2x + 5",
+            "El costo de manzanas a $6/kg"
+          ],
+          "columnaB": [
+            "No proporcional (+5 fijo)",
+            "Proporcional (y=6x)",
+            "Proporcional (y=8x)"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "y=8x y las manzanas a $6/kg son proporcionales (y=kx); y=2x+5 no lo es porque tiene un valor fijo (+5)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El costo total de comprar globos a $4 cada uno, sin ningún cargo adicional, es una relación proporcional.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: es y=4x, sin ningún cargo fijo, así que pasa por el origen y es proporcional."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

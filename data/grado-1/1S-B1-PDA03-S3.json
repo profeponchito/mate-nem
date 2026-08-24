@@ -83,6 +83,62 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "(6) × (-9) = -54. Signos diferentes dan negativo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 4 + 3 × (-6), el resultado es -14.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 3×(-6)=-18; luego 4+(-18)=-14."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "12 - 4 × (-3) = ___.",
+          "respuestaCorrecta": "24",
+          "retroalimentacion": "Primero la multiplicación: 4×(-3)=-12; luego 12-(-12)=24."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve aplicando jerarquía de operaciones: (-2) + 6 × (-3)",
+          "opciones": [
+            "20",
+            "-20",
+            "-14",
+            "14"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Primero la multiplicación: 6×(-3)=-18; luego -2+(-18)=-20."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "5 + 4 × (-3)",
+            "(-3) × (-6)",
+            "8 - 2 × (-4)"
+          ],
+          "columnaB": [
+            "16",
+            "-7",
+            "18"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "5+4×(-3)=-7; (-3)×(-6)=18; 8-2×(-4)=16."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-6) × (-7)",
+          "opciones": [
+            "36",
+            "42",
+            "-42",
+            "48"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-6) × (-7) = 42. Signos iguales dan positivo."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

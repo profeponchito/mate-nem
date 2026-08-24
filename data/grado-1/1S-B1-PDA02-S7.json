@@ -73,6 +73,56 @@
             2
           ],
           "retroalimentacion": "-25 m es la más profunda; -3 m es una posición intermedia; 10 m es la más alta."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-33 es menor que -28.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -33 < -28, porque -33 está más a la izquierda en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La lista -7, 6, -19, 1 ordenada de mayor a menor queda: 6, 1, -7, -19.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: de mayor a menor, 6 > 1 > -7 > -19."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -31, -27, -36, -29 es ___.",
+          "respuestaCorrecta": "-27",
+          "retroalimentacion": "Entre números negativos, el mayor es el que está más cerca del 0: -27 es el menos negativo."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un helicóptero vuela a 18 m y un submarino está a -33 m, ambos respecto al nivel del mar. ¿Cuál está más cerca del nivel del mar (del 0)?",
+          "opciones": [
+            "El helicóptero",
+            "El submarino",
+            "Ambos están a la misma distancia",
+            "No se puede saber"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El helicóptero está a 18 m del 0 y el submarino a 33 m; 18 es menor que 33, así que el helicóptero está más cerca."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada posición (respecto al nivel del mar) con su descripción.",
+          "columnaA": [
+            "-18 m",
+            "7 m",
+            "-40 m"
+          ],
+          "columnaB": [
+            "Es una posición intermedia",
+            "Es la más alta",
+            "Es la más profunda"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-40 m es la más profunda; -18 m es una posición intermedia; 7 m es la más alta."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

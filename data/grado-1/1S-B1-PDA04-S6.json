@@ -78,6 +78,56 @@
             0
           ],
           "retroalimentacion": "a=3,d=5: termino_6=3+5x5=28. a=9,d=-3: termino_4=9+3x-3=0. a=12,d=-2: termino_5=12+4x-2=4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una sucesion de fichas empieza en 3 fichas y aumenta 4 en cada figura. La figura 6 tiene 23 fichas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "a=3, d=4. termino_6 = 3 + (6-1)x4 = 3+20 = 23."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=7 y d=-2, el termino 6 de la sucesion es ___.",
+          "respuestaCorrecta": "-3",
+          "retroalimentacion": "termino_6 = 7 + (6-1)x-2 = 7-10 = -3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesion de palillos empieza en 4 palillos y aumenta 5 en cada figura. ¿Cuantos palillos tiene la figura 6?",
+          "opciones": [
+            "24",
+            "29",
+            "34",
+            "27"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "a=4, d=5. termino_6 = 4 + (6-1)x5 = 4+25 = 29."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sucesion de figuras (a y d) con el numero de elementos en la figura indicada.",
+          "columnaA": [
+            "a=6, d=3 -> figura 5",
+            "a=10, d=-2 -> figura 6",
+            "a=1, d=7 -> figura 4"
+          ],
+          "columnaB": [
+            "22",
+            "0",
+            "18"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "a=6,d=3,figura 5: 6+4x3=18. a=10,d=-2,figura 6: 10+5x-2=0. a=1,d=7,figura 4: 1+3x7=22."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Con a=9 y d=-1, el termino 8 de la sucesion es 2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "termino_8 = 9 + (8-1)x-1 = 9-7 = 2."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

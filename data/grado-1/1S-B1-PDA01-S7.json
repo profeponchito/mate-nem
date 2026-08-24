@@ -73,6 +73,56 @@
             0
           ],
           "retroalimentacion": "13/25 = 0.52; 1/25 = 0.04; 17/50 = 0.34."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "11/20 equivale a 0.55.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 11 ÷ 20 = 0.55."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.65 equivale a la fracción 3/5.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: 0.65 = 13/20, y 3/5 = 0.6, son distintos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "5/8 escrito como decimal es ___.",
+          "respuestaCorrecta": "0.625",
+          "retroalimentacion": "5 ÷ 8 = 0.625."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tanque de riego se llenó hasta 0.44 de su capacidad. ¿Qué fracción simplificada representa esa cantidad?",
+          "opciones": [
+            "11/25",
+            "4/25",
+            "9/25",
+            "2/5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "0.44 = 44/100, que simplificado entre 4 es 11/25."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+          "columnaA": [
+            "9/16",
+            "3/4",
+            "1/4"
+          ],
+          "columnaB": [
+            "0.5625",
+            "0.75",
+            "0.25"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "9/16 = 0.5625; 3/4 = 0.75; 1/4 = 0.25."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

@@ -114,6 +114,62 @@
             1
           ],
           "retroalimentacion": "'El cuádruple de un número más 9' es 4x+9; 'El triple de un número menos 4' es 3x-4; 'El doble de un número más 4' es 2x+4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe algebraicamente 'el triple de un número más 6'?",
+          "opciones": [
+            "3x+6",
+            "3x-6",
+            "6x+3",
+            "3(x+6)"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el triple de un número más 6' se traduce como 3x+6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'La mitad de un número menos 8' se escribe ___.",
+          "respuestaCorrecta": "x/2-8",
+          "retroalimentacion": "'la mitad de un número' es x/2, y 'menos 8' se resta: x/2-8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un cuadrado de lado x+5 es 4x+20.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "El cuadrado tiene 4 lados iguales de longitud x+5, entonces el perímetro es 4(x+5) = 4x+20."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un rectángulo tiene ancho x y largo x+9. ¿Cuál es su perímetro simplificado?",
+          "opciones": [
+            "4x+18",
+            "4x+9",
+            "2x+18",
+            "3x+18"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2(x) + 2(x+9) = 2x + 2x + 18 = 4x+18."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Une cada frase del lenguaje común con la expresión algebraica que le corresponde.",
+          "columnaA": [
+            "El cuádruple de un número más 7",
+            "El doble de un número menos 6",
+            "La mitad de un número más 12"
+          ],
+          "columnaB": [
+            "x/2+12",
+            "4x+7",
+            "2x-6"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "'El cuádruple más 7' es 4x+7; 'el doble menos 6' es 2x-6; 'la mitad más 12' es x/2+12."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

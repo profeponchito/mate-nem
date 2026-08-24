@@ -114,6 +114,56 @@
             0
           ],
           "retroalimentacion": "15/16 = 0.9375; 13/20 = 0.65; 3/5 = 0.6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la expresión decimal de 7/16?",
+          "opciones": [
+            "0.4375",
+            "0.716",
+            "0.437",
+            "4.375"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "7 ÷ 16 = 0.4375."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "5/16 escrito como decimal es ___.",
+          "respuestaCorrecta": "0.3125",
+          "retroalimentacion": "5 ÷ 16 = 0.3125."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "3/8 equivale a 0.375.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 3 ÷ 8 = 0.375."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "17/25 equivale a 0.68.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 17 ÷ 25 = 0.68."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+          "columnaA": [
+            "7/20",
+            "9/10",
+            "1/8"
+          ],
+          "columnaB": [
+            "0.125",
+            "0.35",
+            "0.9"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "7/20 = 0.35; 9/10 = 0.9; 1/8 = 0.125."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

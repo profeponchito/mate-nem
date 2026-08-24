@@ -86,6 +86,56 @@
             1
           ],
           "retroalimentacion": "a=4,d=-2: termino_5=4+4x-2=-4. a=2,d=3: termino_4=2+3x3=11. a=13,d=-3: termino_3=13+2x-3=7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=8 y d=-5, el término 5 es -12.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "término_5 = 8 + (5-1)x-5 = 8-20 = -12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=2 y d=7, el término 6 de la sucesión es ___.",
+          "respuestaCorrecta": "37",
+          "retroalimentacion": "término_6 = 2 + (6-1)x7 = 2+35 = 37."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesión de figuras con fichas empieza en 5 fichas y aumenta 3 en cada figura. ¿Cuántas fichas tiene la figura 7?",
+          "opciones": [
+            "20",
+            "23",
+            "26",
+            "18"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "a=5, d=3. término_7 = 5 + (7-1)x3 = 5+18 = 23."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada sucesión (a y d) con el valor del término solicitado.",
+          "columnaA": [
+            "a=10, d=-4 → término 5",
+            "a=3, d=8 → término 4",
+            "a=18, d=-2 → término 6"
+          ],
+          "columnaB": [
+            "8",
+            "27",
+            "-6"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "a=10,d=-4,término 5: 10+4x-4=-6. a=3,d=8,término 4: 3+3x8=27. a=18,d=-2,término 6: 18+5x-2=8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La diferencia constante de la sucesión 40, 33, 26, 19... es d=-7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Cada término disminuye 7 respecto al anterior: 33-40=-7."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

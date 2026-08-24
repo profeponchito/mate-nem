@@ -82,6 +82,62 @@
           ],
           "respuestaCorrecta": 3,
           "retroalimentacion": "'el triple de un número menos 7' se traduce como 3x-7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un triángulo con lados x, x+1 y 2x es 4x+1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "x + (x+1) + 2x = 4x + 1."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro simplificado de un rectángulo con ancho x y largo x+10 es ___.",
+          "respuestaCorrecta": "4x+20",
+          "retroalimentacion": "2(x) + 2(x+10) = 2x + 2x + 20 = 4x+20."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe algebraicamente 'el cuádruple de un número menos 6'?",
+          "opciones": [
+            "4x-6",
+            "4x+6",
+            "6-4x",
+            "4x-24"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el cuádruple de un número menos 6' se traduce como 4x-6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un pentágono regular tiene lado x+2. ¿Cuál es su perímetro simplificado?",
+          "opciones": [
+            "5x+10",
+            "5x+2",
+            "5x+7",
+            "10x+2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Al tener 5 lados iguales de longitud x+2, el perímetro es 5(x+2) = 5x+10."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase con su expresión algebraica.",
+          "columnaA": [
+            "El doble de un número más 10",
+            "El triple de un número menos 1",
+            "La mitad de un número más 6"
+          ],
+          "columnaB": [
+            "x/2+6",
+            "3x-1",
+            "2x+10"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "'El doble más 10' es 2x+10; 'el triple menos 1' es 3x-1; 'la mitad más 6' es x/2+6."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

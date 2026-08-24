@@ -73,6 +73,56 @@
             1
           ],
           "retroalimentacion": "(-14) + 5 = -9; (-3) × (-9) = 27; (18) ÷ (-3) = -6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 8 - 5 × (-3), el resultado es 23.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 5×(-3)=-15; luego 8-(-15)=23."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-42) ÷ (-7) = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "Signos iguales dan resultado positivo: (-42)÷(-7)=6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-8) × (5)",
+          "opciones": [
+            "-13",
+            "-40",
+            "3",
+            "40"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-8) × (5) = -40. Signos diferentes dan negativo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "(-17) + 6",
+            "(-4) × (-8)",
+            "(20) ÷ (-5)"
+          ],
+          "columnaB": [
+            "32",
+            "-4",
+            "-11"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "(-17)+6=-11; (-4)×(-8)=32; 20÷(-5)=-4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-6) - (-9) = 3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Restar un negativo equivale a sumar: -6 - (-9) = -6 + 9 = 3."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

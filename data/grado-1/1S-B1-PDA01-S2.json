@@ -54,6 +54,56 @@
           "frase": "23/25 escrito como decimal es ___.",
           "respuestaCorrecta": "0.92",
           "retroalimentacion": "23 ÷ 25 = 0.92."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.75 escrito como fracción simplificada es ___.",
+          "respuestaCorrecta": "3/4",
+          "retroalimentacion": "0.75 = 75/100, que simplificado entre 25 es 3/4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "9/16 escrito como decimal es ___.",
+          "respuestaCorrecta": "0.5625",
+          "retroalimentacion": "9 ÷ 16 = 0.5625."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la fracción simplificada de 0.45?",
+          "opciones": [
+            "9/20",
+            "3/5",
+            "45/100",
+            "4/5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "0.45 = 45/100, que simplificado entre 5 es 9/20."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.6 equivale a la fracción 3/5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 0.6 = 6/10, que simplificado entre 2 es 3/5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada decimal con su fracción simplificada.",
+          "columnaA": [
+            "0.2",
+            "0.8",
+            "0.15"
+          ],
+          "columnaB": [
+            "4/5",
+            "3/20",
+            "1/5"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "0.2 = 1/5; 0.8 = 4/5; 0.15 = 3/20."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

@@ -59,6 +59,56 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "380 − 150 + 60 − 40 = 250."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-11) + 4 = -7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Signos diferentes: se resta 11-4=7 y se conserva el signo del mayor (negativo): -7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-6) - (-10) = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Restar un negativo equivale a sumar: -6 - (-10) = -6 + 10 = 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un elevador sube 12 pisos, baja 5, sube 3 y baja 8. ¿En qué piso relativo al inicio terminó?",
+          "opciones": [
+            "3",
+            "2",
+            "-2",
+            "0"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "12 - 5 + 3 - 8 = 2."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(-14) + 9",
+            "(18) - (-7)",
+            "(-3) - (5)"
+          ],
+          "columnaB": [
+            "25",
+            "-8",
+            "-5"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "(-14)+9=-5; 18-(-7)=25; (-3)-(5)=-8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-19) + (12) = ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "Signos diferentes: se resta 19-12=7 y se conserva el signo del mayor (negativo): -7."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

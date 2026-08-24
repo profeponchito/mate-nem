@@ -54,6 +54,56 @@
           "frase": "(-8) - (3) = ___.",
           "respuestaCorrecta": "-11",
           "retroalimentacion": "(-8) - (3) = -11."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-7) × (-6)",
+          "opciones": [
+            "36",
+            "42",
+            "-42",
+            "-36"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-7)×(-6)=42. Signos iguales dan resultado positivo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-24) ÷ 4 = -6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Signos diferentes dan resultado negativo: (-24)÷4=-6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(9) × (-5) = ___.",
+          "respuestaCorrecta": "-45",
+          "retroalimentacion": "Signos diferentes dan resultado negativo: 9×(-5)=-45."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(-8) × (-3)",
+            "(36) ÷ (-6)",
+            "(-45) ÷ (-9)"
+          ],
+          "columnaB": [
+            "5",
+            "24",
+            "-6"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(-8)×(-3)=24; 36÷(-6)=-6; (-45)÷(-9)=5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un buzo desciende 15 m, luego sube 6 m, desciende otros 9 m y sube 4 m. Su posición final respecto al punto de partida es ___ m.",
+          "respuestaCorrecta": "-14",
+          "retroalimentacion": "-15 + 6 - 9 + 4 = -14."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

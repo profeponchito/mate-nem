@@ -114,6 +114,56 @@
             0
           ],
           "retroalimentacion": "De frío a caliente: -12°C < -11°C < 9°C."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de menor a mayor?",
+          "opciones": [
+            "-9, -2, 4, 7",
+            "7, 4, -2, -9",
+            "-2, -9, 4, 7",
+            "4, -9, -2, 7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -9 < -2 < 4 < 7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -16, 9, -3, 12 es ___.",
+          "respuestaCorrecta": "-16",
+          "retroalimentacion": "-16 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la lista 10, -2, -9, -14, el número -2 es el segundo mayor.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: de mayor a menor la lista es 10, -2, -9, -14, así que -2 es el segundo mayor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un buzo a -40 m está menos profundo que uno a -25 m.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: -40 está más lejos del 0 hacia abajo que -25, así que el buzo a -40 m está MÁS profundo, no menos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada altura (respecto al nivel del mar) con su posición relativa entre las tres.",
+          "columnaA": [
+            "-14 m",
+            "3 m",
+            "-6 m"
+          ],
+          "columnaB": [
+            "Es la más alta",
+            "Es la más baja",
+            "Es intermedia"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "De más baja a más alta: -14 m < -6 m < 3 m."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

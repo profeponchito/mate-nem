@@ -59,6 +59,56 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Primero la multiplicación: 3×(-4)=-12; luego 8-(-12)=20."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-6) × (-9) = 54.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: signos iguales dan resultado positivo: 54."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-32) ÷ 8 = -4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: signos diferentes dan resultado negativo: -32÷8=-4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "5 - 3 × (-4) = ___.",
+          "respuestaCorrecta": "17",
+          "retroalimentacion": "Primero la multiplicación: 3×(-4)=-12; luego 5-(-12)=17."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve aplicando jerarquía de operaciones: 9 + 2 × (-5)",
+          "opciones": [
+            "1",
+            "-1",
+            "-19",
+            "19"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Primero la multiplicación: 2×(-5)=-10; luego 9+(-10)=-1."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(-8) × (-5)",
+            "(-27) ÷ (-3)",
+            "4 - 6 × (-2)"
+          ],
+          "columnaB": [
+            "16",
+            "40",
+            "9"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(-8)×(-5)=40; (-27)÷(-3)=9; 4-6×(-2)=16."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

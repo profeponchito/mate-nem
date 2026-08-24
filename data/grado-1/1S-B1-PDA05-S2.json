@@ -54,6 +54,56 @@
           "frase": "'El doble de un número menos 3' se escribe ___.",
           "respuestaCorrecta": "2x-3",
           "retroalimentacion": "'el doble de un número menos 3' se traduce como 2x-3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "El perímetro de un rectángulo con ancho x y largo x+3 es:",
+          "opciones": [
+            "4x+6",
+            "4x+3",
+            "2x+6",
+            "3x+6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2(x) + 2(x+3) = 2x + 2x + 6 = 4x+6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El triple de un número más 9' se escribe ___.",
+          "respuestaCorrecta": "3x+9",
+          "retroalimentacion": "'el triple de un número más 9' se traduce como 3x+9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro de un rectángulo con ancho x y largo 3x es ___.",
+          "respuestaCorrecta": "8x",
+          "retroalimentacion": "2(x) + 2(3x) = 2x + 6x = 8x."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "'El doble de un número menos 8' se escribe como 2x-8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "'el doble de un número' es 2x, y 'menos 8' se resta: 2x-8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase con su expresión algebraica.",
+          "columnaA": [
+            "El triple de un número más 1",
+            "El doble de un número menos 4",
+            "El triple de un número menos 3"
+          ],
+          "columnaB": [
+            "3x-3",
+            "2x-4",
+            "3x+1"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "'El triple más 1' es 3x+1; 'el doble menos 4' es 2x-4; 'el triple menos 3' es 3x-3."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

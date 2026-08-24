@@ -114,6 +114,56 @@
             2
           ],
           "retroalimentacion": "(8) × (6)=48; (13) + (6)=19; (-4) × (9)=-36."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 6 - 4 × (-2), el resultado es 14.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 4×(-2)=-8; luego 6-(-8)=14."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-9) × (5) = ___.",
+          "respuestaCorrecta": "-45",
+          "retroalimentacion": "Signos diferentes dan negativo: (-9)×5=-45."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-36) ÷ (-4)",
+          "opciones": [
+            "-9",
+            "9",
+            "8",
+            "-8"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-36) ÷ (-4) = 9. Signos iguales dan positivo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada operación con su resultado correcto.",
+          "columnaA": [
+            "(-5) × (7)",
+            "2 + 6 × (-3)",
+            "(28) ÷ (-4)"
+          ],
+          "columnaB": [
+            "-7",
+            "-35",
+            "-16"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(-5)×7=-35; 2+6×(-3)=-16; 28÷(-4)=-7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-6) × (-8) = 48.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Signos iguales dan resultado positivo: (-6)×(-8)=48."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

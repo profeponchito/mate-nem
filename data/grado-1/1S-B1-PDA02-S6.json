@@ -79,6 +79,62 @@
             2
           ],
           "retroalimentacion": "De más bajo a más alto: -6 m < -1 m < 5 m."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La lista -9, -4, 0, 3 está ordenada de menor a mayor.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -9 < -4 < 0 < 3."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Ordenados de menor a mayor, el tercer número de la lista 5, -12, 0, -3 es ___.",
+          "respuestaCorrecta": "0",
+          "retroalimentacion": "De menor a mayor: -12, -3, 0, 5. El tercer lugar es 0."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": [
+            "9, 2, -4, -11",
+            "-11, -4, 2, 9",
+            "2, 9, -4, -11",
+            "9, -4, 2, -11"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 9 > 2 > -4 > -11."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -8, 5, -1, 3",
+          "opciones": [
+            "-8, -1, 3, 5",
+            "5, 3, -1, -8",
+            "-1, -8, 3, 5",
+            "3, -1, -8, 5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -8 < -1 < 3 < 5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada profundidad (respecto al nivel del mar) con su posición relativa entre las tres.",
+          "columnaA": [
+            "-9 m",
+            "-2 m",
+            "4 m"
+          ],
+          "columnaB": [
+            "Es la más profunda",
+            "Es la más alta",
+            "Es intermedia"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "De más profunda a más alta: -9 m < -2 m < 4 m."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

@@ -58,6 +58,56 @@
           "frase": "Si k=6 y x=15, entonces y = ___.",
           "respuestaCorrecta": "90",
           "retroalimentacion": "y = kx = 6 × 15 = 90."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cual de las siguientes situaciones es proporcional?",
+          "opciones": [
+            "El estacionamiento: $18 fijos + $4/hora",
+            "El costo de peras a $11/kg",
+            "La renta de patines: $22 fijos + $6/hora",
+            "El boleto con $9 de descuento fijo"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El costo de peras es y=11x: si compras 0 kg, pagas $0, es proporcional. Las demas tienen un cargo o descuento fijo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La relacion y = 20x - 5 es proporcional.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Tiene un valor fijo (-5) restado, asi que no es proporcional."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La relacion y = 17x es proporcional.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Es de la forma y=kx (con k=17) y pasa por el origen (0,0)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si k=9 y x=8, entonces y = ___.",
+          "respuestaCorrecta": "72",
+          "retroalimentacion": "y = kx = 9 × 8 = 72."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada relacion con su tipo.",
+          "columnaA": [
+            "y=14x",
+            "y=5x+2",
+            "El costo de plumas a $7 c/u"
+          ],
+          "columnaB": [
+            "No proporcional (+2 fijo)",
+            "Proporcional (y=14x)",
+            "Proporcional (y=7x)"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "y=14x y las plumas a $7 c/u son proporcionales (y=kx); y=5x+2 no lo es porque tiene un valor fijo (+2)."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

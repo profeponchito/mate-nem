@@ -86,6 +86,56 @@
             0
           ],
           "retroalimentacion": "6x+7=43 → x=6; 9x-4=59 → x=7; 3x-8=2x+5 → x=13."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 8x - 6 = 34",
+          "opciones": [
+            "x=5",
+            "x=4",
+            "x=40",
+            "x=6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "8x = 34+6 = 40; x = 40÷8 = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 5x + 12 = 2x + 33 es x = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5x-2x = 33-12 → 3x=21 → x=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 9x - 7 = 6x + 20. x = ___.",
+          "respuestaCorrecta": "9",
+          "retroalimentacion": "9x-6x = 20+7 → 3x=27 → x=9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: x + 55 = 120. x = ___.",
+          "respuestaCorrecta": "65",
+          "retroalimentacion": "x = 120-55 = 65."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Une cada ecuación con el valor de x que la resuelve.",
+          "columnaA": [
+            "6x - 9 = 39",
+            "x + 120 = 300",
+            "5x + 3 = 3x + 21"
+          ],
+          "columnaB": [
+            "180",
+            "9",
+            "8"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "6x-9=39 → x=8; x+120=300 → x=180; 5x+3=3x+21 → x=9."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

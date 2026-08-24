@@ -86,6 +86,62 @@
             1
           ],
           "retroalimentacion": "x=2,y=16: k=8. x=5,y=45: k=9. x=3,y=15: k=5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de estas relaciones NO es proporcional?",
+          "opciones": [
+            "El costo de limones a $8/kg",
+            "La renta de kayak: $35 fijos + $15/hora",
+            "y=6x",
+            "El costo de globos a $3 c/u"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La renta de kayak tiene un cargo fijo de $35 que se paga aunque no se use ninguna hora, así que no es proporcional."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La relacion y = 9x + 7 es proporcional.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Tiene un valor fijo (+7) que se suma aunque x=0, asi que no es proporcional."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si k=12 y x=6, entonces y = ___.",
+          "respuestaCorrecta": "72",
+          "retroalimentacion": "y = kx = 12 × 6 = 72."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el tipo de relación que representa.",
+          "columnaA": [
+            "Estacionamiento: $10 fijos + $2/hora",
+            "Naranjas a $8/kg",
+            "Playeras a $12 c/u"
+          ],
+          "columnaB": [
+            "Proporcional (y=8x)",
+            "No proporcional ($10 fijos)",
+            "Proporcional (y=12x)"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "Las naranjas y las playeras son proporcionales (y=kx); el estacionamiento no lo es, porque tiene un cargo fijo."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una tabla, x=6 → y=54 y x=9 → y=81. ¿Cuál es la constante de proporcionalidad k?",
+          "opciones": [
+            "6",
+            "9",
+            "54",
+            "81"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = y/x = 54/6 = 9 (se confirma con 81/9 = 9)."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

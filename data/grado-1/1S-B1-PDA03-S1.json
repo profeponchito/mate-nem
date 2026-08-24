@@ -53,6 +53,56 @@
           "enunciado": "En la expresión 9 - 5 × (-5), el resultado es 32.",
           "respuestaCorrecta": false,
           "retroalimentacion": "Primero la multiplicación: -5×(-5)=25; luego 9+(25)=34."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 6 + 4 × (-3), el resultado es -6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 4×(-3)=-12; luego 6+(-12)=-6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-20) ÷ (-4)",
+          "opciones": [
+            "-5",
+            "5",
+            "-4",
+            "4"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-20) ÷ (-4) = 5. Signos iguales dan resultado positivo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "8 - 6 × (-2) = ___.",
+          "respuestaCorrecta": "20",
+          "retroalimentacion": "Primero la multiplicación: 6×(-2)=-12; luego 8-(-12)=20."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "7 + 2 × (-5)",
+            "(-12) ÷ (-4)",
+            "10 - 3 × (-2)"
+          ],
+          "columnaB": [
+            "16",
+            "-3",
+            "3"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "7+2×(-5)=-3; (-12)÷(-4)=3; 10-3×(-2)=16."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión (-9) + 5 × (-2), el resultado es -19.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 5×(-2)=-10; luego -9+(-10)=-19."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

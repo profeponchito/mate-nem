@@ -54,6 +54,56 @@
           "frase": "Resuelve: 7x + 4 = 53. x = ___.",
           "respuestaCorrecta": "7",
           "retroalimentacion": "7x = 53-4 = 49; x = 49÷7 = 7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 5x + 6 = 31",
+          "opciones": [
+            "x=5",
+            "x=6",
+            "x=7",
+            "x=25"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5x = 31-6 = 25; x = 25÷5 = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 8x - 5 = 27 es x = 4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8x = 27+5 = 32; x = 32÷8 = 4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 4x + 9 = 37. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "4x = 37-9 = 28; x = 28÷4 = 7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 6x - 8 = 34. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "6x = 34+8 = 42; x = 42÷6 = 7."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "2x + 7 = 19",
+            "5x - 7 = 33",
+            "3x + 8 = x + 16"
+          ],
+          "columnaB": [
+            "8",
+            "4",
+            "6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "2x+7=19 → x=6; 5x-7=33 → x=8; 3x+8=x+16 → x=4."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

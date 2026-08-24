@@ -86,6 +86,62 @@
             0
           ],
           "retroalimentacion": "Cuadrado x+3: 4(x+3)=4x+12. Rectangulo x,x+7: 2x+2(x+7)=4x+14. Triangulo x,x+5,3x: x+(x+5)+3x=5x+5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Como se escribe algebraicamente 'el triple de un numero mas 9'?",
+          "opciones": [
+            "3x+9",
+            "3x-9",
+            "9x+3",
+            "3(x+9)"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el triple de un numero mas 9' se traduce como 3x+9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perimetro de un cuadrado de lado x+8 es ___.",
+          "respuestaCorrecta": "4x+32",
+          "retroalimentacion": "El cuadrado tiene 4 lados iguales de longitud x+8, entonces el perimetro es 4(x+8) = 4x+32."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perimetro de un rectangulo con ancho x y largo 5x es 12x.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2(x) + 2(5x) = 2x + 10x = 12x."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo tiene lados x, 3x-2 y x+5. ¿Cuál es su perímetro simplificado?",
+          "opciones": [
+            "5x+3",
+            "5x-3",
+            "5x+7",
+            "4x+3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x + (3x-2) + (x+5) = 5x+3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Une cada frase con su expresión algebraica correspondiente.",
+          "columnaA": [
+            "El cuádruple de un número más 2",
+            "El doble de un número menos 9",
+            "La mitad de un número menos 7"
+          ],
+          "columnaB": [
+            "x/2-7",
+            "2x-9",
+            "4x+2"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "'El cuádruple más 2' es 4x+2; 'el doble menos 9' es 2x-9; 'la mitad menos 7' es x/2-7."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

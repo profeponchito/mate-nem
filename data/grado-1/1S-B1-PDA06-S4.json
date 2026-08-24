@@ -114,6 +114,56 @@
             0
           ],
           "retroalimentacion": "9x + 3 = 12 → x=1; 5x - 1 = 9 → x=2; 6x - 9 = 75 → x=14."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 7x - 6 = 43",
+          "opciones": [
+            "x=7",
+            "x=6",
+            "x=8",
+            "x=49"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "7x = 43+6 = 49; x = 49÷7 = 7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 4x + 9 = 2x + 21 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "4x-2x = 21-9 → 2x=12 → x=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 3x - 7 = 2x + 5. x = ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "3x-2x = 5+7 → x=12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 9x + 4 = 40. x = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "9x = 40-4 = 36; x = 36÷9 = 4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Une cada ecuación con el valor de x que la resuelve.",
+          "columnaA": [
+            "6x - 5 = 43",
+            "x + 65 = 200",
+            "4x + 7 = 3x + 20"
+          ],
+          "columnaB": [
+            "135",
+            "13",
+            "8"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "6x-5=43 → x=8; x+65=200 → x=135; 4x+7=3x+20 → x=13."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

@@ -64,6 +64,56 @@
           "enunciado": "En una tabla, x=5 → y=40 y x=10 → y=80, la constante de proporcionalidad es k=8.",
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: k = 40/5 = 8 (se confirma con 80/10 = 8)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una tabla, x=3 → y=21. La constante de proporcionalidad k = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "k = y/x = 21/3 = 7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una tabla, x=6 → y=54 y x=9 → y=81, la constante de proporcionalidad es k=9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: k = 54/6 = 9 (se confirma con 81/9 = 9)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cual de las siguientes situaciones es proporcional?",
+          "opciones": [
+            "El taxi: $7 fijos + $2/km",
+            "El costo de jugos a $11 c/u",
+            "La renta de cancha: $7 fijos + $11/hora",
+            "El boleto con $7 de descuento fijo"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El costo de jugos es y=11x: si compras 0, pagas $0, es proporcional. Las demas tienen un cargo o descuento fijo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada tabla con su constante de proporcionalidad k.",
+          "columnaA": [
+            "x=2 → y=24",
+            "x=4 → y=28",
+            "x=5 → y=40"
+          ],
+          "columnaB": [
+            "7",
+            "8",
+            "12"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x=2,y=24: k=12. x=4,y=28: k=7. x=5,y=40: k=8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si la grafica de una relacion es una recta que NO pasa por el origen, la relacion es proporcional.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: si la recta no pasa por el origen (0,0), la relacion NO es proporcional, porque tiene un valor fijo."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

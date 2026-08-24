@@ -58,6 +58,56 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "10x = 44+6 = 50; x = 50÷10 = 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 7x + 5 = 47",
+          "opciones": [
+            "x=6",
+            "x=7",
+            "x=5",
+            "x=42"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "7x = 47-5 = 42; x = 42÷7 = 6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 9x - 4 = 41 es x = 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "9x = 41+4 = 45; x = 45÷9 = 5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 4x + 11 = 43. x = ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "4x = 43-11 = 32; x = 32÷4 = 8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 3x - 8 = 22. x = ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "3x = 22+8 = 30; x = 30÷3 = 10."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "6x + 7 = 55",
+            "x - 14 = 20",
+            "5x - 9 = 26"
+          ],
+          "columnaB": [
+            "34",
+            "7",
+            "8"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "6x+7=55 → x=8; x-14=20 → x=34; 5x-9=26 → x=7."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

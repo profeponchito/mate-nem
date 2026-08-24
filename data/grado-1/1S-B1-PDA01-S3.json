@@ -83,6 +83,62 @@
           ],
           "respuestaCorrecta": 3,
           "retroalimentacion": "7 ÷ 10 = 0.7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un atleta completó 0.6 de una carrera de 10 km. ¿Qué fracción simplificada representa la distancia recorrida?",
+          "opciones": [
+            "3/5",
+            "2/3",
+            "5/6",
+            "4/5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "0.6 = 6/10, que simplificado entre 2 es 3/5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una botella contiene 3/4 de litro de agua. Expresado en decimal, es ___ litros.",
+          "respuestaCorrecta": "0.75",
+          "retroalimentacion": "3 ÷ 4 = 0.75."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si un corredor recorrió 0.25 de una pista, eso equivale a 1/4 de la pista.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 0.25 = 25/100, que simplificado es 1/4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la expresión decimal de 9/20?",
+          "opciones": [
+            "0.45",
+            "0.9",
+            "0.29",
+            "4.5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "9 ÷ 20 = 0.45."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con la fracción que representa la parte señalada.",
+          "columnaA": [
+            "Comió 0.5 de una pizza",
+            "Usó 0.2 de un rollo de cinta",
+            "Bebió 0.75 de un jugo"
+          ],
+          "columnaB": [
+            "3/4",
+            "1/2",
+            "1/5"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "0.5 = 1/2; 0.2 = 1/5; 0.75 = 3/4."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

@@ -82,6 +82,56 @@
           ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "4x = 12; x = 12÷4 = 3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 5x - 4 = 3x + 10 es x = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5x-3x = 10+4 → 2x=14 → x=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x - 5 = 3x + 19. x = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "7x-3x = 19+5 → 4x=24 → x=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 9x + 2 = 47. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "9x = 47-2 = 45; x = 45÷9 = 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 6x + 7 = 2x + 27",
+          "opciones": [
+            "x=5",
+            "x=6",
+            "x=8",
+            "x=4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "6x-2x = 27-7 → 4x=20 → x=5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "8x - 3 = 5x + 24",
+            "2x + 9 = 25",
+            "4x - 6 = 2x + 8"
+          ],
+          "columnaB": [
+            "7",
+            "9",
+            "8"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "8x-3=5x+24 → x=9; 2x+9=25 → x=8; 4x-6=2x+8 → x=7."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
