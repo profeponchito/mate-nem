@@ -1,0 +1,122 @@
+{
+  "id": "2S-B1-PDA02-S4",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 11,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
+  "problematizacion": {
+    "contexto": "Para el video de la semana de matemáticas que subirán a redes sociales, tu equipo decide explicar con un ejemplo real qué es el MCD, qué es el mcm y para qué sirven las propiedades de las operaciones, usando la organización de una kermés escolar con dulces, mesas y turnos de venta.",
+    "pregunta": "Usando el ejemplo de la kermés, ¿cómo explicarías cuándo conviene usar el MCD, cuándo el mcm, y cómo ayudan las propiedades de las operaciones a calcular más rápido?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: el máximo común divisor (MCD) es el mayor número que divide exactamente a dos números, y sirve para repartir en partes iguales. El mínimo común múltiplo (mcm) es el menor número que es múltiplo de ambos, y sirve para sincronizar eventos que se repiten. Además, las operaciones cumplen las propiedades conmutativa (a+b=b+a), asociativa ((a+b)+c=a+(b+c)) y distributiva (a×(b+c)=a×b+a×c).",
+      "ejemplos": [
+        "El MCD de 20 y 30 es 10. Correcto: 20=2²×5, 30=2×3×5. MCD = 2×5 = 10."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 33 y 21?",
+          "opciones": [
+            "229",
+            "231",
+            "252",
+            "233"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "mcm(33,21) = 231."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ejemplo con la propiedad que muestra.",
+          "columnaA": [
+            "5×(3+2)=5×3+5×2",
+            "3+4=4+3",
+            "(2+3)+5=2+(3+5)"
+          ],
+          "columnaB": [
+            "Asociativa",
+            "Distributiva",
+            "Conmutativa"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "El primero es distributiva, el segundo conmutativa, el tercero asociativa."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "MCD de 12 y 24",
+            "mcm de 22 y 44",
+            "MCD de 51 y 25"
+          ],
+          "columnaB": [
+            "44",
+            "12",
+            "1"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "MCD de 12 y 24 = 12; mcm de 22 y 44 = 44; MCD de 51 y 25 = 1."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "mcm de 48 y 41",
+            "MCD de 14 y 34",
+            "mcm de 6 y 17"
+          ],
+          "columnaB": [
+            "1968",
+            "2",
+            "102"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "mcm de 48 y 41 = 1968; MCD de 14 y 34 = 2; mcm de 6 y 17 = 102."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "MCD de 35 y 53",
+            "MCD de 18 y 42",
+            "MCD de 46 y 6"
+          ],
+          "columnaB": [
+            "6",
+            "1",
+            "2"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "MCD de 35 y 53 = 1; MCD de 18 y 42 = 6; MCD de 46 y 6 = 2."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "2S-B1-PDA05-S4",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 32,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
+  "problematizacion": {
+    "contexto": "Para ampliar la cancha de basquetbol de la unidad deportiva, van a extender cada lado del área cuadrada actual (de lado x) en 4 metros; además, para calcular la pintura necesaria saben que un bote cubre x² metros cuadrados y van a comprar x³ botes iguales.",
+    "pregunta": "¿Cuál es la expresión algebraica del área ampliada de la cancha, y cuál representa el total de metros cuadrados que cubrirán juntos los botes de pintura?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: el área de un cuadrado de lado (x+a) es (x+a)² = x² + 2ax + a². Además, al multiplicar potencias de la misma base se suman los exponentes (xᵐ×xⁿ=xᵐ⁺ⁿ), y al elevar una potencia a otra potencia se multiplican los exponentes ((xᵐ)ⁿ=xᵐˣⁿ).",
+      "ejemplos": [
+        "(x+4)² = x² + 8x + 16. Correcto: 2(4)=8 y 4²=16, entonces (x+4)² = x²+8x+16."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el desarrollo de (x+4)²?",
+          "opciones": [
+            "x²+8x+4",
+            "x²+16",
+            "x²+8x+16",
+            "x²+4x+16"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "(x+4)² = x² + 2(4)x + 4² = x²+8x+16."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+5)²",
+            "x³×x⁴",
+            "(x²)⁵"
+          ],
+          "columnaB": [
+            "x¹⁰",
+            "x²+10x+25",
+            "x⁷"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(x+5)²=x²+10x+25; x³×x⁴=x⁷; (x²)⁵=x¹⁰."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+8)²",
+            "x^2×x^8",
+            "(x^6)^2"
+          ],
+          "columnaB": [
+            "x^12",
+            "x²+16x+64",
+            "x^10"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(x+8)²=x²+16x+64; x^2×x^8=x^10; (x^6)^2=x^12."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+6)²",
+            "x^2×x^3",
+            "(x^5)^4"
+          ],
+          "columnaB": [
+            "x^5",
+            "x²+12x+36",
+            "x^20"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "(x+6)²=x²+12x+36; x^2×x^3=x^5; (x^5)^4=x^20."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+9)²",
+            "x^5×x^2",
+            "(x^5)^2"
+          ],
+          "columnaB": [
+            "x²+18x+81",
+            "x^10",
+            "x^7"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "(x+9)²=x²+18x+81; x^5×x^2=x^7; (x^5)^2=x^10."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

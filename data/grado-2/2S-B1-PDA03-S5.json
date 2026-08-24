@@ -1,0 +1,66 @@
+{
+  "id": "2S-B1-PDA03-S5",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 19,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: identificar proporcionalidad directa y calcular k",
+  "contenido": "Resolución de problemas de proporcionalidad directa.",
+  "pda": "Resuelve problemas de proporcionalidad directa mediante el valor unitario, la constante de proporcionalidad y otros procedimientos.",
+  "problematizacion": {
+    "contexto": "En la feria de tu colonia, un puesto de juegos mecánicos vende boletos: 3 boletos cuestan $45. Quieres saber si te conviene comprar 7 boletos de una sola vez o ir comprando de poco en poco durante la noche.",
+    "pregunta": "¿Cuál es el precio de un solo boleto (la constante k), y cuánto pagarías en total por 7 boletos?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.5",
+      "titulo": "Repaso: identificar proporcionalidad directa y calcular k",
+      "explicacion": "Recuerda: dos cantidades son directamente proporcionales cuando su razón se mantiene constante. La constante de proporcionalidad k = y ÷ x representa el valor unitario (por ejemplo, el precio de una sola pieza), y sirve para calcular y = k × x con cualquier otro valor de x.",
+      "ejemplos": [
+        "Si 3 boletos de feria cuestan $45, entonces k = 45 ÷ 3 = 15 por boleto. Para 7 boletos: 7 × 15 = $105."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 3 boletos de feria cuestan $45, entonces 7 boletos cuestan $105.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: k = 45÷3 = 15 por boleto; 7×15 = $105."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 6 refrescos cuestan $72, entonces 9 refrescos cuestan $___.",
+          "respuestaCorrecta": "108",
+          "retroalimentacion": "k = 72÷6 = 12 por refresco. 9×12 = $108."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 8 tortillas cuestan $16, entonces 20 tortillas cuestan $42.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 16÷8 = 2 por tortilla. 20×2 = $40, no $42."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 7 playeras cuestan $560, entonces 4 playeras cuestan $___.",
+          "respuestaCorrecta": "320",
+          "retroalimentacion": "k = 560÷7 = 80 por playera. 4×80 = $320."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 5 paquetes de agua cuestan $75, ¿cuánto cuestan 9 paquetes?",
+          "opciones": [
+            "$125",
+            "$135",
+            "$115",
+            "$145"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 75÷5 = 15 por paquete. 9×15 = $135."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

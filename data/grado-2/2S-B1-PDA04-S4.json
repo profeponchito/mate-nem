@@ -1,0 +1,122 @@
+{
+  "id": "2S-B1-PDA04-S4",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 25,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Regularidades y Patrones.",
+  "pda": "Representa algebraicamente una sucesión con progresión cuadrática de figuras y números.",
+  "problematizacion": {
+    "contexto": "El equipo de porristas de la secundaria arma formaciones cuadradas para la final del torneo: en la formación 1 hay 1 integrante, en la 2 hay 4, en la 3 hay 9... y la entrenadora quiere planear la formación 8 para el cierre sin ir formación por formación.",
+    "pregunta": "Si el número de integrantes sigue el patrón n², ¿cuántas porristas necesita reunir la entrenadora para armar la formación número 8?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: en una progresión cuadrática los términos siguen el patrón del cuadrado de su posición (n²): 1, 4, 9, 16... Si la sucesión es un múltiplo de eso, como 2n², compara cada término con n² para encontrar el factor constante que los relaciona.",
+      "ejemplos": [
+        "El término 7 de la sucesión n² es 49. Correcto: 7² = 49."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesión de figuras usa 2n² fichas. ¿Cuántas fichas tiene la figura 6?",
+          "opciones": [
+            "50",
+            "32",
+            "128",
+            "72"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "2n² en n=6: 2×6² = 72."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión algebraica con el valor de su término 4.",
+          "columnaA": [
+            "n²",
+            "2n²",
+            "n²+1"
+          ],
+          "columnaB": [
+            "17",
+            "32",
+            "16"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "n²: 4²=16. 2n²: 2×16=32. n²+1: 16+1=17."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión algebraica con el valor de su término indicado.",
+          "columnaA": [
+            "n² en n=4",
+            "2n² en n=4",
+            "n²+1 en n=4"
+          ],
+          "columnaB": [
+            "32",
+            "16",
+            "17"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "n² en n=4 = 16; 2n² en n=4 = 32; n²+1 en n=4 = 17."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión algebraica con el valor de su término indicado.",
+          "columnaA": [
+            "n² en n=6",
+            "2n² en n=6",
+            "n²+1 en n=6"
+          ],
+          "columnaB": [
+            "36",
+            "37",
+            "72"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "n² en n=6 = 36; 2n² en n=6 = 72; n²+1 en n=6 = 37."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión algebraica con el valor de su término indicado.",
+          "columnaA": [
+            "n² en n=5",
+            "2n² en n=5",
+            "n²+1 en n=5"
+          ],
+          "columnaB": [
+            "50",
+            "26",
+            "25"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "n²=25, 2n²=50, n²+1=26, evaluando n=5 en cada expresión."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

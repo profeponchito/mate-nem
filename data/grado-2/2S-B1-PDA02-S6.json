@@ -1,0 +1,87 @@
+{
+  "id": "2S-B1-PDA02-S6",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 13,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: mcm, MCD y las propiedades de las operaciones",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
+  "problematizacion": {
+    "contexto": "Dos amigas entrenan en la pista de la unidad deportiva: una completa una vuelta cada 12 minutos y la otra cada 18 minutos, y arrancaron juntas desde la misma línea de salida. Mientras las esperas en las gradas, calculas cuánto costarán 4 botellas de agua más 4 barras energéticas usando 4×(precio del agua + precio de la barra) en un solo paso, en lugar de sumar cada producto aparte.",
+    "pregunta": "¿Después de cuántos minutos volverán a coincidir las dos amigas en la línea de salida, y qué propiedad te permitió calcular el costo del refrigerio en un solo paso?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.6",
+      "titulo": "Repaso: mcm, MCD y las propiedades de las operaciones",
+      "explicacion": "Recuerda: el mcm sirve para saber cada cuánto coinciden eventos que se repiten, y el MCD para repartir en partes iguales. Además, las operaciones cumplen las propiedades conmutativa (a+b=b+a), asociativa ((a+b)+c=a+(b+c)) y distributiva (a×(b+c)=a×b+a×c).",
+      "ejemplos": [
+        "Si dos autobuses pasan cada 12 y 18 minutos, mcm(12,18)=36: coinciden cada 36 minutos.",
+        "4×(5+6)=4×5+4×6 es un ejemplo de la propiedad distributiva."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 12 y 18?",
+          "opciones": [
+            "6",
+            "36",
+            "216",
+            "24"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "mcm(12,18) = 36."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 54 y 81?",
+          "opciones": [
+            "9",
+            "27",
+            "3",
+            "18"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "54=2×3³, 81=3⁴. MCD = 3³ = 27."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "9×(4+7)=9×4+9×7 es un ejemplo de la propiedad conmutativa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "9×(4+7)=9×4+9×7 corresponde a la propiedad distributiva, no conmutativa."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 10 y 16 es ___.",
+          "respuestaCorrecta": "80",
+          "retroalimentacion": "mcm(10,16) = 80."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ejemplo con la propiedad que muestra.",
+          "columnaA": [
+            "8+5=5+8",
+            "(4+1)+9=4+(1+9)",
+            "6×(2+9)=6×2+6×9"
+          ],
+          "columnaB": [
+            "Distributiva",
+            "Conmutativa",
+            "Asociativa"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "El primero es conmutativa, el segundo asociativa, el tercero distributiva."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}

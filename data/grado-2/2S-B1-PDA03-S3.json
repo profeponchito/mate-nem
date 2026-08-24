@@ -1,0 +1,91 @@
+{
+  "id": "2S-B1-PDA03-S3",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 17,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Resolver problemas con proporcionalidad directa",
+  "contenido": "Resolución de problemas de proporcionalidad directa.",
+  "pda": "Resuelve problemas de proporcionalidad directa mediante el valor unitario, la constante de proporcionalidad y otros procedimientos.",
+  "problematizacion": {
+    "contexto": "Tu familia va a preparar tamales para una reunión familiar: la receta original usa 2 tazas de harina para 12 tamales, pero llegarán muchos invitados y necesitan hacer 30 tamales sin que la mezcla les quede mal proporcionada.",
+    "pregunta": "¿Cuántas tazas de harina se necesitan para preparar los 30 tamales, siguiendo la misma proporción de la receta original?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.3",
+      "titulo": "Resolver problemas con proporcionalidad directa",
+      "explicacion": "Para resolver un problema de proporcionalidad directa: 1) identifica las dos cantidades relacionadas, 2) calcula la constante k dividiendo un par de valores conocidos, y 3) usa y = k·x para encontrar el valor que falta. También puedes usar una regla de tres: si x₁ corresponde a y₁, entonces x₂ corresponde a y₂ = (x₂ × y₁) ÷ x₁.",
+      "ejemplos": [
+        "Una receta usa 2 tazas de harina para 12 panqués (k = 2/12 = 1/6 de taza por panqué). Para 30 panqués: y = 1/6 × 30 = 5 tazas.",
+        "Un grifo llena 45 litros en 9 minutos (k = 45/9 = 5 litros por minuto). En 15 minutos llenará: y = 5 × 15 = 75 litros."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 3 kg de manzanas cuestan $54, ¿cuánto cuestan 7 kg?",
+          "opciones": [
+            "$108",
+            "$126",
+            "$150",
+            "$162"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La constante k = 54 ÷ 3 = 18 por kg. Entonces 7 × 18 = $126."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un grifo llena 60 litros en 12 minutos. ¿Cuántos litros llena en 20 minutos, con el mismo rendimiento?",
+          "opciones": [
+            "80 L",
+            "90 L",
+            "100 L",
+            "110 L"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 60÷12 = 5 litros por minuto. 20×5 = 100 litros."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 4 plumas cuestan $44, ¿cuánto cuestan 3 plumas?",
+          "opciones": [
+            "$43",
+            "$11",
+            "$33",
+            "$23"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 44÷4 = 11. 3×11 = $33."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 9 horas de trabajo cuestan $261, ¿cuánto cuestan 5 horas de trabajo?",
+          "opciones": [
+            "$145",
+            "$203",
+            "$155",
+            "$87"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k = 261÷9 = 29. 5×29 = $145."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 6 horas de trabajo cuestan $204, ¿cuánto cuestan 11 horas de trabajo?",
+          "opciones": [
+            "$442",
+            "$340",
+            "$374",
+            "$306"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 204÷6 = 34. 11×34 = $374."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

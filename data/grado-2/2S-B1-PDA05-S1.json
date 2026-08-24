@@ -1,0 +1,61 @@
+{
+  "id": "2S-B1-PDA05-S1",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 29,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "El cuadrado de un binomio",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
+  "problematizacion": {
+    "contexto": "Tu familia tiene un terreno cuadrado de lado x metros y decide ampliarlo 5 metros por cada lado para poner una huerta, quedando un terreno cuadrado más grande de lado (x+5).",
+    "pregunta": "¿Qué expresión algebraica representa el área total del terreno ya ampliado, en términos de x?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.1",
+      "titulo": "El cuadrado de un binomio",
+      "explicacion": "El área de un cuadrado de lado (x+a) se calcula elevando el binomio al cuadrado: se multiplica el binomio por sí mismo y se obtienen tres términos: el cuadrado del primero, el doble producto de ambos, y el cuadrado del segundo.",
+      "formula": "(x+a)² = x² + 2ax + a²",
+      "ejemplos": [
+        "(x+3)² = x² + 2(3)x + 3² = x² + 6x + 9 metros cuadrados."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+4)² = x² + 8x + 16.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(4)=8 y 4²=16, entonces (x+4)² = x²+8x+16."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+9)² = x² + 18x + 82.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "(x+9)² = x²+18x+81."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "x^8 × x^2 es igual a x^10.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Se suman los exponentes: 8+2=10."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+3)² = x² + 6x + 9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "(x+3)² = x²+6x+9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x^4)^5 es igual a x^22.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Se multiplican los exponentes: 4×5=20."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

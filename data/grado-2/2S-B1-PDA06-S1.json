@@ -1,0 +1,60 @@
+{
+  "id": "2S-B1-PDA06-S1",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 36,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Modelar problemas con ecuaciones lineales",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
+  "problematizacion": {
+    "contexto": "Tu abuela reparte el domingo entre tú y tu hermano menor: a ti te da el doble de lo que le da a él, y entre los dos juntan $270 esta semana.",
+    "pregunta": "¿Cuánto dinero le dio tu abuela a tu hermano menor si planteas una ecuación lineal con la cantidad desconocida?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.1",
+      "titulo": "Modelar problemas con ecuaciones lineales",
+      "explicacion": "Muchos problemas cotidianos se pueden modelar con una ecuación lineal: se representa la cantidad desconocida con una variable y se traduce el problema en una igualdad, para después despejar la variable.",
+      "ejemplos": [
+        "'Un número más el doble de sí mismo es 27' se traduce como x + 2x = 27 → 3x=27 → x=9."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un número más el triple de sí mismo es 32 (x + 3x = 32) implica que x = 8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 4x=32 → x=8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 7x - 14 = 28 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "7x = 42; x = 6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 2x + 2 = 4 es x = -1.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "2x = 2; x = 1."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 7x + 12 = 47 es x = 4.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "7x = 35; x = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 2x + 9 = 21 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2x = 12; x = 6."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

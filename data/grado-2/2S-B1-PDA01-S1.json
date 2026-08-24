@@ -1,0 +1,62 @@
+{
+  "id": "2S-B1-PDA01-S1",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 1,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Distintas formas de expresar números con signo",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Compara y ordena números con signo (enteros, fracciones y decimales) en la recta numérica y analiza en qué casos se cumple la propiedad de densidad.",
+  "problematizacion": {
+    "contexto": "En el changarro de tu tío, el cuaderno de fiados anota algunas deudas de los clientes como fracciones (por ejemplo -3/4 de kilo de azúcar que aún deben) y otras como decimales (-1.5 de saldo). Tu tío te pide ayudarle a saber quién debe más, pero al estar los números escritos de formas distintas no puede compararlos directamente.",
+    "pregunta": "¿Cómo puedes expresar todas las deudas del cuaderno en la misma forma (decimal) para saber qué cliente debe más?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.1",
+      "titulo": "Distintas formas de expresar números con signo",
+      "explicacion": "Los números con signo incluyen enteros, fracciones y decimales, y todos pueden ubicarse en la misma recta numérica. Para comparar números que están en formas distintas, conviene expresarlos todos de la misma manera (por ejemplo, convirtiendo las fracciones a decimales).",
+      "formula": "-1/2 = -0.5",
+      "ejemplos": [
+        "-3/4 = -0.75",
+        "Convirtiendo -3.5, -2, -1/2, 0, +1.25 todo a decimal: -3.5, -2, -0.5, 0, 1.25."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre 0.2 y 0.3 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.2 y 0.3 existen infinitos números, por ejemplo 0.25."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -1.2 y -1.12 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -1.2 y -1.12 existen infinitos números, por ejemplo -1.16."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre 4.3 y 4.55 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre 4.3 y 4.55 existen infinitos números, por ejemplo 4.425."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre 0.3 y 0.37 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre 0.3 y 0.37 existen infinitos números, por ejemplo 0.335."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -0.2 y 0.05 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -0.2 y 0.05 existen infinitos números, por ejemplo -0.075."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

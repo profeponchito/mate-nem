@@ -1,0 +1,61 @@
+{
+  "id": "2S-B1-PDA02-S2",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 9,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Mínimo común múltiplo (mcm)",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
+  "problematizacion": {
+    "contexto": "En tu unidad habitacional, el camión de la ruta A pasa cada 12 minutos frente a tu casa y el camión de la ruta B pasa cada 18 minutos. Ambos salieron juntos de la parada a las 7:00 de la mañana y quieres saber cuándo volverán a coincidir sin tener que esperar contando minuto a minuto.",
+    "pregunta": "¿Después de cuántos minutos volverán a coincidir los dos camiones en la parada?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.2",
+      "titulo": "Mínimo común múltiplo (mcm)",
+      "explicacion": "El mínimo común múltiplo (mcm) es el menor número que es múltiplo de ambos números a la vez. Sirve para sincronizar eventos que se repiten con distinta frecuencia, como saber cada cuántos días coinciden dos actividades.",
+      "formula": "mcm(24,36) = 72",
+      "ejemplos": [
+        "Múltiplos de 4: 4, 8, 12, 16... Múltiplos de 6: 6, 12, 18, 24... El menor común es 12, así que mcm(4,6)=12."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 18 y 30 es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "18=2×3², 30=2×3×5. MCD = 2×3 = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 54 y 30 es ___.",
+          "respuestaCorrecta": "270",
+          "retroalimentacion": "mcm(54,30) = 270."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 32 y 18 es ___.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "MCD(32,18) = 2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 49 y 31 es ___.",
+          "respuestaCorrecta": "1",
+          "retroalimentacion": "MCD(49,31) = 1."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 33 y 34 es ___.",
+          "respuestaCorrecta": "1122",
+          "retroalimentacion": "mcm(33,34) = 1122."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

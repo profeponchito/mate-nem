@@ -1,0 +1,61 @@
+{
+  "id": "2S-B1-PDA06-S2",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 37,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Porcentaje de descuento",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
+  "problematizacion": {
+    "contexto": "En las rebajas de regreso a clases, una mochila que cuesta $480 tiene puesto un letrero de 25% de descuento.",
+    "pregunta": "¿Cuánto vas a pagar realmente por la mochila si aplicas el descuento anunciado?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.2",
+      "titulo": "Porcentaje de descuento",
+      "explicacion": "Si un precio p tiene un descuento del r%, el precio final es el precio original menos ese porcentaje, lo que equivale a multiplicar por (1 − r/100).",
+      "formula": "precio final = precio original × (1 − descuento/100)",
+      "ejemplos": [
+        "Un artículo de $150 con 15% de descuento: 150 × (1 − 0.15) = 150 × 0.85 = $127.50."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una playera con 20% de descuento quedó en $240. Su precio original era $___.",
+          "respuestaCorrecta": "300",
+          "retroalimentacion": "240 = x(1 − 0.20) = 0.80x → x = 240 ÷ 0.80 = $300."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 3x + 8 = 23. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "3x = 15; x = 15÷3 = 5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 4x - 8 = 52. x = ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "4x = 60; x = 60÷4 = 15."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 4x - 7 = 17. x = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "4x = 24; x = 24÷4 = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 5x + 8 = 23. x = ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "5x = 15; x = 15÷5 = 3."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

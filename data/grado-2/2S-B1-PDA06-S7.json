@@ -1,0 +1,133 @@
+{
+  "id": "2S-B1-PDA06-S7",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 42,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: ecuaciones y porcentajes",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
+  "problematizacion": {
+    "contexto": "El comité de la kermés necesita cerrar cuentas: por un lado, un número más el triple de sí mismo (que representa los boletos vendidos por categoría) da 24; por otro, compraron vasos desechables con 20% de descuento y pagaron $96 en total.",
+    "pregunta": "¿Cuántos boletos representa ese número base según la ecuación planteada, y cuál era el precio original de los vasos antes del descuento?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.7",
+      "titulo": "Repaso integral: ecuaciones y porcentajes",
+      "explicacion": "Recuerda: muchos problemas cotidianos se resuelven planteando una ecuación lineal con la cantidad desconocida como variable y despejándola paso a paso. Para porcentajes, un aumento del r% multiplica el precio original por (1 + r/100) y un descuento lo multiplica por (1 − r/100); si conoces el precio final, divides entre ese factor para encontrar el original.",
+      "ejemplos": [
+        "Un artículo con 40% de descuento quedó en $90: 90 ÷ 0.60 = $150 era su precio original.",
+        "La ecuación x + 4x = 30 se resuelve como 5x=30 → x=6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un número menos el doble de sí mismo es -14 (x - 2x = -14). ¿Cuál es el número?",
+          "opciones": [
+            "14",
+            "-14",
+            "7",
+            "28"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x - 2x = -x = -14 → x = 14."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 10x - 15 = 45 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "10x = 60; x = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un artículo con 40% de descuento quedó en $90. Su precio original era $___.",
+          "respuestaCorrecta": "150",
+          "retroalimentacion": "90 = x(1 − 0.40) = 0.60x → x = 90 ÷ 0.60 = $150."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un producto de $80 tiene 25% de aumento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$100",
+            "$95",
+            "$105",
+            "$85"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "80 × (1 + 0.25) = $100."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada planteamiento con su resultado.",
+          "columnaA": [
+            "x + 4x = 30",
+            "160 × (1 − 0.10)",
+            "x × 1.15 = 92"
+          ],
+          "columnaB": [
+            "144",
+            "80",
+            "6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x+4x=30 → x=6; 160×0.90=144; x×1.15=92 → x=80."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "Un producto con 30% de descuento quedó en $210. Su precio original era $___.",
+      "respuestaCorrecta": "300",
+      "retroalimentacion": "210 = x × (1 − 0.30) = 0.70x → x = 210 ÷ 0.70 = $300."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un número menos su mitad es 15 (x − x/2 = 15). ¿Cuál es el número?",
+      "opciones": [
+        "7.5",
+        "15",
+        "30",
+        "45"
+      ],
+      "respuestaCorrecta": 2,
+      "retroalimentacion": "x − x/2 = x/2 = 15 → x = 30."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Un producto con 8% de aumento que ahora cuesta $108 costaba $100 antes del aumento.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 108 = x × 1.08 → x = 108 ÷ 1.08 = 100."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada planteamiento con su resultado.",
+      "columnaA": [
+        "x + 3x = 32",
+        "200 × (1 − 0.25)",
+        "x × 1.20 = 96"
+      ],
+      "columnaB": [
+        "150",
+        "80",
+        "8"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
+      "retroalimentacion": "x+3x=32 → x=8; 200×0.75=150; x×1.20=96 → x=80."
+    }
+  ]
+}

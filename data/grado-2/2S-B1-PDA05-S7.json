@@ -1,0 +1,133 @@
+{
+  "id": "2S-B1-PDA05-S7",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 35,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: binomios y propiedades de los exponentes",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
+  "problematizacion": {
+    "contexto": "Para el proyecto final de la feria de ciencias, tu equipo diseña un terreno cuadrado de lado x que van a ampliar 20 metros por lado para el jardín, y además deben simplificar dos cálculos de energía de los sensores: una potencia elevada a otra potencia (x⁶ elevado al cuadrado) y una multiplicación de potencias de la misma base (x⁷ por x³).",
+    "pregunta": "¿Cuáles son las tres expresiones algebraicas simplificadas que tu equipo debe presentar en el reporte de la feria de ciencias?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.7",
+      "titulo": "Repaso integral: binomios y propiedades de los exponentes",
+      "explicacion": "Recuerda: para desarrollar (x+a)² se usa x²+2ax+a²; para multiplicar potencias de la misma base se suman los exponentes; y para elevar una potencia a otra potencia se multiplican los exponentes. Estas tres ideas te permiten simplificar cualquier expresión algebraica que combine áreas cuadráticas o potencias.",
+      "ejemplos": [
+        "(x+14)² = x² + 2(14)x + 14² = x²+28x+196.",
+        "(x^4)^3 = x^(4×3) = x^12, y x^5×x^4 = x^(5+4) = x^9."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: x^8 × x^5",
+          "opciones": [
+            "x^13",
+            "x^40",
+            "x^3",
+            "2x^13"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 8+5=13."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+14)² = x² + 28x + 196.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(14)=28 y 14²=196, entonces (x+14)² = x²+28x+196."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^2 × x^9 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "11",
+          "retroalimentacion": "Se suman los exponentes: 2+9=11."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: (x^7)^3",
+          "opciones": [
+            "x^21",
+            "x^10",
+            "x^343",
+            "x^4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se multiplican los exponentes: 7×3=21."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+15)²",
+            "x^5×x^4",
+            "(x^4)^3"
+          ],
+          "columnaB": [
+            "x^12",
+            "x²+30x+225",
+            "x^9"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(x+15)²=x²+30x+225; x^5×x^4=x^9; (x^4)^3=x^12."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "El desarrollo de (x+6)² es x² + 12x + ___.",
+      "respuestaCorrecta": "36",
+      "retroalimentacion": "El tercer término es el cuadrado del segundo: 6² = 36."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Simplifica: (x³)⁴",
+      "opciones": [
+        "x⁷",
+        "x¹²",
+        "x⁸¹",
+        "x⁶⁴"
+      ],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 3×4=12."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "x² × x² es igual a x⁴.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: se suman los exponentes: 2+2=4."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+      "columnaA": [
+        "(x+2)²",
+        "x⁴×x³",
+        "(x²)³"
+      ],
+      "columnaB": [
+        "x⁶",
+        "x²+4x+4",
+        "x⁷"
+      ],
+      "parejasCorrectas": [
+        1,
+        2,
+        0
+      ],
+      "retroalimentacion": "(x+2)²=x²+4x+4; x⁴×x³=x⁷; (x²)³=x⁶."
+    }
+  ]
+}

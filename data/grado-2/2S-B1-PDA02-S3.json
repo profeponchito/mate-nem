@@ -1,0 +1,91 @@
+{
+  "id": "2S-B1-PDA02-S3",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 10,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Propiedades de las operaciones",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
+  "problematizacion": {
+    "contexto": "En el torneo de básquetbol de tu escuela, el árbitro suma primero los puntos de tiros de 2 y luego los de tiros de 3, mientras que su ayudante los suma al revés y obtiene el mismo total. Además, la tienda del gimnasio calcula el costo de varios uniformes multiplicando el número de jugadores por (precio de la playera + precio del short) en un solo paso.",
+    "pregunta": "¿Qué propiedades de las operaciones explican por qué no importa el orden al sumar los puntos, y por qué multiplicar por (playera + short) da lo mismo que multiplicar cada prenda por separado y sumar?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.3",
+      "titulo": "Propiedades de las operaciones",
+      "explicacion": "Las operaciones cumplen propiedades: la conmutativa dice que el orden no altera el resultado en sumas y multiplicaciones (a+b=b+a); la asociativa dice que se pueden agrupar de distintas formas ((a+b)+c=a+(b+c)); y la distributiva reparte una multiplicación sobre una suma (a×(b+c)=a×b+a×c).",
+      "ejemplos": [
+        "5×(3+2) = 5×3 + 5×2 = 15+10 = 25: es la propiedad distributiva.",
+        "3+4 = 4+3: es la propiedad conmutativa."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 4 y 6?",
+          "opciones": [
+            "2",
+            "10",
+            "12",
+            "24"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Múltiplos de 4: 4,8,12... de 6: 6,12,18... El menor común es 12."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 8 y 12?",
+          "opciones": [
+            "4",
+            "24",
+            "48",
+            "96"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Múltiplos de 8: 8,16,24... de 12: 12,24,36... El menor común es 24."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 8 y 39?",
+          "opciones": [
+            "312",
+            "351",
+            "316",
+            "308"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "mcm(8,39) = 312."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 33 y 35?",
+          "opciones": [
+            "34",
+            "5",
+            "1",
+            "36"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "MCD(33,35) = 1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 22 y 6?",
+          "opciones": [
+            "2",
+            "8",
+            "4",
+            "24"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "MCD(22,6) = 2."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

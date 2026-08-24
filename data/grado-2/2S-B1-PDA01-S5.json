@@ -1,0 +1,80 @@
+{
+  "id": "2S-B1-PDA01-S5",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 5,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: convertir fracciones a decimal y comparar",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Compara y ordena números con signo (enteros, fracciones y decimales) en la recta numérica y analiza en qué casos se cumple la propiedad de densidad.",
+  "problematizacion": {
+    "contexto": "En la alberca del deportivo municipal, el nivel del agua respecto a la línea de llenado normal se registra unos días en fracción (como -7/4 cm) y otros en decimal (-1.5 cm). El encargado de mantenimiento necesita saber en qué día el nivel estuvo más bajo antes de decidir si abre la bomba.",
+    "pregunta": "Convirtiendo todos los registros de la alberca a decimal, ¿qué día tuvo el nivel de agua más bajo respecto a la línea normal?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.5",
+      "titulo": "Repaso: convertir fracciones a decimal y comparar",
+      "explicacion": "Recuerda: los números con signo (enteros, fracciones y decimales) se comparan más fácil si primero los expresas todos en la misma forma, por ejemplo convirtiendo las fracciones a decimales. Los negativos con mayor valor absoluto son los menores, y entre dos números con signo siempre existe otro número más (propiedad de densidad).",
+      "ejemplos": [
+        "-7/4 = -1.75, y como -1.75 está más a la izquierda que -1.5 en la recta numérica, -7/4 < -1.5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "-7/4 escrito como decimal es ___.",
+          "respuestaCorrecta": "-1.75",
+          "retroalimentacion": "-7/4 = -1.75."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -6, 3/4, -2.5, 9 es ___.",
+          "respuestaCorrecta": "-6",
+          "retroalimentacion": "-6 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -0.6 y -0.55 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -0.6 y -0.55 existen infinitos números, por ejemplo -0.575."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número está entre -3 y -2.5?",
+          "opciones": [
+            "-3.5",
+            "-2.8",
+            "-2",
+            "-4"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "-2.8 está entre -3 y -2.5, ya que -3 < -2.8 < -2.5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su forma decimal.",
+          "columnaA": [
+            "-9/4",
+            "7/8",
+            "-3/20"
+          ],
+          "columnaB": [
+            "-2.25",
+            "0.875",
+            "-0.15"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-9/4 = -2.25; 7/8 = 0.875; -3/20 = -0.15."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

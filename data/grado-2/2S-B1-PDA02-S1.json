@@ -1,0 +1,62 @@
+{
+  "id": "2S-B1-PDA02-S1",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 8,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Máximo común divisor (MCD)",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
+  "problematizacion": {
+    "contexto": "Para el día del niño, la mesa directiva de tu escuela compró 24 paletas y 36 chicles para repartirlos en bolsitas iguales entre los grupos de la primaria vecina, sin que sobre ni una sola paleta o chicle y usando la mayor cantidad posible de bolsitas.",
+    "pregunta": "¿Cuál es el mayor número de bolsitas iguales que se pueden armar, y cuántas paletas y chicles llevará cada una?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.1",
+      "titulo": "Máximo común divisor (MCD)",
+      "explicacion": "El máximo común divisor (MCD) de dos números es el mayor número que divide exactamente a ambos. Sirve para repartir o agrupar cosas en partes iguales usando la mayor cantidad de grupos posible.",
+      "formula": "MCD(24,36) = 12",
+      "ejemplos": [
+        "24 = 2³×3, 36 = 2²×3². El MCD toma los factores comunes con el menor exponente: 2²×3 = 12.",
+        "Con 12 equipos: 24÷12 = 2 niñas y 36÷12 = 3 niños por equipo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 20 y 30 es 10.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 20=2²×5, 30=2×3×5. MCD = 2×5 = 10."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "7×(2+5)=7×2+7×5 es un ejemplo de la propiedad asociativa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "7×(2+5)=7×2+7×5 corresponde a la propiedad distributiva."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(7+7)+8=7+(7+8) es un ejemplo de la propiedad asociativa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "(7+7)+8=7+(7+8) corresponde a la propiedad asociativa."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "7×(7+3)=7×7+7×3 es un ejemplo de la propiedad distributiva.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "7×(7+3)=7×7+7×3 corresponde a la propiedad distributiva."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(7+2)+3=7+(2+3) es un ejemplo de la propiedad conmutativa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "(7+2)+3=7+(2+3) corresponde a la propiedad asociativa."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

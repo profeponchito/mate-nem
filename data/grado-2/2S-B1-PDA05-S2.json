@@ -1,0 +1,61 @@
+{
+  "id": "2S-B1-PDA05-S2",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 30,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Multiplicar potencias de la misma base",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
+  "problematizacion": {
+    "contexto": "Una fábrica de dulces empaca los caramelos en cajas chicas: cada caja chica tiene x³ caramelos, y esas cajas chicas se acomodan dentro de cajas grandes, x⁴ cajas chicas por cada caja grande.",
+    "pregunta": "¿Qué expresión algebraica en potencias de x representa el total de caramelos que hay en una caja grande?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.2",
+      "titulo": "Multiplicar potencias de la misma base",
+      "explicacion": "Al multiplicar dos potencias que tienen la misma base, se conserva la base y se suman los exponentes.",
+      "formula": "xᵐ × xⁿ = xᵐ⁺ⁿ",
+      "ejemplos": [
+        "x³ × x⁴ = x^(3+4) = x⁷."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Simplifica: (x²)⁵ = x elevado a la ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 2×5=10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^5 × x^7 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "Se suman los exponentes: 5+7=12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El desarrollo de (x+9)² es x² + 18x + ___.",
+          "respuestaCorrecta": "81",
+          "retroalimentacion": "El tercer término es el cuadrado del segundo: 9² = 81."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^8 × x^7 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "Se suman los exponentes: 8+7=15."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El desarrollo de (x+4)² es x² + 8x + ___.",
+          "respuestaCorrecta": "16",
+          "retroalimentacion": "El tercer término es el cuadrado del segundo: 4² = 16."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

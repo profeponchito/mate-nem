@@ -1,0 +1,73 @@
+{
+  "id": "2S-B1-PDA05-S6",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 34,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: propiedades de los exponentes",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
+  "problematizacion": {
+    "contexto": "En el laboratorio de ciencias, un cultivo de bacterias crece de forma que su cantidad se eleva al cuadrado y ese resultado se vuelve a elevar a la cuarta para el reporte final; mientras tanto, en la maceta cuadrada de al lado, de lado x, van a ampliar cada lado 9 centímetros para sembrar más plantas.",
+    "pregunta": "¿Qué expresión algebraica representa el resultado final del cultivo de bacterias, y cuál representa el área de la maceta ya ampliada?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.6",
+      "titulo": "Repaso: propiedades de los exponentes",
+      "explicacion": "Recuerda: al multiplicar potencias de la misma base se suman los exponentes (xᵐ×xⁿ=xᵐ⁺ⁿ), y al elevar una potencia a otra potencia se multiplican los exponentes ((xᵐ)ⁿ=xᵐˣⁿ). El desarrollo de un binomio al cuadrado sigue siendo (x+a)²=x²+2ax+a².",
+      "ejemplos": [
+        "(x^3)^5 = x^(3×5) = x^15.",
+        "(x+12)² = x² + 2(12)x + 12² = x²+24x+144."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^9 × x^3 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "Se suman los exponentes: 9+3=12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Simplifica: (x^3)^5 = x elevado a la ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 3×5=15."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: (x^9)^2",
+          "opciones": [
+            "x^18",
+            "x^11",
+            "x^81",
+            "x^7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se multiplican los exponentes: 9×2=18."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+12)² = x² + 24x + 144.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(12)=24 y 12²=144, entonces (x+12)² = x²+24x+144."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el desarrollo de (x+13)²?",
+          "opciones": [
+            "x²+26x+169",
+            "x²+169",
+            "x²+13x+169",
+            "x²+26x+13"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(x+13)² = x² + 2(13)x + 13² = x²+26x+169."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}

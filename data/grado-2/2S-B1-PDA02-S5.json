@@ -1,0 +1,66 @@
+{
+  "id": "2S-B1-PDA02-S5",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 12,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: cálculo de MCD y mcm",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
+  "problematizacion": {
+    "contexto": "Para el bazar escolar hay que empaquetar 28 plumas y 42 lápices en el mayor número de paquetes idénticos sin que sobre material, y además calcular cada cuántos días coincidirán dos rifas que se realizan cada 28 y cada 42 días respectivamente.",
+    "pregunta": "¿Cuál es el MCD de 28 y 42 (para armar los paquetes) y cuál es su mcm (para saber cuándo coinciden las rifas)?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.5",
+      "titulo": "Repaso: cálculo de MCD y mcm",
+      "explicacion": "Recuerda: el máximo común divisor (MCD) es el mayor número que divide exactamente a dos números, y sirve para repartir o agrupar en partes iguales. El mínimo común múltiplo (mcm) es el menor número que es múltiplo de ambos, y sirve para sincronizar eventos que se repiten con distinta frecuencia.",
+      "ejemplos": [
+        "MCD(28,42): 28=2²×7, 42=2×3×7 → MCD=2×7=14. mcm(28,42): tomando el mayor exponente de cada factor primo, 2²×3×7=84."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 28 y 42 es ___.",
+          "respuestaCorrecta": "14",
+          "retroalimentacion": "28=2²×7, 42=2×3×7. MCD = 2×7 = 14."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 15 y 25 es ___.",
+          "respuestaCorrecta": "75",
+          "retroalimentacion": "mcm(15,25) = 75."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 45 y 27 es 9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 45=3²×5, 27=3³. MCD = 3² = 9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El mcm de 9 y 12 es 108.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: mcm(9,12) = 36, no 108."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 40 y 60?",
+          "opciones": [
+            "10",
+            "20",
+            "40",
+            "5"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "MCD(40,60) = 20."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

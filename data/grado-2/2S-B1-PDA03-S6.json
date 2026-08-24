@@ -1,0 +1,86 @@
+{
+  "id": "2S-B1-PDA03-S6",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 20,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: resolver problemas con la constante de proporcionalidad",
+  "contenido": "Resolución de problemas de proporcionalidad directa.",
+  "pda": "Resuelve problemas de proporcionalidad directa mediante el valor unitario, la constante de proporcionalidad y otros procedimientos.",
+  "problematizacion": {
+    "contexto": "El tinaco de tu casa se llena con 80 litros en 16 minutos, según lo que mide tu papá con la manguera abierta a flujo constante. Un día necesitan saber cuánta agua se habrá acumulado después de dejar la llave abierta 25 minutos, antes de salir de la casa.",
+    "pregunta": "¿Cuántos litros de agua habrá en el tinaco después de 25 minutos, si el flujo se mantiene constante?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.6",
+      "titulo": "Repaso: resolver problemas con la constante de proporcionalidad",
+      "explicacion": "Recuerda los pasos para resolver un problema de proporcionalidad directa: 1) identifica las dos cantidades relacionadas, 2) calcula k dividiendo un par de valores conocidos, y 3) usa y = k × x (o una regla de tres) para encontrar el valor que falta.",
+      "ejemplos": [
+        "Un tinaco se llena con 80 litros en 16 minutos (k = 80÷16 = 5 L/min). En 25 minutos se llenarán 25×5 = 125 litros."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tinaco se llena con 80 litros en 16 minutos. ¿Cuántos litros se llenan en 25 minutos, con el mismo rendimiento?",
+          "opciones": [
+            "100 L",
+            "110 L",
+            "125 L",
+            "135 L"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 80÷16 = 5 litros por minuto. 25×5 = 125 litros."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 12 chocolates cuestan $180, entonces 5 chocolates cuestan $___.",
+          "respuestaCorrecta": "75",
+          "retroalimentacion": "k = 180÷12 = 15 por chocolate. 5×15 = $75."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 7 metros de tela cuestan $322, ¿cuánto cuestan 4 metros?",
+          "opciones": [
+            "$172",
+            "$184",
+            "$196",
+            "$161"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 322÷7 = 46 por metro. 4×46 = $184."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 10 huevos cuestan $35, entonces 16 huevos cuestan $54.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 35÷10 = 3.5 por huevo. 16×3.5 = $56, no $54."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su constante de proporcionalidad (k).",
+          "columnaA": [
+            "6 dulces cuestan $18",
+            "4 cuadernos cuestan $148",
+            "10 metros de listón cuestan $70"
+          ],
+          "columnaB": [
+            "$37 por cuaderno",
+            "$7 por metro",
+            "$3 por dulce"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "6 dulces cuestan $18 → $3 por dulce; 4 cuadernos cuestan $148 → $37 por cuaderno; 10 metros de listón cuestan $70 → $7 por metro."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}

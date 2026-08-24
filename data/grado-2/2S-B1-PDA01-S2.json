@@ -1,0 +1,60 @@
+{
+  "id": "2S-B1-PDA01-S2",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 2,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Ordenar en la recta numérica",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Compara y ordena números con signo (enteros, fracciones y decimales) en la recta numérica y analiza en qué casos se cumple la propiedad de densidad.",
+  "problematizacion": {
+    "contexto": "En el torneo de futbol de tu escuela, la diferencia de goles (goles a favor menos goles en contra) de cada equipo quedó así: -3.5, -2, -0.5, 0 y 1.25. El profesor de educación física quiere armar la tabla de posiciones del peor al mejor equipo antes de la final.",
+    "pregunta": "¿En qué orden, de menor a mayor diferencia de goles, deben aparecer los equipos en la tabla de posiciones?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.2",
+      "titulo": "Ordenar en la recta numérica",
+      "explicacion": "Una vez que todos los números están en la misma forma, se ordenan igual que los enteros: los negativos con mayor valor absoluto van primero (son los menores), después el cero, y al final los positivos de menor a mayor.",
+      "ejemplos": [
+        "-3.5, -2, -0.5, 0, 1.25 ordenados de menor a mayor: -3.5 < -2 < -0.5 < 0 < 1.25."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "-3/4 escrito como decimal es ___.",
+          "respuestaCorrecta": "-0.75",
+          "retroalimentacion": "-3/4 = -0.75."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 0, -1/2, -4, 8 es ___.",
+          "respuestaCorrecta": "-4",
+          "retroalimentacion": "-4 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 1/2, 0.1, -1/2, 10 es ___.",
+          "respuestaCorrecta": "-1/2",
+          "retroalimentacion": "-1/2 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -1/2, -3.2, 8, -6/10 es ___.",
+          "respuestaCorrecta": "-3.2",
+          "retroalimentacion": "-3.2 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -10, 6/8, 1/5, 1.7 es ___.",
+          "respuestaCorrecta": "-10",
+          "retroalimentacion": "-10 está más a la izquierda en la recta numérica, así que es el menor."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}
