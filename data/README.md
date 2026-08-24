@@ -120,8 +120,8 @@ una barra de avance (%) en todo momento:
   de todo el tema, no un tema nuevo). Cada subtema tiene `titulo`,
   `explicacion`, `ejemplos` (uno o más resueltos) y, opcionalmente,
   `formula` — y es, a la vez, su propia **mini-actividad calificada**:
-  `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos` de
-  **exactamente 5** preguntas. Cada subtema se califica de forma
+  `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos` de **5 o 10**
+  preguntas (múltiplo de 5 — ver "Rondas de actividad" abajo). Cada subtema se califica de forma
   **independiente** (su propio resultado: correctas/total, puntaje,
   estrellas) y, al terminar todos, `app.js` calcula además un **resultado
   GLOBAL** (suma de todos los mini-resultados vía `combinarResultados()` en
@@ -173,11 +173,13 @@ No existe ya un objeto `reto` a nivel de PDA — se eliminó al pasar de "3
 subtemas + 1 reto de 20 preguntas paginado" a "4 subtemas, cada uno con su
 propia mini-actividad de 5 preguntas".
 
-En el navegador, cada intento de un subtema baraja el orden de sus 5
+En el navegador, cada intento de un subtema baraja el orden de sus
 preguntas y el de las opciones dentro de cada pregunta (`variarReactivos_`/
 `variarOpciones_` en `app.js`), así que rehacer un subtema no se ve idéntico
 la segunda vez — el JSON fuente no necesita (ni debe) tener el orden
-"correcto"; el que importa es el que arma `app.js` en cada intento.
+"correcto"; el que importa es el que arma `app.js` en cada intento. Este
+barajado se repite cada vez que se entra a CUALQUIER ronda de un subtema
+(ver "Rondas de actividad" abajo), no solo la primera.
 
 Cada pantalla del recorrido muestra un título claro y una explicación antes
 de la parte interactiva: la problematización usa `pda.titulo` y su propio
@@ -284,6 +286,60 @@ cálculo por índice) y que el camino de un grado con hasta 49 nodos
 renderice sus `Promise.all` de fetches completos antes de contar los
 nodos (se cambió `waitForTimeout` fijo por una espera activa, igual que ya
 se hacía para el camino de Ejercítate).
+
+## Rondas de actividad (Paso 16)
+
+El pedido: que cada una de las 119 tarjetas de camino (Paso 15) tuviera un
+"paso 4" después del "paso 3" — una segunda pantalla de actividad con 5
+reactivos más, distintos de los primeros 5, antes de seguir con el resto
+del recorrido (mini-resultado → resultado global → constancia) — y que
+tanto la primera como la segunda pantalla barajaran el orden de sus
+preguntas (y el de las opciones, si son de opción múltiple) cada vez que
+el alumno entra.
+
+**Cómo se implementó:** en vez de tratar la segunda pantalla como un paso
+nuevo y distinto, el arreglo `reactivos` de un subtema ahora puede traer
+**10** elementos en vez de 5 (`reactivos.maxItems` subió de 5 a 10 en el
+esquema). El motor (`vistaPDA` en `app.js`) calcula
+`totalPartes = Math.ceil(subtema.reactivos.length / 5)` y genera esa
+cantidad de pasos `actividad` consecutivos para el subtema — 1 si tiene 5
+reactivos (como siempre), 2 si tiene 10 ("Ronda 1 de 2" / "Ronda 2 de 2",
+con esa etiqueta visible junto al nivel). Las respuestas de cada ronda se
+guardan en `estado.respuestasParciales` hasta terminar la última ronda del
+subtema; ahí se combinan las 10 y se califican **juntas en un solo
+mini-resultado** (no dos mini-resultados separados). El botón de envío
+dice "Siguiente ronda →" en toda ronda que no sea la última, y "Enviar
+respuestas" en la última — igual que antes.
+
+**Por qué es compatible hacia atrás sin tocar Ejercítate:** un subtema de
+exactamente 5 reactivos sigue dando `totalPartes = 1`, es decir, el mismo
+comportamiento de siempre (una sola pantalla de actividad, sin etiqueta de
+ronda visible). Los 36 temas de Ejercítate no se modificaron y siguen así.
+Solo las 119 tarjetas de `data/grado-1/2/3/` (las que salieron de la
+división del Paso 15, cada una con un único subtema) pasaron de 5 a 10
+reactivos.
+
+**Barajado en cada ronda:** el mecanismo de barajado ya existente
+(`variarReactivos_`/`variarOpciones_`, ver arriba) no necesitó lógica
+nueva — ya se ejecuta cada vez que se construye la vista de una actividad,
+así que aplicarlo por ronda (sobre el sub-arreglo de 5 que le toca a esa
+ronda, vía el helper `reactivosDeParte_`) cumplió el segundo requisito sin
+cambios adicionales.
+
+**Los 595 reactivos nuevos** (119 tarjetas × 5) se redactaron con 9 agentes
+en paralelo (agrupados por pares de PDA de origen), cada uno editando
+directamente el arreglo `reactivos` de sus archivos vía Python
+(`extend()` + `json.dump`) para no arriesgar corromper el resto del JSON.
+Se validaron de forma centralizada: 119/119 archivos con exactamente 10
+reactivos, 0 errores contra el esquema, 0 duplicados reales (comparando la
+firma completa de cada reactivo — tipo + todos sus campos de contenido —
+no solo el texto inicial de la pregunta, que producía falsos positivos con
+el patrón ya documentado de `relacionar_columnas` con `instruccion`
+compartida pero `columnaA`/`columnaB` distintas). `qa-full-sweep-v6.mjs`
+se actualizó para recorrer las rondas de cada subtema, verificar la
+etiqueta "Ronda N de M" y el texto del botón en cada una, y calificar el
+subtema completo contra su total real de reactivos (ya no fijo en 5); las
+155 tarjetas/temas pasan de punta a punta (155/155).
 
 ## Apartado "Ejercítate" (36 temas de práctica libre) — completo
 

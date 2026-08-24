@@ -71,9 +71,9 @@
           "reactivos": {
             "type": "array",
             "minItems": 5,
-            "maxItems": 5,
+            "maxItems": 10,
             "items": { "$ref": "#/definitions/pregunta" },
-            "description": "Los 5 reactivos calificados de este subtema (nivel de dificultad creciente del subtema 1 al 4 dentro del mismo PDA)."
+            "description": "Los reactivos calificados de este subtema, en múltiplos de 5: exactamente 5 = una sola ronda (paso 'actividad' único); exactamente 10 = dos rondas de 5 (Paso 16: la app las presenta como dos pantallas de actividad consecutivas — 'paso 3' y 'paso 4' del recorrido — antes de calificar juntas las 10 en un solo mini-resultado). El motor (`vistaPDA` en app.js) deriva el número de rondas de `Math.ceil(reactivos.length / 5)`, así que un mismo PDA puede tener subtemas de 5 (una ronda) sin cambios de comportamiento."
           }
         }
       }
