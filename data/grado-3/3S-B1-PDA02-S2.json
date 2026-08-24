@@ -1,0 +1,61 @@
+{
+  "id": "3S-B1-PDA02-S2",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 9,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Despejar una variable del volumen",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas y volúmenes de cuerpos geométricos y calcula el valor de una variable en función de las otras.",
+  "problematizacion": {
+    "contexto": "En la tienda de tu tío necesitan una caja de cartón con forma de prisma para guardar mercancía: ya saben que debe caber un volumen de 100 dm³ y que la caja tendrá 4 dm de altura, pero no saben qué tan ancha debe hacer la base cuadrada.",
+    "pregunta": "¿Cómo despejas el lado de la base cuadrada si conoces el volumen y la altura de la caja?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.2",
+      "titulo": "Despejar una variable del volumen",
+      "explicacion": "Estas expresiones permiten despejar cualquiera de las variables si conocemos las otras. Por ejemplo, si conocemos el volumen y la altura, podemos despejar x² dividiendo el volumen entre la altura.",
+      "formula": "x² = V ÷ h",
+      "ejemplos": [
+        "Si V=100 y h=4, entonces x² = 100/4 = 25 (y por lo tanto x=5)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una caja tiene volumen V=x²h. Si x=3 y h=7, el volumen es ___.",
+          "respuestaCorrecta": "63",
+          "retroalimentacion": "V = 3²×7 = 9×7 = 63."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si el volumen de un prisma es V=x²h, con V=576 y h=9, entonces x² = ___.",
+          "respuestaCorrecta": "64",
+          "retroalimentacion": "x² = V/h = 576/9 = 64."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una caja tiene volumen V=x²h. Si x=2 y h=8, el volumen es ___.",
+          "respuestaCorrecta": "32",
+          "retroalimentacion": "V = 2²×8 = 4×8 = 32."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un cubo tiene arista 5 cm. Su volumen es ___ cm³.",
+          "respuestaCorrecta": "125",
+          "retroalimentacion": "5³ = 125 cm³."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si el volumen de un prisma es V=x²h, con V=448 y h=7, entonces x² = ___.",
+          "respuestaCorrecta": "64",
+          "retroalimentacion": "x² = V/h = 448/7 = 64."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

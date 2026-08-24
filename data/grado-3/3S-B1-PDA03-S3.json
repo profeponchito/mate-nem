@@ -1,0 +1,90 @@
+{
+  "id": "3S-B1-PDA03-S3",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 17,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Aplicar ecuaciones cuadráticas a problemas geométricos",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax²+Bx+C=0 por factorización y fórmula general. Resuelve problemas cuyo planteamiento es una ecuación cuadrática.",
+  "problematizacion": {
+    "contexto": "El comité de ecología quiere hacer un huerto escolar rectangular donde el largo mida 3 metros más que el ancho, y ya calcularon que necesitan un área total de 40 m² para sembrar suficientes hortalizas.",
+    "pregunta": "¿Cuánto deben medir el ancho y el largo del huerto para lograr esa área, y por qué se descarta una de las dos soluciones matemáticas?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.3",
+      "titulo": "Aplicar ecuaciones cuadráticas a problemas geométricos",
+      "explicacion": "En problemas de áreas, plantear la ecuación cuadrática y resolverla suele dar dos soluciones matemáticas, pero solo una tiene sentido en el contexto (por ejemplo, una medida no puede ser negativa).",
+      "ejemplos": [
+        "Un jardín con área 40 m² y largo = ancho+3: x(x+3)=40 → x²+3x−40=0 → (x+8)(x−5)=0 → x=5 (se descarta x=-8 porque el ancho no puede ser negativo). El largo es 5+3=8 m."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - x - 6 = 0?",
+          "opciones": [
+            "x=3, x=-2",
+            "x=2, x=-3",
+            "x=6, x=-1",
+            "x=1, x=-6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene área 121 m². ¿Cuánto mide su lado?",
+          "opciones": [
+            "10 m",
+            "11 m",
+            "12 m",
+            "21 m"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "x²=121 → x=11 (se descarta el valor negativo, una medida no puede ser negativa)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² + 1x - 12 = 0",
+          "opciones": [
+            "x=4, x=-2",
+            "x=1, x=-6",
+            "x=4, x=-3",
+            "x=3, x=-4"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "Las soluciones son x=3 y x=-4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² + 9x + 0 = 0",
+          "opciones": [
+            "x=0, x=-9",
+            "x=-1, x=-7",
+            "x=-2, x=-7",
+            "x=1, x=-10"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Las soluciones son x=0 y x=-9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² - 9x + 0 = 0",
+          "opciones": [
+            "x=11, x=-1",
+            "x=10, x=2",
+            "x=9, x=0",
+            "x=10, x=-1"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "(x-9)(x-0)=0 → x=9 o x=0."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

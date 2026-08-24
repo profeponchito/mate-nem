@@ -1,0 +1,126 @@
+{
+  "id": "3S-B1-PDA04-S7",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 28,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: reparto proporcional y variación directa",
+  "contenido": "Funciones.",
+  "pda": "Relaciona e interpreta la variación de dos cantidades a partir de su representación tabular, gráfica y algebraica. Explora diversos procedimientos para resolver problemas de reparto proporcional.",
+  "problematizacion": {
+    "contexto": "Para cerrar el bloque, el maestro plantea el caso de una papelería escolar que abrieron dos amigas: invirtieron $6,000 y $9,000 y deben repartirse $3,000 de utilidad según su inversión, y además, mirando una tabla de ventas de la semana, deben decidir si sus ingresos diarios varían de forma directa con el número de clientes que atienden.",
+    "pregunta": "¿Cuánto le corresponde a cada amiga de la utilidad y cómo determinan si sus ingresos varían de forma directa con el número de clientes?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.7",
+      "titulo": "Repaso integral: reparto proporcional y variación directa",
+      "explicacion": "Recuerda: para cualquier reparto proporcional, suma los valores de referencia (aportaciones, edades, razones), divide la cantidad total entre esa suma, y multiplica ese resultado por la parte de cada quien; el método funciona igual con dos o más partes. Además, en una variación directa la razón entre las dos cantidades que varían siempre es constante: si una se multiplica por un número, la otra se multiplica por el mismo número.",
+      "ejemplos": [
+        "Dos socios aportaron $6,000 y $9,000 a un negocio y reparten $3,000 de utilidad proporcionalmente. Suma=15,000. Al de $9,000 le corresponden (9000/15000)×3000=$1,800."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Dos socios aportaron $6,000 y $9,000 a un negocio y reparten $3,000 de utilidad proporcionalmente. Al segundo socio (el de $9,000) le corresponden $___.",
+          "respuestaCorrecta": "1800",
+          "retroalimentacion": "Suma=15,000. (9000/15000)×3000 = $1,800."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $130 en razón 3:10, a la parte de razón 10 le tocan $100.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=13. (10/13)×130 = $100."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten 72 dulces proporcionalmente entre 3 niños de edades 2, 3 y 7 años. ¿Cuántos dulces le tocan al niño de 7 años?",
+          "opciones": [
+            "36",
+            "40",
+            "42",
+            "48"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma de edades=12. (7/12)×72=42 dulces."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una variación directa, la razón entre las dos cantidades que varían siempre es constante.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: esa razón constante es justo lo que define a la variación directa."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada reparto proporcional con el resultado de la parte indicada.",
+          "columnaA": [
+            "$175 en razón 3:4 — parte de razón 4",
+            "$264 en razón 5:6 — parte de razón 5",
+            "$187 en razón 6:11 — parte de razón 6"
+          ],
+          "columnaB": [
+            "$66",
+            "$120",
+            "$100"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "$175 en razón 3:4 — parte de razón 4 = $100; $264 en razón 5:6 — parte de razón 5 = $120; $187 en razón 6:11 — parte de razón 6 = $66."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "Se reparten $1,200 de utilidad proporcionalmente entre dos socios que aportaron $4,000 y $8,000. Al segundo socio (el de $8,000) le corresponden $___.",
+      "respuestaCorrecta": "800",
+      "retroalimentacion": "Suma=12,000. (8000/12000)×1200 = $800."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál de estas es un ejemplo de variación directa?",
+      "opciones": [
+        "Al triplicar x, y se mantiene igual",
+        "Al duplicar x, y se duplica también",
+        "Al aumentar x, y disminuye",
+        "Al duplicar x, y aumenta el triple"
+      ],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "En una variación directa, al duplicar una cantidad, la otra también se duplica: la razón entre ambas es constante."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "En un reparto proporcional entre 3 personas con aportaciones iguales, a cada una le toca exactamente 1/3 del total.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: si las tres aportaciones son iguales, la suma se divide en tres partes iguales."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada reparto proporcional con el resultado de la parte indicada.",
+      "columnaA": [
+        "De $600 entre aportes $100 y $200: parte del aporte $200",
+        "De 40 dulces entre edades 3 y 5 años: parte de 5 años",
+        "De $450 entre aportes $300 y $600: parte del aporte $600"
+      ],
+      "columnaB": [
+        "$300",
+        "$400",
+        "25"
+      ],
+      "parejasCorrectas": [
+        1,
+        2,
+        0
+      ],
+      "retroalimentacion": "Suma 100+200=300: (200/300)×600=$400. Suma 3+5=8: (5/8)×40=25. Suma 300+600=900: (600/900)×450=$300."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "3S-B1-PDA03-S2",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 16,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "La fórmula general",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax²+Bx+C=0 por factorización y fórmula general. Resuelve problemas cuyo planteamiento es una ecuación cuadrática.",
+  "problematizacion": {
+    "contexto": "Un compañero propone un reto con un cohete de agua para la feria de ciencias: la altura del cohete en cierto momento se modela con una ecuación cuadrática que, por más que lo intentan, no logran factorizar fácilmente.",
+    "pregunta": "¿Cómo usas la fórmula general para encontrar en qué momento el cohete vuelve a tocar el suelo?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.2",
+      "titulo": "La fórmula general",
+      "explicacion": "Cuando la ecuación no se puede factorizar fácilmente, siempre se puede usar la fórmula general, que funciona para cualquier ecuación cuadrática.",
+      "formula": "x = (−B ± √(B²−4AC)) / 2A",
+      "ejemplos": [
+        "x² - x - 6 = 0: A=1, B=-1, C=-6. x=(1±√(1+24))/2=(1±5)/2 → x=3 o x=-2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un jardín rectangular tiene área 40 m² y su largo mide 3 metros más que su ancho. El ancho mide ___ m.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "x(x+3)=40 → x²+3x−40=0 → (x+8)(x−5)=0 → x=5 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 10x + 16 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-8",
+          "retroalimentacion": "Las soluciones son x=-8 y x=-2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 10x + 21 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "Las soluciones son x=-3 y x=-7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 8x - 9 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-1",
+          "retroalimentacion": "Las soluciones son x=9 y x=-1."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 16x + 63 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "Las soluciones son x=9 y x=7."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

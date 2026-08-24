@@ -1,0 +1,62 @@
+{
+  "id": "3S-B1-PDA01-S1",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 1,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Exponentes negativos",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
+  "problematizacion": {
+    "contexto": "En tu casa hay una regla: si no tiendes la cama, tu domingo de $80 se reduce a la mitad cada día que se te olvida. El primer día son $40, el segundo $20... y tu hermano te reta a calcular en un solo paso cuánto te quedaría después de 5 olvidos seguidos, sin ir sumando día por día.",
+    "pregunta": "¿Cómo usas un exponente negativo para calcular de una vez cuánto dinero te quedaría después de que tu domingo se redujera a la mitad 5 veces seguidas?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.1",
+      "titulo": "Exponentes negativos",
+      "explicacion": "Un exponente negativo indica un número menor a 1: significa tomar el recíproco (1 entre la base elevada al exponente positivo).",
+      "formula": "x⁻ⁿ = 1/xⁿ",
+      "ejemplos": [
+        "2⁻³ = 1/2³ = 1/8.",
+        "10⁻² = 1/10² = 1/100 = 0.01."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√225 = 15.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 15 × 15 = 225."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "3⁻3 = 1/27.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "3⁻3 = 1/3^3 = 1/27."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√324 = 17.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "18 × 18 = 324."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√625 = 25.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "25 × 25 = 625."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√169 = 14.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "13 × 13 = 169."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

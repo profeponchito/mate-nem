@@ -1,0 +1,90 @@
+{
+  "id": "3S-B1-PDA04-S3",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 24,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repartos proporcionales con más de dos partes",
+  "contenido": "Funciones.",
+  "pda": "Relaciona e interpreta la variación de dos cantidades a partir de su representación tabular, gráfica y algebraica. Explora diversos procedimientos para resolver problemas de reparto proporcional.",
+  "problematizacion": {
+    "contexto": "Para el día del niño en la colonia, unos vecinos reunieron 60 dulces para repartir entre tres primos de 4, 5 y 6 años, y quieren que a los más grandes les toquen más dulces, en proporción a su edad.",
+    "pregunta": "¿Cuántos dulces le tocan a cada primo si se reparten en proporción a su edad?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.3",
+      "titulo": "Repartos proporcionales con más de dos partes",
+      "explicacion": "El mismo método del reparto proporcional funciona sin importar cuántas partes haya: se suman todos los valores de referencia (edades, aportaciones, horas trabajadas, etc.) y se reparte la cantidad total en esa misma proporción.",
+      "ejemplos": [
+        "Se reparten 60 dulces proporcionalmente entre 3 niños de 4, 5 y 6 años. Suma de edades=15. Al niño de 6 años le tocan (6/15)×60 = 24 dulces."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten 60 dulces proporcionalmente entre 3 niños según sus edades: 4, 5 y 6 años. ¿Cuántos dulces le tocan al niño de 6 años?",
+          "opciones": [
+            "16",
+            "20",
+            "24",
+            "30"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma de edades=15. (6/15)×60 = 24 dulces."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten 90 dulces proporcionalmente entre 3 niños de edades 2, 3 y 4 años. ¿Cuántos dulces le tocan al niño de 3 años?",
+          "opciones": [
+            "20",
+            "30",
+            "40",
+            "45"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Suma de edades=9. (3/9)×90 = 30 dulces."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $203 proporcionalmente entre dos personas con aportaciones en razón 5:2. ¿Cuánto le toca a la de razón 5?",
+          "opciones": [
+            "$130",
+            "$155",
+            "$145",
+            "$140"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma=7. (5/7)×203 = $145."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $390 proporcionalmente entre dos personas con aportaciones en razón 5:8. ¿Cuánto le toca a la de razón 5?",
+          "opciones": [
+            "$145",
+            "$155",
+            "$150",
+            "$140"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma=13. (5/13)×390 = $150."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $320 proporcionalmente entre dos personas con aportaciones en razón 8:2. ¿Cuánto le toca a la de razón 8?",
+          "opciones": [
+            "$240",
+            "$261",
+            "$256",
+            "$251"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma=10. (8/10)×320 = $256."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "3S-B1-PDA03-S7",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 21,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: ecuaciones cuadráticas y problemas de área",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax²+Bx+C=0 por factorización y fórmula general. Resuelve problemas cuyo planteamiento es una ecuación cuadrática.",
+  "problematizacion": {
+    "contexto": "Como actividad de cierre, cada equipo recibe una tarjeta con un problema distinto: unos deben factorizar una ecuación de ganancias, otros usar la fórmula general para una trayectoria, y otros calcular las medidas de un terreno rectangular a partir de su área, descartando la solución que no tiene sentido.",
+    "pregunta": "¿Qué procedimiento le corresponde a cada tarjeta —factorización, fórmula general o análisis del contexto— y cómo lo resuelves?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.7",
+      "titulo": "Repaso integral: ecuaciones cuadráticas y problemas de área",
+      "explicacion": "Recuerda: cualquier ecuación cuadrática Ax²+Bx+C=0 se puede resolver factorizando (si es posible) o con la fórmula general x = (−B ± √(B²−4AC)) / 2A. En problemas de áreas, plantea la ecuación con las medidas del terreno o figura, resuélvela, y quédate solo con la solución que tenga sentido (una medida no puede ser negativa).",
+      "ejemplos": [
+        "Un jardín con área 28 m² y largo = ancho+3: x(x+3)=28 → x²+3x−28=0 → (x+7)(x−4)=0 → x=4 (se descarta x=-7). El largo es 4+3=7 m."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un jardín rectangular tiene área de 28 m² y su largo mide 3 metros más que su ancho. ¿Cuánto mide el ancho?",
+          "opciones": [
+            "3 m",
+            "4 m",
+            "5 m",
+            "7 m"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "x(x+3)=28 → x²+3x−28=0 → (x+7)(x−4)=0 → x=4 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 4x - 32 = 0 son x=8 y x=-4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-8)(x+4)=x²-4x-32=0, así que x=8 o x=-4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 13x + 42 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "(x+6)(x+7)=0 → x=-6 o x=-7. La menor es -7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene área de 169 m². ¿Cuánto mide su lado?",
+          "opciones": [
+            "11 m",
+            "12 m",
+            "13 m",
+            "14 m"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "x²=169 → x=13 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² - 15x + 56 = 0",
+            "x² + 3x - 54 = 0",
+            "x² - 7x - 18 = 0"
+          ],
+          "columnaB": [
+            "x = 9, x = -2",
+            "x = 7, x = 8",
+            "x = -9, x = 6"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x² - 15x + 56 = 0 → x = 7, x = 8; x² + 3x - 54 = 0 → x = -9, x = 6; x² - 7x - 18 = 0 → x = 9, x = -2."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "Factoriza y resuelve: x² - 9x + 20 = 0. La solución menor es x = ___.",
+      "respuestaCorrecta": "4",
+      "retroalimentacion": "(x-4)(x-5)=0 → x=4 o x=5. La menor es 4."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un jardín rectangular tiene área 54 m² y su largo mide 3 m más que su ancho. ¿Cuánto mide el ancho?",
+      "opciones": [
+        "5 m",
+        "6 m",
+        "7 m",
+        "9 m"
+      ],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "x(x+3)=54 → x²+3x−54=0 → (x+9)(x−6)=0 → x=6 (se descarta x=-9)."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "La solución positiva de x² - 2x - 15 = 0 es x=5.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: (x-5)(x+3)=x²-2x-15=0 → x=5 o x=-3. La positiva es 5."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada ecuación con sus soluciones.",
+      "columnaA": [
+        "x² - 7x + 12 = 0",
+        "x² - 9x + 20 = 0",
+        "x² - 2x - 15 = 0"
+      ],
+      "columnaB": [
+        "x = 5, x = -3",
+        "x = 3, x = 4",
+        "x = 4, x = 5"
+      ],
+      "parejasCorrectas": [
+        1,
+        2,
+        0
+      ],
+      "retroalimentacion": "x²-7x+12=0 → x=3,4; x²-9x+20=0 → x=4,5; x²-2x-15=0 → x=5,-3."
+    }
+  ]
+}

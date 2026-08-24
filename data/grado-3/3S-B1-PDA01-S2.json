@@ -1,0 +1,62 @@
+{
+  "id": "3S-B1-PDA01-S2",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 2,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Raíz cuadrada",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
+  "problematizacion": {
+    "contexto": "La escuela va a repintar la cancha de basquetbol, que tiene forma cuadrada y un área de 144 m². El conserje necesita saber cuántos metros mide un solo lado para calcular la cinta que va a comprar antes de empezar a marcar la cancha.",
+    "pregunta": "¿Cuántos metros mide cada lado de la cancha si su área es 144 m²?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.2",
+      "titulo": "Raíz cuadrada",
+      "explicacion": "La raíz cuadrada de un número es el valor que, multiplicado por sí mismo, da ese número.",
+      "formula": "√x × √x = x",
+      "ejemplos": [
+        "√144 = 12, porque 12 × 12 = 144.",
+        "√81 = 9, porque 9 × 9 = 81."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "2⁻³ escrito como fracción es ___.",
+          "respuestaCorrecta": "1/8",
+          "retroalimentacion": "2⁻³ = 1/2³ = 1/8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "5⁻4 escrito como fracción es ___.",
+          "respuestaCorrecta": "1/625",
+          "retroalimentacion": "5⁻4 = 1/5^4 = 1/625."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "3⁻4 escrito como fracción es ___.",
+          "respuestaCorrecta": "1/81",
+          "retroalimentacion": "3⁻4 = 1/3^4 = 1/81."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "2⁻2 escrito como fracción es ___.",
+          "respuestaCorrecta": "1/4",
+          "retroalimentacion": "2⁻2 = 1/2^2 = 1/4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La raíz cuadrada de 49 es ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "7 × 7 = 49."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

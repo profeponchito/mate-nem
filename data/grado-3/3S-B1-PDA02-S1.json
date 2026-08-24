@@ -1,0 +1,61 @@
+{
+  "id": "3S-B1-PDA02-S1",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 8,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Volumen de un prisma con base cuadrada",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas y volúmenes de cuerpos geométricos y calcula el valor de una variable en función de las otras.",
+  "problematizacion": {
+    "contexto": "Tu familia va a construir un tinaco cuadrado en la azotea, con una base cuadrada de lado x y la altura que ya decidió tu papá. El plomero necesita saber cuántos cm³ cabrán antes de comprar el material.",
+    "pregunta": "¿Cómo calculas el volumen del tinaco si conoces el lado de la base y la altura?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.1",
+      "titulo": "Volumen de un prisma con base cuadrada",
+      "explicacion": "El volumen de un prisma se calcula multiplicando el área de la base por la altura. Cuando la base es un cuadrado de lado x, su área es x², por lo que el volumen del prisma es x²×h.",
+      "formula": "Volumen = Área de la base × altura = x² × h",
+      "ejemplos": [
+        "Si x=4 cm y h=10 cm, el volumen es 4²×10 = 16×10 = 160 cm³."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si V=x²h, con x=5 y h=2, el volumen es 50.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: V = 5²×2 = 25×2 = 50."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un prisma con base cuadrada de lado x=9 y altura h=8 tiene volumen 648.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 9²×8 = 648."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un prisma con base cuadrada de lado x=9 y altura h=4 tiene volumen 328.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "V = 9²×4 = 324."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un prisma con base cuadrada de lado x=9 y altura h=5 tiene volumen 405.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 9²×5 = 405."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un prisma con base cuadrada de lado x=5 y altura h=6 tiene volumen 150.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 5²×6 = 150."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "3S-B1-PDA02-S3",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 10,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Volumen del cubo",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas y volúmenes de cuerpos geométricos y calcula el valor de una variable en función de las otras.",
+  "problematizacion": {
+    "contexto": "Para el día del niño van a construir un dado gigante de cartón (un cubo perfecto) para un juego en la kermés de la escuela, y necesitan calcular cuánto relleno usarán según el tamaño de la arista que elijan.",
+    "pregunta": "Si deciden que la arista del dado mida 4 cm, ¿cuál es su volumen?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.3",
+      "titulo": "Volumen del cubo",
+      "explicacion": "Un caso especial es cuando la altura es igual al lado de la base: se forma un cubo, cuyo volumen es la arista elevada al cubo.",
+      "formula": "Volumen del cubo = x³",
+      "ejemplos": [
+        "Un cubo con arista de 4 cm tiene volumen 4³ = 64 cm³."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cubo tiene arista x. ¿Cuál es la expresión algebraica de su volumen?",
+          "opciones": [
+            "3x",
+            "x²",
+            "x³",
+            "6x²"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "El volumen de un cubo es la arista al cubo: x³."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cubo tiene arista 5 cm. ¿Cuál es su volumen?",
+          "opciones": [
+            "15",
+            "25",
+            "100",
+            "125"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "El volumen del cubo es la arista al cubo: 5³ = 125."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una caja tiene volumen V=x²h. Si x=3 y h=2, ¿cuál es el volumen?",
+          "opciones": [
+            "18",
+            "28",
+            "24",
+            "8"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "V = 3²×2 = 18."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una caja tiene volumen V=x²h. Si x=3 y h=7, ¿cuál es el volumen?",
+          "opciones": [
+            "53",
+            "70",
+            "56",
+            "63"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "V = 3²×7 = 63."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una caja tiene volumen V=x²h. Si x=4 y h=3, ¿cuál es el volumen?",
+          "opciones": [
+            "45",
+            "36",
+            "60",
+            "48"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "V = 4²×3 = 48."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

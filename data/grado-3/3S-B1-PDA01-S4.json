@@ -1,0 +1,122 @@
+{
+  "id": "3S-B1-PDA01-S4",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 4,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
+  "problematizacion": {
+    "contexto": "Para la feria de ciencias, tu equipo prepara un cartel titulado 'De lo microscópico a lo cósmico', donde deben ubicar en una misma tabla el tamaño de una bacteria, el lado de un patio cuadrado del que solo conocen el área, y la distancia a una estrella, usando la misma forma de escritura en todos los casos para que se vean comparables.",
+    "pregunta": "¿Cómo aplicas exponentes negativos, raíz cuadrada y notación científica juntos para completar la tabla del cartel?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: un exponente negativo significa tomar el recíproco (x⁻ⁿ = 1/xⁿ), y la raíz cuadrada de un número es el valor que multiplicado por sí mismo da ese número. La notación científica escribe números muy grandes o muy pequeños como a × 10ⁿ (con 1≤a<10): un exponente positivo indica un número grande, y uno negativo, un número menor que 1.",
+      "ejemplos": [
+        "√225 = 15. Correcto: 15 × 15 = 225."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la notación científica correcta para un número cuya mantisa es 6.3 y cuyo exponente de 10 es -6?",
+          "opciones": [
+            "6.3 × 10^-7",
+            "6.3 × 10^-6",
+            "63 × 10^-7",
+            "6.3 × 10^-5"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Se escribe 6.3 × 10^-6, manteniendo 1≤mantisa<10."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada cantidad con su notación científica.",
+          "columnaA": [
+            "150,000,000,000",
+            "0.000002",
+            "45,000"
+          ],
+          "columnaB": [
+            "4.5 × 10⁴",
+            "1.5 × 10¹¹",
+            "2 × 10⁻⁶"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "150,000,000,000 = 1.5×10¹¹; 0.000002 = 2×10⁻⁶; 45,000 = 4.5×10⁴."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "√484",
+            "4⁻2",
+            "3.5 × 10^6"
+          ],
+          "columnaB": [
+            "número grande",
+            "22",
+            "1/16"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "√484 = 22; 4⁻2 = 1/16; 3.5 × 10^6 = número grande."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "√484",
+            "3⁻3",
+            "9.6 × 10^6"
+          ],
+          "columnaB": [
+            "1/27",
+            "número grande",
+            "22"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "√484 = 22; 3⁻3 = 1/27; 9.6 × 10^6 = número grande."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "√324",
+            "2⁻2",
+            "6.3 × 10^4"
+          ],
+          "columnaB": [
+            "número grande",
+            "1/4",
+            "18"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "√324 = 18; 2⁻2 = 1/4; 6.3 × 10^4 = número grande."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

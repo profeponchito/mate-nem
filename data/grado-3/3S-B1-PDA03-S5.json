@@ -1,0 +1,66 @@
+{
+  "id": "3S-B1-PDA03-S5",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 19,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: factorizar y usar la fórmula general",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax²+Bx+C=0 por factorización y fórmula general. Resuelve problemas cuyo planteamiento es una ecuación cuadrática.",
+  "problematizacion": {
+    "contexto": "En un examen sorpresa la maestra pone dos ecuaciones relacionadas con las ventas de la cooperativa escolar: una se puede factorizar rápido, pero otra tiene números que no encajan a simple vista y obliga a usar otro método.",
+    "pregunta": "¿Cuál ecuación resuelves por factorización y cuál necesitas resolver con la fórmula general?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.5",
+      "titulo": "Repaso: factorizar y usar la fórmula general",
+      "explicacion": "Recuerda: para resolver una ecuación cuadrática Ax²+Bx+C=0, primero intenta factorizarla como producto de dos binomios (cada factor igualado a cero te da una solución); si no es fácil de factorizar, usa la fórmula general x = (−B ± √(B²−4AC)) / 2A, que siempre funciona.",
+      "ejemplos": [
+        "x² - 6x + 8 = 0 se factoriza como (x-2)(x-4)=0, así que x=2 o x=4."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 6x + 8 = 0 son x=2 y x=4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-2)(x-4)=x²-6x+8=0, así que x=2 o x=4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 7x + 10 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-5",
+          "retroalimentacion": "(x+2)(x+5)=0 → x=-2 o x=-5. La menor es -5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - 3x - 10 = 0?",
+          "opciones": [
+            "x=5, x=-2",
+            "x=2, x=-5",
+            "x=-2, x=-5",
+            "x=10, x=-1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(3±√(9+40))/2=(3±7)/2 → x=5 o x=-2."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + x - 20 = 0 son x=5 y x=-4.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Las soluciones reales son x=-5 y x=4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 11x + 30 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "(x-5)(x-6)=0 → x=5 o x=6."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}
