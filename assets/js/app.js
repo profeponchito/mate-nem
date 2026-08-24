@@ -719,8 +719,13 @@ function panelProblematizacion_(pda, color) {
  * 4 subtemas núcleo de un PDA. Si el PDA tiene subtemas de repaso extra
  * después de esos 4 (índice ≥ 4 — ver Paso 13), se muestran como
  * "Repaso N de R" en vez de continuar la escala de dificultad, ya que no
- * introducen contenido nuevo sino que repasan lo ya visto. */
-function nivelChip_(indice, total) {
+ * introducen contenido nuevo sino que repasan lo ya visto. Si el propio
+ * subtema trae `nivelEtiqueta` (Paso 15: "tarjeta dividida" de un solo
+ * subtema, donde el índice dentro del arreglo — siempre 0 — no revela su
+ * posición real en el PDA de origen), esa etiqueta fija se usa tal cual en
+ * vez de calcularla por índice/longitud. */
+function nivelChip_(subtema, indice, total) {
+  if (subtema && subtema.nivelEtiqueta) return subtema.nivelEtiqueta;
   if (indice < NIVEL_DIFICULTAD.length) {
     return `Nivel ${indice + 1} de ${Math.min(total, NIVEL_DIFICULTAD.length)} · ${NIVEL_DIFICULTAD[indice]}`;
   }
@@ -731,7 +736,7 @@ function nivelChip_(indice, total) {
 
 function panelSubtema_(subtema, indice, total, color) {
   return `
-    ${overline_(nivelChip_(indice, total), 'libro', color)}
+    ${overline_(nivelChip_(subtema, indice, total), 'libro', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-3">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <p class="text-slate-700 leading-relaxed mb-3">${escapeHTML_(subtema.explicacion)}</p>
     ${subtema.formula ? `<p class="bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 font-mono text-slate-800 mb-3">${escapeHTML_(subtema.formula)}</p>` : ''}
@@ -746,7 +751,7 @@ function panelSubtema_(subtema, indice, total, color) {
  * para este intento), calificados de forma independiente al resto del PDA. */
 function panelActividad_(subtema, indice, total, reactivos, color) {
   return `
-    ${overline_(nivelChip_(indice, total), 'trofeo', color)}
+    ${overline_(nivelChip_(subtema, indice, total), 'trofeo', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-4">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <div class="space-y-6">
       ${reactivos.map((reactivo, i) => `
@@ -803,7 +808,7 @@ function panelResultado_(pda, estado, color) {
       </p>
     </div>
     <p class="text-slate-600 font-semibold mb-4">${r.puntaje} de ${r.puntajeMax} pts</p>
-    <p class="text-slate-400 text-xs mb-4">Suma de los ${pda.subtemas.length} subtemas (5 preguntas cada uno).</p>
+    <p class="text-slate-400 text-xs mb-4">${pda.subtemas.length === 1 ? 'Resultado de este tema (5 preguntas).' : `Suma de los ${pda.subtemas.length} subtemas (5 preguntas cada uno).`}</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
       ${r.detalle.map((d) => `

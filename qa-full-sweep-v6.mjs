@@ -63,12 +63,14 @@ async function probarPDA(page, grado, pda, consoleErrors) {
   await page.goto(`${BASE}/#/pda/${encodeURIComponent(grado)}/${encodeURIComponent(pda.id)}`, { waitUntil: 'load' });
   await page.waitForTimeout(200);
 
-  // Todo PDA tiene al menos 4 subtemas "núcleo" (Introductorio/Intermedio/
-  // Avanzado/Síntesis); opcionalmente hasta 3 subtemas de repaso extra
-  // después de esos 4 (ver Paso 13) — el total de reactivos se calcula del
-  // propio PDA, no se asume fijo en 4×5=20.
-  if (pda.subtemas.length < 4) {
-    throw new Error(`se esperaban al menos 4 subtemas, hay ${pda.subtemas.length}`);
+  // Un PDA curricular por grado tiene al menos 4 subtemas "núcleo"
+  // (Introductorio/Intermedio/Avanzado/Síntesis), opcionalmente hasta 3 de
+  // repaso extra después de esos 4 (ver Paso 13). Desde el Paso 15 también
+  // existen "tarjetas divididas" de un solo subtema (partir un PDA de 7 en
+  // 7 tarjetas de camino) — el mínimo real es 1. El total de reactivos se
+  // calcula del propio PDA, no se asume fijo en 4×5=20.
+  if (pda.subtemas.length < 1) {
+    throw new Error(`se esperaba al menos 1 subtema, hay ${pda.subtemas.length}`);
   }
   const totalReactivos = pda.subtemas.reduce((acc, s) => acc + s.reactivos.length, 0);
   if (totalReactivos !== pda.subtemas.length * 5) {
@@ -96,8 +98,15 @@ async function probarPDA(page, grado, pda, consoleErrors) {
     if (!bodyText.includes(subtema.explicacion)) throw new Error(`subtema[${si}] no muestra su explicación teórica`);
     // Los primeros hasta-4 subtemas son "núcleo" (Nivel N de <totalNucleo> ·
     // <etiqueta>); cualquier subtema extra (índice ≥ 4) es de repaso (Repaso
-    // N de R) — mismo esquema que nivelChip_ en app.js.
-    if (si < nivelesEsperados.length) {
+    // N de R) — mismo esquema que nivelChip_ en app.js. Si el subtema trae
+    // `nivelEtiqueta` fija (Paso 15: tarjeta dividida de un solo subtema),
+    // esa es la etiqueta que debe aparecer tal cual, no la calculada por
+    // índice (que en una tarjeta de 1 subtema siempre daría "Nivel 1 de 1").
+    if (subtema.nivelEtiqueta) {
+      if (!bodyText.includes(subtema.nivelEtiqueta)) {
+        throw new Error(`subtema[${si}] no muestra su nivelEtiqueta fija esperada "${subtema.nivelEtiqueta}"`);
+      }
+    } else if (si < nivelesEsperados.length) {
       if (!bodyText.includes(`Nivel ${si + 1} de ${totalNucleo}`) || !bodyText.includes(nivelesEsperados[si])) {
         throw new Error(`subtema[${si}] no muestra el nivel de dificultad esperado "Nivel ${si + 1} de ${totalNucleo} · ${nivelesEsperados[si]}"`);
       }
@@ -349,11 +358,18 @@ async function probarPDA(page, grado, pda, consoleErrors) {
         // un nodo clickeable por PDA del grado y el trazo SVG de fondo, y hacer
         // clic en el primer nodo debe llevar a ese PDA (sin bloqueos: ningún
         // nodo debe estar deshabilitado o inaccesible). Se verifica una vez por
-        // grado (con el primer PDA de cada uno).
+        // grado (con el primer PDA de cada uno). Desde el Paso 15 un grado puede
+        // tener hasta 49 tarjetas (Promise.all de esos 49 fetch()) — un timeout
+        // fijo corto es frágil aquí, así que se espera activamente (igual que en
+        // el camino de Ejercítate) a que aparezca al menos un nodo o el error.
         if (!caminoVerificado.has(grado)) {
           caminoVerificado.add(grado);
           await page.goto(`${BASE}/#/pda-lista/${encodeURIComponent(grado)}`, { waitUntil: 'load' });
-          await page.waitForTimeout(200);
+          await page.waitForFunction(
+            () => document.querySelectorAll('a[href^="#/pda/"]').length > 0 || document.body.innerText.includes('No se pudieron cargar'),
+            { timeout: 8000 }
+          ).catch(() => {});
+          await page.waitForTimeout(150);
           const nodosCamino = page.locator('a[href^="#/pda/"]');
           const totalNodos = await nodosCamino.count();
           if (totalNodos !== archivos.length) {

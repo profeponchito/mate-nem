@@ -30,15 +30,22 @@ del resultado global para quien quiera seguir practicando, y justo después
 de ella (o del resultado, si el PDA no tiene práctica extra) aparece la
 celebración final.
 
-Los 17 PDAs del Trimestre 1 tienen, además de sus 4 subtemas núcleo
-(Introductorio/Intermedio/Avanzado/Síntesis, 20 reactivos), **3 subtemas de
-repaso adicionales** (`N.5`-`N.7`, 15 reactivos más) que no introducen
-contenido nuevo sino que refuerzan lo ya visto con ejercicios distintos —
-en total **7 subtemas y 35 reactivos calificados por PDA**, etiquetados en
-la interfaz como "Repaso N de 3" para distinguirlos de los 4 niveles
-núcleo. Los 36 temas de Ejercítate se quedan en 4 subtemas (20 reactivos)
-cada uno. Al terminar la constancia (y la práctica extra, si el PDA/tema la
-tiene), aparece una pantalla de **celebración estilo "nivel superado" de
+Cada uno de los PDAs curriculares del Trimestre 1 tenía, además de sus 4
+subtemas núcleo (Introductorio/Intermedio/Avanzado/Síntesis, 20 reactivos),
+**3 subtemas de repaso adicionales** (`N.5`-`N.7`, 15 reactivos más) que no
+introducían contenido nuevo sino que reforzaban lo ya visto con ejercicios
+distintos — 7 subtemas y 35 reactivos calificados por PDA. Desde el Paso 15,
+esos 7 subtemas de cada uno de los 17 PDAs originales son **cada uno su
+propia tarjeta independiente del camino** (mismo contenido matemático de
+siempre, con una problematización propia y corta): el recorrido de cada
+grado ya no tiene 7/6/4 paradas, sino **49 en 1°, 42 en 2° y 28 en 3°** —
+un recorrido mucho más largo sin inventar temario nuevo, solo repartiendo
+el que ya existía. Cada tarjeta trae su propia etiqueta de nivel fija
+("Nivel N de 4 · Avanzado", "Repaso 2 de 3"…) para no perder de vista en
+qué punto de dificultad del PDA original está. Los 36 temas de Ejercítate
+siguen con 4 subtemas (20 reactivos) cada uno, sin cambios. Al terminar la
+constancia (y la práctica extra, si la tarjeta la tiene — ver más abajo),
+aparece una pantalla de **celebración estilo "nivel superado" de
 videojuego** — confeti animado, trofeo y un botón para elegir otro tema —
 como cierre festivo de cada recorrido.
 
@@ -90,9 +97,9 @@ mate-nem/
 │   ├── README.md                  ✅ incluido — cómo agregar PDAs + fuente curricular
 │   ├── schema/
 │   │   └── pda.schema.json        ✅ incluido — esquema formal de un PDA
-│   ├── grado-1/                   ✅ 7 PDAs — Trimestre 1 completo (1S-B1-PDA01…07)
-│   ├── grado-2/                   ✅ 6 PDAs — Trimestre 1 completo (2S-B1-PDA01…06)
-│   ├── grado-3/                   ✅ 4 PDAs — Trimestre 1 completo (3S-B1-PDA01…04)
+│   ├── grado-1/                   ✅ 49 tarjetas — Trimestre 1 dividido en camino (7 PDAs × 7 subtemas)
+│   ├── grado-2/                   ✅ 42 tarjetas — Trimestre 1 dividido en camino (6 PDAs × 7 subtemas)
+│   ├── grado-3/                   ✅ 28 tarjetas — Trimestre 1 dividido en camino (4 PDAs × 7 subtemas)
 │   └── ejercitate/                ✅ 36 temas — básicos/intermedios/avanzados/estadística (EJ-01…36)
 └── backend/
     └── google-apps-script/
@@ -149,7 +156,8 @@ el sitio ya se sirve por `https://`.
 12. ✅ Camino de PDAs en forma de "serpiente" (curva SVG suave con nodos numerados, ninguno bloqueado — el docente puede pedir cualquier PDA en cualquier momento), un indicador de avance también "en serpiente" al bajar de actividad en actividad dentro de un PDA, y una paleta de colores propia ("Aula NEM": azul pizarrón, cobre, verde bosque, grafito, vino, ocre) deliberadamente distinta a la de Duolingo — aplicado a los 3 grados y probado de punta a punta.
 13. ✅ Contenido interactivo completo del apartado "Ejercítate": 36 temas (10 básicos, 10 intermedios, 10 avanzados, 6 de estadística y probabilidad), con la misma dinámica que un PDA (problematización + 4 subtemas × 5 reactivos + práctica extra). Arquitectura de "pseudo-grado" (`'ejercitate'` reutiliza el 100% del motor de PDAs — rutas, carga de datos, gamificación, webhook, constancia — con su propia carpeta `data/ejercitate/` y su propio color de acento, ver `data/README.md`) y camino agrupado en 4 mini-caminos por categoría, cada uno con su propio encabezado. Los 36 temas (864 reactivos) están validados contra el esquema, sin duplicados semánticos, y probados de punta a punta con Playwright.
 14. ✅ Subtemas de repaso y pantalla de celebración final. Los 17 PDAs del Trimestre 1 ganaron 3 subtemas de repaso cada uno (`N.5`-`N.7`, 15 reactivos más, sin contenido nuevo — refuerzan los 4 subtemas núcleo con ejercicios distintos), pasando de 4 a 7 subtemas y de 20 a 35 reactivos calificados por PDA; el motor de PDAs ya soportaba cualquier número de subtemas de forma dinámica, así que solo hizo falta generalizar la etiqueta de nivel (`nivelChip_`: "Repaso N de 3" para los subtemas extra) y el esquema (`maxItems` de 4 a 7). Además, al terminar la constancia (y la práctica extra, si la hay) aparece una pantalla de celebración estilo "nivel superado" de videojuego (`panelCelebracion_`: confeti animado, trofeo y botón para elegir otro tema). Los 255 reactivos nuevos (17 PDAs × 3 subtemas × 5) están validados contra el esquema, sin duplicados semánticos en todo el archivo de cada PDA (no solo por subtema — 663 reactivos revisados en total entre los 17 PDAs, sumando los ya existentes), y probados de punta a punta con Playwright junto con los 36 temas de Ejercítate (53/53 pruebas).
-15. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
-16. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad") para los PDAs por grado.
-17. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
-18. ⏳ Pruebas en dispositivos móviles reales.
+15. ✅ Cada PDA curricular del Trimestre 1 (17 en total) se dividió en tantas tarjetas de camino como subtemas tenía (7 cada uno): el recorrido de cada grado pasó de 7/6/4 paradas a **49/42/28**, sin escribir temario nuevo — reutiliza tal cual la explicación, ejemplos y los 5 reactivos de cada subtema, solo con una problematización nueva y breve por tarjeta (redactada por separado para cada una de las 119, con un contexto real distinto ligado específicamente a esa habilidad). El motor de PDAs ya soportaba cualquier número de subtemas (ver Paso 14), así que una tarjeta de 1 solo subtema funciona sin cambios de fondo; se agregó `nivelEtiqueta` (esquema y `nivelChip_` en `app.js`) para que cada tarjeta muestre su nivel de dificultad real ("Nivel 3 de 4 · Avanzado", "Repaso 2 de 3"…) en vez de recalcularlo por su posición (que en una tarjeta de 1 subtema siempre sería "1 de 1"). La práctica extra de cada PDA original se conserva en la última de sus 7 tarjetas (la de "Repaso integral"), sin duplicarla en las demás. Los 17 PDAs monolíticos originales se reemplazaron por las 119 tarjetas (`data/grado-N/index.json` reconstruido); las 119 problematizaciones nuevas están validadas contra el esquema, sin duplicados exactos entre sí, y las 119 tarjetas + los 36 temas de Ejercítate (155 en total) están probados de punta a punta con Playwright (155/155).
+16. ⏳ Página de verificación de folios (`verificar.html`) enlazada desde el QR.
+17. ⏳ Trimestres 2 y 3 (ejes "Forma, espacio y medida" y "Análisis de datos y probabilidad") para los PDAs por grado.
+18. ⏳ Desplegar el Web Endpoint real, configurar `WEBHOOK_URL` y subir a GitHub Pages.
+19. ⏳ Pruebas en dispositivos móviles reales.
