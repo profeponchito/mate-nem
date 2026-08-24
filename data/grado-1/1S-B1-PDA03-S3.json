@@ -1,0 +1,91 @@
+{
+  "id": "1S-B1-PDA03-S3",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 17,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Jerarquía de operaciones con signos",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Reconoce el significado de las cuatro operaciones básicas al operar números con signo. Comprueba las propiedades conmutativa, asociativa y distributiva, e identifica y aplica la jerarquía de operaciones.",
+  "problematizacion": {
+    "contexto": "La combi escolar cobra una cuota base de $15 por alumno más $3 por cada parada extra que pide el grupo, y ese día el chofer descontó $10 por pronto pago. En la ruta de hoy hicieron 4 paradas extra.",
+    "pregunta": "Siguiendo el orden correcto de las operaciones, ¿cuánto pagó cada alumno por el viaje de hoy?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.3",
+      "titulo": "Jerarquía de operaciones con signos",
+      "explicacion": "Cuando una expresión combina varias operaciones, primero se resuelven las multiplicaciones y divisiones (de izquierda a derecha), y después las sumas y restas.",
+      "ejemplos": [
+        "2 + 3 × (-4): primero la multiplicación, 3×(-4)=-12; luego 2+(-12)=-10.",
+        "(-2 + 5) × 3: primero el paréntesis, -2+5=3; luego 3×3=9."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve aplicando jerarquía de operaciones: 2 + 3 × (-4)",
+          "opciones": [
+            "-20",
+            "-10",
+            "10",
+            "20"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Primero la multiplicación: 3×(-4)=-12; luego 2+(-12)=-10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve aplicando jerarquía de operaciones: 10 - 2 × (-3)",
+          "opciones": [
+            "4",
+            "16",
+            "-16",
+            "24"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Primero la multiplicación: 2×(-3)=-6; luego 10-(-6)=16."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-2) × (-5)",
+          "opciones": [
+            "10",
+            "7",
+            "14",
+            "6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(-2) × (-5) = 10. Signos iguales dan positivo."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (5) × (-3)",
+          "opciones": [
+            "-18",
+            "-15",
+            "-12",
+            "-17"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(5) × (-3) = -15. Signos diferentes dan negativo."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (6) × (-9)",
+          "opciones": [
+            "-54",
+            "-50",
+            "-51",
+            "-57"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(6) × (-9) = -54. Signos diferentes dan negativo."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "1S-B1-PDA04-S5",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 26,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: identificar la diferencia y usar la formula del termino n",
+  "contenido": "Regularidades y Patrones.",
+  "pda": "Representa algebraicamente una sucesión con progresión aritmética de figuras y números.",
+  "problematizacion": {
+    "contexto": "Para entrenar tu resistencia antes de una carrera de 5 km, corres 4 vueltas a la cancha en la primera semana, y semana con semana subes el número de vueltas en 2 unidades.",
+    "pregunta": "¿Cuál es la diferencia constante entre semanas, y cuántas vueltas darás en la semana 8 usando la fórmula del término n?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.5",
+      "titulo": "Repaso: identificar la diferencia y usar la formula del termino n",
+      "explicacion": "Recuerda: en una progresion aritmetica, la diferencia d es la cantidad constante que se suma (o resta) de un termino al siguiente, y se obtiene restando dos terminos consecutivos. Para encontrar cualquier termino sin ir sumando uno por uno, usa la formula termino_n = a + (n-1) x d.",
+      "ejemplos": [
+        "Sucesion 4, 7, 10, 13...: a=4, d=3. termino_8 = 4 + (8-1)x3 = 4+21 = 25."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesion con a=9 y d=2, el termino 5 es 17.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "termino_5 = 9 + (5-1)x2 = 9+8 = 17."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesion 4, 7, 10, 13..., el termino 8 es ___.",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "a=4, d=3. termino_8 = 4 + (8-1)x3 = 4+21 = 25."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con a=5 y d=-4, ¿cual es el termino 5 de la sucesion?",
+          "opciones": [
+            "-11",
+            "-9",
+            "-15",
+            "-19"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "termino_5 = 5 + (5-1)x-4 = 5-16 = -11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La diferencia constante de la sucesion 20, 15, 10, 5... es d=-5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Cada termino disminuye 5 respecto al anterior: 15-20=-5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=6 y d=5, el termino 6 de la sucesion es ___.",
+          "respuestaCorrecta": "31",
+          "retroalimentacion": "termino_6 = 6 + (6-1)x5 = 6+25 = 31."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

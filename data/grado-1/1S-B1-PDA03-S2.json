@@ -1,0 +1,62 @@
+{
+  "id": "1S-B1-PDA03-S2",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 16,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Multiplicar y dividir con signos",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Reconoce el significado de las cuatro operaciones básicas al operar números con signo. Comprueba las propiedades conmutativa, asociativa y distributiva, e identifica y aplica la jerarquía de operaciones.",
+  "problematizacion": {
+    "contexto": "En el torneo de futbol rápido de la secu, cada tarjeta amarilla resta 2 puntos al marcador de juego limpio de tu equipo, y en la primera vuelta les sacaron 4 tarjetas. Ese castigo total se repartirá entre los 3 partidos que jugó el equipo para calcular un promedio.",
+    "pregunta": "¿Cuántos puntos perdió el equipo en la primera vuelta, y cuántos puntos se le restan en promedio por partido?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.2",
+      "titulo": "Multiplicar y dividir con signos",
+      "explicacion": "La multiplicación y la división siguen la regla de signos: signos iguales dan resultado positivo, signos diferentes dan resultado negativo.",
+      "formula": "(+)×(+)=+  ;  (−)×(−)=+  ;  (+)×(−)=−  ;  (−)×(+)=−",
+      "ejemplos": [
+        "(-6) × (-4) = 24, porque signos iguales (negativo por negativo) dan resultado positivo.",
+        "(-20) ÷ 5 = -4, porque signos diferentes dan resultado negativo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El comerciante vendió $450, pagó una deuda de $300, le devolvieron $120 y pagó $80 de flete. Su balance final fue $___.",
+          "respuestaCorrecta": "190",
+          "retroalimentacion": "450 − 300 + 120 − 80 = 190."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(15) - (12) = ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "(15) - (12) = 3."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-15) - (11) = ___.",
+          "respuestaCorrecta": "-26",
+          "retroalimentacion": "(-15) - (11) = -26."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(8) + (14) = ___.",
+          "respuestaCorrecta": "22",
+          "retroalimentacion": "(8) + (14) = 22."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-8) - (3) = ___.",
+          "respuestaCorrecta": "-11",
+          "retroalimentacion": "(-8) - (3) = -11."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "1S-B1-PDA02-S1",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 8,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "¿Por qué necesitamos números negativos?",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Reconoce la necesidad de los números negativos a partir de usar cantidades que tienen al cero como referencia. Compara y ordena números con signo en la recta numérica.",
+  "problematizacion": {
+    "contexto": "En la tiendita de la esquina, don Beto anota en un cuaderno lo que los vecinos le deben cuando compran fiado y lo que le pagaron de más. Sin usar signos, no hay forma de distinguir en el cuaderno si alguien le debe dinero o si a alguien le sobra saldo a favor.",
+    "pregunta": "¿Cómo usarías números con signo para anotar en el cuaderno de don Beto una deuda de $50 y un saldo a favor de $50, tomando el cero como referencia?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.1",
+      "titulo": "¿Por qué necesitamos números negativos?",
+      "explicacion": "Los números con signo permiten representar cantidades opuestas a partir de una referencia (el cero): ganancias/pérdidas, alturas/profundidades, temperaturas arriba/abajo de cero. Sin ellos, no podríamos distinguir '3 pisos abajo del nivel de la calle' de '3 pisos arriba'.",
+      "ejemplos": [
+        "Una temperatura de -3°C significa 3 grados bajo cero.",
+        "Un elevador que baja al nivel -2 está dos pisos por debajo de la planta baja (nivel 0)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un submarino a -120 m está más profundo que uno a -85 m.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "-120 está más lejos del 0 hacia abajo: -120 < -85, así que -120 m es más profundo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-4 es mayor que 6.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "-4 < 6 en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-7 es menor que 0.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "-7 < 0 en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-8 es mayor que -10.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "-8 > -10 en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "13 es mayor que 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "13 > 6 en la recta numérica."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

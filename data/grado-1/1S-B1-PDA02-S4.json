@@ -1,0 +1,122 @@
+{
+  "id": "1S-B1-PDA02-S4",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 11,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Reconoce la necesidad de los números negativos a partir de usar cantidades que tienen al cero como referencia. Compara y ordena números con signo en la recta numérica.",
+  "problematizacion": {
+    "contexto": "Un documental submarino muestra a un buzo explorando a -18 metros mientras, al mismo tiempo, un dron vuela grabando a 25 metros de altura, ambos medidos desde la superficie del mar como referencia cero.",
+    "pregunta": "Usando el nivel del mar como el cero, ¿qué posición está más lejos de la superficie: el buzo a -18 m o el dron a 25 m, y cuál de los dos números con signo es menor en la recta numérica?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: en la recta numérica, el número mayor es el que está más a la derecha; entre dos negativos, el que parece 'más grande' (mayor valor absoluto) en realidad es el menor. Para ordenar o comparar varios números con signo, ubícalos mentalmente en la recta: primero los negativos (el más negativo va primero), luego el cero, y al final los positivos.",
+      "ejemplos": [
+        "Un submarino a -120 m está más profundo que uno a -85 m. -120 está más lejos del 0 hacia abajo: -120 < -85, así que -120 m es más profundo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": [
+            "-5, 18, -7, 5",
+            "-7, 5, -5, 18",
+            "-5, 5, 18, -7",
+            "18, 5, -5, -7"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "De mayor a menor: 18 > 5 > -5 > -7."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+          "columnaA": [
+            "-8°C",
+            "-3°C",
+            "2°C"
+          ],
+          "columnaB": [
+            "Es la más caliente",
+            "Es la más fría",
+            "Es templada, bajo cero"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "-8°C es la más fría (más a la izquierda); -3°C es templada bajo cero; 2°C es la más caliente."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+          "columnaA": [
+            "0°C",
+            "4°C",
+            "-11°C"
+          ],
+          "columnaB": [
+            "Es la temperatura intermedia",
+            "Es la más fría",
+            "Es la más caliente"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "De frío a caliente: -11°C < 0°C < 4°C."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+          "columnaA": [
+            "-8°C",
+            "-15°C",
+            "-13°C"
+          ],
+          "columnaB": [
+            "Es la más fría",
+            "Es la más caliente",
+            "Es la temperatura intermedia"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "De frío a caliente: -15°C < -13°C < -8°C."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada temperatura con su posición relativa entre las tres.",
+          "columnaA": [
+            "9°C",
+            "-12°C",
+            "-11°C"
+          ],
+          "columnaB": [
+            "Es la temperatura intermedia",
+            "Es la más caliente",
+            "Es la más fría"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "De frío a caliente: -12°C < -11°C < 9°C."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

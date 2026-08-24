@@ -1,0 +1,62 @@
+{
+  "id": "1S-B1-PDA04-S2",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 23,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "La fórmula del término n",
+  "contenido": "Regularidades y Patrones.",
+  "pda": "Representa algebraicamente una sucesión con progresión aritmética de figuras y números.",
+  "problematizacion": {
+    "contexto": "Notas un patrón en tu cuenta nueva de redes sociales: el primer día sumas 12 seguidores, y a partir de ahí el número de seguidores nuevos crece siempre 6 unidades respecto al día anterior.",
+    "pregunta": "Sin contar seguidor por seguidor cada día, ¿cuántos seguidores tendrás el día 20 si el patrón se mantiene?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.2",
+      "titulo": "La fórmula del término n",
+      "explicacion": "En vez de sumar la diferencia una y otra vez hasta llegar al término que buscamos, se puede usar una fórmula que lo calcule directamente, donde a es el primer término, d es la diferencia constante y n es la posición del término que queremos.",
+      "formula": "término_n = a + (n − 1) × d",
+      "ejemplos": [
+        "Sucesión 3, 6, 9, 12...: a=3, d=3. término_10 = 3 + (10-1)×3 = 3+27 = 30 panes.",
+        "Con a=4 y d=5: término_6 = 4 + (6-1)×5 = 4+25 = 29."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión 5, 8, 11, 14..., el término 10 es ___.",
+          "respuestaCorrecta": "32",
+          "retroalimentacion": "a=5, d=3. término_10 = 5 + (10-1)×3 = 5+27 = 32."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=1 y d=-3, el término 5 de la sucesión es ___.",
+          "respuestaCorrecta": "-11",
+          "retroalimentacion": "término_5 = 1 + (5-1)×-3 = -11."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=12 y d=-3, el término 5 de la sucesión es ___.",
+          "respuestaCorrecta": "0",
+          "retroalimentacion": "término_5 = 12 + (5-1)×-3 = 0."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=7 y d=4, el término 4 de la sucesión es ___.",
+          "respuestaCorrecta": "19",
+          "retroalimentacion": "término_4 = 7 + (4-1)×4 = 19."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=12 y d=3, el término 4 de la sucesión es ___.",
+          "respuestaCorrecta": "21",
+          "retroalimentacion": "término_4 = 12 + (4-1)×3 = 21."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

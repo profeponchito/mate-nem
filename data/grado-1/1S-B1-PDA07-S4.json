@@ -1,0 +1,122 @@
+{
+  "id": "1S-B1-PDA07-S4",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 46,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Funciones.",
+  "pda": "Relaciona e interpreta relaciones proporcional y no proporcional a partir de su representación tabular, gráfica y con diagramas.",
+  "problematizacion": {
+    "contexto": "En casa de Paola comparan dos gastos del mes: el garrafón de agua purificada cuesta 30 pesos cada uno, sin ningún cobro extra; en cambio, el recibo de luz siempre trae una cuota fija de servicio más lo que se consume en kilowatts.",
+    "pregunta": "¿Cuál de los dos gastos, el del garrafón o el del recibo de luz, representa una relación proporcional y cuál no, y por qué?"
+  },
+  "subtemas": [
+    {
+      "numero": "7.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: una relación es proporcional cuando la razón entre las dos cantidades siempre es la misma y, si x=0, entonces y=0 (no hay ningún cargo fijo). Si existe un valor inicial que se suma (como la tarifa base del taxi), la relación no es proporcional. En una gráfica, lo proporcional siempre es una recta que pasa por el origen (0,0).",
+      "ejemplos": [
+        "La tarifa de taxi con $12 fijos más $2 por km es una relación proporcional. Falso: tiene un cargo fijo ($12) que se paga aunque no se recorra ningún km, así que no es proporcional."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de estas relaciones es proporcional?",
+          "opciones": [
+            "La renta de un juego: $8 fijos + $16/hora",
+            "El consumo de agua: $8 fijos + consumo",
+            "El boleto de cine con $8 de descuento fijo",
+            "El costo de plumas a $16 c/u"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "El costo de plumas es y=16x: si compras 0, pagas $0, es proporcional. Las demás tienen un cargo o descuento fijo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el tipo de relación que representa.",
+          "columnaA": [
+            "Cuadernos a $15 c/u",
+            "Taxi: $12 + $2/km",
+            "Manzanas a $18/kg"
+          ],
+          "columnaB": [
+            "No proporcional (tiene cargo fijo)",
+            "Proporcional (y=18x)",
+            "Proporcional (y=15x)"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "Cuadernos y manzanas son proporcionales (y=kx); el taxi no lo es, porque tiene un cargo fijo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el tipo de relación que representa.",
+          "columnaA": [
+            "Renta con $30 fijos + $14/hora",
+            "Renta con $28 fijos + $17/hora",
+            "Renta con $12 fijos + $12/hora"
+          ],
+          "columnaB": [
+            "No proporcional ($28 fijos)",
+            "No proporcional ($30 fijos)",
+            "No proporcional ($12 fijos)"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "Es proporcional si no tiene cargo fijo (pasa por el origen); si lo tiene, no lo es."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el tipo de relación que representa.",
+          "columnaA": [
+            "Renta con $26 fijos + $25/hora",
+            "Chocolates a $14 c/u",
+            "Renta con $21 fijos + $22/hora"
+          ],
+          "columnaB": [
+            "No proporcional ($26 fijos)",
+            "No proporcional ($21 fijos)",
+            "Proporcional (y=14x)"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "Es proporcional si no tiene cargo fijo (pasa por el origen); si lo tiene, no lo es."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el tipo de relación que representa.",
+          "columnaA": [
+            "Boletos a $24 c/u",
+            "Boletos a $17 c/u",
+            "Chocolates a $21 c/u"
+          ],
+          "columnaB": [
+            "Proporcional (y=24x)",
+            "Proporcional (y=21x)",
+            "Proporcional (y=17x)"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "Es proporcional si no tiene cargo fijo (pasa por el origen); si lo tiene, no lo es."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

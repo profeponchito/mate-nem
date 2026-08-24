@@ -1,0 +1,91 @@
+{
+  "id": "1S-B1-PDA02-S3",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 10,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Ordenar listas de varios números con signo",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Reconoce la necesidad de los números negativos a partir de usar cantidades que tienen al cero como referencia. Compara y ordena números con signo en la recta numérica.",
+  "problematizacion": {
+    "contexto": "En la tabla de posiciones del torneo de futbol de tu colonia, cada equipo tiene una 'diferencia de goles' que puede ser positiva o negativa, según si ha metido más goles de los que le han metido. El organizador necesita ordenar los cuatro equipos de la tabla usando esa diferencia.",
+    "pregunta": "Si los equipos tienen diferencias de goles de -2, +5, -6 y 0, ¿en qué orden quedarían en la tabla, del mejor al peor lugar?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.3",
+      "titulo": "Ordenar listas de varios números con signo",
+      "explicacion": "Para ordenar una lista con positivos, negativos y el cero, ubica primero los negativos (el de mayor valor absoluto va primero, porque es el menor), después el cero, y al final los positivos de menor a mayor.",
+      "ejemplos": [
+        "Ordenar -4, 3, -1, 0 de menor a mayor: -4, -1, 0, 3.",
+        "Un buzo a -15 m y un dron a 40 m: -15 está más cerca del nivel del mar (0) que 40, aunque ambos parezcan 'grandes' en valor absoluto."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -4, 3, -1, 0",
+          "opciones": [
+            "-4, -1, 0, 3",
+            "3, 0, -1, -4",
+            "-1, -4, 0, 3",
+            "0, -1, -4, 3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -4 < -1 < 0 < 3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": [
+            "5, -2, -7, -10",
+            "-10, -7, -2, 5",
+            "-2, -7, 5, -10",
+            "5, -10, -2, -7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 5 > -2 > -7 > -10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": [
+            "19, 13, 4, -9",
+            "4, 13, -9, 19",
+            "4, 19, 13, -9",
+            "4, 13, 19, -9"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 19 > 13 > 4 > -9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": [
+            "-16, 20, -5, 10",
+            "20, 10, -5, -16",
+            "-5, -16, 10, 20",
+            "20, -5, 10, -16"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "De mayor a menor: 20 > 10 > -5 > -16."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": [
+            "20, -16, 17, -5",
+            "20, 17, -5, -16",
+            "-16, 17, -5, 20",
+            "-16, 17, 20, -5"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "De mayor a menor: 20 > 17 > -5 > -16."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

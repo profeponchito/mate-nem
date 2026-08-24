@@ -1,0 +1,61 @@
+{
+  "id": "1S-B1-PDA05-S1",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 29,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Del lenguaje común al algebraico",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "En la cooperativa escolar, Fernanda vende paletas heladas. Su amiga le promete: 'te doy el doble de lo que ganes hoy, más los 10 pesos que ya te debía de ayer'. Fernanda quiere anotar esa promesa como una expresión matemática antes de que se le olvide.",
+    "pregunta": "Si x representa lo que gane Fernanda hoy, ¿qué expresión algebraica representa el total que le va a dar su amiga?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.1",
+      "titulo": "Del lenguaje común al algebraico",
+      "explicacion": "En álgebra usamos letras (variables) para representar cantidades desconocidas o que cambian. Una expresión algebraica traduce una relación del lenguaje común: frases como 'el doble de', 'el triple de' o 'la mitad de' se convierten en multiplicaciones o divisiones por la variable.",
+      "ejemplos": [
+        "'El doble de un número más 3' se escribe 2x + 3.",
+        "'El triple de un número menos 5' se escribe 3x - 5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un cuadrado de lado x es 4x.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un rectángulo con ancho x y largo x+8 es 4x+16.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un rectángulo con ancho x y largo 2x es 3x.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un triángulo con lados x, x+4 y 4x tiene perímetro 5x+4.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro simplificado de un triángulo con lados x, x+3 y 2x es ___.",
+          "respuestaCorrecta": "4x+3",
+          "retroalimentacion": "x + (x+3) + 2x = 4x + 3."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "1S-B1-PDA06-S1",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 36,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "¿Qué es una ecuación?",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax=B, Ax+B=C, Ax+B=Cx+D con el uso de las propiedades de la igualdad.",
+  "problematizacion": {
+    "contexto": "Tres primos juntaron su dinero para comprar un balón de futbol nuevo y pusieron la misma cantidad cada uno; en total pagaron 285 pesos. Antes de ir por el balón, quieren saber cuánto puso cada quien.",
+    "pregunta": "Si x es lo que aportó cada primo, ¿qué valor de x resuelve la ecuación 3x = 285?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.1",
+      "titulo": "¿Qué es una ecuación?",
+      "explicacion": "Una ecuación es una igualdad con una incógnita. Para resolverla, se aplican las propiedades de la igualdad: lo que se hace de un lado de la igualdad se debe hacer también del otro, para 'despejar' la variable.",
+      "ejemplos": [
+        "5x = 45: para despejar x, se divide ambos lados entre 5: x = 45 ÷ 5 = 9."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 4x - 5 = 11 es x = 4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 4x = 11+5=16; x=16÷4=4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 3x + 7 = 2x + 12 es x = 3.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "(3-2)x = 12-7 → x = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 7x - 3 = 4x + 9 es x = 2.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "(7-4)x = 9--3 → x = 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 5x - 5 = 2x + 28 es x = 11.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "(5-2)x = 28--5 → x = 11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 4x + 6 = 3x + 18 es x = 12.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "(4-3)x = 18-6 → x = 12."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

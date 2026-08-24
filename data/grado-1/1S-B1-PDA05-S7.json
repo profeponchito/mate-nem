@@ -1,0 +1,140 @@
+{
+  "id": "1S-B1-PDA05-S7",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 35,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: lenguaje algebraico y perimetros",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "El equipo de robótica de la secundaria va a construir un stand rectangular para la feria de ciencias. Necesitan escribir, en su reporte final, tanto la expresión de cuánto dinero van a pedir prestado ('el triple de lo que ya tienen ahorrado, más 50 pesos') como el perímetro del stand para comprar el borde de luces LED.",
+    "pregunta": "¿Qué expresiones algebraicas usarían para representar el préstamo y el perímetro del stand, ya simplificado?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.7",
+      "titulo": "Repaso integral: lenguaje algebraico y perimetros",
+      "explicacion": "Recuerda: las frases del lenguaje comun ('el doble de', 'el triple de', 'la mitad de', etc.) se traducen en expresiones algebraicas, y el perimetro de una figura es la suma simplificada de todos sus lados, aunque esos lados esten escritos con una variable.",
+      "ejemplos": [
+        "Un cuadrado de lado x+3 tiene perimetro 4(x+3) = 4x+12."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perimetro de un rectangulo con ancho x y largo 3x es 8x.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2(x) + 2(3x) = 2x + 6x = 8x."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El doble de un numero mas 10' se escribe ___.",
+          "respuestaCorrecta": "2x+10",
+          "retroalimentacion": "'el doble de un numero mas 10' se traduce como 2x+10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Como se escribe algebraicamente 'la mitad de un numero mas 6'?",
+          "opciones": [
+            "x/2+6",
+            "x/2-6",
+            "x/2+12",
+            "2x+6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'la mitad de un numero mas 6' se traduce como x/2+6."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase del lenguaje comun con su expresion algebraica.",
+          "columnaA": [
+            "El triple de un numero mas 11",
+            "El cuadruple de un numero menos 8",
+            "La mitad de un numero menos 10"
+          ],
+          "columnaB": [
+            "x/2-10",
+            "3x+11",
+            "4x-8"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "'El triple mas 11' es 3x+11; 'el cuadruple menos 8' es 4x-8; 'la mitad menos 10' es x/2-10."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada figura con su perimetro simplificado.",
+          "columnaA": [
+            "Cuadrado de lado x+3",
+            "Rectangulo con ancho x y largo x+7",
+            "Triangulo con lados x, x+5, 3x"
+          ],
+          "columnaB": [
+            "5x+5",
+            "4x+14",
+            "4x+12"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Cuadrado x+3: 4(x+3)=4x+12. Rectangulo x,x+7: 2x+2(x+7)=4x+14. Triangulo x,x+5,3x: x+(x+5)+3x=5x+5."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "La expresión algebraica de 'la mitad de un número más 4' es x/2 + 4.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 'la mitad de un número' es x/2, y 'más 4' se suma: x/2+4."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "El perímetro de un pentágono regular (5 lados iguales) de lado x es ___.",
+      "respuestaCorrecta": "5x",
+      "retroalimentacion": "Al tener 5 lados iguales de longitud x, el perímetro es 5x."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un triángulo tiene lados x, 2x-1 y x+4. ¿Cuál es su perímetro simplificado?",
+      "opciones": [
+        "4x+3",
+        "4x+4",
+        "3x+3",
+        "4x-3"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "x + (2x-1) + (x+4) = 4x+3."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+      "columnaA": [
+        "El triple de un número más 2",
+        "El cuádruple de un número menos 1",
+        "La mitad de un número menos 3"
+      ],
+      "columnaB": [
+        "4x-1",
+        "x/2-3",
+        "3x+2"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
+      "retroalimentacion": "'El triple más 2' es 3x+2; 'el cuádruple menos 1' es 4x-1; 'la mitad menos 3' es x/2-3."
+    }
+  ]
+}

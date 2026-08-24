@@ -1,0 +1,72 @@
+{
+  "id": "1S-B1-PDA05-S6",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 34,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: perimetros con expresiones algebraicas",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "En casa de Camila van a bardear el patio trasero con tablones de madera. El patio es un cuadrado de lado x metros, pero por la puerta de entrada, uno de los lados adicionales mide 6 metros más. Camila quiere calcular cuántos tablones lineales pedir en la maderería.",
+    "pregunta": "¿Cuál es la expresión algebraica simplificada que representa el perímetro total del patio de Camila?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.6",
+      "titulo": "Repaso: perimetros con expresiones algebraicas",
+      "explicacion": "Recuerda: el perimetro de una figura es la suma de todos sus lados. Cuando algun lado depende de una variable, sumas todas las expresiones y simplificas agrupando los terminos semejantes; un cuadrado o poligono regular de lado x tiene perimetro (numero de lados) x x.",
+      "ejemplos": [
+        "Un triangulo con lados x, 2x y x+6: perimetro = x + 2x + (x+6) = 4x + 6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perimetro de un rectangulo con ancho x y largo x+9 es ___.",
+          "respuestaCorrecta": "4x+18",
+          "retroalimentacion": "2(x) + 2(x+9) = 2x + 2x + 18 = 4x+18."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triangulo tiene lados x, 2x y x+6. ¿Cual es su perimetro simplificado?",
+          "opciones": [
+            "4x+6",
+            "4x-6",
+            "3x+6",
+            "4x+12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x + 2x + (x+6) = 4x+6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perimetro de un pentagono regular de lado x+2 es 5x+10.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al tener 5 lados iguales de longitud x+2, el perimetro es 5(x+2) = 5x+10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El triple de un numero menos 10' se escribe ___.",
+          "respuestaCorrecta": "3x-10",
+          "retroalimentacion": "'el triple de un numero menos 10' se traduce como 3x-10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Como se escribe algebraicamente 'el cuadruple de un numero menos 5'?",
+          "opciones": [
+            "4x-5",
+            "4x+5",
+            "4x-20",
+            "xx-5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el cuadruple de un numero menos 5' se traduce como 4x-5."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "1S-B1-PDA06-S5",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 40,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: que es una ecuacion y despejar con una operacion",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax=B, Ax+B=C, Ax+B=Cx+D con el uso de las propiedades de la igualdad.",
+  "problematizacion": {
+    "contexto": "En su videojuego favorito, Emilio ve que para desbloquear un personaje necesita una cantidad de gemas que cumple esta regla: 'ocho veces las gemas que tiene guardadas, menos 3, le dan 29 gemas de recompensa'. Quiere saber cuántas gemas tenía guardadas antes de la recompensa.",
+    "pregunta": "Si x son las gemas guardadas, ¿qué valor de x resuelve la ecuación 8x - 3 = 29?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.5",
+      "titulo": "Repaso: que es una ecuacion y despejar con una operacion",
+      "explicacion": "Recuerda: una ecuacion es una igualdad con una incognita. Para despejar la variable, se aplica la misma operacion en ambos lados de la igualdad (sumar, restar, multiplicar o dividir) hasta dejar sola a la x.",
+      "ejemplos": [
+        "Resuelve 8x - 3 = 29: 8x = 29+3 = 32; x = 32÷8 = 4."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 6x + 2 = 32 es x = 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "6x = 32-2 = 30; x = 30÷6 = 5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 8x - 3 = 29. x = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "8x = 29+3 = 32; x = 32÷8 = 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 2x - 7 = 15 es x = 10.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "2x = 15+7 = 22; x = 22÷2 = 11, no 10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 5x + 9 = 39. x = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "5x = 39-9 = 30; x = 30÷5 = 6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 10x - 6 = 44",
+          "opciones": [
+            "x=5",
+            "x=4",
+            "x=6",
+            "x=50"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "10x = 44+6 = 50; x = 50÷10 = 5."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

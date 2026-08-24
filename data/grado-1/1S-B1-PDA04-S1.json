@@ -1,0 +1,61 @@
+{
+  "id": "1S-B1-PDA04-S1",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 22,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "¿Qué es una sucesión con progresión aritmética?",
+  "contenido": "Regularidades y Patrones.",
+  "pda": "Representa algebraicamente una sucesión con progresión aritmética de figuras y números.",
+  "problematizacion": {
+    "contexto": "Empiezas a ahorrar para unos audífonos nuevos: metes $20 a la alcancía la primera semana, y decides que cada semana meterás $5 más de lo que metiste la semana pasada.",
+    "pregunta": "¿Cuál es la diferencia constante (d) entre lo que ahorras de una semana a la siguiente?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.1",
+      "titulo": "¿Qué es una sucesión con progresión aritmética?",
+      "explicacion": "Una sucesión con progresión aritmética aumenta (o disminuye) siempre la misma cantidad constante entre un término y el siguiente. A esa cantidad constante se le llama 'diferencia' (d) y se obtiene restando dos términos consecutivos.",
+      "ejemplos": [
+        "3, 6, 9, 12...: cada término aumenta 3 respecto al anterior, así que d=3.",
+        "5, 8, 11, 14...: 8-5=3, 11-8=3, 14-11=3, entonces d=3."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=7 y d=-2, el término 4 es 1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: término_4 = 7 + (4-1)×(-2) = 7-6 = 1."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=6 y d=-3, el término 7 es -12.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "término_7 = 6 + (7-1)×-3 = -12."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=2 y d=2, el término 6 es 10.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "término_6 = 2 + (6-1)×2 = 12."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=4 y d=3, el término 4 es 13.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "término_4 = 4 + (4-1)×3 = 13."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión con a=1 y d=-3, el término 6 es -14.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "término_6 = 1 + (6-1)×-3 = -14."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

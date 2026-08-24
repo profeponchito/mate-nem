@@ -1,0 +1,67 @@
+{
+  "id": "1S-B1-PDA01-S5",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 5,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: convertir fracciones sencillas a decimal y decimales a fracción",
+  "contenido": "Expresión de fracciones como decimales y de decimales como fracciones.",
+  "pda": "Usa diversas estrategias al convertir números fraccionarios a decimales y viceversa.",
+  "problematizacion": {
+    "contexto": "Cada semana guardas una parte de tu mesada en la alcancía y quieres registrar tus ahorros en una app de tu celular. La app solo permite capturar decimales, pero tú llevas la cuenta mental en fracciones, como 'ahorré 2/5 de mi mesada esta semana'.",
+    "pregunta": "¿Qué decimal debes capturar en la app si ahorraste 2/5 de tu mesada?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.5",
+      "titulo": "Repaso: convertir fracciones sencillas a decimal y decimales a fracción",
+      "explicacion": "Recuerda: para pasar una fracción a decimal, divides el numerador entre el denominador (a÷b); si el resultado no termina, es un decimal periódico. Para pasar un decimal a fracción, escribes las cifras después del punto sobre la potencia de 10 correspondiente (10, 100, 1000...) y simplificas dividiendo entre el máximo común divisor.",
+      "ejemplos": [
+        "9/10 = 9 ÷ 10 = 0.9.",
+        "0.56 = 56/100, y simplificando entre 4 queda 14/25."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "9/10 equivale a 0.9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 9 ÷ 10 = 0.9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "4/5 equivale a 0.75.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: 4 ÷ 5 = 0.8, no 0.75."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "3/16 escrito como decimal es ___.",
+          "respuestaCorrecta": "0.1875",
+          "retroalimentacion": "3 ÷ 16 = 0.1875."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.56 escrito como fracción simplificada es ___.",
+          "respuestaCorrecta": "14/25",
+          "retroalimentacion": "0.56 = 56/100, que simplificado entre 4 es 14/25."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la expresión decimal de 11/20?",
+          "opciones": [
+            "0.55",
+            "0.511",
+            "0.2",
+            "1.82"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "11 ÷ 20 = 0.55."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

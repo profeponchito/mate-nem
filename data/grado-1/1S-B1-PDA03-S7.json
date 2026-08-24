@@ -1,0 +1,127 @@
+{
+  "id": "1S-B1-PDA03-S7",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 21,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: las cuatro operaciones con números con signo",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Reconoce el significado de las cuatro operaciones básicas al operar números con signo. Comprueba las propiedades conmutativa, asociativa y distributiva, e identifica y aplica la jerarquía de operaciones.",
+  "problematizacion": {
+    "contexto": "En la kermés de tu escuela, el puesto de tacos compró 8 kilos de tortillas a $2 el kilo, vendió 40 órdenes a $15 cada una, y al final tuvo que devolver $50 porque se equivocaron en un cobro.",
+    "pregunta": "Aplicando la jerarquía de operaciones con números con signo, ¿cuál fue la ganancia neta del puesto de tacos ese día?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.7",
+      "titulo": "Repaso integral: las cuatro operaciones con números con signo",
+      "explicacion": "Recuerda: para sumar o restar con signo, si los signos son iguales se suman los valores y se conserva el signo, y si son diferentes se restan y se conserva el signo del mayor. Para multiplicar o dividir, signos iguales dan positivo y signos diferentes dan negativo. Y cuando una expresión combina varias operaciones, primero van las multiplicaciones y divisiones, y al final las sumas y restas.",
+      "ejemplos": [
+        "7 - 4 × (-2): primero 4×(-2)=-8; luego 7-(-8)=15.",
+        "(-24) ÷ (-6) = 4, porque signos iguales dan resultado positivo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 7 - 4 × (-2), el resultado es 15.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: primero 4×(-2)=-8; luego 7-(-8)=15."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-3) - (-8) = -11.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: (-3) - (-8) = -3 + 8 = 5, no -11."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-24) ÷ (-6) = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Signos iguales dan resultado positivo: (-24) ÷ (-6) = 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-9) × (4)",
+          "opciones": [
+            "-36",
+            "-13",
+            "-5",
+            "36"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(-9) × (4) = -36. Signos diferentes dan negativo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(-14) + 5",
+            "(-3) × (-9)",
+            "(18) ÷ (-3)"
+          ],
+          "columnaB": [
+            "27",
+            "-6",
+            "-9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "(-14) + 5 = -9; (-3) × (-9) = 27; (18) ÷ (-3) = -6."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "(-9) + (-4) = ___.",
+      "respuestaCorrecta": "-13",
+      "retroalimentacion": "Mismo signo: se suman los valores absolutos y se conserva el signo negativo: -13."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es el resultado de (-36) ÷ 6?",
+      "opciones": [
+        "-6",
+        "6",
+        "-30",
+        "30"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Signos diferentes dan resultado negativo: (-36) ÷ 6 = -6."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "En la expresión 5 + 2 × (-3), el resultado es -1.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: primero 2×(-3)=-6, luego 5+(-6)=-1."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": [
+        "(-9) + (-4)",
+        "(-36) ÷ 6",
+        "5 + 2 × (-3)"
+      ],
+      "columnaB": [
+        "-1",
+        "-13",
+        "-6"
+      ],
+      "parejasCorrectas": [
+        1,
+        2,
+        0
+      ],
+      "retroalimentacion": "(-9)+(-4)=-13; (-36)÷6=-6; 5+2×(-3)=-1."
+    }
+  ]
+}

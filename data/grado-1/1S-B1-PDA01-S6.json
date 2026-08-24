@@ -1,0 +1,81 @@
+{
+  "id": "1S-B1-PDA01-S6",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 6,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: decimales y fracciones aplicados a situaciones reales",
+  "contenido": "Expresión de fracciones como decimales y de decimales como fracciones.",
+  "pda": "Usa diversas estrategias al convertir números fraccionarios a decimales y viceversa.",
+  "problematizacion": {
+    "contexto": "El camión escolar tarda normalmente 0.75 horas en llegar a la escuela, pero tu mamá siempre dice el tiempo en fracciones: 'sale en 3/4 de hora'. Un día el chofer anuncia por el altavoz un nuevo horario usando decimales.",
+    "pregunta": "Si tu mamá calcula que faltan 3/4 de hora para que pase el camión, ¿qué hora decimal debes poner en la alarma de tu celular?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.6",
+      "titulo": "Repaso: decimales y fracciones aplicados a situaciones reales",
+      "explicacion": "Recuerda: las fracciones y los decimales son dos formas de expresar la misma cantidad, y elegimos una u otra según el contexto (una receta, una distancia recorrida, una medición). Para pasar de una forma a otra, sigue usando la división (fracción→decimal) o el valor posicional (decimal→fracción), y simplifica el resultado cuando sea una fracción.",
+      "ejemplos": [
+        "Un ciclista recorrió 0.85 de una ruta de entrenamiento: 0.85 = 85/100, que simplificado entre 5 es 17/20.",
+        "8/25 = 8 ÷ 25 = 0.32."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.32 equivale a la fracción 8/25.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 0.32 = 32/100, que simplificado entre 4 es 8/25."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un ciclista recorrió 0.85 de una ruta de entrenamiento. ¿Qué fracción simplificada representa esa distancia? ___.",
+          "respuestaCorrecta": "17/20",
+          "retroalimentacion": "0.85 = 85/100, que simplificado entre 5 es 17/20."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una receta requiere 5/16 de kg de nuez picada. Escrita en decimal, esa cantidad es ___ kg.",
+          "respuestaCorrecta": "0.3125",
+          "retroalimentacion": "5 ÷ 16 = 0.3125."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un termómetro de gas marca 0.28 de su capacidad llena. ¿Cuál es la fracción simplificada de esa cantidad?",
+          "opciones": [
+            "9/25",
+            "7/25",
+            "3/10",
+            "4/25"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "0.28 = 28/100, que simplificado entre 4 es 7/25."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+          "columnaA": [
+            "1/20",
+            "9/16",
+            "11/25"
+          ],
+          "columnaB": [
+            "0.5625",
+            "0.05",
+            "0.44"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "1/20 = 0.05; 9/16 = 0.5625; 11/25 = 0.44."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}
