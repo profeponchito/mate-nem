@@ -58,6 +58,42 @@
           ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "k = 75÷5 = 15 por paquete. 9×15 = $135."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 9 panes cuestan $81, entonces 15 panes cuestan $135.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "k = 81÷9 = 9 por pan. 15×9 = $135."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 4 litros de jugo cuestan $52, entonces 10 litros cuestan $___.",
+          "respuestaCorrecta": "130",
+          "retroalimentacion": "k = 52÷4 = 13 por litro. 10×13 = $130."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 6 boletos de camión cuestan $84, ¿cuánto cuestan 11 boletos?",
+          "opciones": [
+            "$140",
+            "$154",
+            "$168",
+            "$182"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 84÷6 = 14 por boleto. 11×14 = $154."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 12 huevos cuestan $48, entonces 20 huevos cuestan $76.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 48÷12 = 4 por huevo. 20×4 = $80, no $76."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 3 kg de queso cuestan $210, entonces 5 kg cuestan $___.",
+          "respuestaCorrecta": "350",
+          "retroalimentacion": "k = 210÷3 = 70 por kg. 5×70 = $350."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

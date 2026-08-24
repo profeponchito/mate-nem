@@ -79,6 +79,62 @@
             0
           ],
           "retroalimentacion": "(x+15)²=x²+30x+225; x^5×x^4=x^9; (x^4)^3=x^12."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: x^6 × x^9",
+          "opciones": [
+            "x^15",
+            "x^54",
+            "x^3",
+            "2x^15"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 6+9=15."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+16)² = x² + 32x + 256.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(16)=32 y 16²=256, entonces (x+16)² = x²+32x+256."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^4 × x^10 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "14",
+          "retroalimentacion": "Se suman los exponentes: 4+10=14."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: (x^5)^6",
+          "opciones": [
+            "x^30",
+            "x^11",
+            "x^25",
+            "x^60"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se multiplican los exponentes: 5×6=30."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+9)²",
+            "x^3×x^8",
+            "(x^2)^9"
+          ],
+          "columnaB": [
+            "x^11",
+            "x²+18x+81",
+            "x^18"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "(x+9)²=x²+18x+81; x^3×x^8=x^11; (x^2)^9=x^18."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

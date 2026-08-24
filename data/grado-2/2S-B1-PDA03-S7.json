@@ -72,6 +72,56 @@
             1
           ],
           "retroalimentacion": "9 panes cuestan $63 → $7 por pan; 5 boletos de camión cuestan $65 → $13 por boleto; 3 kg de plátano cuestan $51 → $17 por kg."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 8 kg de camote cuestan $216, ¿cuánto cuestan 13 kg?",
+          "opciones": [
+            "$324",
+            "$351",
+            "$378",
+            "$405"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 216÷8 = 27 por kg. 13×27 = $351."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 6 litros de aceite cuestan $246, entonces 10 litros cuestan $410.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "k = 246÷6 = 41 por litro. 10×41 = $410."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 9 boletos de feria cuestan $162, entonces 14 boletos cuestan $___.",
+          "respuestaCorrecta": "252",
+          "retroalimentacion": "k = 162÷9 = 18 por boleto. 14×18 = $252."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una receta usa 5 tazas de harina para 30 galletas. Para 42 galletas se necesitan 7 tazas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: k = 5÷30 = 1/6 de taza por galleta; 42×1/6 = 7 tazas."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su constante de proporcionalidad (k).",
+          "columnaA": [
+            "8 metros de tela cuestan $328",
+            "6 kg de jamón cuestan $390",
+            "10 boletos de autobús cuestan $150"
+          ],
+          "columnaB": [
+            "$15 por boleto",
+            "$65 por kg",
+            "$41 por metro"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "8 metros de tela cuestan $328 → $41 por metro; 6 kg de jamón cuestan $390 → $65 por kg; 10 boletos de autobús cuestan $150 → $15 por boleto."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

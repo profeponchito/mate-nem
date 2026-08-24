@@ -59,6 +59,56 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 7+2=9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el desarrollo de (x+8)²?",
+          "opciones": [
+            "x²+16x+64",
+            "x²+64",
+            "x²+8x+64",
+            "x²+16x+8"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(x+8)² = x² + 2(8)x + 8² = x²+16x+64."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "x^5 × x^6 es igual a x^30.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: se suman los exponentes, no se multiplican: 5+6=11, no 30."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^9 × x^2 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "11",
+          "retroalimentacion": "Se suman los exponentes: 9+2=11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+6)² = x² + 12x + 36.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(6)=12 y 6²=36, entonces (x+6)² = x²+12x+36."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+12)²",
+            "x^4×x^5",
+            "(x^2)^4"
+          ],
+          "columnaB": [
+            "x^9",
+            "x²+24x+144",
+            "x^8"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "(x+12)²=x²+24x+144; x^4×x^5=x^9; (x^2)^4=x^8."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

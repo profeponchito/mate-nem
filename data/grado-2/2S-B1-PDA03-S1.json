@@ -54,6 +54,42 @@
           "enunciado": "Si 10 cuadernos cuestan $540, entonces 3 cuadernos cuestan $162.",
           "respuestaCorrecta": true,
           "retroalimentacion": "k = 540÷10 = 54. 3×54 = $162."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 8 lápices cuestan $96, entonces 12 lápices cuestan $144.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "k = 96÷8 = 12 por lápiz. 12×12 = $144."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 7 kg de naranjas cuestan $161, entonces 12 kg cuestan $270.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 161÷7 = 23. 12×23 = $276, no $270."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 9 boletos de camión cuestan $117, entonces 14 boletos cuestan $___.",
+          "respuestaCorrecta": "182",
+          "retroalimentacion": "k = 117÷9 = 13 por boleto. 14×13 = $182."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 6 kg de plátano cuestan $54, entonces 10 kg cuestan $___.",
+          "respuestaCorrecta": "90",
+          "retroalimentacion": "k = 54÷6 = 9 por kg. 10×9 = $90."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 5 cuadernos cuestan $175, ¿cuánto cuestan 8 cuadernos?",
+          "opciones": [
+            "$245",
+            "$280",
+            "$315",
+            "$260"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 175÷5 = 35 por cuaderno. 8×35 = $280."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

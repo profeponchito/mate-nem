@@ -114,6 +114,70 @@
             2
           ],
           "retroalimentacion": "MCD de 35 y 53 = 1; MCD de 18 y 42 = 6; MCD de 46 y 6 = 2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 45 y 75?",
+          "opciones": [
+            "5",
+            "15",
+            "25",
+            "225"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "45=3²×5, 75=3×5². MCD = 3×5 = 15."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "8×(3+5)=8×3+8×5 es un ejemplo de la propiedad asociativa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "8×(3+5)=8×3+8×5 corresponde a la propiedad distributiva, no asociativa."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 10 y 12 es ___.",
+          "respuestaCorrecta": "60",
+          "retroalimentacion": "10=2×5, 12=2²×3. mcm = 2²×3×5 = 60."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada operación con el resultado que le corresponde.",
+          "columnaA": [
+            "MCD de 36 y 60",
+            "mcm de 7 y 9",
+            "MCD de 19 y 38"
+          ],
+          "columnaB": [
+            "63",
+            "19",
+            "12"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "MCD de 36 y 60 = 12; mcm de 7 y 9 = 63; MCD de 19 y 38 = 19."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada ejemplo con la propiedad matemática que representa.",
+          "columnaA": [
+            "7×(2+8)=7×2+7×8",
+            "9+6=6+9",
+            "(3+7)+4=3+(7+4)"
+          ],
+          "columnaB": [
+            "Conmutativa",
+            "Distributiva",
+            "Asociativa"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "El primero es distributiva, el segundo conmutativa, el tercero asociativa."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

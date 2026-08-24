@@ -64,6 +64,48 @@
           "enunciado": "El término 11 de la sucesión n² es 121.",
           "respuestaCorrecta": true,
           "retroalimentacion": "Correcto: 11² = 121."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión n²+4, el término 6 es ___.",
+          "respuestaCorrecta": "40",
+          "retroalimentacion": "n²+4 en n=6: 36+4 = 40."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión 5n², el término 3 es ___.",
+          "respuestaCorrecta": "45",
+          "retroalimentacion": "5n² en n=3: 5×9 = 45."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesión de figuras usa n²-2 fichas. ¿Cuántas fichas tiene la figura 6?",
+          "opciones": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "n²-2 en n=6: 36-2 = 34."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué expresión algebraica representa la sucesión 6, 9, 14, 21...?",
+          "opciones": [
+            "n²+5",
+            "2n²+1",
+            "n²+4",
+            "3n²"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "n²+5: 1+5=6, 4+5=9, 9+5=14, 16+5=21."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El término 9 de la sucesión 2n² es 162.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2n² en n=9: 2×81 = 162."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

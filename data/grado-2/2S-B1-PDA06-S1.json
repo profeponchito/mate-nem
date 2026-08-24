@@ -52,6 +52,56 @@
           "enunciado": "La solución de 2x + 9 = 21 es x = 6.",
           "respuestaCorrecta": true,
           "retroalimentacion": "2x = 12; x = 6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 5x - 6 = 24. ¿Cuál es el valor de x?",
+          "opciones": [
+            "6",
+            "5",
+            "30",
+            "18"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5x = 30; x = 30÷5 = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un número más el doble de sí mismo es 33 (x + 2x = 33). x = ___.",
+          "respuestaCorrecta": "11",
+          "retroalimentacion": "3x = 33; x = 33÷3 = 11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 8x - 9 = 39 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8x = 48; x = 6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 3x + 7 = 19 es x = 3.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "3x = 12; x = 4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "4x - 5 = 19",
+            "x + 5x = 42",
+            "9x + 3 = 39"
+          ],
+          "columnaB": [
+            "x=4",
+            "x=7",
+            "x=6"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "4x-5=19 → x=6; x+5x=42 → x=7; 9x+3=39 → x=4."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

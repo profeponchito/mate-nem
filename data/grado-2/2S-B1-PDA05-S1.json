@@ -53,6 +53,56 @@
           "enunciado": "(x^4)^5 es igual a x^22.",
           "respuestaCorrecta": false,
           "retroalimentacion": "Se multiplican los exponentes: 4×5=20."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el desarrollo de (x+7)²?",
+          "opciones": [
+            "x²+14x+49",
+            "x²+49",
+            "x²+7x+49",
+            "x²+14x+7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(x+7)² = x² + 2(7)x + 7² = x²+14x+49."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+6)² = x² + 12x + 36.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(6)=12 y 6²=36, entonces (x+6)² = x²+12x+36."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El desarrollo de (x+5)² es x² + 10x + ___.",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "El tercer término es el cuadrado del segundo: 5² = 25."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+2)²",
+            "x^3×x^5",
+            "(x^2)^3"
+          ],
+          "columnaB": [
+            "x^6",
+            "x²+4x+4",
+            "x^8"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(x+2)²=x²+4x+4; x^3×x^5=x^8; (x^2)^3=x^6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "x^6 × x^3 es igual a x^9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Se suman los exponentes: 6+3=9."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

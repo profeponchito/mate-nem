@@ -59,6 +59,56 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "150 × (1 + 0.20) = $180."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $90 tiene 30% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$63",
+            "$60",
+            "$70",
+            "$27"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "90 × (1 − 0.30) = $63."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 8x + 4 = 36 es x = 4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8x = 32; x = 4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un producto con 15% de aumento quedó en $138. Su precio original era $___.",
+          "respuestaCorrecta": "120",
+          "retroalimentacion": "138 = x×1.15 → x = 138 ÷ 1.15 = $120."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x - 6 = 29. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "7x = 35; x = 35÷7 = 5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su resultado.",
+          "columnaA": [
+            "Un número más el quíntuple de sí mismo es 54 (x+5x=54)",
+            "Precio $95 con 20% de descuento",
+            "3x + 5 = 26"
+          ],
+          "columnaB": [
+            "76",
+            "7",
+            "9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x+5x=54 → x=9; 95×0.80=76; 3x+5=26 → x=7."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

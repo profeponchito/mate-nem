@@ -52,6 +52,42 @@
           "frase": "En la sucesión n²+1, el término 8 es ___.",
           "respuestaCorrecta": "65",
           "retroalimentacion": "n²+1 en n=8: 1×8²+1 = 65."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión n²-3, el término 5 es ___.",
+          "respuestaCorrecta": "22",
+          "retroalimentacion": "n²-3 en n=5: 5²-3 = 22."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión 3n², el término 4 es ___.",
+          "respuestaCorrecta": "48",
+          "retroalimentacion": "3n² en n=4: 3×16 = 48."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En la sucesión n²+4, ¿cuál es el término 3?",
+          "opciones": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "n²+4 en n=3: 9+4 = 13."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión 2n²+1, el término 5 es 51.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2n²+1 en n=5: 2×25+1 = 51."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesión n²-2, el término 7 es 45.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "n²-2 en n=7: 49-2 = 47, no 45."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

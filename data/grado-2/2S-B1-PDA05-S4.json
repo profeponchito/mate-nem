@@ -114,6 +114,56 @@
             1
           ],
           "retroalimentacion": "(x+9)²=x²+18x+81; x^5×x^2=x^7; (x^5)^2=x^10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el desarrollo de (x+7)²?",
+          "opciones": [
+            "x²+14x+49",
+            "x²+49",
+            "x²+7x+49",
+            "x²+14x+7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(x+7)² = x² + 2(7)x + 7² = x²+14x+49."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "x^3 × x^6 es igual a x^9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Se suman los exponentes: 3+6=9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Simplifica: (x^3)^3 = x elevado a la ___.",
+          "respuestaCorrecta": "9",
+          "retroalimentacion": "Se multiplican los exponentes: 3×3=9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+10)² = x² + 20x + 100.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(10)=20 y 10²=100, entonces (x+10)² = x²+20x+100."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x+11)²",
+            "x^3×x^5",
+            "(x^3)^5"
+          ],
+          "columnaB": [
+            "x^15",
+            "x²+22x+121",
+            "x^8"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(x+11)²=x²+22x+121; x^3×x^5=x^8; (x^3)^5=x^15."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

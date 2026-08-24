@@ -83,6 +83,62 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "De mayor a menor: 2.8 > 1.2 > -1/2 > -1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número está entre -0.6 y -0.5?",
+          "opciones": [
+            "-0.55",
+            "-0.7",
+            "-0.4",
+            "-1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-0.55 está entre -0.6 y -0.5, ya que -0.6 < -0.55 < -0.5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -3 y -2.5 existe al menos un número, por ejemplo -2.8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -3 < -2.8 < -2.5, así que sí existe un número entre ellos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Entre dos números con signo distintos siempre existe otro número: a esta propiedad se le llama propiedad de ___.",
+          "respuestaCorrecta": "densidad",
+          "retroalimentacion": "Se llama propiedad de densidad."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada intervalo con un número que se encuentre dentro de él.",
+          "columnaA": [
+            "Entre -5 y -4",
+            "Entre 0 y 1",
+            "Entre -2.2 y -2"
+          ],
+          "columnaB": [
+            "-4.5",
+            "0.5",
+            "-2.1"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-4.5 está entre -5 y -4; 0.5 está entre 0 y 1; -2.1 está entre -2.2 y -2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -0.3, 2, -4, 1/2",
+          "opciones": [
+            "-4, -0.3, 1/2, 2",
+            "2, 1/2, -0.3, -4",
+            "-0.3, -4, 1/2, 2",
+            "1/2, -0.3, -4, 2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1/2 = 0.5. De menor a mayor: -4 < -0.3 < 0.5 < 2."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

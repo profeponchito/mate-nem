@@ -79,6 +79,56 @@
             0
           ],
           "retroalimentacion": "El primero es conmutativa, el segundo asociativa, el tercero distributiva."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 48 y 60?",
+          "opciones": [
+            "6",
+            "12",
+            "24",
+            "4"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "48=2⁴×3, 60=2²×3×5. MCD = 2²×3 = 12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 20 y 35 es ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "20=2²×5, 35=5×7. MCD = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(8+3)+2=8+(3+2) es un ejemplo de la propiedad distributiva.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "(8+3)+2=8+(3+2) corresponde a la propiedad asociativa, no distributiva."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 18 y 27 es ___.",
+          "respuestaCorrecta": "54",
+          "retroalimentacion": "18=2×3², 27=3³. mcm = 2×3³ = 54."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada ejemplo con la propiedad matemática que representa.",
+          "columnaA": [
+            "7×(1+9)=7×1+7×9",
+            "2+8=8+2",
+            "(6+4)+3=6+(4+3)"
+          ],
+          "columnaB": [
+            "Asociativa",
+            "Distributiva",
+            "Conmutativa"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "El primero es distributiva, el segundo conmutativa, el tercero asociativa."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

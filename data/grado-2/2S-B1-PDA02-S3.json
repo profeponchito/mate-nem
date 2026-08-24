@@ -83,6 +83,50 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "MCD(22,6) = 2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 6 y 10 es ___.",
+          "respuestaCorrecta": "30",
+          "retroalimentacion": "6=2×3, 10=2×5. mcm = 2×3×5 = 30."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 28 y 21 es ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "28=2²×7, 21=3×7. MCD = 7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El mcm de 7 y 11 es 77.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: como 7 y 11 no comparten factores, su mcm es el producto 7×11=77."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 16 y 40 es 4.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: MCD(16,40) = 8, no 4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "mcm de 5 y 8",
+            "MCD de 27 y 18",
+            "mcm de 12 y 16"
+          ],
+          "columnaB": [
+            "9",
+            "48",
+            "40"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "mcm de 5 y 8 = 40; MCD de 27 y 18 = 9; mcm de 12 y 16 = 48."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

@@ -72,6 +72,56 @@
             1
           ],
           "retroalimentacion": "-8 < -3.9; 5/8 (0.625) > -1; -0.15 > -0.2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "-11/8 escrito como decimal es ___.",
+          "respuestaCorrecta": "-1.375",
+          "retroalimentacion": "-11/8 = -1.375."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-1.4 es menor que -4/3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -4/3 = -1.333..., y -1.4 está más a la izquierda: -1.4 < -1.333..."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: 2, -0.25, -5, 3/4",
+          "opciones": [
+            "-5, -0.25, 3/4, 2",
+            "2, 3/4, -0.25, -5",
+            "-0.25, -5, 3/4, 2",
+            "3/4, -0.25, -5, 2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3/4 = 0.75. De menor a mayor: -5 < -0.25 < 0.75 < 2."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -8.13 y -8.12 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -8.13 y -8.12 existen infinitos números, por ejemplo -8.125."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada par de números con la comparación que le corresponde.",
+          "columnaA": [
+            "-10 y -6.5",
+            "3/8 y -2",
+            "-0.45 y -0.5"
+          ],
+          "columnaB": [
+            "-0.45 > -0.5",
+            "3/8 > -2",
+            "-10 < -6.5"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "-10 < -6.5; 3/8 (0.375) > -2; -0.45 > -0.5."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

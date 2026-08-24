@@ -78,6 +78,62 @@
             1
           ],
           "retroalimentacion": "6 dulces cuestan $18 → $3 por dulce; 4 cuadernos cuestan $148 → $37 por cuaderno; 10 metros de listón cuestan $70 → $7 por metro."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un grifo llena 54 litros en 9 minutos. ¿Cuántos litros llena en 14 minutos, con el mismo rendimiento?",
+          "opciones": [
+            "70 L",
+            "78 L",
+            "84 L",
+            "90 L"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 54÷9 = 6 litros por minuto. 14×6 = 84 litros."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 8 plumas cuestan $184, entonces 6 plumas cuestan $___.",
+          "respuestaCorrecta": "138",
+          "retroalimentacion": "k = 184÷8 = 23 por pluma. 6×23 = $138."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 9 metros de listón cuestan $63, entonces 15 metros cuestan $115.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 63÷9 = 7 por metro. 15×7 = $105, no $115."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 5 kg de fresas cuestan $175, ¿cuánto cuestan 8 kg?",
+          "opciones": [
+            "$245",
+            "$260",
+            "$280",
+            "$300"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 175÷5 = 35 por kg. 8×35 = $280."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su constante de proporcionalidad (k).",
+          "columnaA": [
+            "8 refrescos cuestan $96",
+            "5 horas de clase cuestan $225",
+            "12 kg de arroz cuestan $216"
+          ],
+          "columnaB": [
+            "$18 por kg",
+            "$12 por refresco",
+            "$45 por hora"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "8 refrescos cuestan $96 → $12 por refresco; 5 horas de clase cuestan $225 → $45 por hora; 12 kg de arroz cuestan $216 → $18 por kg."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

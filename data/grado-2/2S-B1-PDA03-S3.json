@@ -83,6 +83,56 @@
           ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "k = 204÷6 = 34. 11×34 = $374."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tinaco se llena con 36 litros en 6 minutos. ¿Cuántos litros se llenan en 10 minutos, con el mismo rendimiento?",
+          "opciones": [
+            "50 L",
+            "55 L",
+            "60 L",
+            "65 L"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 36÷6 = 6 litros por minuto. 10×6 = 60 litros."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 8 cuadernos cuestan $184, entonces 5 cuadernos cuestan $___.",
+          "respuestaCorrecta": "115",
+          "retroalimentacion": "k = 184÷8 = 23 por cuaderno. 5×23 = $115."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 10 horas de trabajo pagan $350, entonces 6 horas pagan $___.",
+          "respuestaCorrecta": "210",
+          "retroalimentacion": "k = 350÷10 = 35 por hora. 6×35 = $210."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 7 kg de café cuestan $567, entonces 4 kg cuestan $324.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "k = 567÷7 = 81 por kg. 4×81 = $324."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el valor que falta, manteniendo la misma razón.",
+          "columnaA": [
+            "4 kg de arroz cuestan $92; ¿cuánto cuestan 7 kg?",
+            "3 horas de trabajo pagan $141; ¿cuánto pagan 8 horas?",
+            "6 litros de leche cuestan $114; ¿cuánto cuestan 9 litros?"
+          ],
+          "columnaB": [
+            "$376",
+            "$171",
+            "$161"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "4 kg de arroz cuestan $92 → k=$23 por kg; 7×23=$161. 3 horas pagan $141 → k=$47 por hora; 8×47=$376. 6 litros cuestan $114 → k=$19 por litro; 9×19=$171."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

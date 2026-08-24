@@ -53,6 +53,56 @@
           "frase": "Resuelve: 5x + 8 = 23. x = ___.",
           "respuestaCorrecta": "3",
           "retroalimentacion": "5x = 15; x = 15÷5 = 3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $200 tiene 30% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$140",
+            "$60",
+            "$170",
+            "$230"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "200 × (1 − 0.30) = $140."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una laptop de $500 con 10% de descuento cuesta $450.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 500 × (1 − 0.10) = $450."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Resolver 6x + 4 = 34 da x = 6.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "6x = 30; x = 5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x - 5 = 30. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "7x = 35; x = 35÷7 = 5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su resultado.",
+          "columnaA": [
+            "Precio $120 con 25% de descuento",
+            "2x + 6 = 20",
+            "Precio $80 con 15% de aumento"
+          ],
+          "columnaB": [
+            "92",
+            "7",
+            "90"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "120×0.75=90; 2x+6=20 → x=7; 80×1.15=92."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

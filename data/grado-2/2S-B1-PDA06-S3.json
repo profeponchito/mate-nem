@@ -83,6 +83,56 @@
           ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "270 × (1 − 0.05) = $256.5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un producto con 20% de aumento ahora cuesta $144. Su precio original era $___.",
+          "respuestaCorrecta": "120",
+          "retroalimentacion": "144 = x×1.20 → x = 144 ÷ 1.20 = $120."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un artículo de $400 con 25% de descuento cuesta $300.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 400 × (1 − 0.25) = $300."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un producto con 12% de aumento que ahora cuesta $112 costaba $100 antes.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 100 × 1.12 = $112."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $320 tiene 25% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$240",
+            "$260",
+            "$280",
+            "$300"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "320 × (1 − 0.25) = $240."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su resultado.",
+          "columnaA": [
+            "$150 con 20% de descuento",
+            "$60 con 50% de aumento",
+            "Precio original si final es $154 con 10% de aumento"
+          ],
+          "columnaB": [
+            "140",
+            "90",
+            "120"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "150×0.80=120; 60×1.50=90; 154÷1.10=140."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

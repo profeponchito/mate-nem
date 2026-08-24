@@ -83,6 +83,56 @@
           ],
           "respuestaCorrecta": 3,
           "retroalimentacion": "Se suman los exponentes: 2+2=4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Simplifica: (x^5)^3 = x elevado a la ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 5×3=15."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x^6)^2 es igual a x^12.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Se multiplican los exponentes: 6×2=12."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x+8)² = x² + 16x + 64.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 2(8)=16 y 8²=64, entonces (x+8)² = x²+16x+64."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "(x^3)^2",
+            "x^4×x^3",
+            "(x+7)²"
+          ],
+          "columnaB": [
+            "x^7",
+            "x²+14x+49",
+            "x^6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "(x^3)^2=x^6; x^4×x^3=x^7; (x+7)²=x²+14x+49."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: (x^2)^6",
+          "opciones": [
+            "x^12",
+            "x^8",
+            "x^3",
+            "x^36"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se multiplican los exponentes: 2×6=12."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

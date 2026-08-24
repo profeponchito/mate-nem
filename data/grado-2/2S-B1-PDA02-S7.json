@@ -72,6 +72,56 @@
             1
           ],
           "retroalimentacion": "MCD de 20 y 50 = 10; mcm de 9 y 15 = 45; MCD de 13 y 26 = 13."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 20 y 30 es ___.",
+          "respuestaCorrecta": "60",
+          "retroalimentacion": "20=2²×5, 30=2×3×5. mcm = 2²×3×5 = 60."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 39 y 52?",
+          "opciones": [
+            "13",
+            "3",
+            "4",
+            "1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "39=3×13, 52=2²×13. MCD = 13."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "9×(2+6)=9×2+9×6 es un ejemplo de la propiedad distributiva.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "9×(2+6)=9×2+9×6 corresponde a la propiedad distributiva."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 23 y 46 es 23.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 46=2×23, así que MCD(23,46) = 23."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada operación con el resultado que le corresponde.",
+          "columnaA": [
+            "MCD de 8 y 12",
+            "mcm de 10 y 15",
+            "MCD de 29 y 58"
+          ],
+          "columnaB": [
+            "29",
+            "4",
+            "30"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "MCD de 8 y 12 = 4; mcm de 10 y 15 = 30; MCD de 29 y 58 = 29."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

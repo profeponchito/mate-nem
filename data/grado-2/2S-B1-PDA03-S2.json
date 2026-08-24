@@ -54,6 +54,48 @@
           "frase": "Si 5 kg de manzanas cuestan $270, entonces 7 kg de manzanas cuestan $___.",
           "respuestaCorrecta": "378",
           "retroalimentacion": "k = 270÷5 = 54 por kg. 7×54 = $378."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 6 kg de tomate cuestan $114, entonces 10 kg cuestan $___.",
+          "respuestaCorrecta": "190",
+          "retroalimentacion": "k = 114÷6 = 19 por kg. 10×19 = $190."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 8 litros de leche cuestan $152, ¿cuál es el valor de k (precio por litro)?",
+          "opciones": [
+            "$17",
+            "$19",
+            "$21",
+            "$23"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 152÷8 = 19 por litro."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si k = $12 por kg y compras 9 kg, ¿cuánto pagarás?",
+          "opciones": [
+            "$96",
+            "$108",
+            "$120",
+            "$132"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "y = k × x = 12 × 9 = $108."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 7 playeras cuestan $448, entonces k = $64 por playera.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "k = 448÷7 = 64 por playera."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 12 cuadernos cuestan $300, entonces k = $20 por cuaderno.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 300÷12 = 25 por cuaderno, no $20."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

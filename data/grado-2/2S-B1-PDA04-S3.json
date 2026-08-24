@@ -82,6 +82,54 @@
           ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "2n² en n=8: 2×8² = 128."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesión de figuras usa n² fichas. ¿Cuántas fichas tiene la figura 9?",
+          "opciones": [
+            "72",
+            "81",
+            "90",
+            "64"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "n² en n=9: 9² = 81."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesión de figuras usa 4n² fichas. ¿Cuántas fichas tiene la figura 5?",
+          "opciones": [
+            "80",
+            "90",
+            "100",
+            "110"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "4n² en n=5: 4×25 = 100."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué expresión algebraica representa la sucesión 4, 16, 36, 64...?",
+          "opciones": [
+            "n²+3",
+            "4n²",
+            "2n²",
+            "n²"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "4n²: 4(1)²=4, 4(2)²=16, 4(3)²=36, 4(4)²=64."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una sucesión de figuras usa 3n² fichas. La figura 6 tiene 108 fichas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "3n² en n=6: 3×36 = 108."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una sucesión de figuras usa 2n² fichas. La figura 7 tiene ___ fichas.",
+          "respuestaCorrecta": "98",
+          "retroalimentacion": "2n² en n=7: 2×49 = 98."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

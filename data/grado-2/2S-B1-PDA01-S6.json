@@ -78,6 +78,62 @@
             1
           ],
           "retroalimentacion": "-9 < -6; -1.8 < -1; 3/5 (0.6) > -0.2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -3, 1.5, -0.2, 4",
+          "opciones": [
+            "-3, -0.2, 1.5, 4",
+            "4, 1.5, -0.2, -3",
+            "-0.2, -3, 1.5, 4",
+            "1.5, -0.2, -3, 4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -3 < -0.2 < 1.5 < 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor: -7, 2, -0.5, 5",
+          "opciones": [
+            "5, 2, -0.5, -7",
+            "-7, -0.5, 2, 5",
+            "2, 5, -0.5, -7",
+            "5, -0.5, 2, -7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 5 > 2 > -0.5 > -7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -6.3 y -6.25 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -6.3 y -6.25 existen infinitos números, por ejemplo -6.275."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -5, 3/10, -0.8, 6 es ___.",
+          "respuestaCorrecta": "-5",
+          "retroalimentacion": "-5 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada par de números con la comparación que le corresponde.",
+          "columnaA": [
+            "-12 y -8",
+            "-2.5 y -2",
+            "7/10 y -0.1"
+          ],
+          "columnaB": [
+            "7/10 > -0.1",
+            "-12 < -8",
+            "-2.5 < -2"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "-12 < -8; -2.5 < -2; 7/10 (0.7) > -0.1."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

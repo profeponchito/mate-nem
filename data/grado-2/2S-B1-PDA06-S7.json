@@ -79,6 +79,62 @@
             1
           ],
           "retroalimentacion": "x+4x=30 → x=6; 160×0.90=144; x×1.15=92 → x=80."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un número menos el triple de sí mismo es -18 (x - 3x = -18). ¿Cuál es el número?",
+          "opciones": [
+            "9",
+            "-9",
+            "6",
+            "18"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x - 3x = -2x = -18 → x = 9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 6x + 8 = 50 es x = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "6x = 42; x = 7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un producto con 18% de descuento quedó en $164. Su precio original era $___.",
+          "respuestaCorrecta": "200",
+          "retroalimentacion": "164 = x(1 − 0.18) = 0.82x → x = 164 ÷ 0.82 = $200."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un producto de $60 tiene 35% de aumento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$81",
+            "$75",
+            "$95",
+            "$21"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "60 × (1 + 0.35) = $81."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada planteamiento con su resultado.",
+          "columnaA": [
+            "x + 6x = 49",
+            "180 × (1 − 0.15)",
+            "x × 1.25 = 110"
+          ],
+          "columnaB": [
+            "88",
+            "153",
+            "7"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "x+6x=49 → x=7; 180×0.85=153; x×1.25=110 → x=88."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

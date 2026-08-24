@@ -53,6 +53,56 @@
           "frase": "El mcm de 33 y 34 es ___.",
           "respuestaCorrecta": "1122",
           "retroalimentacion": "mcm(33,34) = 1122."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 9 y 15?",
+          "opciones": [
+            "45",
+            "135",
+            "30",
+            "15"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "mcm(9,15) = 45."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 45 y 60 es 15.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 45=3²×5, 60=2²×3×5. MCD = 3×5 = 15."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El mcm de 8 y 20 es 80.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: mcm(8,20) = 40, no 80."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 42 y 56 es ___.",
+          "respuestaCorrecta": "14",
+          "retroalimentacion": "42=2×3×7, 56=2³×7. MCD = 2×7 = 14."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "MCD de 24 y 36",
+            "mcm de 4 y 10",
+            "MCD de 15 y 22"
+          ],
+          "columnaB": [
+            "1",
+            "20",
+            "12"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "MCD de 24 y 36 = 12; mcm de 4 y 10 = 20; MCD de 15 y 22 = 1."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

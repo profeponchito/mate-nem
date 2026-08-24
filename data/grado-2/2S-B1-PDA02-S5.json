@@ -58,6 +58,42 @@
           ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "MCD(40,60) = 20."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 54 y 36 es ___.",
+          "respuestaCorrecta": "18",
+          "retroalimentacion": "54=2×3³, 36=2²×3². MCD = 2×3² = 18."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 8 y 14 es ___.",
+          "respuestaCorrecta": "56",
+          "retroalimentacion": "8=2³, 14=2×7. mcm = 2³×7 = 56."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 63 y 42 es 21.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 63=3²×7, 42=2×3×7. MCD = 3×7 = 21."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El mcm de 6 y 15 es 90.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: mcm(6,15) = 30, no 90."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 9 y 24?",
+          "opciones": [
+            "72",
+            "216",
+            "36",
+            "144"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "mcm(9,24) = 72."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

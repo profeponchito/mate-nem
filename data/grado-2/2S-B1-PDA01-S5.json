@@ -72,6 +72,56 @@
             2
           ],
           "retroalimentacion": "-9/4 = -2.25; 7/8 = 0.875; -3/20 = -0.15."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "-9/8 escrito como decimal es ___.",
+          "respuestaCorrecta": "-1.125",
+          "retroalimentacion": "-9/8 = -1.125."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número está entre -4 y -3.5?",
+          "opciones": [
+            "-3.8",
+            "-4.5",
+            "-3",
+            "-5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-3.8 está entre -4 y -3.5, ya que -4 < -3.8 < -3.5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -2.3 y -2.25 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -2.3 y -2.25 existen infinitos números, por ejemplo -2.275."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -8, 5/8, -1.9, 3 es ___.",
+          "respuestaCorrecta": "-8",
+          "retroalimentacion": "-8 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada fracción con el número decimal que le corresponde.",
+          "columnaA": [
+            "-11/4",
+            "3/8",
+            "-7/20"
+          ],
+          "columnaB": [
+            "-2.75",
+            "0.375",
+            "-0.35"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-11/4 = -2.75; 3/8 = 0.375; -7/20 = -0.35."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

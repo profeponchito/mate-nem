@@ -114,6 +114,56 @@
             1
           ],
           "retroalimentacion": "9x - 2 = 34 → x=4; 5x - 7 = 68 → x=15; 3x + 2 = 11 → x=3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $250 tiene 20% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$200",
+            "$225",
+            "$230",
+            "$210"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "250 × (1 − 0.20) = $200."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 5x + 15 = 45 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5x = 30; x = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un número más el triple de sí mismo es 44 (x + 3x = 44). x = ___.",
+          "respuestaCorrecta": "11",
+          "retroalimentacion": "4x = 44; x = 44÷4 = 11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un producto de $140 con 15% de descuento cuesta $130.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "140 × (1 − 0.15) = $119, no $130."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "3x - 4 = 17",
+            "7x + 3 = 45",
+            "x + 6x = 56"
+          ],
+          "columnaB": [
+            "6",
+            "8",
+            "7"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "3x-4=17 → x=7; 7x+3=45 → x=6; x+6x=56 → x=8."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

@@ -59,6 +59,42 @@
           ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "2n²: 2(1)²=2, 2(2)²=8, 2(3)²=18, 2(4)²=32. Coincide con la sucesión."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El término 6 de la sucesión n² es 42.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "n² en n=6: 6² = 36, no 42."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El término 4 de la sucesión 3n² es 48.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "3n² en n=4: 3×16 = 48."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión n²+5, el término 6 es ___.",
+          "respuestaCorrecta": "41",
+          "retroalimentacion": "n²+5 en n=6: 36+5 = 41."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la sucesión 2n²-3, el término 5 es ___.",
+          "respuestaCorrecta": "47",
+          "retroalimentacion": "2n²-3 en n=5: 2×25-3 = 47."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué expresión algebraica representa la sucesión 5, 20, 45, 80...?",
+          "opciones": [
+            "n²+4",
+            "5n²",
+            "4n²",
+            "2n²+3"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "5n²: 5(1)²=5, 5(2)²=20, 5(3)²=45, 5(4)²=80."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

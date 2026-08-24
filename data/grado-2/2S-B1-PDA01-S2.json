@@ -52,6 +52,62 @@
           "frase": "El número menor entre -10, 6/8, 1/5, 1.7 es ___.",
           "respuestaCorrecta": "-10",
           "retroalimentacion": "-10 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -5, 1/4, -0.8, 3",
+          "opciones": [
+            "-5, -0.8, 1/4, 3",
+            "3, 1/4, -0.8, -5",
+            "-0.8, -5, 1/4, 3",
+            "1/4, -0.8, -5, 3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1/4 = 0.25. De menor a mayor: -5 < -0.8 < 0.25 < 3."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -3, 2/5, -1.8, -6 es ___.",
+          "respuestaCorrecta": "2/5",
+          "retroalimentacion": "2/5 (0.4) está más a la derecha en la recta numérica, así que es el mayor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la recta numérica, -4.5 se ubica a la izquierda de -4.05.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -4.5 < -4.05, así que -4.5 queda a la izquierda."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada conjunto de números con su valor mínimo.",
+          "columnaA": [
+            "-2, 5, -7, 0",
+            "3/4, -1, 2, -3",
+            "-0.5, -0.05, 1, -5"
+          ],
+          "columnaB": [
+            "-3",
+            "-7",
+            "-5"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "El mínimo del primer conjunto es -7; del segundo es -3; del tercero es -5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál fracción, al convertirla a decimal, resulta en -0.6?",
+          "opciones": [
+            "-3/5",
+            "-3/4",
+            "-2/3",
+            "-5/8"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-3/5 = -0.6."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
