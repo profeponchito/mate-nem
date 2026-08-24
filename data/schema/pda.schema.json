@@ -42,16 +42,16 @@
 
     "subtemas": {
       "type": "array",
-      "description": "El tema explicado y evaluado en 4 partes, de menor a mayor dificultad. Cada subtema es una mini-actividad autocontenida: teoría (titulo/explicacion/ejemplos) + su propia mini-actividad calificada de 5 reactivos, con resultado (puntos, estrellas) independiente de los otros 3 subtemas. Al completar los 4, el PDA muestra un resultado global (suma de los 4 mini-resultados).",
+      "description": "El tema explicado y evaluado en un mínimo de 4 partes 'núcleo', de menor a mayor dificultad (Introductorio/Intermedio/Avanzado/Síntesis). Cada subtema es una mini-actividad autocontenida: teoría (titulo/explicacion/ejemplos) + su propia mini-actividad calificada de 5 reactivos, con resultado (puntos, estrellas) independiente de los demás. Al completar todos, el PDA muestra un resultado global (suma de todos los mini-resultados). Opcionalmente puede haber hasta 3 subtemas adicionales de REPASO después de los 4 núcleo (índice ≥ 4, numerados <N>.5..<N>.7) — no introducen contenido nuevo, repasan lo ya visto en los 4 anteriores, pero se califican y cuentan para el resultado global igual que cualquier otro subtema (ver Paso 13 en la documentación del proyecto).",
       "minItems": 4,
-      "maxItems": 4,
+      "maxItems": 7,
       "items": {
         "type": "object",
         "required": ["titulo", "explicacion", "ejemplos", "puntosPorReactivo", "estrellasMax", "reactivos"],
         "properties": {
           "numero": {
             "type": "string",
-            "description": "Número jerárquico del subtema, formato '<numero del PDA>.<consecutivo>' (ej. '3.2' = subtema 2 del tema 3, '3.4' = el más difícil de ese tema). Se muestra en la interfaz junto al título del subtema."
+            "description": "Número jerárquico del subtema, formato '<numero del PDA>.<consecutivo>' (ej. '3.2' = subtema 2 del tema 3, '3.4' = el más difícil/de síntesis de ese tema). Si el PDA tiene subtemas de repaso opcionales, continúan la numeración a partir de .5 (ej. '3.5', '3.6', '3.7'). Se muestra en la interfaz junto al título del subtema."
           },
           "titulo": { "type": "string" },
           "explicacion": { "type": "string", "description": "Explicación del subtema, más desarrollada que una síntesis breve. El subtema 4 ('Síntesis y aplicación') recapitula las ideas clave de los subtemas 1-3." },

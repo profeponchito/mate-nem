@@ -273,6 +273,190 @@
           "retroalimentacion": "x² - 5x - 36 = 0 → x = 9, x = -4; x² - 2x - 63 = 0 → x = 9, x = -7; x² + 1x - 42 = 0 → x = -7, x = 6."
         }
       ]
+    },
+    {
+      "numero": "3.5",
+      "titulo": "Repaso: factorizar y usar la fórmula general",
+      "explicacion": "Recuerda: para resolver una ecuación cuadrática Ax²+Bx+C=0, primero intenta factorizarla como producto de dos binomios (cada factor igualado a cero te da una solución); si no es fácil de factorizar, usa la fórmula general x = (−B ± √(B²−4AC)) / 2A, que siempre funciona.",
+      "ejemplos": [
+        "x² - 6x + 8 = 0 se factoriza como (x-2)(x-4)=0, así que x=2 o x=4."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 6x + 8 = 0 son x=2 y x=4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-2)(x-4)=x²-6x+8=0, así que x=2 o x=4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 7x + 10 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-5",
+          "retroalimentacion": "(x+2)(x+5)=0 → x=-2 o x=-5. La menor es -5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - 3x - 10 = 0?",
+          "opciones": [
+            "x=5, x=-2",
+            "x=2, x=-5",
+            "x=-2, x=-5",
+            "x=10, x=-1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(3±√(9+40))/2=(3±7)/2 → x=5 o x=-2."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + x - 20 = 0 son x=5 y x=-4.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Las soluciones reales son x=-5 y x=4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 11x + 30 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "(x-5)(x-6)=0 → x=5 o x=6."
+        }
+      ]
+    },
+    {
+      "numero": "3.6",
+      "titulo": "Repaso: fórmula general y problemas de área",
+      "explicacion": "Recuerda: la fórmula general x = (−B ± √(B²−4AC)) / 2A sirve para resolver cualquier ecuación cuadrática, incluso si no se puede factorizar fácilmente. En problemas de áreas, al plantear la ecuación cuadrática se obtienen dos soluciones matemáticas, pero solo una tiene sentido en el contexto: una medida no puede ser negativa.",
+      "ejemplos": [
+        "Un terreno cuadrado de área 144 m²: x²=144 → x=12 (se descarta x=-12 porque una medida no puede ser negativa)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene área de 144 m². ¿Cuánto mide su lado?",
+          "opciones": [
+            "10 m",
+            "11 m",
+            "12 m",
+            "14 m"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "x²=144 → x=12 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un jardín rectangular tiene área de 45 m² y su largo mide 4 metros más que su ancho. El ancho mide ___ m.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "x(x+4)=45 → x²+4x−45=0 → (x+9)(x−5)=0 → x=5 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + 6x - 16 = 0 son x=-8 y x=2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x+8)(x-2)=x²+6x-16=0, así que x=-8 o x=2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - 13x + 40 = 0?",
+          "opciones": [
+            "x=5, x=8",
+            "x=4, x=10",
+            "x=-5, x=-8",
+            "x=2, x=20"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(13±√(169-160))/2=(13±3)/2 → x=8 o x=5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² + 2x - 35 = 0",
+            "x² - 14x + 45 = 0",
+            "x² + 9x + 8 = 0"
+          ],
+          "columnaB": [
+            "x = 5, x = 9",
+            "x = -7, x = 5",
+            "x = -1, x = -8"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "x² + 2x - 35 = 0 → x = -7, x = 5; x² - 14x + 45 = 0 → x = 5, x = 9; x² + 9x + 8 = 0 → x = -1, x = -8."
+        }
+      ]
+    },
+    {
+      "numero": "3.7",
+      "titulo": "Repaso integral: ecuaciones cuadráticas y problemas de área",
+      "explicacion": "Recuerda: cualquier ecuación cuadrática Ax²+Bx+C=0 se puede resolver factorizando (si es posible) o con la fórmula general x = (−B ± √(B²−4AC)) / 2A. En problemas de áreas, plantea la ecuación con las medidas del terreno o figura, resuélvela, y quédate solo con la solución que tenga sentido (una medida no puede ser negativa).",
+      "ejemplos": [
+        "Un jardín con área 28 m² y largo = ancho+3: x(x+3)=28 → x²+3x−28=0 → (x+7)(x−4)=0 → x=4 (se descarta x=-7). El largo es 4+3=7 m."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un jardín rectangular tiene área de 28 m² y su largo mide 3 metros más que su ancho. ¿Cuánto mide el ancho?",
+          "opciones": [
+            "3 m",
+            "4 m",
+            "5 m",
+            "7 m"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "x(x+3)=28 → x²+3x−28=0 → (x+7)(x−4)=0 → x=4 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 4x - 32 = 0 son x=8 y x=-4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-8)(x+4)=x²-4x-32=0, así que x=8 o x=-4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 13x + 42 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "(x+6)(x+7)=0 → x=-6 o x=-7. La menor es -7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene área de 169 m². ¿Cuánto mide su lado?",
+          "opciones": [
+            "11 m",
+            "12 m",
+            "13 m",
+            "14 m"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "x²=169 → x=13 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² - 15x + 56 = 0",
+            "x² + 3x - 54 = 0",
+            "x² - 7x - 18 = 0"
+          ],
+          "columnaB": [
+            "x = 9, x = -2",
+            "x = 7, x = 8",
+            "x = -9, x = 6"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x² - 15x + 56 = 0 → x = 7, x = 8; x² + 3x - 54 = 0 → x = -9, x = 6; x² - 7x - 18 = 0 → x = 9, x = -2."
+        }
+      ]
     }
   ],
   "practicaExtra": [

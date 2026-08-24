@@ -53,7 +53,9 @@ el reto.
 Cada `subtema` dentro de un PDA tiene su propio campo `numero` (string),
 con formato jerárquico `<numero del PDA>.<consecutivo>` — por ejemplo `3.2`
 es el segundo subtema (nivel Intermedio) del Tema 3. Se muestra junto al
-título del subtema, en su mini-actividad y en su mini-resultado.
+título del subtema, en su mini-actividad y en su mini-resultado. Si el PDA
+tiene subtemas de repaso opcionales (ver más abajo), continúan la
+numeración desde `.5` (`3.5`, `3.6`, `3.7`).
 
 ## Fuente curricular
 
@@ -95,23 +97,40 @@ una barra de avance (%) en todo momento:
 
 - **problematizacion** → desafío o contexto real que engancha al alumno antes
   de explicar el tema (contexto + pregunta).
-- **subtemas** (arreglo, siempre 4, de menor a mayor dificultad) → el tema
-  explicado a profundidad, dividido en 4 niveles: Introductorio, Intermedio,
-  Avanzado y Síntesis (el 4.º subtema es una síntesis/aplicación de todo el
-  tema, no un tema nuevo). Cada subtema tiene `titulo`, `explicacion`,
-  `ejemplos` (uno o más resueltos) y, opcionalmente, `formula` — y es, a la
-  vez, su propia **mini-actividad calificada**: `puntosPorReactivo`,
-  `estrellasMax` y un arreglo `reactivos` de **exactamente 5** preguntas
-  (4 subtemas × 5 = las 20 preguntas del PDA). Cada subtema se califica de
-  forma **independiente** (su propio resultado: correctas/total, puntaje,
-  estrellas) y, al terminar los 4, `app.js` calcula además un **resultado
-  GLOBAL** (suma de los 4 mini-resultados vía `combinarResultados()` en
+- **subtemas** (arreglo, mínimo 4, de menor a mayor dificultad) → el tema
+  explicado a profundidad, dividido en 4 niveles "núcleo": Introductorio,
+  Intermedio, Avanzado y Síntesis (el 4.º subtema es una síntesis/aplicación
+  de todo el tema, no un tema nuevo). Cada subtema tiene `titulo`,
+  `explicacion`, `ejemplos` (uno o más resueltos) y, opcionalmente,
+  `formula` — y es, a la vez, su propia **mini-actividad calificada**:
+  `puntosPorReactivo`, `estrellasMax` y un arreglo `reactivos` de
+  **exactamente 5** preguntas. Cada subtema se califica de forma
+  **independiente** (su propio resultado: correctas/total, puntaje,
+  estrellas) y, al terminar todos, `app.js` calcula además un **resultado
+  GLOBAL** (suma de todos los mini-resultados vía `combinarResultados()` en
   `gamification.js`), que es el que alimenta la constancia final.
+
+  **Subtemas de repaso (opcionales, Paso 14):** un PDA puede tener hasta 3
+  subtemas adicionales después de los 4 núcleo (`maxItems: 7` en el
+  schema), numerados `<N>.5`, `<N>.6`, `<N>.7`. No introducen contenido
+  nuevo — repasan lo ya visto en los 4 anteriores, con ejercicios usando
+  números/escenarios distintos — pero se califican igual que cualquier otro
+  subtema y cuentan para el resultado global. La app los distingue en la UI
+  con la etiqueta "Repaso N de R" en vez de "Nivel N de 4 · <dificultad>"
+  (`nivelChip_` en `app.js`, ver `NIVEL_DIFICULTAD`). Los 17 PDAs actuales
+  de Trimestre 1 ya tienen sus 3 subtemas de repaso (7 subtemas cada uno,
+  35 reactivos calificados en total por PDA).
 - **practicaExtra** (opcional) → arreglo de reactivos adicionales, ungraded
   (no calificados), mostrados en una sección aparte después del resultado
   global del PDA, para quien quiera seguir practicando el mismo tema. No
   afectan el puntaje ni las estrellas de ningún subtema. Los 17 PDAs
   actuales incluyen entre 3 y 4 cada uno.
+- **Celebración final** (Paso 14, no es parte del JSON — puramente de la
+  interfaz) → después de generar la constancia y, si el PDA la tiene, de
+  la práctica extra, `app.js` muestra un panel de cierre estilo "nivel
+  superado" de videojuego (`panelCelebracion_`): confeti animado, un
+  trofeo y un botón para elegir otro tema. No requiere ningún campo nuevo
+  en el JSON del PDA.
 
 No existe ya un objeto `reto` a nivel de PDA — se eliminó al pasar de "3
 subtemas + 1 reto de 20 preguntas paginado" a "4 subtemas, cada uno con su

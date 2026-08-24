@@ -275,6 +275,198 @@
           "retroalimentacion": "-1/2 y 1/2: -1/2 < 1/2; -0.4 y 8: -0.4 < 8; 1.6 y 4: 1.6 < 4."
         }
       ]
+    },
+    {
+      "numero": "1.5",
+      "titulo": "Repaso: convertir fracciones a decimal y comparar",
+      "explicacion": "Recuerda: los números con signo (enteros, fracciones y decimales) se comparan más fácil si primero los expresas todos en la misma forma, por ejemplo convirtiendo las fracciones a decimales. Los negativos con mayor valor absoluto son los menores, y entre dos números con signo siempre existe otro número más (propiedad de densidad).",
+      "ejemplos": [
+        "-7/4 = -1.75, y como -1.75 está más a la izquierda que -1.5 en la recta numérica, -7/4 < -1.5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "-7/4 escrito como decimal es ___.",
+          "respuestaCorrecta": "-1.75",
+          "retroalimentacion": "-7/4 = -1.75."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -6, 3/4, -2.5, 9 es ___.",
+          "respuestaCorrecta": "-6",
+          "retroalimentacion": "-6 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -0.6 y -0.55 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -0.6 y -0.55 existen infinitos números, por ejemplo -0.575."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número está entre -3 y -2.5?",
+          "opciones": [
+            "-3.5",
+            "-2.8",
+            "-2",
+            "-4"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "-2.8 está entre -3 y -2.5, ya que -3 < -2.8 < -2.5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su forma decimal.",
+          "columnaA": [
+            "-9/4",
+            "7/8",
+            "-3/20"
+          ],
+          "columnaB": [
+            "-2.25",
+            "0.875",
+            "-0.15"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-9/4 = -2.25; 7/8 = 0.875; -3/20 = -0.15."
+        }
+      ]
+    },
+    {
+      "numero": "1.6",
+      "titulo": "Repaso: ordenar números con signo en la recta numérica",
+      "explicacion": "Recuerda: para ordenar números con signo, primero exprésalos en la misma forma y luego colócalos en la recta numérica: los negativos con mayor valor absoluto van primero (son los menores), después el cero, y al final los positivos de menor a mayor. Además, entre dos números con signo siempre existe otro número más (densidad).",
+      "ejemplos": [
+        "Ordenando -4, 0.5, -1/2, 2: de menor a mayor queda -4 < -1/2 < 0.5 < 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -4, 0.5, -1/2, 2",
+          "opciones": [
+            "-4, -1/2, 0.5, 2",
+            "2, 0.5, -1/2, -4",
+            "-1/2, -4, 0.5, 2",
+            "0.5, -1/2, -4, 2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -4 < -1/2 (-0.5) < 0.5 < 2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor: -6, 3, -1.5, 0",
+          "opciones": [
+            "3, 0, -1.5, -6",
+            "-6, -1.5, 0, 3",
+            "3, -1.5, 0, -6",
+            "0, 3, -1.5, -6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 3 > 0 > -1.5 > -6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -4.1 y -4.05 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -4.1 y -4.05 existen infinitos números, por ejemplo -4.08."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -8, 2/5, -0.9, -1 es ___.",
+          "respuestaCorrecta": "2/5",
+          "retroalimentacion": "2/5 (0.4) está más a la derecha en la recta numérica, así que es el mayor."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con la comparación correcta.",
+          "columnaA": [
+            "-9 y -6",
+            "-1.8 y -1",
+            "3/5 y -0.2"
+          ],
+          "columnaB": [
+            "-1.8 < -1",
+            "3/5 > -0.2",
+            "-9 < -6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "-9 < -6; -1.8 < -1; 3/5 (0.6) > -0.2."
+        }
+      ]
+    },
+    {
+      "numero": "1.7",
+      "titulo": "Repaso integral: comparar y ordenar números con signo",
+      "explicacion": "Recuerda: para comparar y ordenar enteros, fracciones y decimales con signo, exprésalos primero en la misma forma; los negativos con mayor valor absoluto son los menores; y entre dos números con signo siempre existe otro número más (propiedad de densidad), a diferencia de lo que ocurre solo con enteros.",
+      "ejemplos": [
+        "Comparando -0.7 y -2/3: como -2/3 = -0.666..., y -0.7 está más a la izquierda, entonces -0.7 < -2/3."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "-3/8 escrito como decimal es ___.",
+          "respuestaCorrecta": "-0.375",
+          "retroalimentacion": "-3/8 = -0.375."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-0.7 es menor que -2/3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -2/3 = -0.666..., y -0.7 está más a la izquierda: -0.7 < -0.666..."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor: -0.375, 1, -3, 1/2",
+          "opciones": [
+            "1, 1/2, -0.375, -3",
+            "1, -3, 1/2, -0.375",
+            "-3, -0.375, 1/2, 1",
+            "1/2, 1, -0.375, -3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 1 > 1/2 (0.5) > -0.375 > -3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -5.02 y -5.019 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -5.02 y -5.019 existen infinitos números, por ejemplo -5.0195."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con la comparación correcta.",
+          "columnaA": [
+            "-8 y -3.9",
+            "5/8 y -1",
+            "-0.15 y -0.2"
+          ],
+          "columnaB": [
+            "5/8 > -1",
+            "-0.15 > -0.2",
+            "-8 < -3.9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "-8 < -3.9; 5/8 (0.625) > -1; -0.15 > -0.2."
+        }
+      ]
     }
   ],
   "practicaExtra": [

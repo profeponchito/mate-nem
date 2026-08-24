@@ -274,6 +274,184 @@
           "retroalimentacion": "9x + 3 = 12 → x=1; 5x - 1 = 9 → x=2; 6x - 9 = 75 → x=14."
         }
       ]
+    },
+    {
+      "numero": "6.5",
+      "titulo": "Repaso: que es una ecuacion y despejar con una operacion",
+      "explicacion": "Recuerda: una ecuacion es una igualdad con una incognita. Para despejar la variable, se aplica la misma operacion en ambos lados de la igualdad (sumar, restar, multiplicar o dividir) hasta dejar sola a la x.",
+      "ejemplos": [
+        "Resuelve 8x - 3 = 29: 8x = 29+3 = 32; x = 32÷8 = 4."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 6x + 2 = 32 es x = 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "6x = 32-2 = 30; x = 30÷6 = 5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 8x - 3 = 29. x = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "8x = 29+3 = 32; x = 32÷8 = 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 2x - 7 = 15 es x = 10.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "2x = 15+7 = 22; x = 22÷2 = 11, no 10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 5x + 9 = 39. x = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "5x = 39-9 = 30; x = 30÷5 = 6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 10x - 6 = 44",
+          "opciones": [
+            "x=5",
+            "x=4",
+            "x=6",
+            "x=50"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "10x = 44+6 = 50; x = 50÷10 = 5."
+        }
+      ]
+    },
+    {
+      "numero": "6.6",
+      "titulo": "Repaso: ecuaciones con la variable en ambos lados",
+      "explicacion": "Recuerda: cuando la x aparece en los dos lados de la igualdad, primero agrupas los terminos con x de un lado y los numeros del otro (usando operaciones inversas), y despues despejas x dividiendo entre su coeficiente.",
+      "ejemplos": [
+        "Resuelve 5x + 3 = 3x + 15: 5x-3x = 15-3 → 2x = 12 → x = 6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 5x + 3 = 3x + 15",
+          "opciones": [
+            "x=6",
+            "x=9",
+            "x=3",
+            "x=4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5x-3x = 15-3 → 2x=12 → x=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x - 4 = 4x + 11. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "7x-4x = 11+4 → 3x=15 → x=5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 8x - 1 = 5x + 20 es x = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8x-5x = 20+1 → 3x=21 → x=7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 6x - 5 = 2x + 19",
+          "opciones": [
+            "x=6",
+            "x=4",
+            "x=8",
+            "x=3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "6x-2x = 19+5 → 4x=24 → x=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 4x + 6 = 2x + 20. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "4x-2x = 20-6 → 2x=14 → x=7."
+        }
+      ]
+    },
+    {
+      "numero": "6.7",
+      "titulo": "Repaso integral: resolver y verificar ecuaciones",
+      "explicacion": "Recuerda: una ecuacion se resuelve aplicando la misma operacion en ambos lados hasta dejar sola a la x. Si la x aparece en ambos lados, primero agrupas los terminos con x de un lado y los numeros del otro, y despues divides entre el coeficiente de x.",
+      "ejemplos": [
+        "Resuelve 9x - 4 = 6x + 17: 9x-6x = 17+4 → 3x=21 → x=7."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 9x - 4 = 6x + 17 es x = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "9x-6x = 17+4 → 3x=21 → x=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 6x + 8 = 50. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "6x = 50-8 = 42; x = 42÷6 = 7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 3x - 9 = 2x + 4",
+          "opciones": [
+            "x=13",
+            "x=5",
+            "x=-13",
+            "x=6.5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3x-2x = 4+9 → x=13."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuacion con su solucion.",
+          "columnaA": [
+            "7x - 2 = 5x + 16",
+            "x + 90 = 250",
+            "4x + 5 = 3x + 19"
+          ],
+          "columnaB": [
+            "160",
+            "14",
+            "9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "7x-2=5x+16 → x=9; x+90=250 → x=160; 4x+5=3x+19 → x=14."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuacion con su solucion.",
+          "columnaA": [
+            "6x + 7 = 43",
+            "9x - 4 = 59",
+            "3x - 8 = 2x + 5"
+          ],
+          "columnaB": [
+            "13",
+            "6",
+            "7"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "6x+7=43 → x=6; 9x-4=59 → x=7; 3x-8=2x+5 → x=13."
+        }
+      ]
     }
   ],
   "practicaExtra": [

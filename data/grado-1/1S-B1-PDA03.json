@@ -276,6 +276,167 @@
           "retroalimentacion": "(8) × (6)=48; (13) + (6)=19; (-4) × (9)=-36."
         }
       ]
+    },
+    {
+      "numero": "3.5",
+      "titulo": "Repaso: sumar y restar números con signo",
+      "explicacion": "Recuerda: al sumar dos números con el mismo signo, se suman sus valores absolutos y se conserva ese signo; si los signos son diferentes, se restan los valores absolutos y se conserva el signo del que tiene mayor valor absoluto. Restar un número negativo equivale a sumar su opuesto.",
+      "ejemplos": [
+        "(-17) + (9): signos diferentes, 17-9=8, se conserva el signo del mayor (negativo): -8.",
+        "(20) - (-6) = 20 + 6 = 26."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-13) + 6 = -7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Signos diferentes: se resta 13-6=7 y se conserva el signo del mayor (negativo): -7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-5) - (-9) = -4.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: (-5) - (-9) = -5 + 9 = 4, no -4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-17) + (9) = ___.",
+          "respuestaCorrecta": "-8",
+          "retroalimentacion": "Signos diferentes: se resta 17-9=8 y se conserva el signo del mayor (negativo): -8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(20) - (-6) = ___.",
+          "respuestaCorrecta": "26",
+          "retroalimentacion": "Restar un negativo equivale a sumar: 20 - (-6) = 20 + 6 = 26."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tienda vendió $380, pagó $150 de renta, recibió $60 de una devolución a favor y pagó $40 de transporte. ¿Cuál fue su balance final?",
+          "opciones": [
+            "$250",
+            "$230",
+            "$270",
+            "$210"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "380 − 150 + 60 − 40 = 250."
+        }
+      ]
+    },
+    {
+      "numero": "3.6",
+      "titulo": "Repaso: multiplicar, dividir con signos y jerarquía de operaciones",
+      "explicacion": "Recuerda: en la multiplicación y la división, signos iguales dan resultado positivo y signos diferentes dan resultado negativo. Cuando una expresión combina operaciones, primero se resuelven las multiplicaciones y divisiones, y después las sumas y restas.",
+      "ejemplos": [
+        "(-7) × (-8) = 56, porque signos iguales dan resultado positivo.",
+        "4 + 6 × (-2): primero la multiplicación, 6×(-2)=-12; luego 4+(-12)=-8."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-7) × (-8) = 56.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: signos iguales dan resultado positivo: 56."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-45) ÷ (-9) = -5.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: signos iguales dan resultado positivo: (-45) ÷ (-9) = 5, no -5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(7) × (-6) = ___.",
+          "respuestaCorrecta": "-42",
+          "retroalimentacion": "Signos diferentes dan resultado negativo: 7 × (-6) = -42."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "4 + 6 × (-2) = ___.",
+          "respuestaCorrecta": "-8",
+          "retroalimentacion": "Primero la multiplicación: 6×(-2)=-12; luego 4+(-12)=-8."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve aplicando jerarquía de operaciones: 8 - 3 × (-4)",
+          "opciones": [
+            "20",
+            "-4",
+            "-20",
+            "4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Primero la multiplicación: 3×(-4)=-12; luego 8-(-12)=20."
+        }
+      ]
+    },
+    {
+      "numero": "3.7",
+      "titulo": "Repaso integral: las cuatro operaciones con números con signo",
+      "explicacion": "Recuerda: para sumar o restar con signo, si los signos son iguales se suman los valores y se conserva el signo, y si son diferentes se restan y se conserva el signo del mayor. Para multiplicar o dividir, signos iguales dan positivo y signos diferentes dan negativo. Y cuando una expresión combina varias operaciones, primero van las multiplicaciones y divisiones, y al final las sumas y restas.",
+      "ejemplos": [
+        "7 - 4 × (-2): primero 4×(-2)=-8; luego 7-(-8)=15.",
+        "(-24) ÷ (-6) = 4, porque signos iguales dan resultado positivo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 7 - 4 × (-2), el resultado es 15.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: primero 4×(-2)=-8; luego 7-(-8)=15."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-3) - (-8) = -11.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: (-3) - (-8) = -3 + 8 = 5, no -11."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-24) ÷ (-6) = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Signos iguales dan resultado positivo: (-24) ÷ (-6) = 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-9) × (4)",
+          "opciones": [
+            "-36",
+            "-13",
+            "-5",
+            "36"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(-9) × (4) = -36. Signos diferentes dan negativo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(-14) + 5",
+            "(-3) × (-9)",
+            "(18) ÷ (-3)"
+          ],
+          "columnaB": [
+            "27",
+            "-6",
+            "-9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "(-14) + 5 = -9; (-3) × (-9) = 27; (18) ÷ (-3) = -6."
+        }
+      ]
     }
   ],
   "practicaExtra": [

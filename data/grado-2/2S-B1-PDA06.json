@@ -274,6 +274,179 @@
           "retroalimentacion": "9x - 2 = 34 → x=4; 5x - 7 = 68 → x=15; 3x + 2 = 11 → x=3."
         }
       ]
+    },
+    {
+      "numero": "6.5",
+      "titulo": "Repaso: ecuaciones lineales sencillas y descuentos",
+      "explicacion": "Recuerda: para resolver un problema con una ecuación lineal, representas la cantidad desconocida con x y despejas paso a paso. Cuando un precio p tiene un descuento del r%, el precio final es p × (1 − r/100); si conoces el precio final, puedes encontrar el original dividiendo entre ese mismo factor.",
+      "ejemplos": [
+        "Un número más el cuádruple de sí mismo es 45 (x+4x=45): 5x=45 → x=9.",
+        "Un artículo con 12% de descuento quedó en $220: 220 ÷ 0.88 = $250 era su precio original."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 6x - 3 = 27 es x = 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "6x = 30; x = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un número más el cuádruple de sí mismo es 45 (x + 4x = 45) implica que x = 9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 5x=45 → x=9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un artículo con 12% de descuento quedó en $220. Su precio original era $___.",
+          "respuestaCorrecta": "250",
+          "retroalimentacion": "220 = x(1 − 0.12) = 0.88x → x = 220 ÷ 0.88 = $250."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 6x + 9 = 45. x = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "6x = 36; x = 36÷6 = 6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $150 tiene 20% de aumento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$180",
+            "$170",
+            "$165",
+            "$130"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "150 × (1 + 0.20) = $180."
+        }
+      ]
+    },
+    {
+      "numero": "6.6",
+      "titulo": "Repaso: aumentos, descuentos y despeje del precio original",
+      "explicacion": "Recuerda: cuando un precio tiene un aumento del r%, el precio final se calcula multiplicando por (1 + r/100); cuando tiene un descuento, se multiplica por (1 − r/100). Si conoces el precio final y quieres el original, divides entre ese mismo factor. Estas mismas ideas también sirven para resolver ecuaciones lineales que representan otras situaciones.",
+      "ejemplos": [
+        "Un producto de $90 con 10% de descuento: 90 × 0.90 = $81.",
+        "Un producto con 25% de aumento quedó en $125: 125 ÷ 1.25 = $100 era su precio original."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo tiene 30% de aumento y ahora cuesta $260. ¿Cuánto costaba antes?",
+          "opciones": [
+            "$200",
+            "$182",
+            "$230",
+            "$338"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "260 = x×1.30 → x = 260 ÷ 1.30 = $200."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un producto de $90 tiene 10% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$81",
+            "$80",
+            "$85",
+            "$99"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "90 × (1 − 0.10) = $81."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un producto con 25% de aumento quedó en $125. Su precio original era $___.",
+          "respuestaCorrecta": "100",
+          "retroalimentacion": "125 = x×1.25 → x = 125 ÷ 1.25 = $100."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Después de un aumento del 5%, un producto que costaba $200 ahora cuesta $210.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 200 × 1.05 = $210."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 9x - 6 = 39. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "9x = 45; x = 45÷9 = 5."
+        }
+      ]
+    },
+    {
+      "numero": "6.7",
+      "titulo": "Repaso integral: ecuaciones y porcentajes",
+      "explicacion": "Recuerda: muchos problemas cotidianos se resuelven planteando una ecuación lineal con la cantidad desconocida como variable y despejándola paso a paso. Para porcentajes, un aumento del r% multiplica el precio original por (1 + r/100) y un descuento lo multiplica por (1 − r/100); si conoces el precio final, divides entre ese factor para encontrar el original.",
+      "ejemplos": [
+        "Un artículo con 40% de descuento quedó en $90: 90 ÷ 0.60 = $150 era su precio original.",
+        "La ecuación x + 4x = 30 se resuelve como 5x=30 → x=6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un número menos el doble de sí mismo es -14 (x - 2x = -14). ¿Cuál es el número?",
+          "opciones": [
+            "14",
+            "-14",
+            "7",
+            "28"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x - 2x = -x = -14 → x = 14."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 10x - 15 = 45 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "10x = 60; x = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un artículo con 40% de descuento quedó en $90. Su precio original era $___.",
+          "respuestaCorrecta": "150",
+          "retroalimentacion": "90 = x(1 − 0.40) = 0.60x → x = 90 ÷ 0.60 = $150."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un producto de $80 tiene 25% de aumento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$100",
+            "$95",
+            "$105",
+            "$85"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "80 × (1 + 0.25) = $100."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada planteamiento con su resultado.",
+          "columnaA": [
+            "x + 4x = 30",
+            "160 × (1 − 0.10)",
+            "x × 1.15 = 92"
+          ],
+          "columnaB": [
+            "144",
+            "80",
+            "6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x+4x=30 → x=6; 160×0.90=144; x×1.15=92 → x=80."
+        }
+      ]
     }
   ],
   "practicaExtra": [

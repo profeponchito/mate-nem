@@ -273,6 +273,184 @@
           "retroalimentacion": "$84 en razón 1:3 — parte de razón 1 = $21; $216 en razón 5:3 — parte de razón 5 = $135; $252 en razón 5:2 — parte de razón 5 = $180."
         }
       ]
+    },
+    {
+      "numero": "4.5",
+      "titulo": "Repaso: qué es un reparto proporcional y la variación directa",
+      "explicacion": "Recuerda: en un reparto proporcional, sumas todos los valores de referencia y divides la cantidad total entre esa suma para saber cuánto vale cada 'parte'; luego multiplicas ese valor por la aportación de cada quien. Además, cuando dos cantidades cambian siempre en la misma proporción (si una se multiplica por un número, la otra también), hay una variación directa entre ellas.",
+      "ejemplos": [
+        "Se reparten $450 proporcionalmente entre dos personas que aportaron $60 y $90. Suma=150. La de $60: (60/150)×450=$180."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten $450 proporcionalmente entre dos personas que aportaron $60 y $90. A la primera (la de $60) le tocan $180.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=150. (60/150)×450 = $180."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $195 proporcionalmente entre dos personas con aportaciones en razón 2:3. A la de razón 3 le tocan $___.",
+          "respuestaCorrecta": "117",
+          "retroalimentacion": "Suma=5. (3/5)×195 = $117."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si x se multiplica por 4 y y también se multiplica por 4, ¿qué tipo de variación es?",
+          "opciones": [
+            "Variación directa",
+            "Variación inversa",
+            "No hay variación",
+            "Variación cuadrática"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Cuando ambas cantidades cambian siempre en la misma proporción, es una variación directa."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $88 en razón 3:8, a la parte de razón 8 le tocan $70.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Suma=11. (8/11)×88 = $64, no $70."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $150 proporcionalmente entre dos personas con aportaciones en razón 1:4. A la de razón 4 le tocan $___.",
+          "respuestaCorrecta": "120",
+          "retroalimentacion": "Suma=5. (4/5)×150 = $120."
+        }
+      ]
+    },
+    {
+      "numero": "4.6",
+      "titulo": "Repaso: variación directa y repartos entre más de dos partes",
+      "explicacion": "Recuerda: el método del reparto proporcional funciona igual sin importar cuántas partes haya (edades, aportaciones, etc.): sumas todos los valores de referencia y repartes la cantidad total en esa misma proporción. Y recuerda que en una variación directa, ambas cantidades siempre aumentan o disminuyen juntas en la misma proporción; si una cambia y la otra no cambia en la misma proporción, no es variación directa.",
+      "ejemplos": [
+        "Se reparten 84 dulces proporcionalmente entre 3 niños de 3, 4 y 5 años. Suma de edades=12. Al niño de 5 años le tocan (5/12)×84=35 dulces."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten 84 dulces proporcionalmente entre 3 niños de edades 3, 4 y 5 años. ¿Cuántos dulces le tocan al niño de 5 años?",
+          "opciones": [
+            "21",
+            "28",
+            "35",
+            "42"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma de edades=12. (5/12)×84=35 dulces."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Ana, Beto y Caro aportaron $2,000, $3,000 y $5,000 respectivamente a un negocio y reparten $1,000 de utilidad proporcionalmente. A Beto le corresponden $___.",
+          "respuestaCorrecta": "300",
+          "retroalimentacion": "Suma=10,000. Beto: (3000/10000)×1000 = $300."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si x aumenta y y disminuye en la misma proporción, es una variación directa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Eso es variación inversa; en variación directa ambas cantidades aumentan o disminuyen juntas en la misma proporción."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $200 proporcionalmente entre dos personas con aportaciones en razón 7:3. ¿Cuánto le toca a la de razón 7?",
+          "opciones": [
+            "$130",
+            "$140",
+            "$150",
+            "$120"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Suma=10. (7/10)×200 = $140."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada reparto proporcional con el resultado de la parte indicada.",
+          "columnaA": [
+            "$96 en razón 1:5 — parte de razón 1",
+            "$175 en razón 2:5 — parte de razón 2",
+            "$117 en razón 4:9 — parte de razón 4"
+          ],
+          "columnaB": [
+            "$36",
+            "$16",
+            "$50"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "$96 en razón 1:5 — parte de razón 1 = $16; $175 en razón 2:5 — parte de razón 2 = $50; $117 en razón 4:9 — parte de razón 4 = $36."
+        }
+      ]
+    },
+    {
+      "numero": "4.7",
+      "titulo": "Repaso integral: reparto proporcional y variación directa",
+      "explicacion": "Recuerda: para cualquier reparto proporcional, suma los valores de referencia (aportaciones, edades, razones), divide la cantidad total entre esa suma, y multiplica ese resultado por la parte de cada quien; el método funciona igual con dos o más partes. Además, en una variación directa la razón entre las dos cantidades que varían siempre es constante: si una se multiplica por un número, la otra se multiplica por el mismo número.",
+      "ejemplos": [
+        "Dos socios aportaron $6,000 y $9,000 a un negocio y reparten $3,000 de utilidad proporcionalmente. Suma=15,000. Al de $9,000 le corresponden (9000/15000)×3000=$1,800."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Dos socios aportaron $6,000 y $9,000 a un negocio y reparten $3,000 de utilidad proporcionalmente. Al segundo socio (el de $9,000) le corresponden $___.",
+          "respuestaCorrecta": "1800",
+          "retroalimentacion": "Suma=15,000. (9000/15000)×3000 = $1,800."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $130 en razón 3:10, a la parte de razón 10 le tocan $100.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=13. (10/13)×130 = $100."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten 72 dulces proporcionalmente entre 3 niños de edades 2, 3 y 7 años. ¿Cuántos dulces le tocan al niño de 7 años?",
+          "opciones": [
+            "36",
+            "40",
+            "42",
+            "48"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma de edades=12. (7/12)×72=42 dulces."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una variación directa, la razón entre las dos cantidades que varían siempre es constante.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: esa razón constante es justo lo que define a la variación directa."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada reparto proporcional con el resultado de la parte indicada.",
+          "columnaA": [
+            "$175 en razón 3:4 — parte de razón 4",
+            "$264 en razón 5:6 — parte de razón 5",
+            "$187 en razón 6:11 — parte de razón 6"
+          ],
+          "columnaB": [
+            "$66",
+            "$120",
+            "$100"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "$175 en razón 3:4 — parte de razón 4 = $100; $264 en razón 5:6 — parte de razón 5 = $120; $187 en razón 6:11 — parte de razón 6 = $66."
+        }
+      ]
     }
   ],
   "practicaExtra": [

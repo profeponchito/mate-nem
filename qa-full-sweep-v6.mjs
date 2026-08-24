@@ -63,12 +63,16 @@ async function probarPDA(page, grado, pda, consoleErrors) {
   await page.goto(`${BASE}/#/pda/${encodeURIComponent(grado)}/${encodeURIComponent(pda.id)}`, { waitUntil: 'load' });
   await page.waitForTimeout(200);
 
-  if (pda.subtemas.length !== 4) {
-    throw new Error(`se esperaban 4 subtemas, hay ${pda.subtemas.length}`);
+  // Todo PDA tiene al menos 4 subtemas "núcleo" (Introductorio/Intermedio/
+  // Avanzado/Síntesis); opcionalmente hasta 3 subtemas de repaso extra
+  // después de esos 4 (ver Paso 13) — el total de reactivos se calcula del
+  // propio PDA, no se asume fijo en 4×5=20.
+  if (pda.subtemas.length < 4) {
+    throw new Error(`se esperaban al menos 4 subtemas, hay ${pda.subtemas.length}`);
   }
   const totalReactivos = pda.subtemas.reduce((acc, s) => acc + s.reactivos.length, 0);
-  if (totalReactivos !== 20) {
-    throw new Error(`se esperaban 20 reactivos en total (4×5), hay ${totalReactivos}`);
+  if (totalReactivos !== pda.subtemas.length * 5) {
+    throw new Error(`se esperaban ${pda.subtemas.length * 5} reactivos en total (${pda.subtemas.length}×5), hay ${totalReactivos}`);
   }
 
   // problematización: debe verse el título (pda.titulo)
@@ -78,6 +82,7 @@ async function probarPDA(page, grado, pda, consoleErrors) {
   await page.waitForTimeout(100);
 
   const nivelesEsperados = ['Introductorio', 'Intermedio', 'Avanzado', 'Síntesis'];
+  const totalNucleo = Math.min(pda.subtemas.length, nivelesEsperados.length);
 
   for (let si = 0; si < pda.subtemas.length; si++) {
     const subtema = pda.subtemas[si];
@@ -89,8 +94,19 @@ async function probarPDA(page, grado, pda, consoleErrors) {
     bodyText = await page.innerText('body');
     if (!bodyText.includes(subtema.titulo)) throw new Error(`subtema[${si}] no muestra su título`);
     if (!bodyText.includes(subtema.explicacion)) throw new Error(`subtema[${si}] no muestra su explicación teórica`);
-    if (!bodyText.includes(`Nivel ${si + 1} de 4`) || !bodyText.includes(nivelesEsperados[si])) {
-      throw new Error(`subtema[${si}] no muestra el nivel de dificultad esperado "Nivel ${si + 1} de 4 · ${nivelesEsperados[si]}"`);
+    // Los primeros hasta-4 subtemas son "núcleo" (Nivel N de <totalNucleo> ·
+    // <etiqueta>); cualquier subtema extra (índice ≥ 4) es de repaso (Repaso
+    // N de R) — mismo esquema que nivelChip_ en app.js.
+    if (si < nivelesEsperados.length) {
+      if (!bodyText.includes(`Nivel ${si + 1} de ${totalNucleo}`) || !bodyText.includes(nivelesEsperados[si])) {
+        throw new Error(`subtema[${si}] no muestra el nivel de dificultad esperado "Nivel ${si + 1} de ${totalNucleo} · ${nivelesEsperados[si]}"`);
+      }
+    } else {
+      const totalRepasos = pda.subtemas.length - nivelesEsperados.length;
+      const indiceRepaso = si - nivelesEsperados.length;
+      if (!bodyText.includes(`Repaso ${indiceRepaso + 1} de ${totalRepasos}`)) {
+        throw new Error(`subtema[${si}] no muestra la etiqueta de repaso esperada "Repaso ${indiceRepaso + 1} de ${totalRepasos}"`);
+      }
     }
     await page.click('[data-accion="continuar"]');
     await page.waitForTimeout(100);
@@ -187,14 +203,14 @@ async function probarPDA(page, grado, pda, consoleErrors) {
     await page.waitForTimeout(esUltimo ? 400 : 150); // el último dispara el webhook de pda_completo
   }
 
-  // Resultado GLOBAL: suma de los 4 subtemas → 20/20 correctas,
+  // Resultado GLOBAL: suma de todos los subtemas → N/N correctas,
   // puntaje/estrellas máximos también sumados.
   bodyText = await page.innerText('body');
   if (!bodyText.includes('Resultado global del PDA')) {
-    throw new Error('no se llegó al panel de resultado global tras el 4.º subtema');
+    throw new Error(`no se llegó al panel de resultado global tras el último (${pda.subtemas.length}.º) subtema`);
   }
-  if (!bodyText.includes('20 / 20 correctas')) {
-    throw new Error(`resultado global esperaba "20 / 20 correctas", vio: ${bodyText.slice(0, 300)}`);
+  if (!bodyText.includes(`${totalReactivos} / ${totalReactivos} correctas`)) {
+    throw new Error(`resultado global esperaba "${totalReactivos} / ${totalReactivos} correctas", vio: ${bodyText.slice(0, 300)}`);
   }
   const puntajeMaxGlobal = pda.subtemas.reduce((acc, s) => acc + s.puntosPorReactivo * 5, 0);
   if (!bodyText.includes(`de ${puntajeMaxGlobal} pts`)) {
@@ -254,6 +270,17 @@ async function probarPDA(page, grado, pda, consoleErrors) {
         throw new Error(`practicaExtra[${i}] no marcó correcto: "${feedbackTxt}"`);
       }
     }
+  }
+
+  // celebración final ("nivel superado"): aparece una vez generada la
+  // constancia (codigoVerificacion ya asignado en este punto del flujo),
+  // después de la práctica extra si el PDA la tiene.
+  bodyText = await page.innerText('body');
+  if (!bodyText.includes('¡Nivel superado!') && !bodyText.includes('¡Puntaje perfecto!')) {
+    throw new Error('no aparece el panel de celebración final tras la constancia/práctica extra');
+  }
+  if (!bodyText.includes('Elegir otro tema')) {
+    throw new Error('el panel de celebración no muestra el botón "Elegir otro tema"');
   }
 
   if (consoleErrors.length > 0) {

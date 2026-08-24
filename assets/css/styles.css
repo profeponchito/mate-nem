@@ -81,6 +81,37 @@ h1, h2, h3, .font-heading {
   transition: width 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
+/* Celebración final estilo videojuego ("nivel superado"), al cerrar un
+ * PDA/tema completo: confeti de colores que cae en bucle... */
+@keyframes mn-confeti-caer {
+  0%   { opacity: 0; transform: translateY(-12px) rotate(0deg); }
+  15%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(90px) rotate(220deg); }
+}
+.mn-confeti {
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  animation: mn-confeti-caer 1.8s ease-in both infinite;
+}
+
+/* ...y un trofeo que aparece con un "pop" y flota suavemente después. */
+@keyframes mn-trofeo-pop {
+  0%   { opacity: 0; transform: scale(0.4) rotate(-8deg); }
+  55%  { opacity: 1; transform: scale(1.12) rotate(4deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+@keyframes mn-trofeo-flotar {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+.mn-trofeo {
+  animation: mn-trofeo-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both,
+             mn-trofeo-flotar 2.4s ease-in-out 0.6s infinite;
+}
+
 /* Botones y tarjetas interactivas: leve elevación al pasar el cursor */
 .mn-elevar {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -101,10 +132,11 @@ h1, h2, h3, .font-heading {
 
 /* Respeta a quien prefiere menos movimiento */
 @media (prefers-reduced-motion: reduce) {
-  .mn-panel, .mn-tarjeta, .mn-estrella, .mn-resplandor, .mn-elevar {
+  .mn-panel, .mn-tarjeta, .mn-estrella, .mn-resplandor, .mn-elevar, .mn-confeti, .mn-trofeo {
     animation: none !important;
     transition: none !important;
   }
+  .mn-confeti { display: none; } /* sin animación, el confeti caído se vería como manchas fijas */
 }
 
 /* Oculta elementos de navegación al imprimir/exportar la constancia */

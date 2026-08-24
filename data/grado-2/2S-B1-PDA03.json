@@ -277,6 +277,184 @@
           "retroalimentacion": "4 boletos de cine cuestan $24 → $6 por boleto; 2 plumas cuestan $72 → $36 por pluma; 5 litros de leche cuestan $280 → $56 por litro."
         }
       ]
+    },
+    {
+      "numero": "3.5",
+      "titulo": "Repaso: identificar proporcionalidad directa y calcular k",
+      "explicacion": "Recuerda: dos cantidades son directamente proporcionales cuando su razón se mantiene constante. La constante de proporcionalidad k = y ÷ x representa el valor unitario (por ejemplo, el precio de una sola pieza), y sirve para calcular y = k × x con cualquier otro valor de x.",
+      "ejemplos": [
+        "Si 3 boletos de feria cuestan $45, entonces k = 45 ÷ 3 = 15 por boleto. Para 7 boletos: 7 × 15 = $105."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 3 boletos de feria cuestan $45, entonces 7 boletos cuestan $105.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: k = 45÷3 = 15 por boleto; 7×15 = $105."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 6 refrescos cuestan $72, entonces 9 refrescos cuestan $___.",
+          "respuestaCorrecta": "108",
+          "retroalimentacion": "k = 72÷6 = 12 por refresco. 9×12 = $108."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 8 tortillas cuestan $16, entonces 20 tortillas cuestan $42.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 16÷8 = 2 por tortilla. 20×2 = $40, no $42."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 7 playeras cuestan $560, entonces 4 playeras cuestan $___.",
+          "respuestaCorrecta": "320",
+          "retroalimentacion": "k = 560÷7 = 80 por playera. 4×80 = $320."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 5 paquetes de agua cuestan $75, ¿cuánto cuestan 9 paquetes?",
+          "opciones": [
+            "$125",
+            "$135",
+            "$115",
+            "$145"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 75÷5 = 15 por paquete. 9×15 = $135."
+        }
+      ]
+    },
+    {
+      "numero": "3.6",
+      "titulo": "Repaso: resolver problemas con la constante de proporcionalidad",
+      "explicacion": "Recuerda los pasos para resolver un problema de proporcionalidad directa: 1) identifica las dos cantidades relacionadas, 2) calcula k dividiendo un par de valores conocidos, y 3) usa y = k × x (o una regla de tres) para encontrar el valor que falta.",
+      "ejemplos": [
+        "Un tinaco se llena con 80 litros en 16 minutos (k = 80÷16 = 5 L/min). En 25 minutos se llenarán 25×5 = 125 litros."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tinaco se llena con 80 litros en 16 minutos. ¿Cuántos litros se llenan en 25 minutos, con el mismo rendimiento?",
+          "opciones": [
+            "100 L",
+            "110 L",
+            "125 L",
+            "135 L"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "k = 80÷16 = 5 litros por minuto. 25×5 = 125 litros."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 12 chocolates cuestan $180, entonces 5 chocolates cuestan $___.",
+          "respuestaCorrecta": "75",
+          "retroalimentacion": "k = 180÷12 = 15 por chocolate. 5×15 = $75."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 7 metros de tela cuestan $322, ¿cuánto cuestan 4 metros?",
+          "opciones": [
+            "$172",
+            "$184",
+            "$196",
+            "$161"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 322÷7 = 46 por metro. 4×46 = $184."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 10 huevos cuestan $35, entonces 16 huevos cuestan $54.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 35÷10 = 3.5 por huevo. 16×3.5 = $56, no $54."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su constante de proporcionalidad (k).",
+          "columnaA": [
+            "6 dulces cuestan $18",
+            "4 cuadernos cuestan $148",
+            "10 metros de listón cuestan $70"
+          ],
+          "columnaB": [
+            "$37 por cuaderno",
+            "$7 por metro",
+            "$3 por dulce"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "6 dulces cuestan $18 → $3 por dulce; 4 cuadernos cuestan $148 → $37 por cuaderno; 10 metros de listón cuestan $70 → $7 por metro."
+        }
+      ]
+    },
+    {
+      "numero": "3.7",
+      "titulo": "Repaso integral: proporcionalidad directa",
+      "explicacion": "Recuerda: dos cantidades son directamente proporcionales cuando su razón se mantiene constante (k = y ÷ x). Para resolver cualquier problema, calcula k con un par de datos conocidos y multiplica por el valor que buscas: y = k × x. Esto aplica a precios, tiempos, recetas y muchas otras situaciones de la vida diaria.",
+      "ejemplos": [
+        "Si 4 boletos de camión cuestan $52, k = 52÷4 = 13 por boleto; para 9 boletos: 9×13 = $117."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 4 boletos de camión cuestan $52, entonces 9 boletos cuestan $___.",
+          "respuestaCorrecta": "117",
+          "retroalimentacion": "k = 52÷4 = 13 por boleto. 9×13 = $117."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 15 kg de naranjas cuestan $225, entonces 8 kg cuestan $120.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: k = 225÷15 = 15 por kg; 8×15 = $120."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 6 entradas al cine cuestan $270, ¿cuánto cuestan 11 entradas?",
+          "opciones": [
+            "$450",
+            "$495",
+            "$460",
+            "$405"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 270÷6 = 45 por entrada. 11×45 = $495."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una receta usa 4 tazas de harina para 24 galletas. Para 36 galletas se necesitan 6 tazas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: k = 4÷24 = 1/6 de taza por galleta; 36×1/6 = 6 tazas."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su constante de proporcionalidad (k).",
+          "columnaA": [
+            "9 panes cuestan $63",
+            "5 boletos de camión cuestan $65",
+            "3 kg de plátano cuestan $51"
+          ],
+          "columnaB": [
+            "$13 por boleto",
+            "$17 por kg",
+            "$7 por pan"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "9 panes cuestan $63 → $7 por pan; 5 boletos de camión cuestan $65 → $13 por boleto; 3 kg de plátano cuestan $51 → $17 por kg."
+        }
+      ]
     }
   ],
   "practicaExtra": [

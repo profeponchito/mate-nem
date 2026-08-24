@@ -127,9 +127,16 @@ const PASO_COLOR = {
   }
 };
 
-/** Etiqueta de dificultad de cada uno de los 4 subtemas de un PDA (de menor
- * a mayor), mostrada junto a su número para que se note la progresión. */
+/** Etiqueta de dificultad de cada uno de los 4 subtemas "núcleo" de un PDA
+ * (de menor a mayor), mostrada junto a su número para que se note la
+ * progresión. Los subtemas de repaso opcionales que se agregan después
+ * (índice 4 en adelante) usan su propia etiqueta "Repaso" — ver nivelChip_. */
 const NIVEL_DIFICULTAD = ['Introductorio', 'Intermedio', 'Avanzado', 'Síntesis'];
+
+/** Paleta de colores del confeti de la celebración final (toma un color de
+ * cada tono de la paleta "Aula NEM", como un pequeño resumen de todas las
+ * fases del recorrido). */
+const CONFETI_COLORES = ['#1d4ed8', '#c2410c', '#065f46', '#b45309', '#9f1239', '#475569'];
 
 /** Devuelve una copia de `arr` con sus elementos en orden aleatorio (Fisher–Yates). */
 function barajar_(arr) {
@@ -527,6 +534,7 @@ async function vistaPDA({ grado, id }) {
           ${esResultado ? panelResultado_(pda, estado, PASO_COLOR.resultado) : ''}
         </div>
         ${esResultado && Array.isArray(pda.practicaExtra) && pda.practicaExtra.length > 0 ? panelPracticaExtra_(pda, PASO_COLOR.practicaExtra) : ''}
+        ${esResultado && estado.codigoVerificacion ? panelCelebracion_(pda, estado.resultado, grado, PASO_COLOR.resultado) : ''}
       </div>
     `;
     conectarEventos_();
@@ -707,10 +715,18 @@ function panelProblematizacion_(pda, color) {
   `;
 }
 
-/** Chip "Nivel N de 4 · <etiqueta>" que marca la dificultad creciente de un subtema. */
+/** Chip "Nivel N de 4 · <etiqueta>" que marca la dificultad creciente de los
+ * 4 subtemas núcleo de un PDA. Si el PDA tiene subtemas de repaso extra
+ * después de esos 4 (índice ≥ 4 — ver Paso 13), se muestran como
+ * "Repaso N de R" en vez de continuar la escala de dificultad, ya que no
+ * introducen contenido nuevo sino que repasan lo ya visto. */
 function nivelChip_(indice, total) {
-  const etiqueta = NIVEL_DIFICULTAD[indice] || '';
-  return `Nivel ${indice + 1} de ${total} · ${etiqueta}`;
+  if (indice < NIVEL_DIFICULTAD.length) {
+    return `Nivel ${indice + 1} de ${Math.min(total, NIVEL_DIFICULTAD.length)} · ${NIVEL_DIFICULTAD[indice]}`;
+  }
+  const totalRepasos = total - NIVEL_DIFICULTAD.length;
+  const indiceRepaso = indice - NIVEL_DIFICULTAD.length;
+  return `Repaso ${indiceRepaso + 1} de ${totalRepasos}`;
 }
 
 function panelSubtema_(subtema, indice, total, color) {
@@ -787,7 +803,7 @@ function panelResultado_(pda, estado, color) {
       </p>
     </div>
     <p class="text-slate-600 font-semibold mb-4">${r.puntaje} de ${r.puntajeMax} pts</p>
-    <p class="text-slate-400 text-xs mb-4">Suma de los 4 subtemas (5 preguntas cada uno).</p>
+    <p class="text-slate-400 text-xs mb-4">Suma de los ${pda.subtemas.length} subtemas (5 preguntas cada uno).</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
       ${r.detalle.map((d) => `
@@ -828,6 +844,44 @@ function panelPracticaExtra_(pda, color) {
             </button>
           </div>
         `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+/** Explosión de "confeti" decorativa (solo CSS, sin imágenes externas ni
+ * dependencias): una fila de piezas de colores que caen con distinto
+ * retraso y posición horizontal, en bucle. Posiciones/retrasos son
+ * pseudo-aleatorios pero deterministas (mismo resultado en cada render). */
+function confeti_(cantidad = 16) {
+  return Array.from({ length: cantidad }).map((_, i) => {
+    const color = CONFETI_COLORES[i % CONFETI_COLORES.length];
+    const izquierda = (i * 61.8) % 96; // distribución dispersa (proporción áurea) en 0-96%
+    const retraso = (i * 110) % 1800;
+    const redondo = i % 2 === 0;
+    return `<span class="mn-confeti" style="left:${izquierda}%; background:${color}; animation-delay:${retraso}ms; ${redondo ? 'border-radius:50%;' : ''}"></span>`;
+  }).join('');
+}
+
+/** Pantalla de celebración estilo "nivel superado" de videojuego: cierra la
+ * experiencia de un PDA/tema completo (después de la constancia y, si el
+ * PDA la tiene, de la práctica extra) con una nota festiva. Puramente
+ * decorativa — no repite el detalle del puntaje, que ya se mostró en el
+ * resultado global; solo confirma el cierre e invita a elegir otro tema. */
+function panelCelebracion_(pda, resultado, grado, color) {
+  const perfecto = resultado.estrellas >= resultado.estrellasMax;
+  return `
+    <div class="relative overflow-hidden mn-panel mt-4 bg-gradient-to-br ${color.grad} rounded-3xl p-8 sm:p-10 text-center shadow-xl">
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">${confeti_()}</div>
+      <div class="relative">
+        <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/20 mb-3">
+          ${icono_('trofeo', 'w-11 h-11 text-white mn-trofeo')}
+        </div>
+        <p class="font-heading text-2xl sm:text-3xl font-extrabold text-white mb-1">${perfecto ? '¡Puntaje perfecto!' : '¡Nivel superado!'}</p>
+        <p class="text-white/90 font-medium mb-6">Completaste «${escapeHTML_(pda.titulo)}» con ${resultado.puntaje} de ${resultado.puntajeMax} pts.</p>
+        <a href="#/pda-lista/${encodeURIComponent(grado)}" class="mn-elevar inline-flex items-center gap-2 bg-white/95 hover:bg-white text-slate-800 font-heading font-bold px-6 py-3 rounded-xl transition shadow-lg">
+          Elegir otro tema ${icono_('flecha', 'w-4 h-4')}
+        </a>
       </div>
     </div>
   `;

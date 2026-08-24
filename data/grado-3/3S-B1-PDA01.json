@@ -278,6 +278,201 @@
           "retroalimentacion": "√324 = 18; 2⁻2 = 1/4; 6.3 × 10^4 = número grande."
         }
       ]
+    },
+    {
+      "numero": "1.5",
+      "titulo": "Repaso: exponentes negativos y raíces cuadradas",
+      "explicacion": "Recuerda: un exponente negativo x⁻ⁿ significa tomar el recíproco, es decir, 1/xⁿ. La raíz cuadrada de un número es el valor que, multiplicado por sí mismo, da ese número. Estas dos ideas son la base para simplificar expresiones antes de escribirlas en notación científica.",
+      "ejemplos": [
+        "4⁻³ = 1/4³ = 1/64.",
+        "√400 = 20, porque 20 × 20 = 400."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "4⁻3 = 1/64.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "4⁻3 = 1/4³ = 1/64."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La raíz cuadrada de 361 es ___.",
+          "respuestaCorrecta": "19",
+          "retroalimentacion": "19 × 19 = 361."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 2⁻5?",
+          "opciones": [
+            "1/32",
+            "-32",
+            "32",
+            "1/10"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2⁻5 = 1/2^5 = 1/32."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "6⁻2",
+            "√900",
+            "3⁻2"
+          ],
+          "columnaB": [
+            "1/36",
+            "30",
+            "1/9"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "6⁻2 = 1/36; √900 = 30; 3⁻2 = 1/9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√441 = 21.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "21 × 21 = 441."
+        }
+      ]
+    },
+    {
+      "numero": "1.6",
+      "titulo": "Repaso: raíz cuadrada y notación científica",
+      "explicacion": "Recuerda: para encontrar la raíz cuadrada de un número piensa qué valor multiplicado por sí mismo te da ese número. La notación científica escribe números muy grandes o muy pequeños como a × 10ⁿ, con 1≤a<10: si el exponente es positivo el número es grande, y si es negativo el número es menor que 1.",
+      "ejemplos": [
+        "√1024 = 32, porque 32 × 32 = 1024.",
+        "82,000 se escribe en notación científica como 8.2 × 10⁴."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√529 = 23.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "23 × 23 = 529."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.0000045 se escribe como 4.5 × 10⁻⁶.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "0.0000045 = 4.5 × 10⁻⁶."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "82,000 escrito en notación científica es ___.",
+          "respuestaCorrecta": "8.2 × 10⁴",
+          "retroalimentacion": "82,000 = 8.2 × 10⁴."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la raíz cuadrada de 256?",
+          "opciones": [
+            "14",
+            "16",
+            "18",
+            "15"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "16 × 16 = 256."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada cantidad con su notación científica.",
+          "columnaA": [
+            "5,400,000",
+            "0.0000091",
+            "√1024"
+          ],
+          "columnaB": [
+            "32",
+            "5.4 × 10⁶",
+            "9.1 × 10⁻⁶"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "5,400,000 = 5.4×10⁶; 0.0000091 = 9.1×10⁻⁶; √1024 = 32."
+        }
+      ]
+    },
+    {
+      "numero": "1.7",
+      "titulo": "Repaso integral: exponentes, raíces y notación científica",
+      "explicacion": "Recuerda: un exponente negativo x⁻ⁿ equivale a 1/xⁿ; la raíz cuadrada de un número es el valor que, multiplicado por sí mismo, da ese número; y la notación científica escribe cantidades muy grandes o muy pequeñas como a × 10ⁿ (con 1≤a<10), usando exponente positivo para números grandes y negativo para números pequeños.",
+      "ejemplos": [
+        "7⁻2 = 1/7² = 1/49.",
+        "0.00000023 = 2.3 × 10⁻⁷."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 7⁻2?",
+          "opciones": [
+            "1/49",
+            "-14",
+            "49",
+            "1/14"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "7⁻2 = 1/7² = 1/49."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√121 = 11.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "11 × 11 = 121."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.00000023 escrito en notación científica es ___.",
+          "respuestaCorrecta": "2.3 × 10⁻⁷",
+          "retroalimentacion": "0.00000023 = 2.3 × 10⁻⁷."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la raíz cuadrada de 100?",
+          "opciones": [
+            "12",
+            "10",
+            "20",
+            "11"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "10 × 10 = 100."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "10⁻3",
+            "√676",
+            "4.5 × 10⁷"
+          ],
+          "columnaB": [
+            "1/1000",
+            "número grande",
+            "26"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "10⁻3 = 1/1000; √676 = 26; 4.5×10⁷ = número grande."
+        }
+      ]
     }
   ],
   "practicaExtra": [
