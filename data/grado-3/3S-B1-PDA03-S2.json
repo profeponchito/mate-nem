@@ -53,6 +53,56 @@
           "frase": "Factoriza y resuelve: x² - 16x + 63 = 0. La solución menor es x = ___.",
           "respuestaCorrecta": "7",
           "retroalimentacion": "Las soluciones son x=9 y x=7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² + 2x - 15 = 0?",
+          "opciones": [
+            "x=3, x=-5",
+            "x=-3, x=5",
+            "x=5, x=-3",
+            "x=15, x=-1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(-2±√(4+60))/2=(-2±8)/2 → x=3 o x=-5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un jardín rectangular tiene área 54 m² y su largo mide 3 metros más que su ancho. El ancho mide ___ m.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "x(x+3)=54 → x²+3x−54=0 → (x+9)(x−6)=0 → x=6 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Usando la fórmula general, las soluciones de x² - 4x - 12 = 0 son x=6 y x=-2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "x=(4±√(16+48))/2=(4±8)/2 → x=6 o x=-2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 12x + 27 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "(x-3)(x-9)=0 → x=3 o x=9. La menor es 3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con la solución menor obtenida al resolverla.",
+          "columnaA": [
+            "x² + 6x + 5 = 0",
+            "x² - 5x - 14 = 0",
+            "x² + x - 30 = 0"
+          ],
+          "columnaB": [
+            "-6",
+            "-5",
+            "-2"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x²+6x+5=0 → x=-1,-5 (menor -5); x²-5x-14=0 → x=7,-2 (menor -2); x²+x-30=0 → x=5,-6 (menor -6)."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

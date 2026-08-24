@@ -114,6 +114,62 @@
             0
           ],
           "retroalimentacion": "√324 = 18; 2⁻2 = 1/4; 6.3 × 10^4 = número grande."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la notación científica correcta para un número cuya mantisa es 4.1 y cuyo exponente de 10 es 5?",
+          "opciones": [
+            "4.1×10^4",
+            "41×10^5",
+            "4.1×10^5",
+            "4.1×10^6"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Se escribe 4.1×10^5, manteniendo 1≤mantisa<10."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "5⁻2 = 1/25.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5⁻2 = 1/5² = 1/25."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La raíz cuadrada de 289 es ___.",
+          "respuestaCorrecta": "17",
+          "retroalimentacion": "17 × 17 = 289."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado correcto.",
+          "columnaA": [
+            "√729",
+            "5⁻3",
+            "7.4×10^5"
+          ],
+          "columnaB": [
+            "1/125",
+            "número grande",
+            "27"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "√729 = 27; 5⁻3 = 1/125; 7.4×10^5 = número grande."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de √961?",
+          "opciones": [
+            "29",
+            "30",
+            "31",
+            "32"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "31 × 31 = 961."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

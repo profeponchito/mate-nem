@@ -53,6 +53,56 @@
           "frase": "Si el volumen de un prisma es V=x²h, con V=448 y h=7, entonces x² = ___.",
           "respuestaCorrecta": "64",
           "retroalimentacion": "x² = V/h = 448/7 = 64."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si el volumen de un prisma es V=x²h, con V=300 y h=12, entonces x²=25.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "x² = V/h = 300/12 = 25."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si el volumen de un prisma es V=x²h, con V=252 y h=7, ¿cuánto vale x²?",
+          "opciones": [
+            "34",
+            "36",
+            "38",
+            "42"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "x² = V/h = 252/7 = 36."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una caja tiene volumen V=x²h. Si x=6 y h=5, el volumen es ___.",
+          "respuestaCorrecta": "180",
+          "retroalimentacion": "V = 6²×5 = 36×5 = 180."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un cubo con arista 6 cm tiene volumen 196 cm³.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "6³ = 216 cm³, no 196."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada dato con el valor de x² que le corresponde (V=x²h).",
+          "columnaA": [
+            "V=180, h=5",
+            "V=245, h=5",
+            "V=128, h=2"
+          ],
+          "columnaB": [
+            "49",
+            "64",
+            "36"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "V=180,h=5: x²=36. V=245,h=5: x²=49. V=128,h=2: x²=64."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

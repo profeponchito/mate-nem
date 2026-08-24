@@ -73,6 +73,56 @@
             0
           ],
           "retroalimentacion": "5,400,000 = 5.4×10⁶; 0.0000091 = 9.1×10⁻⁶; √1024 = 32."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√676 = 26.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "26 × 26 = 676."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.0000073 escrito en notación científica es ___.",
+          "respuestaCorrecta": "7.3 × 10⁻⁶",
+          "retroalimentacion": "0.0000073 = 7.3 × 10⁻⁶."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe 3,200,000 en notación científica?",
+          "opciones": [
+            "3.2×10⁵",
+            "32×10⁵",
+            "3.2×10⁶",
+            "0.32×10⁷"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "3,200,000 = 3.2 × 10⁶."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La raíz cuadrada de 841 es ___.",
+          "respuestaCorrecta": "29",
+          "retroalimentacion": "29 × 29 = 841."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada número con su notación científica correspondiente.",
+          "columnaA": [
+            "6,700,000",
+            "0.000052",
+            "√1444"
+          ],
+          "columnaB": [
+            "5.2×10⁻⁵",
+            "38",
+            "6.7×10⁶"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "6,700,000 = 6.7×10⁶; 0.000052 = 5.2×10⁻⁵; √1444 = 38."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

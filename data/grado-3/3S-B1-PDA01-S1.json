@@ -54,6 +54,56 @@
           "enunciado": "√169 = 14.",
           "respuestaCorrecta": false,
           "retroalimentacion": "13 × 13 = 169."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 4⁻³?",
+          "opciones": [
+            "1/64",
+            "64",
+            "-64",
+            "1/12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4⁻³ = 1/4³ = 1/64."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "8⁻² = 1/64.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8⁻² = 1/8² = 1/64."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "6⁻² escrito como fracción es ___.",
+          "respuestaCorrecta": "1/36",
+          "retroalimentacion": "6⁻² = 1/6² = 1/36."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√256 = 16.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "16 × 16 = 256."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "3⁻2",
+            "√196",
+            "5⁻2"
+          ],
+          "columnaB": [
+            "14",
+            "1/25",
+            "1/9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "3⁻2 = 1/9; √196 = 14; 5⁻2 = 1/25."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

@@ -79,6 +79,62 @@
             1
           ],
           "retroalimentacion": "10⁻3 = 1/1000; √676 = 26; 4.5×10⁷ = número grande."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 6⁻2?",
+          "opciones": [
+            "1/36",
+            "36",
+            "-36",
+            "1/12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "6⁻2 = 1/6² = 1/36."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√576 = 24.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "24 × 24 = 576."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.0000059 escrito en notación científica es ___.",
+          "respuestaCorrecta": "5.9 × 10⁻⁶",
+          "retroalimentacion": "0.0000059 = 5.9 × 10⁻⁶."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la raíz cuadrada de 225?",
+          "opciones": [
+            "14",
+            "15",
+            "16",
+            "13"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "15 × 15 = 225."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado correcto.",
+          "columnaA": [
+            "10⁻4",
+            "√961",
+            "6.2×10^8"
+          ],
+          "columnaB": [
+            "1/10000",
+            "número grande",
+            "31"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "10⁻4 = 1/10000; √961 = 31; 6.2×10^8 = número grande."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

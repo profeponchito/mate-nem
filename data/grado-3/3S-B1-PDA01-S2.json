@@ -54,6 +54,56 @@
           "frase": "La raíz cuadrada de 49 es ___.",
           "respuestaCorrecta": "7",
           "retroalimentacion": "7 × 7 = 49."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La raíz cuadrada de 169 es 13.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "13 × 13 = 169."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La raíz cuadrada de 100 es 12.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "10 × 10 = 100, no 12."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la raíz cuadrada de 289?",
+          "opciones": [
+            "16",
+            "17",
+            "18",
+            "19"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "17 × 17 = 289."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La raíz cuadrada de 400 es ___.",
+          "respuestaCorrecta": "20",
+          "retroalimentacion": "20 × 20 = 400."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada número con su raíz cuadrada.",
+          "columnaA": [
+            "√64",
+            "√144",
+            "√324"
+          ],
+          "columnaB": [
+            "8",
+            "18",
+            "12"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "√64 = 8; √144 = 12; √324 = 18."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

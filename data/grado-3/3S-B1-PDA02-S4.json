@@ -114,6 +114,56 @@
             1
           ],
           "retroalimentacion": "x=8, h=9: V=576; x=3, h=4: V=36; x=6, h=8: V=288."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una caja con x=7, h=4 tiene volumen V=x²h igual a 196.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 7²×4 = 49×4 = 196."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una caja tiene volumen V=x²h. Si x=8 y h=5, el volumen es ___.",
+          "respuestaCorrecta": "320",
+          "retroalimentacion": "V = 8²×5 = 64×5 = 320."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una caja tiene volumen V=x²h. Si x=9 y h=2, ¿cuál es el volumen?",
+          "opciones": [
+            "162",
+            "180",
+            "144",
+            "171"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "V = 9²×2 = 81×2 = 162."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un cubo con arista 7 cm tiene volumen 343 cm³.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "7³ = 343 cm³."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada par de valores (x, h) con el volumen del prisma V=x²h que le corresponde.",
+          "columnaA": [
+            "x=3, h=8",
+            "x=8, h=3",
+            "x=5, h=9"
+          ],
+          "columnaB": [
+            "225",
+            "72",
+            "192"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x=3,h=8: V=9×8=72. x=8,h=3: V=64×3=192. x=5,h=9: V=25×9=225."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

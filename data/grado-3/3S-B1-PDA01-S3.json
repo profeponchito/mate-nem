@@ -84,6 +84,62 @@
           ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "4 × 4 = 16."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe 720,000 en notación científica?",
+          "opciones": [
+            "72×10⁴",
+            "7.2×10⁵",
+            "7.2×10⁴",
+            "0.72×10⁶"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "720,000 = 7.2 × 100,000 = 7.2×10⁵."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.00056 se escribe como 5.6×10⁻⁴.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5.6×10⁻⁴ = 0.00056."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "930,000 escrito en notación científica es ___.",
+          "respuestaCorrecta": "9.3 × 10⁵",
+          "retroalimentacion": "930,000 = 9.3 × 10⁵."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 9⁻²?",
+          "opciones": [
+            "81",
+            "1/81",
+            "-81",
+            "1/18"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "9⁻² = 1/9² = 1/81."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada cantidad con su notación científica.",
+          "columnaA": [
+            "67,000",
+            "0.0000038",
+            "√81"
+          ],
+          "columnaB": [
+            "6.7×10⁴",
+            "9",
+            "3.8×10⁻⁶"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "67,000 = 6.7×10⁴; 0.0000038 = 3.8×10⁻⁶; √81 = 9."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

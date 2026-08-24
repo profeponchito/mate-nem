@@ -79,6 +79,56 @@
             0
           ],
           "retroalimentacion": "x=3,h=9: V=9×9=81; cubo arista 4: 4³=64; x=7,h=6: V=49×6=294."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un prisma con base cuadrada de lado x=8 y altura h=4 tiene volumen 256.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 8²×4 = 64×4 = 256."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un cubo tiene arista 9 cm. Su volumen es ___ cm³.",
+          "respuestaCorrecta": "729",
+          "retroalimentacion": "9³ = 729 cm³."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si el volumen de un prisma es V=x²h, con V=176 y h=4, ¿cuánto vale x²?",
+          "opciones": [
+            "40",
+            "44",
+            "48",
+            "36"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "x² = V/h = 176/4 = 44."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un cubo con arista 6 cm tiene volumen 200 cm³.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "6³ = 216 cm³, no 200."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada descripción con el volumen que le corresponde.",
+          "columnaA": [
+            "x=5, h=8",
+            "cubo de arista 5 cm",
+            "x=9, h=3"
+          ],
+          "columnaB": [
+            "125",
+            "243",
+            "200"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x=5,h=8: V=25×8=200. cubo arista5: 5³=125. x=9,h=3: V=81×3=243."
         }
       ],
       "nivelEtiqueta": "Repaso 3 de 3"

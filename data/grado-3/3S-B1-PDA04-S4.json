@@ -114,6 +114,42 @@
             1
           ],
           "retroalimentacion": "$84 en razón 1:3 — parte de razón 1 = $21; $216 en razón 5:3 — parte de razón 5 = $135; $252 en razón 5:2 — parte de razón 5 = $180."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten $250 proporcionalmente entre dos personas con aportaciones en razón 3:2. A la de razón 3 le tocan $150.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=5. (3/5)×250 = $150."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $228 proporcionalmente entre dos personas con aportaciones en razón 5:7. A la de razón 7 le tocan $___.",
+          "respuestaCorrecta": "133",
+          "retroalimentacion": "Suma=12. (7/12)×228 = $133."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ana, Luis y Ceci aportaron $1,000, $2,000 y $3,000 y reparten $1,200 de utilidad proporcionalmente. ¿Cuánto le toca a Luis?",
+          "opciones": [
+            "$200",
+            "$400",
+            "$600",
+            "$300"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Suma=6,000. (2000/6000)×1200 = $400."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En un reparto proporcional entre 4 personas con aportaciones iguales, a cada una le toca exactamente 1/4 del total.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si las cuatro aportaciones son iguales, la suma se divide en cuatro partes iguales."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $416 proporcionalmente entre dos personas con aportaciones en razón 9:7. A la de razón 9 le tocan $___.",
+          "respuestaCorrecta": "234",
+          "retroalimentacion": "Suma=16. (9/16)×416 = $234."
         }
       ],
       "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"

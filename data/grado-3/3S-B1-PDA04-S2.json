@@ -52,6 +52,62 @@
           "frase": "Se reparten $65 proporcionalmente entre dos personas con aportaciones en razón 4:1. A la de razón 1 le tocan $___.",
           "respuestaCorrecta": "13",
           "retroalimentacion": "Suma=5. (1/5)×65 = $13."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $280 proporcionalmente entre dos personas con aportaciones en razón 3:4. ¿Cuánto le toca a la de razón 4?",
+          "opciones": [
+            "$140",
+            "$150",
+            "$160",
+            "$120"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma=7. (4/7)×280 = $160."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten $150 proporcionalmente entre dos personas con aportaciones de $30 y $70. A la de $70 le tocan $105.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=100. (70/100)×150 = $105."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $348 proporcionalmente entre dos personas con aportaciones en razón 5:7. A la de razón 5 le tocan $___.",
+          "respuestaCorrecta": "145",
+          "retroalimentacion": "Suma=12. (5/12)×348 = $145."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes es una variación directa?",
+          "opciones": [
+            "Al duplicar x, y se reduce a la mitad",
+            "Al triplicar x, y se triplica también",
+            "Al aumentar x, y permanece constante",
+            "Al duplicar x, y aumenta 5 unidades"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "En variación directa, al multiplicar x por un número, y se multiplica por ese mismo número."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada reparto en razón con el resultado de la parte indicada.",
+          "columnaA": [
+            "$220 en razón 3:8 — parte de razón 3",
+            "$392 en razón 2:5 — parte de razón 2",
+            "$260 en razón 7:6 — parte de razón 7"
+          ],
+          "columnaB": [
+            "$140",
+            "$60",
+            "$112"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "$220 en razón 3:8 — parte de razón 3 = $60; $392 en razón 2:5 — parte de razón 2 = $112; $260 en razón 7:6 — parte de razón 7 = $140."
         }
       ],
       "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"

@@ -52,6 +52,56 @@
           "enunciado": "Las soluciones de x² + 5x + 4 = 0 son x=-4 y x=-1.",
           "respuestaCorrecta": true,
           "retroalimentacion": "Las soluciones reales son x=-4 y x=-1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuáles son las soluciones de x² - 8x + 15 = 0?",
+          "opciones": [
+            "x=3, x=5",
+            "x=-3, x=-5",
+            "x=5, x=-3",
+            "x=15, x=1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(x-3)(x-5)=x²-8x+15=0, así que x=3 o x=5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 10x + 21 = 0 son x=3 y x=7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-3)(x-7)=x²-10x+21=0, así que x=3 o x=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 8x + 15 = 0. La solución mayor es x = ___.",
+          "respuestaCorrecta": "-3",
+          "retroalimentacion": "(x+3)(x+5)=0 → x=-3 o x=-5. La mayor es -3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² - 6x + 5 = 0",
+            "x² + 4x - 5 = 0",
+            "x² - x - 20 = 0"
+          ],
+          "columnaB": [
+            "x = 5, x = -4",
+            "x = 1, x = 5",
+            "x = -5, x = 1"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x²-6x+5=0 → x=1,5; x²+4x-5=0 → x=-5,1; x²-x-20=0 → x=5,-4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 2x - 15 = 0 son x=5 y x=-3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-5)(x+3)=x²-2x-15=0, así que x=5 o x=-3."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

@@ -82,6 +82,62 @@
           ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "(x-9)(x-0)=0 → x=9 o x=0."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene área 196 m². ¿Cuánto mide su lado?",
+          "opciones": [
+            "13 m",
+            "14 m",
+            "15 m",
+            "196 m"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "x²=196 → x=14 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un jardín rectangular tiene área de 88 m² y su largo mide 3 metros más que su ancho. El ancho mide ___ m.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "x(x+3)=88 → x²+3x−88=0 → (x+11)(x−8)=0 → x=8 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Usando la fórmula general, las soluciones de x² - 2x - 24 = 0 son x=6 y x=-4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "x=(2±√(4+96))/2=(2±10)/2 → x=6 o x=-4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: x² + 2x - 35 = 0",
+          "opciones": [
+            "x=5, x=-7",
+            "x=-5, x=7",
+            "x=7, x=-5",
+            "x=35, x=-1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(x+7)(x-5)=x²+2x-35=0, así que x=5 o x=-7."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada terreno cuadrado con la medida de su lado.",
+          "columnaA": [
+            "Área = 225 m²",
+            "Área = 256 m²",
+            "Área = 289 m²"
+          ],
+          "columnaB": [
+            "16 m",
+            "17 m",
+            "15 m"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "√225=15 m; √256=16 m; √289=17 m."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

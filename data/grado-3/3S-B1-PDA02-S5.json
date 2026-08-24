@@ -59,6 +59,56 @@
           ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "V = 5²×3 = 25×3 = 75."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un prisma con base cuadrada de lado x=6 y altura h=5 tiene volumen 180.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 6²×5 = 36×5 = 180."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si el volumen de un prisma es V=x²h, con V=224 y h=4, entonces x² = ___.",
+          "respuestaCorrecta": "56",
+          "retroalimentacion": "x² = V/h = 224/4 = 56."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una caja tiene volumen V=x²h. Si x=7 y h=4, ¿cuál es el volumen?",
+          "opciones": [
+            "196",
+            "188",
+            "204",
+            "182"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "V = 7²×4 = 49×4 = 196."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un prisma con base cuadrada de lado x=4 y altura h=9 tiene volumen 140.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "V = 4²×9 = 16×9 = 144, no 140."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada dato con el volumen del prisma V=x²h.",
+          "columnaA": [
+            "x=9, h=6",
+            "x=6, h=9",
+            "x=3, h=5"
+          ],
+          "columnaB": [
+            "324",
+            "45",
+            "486"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x=9,h=6: V=81×6=486. x=6,h=9: V=36×9=324. x=3,h=5: V=9×5=45."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

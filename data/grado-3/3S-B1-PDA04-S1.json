@@ -53,6 +53,56 @@
           "enunciado": "Si x se multiplica por 3 y y también se multiplica por 3, es una variación directa.",
           "respuestaCorrecta": true,
           "retroalimentacion": "En variación directa, ambas cantidades cambian siempre en la misma proporción."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $360 proporcionalmente entre dos personas que aportaron $40 y $80. ¿Cuánto le toca a la de $80?",
+          "opciones": [
+            "$180",
+            "$200",
+            "$240",
+            "$120"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma=120. (80/120)×360 = $240."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al repartir $150 en razón 2:3, a la parte de razón 3 le tocan $___.",
+          "respuestaCorrecta": "90",
+          "retroalimentacion": "Suma=5. (3/5)×150 = $90."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $180 en razón 5:1, a la parte de razón 5 le tocan $150.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=6. (5/6)×180 = $150."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si x se multiplica por 2 y y se divide entre 2, es una variación directa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Eso es variación inversa; en variación directa ambas cantidades cambian siempre en la misma proporción."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada reparto proporcional con el resultado de la parte indicada.",
+          "columnaA": [
+            "$100 en razón 1:4 — parte de razón 1",
+            "$300 en razón 2:3 — parte de razón 2",
+            "$210 en razón 3:4 — parte de razón 3"
+          ],
+          "columnaB": [
+            "$120",
+            "$90",
+            "$20"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "$100 en razón 1:4 — parte de razón 1 = $20; $300 en razón 2:3 — parte de razón 2 = $120; $210 en razón 3:4 — parte de razón 3 = $90."
         }
       ],
       "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"

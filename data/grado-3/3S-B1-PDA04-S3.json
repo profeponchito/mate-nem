@@ -82,6 +82,56 @@
           ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "Suma=10. (8/10)×320 = $256."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten 100 dulces proporcionalmente entre 3 niños de edades 2, 3 y 5 años. Al niño de 5 años le tocan 50 dulces.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma de edades=10. (5/10)×100 = 50 dulces."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten 120 dulces proporcionalmente entre 3 niños de edades 3, 4 y 5 años. Al niño de 4 años le tocan ___ dulces.",
+          "respuestaCorrecta": "40",
+          "retroalimentacion": "Suma de edades=12. (4/12)×120 = 40 dulces."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $180 proporcionalmente entre 3 personas con aportaciones en razón 2:3:4. ¿Cuánto le toca a la de razón 3?",
+          "opciones": [
+            "$40",
+            "$60",
+            "$80",
+            "$90"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Suma=9. (3/9)×180 = $60."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten $135 proporcionalmente entre dos personas en razón 2:7. A la de razón 7 le tocan $105.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=9. (7/9)×135 = $105."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada reparto entre tres partes con el resultado de la parte indicada.",
+          "columnaA": [
+            "90 dulces entre edades 1, 2 y 3 años — parte de 3 años",
+            "150 dulces entre edades 2, 3 y 5 años — parte de 5 años",
+            "80 dulces entre edades 1, 3 y 4 años — parte de 4 años"
+          ],
+          "columnaB": [
+            "75",
+            "40",
+            "45"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "90 dulces (edades 1,2,3): suma=6, (3/6)×90=45; 150 dulces (edades 2,3,5): suma=10, (5/10)×150=75; 80 dulces (edades 1,3,4): suma=8, (4/8)×80=40."
         }
       ],
       "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"

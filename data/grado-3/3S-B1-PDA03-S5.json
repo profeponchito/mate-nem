@@ -58,6 +58,42 @@
           "frase": "Factoriza y resuelve: x² - 11x + 30 = 0. La solución menor es x = ___.",
           "respuestaCorrecta": "5",
           "retroalimentacion": "(x-5)(x-6)=0 → x=5 o x=6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² + 4x - 21 = 0?",
+          "opciones": [
+            "x=3, x=-7",
+            "x=-3, x=7",
+            "x=7, x=-3",
+            "x=21, x=-1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(-4±√(16+84))/2=(-4±10)/2 → x=3 o x=-7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² + 9x + 14 = 0. La solución menor es x = ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "(x+2)(x+7)=0 → x=-2 o x=-7. La menor es -7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² - 10x + 24 = 0 son x=4 y x=6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-4)(x-6)=x²-10x+24=0, así que x=4 o x=6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + 3x - 18 = 0 son x=-3 y x=6.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Las soluciones reales son x=3 y x=-6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Factoriza y resuelve: x² - 7x - 30 = 0. La solución mayor es x = ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "(x-10)(x+3)=0 → x=10 o x=-3. La mayor es 10."
         }
       ],
       "nivelEtiqueta": "Repaso 1 de 3"

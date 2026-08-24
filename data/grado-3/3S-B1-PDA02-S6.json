@@ -79,6 +79,56 @@
             2
           ],
           "retroalimentacion": "cubo arista 9: 9³=729; x=4,h=9: V=16×9=144; x=5,h=7: V=25×7=175."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un cubo con arista 5 cm tiene volumen 125 cm³.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5³ = 125 cm³."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si el volumen de un prisma es V=x²h, con V=294 y h=6, entonces x² = ___.",
+          "respuestaCorrecta": "49",
+          "retroalimentacion": "x² = V/h = 294/6 = 49."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cubo tiene arista 8 cm. ¿Cuál es su volumen?",
+          "opciones": [
+            "512",
+            "64",
+            "256",
+            "216"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El volumen del cubo es la arista al cubo: 8³ = 512."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una caja con x=6, h=7 tiene volumen V=x²h igual a 252.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 6²×7 = 36×7 = 252."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada descripción con el volumen que le corresponde.",
+          "columnaA": [
+            "cubo de arista 3 cm",
+            "x=9, h=5",
+            "x=2, h=6"
+          ],
+          "columnaB": [
+            "405",
+            "24",
+            "27"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "cubo arista3: 3³=27. x=9,h=5: V=81×5=405. x=2,h=6: V=4×6=24."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"

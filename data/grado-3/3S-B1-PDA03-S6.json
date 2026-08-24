@@ -78,6 +78,62 @@
             2
           ],
           "retroalimentacion": "x² + 2x - 35 = 0 → x = -7, x = 5; x² - 14x + 45 = 0 → x = 5, x = 9; x² + 9x + 8 = 0 → x = -1, x = -8."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene área de 225 m². ¿Cuánto mide su lado?",
+          "opciones": [
+            "13 m",
+            "14 m",
+            "15 m",
+            "25 m"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "x²=225 → x=15 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un jardín rectangular tiene área de 63 m² y su largo mide 2 metros más que su ancho. El ancho mide ___ m.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "x(x+2)=63 → x²+2x−63=0 → (x+9)(x−7)=0 → x=7 (se descarta el valor negativo)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las soluciones de x² + 3x - 40 = 0 son x=5 y x=-8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (x-5)(x+8)=x²+3x-40=0, así que x=5 o x=-8."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la fórmula general, ¿cuáles son las soluciones de x² - 11x + 24 = 0?",
+          "opciones": [
+            "x=3, x=8",
+            "x=-3, x=-8",
+            "x=4, x=6",
+            "x=2, x=12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x=(11±√(121-96))/2=(11±5)/2 → x=8 o x=3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con sus soluciones.",
+          "columnaA": [
+            "x² + 7x + 12 = 0",
+            "x² - 12x + 32 = 0",
+            "x² + 4x - 45 = 0"
+          ],
+          "columnaB": [
+            "x = 4, x = 8",
+            "x = -9, x = 5",
+            "x = -3, x = -4"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x²+7x+12=0 → x=-3,-4; x²-12x+32=0 → x=4,8; x²+4x-45=0 → x=-9,5."
         }
       ],
       "nivelEtiqueta": "Repaso 2 de 3"
