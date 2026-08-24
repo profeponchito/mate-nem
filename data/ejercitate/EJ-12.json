@@ -1,0 +1,308 @@
+{
+  "id": "EJ-12",
+  "grado": "Ejercítate",
+  "numero": 12,
+  "categoria": "intermedio",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Potencias y raíces",
+  "contenido": "Qué es una potencia, cómo se relacionan los cuadrados y cubos con el área y el volumen, y cómo funcionan las raíces cuadrada y cúbica como operaciones inversas.",
+  "pda": "Calcula potencias y raíces cuadradas y cúbicas, y reconoce la relación inversa entre ambas operaciones para resolver problemas de área y volumen.",
+  "problematizacion": {
+    "contexto": "Un carpintero arma cajas cúbicas para guardar herramientas. Si cada arista de la caja mide 4 cm, para saber cuánto espacio tiene por dentro debe multiplicar 4 × 4 × 4, en vez de sumar o multiplicar por separado cada vez.",
+    "pregunta": "¿Cómo se escribe de forma corta la multiplicación '4 × 4 × 4' usando el lenguaje de las potencias, y cuánto espacio (en cm³) tiene la caja?"
+  },
+  "subtemas": [
+    {
+      "numero": "12.1",
+      "titulo": "¿Qué es una potencia?",
+      "explicacion": "Una potencia es una forma corta de escribir una multiplicación de un mismo número (la base) repetido varias veces (el exponente indica cuántas veces se repite). En vez de escribir 5×5×5, escribimos 5³. Esta notación es muy útil en ciencias e ingeniería para expresar de manera compacta números que resultarían de multiplicaciones muy largas.",
+      "formula": "base^exponente = base × base × ... (exponente veces)",
+      "ejemplos": [
+        "2^5 = 2×2×2×2×2 = 32.",
+        "5^3 = 5×5×5 = 125."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "3^4 escrito como multiplicación es 3×3×3×___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "El exponente 4 indica que la base 3 se multiplica 4 veces: 3×3×3×3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 2^6?",
+          "opciones": [
+            "64",
+            "32",
+            "12",
+            "36"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2^6 = 2×2×2×2×2×2 = 64."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la potencia 7^2, el número 2 es la base.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: en 7^2, el 7 es la base (el número que se repite) y el 2 es el exponente (cuántas veces se repite)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El resultado de 4^3 es ___.",
+          "respuestaCorrecta": "64",
+          "retroalimentacion": "4^3 = 4×4×4 = 64."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe en forma de potencia la multiplicación 6×6×6×6?",
+          "opciones": [
+            "6^4",
+            "4^6",
+            "6×4",
+            "4×6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El 6 se repite 4 veces como factor, así que la base es 6 y el exponente es 4: 6^4."
+        }
+      ]
+    },
+    {
+      "numero": "12.2",
+      "titulo": "Cuadrados y cubos",
+      "explicacion": "El cuadrado de un número es elevarlo al exponente 2 (n²=n×n) y representa el área de un cuadrado cuyo lado mide n. El cubo de un número es elevarlo al exponente 3 (n³=n×n×n) y representa el volumen de un cubo cuya arista mide n. Por eso a estas potencias se les llama 'cuadrado' y 'cubo': vienen de figuras geométricas reales.",
+      "formula": "n² = n×n (área); n³ = n×n×n (volumen)",
+      "ejemplos": [
+        "El cuadrado de 7 es 7² = 49, que sería el área de un cuadrado de lado 7.",
+        "El cubo de 5 es 5³ = 125, que sería el volumen de un cubo de arista 5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El cuadrado de 9 es ___.",
+          "respuestaCorrecta": "81",
+          "retroalimentacion": "9² = 9×9 = 81."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el cubo de 6?",
+          "opciones": [
+            "216",
+            "36",
+            "18",
+            "666"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "6³ = 6×6×6 = 216."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El cuadrado de 12 es 144.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 12² = 12×12 = 144."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una caja cúbica tiene arista de 3 cm. Su volumen es 3³ = ___ cm³.",
+          "respuestaCorrecta": "27",
+          "retroalimentacion": "3³ = 3×3×3 = 27 cm³."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada potencia con su resultado.",
+          "columnaA": [
+            "4²",
+            "2³",
+            "5²"
+          ],
+          "columnaB": [
+            "25",
+            "16",
+            "8"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "4² = 16, 2³ = 8 y 5² = 25."
+        }
+      ]
+    },
+    {
+      "numero": "12.3",
+      "titulo": "Raíz cuadrada y raíz cúbica",
+      "explicacion": "La raíz cuadrada de un número es el valor que, multiplicado por sí mismo, da ese número; es la operación inversa de elevar al cuadrado. La raíz cúbica es el valor que, multiplicado tres veces por sí mismo, da el número; es la inversa de elevar al cubo. Sacar raíz es 'deshacer' la potencia.",
+      "formula": "√n = x si x² = n; ∛n = x si x³ = n",
+      "ejemplos": [
+        "√64 = 8 porque 8×8 = 64.",
+        "∛27 = 3 porque 3×3×3 = 27."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "√100 = ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "10×10 = 100, así que √100 = 10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el valor de ∛64?",
+          "opciones": [
+            "4",
+            "8",
+            "6",
+            "16"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4×4×4 = 64, así que ∛64 = 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√49 = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 7×7 = 49."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "∛125 = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "5×5×5 = 125, así que ∛125 = 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tinaco cúbico tiene un volumen de 216 litros. ¿Cuánto mide cada arista?",
+          "opciones": [
+            "6",
+            "8",
+            "36",
+            "18"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "∛216 = 6, porque 6×6×6 = 216."
+        }
+      ]
+    },
+    {
+      "numero": "12.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda que la potencia y la raíz son operaciones inversas: si un número elevado al cuadrado da otro número, entonces la raíz cuadrada de ese resultado nos regresa al número original; lo mismo pasa entre el cubo y la raíz cúbica. Reconocer esta relación te permite comprobar tus cálculos en ambos sentidos.",
+      "ejemplos": [
+        "Si 9² = 81, entonces √81 = 9. Ambas operaciones se deshacen entre sí.",
+        "Si 4³ = 64, entonces ∛64 = 4."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 11² = 121, ¿cuánto vale √121?",
+          "opciones": [
+            "11",
+            "121",
+            "22",
+            "12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La raíz cuadrada deshace el cuadrado: si 11² = 121, entonces √121 = 11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Elevar al cuadrado y sacar raíz cuadrada son operaciones inversas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: una deshace lo que hace la otra, por eso al aplicarlas en secuencia regresas al número original."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 7³ = 343, entonces ∛343 = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "La raíz cúbica deshace el cubo: si 7³ = 343, entonces ∛343 = 7."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada raíz con su resultado.",
+          "columnaA": [
+            "√144",
+            "∛8",
+            "√25"
+          ],
+          "columnaB": [
+            "5",
+            "2",
+            "12"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "√144 = 12, ∛8 = 2 y √25 = 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno cuadrado tiene un área de 169 m². ¿Cuánto mide cada lado?",
+          "opciones": [
+            "13 m",
+            "14 m",
+            "84.5 m",
+            "12 m"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El lado es la raíz cuadrada del área: √169 = 13, porque 13×13 = 169."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "El resultado de 5³ es ___.",
+      "respuestaCorrecta": "125",
+      "retroalimentacion": "5³ = 5×5×5 = 125."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "∛1000 = 10.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 10×10×10 = 1000, así que ∛1000 = 10."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es el cuadrado de 15?",
+      "opciones": [
+        "225",
+        "30",
+        "152",
+        "135"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "15² = 15×15 = 225."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": [
+        "2^5",
+        "√36",
+        "∛27"
+      ],
+      "columnaB": [
+        "3",
+        "6",
+        "32"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
+      "retroalimentacion": "2^5 = 32, √36 = 6 y ∛27 = 3."
+    }
+  ]
+}

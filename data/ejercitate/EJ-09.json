@@ -1,0 +1,341 @@
+{
+  "id": "EJ-09",
+  "grado": "Ejercítate",
+  "numero": 9,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Suma y resta de fracciones",
+  "contenido": "Procedimientos para sumar y restar fracciones con igual y distinto denominador, incluyendo números mixtos.",
+  "pda": "Resuelve sumas y restas de fracciones con igual y distinto denominador, incluyendo números mixtos, para solucionar problemas de la vida cotidiana como recorridos, tiempos y materiales.",
+  "problematizacion": {
+    "contexto": "Un ciclista entrena para una competencia. El lunes recorrió 2/5 de la ruta total y el miércoles recorrió otro 1/5 de la ruta. El viernes quiere terminar de recorrer lo que le falta para completar la ruta completa.",
+    "pregunta": "¿Qué fracción de la ruta total le falta al ciclista por recorrer el viernes, si ya avanzó el lunes y el miércoles?"
+  },
+  "subtemas": [
+    {
+      "numero": "9.1",
+      "titulo": "Suma y resta con el mismo denominador",
+      "explicacion": "Cuando dos fracciones tienen el mismo denominador, sus partes son del mismo tamaño, así que solo hay que sumar o restar los numeradores (cuántas partes hay) y dejar el denominador sin cambio (el tamaño de cada parte no cambia). Es como sumar o restar rebanadas del mismo tamaño de una misma pizza.",
+      "formula": "a/c + b/c = (a+b)/c ; a/c − b/c = (a−b)/c",
+      "ejemplos": [
+        "2/7 + 3/7 = 5/7, porque son piezas del mismo tamaño (séptimos) y solo sumas cuántas piezas hay.",
+        "6/9 − 4/9 = 2/9, porque restas la cantidad de piezas (novenos) sin cambiar el tamaño de cada pieza."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 3/8 + 2/8?",
+          "opciones": [
+            "5/8",
+            "5/16",
+            "1/8",
+            "6/8"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como el denominador es el mismo (8), solo sumas los numeradores: 3+2=5, resultado 5/8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "7/10 − 3/10 = ___/10.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Con el mismo denominador, restas los numeradores: 7-3=4, resultado 4/10."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "5/6 + 2/6 es igual a 7/12.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Con el mismo denominador, el denominador NO se suma; solo los numeradores: 5+2=7, y el resultado correcto es 7/6, no 7/12."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "El ciclista recorrió 2/5 de la ruta el lunes y 1/5 el miércoles. ¿Qué fracción de la ruta ha recorrido en total?",
+          "opciones": [
+            "3/5",
+            "3/10",
+            "2/5",
+            "1/5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como ambas fracciones tienen denominador 5, sumas los numeradores: 2+1=3, resultado 3/5 de la ruta."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "4/9 + 3/9",
+            "8/9 − 5/9",
+            "2/9 + 2/9"
+          ],
+          "columnaB": [
+            "4/9",
+            "7/9",
+            "3/9"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "4/9+3/9=7/9; 8/9-5/9=3/9; 2/9+2/9=4/9. Con el mismo denominador solo se suman o restan los numeradores."
+        }
+      ]
+    },
+    {
+      "numero": "9.2",
+      "titulo": "Suma y resta con distinto denominador",
+      "explicacion": "Cuando las fracciones tienen denominadores distintos, sus partes son de tamaños diferentes y no se pueden sumar ni restar directamente. Primero hay que encontrar un denominador común (generalmente el mínimo común múltiplo de los denominadores), convertir cada fracción a una equivalente con ese denominador, y entonces sí sumar o restar los numeradores.",
+      "formula": "Para a/b + c/d, halla el mcm(b,d), convierte ambas fracciones a ese denominador y suma los numeradores.",
+      "ejemplos": [
+        "1/2 + 1/3: el mcm de 2 y 3 es 6. 1/2=3/6 y 1/3=2/6. Entonces 3/6+2/6=5/6.",
+        "3/4 − 1/6: el mcm de 4 y 6 es 12. 3/4=9/12 y 1/6=2/12. Entonces 9/12−2/12=7/12."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 1/2 + 1/4?",
+          "opciones": [
+            "3/4",
+            "2/6",
+            "1/8",
+            "2/4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El mcm de 2 y 4 es 4. 1/2=2/4, entonces 2/4+1/4=3/4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "2/3 − 1/6 = ___/6.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "El mcm de 3 y 6 es 6. 2/3=4/6, entonces 4/6-1/6=3/6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para sumar 1/5 + 2/3, se pueden sumar directamente los numeradores y quedarse con cualquiera de los dos denominadores.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "No: cuando los denominadores son distintos, primero hay que convertir ambas fracciones a un denominador común (el mcm) antes de sumar los numeradores."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "El ciclista recorrió 2/5 de la ruta el lunes y 1/4 el martes. ¿Qué fracción de la ruta ha recorrido en total?",
+          "opciones": [
+            "13/20",
+            "3/9",
+            "3/20",
+            "8/20"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El mcm de 5 y 4 es 20. 2/5=8/20 y 1/4=5/20; entonces 8/20+5/20=13/20."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado ya simplificado.",
+          "columnaA": [
+            "1/3 + 1/6",
+            "3/4 − 1/2",
+            "1/2 + 1/3"
+          ],
+          "columnaB": [
+            "1/4",
+            "5/6",
+            "1/2"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "1/3+1/6=1/2; 3/4-1/2=1/4; 1/2+1/3=5/6. En cada caso se busca el mcm de los denominadores antes de operar."
+        }
+      ]
+    },
+    {
+      "numero": "9.3",
+      "titulo": "Suma y resta con enteros y números mixtos",
+      "explicacion": "Para sumar o restar números mixtos, se trabajan por separado la parte entera y la parte fraccionaria (buscando denominador común si hace falta). Al restar, si la fracción del número que resta es mayor que la del otro, hay que 'prestar' un entero convirtiéndolo en una fracción equivalente antes de poder restar.",
+      "ejemplos": [
+        "2 1/3 + 1 1/2: sumas los enteros 2+1=3, y las fracciones 1/3+1/2 (mcm 6) = 2/6+3/6=5/6; resultado 3 5/6.",
+        "4 1/4 − 1 3/4: como 1/4 es menor que 3/4, prestas 1 entero al 4 (queda 3 5/4), restas 3 5/4 − 1 3/4 = 2 2/4 = 2 1/2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 2 1/4 + 1 1/2?",
+          "opciones": [
+            "3 3/4",
+            "3 1/6",
+            "4 1/4",
+            "3 2/4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sumas los enteros: 2+1=3. Sumas las fracciones (mcm 4): 1/4+2/4=3/4. Resultado: 3 3/4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "5 + 2/3 = 5 ___/3.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "Sumar un entero a una fracción solo agrega la parte entera; el resultado es 5 2/3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para restar 3 1/5 − 1 3/5, como 1/5 es menor que 3/5, es necesario 'prestar' un entero de la parte entera del 3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: como no se puede restar 3/5 de 1/5 directamente, se convierte 3 1/5 en 2 6/5 (se presta 1 entero = 5/5), y así se puede restar: 6/5-3/5=3/5, resultado 2 3/5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "El ciclista debía recorrer 5 kilómetros y medio (5 1/2 km) pero solo llevaba recorridos 2 3/4 km. ¿Cuántos km le faltan?",
+          "opciones": [
+            "2 3/4 km",
+            "3 1/4 km",
+            "2 1/4 km",
+            "8 1/4 km"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5 1/2 = 5 2/4; como 2/4 es menor que 3/4, prestas 1 entero: 4 6/4 − 2 3/4 = 2 3/4 km."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con números mixtos con su resultado.",
+          "columnaA": [
+            "1 1/3 + 2 1/3",
+            "4 1/2 − 2 1/4",
+            "3 1/6 + 1 1/6"
+          ],
+          "columnaB": [
+            "4 1/3",
+            "2 1/4",
+            "3 2/3"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "1 1/3+2 1/3=3 2/3; 4 1/2-2 1/4=2 1/4; 3 1/6+1 1/6=4 2/6=4 1/3."
+        }
+      ]
+    },
+    {
+      "numero": "9.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: con el mismo denominador, solo se suman o restan los numeradores; con denominadores distintos, primero se busca un denominador común (el mcm); y con números mixtos se trabaja la parte entera y la fraccionaria por separado, prestando un entero si hace falta al restar. Estas herramientas se combinan para resolver problemas donde hay que saber cuánto se ha avanzado y cuánto falta de un total.",
+      "ejemplos": [
+        "El ciclista recorrió 2/5 el lunes y 1/5 el miércoles: 2/5+1/5=3/5 recorrido. Para saber lo que falta, resta de la ruta completa (1=5/5): 5/5-3/5=2/5 de la ruta le falta el viernes.",
+        "Si un corredor lleva recorridos 2 1/4 km de una carrera de 5 km, le faltan 5 − 2 1/4 = 4 4/4 − 2 1/4 = 2 3/4 km."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "El ciclista recorrió 2/5 de la ruta el lunes y 1/5 el miércoles. ¿Qué fracción de la ruta le falta por recorrer?",
+          "opciones": [
+            "2/5",
+            "3/5",
+            "1/5",
+            "4/5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Ya recorrió 2/5+1/5=3/5 de la ruta. Como la ruta completa es 5/5, le falta 5/5-3/5=2/5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si la ruta completa mide 15 km y el ciclista ya recorrió 3/5 de ella, la distancia recorrida es ___ km.",
+          "respuestaCorrecta": "9",
+          "retroalimentacion": "3/5 de 15 km es (15÷5)×3 = 3×3 = 9 km."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si un corredor lleva recorridos 2 1/4 km de una carrera de 5 km, le faltan 2 3/4 km.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5 − 2 1/4 = 4 4/4 − 2 1/4 = 2 3/4 km; la afirmación es correcta."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un albañil colocó 3/8 de un piso el lunes y 1/4 el martes. ¿Qué fracción del piso le falta por colocar?",
+          "opciones": [
+            "3/8",
+            "5/8",
+            "1/8",
+            "2/8"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Colocó 3/8+2/8=5/8 del piso (convirtiendo 1/4 a 2/8). Falta 8/8-5/8=3/8 por colocar."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con la fracción que falta para completar el total.",
+          "columnaA": [
+            "Recorrido 3/5 de una ruta completa",
+            "Colocado 5/8 de un piso completo",
+            "Leídas 7/10 de un libro completo"
+          ],
+          "columnaB": [
+            "3/10",
+            "2/5",
+            "3/8"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "Para hallar lo que falta, restas de 1 (el total): 1-3/5=2/5; 1-5/8=3/8; 1-7/10=3/10."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuánto es 5/9 + 2/9?",
+      "opciones": [
+        "7/9",
+        "7/18",
+        "3/9",
+        "10/9"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Mismo denominador: sumas los numeradores 5+2=7, resultado 7/9."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Para sumar 1/4 + 1/6, el mcm de los denominadores es 12.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "El mcm de 4 y 6 es 12: 1/4=3/12 y 1/6=2/12, entonces 1/4+1/6=5/12."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "3 1/2 − 1 1/4 = 2 ___/4.",
+      "respuestaCorrecta": "1",
+      "retroalimentacion": "3 1/2=3 2/4; restando los enteros 3-1=2 y las fracciones 2/4-1/4=1/4, resultado 2 1/4."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": [
+        "3/7 + 2/7",
+        "1/2 + 1/5",
+        "6 1/3 − 4 1/3"
+      ],
+      "columnaB": [
+        "2",
+        "5/7",
+        "7/10"
+      ],
+      "parejasCorrectas": [
+        1,
+        2,
+        0
+      ],
+      "retroalimentacion": "3/7+2/7=5/7; 1/2+1/5=7/10 (mcm 10); 6 1/3-4 1/3=2, ya que los enteros se restan (6-4=2) y las fracciones se cancelan (1/3-1/3=0)."
+    }
+  ]
+}

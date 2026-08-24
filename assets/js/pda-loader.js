@@ -1,30 +1,37 @@
 /**
  * MATE-NEM · Carga de PDAs
  * ----------------------------------------------------
- * Lee el manifiesto data/grado-X/index.json y los archivos de PDA
- * individuales vía fetch(). GitHub Pages es hosting estático: no se puede
- * "listar" una carpeta, por eso el manifiesto es la única fuente de verdad
- * de qué PDAs existen en cada grado. Ver data/README.md.
+ * Lee el manifiesto data/grado-X/index.json (o data/ejercitate/index.json)
+ * y los archivos de PDA individuales vía fetch(). GitHub Pages es hosting
+ * estático: no se puede "listar" una carpeta, por eso el manifiesto es la
+ * única fuente de verdad de qué PDAs existen en cada carpeta. Ver
+ * data/README.md.
  *
  * Nota: las rutas de fetch() son relativas a la URL del documento
  * (index.html), no al archivo de este módulo — por eso RUTA_DATOS asume
  * que index.html vive en la raíz del repositorio, junto a data/.
+ *
+ * "ejercitate" es un pseudo-grado especial: en vez de `grado-N/`, sus
+ * archivos viven directamente en `data/ejercitate/` (sin pertenecer a la
+ * ruta curricular de ningún grado). El resto del frontend (router, vistaPDA,
+ * gamification, webhook, constancia) no distingue entre un grado real y
+ * "ejercitate" — todos pasan por el mismo flujo `#/pda/:grado/:id`.
  */
 
 const RUTA_DATOS = 'data';
 
-function numeroDeGrado_(grado) {
-  return grado.replace('°', '');
+function carpetaDeGrado_(grado) {
+  return grado === 'ejercitate' ? 'ejercitate' : `grado-${grado.replace('°', '')}`;
 }
 
 export async function cargarManifiesto(grado) {
-  const respuesta = await fetch(`${RUTA_DATOS}/grado-${numeroDeGrado_(grado)}/index.json`);
+  const respuesta = await fetch(`${RUTA_DATOS}/${carpetaDeGrado_(grado)}/index.json`);
   if (!respuesta.ok) throw new Error(`No se encontró el manifiesto de ${grado}`);
   return respuesta.json();
 }
 
 export async function cargarPDA(grado, archivo) {
-  const respuesta = await fetch(`${RUTA_DATOS}/grado-${numeroDeGrado_(grado)}/${archivo}`);
+  const respuesta = await fetch(`${RUTA_DATOS}/${carpetaDeGrado_(grado)}/${archivo}`);
   if (!respuesta.ok) throw new Error(`No se encontró el PDA ${archivo}`);
   return respuesta.json();
 }

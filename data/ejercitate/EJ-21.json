@@ -1,0 +1,232 @@
+{
+  "id": "EJ-21",
+  "grado": "Ejercítate",
+  "numero": 21,
+  "categoria": "avanzado",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Ecuaciones de primer grado",
+  "contenido": "Resolución de ecuaciones de primer grado con una incógnita mediante despejes y su aplicación a problemas.",
+  "pda": "Resuelve ecuaciones de primer grado con una incógnita, aplicando el despeje mediante operaciones inversas, para modelar y resolver problemas de la vida cotidiana.",
+  "problematizacion": {
+    "contexto": "Karla quiere comprar unos audífonos que cuestan $450. Ya ahorró $180 y a partir de ahora ahorrará $45 cada semana hasta juntar lo que falta.",
+    "pregunta": "¿Cómo puede Karla usar una ecuación para saber en cuántas semanas exactas juntará el dinero que le falta?"
+  },
+  "subtemas": [
+    {
+      "numero": "21.1",
+      "titulo": "¿Qué es una ecuación? Incógnita y solución",
+      "explicacion": "Una ecuación es una igualdad entre dos expresiones que contiene una letra (la incógnita) cuyo valor no conocemos todavía. Resolver la ecuación significa encontrar el valor de la incógnita que hace verdadera la igualdad. Para comprobar si un número es la solución correcta, se sustituye en lugar de la incógnita y se revisa que ambos lados del signo igual den el mismo resultado.",
+      "ejemplos": [
+        "En x+5=12, la incógnita es x y la solución es x=7, porque 7+5=12.",
+        "En 3x=15, la solución es x=5, porque al sustituir 3(5)=15."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué nombre recibe el valor desconocido de una ecuación, representado generalmente por una letra?",
+          "opciones": ["Incógnita", "Coeficiente", "Término independiente", "Exponente"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La incógnita es el valor que no conocemos y que buscamos al resolver la ecuación."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "x=4 es solución de la ecuación 2x+3=11.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al sustituir: 2(4)+3=8+3=11, que es igual al otro lado. Sí es solución."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "x=5 es solución de la ecuación 3x-2=10.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Al sustituir: 3(5)-2=15-2=13, que no es igual a 10. No es solución."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Para comprobar si un valor es solución de una ecuación, se sustituye en lugar de la incógnita y se verifica que ambos lados de la igualdad sean ___.",
+          "respuestaCorrecta": "iguales",
+          "retroalimentacion": "Si al sustituir ambos lados dan el mismo resultado, el valor es una solución válida."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes valores es la solución de x-8=2?",
+          "opciones": ["10", "6", "-6", "-10"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Al sustituir x=10: 10-8=2, que es correcto."
+        }
+      ]
+    },
+    {
+      "numero": "21.2",
+      "titulo": "Despejar con suma y resta",
+      "explicacion": "Cuando la incógnita aparece sumando o restando un número, se despeja aplicando la operación inversa en ambos lados de la ecuación: si algo se suma, se resta a ambos lados; si algo se resta, se suma a ambos lados. Esto mantiene la igualdad porque lo que se hace de un lado del signo igual siempre se debe hacer también del otro.",
+      "formula": "Si x + a = b, entonces x = b - a. Si x - a = b, entonces x = b + a.",
+      "ejemplos": [
+        "x+9=20 → x=20-9=11.",
+        "x-6=14 → x=14+6=20."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la solución de x+15=32?",
+          "opciones": ["17", "47", "2", "15"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se resta 15 de ambos lados: x=32-15=17."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La solución de x-11=23 es x= ___.",
+          "respuestaCorrecta": "34",
+          "retroalimentacion": "Se suma 11 en ambos lados: x=23+11=34."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la solución de x-7=-3?",
+          "opciones": ["4", "-10", "10", "-4"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se suma 7 en ambos lados: x=-3+7=4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de x+18=25 es x=7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al sustituir: 7+18=25, correcto."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": ["x+12=30", "x-9=16", "x+5=5"],
+          "columnaB": ["25", "0", "18"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "x+12=30 → x=18. x-9=16 → x=25. x+5=5 → x=0."
+        }
+      ]
+    },
+    {
+      "numero": "21.3",
+      "titulo": "Despejar con multiplicación y división",
+      "explicacion": "Cuando la incógnita aparece multiplicada o dividida por un número, se despeja con la operación inversa: si multiplica, se divide en ambos lados; si divide, se multiplica en ambos lados. Es importante recordar que estas operaciones deben aplicarse a la ecuación completa, no solo a un término.",
+      "formula": "Si a·x = b, entonces x = b/a. Si x/a = b, entonces x = b·a.",
+      "ejemplos": [
+        "4x=36 → x=36/4=9.",
+        "x/5=8 → x=8×5=40."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la solución de 6x=54?",
+          "opciones": ["9", "48", "324", "6"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se divide entre 6 en ambos lados: x=54/6=9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La solución de x/7=6 es x= ___.",
+          "respuestaCorrecta": "42",
+          "retroalimentacion": "Se multiplica por 7 en ambos lados: x=6×7=42."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la solución de 9x=-45?",
+          "opciones": ["-5", "5", "-36", "-54"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se divide entre 9 en ambos lados: x=-45/9=-5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de x/4=9 es x=36.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al sustituir: 36/4=9, correcto."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la solución de -3x=27?",
+          "opciones": ["-9", "9", "-24", "24"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se divide entre -3 en ambos lados: x=27/(-3)=-9."
+        }
+      ]
+    },
+    {
+      "numero": "21.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: para despejar la incógnita se usan operaciones inversas, y cuando la ecuación combina una suma o resta con una multiplicación, primero se despeja el término que suma o resta y, al final, el que multiplica. Estas ecuaciones también sirven para modelar problemas reales: se traduce el enunciado a una ecuación y luego se despeja para encontrar la respuesta.",
+      "ejemplos": [
+        "En 5x+8=38: primero 5x=38-8=30, luego x=30/5=6.",
+        "El ahorro de Karla: 180+45x=450 (x=semanas); 45x=270, x=6 semanas."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la solución de 4x+7=31?",
+          "opciones": ["6", "9.5", "24", "7"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Primero 4x=31-7=24, luego x=24/4=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La solución de 3x-5=16 es x= ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "Primero 3x=16+5=21, luego x=21/3=7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 2x+9=21 es x=6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al sustituir: 2(6)+9=12+9=21, correcto."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un taxi cobra una tarifa fija de $15 más $8 por cada kilómetro recorrido. Si un viaje costó $71, ¿cuántos kilómetros se recorrieron? (usa 15+8x=71)",
+          "opciones": ["7", "8", "56", "9"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "8x=71-15=56, entonces x=56/8=7 kilómetros."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": ["5x+6=31", "2x-3=9", "7x+1=1"],
+          "columnaB": ["6", "0", "5"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "5x+6=31 → x=5. 2x-3=9 → x=6. 7x+1=1 → x=0."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es la solución de x+22=40?",
+      "opciones": ["18", "62", "20", "2"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Se resta 22 de ambos lados: x=40-22=18."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "La solución de 8x=64 es x= ___.",
+      "respuestaCorrecta": "8",
+      "retroalimentacion": "Se divide entre 8 en ambos lados: x=64/8=8."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "x=3 es solución de la ecuación 6x-4=14.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Al sustituir: 6(3)-4=18-4=14, correcto."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un albañil cobra $200 fijos más $50 por hora trabajada. Si el cobro total fue $450, ¿cuántas horas trabajó? (usa 200+50x=450)",
+      "opciones": ["5", "4", "6", "9"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "50x=450-200=250, entonces x=250/50=5 horas."
+    }
+  ]
+}

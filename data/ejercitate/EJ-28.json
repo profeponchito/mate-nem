@@ -1,0 +1,262 @@
+{
+  "id": "EJ-28",
+  "grado": "Ejercítate",
+  "numero": 28,
+  "categoria": "avanzado",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Teorema de Tales",
+  "contenido": "Proporcionalidad de segmentos generada por rectas paralelas cortadas por transversales, y su aplicación al cálculo de distancias y alturas.",
+  "pda": "Aplica el Teorema de Tales para establecer proporciones entre segmentos formados por rectas paralelas cortadas por transversales, y lo utiliza para calcular longitudes desconocidas en situaciones reales.",
+  "problematizacion": {
+    "contexto": "En una calle, varios cables de luz corren paralelos entre los postes y cruzan dos banquetas que no son paralelas entre sí. Un electricista necesita calcular la distancia entre dos postes, pero no puede medir directamente porque hay un jardín cercado en medio.",
+    "pregunta": "¿Cómo puede el electricista usar las proporciones que forman los cables paralelos y las banquetas para encontrar esa distancia sin cruzar el jardín?"
+  },
+  "subtemas": [
+    {
+      "numero": "28.1",
+      "titulo": "¿Qué dice el Teorema de Tales?",
+      "explicacion": "El Teorema de Tales dice que cuando dos o más rectas paralelas son cortadas por dos rectas transversales (que no tienen que ser paralelas entre sí), los segmentos que se forman en una transversal son proporcionales a los segmentos correspondientes en la otra. Esto funciona porque las paralelas mantienen siempre la misma 'separación relativa', como si fueran las líneas de una cuadrícula que se estira o se encoge pero conserva sus proporciones.",
+      "formula": "Si a ‖ b ‖ c cortadas por dos transversales, entonces AB/BC = A'B'/B'C'",
+      "ejemplos": [
+        "En una cancha, tres líneas paralelas pintadas en el piso son cruzadas por dos líneas rectas que salen de una esquina. Si en la primera transversal los segmentos miden 4 cm y 6 cm, en la segunda transversal los segmentos correspondientes guardan la misma razón 4:6 (es decir, 2:3).",
+        "Tres calles paralelas cortan dos avenidas. Si en la avenida 1 las distancias entre calles son 3 km y 5 km, en la avenida 2 esas mismas calles determinan segmentos en la razón 3:5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El Teorema de Tales establece que rectas paralelas cortadas por dos transversales determinan segmentos proporcionales.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: esa es exactamente la idea central del Teorema de Tales."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes condiciones es indispensable para aplicar el Teorema de Tales?",
+          "opciones": [
+            "Tener al menos dos rectas paralelas cortadas por transversales",
+            "Tener un triángulo rectángulo",
+            "Tener dos círculos concéntricos",
+            "Tener únicamente ángulos de 90°"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El Teorema de Tales necesita rectas paralelas cruzadas por transversales; no requiere ángulos rectos ni círculos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las dos transversales que cruzan las rectas paralelas deben medir exactamente lo mismo.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: las transversales pueden tener longitudes distintas; lo que importa es que los segmentos que forman sean proporcionales, no que midan igual."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En el Teorema de Tales, los segmentos que se forman sobre las transversales son ___ entre sí.",
+          "respuestaCorrecta": "proporcionales",
+          "retroalimentacion": "Los segmentos correspondientes guardan siempre la misma razón, es decir, son proporcionales."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada elemento del Teorema de Tales con su papel.",
+          "columnaA": [
+            "Rectas paralelas",
+            "Transversales",
+            "Segmentos correspondientes"
+          ],
+          "columnaB": [
+            "Líneas que cruzan a las paralelas y forman los segmentos",
+            "Mantienen siempre la misma separación relativa",
+            "Guardan la misma razón entre sí (son proporcionales)"
+          ],
+          "parejasCorrectas": [1, 0, 2],
+          "retroalimentacion": "Las paralelas mantienen su separación relativa, las transversales las cruzan formando segmentos, y esos segmentos correspondientes son proporcionales."
+        }
+      ]
+    },
+    {
+      "numero": "28.2",
+      "titulo": "Proporciones en triángulos con paralelas",
+      "explicacion": "Un caso muy común del Teorema de Tales ocurre dentro de un triángulo: si trazas una recta paralela a uno de los lados, esa paralela corta a los otros dos lados en segmentos proporcionales. Esto sucede porque la paralela crea un triángulo más pequeño, semejante al original, y todos sus lados se reducen (o aumentan) en la misma proporción.",
+      "formula": "Si en un triángulo ABC, DE ‖ BC (D en AB, E en AC), entonces AD/DB = AE/EC",
+      "ejemplos": [
+        "En un triángulo ABC, una línea paralela a BC corta a AB en D y a AC en E. Si AD=3, DB=6 y AE=4, entonces EC = (6×4)/3 = 8.",
+        "En un triángulo XYZ, PQ ‖ YZ (P en XY, Q en XZ). Si XP=5, PY=10 y XQ=8, entonces QZ = (10×8)/5 = 16."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "En un triángulo ABC, DE es paralela a BC, con D en AB y E en AC. Si AD=3 cm, DB=6 cm y AE=4 cm, entonces EC = ___ cm.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "AD/DB = AE/EC → 3/6 = 4/EC → EC = (4×6)/3 = 8 cm."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En un triángulo XYZ, PQ ‖ YZ (P en XY, Q en XZ). Si XP=5, PY=10 y XQ=8, ¿cuánto mide QZ?",
+          "opciones": ["16", "13", "20", "10"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "XP/PY = XQ/QZ → 5/10 = 8/QZ → QZ = (8×10)/5 = 16."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si una recta es paralela a un lado de un triángulo y corta a los otros dos lados, los divide en segmentos proporcionales.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: es el caso particular del Teorema de Tales aplicado a triángulos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En un triángulo con DE ‖ BC, AD=2, DB=5 y AE=6. Entonces EC = ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "AD/DB = AE/EC → 2/5 = 6/EC → EC = (6×5)/2 = 15."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "En el triángulo ABC con DE ‖ BC (D en AB, E en AC), relaciona cada pareja de segmentos con lo que representa.",
+          "columnaA": ["AD y DB", "AE y EC", "DE y BC"],
+          "columnaB": [
+            "Segmentos en los que la paralela divide al lado AB",
+            "Segmentos en los que la paralela divide al lado AC",
+            "El lado paralelo y el lado original del triángulo (razón de semejanza)"
+          ],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "AD-DB corresponden a AB, AE-EC corresponden a AC, y DE-BC son el lado paralelo comparado con el lado completo."
+        }
+      ]
+    },
+    {
+      "numero": "28.3",
+      "titulo": "Calcular segmentos desconocidos",
+      "explicacion": "Para encontrar un segmento desconocido con el Teorema de Tales, primero identifica qué segmentos se corresponden entre las dos transversales (o entre los dos lados del triángulo), luego arma la proporción y resuélvela multiplicando en cruz. El valor 'x' puede aparecer en cualquier posición de la proporción, así que hay que tener cuidado de despejarlo correctamente.",
+      "ejemplos": [
+        "Tres calles paralelas cruzan dos avenidas. En la avenida 1 los tramos miden 6 m y 9 m; en la avenida 2, el tramo correspondiente al de 6 m mide 8 m. El tramo x correspondiente al de 9 m se calcula: 6/9 = 8/x → x = (9×8)/6 = 12 m.",
+        "En una proporción de Tales 4/10 = 6/x, se despeja x multiplicando en cruz: x = (10×6)/4 = 15."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Dos rectas paralelas son cortadas por dos transversales. En la primera transversal los segmentos miden 4 cm y 10 cm; en la segunda, el segmento correspondiente al de 4 cm mide 6 cm. El segmento correspondiente al de 10 cm mide x = ___ cm.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "4/10 = 6/x → x = (10×6)/4 = 15 cm."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En un solar, tres cercas paralelas son cruzadas por dos senderos. En el sendero A los tramos son 5 m y 7 m; en el sendero B, el tramo correspondiente al de 5 m mide 15 m. ¿Cuánto mide el tramo correspondiente al de 7 m?",
+          "opciones": ["21 m", "17 m", "10.7 m", "35 m"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5/7 = 15/x → x = (7×15)/5 = 21 m."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la proporción de Tales 3/5 = 9/x, el valor de x es 15.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "3/5 = 9/x → x = (5×9)/3 = 15. La afirmación es correcta."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En un triángulo con DE ‖ BC, AD=6, DB=x, AE=9 y EC=12. El valor de x es ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "AD/DB = AE/EC → 6/x = 9/12 → x = (6×12)/9 = 8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada proporción de Tales con el valor correcto de x.",
+          "columnaA": ["2/3 = x/12", "5/x = 10/4", "x/7 = 6/14"],
+          "columnaB": ["x = 8", "x = 2", "x = 3"],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "2/3=x/12 → x=8; 5/x=10/4 → x=2; x/7=6/14 → x=3."
+        }
+      ]
+    },
+    {
+      "numero": "28.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: el Teorema de Tales dice que rectas paralelas cortadas por transversales (o por los lados de un triángulo) forman segmentos proporcionales. Para resolver, identifica los segmentos correspondientes, arma la proporción y despeja el valor buscado multiplicando en cruz. Una de sus aplicaciones más útiles es medir alturas de forma indirecta: comparando la sombra de un objeto de altura conocida con la sombra de un objeto que no se puede medir directamente.",
+      "formula": "altura objeto / sombra objeto = altura referencia / sombra referencia",
+      "ejemplos": [
+        "Un asta de 3 m proyecta una sombra de 2 m. Al mismo tiempo, un árbol proyecta una sombra de 10 m. Su altura es (3×10)/2 = 15 m.",
+        "Un poste de 2 m proyecta una sombra de 3 m; un edificio cercano proyecta una sombra de 18 m al mismo tiempo, así que su altura es (2×18)/3 = 12 m."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un poste de 2 m de altura proyecta una sombra de 3 m. En el mismo momento, un edificio proyecta una sombra de 18 m. ¿Cuál es la altura del edificio?",
+          "opciones": ["12 m", "27 m", "9 m", "15 m"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2/3 = x/18 → x = (2×18)/3 = 12 m."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una persona de 1.6 m de estatura proyecta una sombra de 2 m. Un árbol cercano proyecta una sombra de 7.5 m al mismo tiempo. La altura del árbol es ___ m.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "1.6/2 = x/7.5 → x = (1.6×7.5)/2 = 6 m."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El método de las sombras para medir alturas funciona porque, en el mismo momento del día, los rayos del sol forman triángulos semejantes con cualquier objeto vertical y su sombra.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: como los rayos del sol llegan paralelos, los triángulos objeto-sombra son semejantes y sus lados son proporcionales (Teorema de Tales)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una escalera recargada en una pared forma un triángulo con el suelo. Si a 2 m de la base de la escalera hay una marca de 1.5 m de altura sobre la pared, y la escalera llega hasta 4 m de la base, la escalera alcanza una altura de ___ m en la pared (usa 2/1.5 = 4/x).",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "2/1.5 = 4/x → x = (1.5×4)/2 = 3 m."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el dato que permite aplicar el Teorema de Tales.",
+          "columnaA": [
+            "Sombra de un poste y de un edificio",
+            "Segmentos de una calle cruzada por avenidas paralelas",
+            "Lados de un triángulo cortados por una paralela a la base"
+          ],
+          "columnaB": [
+            "Razón altura/sombra igual para ambos objetos",
+            "Proporción entre los tramos que separan las avenidas",
+            "Segmentos proporcionales según el Teorema de Tales en triángulos"
+          ],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "En cada caso se compara una razón de segmentos correspondientes formados por paralelas y transversales."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "En un triángulo ABC, DE ‖ BC. Si AD=4, AB=10 (por lo que DB=6) y AE=5, ¿cuánto mide EC?",
+      "opciones": ["7.5", "6", "8.3", "12"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "AD/DB = AE/EC → 4/6 = 5/EC → EC = (5×6)/4 = 7.5."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El Teorema de Tales solo se puede aplicar cuando las dos transversales forman un ángulo recto entre sí.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "Falso: las transversales pueden cruzarse en cualquier ángulo; lo único indispensable es que las rectas cortadas sean paralelas."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Un árbol proyecta una sombra de 12 m mientras una estaca de 1 m de altura proyecta una sombra de 1.5 m. La altura del árbol es ___ m.",
+      "respuestaCorrecta": "8",
+      "retroalimentacion": "1/1.5 = x/12 → x = (1×12)/1.5 = 8 m."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada término con su definición.",
+      "columnaA": ["Segmentos proporcionales", "Recta transversal", "Triángulos semejantes"],
+      "columnaB": [
+        "Triángulos con ángulos iguales y lados en la misma razón",
+        "Recta que corta a las rectas paralelas",
+        "Segmentos que mantienen la misma razón entre sí"
+      ],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "Los segmentos proporcionales guardan la misma razón, la transversal cruza a las paralelas, y los triángulos semejantes tienen ángulos iguales y lados proporcionales."
+    }
+  ]
+}

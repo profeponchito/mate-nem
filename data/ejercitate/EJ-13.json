@@ -1,0 +1,236 @@
+{
+  "id": "EJ-13",
+  "grado": "Ejercítate",
+  "numero": 13,
+  "categoria": "intermedio",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Leyes de los exponentes",
+  "contenido": "Reglas para multiplicar, dividir y elevar potencias que tienen la misma base.",
+  "pda": "Aplica las leyes de los exponentes (producto, cociente, potencia de potencia y exponente cero) para simplificar expresiones con potencias de la misma base.",
+  "problematizacion": {
+    "contexto": "Un técnico en cómputo trabaja con memorias que se miden en potencias de 2: un USB tiene 2³ gigabytes y necesita combinarlo con otras memorias de 2⁵ y 2² gigabytes para calcular capacidades totales, todo usando la misma base 2.",
+    "pregunta": "Si necesita multiplicar 2³ por 2⁵ sin convertir todo a números normales, ¿cómo puede simplificar esa operación usando solo los exponentes?"
+  },
+  "subtemas": [
+    {
+      "numero": "13.1",
+      "titulo": "Producto de potencias de igual base",
+      "explicacion": "Cuando multiplicamos potencias con la misma base, sumamos los exponentes. Esto funciona porque una potencia representa repetir la base como factor tantas veces como indica el exponente; al juntar dos potencias de la misma base en una sola multiplicación, el número total de veces que se repite la base es la suma de ambos exponentes.",
+      "formula": "a^m × a^n = a^(m+n)",
+      "ejemplos": [
+        "2^3 × 2^4 = 2^(3+4) = 2^7 = 128",
+        "x^2 × x^5 = x^7 (se suman los exponentes 2 y 5)"
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 3^2 × 3^5?",
+          "opciones": ["3^7", "3^10", "3^3", "9^7"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se suman los exponentes de igual base: 2+5=7, entonces 3^2 × 3^5 = 3^7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "5^3 × 5^2 es igual a 5^5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al multiplicar potencias de igual base se suman los exponentes: 3+2=5, así 5^3 × 5^2 = 5^5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^4 × x^6, el exponente resultante es ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "4+6=10, entonces x^4 × x^6 = x^10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes expresiones es equivalente a 2^3 × 2^5?",
+          "opciones": ["2^8", "2^15", "4^8", "2^2"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3+5=8, así que 2^3 × 2^5 = 2^8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada multiplicación de potencias con su resultado simplificado.",
+          "columnaA": ["7^2 × 7^3", "a^4 × a^4", "10^1 × 10^6"],
+          "columnaB": ["10^7", "a^8", "7^5"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "7^2×7^3=7^5 (2+3=5); a^4×a^4=a^8 (4+4=8); 10^1×10^6=10^7 (1+6=7)."
+        }
+      ]
+    },
+    {
+      "numero": "13.2",
+      "titulo": "Cociente de potencias de igual base",
+      "explicacion": "Al dividir potencias de la misma base, restamos los exponentes. Esto sucede porque dividir es 'quitar' factores repetidos: si la base aparece multiplicada m veces y la dividimos entre la misma base multiplicada n veces, se cancelan n factores y quedan solo m-n.",
+      "formula": "a^m ÷ a^n = a^(m-n), con a ≠ 0",
+      "ejemplos": [
+        "5^6 ÷ 5^2 = 5^(6-2) = 5^4 = 625",
+        "x^9 ÷ x^3 = x^6"
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 4^7 ÷ 4^3?",
+          "opciones": ["4^4", "4^10", "4^2.33", "1^4"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se restan los exponentes: 7-3=4, entonces 4^7 ÷ 4^3 = 4^4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "8^5 ÷ 8^5 es igual a 8^0.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al restar los exponentes: 5-5=0, así que 8^5 ÷ 8^5 = 8^0 (y su valor es 1)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar y^10 ÷ y^4, el exponente resultante es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "10-4=6, entonces y^10 ÷ y^4 = y^6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica 6^9 ÷ 6^5.",
+          "opciones": ["6^4", "6^14", "6^1.8", "36^4"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "9-5=4, entonces 6^9 ÷ 6^5 = 6^4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada división de potencias con su resultado simplificado.",
+          "columnaA": ["3^8 ÷ 3^3", "b^7 ÷ b^2", "10^5 ÷ 10^4"],
+          "columnaB": ["10^1", "b^5", "3^5"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "3^8÷3^3=3^5 (8-3=5); b^7÷b^2=b^5 (7-2=5); 10^5÷10^4=10^1 (5-4=1)."
+        }
+      ]
+    },
+    {
+      "numero": "13.3",
+      "titulo": "Potencia de potencia y exponente cero",
+      "explicacion": "Cuando elevamos una potencia a otro exponente, multiplicamos los exponentes: estamos repitiendo el bloque a^m un total de n veces, y al sumar ese exponente m consigo mismo n veces se obtiene m×n. Además, cualquier número distinto de cero elevado a la potencia 0 es igual a 1, porque al aplicar la ley del cociente a una potencia dividida entre sí misma (a^m ÷ a^m) siempre resulta exponente 0, y dividir un número entre sí mismo da 1.",
+      "formula": "(a^m)^n = a^(m×n); a^0 = 1 (a ≠ 0)",
+      "ejemplos": [
+        "(2^3)^2 = 2^(3×2) = 2^6 = 64",
+        "7^0 = 1, y también 250^0 = 1"
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de (5^2)^3?",
+          "opciones": ["5^6", "5^5", "5^9", "5^8"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se multiplican los exponentes: 2×3=6, entonces (5^2)^3 = 5^6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x^4)^3 es igual a x^7.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "En potencia de potencia los exponentes se multiplican, no se suman: 4×3=12, así que (x^4)^3 = x^12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El valor de 15^0 es ___.",
+          "respuestaCorrecta": "1",
+          "retroalimentacion": "Todo número distinto de cero elevado a la potencia 0 es igual a 1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de (a^3)^4?",
+          "opciones": ["a^12", "a^7", "a^81", "a^43"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3×4=12, entonces (a^3)^4 = a^12."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su valor simplificado.",
+          "columnaA": ["(2^2)^3", "9^0", "(m^5)^2"],
+          "columnaB": ["m^10", "2^6", "1"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "(2^2)^3=2^6 (2×3=6); 9^0=1 (exponente cero); (m^5)^2=m^10 (5×2=10)."
+        }
+      ]
+    },
+    {
+      "numero": "13.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda las tres leyes: al multiplicar potencias de igual base se suman los exponentes (a^m×a^n=a^(m+n)); al dividirlas se restan (a^m÷a^n=a^(m-n)); y al elevar una potencia a otro exponente se multiplican (a^m)^n=a^(m×n), mientras que cualquier base distinta de cero elevada a 0 vale 1. En problemas combinados, aplica primero la potencia de potencia, luego el producto, y al final el cociente, sin perder de vista que todas las bases deben ser iguales para poder combinar los exponentes.",
+      "ejemplos": [
+        "(3^2 × 3^4) ÷ 3^3 = 3^6 ÷ 3^3 = 3^3 = 27 (primero se suman los exponentes del producto, luego se resta el del cociente)",
+        "(x^2)^3 × x^4 = x^6 × x^4 = x^10"
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: (2^3 × 2^2) ÷ 2^4",
+          "opciones": ["2^1", "2^9", "2^5", "2^24"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Primero se suman los exponentes del producto (3+2=5), luego se resta el del cociente (5-4=1): el resultado es 2^1."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(x^2)^3 × x^1 es igual a x^7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Se multiplican los exponentes de la potencia de potencia (2×3=6) y se suma el del producto (6+1=7)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar (a^5 ÷ a^2) × a^0, el exponente final de a es ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "En el cociente 5-2=3; multiplicar por a^0 (que vale 1) no cambia el resultado, así que el exponente final es 3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cultivo de bacterias comienza con 3^4 bacterias y luego se multiplica por 3^2. ¿Cuántas bacterias hay, expresado como potencia de 3?",
+          "opciones": ["3^6", "3^8", "3^2", "3^16"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Multiplicar por 3^2 significa sumar exponentes: 4+2=6, entonces hay 3^6 bacterias."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión combinada con su resultado simplificado.",
+          "columnaA": ["(5^2)^2 ÷ 5^1", "7^3 × 7^0", "(x^3 × x^2) ÷ x^1"],
+          "columnaB": ["x^4", "7^3", "5^3"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "(5^2)^2÷5^1=5^4÷5^1=5^3; 7^3×7^0=7^3 (7^0=1); (x^3×x^2)÷x^1=x^5÷x^1=x^4."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es el resultado de 4^2 × 4^3?",
+      "opciones": ["4^5", "4^6", "4^1", "16^5"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "2+3=5, entonces 4^2 × 4^3 = 4^5."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "El exponente resultante de simplificar b^12 ÷ b^5 es ___.",
+      "respuestaCorrecta": "7",
+      "retroalimentacion": "12-5=7, entonces b^12 ÷ b^5 = b^7."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "(3^4)^0 es igual a 1.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Cualquier expresión con base distinta de cero elevada a la potencia 0 es igual a 1, incluyendo (3^4)^0."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Simplifica (2^2)^3 × 2^1",
+      "opciones": ["2^7", "2^6", "2^5", "2^12"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "En la potencia de potencia 2×3=6, y sumando el exponente del producto 6+1=7, el resultado es 2^7."
+    }
+  ]
+}

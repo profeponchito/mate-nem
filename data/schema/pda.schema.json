@@ -9,11 +9,20 @@
       "type": "string",
       "description": "Identificador único, convención: '<grado>S-B<bloque>-PDA<num>', ej. '2S-B1-PDA03'"
     },
-    "grado": { "type": "string", "enum": ["1°", "2°", "3°"] },
+    "grado": {
+      "type": "string",
+      "enum": ["1°", "2°", "3°", "Ejercítate"],
+      "description": "'Ejercítate' identifica un tema de práctica libre (pseudo-grado): no pertenece a la ruta curricular de ningún grado en particular, vive en data/ejercitate/ en vez de data/grado-N/, y requiere además el campo 'categoria'."
+    },
     "trimestre": { "type": "string", "enum": ["1", "2", "3"] },
     "numero": {
       "type": "integer",
-      "description": "Número de tema dentro de su grado (1, 2, 3…), en el orden en que se recorren los PDAs de ese grado. Se muestra en la interfaz como 'Tema N'."
+      "description": "Número de tema dentro de su grado (1, 2, 3…), en el orden en que se recorren los PDAs de ese grado. Se muestra en la interfaz como 'Tema N'. Para 'Ejercítate', es el número 1-36 de la lista del usuario."
+    },
+    "categoria": {
+      "type": "string",
+      "enum": ["basico", "intermedio", "avanzado", "estadistica"],
+      "description": "Solo para grado='Ejercítate': agrupa el tema en uno de los 4 caminos de la pantalla de Ejercítate (básicos/intermedios/avanzados/estadística y probabilidad)."
     },
     "campoFormativo": { "type": "string", "const": "Saberes y Pensamiento Científico" },
     "eje": { "type": "string" },

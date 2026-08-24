@@ -1,0 +1,235 @@
+{
+  "id": "EJ-04",
+  "grado": "Ejercítate",
+  "numero": 4,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Múltiplos y divisores",
+  "contenido": "Múltiplos, divisores y criterios de divisibilidad de un número.",
+  "pda": "Identifica múltiplos y divisores de un número, aplica criterios de divisibilidad y los utiliza para resolver problemas de reparto y agrupación en su vida cotidiana.",
+  "problematizacion": {
+    "contexto": "En la kermés de la escuela, doña Rosa tiene 24 paletas y quiere acomodarlas en bolsitas para vender, de manera que todas las bolsas tengan exactamente la misma cantidad de paletas y no sobre ninguna.",
+    "pregunta": "¿De cuántas formas distintas puede acomodar las 24 paletas en bolsas iguales, sin que sobre ninguna?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.1",
+      "titulo": "¿Qué son los múltiplos?",
+      "explicacion": "Un múltiplo de un número es el resultado de multiplicarlo por cualquier número entero (1, 2, 3...). Por eso los múltiplos de un número son infinitos: siempre se puede seguir multiplicando por un entero más grande. Conocerlos sirve para detectar patrones que se repiten, como en las tablas de multiplicar.",
+      "formula": "múltiplo de n = n × k, con k = 1, 2, 3, 4...",
+      "ejemplos": [
+        "Los múltiplos de 4 son 4, 8, 12, 16, 20... porque 4×1=4, 4×2=8, 4×3=12, y así sucesivamente.",
+        "36 es múltiplo de 6 porque 6×6=36."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes números es múltiplo de 7?",
+          "opciones": ["40", "42", "45", "50"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "42 es múltiplo de 7 porque 7×6=42."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "54 es múltiplo de 9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 9×6=54, así que 54 sí es múltiplo de 9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El quinto múltiplo de 8 es ___.",
+          "respuestaCorrecta": "40",
+          "retroalimentacion": "Los múltiplos de 8 son 8, 16, 24, 32, 40... el quinto es 40 (8×5=40)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes números NO es múltiplo de 5?",
+          "opciones": ["35", "48", "60", "75"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "48 no es múltiplo de 5 porque no termina en 0 ni en 5; los demás sí lo son."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada número con el número del que es múltiplo.",
+          "columnaA": ["45", "56", "63"],
+          "columnaB": ["7", "8", "9"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "45=9×5, 56=8×7, 63=7×9, por eso 45 es múltiplo de 9, 56 de 8 y 63 de 7."
+        }
+      ]
+    },
+    {
+      "numero": "4.2",
+      "titulo": "¿Qué son los divisores? Criterios de divisibilidad",
+      "explicacion": "Un divisor de un número es otro número que lo divide exactamente, es decir, sin dejar residuo. Para no tener que probar dividiendo uno por uno, existen los criterios de divisibilidad: reglas rápidas que nos dicen si un número se puede dividir exactamente entre 2, 3, 5 o 10 con solo mirar sus dígitos.",
+      "formula": "Divisible entre 2: termina en cifra par · entre 3: suma de dígitos múltiplo de 3 · entre 5: termina en 0 o 5",
+      "ejemplos": [
+        "Los divisores de 12 son 1, 2, 3, 4, 6 y 12, porque cada uno de ellos divide a 12 sin dejar residuo.",
+        "84 es divisible entre 3 porque la suma de sus dígitos (8+4=12) es múltiplo de 3."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuáles son todos los divisores de 18?",
+          "opciones": ["1, 2, 3, 6, 9, 18", "1, 2, 3, 9, 18", "1, 3, 6, 9", "1, 2, 6, 9, 18"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "18 se puede dividir exactamente entre 1, 2, 3, 6, 9 y 18; esos son todos sus divisores."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "147 es divisible entre 3 porque 1+4+7=12 es múltiplo de 3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la suma de los dígitos de 147 es 12, que es múltiplo de 3, así que 147 es divisible entre 3."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un número es divisible entre 5 si termina en 0 o en ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "El criterio de divisibilidad entre 5 dice que el número debe terminar en 0 o en 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes números es divisible entre 4?",
+          "opciones": ["126", "148", "150", "162"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "148 ÷ 4 = 37 exactamente, por lo que 148 sí es divisible entre 4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada número con el criterio de divisibilidad que cumple.",
+          "columnaA": ["90", "72", "135"],
+          "columnaB": ["Es divisible entre 2, 3, 5 y 9 a la vez", "Es divisible entre 2, 3 y 9, pero no entre 5", "Es divisible entre 3, 5 y 9, pero no entre 2"],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "90 termina en 0 y su suma de dígitos es 9, así que cumple los cuatro; 72 es par y su suma es 9, pero no termina en 0 ni 5; 135 es impar, termina en 5 y su suma de dígitos es 9."
+        }
+      ]
+    },
+    {
+      "numero": "4.3",
+      "titulo": "Múltiplos y divisores comunes",
+      "explicacion": "Dos o más números pueden compartir múltiplos y divisores. Los múltiplos comunes se encuentran al listar los múltiplos de cada número y buscar los que aparecen en ambas listas; los divisores comunes se encuentran listando los divisores de cada número y viendo cuáles se repiten. Esto es la base para calcular más adelante el MCD y el MCM.",
+      "ejemplos": [
+        "Múltiplos de 4: 4, 8, 12, 16, 20, 24... Múltiplos de 6: 6, 12, 18, 24... Los múltiplos comunes son 12, 24, 36...",
+        "Divisores de 12: 1, 2, 3, 4, 6, 12. Divisores de 18: 1, 2, 3, 6, 9, 18. Los divisores comunes son 1, 2, 3 y 6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es un múltiplo común de 3 y 5?",
+          "opciones": ["10", "12", "15", "20"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "15 es múltiplo de 3 (3×5=15) y de 5 (5×3=15), así que es un múltiplo común de ambos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "1 es divisor común de cualquier par de números.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el número 1 divide exactamente a cualquier número, así que siempre es un divisor común."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Los divisores comunes de 8 y 12 son 1, 2 y ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. Los comunes son 1, 2 y 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes números NO es múltiplo común de 4 y 6?",
+          "opciones": ["12", "18", "24", "36"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "18 es múltiplo de 6 pero no de 4 (18÷4 no es exacto), así que no es múltiplo común."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con uno de sus múltiplos comunes.",
+          "columnaA": ["2 y 3", "4 y 5", "6 y 9"],
+          "columnaB": ["18", "20", "6"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "6 es múltiplo común de 2 y 3; 20 es múltiplo común de 4 y 5; 18 es múltiplo común de 6 y 9."
+        }
+      ]
+    },
+    {
+      "numero": "4.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: un múltiplo se obtiene multiplicando un número por un entero, y un divisor es un número que lo divide exactamente. Los criterios de divisibilidad (entre 2, 3, 5) ayudan a comprobarlo rápido. Cuando repartimos objetos en grupos iguales sin que sobre nada, estamos usando divisores; cuando buscamos cada cuánto se repite algo, usamos múltiplos.",
+      "ejemplos": [
+        "Un maestro tiene 36 libros y quiere formar equipos con la misma cantidad de libros cada uno, sin que sobre ninguno: puede usar cualquier divisor de 36 como número de equipos (por ejemplo, 4, 6 o 9 equipos)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un maestro tiene 36 libros y quiere formar equipos de trabajo con la misma cantidad de libros cada uno, sin que sobre ninguno. ¿Cuál de las siguientes cantidades de equipos NO es posible?",
+          "opciones": ["4", "5", "6", "9"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "5 no es divisor de 36 (36÷5 no es exacto), así que no se pueden formar 5 equipos iguales sin que sobren libros."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 45 es múltiplo de 9, entonces 9 es divisor de 45.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: ser múltiplo y ser divisor son relaciones inversas. Si 45 es múltiplo de 9, 9 divide exactamente a 45."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si una bolsa debe tener 8 canicas, el número de bolsas que se pueden formar con 40 canicas es ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "40÷8=5, porque 8 es divisor de 40; se forman exactamente 5 bolsas sin que sobren canicas."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un panadero quiere acomodar 24 panes de una charola y 30 de otra en bolsas con la misma cantidad de piezas cada una, sin mezclar las charolas y sin que sobre pan. ¿Cuál cantidad de piezas por bolsa NO funciona para ambas charolas a la vez?",
+          "opciones": ["2", "3", "5", "6"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "5 no es divisor común de 24 y 30 (24÷5 no es exacto); los divisores comunes de 24 y 30 son 1, 2, 3 y 6."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación de reparto con el concepto matemático que se usa para resolverla.",
+          "columnaA": ["Repartir 60 dulces en bolsas iguales sin que sobre ninguno", "Saber cada cuántos días coinciden dos autobuses que pasan cada 4 y cada 6 días", "Encontrar el mayor número de equipos iguales que se pueden formar con 18 niñas y 24 niños"],
+          "columnaB": ["Mínimo común múltiplo", "Máximo común divisor", "Divisores de un número"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "Repartir en bolsas iguales usa los divisores de 60; el reencuentro periódico de los autobuses usa el mínimo común múltiplo; formar el mayor número de equipos iguales entre dos grupos usa el máximo común divisor."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "72 es múltiplo de 8.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 8×9=72, así que 72 es múltiplo de 8."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es el criterio para saber si un número es divisible entre 2?",
+      "opciones": ["Que la suma de sus dígitos sea par", "Que termine en cifra par (0, 2, 4, 6, 8)", "Que termine en 0 o 5", "Que sea mayor que 10"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "Un número es divisible entre 2 si su última cifra es par: 0, 2, 4, 6 u 8."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "El menor múltiplo común de 5 y 7, distinto de cero, es ___.",
+      "respuestaCorrecta": "35",
+      "retroalimentacion": "Múltiplos de 5: 5,10,15,20,25,30,35... Múltiplos de 7: 7,14,21,28,35... El primero en común es 35."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada número con sus divisores correctos.",
+      "columnaA": ["14", "15", "21"],
+      "columnaB": ["1, 3, 5, 15", "1, 2, 7, 14", "1, 3, 7, 21"],
+      "parejasCorrectas": [1, 0, 2],
+      "retroalimentacion": "14 se divide exactamente entre 1, 2, 7 y 14; 15 entre 1, 3, 5 y 15; 21 entre 1, 3, 7 y 21."
+    }
+  ]
+}

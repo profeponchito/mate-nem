@@ -1,0 +1,234 @@
+{
+  "id": "EJ-20",
+  "grado": "Ejercítate",
+  "numero": 20,
+  "categoria": "intermedio",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Perímetro y área de figuras planas",
+  "contenido": "Cálculo del perímetro de polígonos y del área de triángulos, cuadriláteros y figuras compuestas.",
+  "pda": "Calcula el perímetro y el área de figuras planas (triángulos, cuadriláteros y figuras compuestas) aplicándolos a la solución de problemas de medición en contextos reales.",
+  "problematizacion": {
+    "contexto": "La familia Ramírez quiere cercar con malla un terreno rectangular de su patio para hacer un jardín, y después cubrir toda la superficie con pasto en rollo.",
+    "pregunta": "¿Qué operación necesitan usar para saber cuántos metros de malla comprar, y cuál para saber cuántos metros cuadrados de pasto necesitan?"
+  },
+  "subtemas": [
+    {
+      "numero": "20.1",
+      "titulo": "Perímetro de polígonos",
+      "explicacion": "El perímetro es la medida del contorno de una figura: se obtiene sumando la longitud de todos sus lados. En un polígono regular, como todos los lados miden lo mismo, basta con multiplicar la medida de un lado por el número de lados. El perímetro sirve para saber cuánto material se necesita para bordear algo, como una cerca o un marco.",
+      "formula": "P = suma de todos los lados; polígono regular: P = n · lado",
+      "ejemplos": [
+        "Un rectángulo de 8 m por 5 m tiene perímetro 2(8)+2(5) = 26 m.",
+        "Un hexágono regular de lado 4 cm tiene perímetro 6×4 = 24 cm."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el perímetro de un rectángulo de 12 m de largo y 7 m de ancho?",
+          "opciones": ["38 m", "19 m", "84 m", "36 m"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El perímetro de un rectángulo es 2×(largo+ancho): 2×(12+7)=38 m."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro de un cuadrado de lado 9 cm es ___ cm.",
+          "respuestaCorrecta": "36",
+          "retroalimentacion": "Un cuadrado tiene 4 lados iguales: 9×4=36 cm."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un pentágono regular de lado 6 cm es 30 cm.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Un pentágono regular tiene 5 lados iguales: 5×6=30 cm."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo tiene lados de 5 cm, 7 cm y 9 cm. ¿Cuál es su perímetro?",
+          "opciones": ["21 cm", "24 cm", "19 cm", "16 cm"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se suman los tres lados: 5+7+9=21 cm."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada figura con su perímetro.",
+          "columnaA": ["Cuadrado de lado 5 cm", "Rectángulo de 10 cm x 3 cm", "Hexágono regular de lado 2 cm"],
+          "columnaB": ["12 cm", "26 cm", "20 cm"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "Cuadrado lado 5: 4×5=20 cm. Rectángulo 10x3: 2×(10+3)=26 cm. Hexágono lado 2: 6×2=12 cm."
+        }
+      ]
+    },
+    {
+      "numero": "20.2",
+      "titulo": "Área de triángulos y cuadriláteros",
+      "explicacion": "El área mide cuánta superficie cubre una figura. Para triángulos se multiplica la base por la altura y se divide entre 2, porque un triángulo es 'la mitad' de un rectángulo con la misma base y altura. En rectángulos y paralelogramos se multiplica base por altura, y en trapecios se promedian las dos bases antes de multiplicar por la altura.",
+      "formula": "Triángulo: A = (b·h)/2 ; Rectángulo/paralelogramo: A = b·h ; Trapecio: A = ((B+b)·h)/2",
+      "ejemplos": [
+        "Un triángulo con base 10 cm y altura 6 cm tiene área (10×6)/2=30 cm².",
+        "Un trapecio con bases 8 cm y 4 cm y altura 5 cm tiene área ((8+4)×5)/2=30 cm²."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el área de un triángulo con base 14 cm y altura 8 cm?",
+          "opciones": ["56 cm²", "112 cm²", "22 cm²", "44 cm²"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Área = (base×altura)/2 = (14×8)/2=56 cm²."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El área de un rectángulo de 9 m de base y 4 m de altura es ___ m².",
+          "respuestaCorrecta": "36",
+          "retroalimentacion": "Área = base×altura = 9×4=36 m²."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El área de un cuadrado de lado 7 cm es 49 cm².",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "El área de un cuadrado es lado×lado: 7×7=49 cm²."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el área de un trapecio con bases de 10 cm y 6 cm y altura de 4 cm?",
+          "opciones": ["32 cm²", "64 cm²", "40 cm²", "16 cm²"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Área = ((base mayor+base menor)×altura)/2 = ((10+6)×4)/2=32 cm²."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el área de un paralelogramo con base 12 cm y altura 5 cm?",
+          "opciones": ["60 cm²", "17 cm²", "34 cm²", "30 cm²"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Área = base×altura = 12×5=60 cm²."
+        }
+      ]
+    },
+    {
+      "numero": "20.3",
+      "titulo": "Área de figuras compuestas",
+      "explicacion": "Una figura compuesta es la que se forma al unir o recortar figuras simples (rectángulos, triángulos, etc.). Para hallar su área, se descompone en las figuras simples que la forman: si están unidas, se suman sus áreas; si una parte fue recortada, se resta. Dibujar líneas auxiliares ayuda a ver claramente en qué figuras se puede dividir.",
+      "ejemplos": [
+        "Una sala en forma de L se descompone en dos rectángulos: uno de 6×3=18 m² y otro de 4×2=8 m², área total 26 m².",
+        "Un terreno rectangular de 10×8 con una esquina triangular recortada (base 4, altura 3, área 6) tiene área final 80-6=74 m²."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sala tiene forma de L: un rectángulo de 6 m x 4 m unido a otro de 3 m x 2 m. ¿Cuál es el área total?",
+          "opciones": ["30 m²", "24 m²", "18 m²", "36 m²"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se suman las dos áreas: (6×4)+(3×2)=24+6=30 m²."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno rectangular de 15 m x 8 m tiene una esquina triangular recortada de base 4 m y altura 3 m (para una banqueta). ¿Cuál es el área útil del terreno?",
+          "opciones": ["114 m²", "120 m²", "108 m²", "126 m²"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Área del rectángulo: 15×8=120 m². Área del triángulo recortado: (4×3)/2=6 m². Área útil: 120-6=114 m²."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una figura compuesta por un rectángulo de 5 m x 3 m y un triángulo de base 5 m y altura 4 m (unidos) tiene un área total de ___ m².",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "Rectángulo: 5×3=15 m². Triángulo: (5×4)/2=10 m². Total: 15+10=25 m²."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para hallar el área de una figura compuesta, se puede dividir en figuras simples y sumar (o restar) sus áreas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: se identifican las figuras simples que la forman y se suman si están unidas o se restan si fueron recortadas."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada figura compuesta con su área total.",
+          "columnaA": ["Rectángulo 8x5 más triángulo base 4 altura 3 (unidos)", "Rectángulo 10x6 menos triángulo base 4 altura 3 (recortado)", "Cuadrado de lado 6 más rectángulo 2x3"],
+          "columnaB": ["42 cm²", "54 cm²", "46 cm²"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "8x5+((4×3)/2)=40+6=46. 10x6-((4×3)/2)=60-6=54. 6x6+2x3=36+6=42."
+        }
+      ]
+    },
+    {
+      "numero": "20.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: el perímetro (suma de los lados) indica cuánto material se necesita para bordear una figura, como una cerca; el área (superficie que cubre) indica cuánto se necesita para cubrirla, como pasto o piso. Para figuras compuestas, se descompone en partes simples y se suman o restan sus áreas según estén unidas o recortadas.",
+      "ejemplos": [
+        "Un jardín rectangular de 20 m x 12 m necesita 2(20+12)=64 m de malla perimetral y 20×12=240 m² de pasto.",
+        "Si al jardín se le quita una zona cuadrada de 4 m de lado para un andador, el área de pasto real es 240-16=224 m²."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un terreno rectangular mide 18 m de largo y 10 m de ancho. ¿Cuántos metros de malla se necesitan para cercarlo completo?",
+          "opciones": ["56 m", "180 m", "28 m", "90 m"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Perímetro = 2×(largo+ancho) = 2×(18+10)=56 m."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El área de pasto necesaria para cubrir el mismo terreno de 18 m x 10 m es ___ m².",
+          "respuestaCorrecta": "180",
+          "retroalimentacion": "Área = largo×ancho = 18×10=180 m²."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un jardín cuadrado de 14 m de lado tiene un camino rectangular de 14 m x 2 m que lo atraviesa (sin pasto). ¿Cuántos m² de pasto se necesitan?",
+          "opciones": ["168 m²", "196 m²", "28 m²", "182 m²"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Área del jardín: 14×14=196 m². Área del camino: 14×2=28 m². Área con pasto: 196-28=168 m²."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro se usa para saber cuánto material se necesita para bordear una figura, y el área para saber cuánto se necesita para cubrir su superficie.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el perímetro mide el contorno (por ejemplo, una cerca) y el área mide la superficie (por ejemplo, pasto o piso)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada terreno con la cantidad correcta que necesita.",
+          "columnaA": ["Cercar un terreno de 9 m x 6 m", "Cubrir de pasto un terreno de 9 m x 6 m", "Cercar un terreno cuadrado de lado 10 m"],
+          "columnaB": ["40 m", "54 m²", "30 m"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "Cercar 9x6: 2×(9+6)=30 m. Cubrir 9x6: 9×6=54 m². Cercar cuadrado de 10: 4×10=40 m."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es el perímetro de un triángulo equilátero de lado 8 cm?",
+      "opciones": ["24 cm", "16 cm", "32 cm", "20 cm"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Un triángulo equilátero tiene 3 lados iguales: 3×8=24 cm."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "El área de un triángulo con base 16 cm y altura 5 cm es ___ cm².",
+      "respuestaCorrecta": "40",
+      "retroalimentacion": "Área = (base×altura)/2 = (16×5)/2=40 cm²."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Un rectángulo de 7 m x 3 m tiene la misma área que uno de 6 m x 4 m.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "7×3=21 m² y 6×4=24 m²; las áreas son distintas."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un patio compuesto por un rectángulo de 12 m x 5 m y un triángulo adicional de base 5 m y altura 4 m tiene un área total de:",
+      "opciones": ["70 m²", "60 m²", "65 m²", "75 m²"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Rectángulo: 12×5=60 m². Triángulo: (5×4)/2=10 m². Total: 60+10=70 m²."
+    }
+  ]
+}

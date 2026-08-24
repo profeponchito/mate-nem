@@ -1,0 +1,235 @@
+{
+  "id": "EJ-05",
+  "grado": "Ejercítate",
+  "numero": 5,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Máximo Común Divisor (MCD)",
+  "contenido": "El Máximo Común Divisor (MCD) de dos o más números y sus métodos de cálculo.",
+  "pda": "Calcula el Máximo Común Divisor de dos o más números utilizando la descomposición en factores primos y el método de divisiones sucesivas, y lo aplica para resolver problemas de reparto equitativo.",
+  "problematizacion": {
+    "contexto": "Una maestra de Educación Física tiene 36 pelotas de futbol y 24 pelotas de básquetbol. Quiere formar el mayor número posible de equipos, de manera que todos los equipos tengan la misma cantidad de pelotas de futbol y la misma cantidad de pelotas de básquetbol, sin que sobre ninguna.",
+    "pregunta": "¿Cuál es el mayor número de equipos que puede formar la maestra?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.1",
+      "titulo": "¿Qué es el Máximo Común Divisor?",
+      "explicacion": "El Máximo Común Divisor (MCD) de dos o más números es el número más grande que los divide a todos exactamente, sin dejar residuo. Para encontrarlo de forma sencilla, se listan los divisores de cada número, se identifican los que se repiten en todas las listas (los divisores comunes) y se elige el mayor de ellos.",
+      "ejemplos": [
+        "Divisores de 12: 1, 2, 3, 4, 6, 12. Divisores de 18: 1, 2, 3, 6, 9, 18. Los comunes son 1, 2, 3 y 6; el mayor es 6, así que MCD(12,18)=6.",
+        "Divisores de 15: 1, 3, 5, 15. Divisores de 20: 1, 2, 4, 5, 10, 20. El mayor común es 5, así que MCD(15,20)=5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 8 y 12?",
+          "opciones": ["2", "4", "6", "8"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. El mayor divisor común es 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de dos números nunca puede ser mayor que el menor de ellos.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: un divisor de un número nunca puede ser mayor que ese número, así que el MCD nunca supera al menor de los dos números."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 10 y 15 es ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "Divisores de 10: 1,2,5,10. Divisores de 15: 1,3,5,15. El mayor común es 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 9 y 28?",
+          "opciones": ["1", "3", "7", "9"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "9 y 28 no comparten ningún factor además del 1, así que su único divisor común es 1: MCD(9,28)=1."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con su Máximo Común Divisor.",
+          "columnaA": ["16 y 24", "9 y 27", "14 y 21"],
+          "columnaB": ["7", "9", "8"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "MCD(16,24)=8, MCD(9,27)=9 y MCD(14,21)=7."
+        }
+      ]
+    },
+    {
+      "numero": "5.2",
+      "titulo": "Método por descomposición en factores primos",
+      "explicacion": "Para calcular el MCD de números grandes conviene descomponer cada número en sus factores primos. Después se identifican los factores primos que se repiten en TODAS las descomposiciones y se toman elevados al MENOR exponente con el que aparecen; el producto de esos factores comunes es el MCD.",
+      "formula": "MCD = producto de los factores primos comunes elevados al menor exponente",
+      "ejemplos": [
+        "36=2²×3², 60=2²×3×5. Los factores comunes son 2² y 3¹ (el menor exponente de cada uno): MCD=4×3=12.",
+        "18=2×3², 24=2³×3. Los factores comunes son 2¹ y 3¹: MCD=2×3=6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 28=2²×7 y 42=2×3×7, ¿cuál es su MCD usando los factores comunes?",
+          "opciones": ["7", "14", "21", "28"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Los factores comunes son 2¹ y 7¹, así que MCD=2×7=14."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al calcular el MCD por descomposición en primos, se toman los factores comunes elevados al mayor exponente.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: para el MCD se toman los factores comunes elevados al MENOR exponente con el que aparecen."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 45=3²×5 y 75=3×5², el MCD por descomposición en primos es 3×5=___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "El factor 3 aparece con menor exponente 1 y el factor 5 con menor exponente 1, así que MCD=3×5=15."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Descompón 50=2×5² y 30=2×3×5. ¿Cuál es su MCD?",
+          "opciones": ["2", "5", "10", "15"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Los factores comunes son 2¹ y 5¹, así que MCD=2×5=10."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números (ya descompuestos) con su MCD.",
+          "columnaA": ["24=2³×3 y 36=2²×3²", "20=2²×5 y 50=2×5²", "27=3³ y 63=3²×7"],
+          "columnaB": ["9", "10", "12"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "MCD(24,36)=2²×3=12; MCD(20,50)=2×5=10; MCD(27,63)=3²=9."
+        }
+      ]
+    },
+    {
+      "numero": "5.3",
+      "titulo": "Método por divisiones sucesivas",
+      "explicacion": "El método de las divisiones sucesivas (también llamado algoritmo de Euclides) consiste en dividir el número mayor entre el menor, luego dividir ese divisor entre el residuo obtenido, y repetir el proceso hasta llegar a un residuo de 0. El último divisor usado en ese momento es el MCD. Este método es más rápido que listar todos los divisores cuando los números son grandes.",
+      "formula": "Se repite: mayor ÷ menor → residuo; menor ÷ residuo → nuevo residuo... hasta que el residuo sea 0",
+      "ejemplos": [
+        "MCD(48,18): 48÷18=2 residuo 12; 18÷12=1 residuo 6; 12÷6=2 residuo 0. El último divisor usado fue 6, entonces MCD(48,18)=6.",
+        "MCD(100,75): 100÷75=1 residuo 25; 75÷25=3 residuo 0. MCD(100,75)=25."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando divisiones sucesivas: 56÷42=1 residuo 14; 42÷14=3 residuo 0. ¿Cuál es el MCD(56,42)?",
+          "opciones": ["7", "14", "21", "28"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El último divisor usado antes de llegar a residuo 0 fue 14, así que MCD(56,42)=14."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En el algoritmo de Euclides, el MCD es el último divisor usado justo antes de obtener un residuo igual a 0.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: cuando el residuo llega a 0, el divisor que se estaba usando en ese paso es el MCD."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al calcular MCD(81,63): 81÷63=1 residuo 18; 63÷18=3 residuo 9; 18÷9=2 residuo 0. El MCD es ___.",
+          "respuestaCorrecta": "9",
+          "retroalimentacion": "El último divisor usado antes del residuo 0 fue 9, así que MCD(81,63)=9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la principal ventaja del método de divisiones sucesivas frente a listar todos los divisores?",
+          "opciones": ["Funciona solo con números pares", "Es más rápido con números grandes, sin necesidad de listar todos los divisores", "Solo sirve cuando hay tres números o más", "Da un resultado aproximado"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La ventaja del algoritmo de Euclides es que llega al MCD en pocos pasos, sin tener que listar todos los divisores de números grandes."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con su MCD calculado por divisiones sucesivas.",
+          "columnaA": ["35 y 14", "54 y 24", "64 y 48"],
+          "columnaB": ["16", "6", "7"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "MCD(35,14)=7 (35÷14=2 res7; 14÷7=2 res0); MCD(54,24)=6; MCD(64,48)=16."
+        }
+      ]
+    },
+    {
+      "numero": "5.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: el MCD es el mayor número que divide exactamente a dos o más números. Se puede calcular listando divisores comunes, descomponiendo en factores primos (tomando los comunes al menor exponente) o con divisiones sucesivas. El MCD sirve para resolver problemas de reparto equitativo: encontrar el mayor número de grupos, paquetes o equipos iguales que se pueden formar sin que sobre nada.",
+      "ejemplos": [
+        "Una tienda tiene 60 plumas y 36 lápices y quiere armar el mayor número posible de paquetes iguales sin mezclar de más. MCD(60,36)=12, así que puede armar 12 paquetes, cada uno con 5 plumas y 3 lápices."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un club tiene 45 balones de futbol y 60 balones de voleibol. Quiere guardarlos en el mayor número posible de cajas iguales, sin mezclar tipos y sin que sobre ningún balón. ¿Cuántas cajas usará como máximo?",
+          "opciones": ["5", "10", "15", "20"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "MCD(45,60)=15, así que el club puede formar 15 cajas iguales como máximo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD se usa para repartir objetos en la mayor cantidad posible de grupos iguales, sin que sobre nada.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el MCD indica el mayor número de grupos iguales en que se pueden repartir varias cantidades sin que sobre material."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una florista tiene 28 rosas y 42 claveles y quiere hacer el mayor número de ramos iguales, sin mezclar flores de más. Podrá hacer ___ ramos.",
+          "respuestaCorrecta": "14",
+          "retroalimentacion": "MCD(28,42)=14, así que la florista puede hacer 14 ramos iguales como máximo."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con 90 cuadernos y 54 lápices, ¿en cuántos paquetes iguales como máximo se pueden repartir sin que sobre material?",
+          "opciones": ["6", "9", "18", "27"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "MCD(90,54)=18, así que se pueden formar 18 paquetes iguales como máximo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación de reparto equitativo con el número máximo de grupos iguales que se pueden formar (usa el MCD).",
+          "columnaA": ["32 plumas y 48 lápices", "20 manzanas y 35 naranjas", "18 niñas y 24 niños"],
+          "columnaB": ["6", "5", "16"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "MCD(32,48)=16; MCD(20,35)=5; MCD(18,24)=6."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "El MCD de 40 y 60 es ___.",
+      "respuestaCorrecta": "20",
+      "retroalimentacion": "Divisores comunes de 40 y 60: 1,2,4,5,10,20. El mayor es 20."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El MCD de dos números que no comparten ningún factor (primos entre sí) siempre es 1.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: si dos números no comparten factores, su único divisor común es el 1."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Al descomponer 63=3²×7 y 90=2×3²×5, ¿cuál es su MCD?",
+      "opciones": ["3", "9", "18", "21"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "El único factor común es 3², así que MCD(63,90)=9."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada par de números con su Máximo Común Divisor.",
+      "columnaA": ["12 y 18", "150 y 275", "9 y 16"],
+      "columnaB": ["MCD = 6", "MCD = 25", "MCD = 1"],
+      "parejasCorrectas": [0, 1, 2],
+      "retroalimentacion": "MCD(12,18)=6; MCD(150,275)=25; MCD(9,16)=1 porque no comparten factores."
+    }
+  ]
+}

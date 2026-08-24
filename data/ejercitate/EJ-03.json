@@ -1,0 +1,239 @@
+{
+  "id": "EJ-03",
+  "grado": "Ejercítate",
+  "numero": 3,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Jerarquía de operaciones",
+  "contenido": "El orden correcto para resolver operaciones combinadas: multiplicaciones, divisiones, sumas y restas, con y sin signos de agrupación.",
+  "pda": "Aplica la jerarquía de operaciones para resolver correctamente expresiones numéricas combinadas, con y sin paréntesis, en problemas de la vida cotidiana.",
+  "problematizacion": {
+    "contexto": "En un juego de mesa, cada jugador gana 3 puntos por cada carta azul y pierde 2 puntos por cada carta roja. Al final de una ronda, un jugador tiene 4 cartas azules y 2 rojas. Un amigo calcula su puntaje escribiendo 3 × 4 - 2 × 2, pero otro compañero lo resuelve de izquierda a derecha y obtiene un resultado distinto.",
+    "pregunta": "¿Por qué dos personas pueden obtener resultados diferentes al resolver la misma expresión, y cuál es el resultado correcto?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.1",
+      "titulo": "¿Qué es la jerarquía de operaciones y por qué importa?",
+      "explicacion": "La jerarquía de operaciones es el orden acordado para resolver una expresión con varias operaciones, de manera que todas las personas obtengan el mismo resultado: primero potencias y raíces, después multiplicaciones y divisiones (de izquierda a derecha), y al final sumas y restas (de izquierda a derecha). Sin esta regla, la misma expresión podría dar resultados distintos según quién la resuelva.",
+      "ejemplos": [
+        "En 2 + 3 × 4, primero se multiplica: 3 × 4 = 12, y luego se suma: 2 + 12 = 14 (no 5 × 4 = 20).",
+        "En 20 - 4 × 2, primero se multiplica: 4 × 2 = 8, luego se resta: 20 - 8 = 12."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una expresión sin paréntesis, la multiplicación se resuelve antes que la suma.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la jerarquía de operaciones indica que multiplicaciones y divisiones van antes que sumas y restas."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado correcto de 5 + 2 × 3?",
+          "opciones": ["21", "11", "10", "15"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Primero se multiplica: 2 × 3 = 6, luego se suma: 5 + 6 = 11."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El resultado correcto de 10 - 3 × 2 es ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Primero se multiplica: 3 × 2 = 6, luego se resta: 10 - 6 = 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Sin paréntesis, las sumas y restas siempre se resuelven antes que las multiplicaciones.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: las multiplicaciones y divisiones se resuelven antes que las sumas y restas, no al revés."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Por qué existe la jerarquía de operaciones?",
+          "opciones": [
+            "Para que todos obtengan el mismo resultado al resolver una expresión",
+            "Para hacer las operaciones más difíciles",
+            "Porque la suma es más importante que la multiplicación",
+            "Para usar siempre paréntesis"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La jerarquía es una convención matemática que garantiza que cualquier persona obtenga el mismo resultado."
+        }
+      ]
+    },
+    {
+      "numero": "3.2",
+      "titulo": "Operaciones combinadas sin paréntesis",
+      "explicacion": "Cuando una expresión no tiene paréntesis, primero se resuelven las potencias, después todas las multiplicaciones y divisiones en el orden en que aparecen (de izquierda a derecha), y al final las sumas y restas en el orden en que aparecen.",
+      "ejemplos": [
+        "18 ÷ 3 + 4 × 2 = 6 + 8 = 14 (se hacen primero la división y la multiplicación, luego la suma).",
+        "30 - 5 × 4 + 6 = 30 - 20 + 6 = 16 (multiplicación primero, luego resta y suma de izquierda a derecha)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 20 - 3 × 5 + 2?",
+          "opciones": ["7", "9", "17", "2"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Primero se multiplica: 3 × 5 = 15. Luego: 20 - 15 + 2 = 7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "24 ÷ 4 + 5 × 2 = ___.",
+          "respuestaCorrecta": "16",
+          "retroalimentacion": "24 ÷ 4 = 6 y 5 × 2 = 10; luego 6 + 10 = 16."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El resultado de 6 × 2 - 4 ÷ 2 es 10.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "6 × 2 = 12 y 4 ÷ 2 = 2; luego 12 - 2 = 10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 8 + 9 ÷ 3 - 1?",
+          "opciones": ["10", "6", "5", "12"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Primero la división: 9 ÷ 3 = 3. Luego: 8 + 3 - 1 = 10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "45 - 6 × 5 + 10 = ___.",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "6 × 5 = 30; luego 45 - 30 + 10 = 25."
+        }
+      ]
+    },
+    {
+      "numero": "3.3",
+      "titulo": "Operaciones con paréntesis y corchetes",
+      "explicacion": "Los paréntesis y corchetes indican qué operación debe resolverse primero, sin importar la jerarquía normal. Cuando hay paréntesis dentro de corchetes, se resuelve primero lo que está más adentro (los paréntesis) y después lo que está más afuera (los corchetes).",
+      "formula": "[ ( ) ] — de adentro hacia afuera",
+      "ejemplos": [
+        "(5 + 3) × 2 = 8 × 2 = 16 (primero se resuelve el paréntesis, luego se multiplica).",
+        "[ (10 - 4) + 3 ] × 2 = [6 + 3] × 2 = 9 × 2 = 18 (primero el paréntesis, luego el corchete, luego la multiplicación)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es (6 + 4) × 3?",
+          "opciones": ["30", "22", "13", "19"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Primero el paréntesis: 6 + 4 = 10. Luego: 10 × 3 = 30."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "[(8 - 3) + 2] × 4 = ___.",
+          "respuestaCorrecta": "28",
+          "retroalimentacion": "8 - 3 = 5; 5 + 2 = 7 (esto es el corchete); 7 × 4 = 28."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En 2 × (7 - 3), el resultado es 8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero el paréntesis: 7 - 3 = 4. Luego: 2 × 4 = 8."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 18 - (5 + 1) × 2?",
+          "opciones": ["6", "24", "12", "30"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Primero el paréntesis: 5 + 1 = 6. Luego la multiplicación: 6 × 2 = 12. Por último: 18 - 12 = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "[(12 ÷ 4) + 5] × 2 = ___.",
+          "respuestaCorrecta": "16",
+          "retroalimentacion": "12 ÷ 4 = 3; 3 + 5 = 8 (esto es el corchete); 8 × 2 = 16."
+        }
+      ]
+    },
+    {
+      "numero": "3.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda el orden: primero lo que está dentro de paréntesis y corchetes (de adentro hacia afuera), después multiplicaciones y divisiones de izquierda a derecha, y al final sumas y restas de izquierda a derecha. Aplicar bien este orden evita errores en situaciones cotidianas, como calcular puntajes de un juego o el costo total de una compra con descuentos.",
+      "ejemplos": [
+        "En el juego de cartas, el puntaje se calcula como 3 × 4 - 2 × 2: primero las multiplicaciones (12 y 4), luego la resta: 12 - 4 = 8 puntos.",
+        "Si además se suman puntos extra entre paréntesis: (3 × 4 - 2 × 2) + 5 = 8 + 5 = 13 puntos."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un jugador tiene 5 cartas azules (3 puntos cada una) y 3 cartas rojas (se restan 2 puntos por cada una). ¿Qué expresión y resultado calculan bien su puntaje?",
+          "opciones": [
+            "5 × 3 - 3 × 2 = 9 puntos",
+            "(5 - 3) × (3 - 2) = 2 puntos",
+            "5 × 3 - 3 × 2 = 15 puntos",
+            "5 + 3 × 3 - 2 = 12 puntos"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5 × 3 = 15 y 3 × 2 = 6; luego 15 - 6 = 9 puntos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El resultado de [ (9 - 5) × 3 ] + 2 es 14.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "9 - 5 = 4; 4 × 3 = 12 (esto es el corchete); 12 + 2 = 14."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El resultado de 6 × 3 - (8 ÷ 4) + 1 es ___.",
+          "respuestaCorrecta": "17",
+          "retroalimentacion": "Primero el paréntesis: 8 ÷ 4 = 2. Luego: 6 × 3 = 18. Por último: 18 - 2 + 1 = 17."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": ["4 + 2 × 5", "(4 + 2) × 5", "20 ÷ 2 - 3"],
+          "columnaB": ["30", "7", "14"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "4 + 2×5 = 14; (4+2)×5 = 30; 20÷2 - 3 = 7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 2 × [ (10 - 4) + 3 ]?",
+          "opciones": ["18", "26", "20", "14"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "10 - 4 = 6; 6 + 3 = 9 (esto es el corchete); 2 × 9 = 18."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuánto es 7 + 6 × 2?",
+      "opciones": ["19", "26", "13", "24"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Primero se multiplica: 6 × 2 = 12. Luego: 7 + 12 = 19."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "En una expresión con paréntesis, lo que está dentro del paréntesis se resuelve primero, sin importar qué operación sea.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: los paréntesis siempre indican la operación que debe resolverse primero, sin importar la jerarquía normal."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "(15 - 6) ÷ 3 = ___.",
+      "respuestaCorrecta": "3",
+      "retroalimentacion": "15 - 6 = 9 (paréntesis primero); 9 ÷ 3 = 3."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada expresión con su resultado.",
+      "columnaA": ["3 × 4 + 2", "3 × (4 + 2)", "12 - 2 × 3"],
+      "columnaB": ["6", "18", "14"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "3×4 + 2 = 14; 3×(4+2) = 18; 12 - 2×3 = 6."
+    }
+  ]
+}

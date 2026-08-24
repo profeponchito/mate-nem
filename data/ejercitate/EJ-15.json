@@ -1,0 +1,312 @@
+{
+  "id": "EJ-15",
+  "grado": "Ejercítate",
+  "numero": 15,
+  "categoria": "intermedio",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Proporcionalidad inversa",
+  "contenido": "Relación entre dos cantidades donde una aumenta mientras la otra disminuye, manteniendo constante su producto.",
+  "pda": "Identifica situaciones de proporcionalidad inversa, calcula la constante del producto y resuelve problemas usando la regla de tres inversa.",
+  "problematizacion": {
+    "contexto": "Para pintar un salón, un solo pintor tarda 12 horas trabajando solo. Si se contratan más pintores para el mismo trabajo, se tardan menos horas, pero no de cualquier forma: aquí a más trabajadores, menos tiempo, siempre en la misma proporción inversa.",
+    "pregunta": "Si 2 pintores tardan 6 horas en pintar el salón, ¿cuánto tardarán 4 pintores en hacer el mismo trabajo, si todos trabajan al mismo ritmo?"
+  },
+  "subtemas": [
+    {
+      "numero": "15.1",
+      "titulo": "¿Qué es la proporcionalidad inversa?",
+      "explicacion": "Dos cantidades son inversamente proporcionales cuando, al multiplicar una de ellas por un número, la otra queda dividida entre ese mismo número (y viceversa). Es decir, cuando una aumenta la otra disminuye, pero no de cualquier forma: su producto siempre se mantiene igual. Por ejemplo, entre más obreros trabajen en una obra al mismo ritmo, menos tiempo tardarán en terminarla.",
+      "formula": "x × y = k (constante)",
+      "ejemplos": [
+        "Si 3 grifos llenan una alberca en 8 horas, 6 grifos (el doble) la llenarán en 4 horas (la mitad).",
+        "A mayor velocidad de un coche, menor es el tiempo del recorrido, para la misma distancia."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si al doble de obreros trabajando corresponde la mitad del tiempo para terminar una obra, se trata de proporcionalidad inversa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Cuando una cantidad se duplica y la otra se reduce a la mitad, es proporcionalidad inversa."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál situación representa una proporcionalidad inversa?",
+          "opciones": [
+            "El número de trabajadores y el tiempo que tardan en terminar una obra, a ritmo constante",
+            "El número de kilos de manzanas y su costo total",
+            "El número de horas trabajadas y el pago recibido a tarifa fija por hora",
+            "El número de boletos comprados y el costo total"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "A más trabajadores, menos tiempo se necesita: es proporcionalidad inversa; las demás opciones son directas."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 4 máquinas tejen cierta cantidad de tela en 6 horas, al aumentar el número de máquinas el tiempo necesario ___ (aumenta o disminuye).",
+          "respuestaCorrecta": "disminuye",
+          "retroalimentacion": "En la proporcionalidad inversa, cuando una cantidad aumenta, la otra disminuye."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una proporcionalidad inversa, al aumentar una cantidad, la otra también aumenta.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "En la proporcionalidad inversa, cuando una cantidad aumenta, la otra disminuye, no aumenta."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tinaco se llena con 1 llave en 20 minutos. Si se abren más llaves iguales, ¿qué pasa con el tiempo de llenado?",
+          "opciones": [
+            "Disminuye",
+            "Aumenta",
+            "No cambia",
+            "Depende del color del tinaco"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "A más llaves abiertas (mismo caudal cada una), se necesita menos tiempo para llenar el tinaco: es proporcionalidad inversa."
+        }
+      ]
+    },
+    {
+      "numero": "15.2",
+      "titulo": "Producto constante",
+      "explicacion": "En la proporcionalidad inversa, el producto de las dos cantidades relacionadas siempre da el mismo valor, llamado constante k. Esto permite comprobar si dos cantidades son inversamente proporcionales (todas las parejas de datos deben dar el mismo producto) y también encontrar valores desconocidos: si conoces k y una cantidad, divides k entre esa cantidad para hallar la otra.",
+      "formula": "k = x × y → y = k / x",
+      "ejemplos": [
+        "Si 2 pintores tardan 6 horas, k = 2×6 = 12. Con 4 pintores: y = 12/4 = 3 horas.",
+        "3 grifos llenan una alberca en 8 horas: k=3×8=24. Con 6 grifos: y=24/6=4 horas."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 5 obreros terminan un trabajo en 8 días, ¿cuál es la constante del producto (k)?",
+          "opciones": [
+            "40",
+            "13",
+            "1.6",
+            "5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k=x×y=5×8=40."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con una constante k=36 (obreros × días), si trabajan 4 obreros, tardarán ___ días.",
+          "respuestaCorrecta": "9",
+          "retroalimentacion": "36÷4=9 días."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Con una constante k=24 (velocidad × tiempo), relaciona cada velocidad con el tiempo que tarda el recorrido.",
+          "columnaA": [
+            "4 km/h",
+            "6 km/h",
+            "8 km/h"
+          ],
+          "columnaB": [
+            "3 horas",
+            "4 horas",
+            "6 horas"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "24÷4=6 horas; 24÷6=4 horas; 24÷8=3 horas."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 6 grifos llenan un tanque en 10 horas, ¿cuál es la constante del producto?",
+          "opciones": [
+            "60",
+            "16",
+            "1.6",
+            "6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k=6×10=60."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si la constante de una proporcionalidad inversa es k=48 y x=8, entonces y=6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "y=k/x=48/8=6."
+        }
+      ]
+    },
+    {
+      "numero": "15.3",
+      "titulo": "Regla de tres inversa",
+      "explicacion": "La regla de tres inversa se usa para encontrar un valor desconocido cuando dos cantidades son inversamente proporcionales: en vez de multiplicar en cruz como en la directa, se multiplican los dos valores conocidos de una situación para obtener la constante, y luego se divide esa constante entre el valor conocido de la otra situación.",
+      "formula": "x1 × y1 = x2 × y2 → x2 = (x1 × y1) / y2",
+      "ejemplos": [
+        "Si 3 obreros hacen una barda en 12 días, ¿cuántos obreros se necesitan para hacerla en 4 días? x2=(3×12)/4=9 obreros.",
+        "Un coche a 60 km/h tarda 5 horas en un trayecto. ¿Cuánto tardará a 100 km/h? y2=(60×5)/100=3 horas."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 4 pintores terminan un mural en 9 días, ¿en cuántos días lo terminarán 6 pintores al mismo ritmo?",
+          "opciones": [
+            "6",
+            "13.5",
+            "54",
+            "2.4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k=4×9=36; con 6 pintores: 36÷6=6 días."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un coche a 80 km/h tarda 3 horas en un viaje. Si va a 120 km/h, tardará ___ horas.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "k=80×3=240; 240÷120=2 horas."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "12 obreros construyen una barda en 15 días. ¿Cuántos obreros se necesitan para hacerla en 9 días?",
+          "opciones": [
+            "20",
+            "18",
+            "10",
+            "7.5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k=12×15=180; 180÷9=20 obreros."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 5 máquinas tejen cierta tela en 8 horas, entonces 10 máquinas (el doble) tardarán 4 horas (la mitad) en tejer la misma tela.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "k=5×8=40; con 10 máquinas: 40÷10=4 horas."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un grupo de 8 trabajadores termina una cosecha en 6 días. ¿En cuántos días la terminarían 4 trabajadores, al mismo ritmo?",
+          "opciones": [
+            "12",
+            "3",
+            "24",
+            "2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k=8×6=48; con 4 trabajadores: 48÷4=12 días."
+        }
+      ]
+    },
+    {
+      "numero": "15.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: en la proporcionalidad inversa el producto de las dos cantidades es constante (x×y=k), y cuando una cantidad aumenta la otra disminuye. Para resolver problemas se usa la regla de tres inversa: se multiplican los dos valores conocidos de una situación para obtener k, y se divide k entre el dato conocido de la otra situación. Esto aplica a obreros y tiempo, velocidad y tiempo, grifos y llenado, entre otras situaciones cotidianas — no confundir con la proporcionalidad directa, donde lo constante es el cociente, no el producto.",
+      "ejemplos": [
+        "6 obreros construyen una casa en 20 días. Si se contratan 4 obreros más (10 en total), tardarán (6×20)/10=12 días.",
+        "Un ciclista a 15 km/h tarda 4 horas en un recorrido. A 20 km/h tardará (15×4)/20=3 horas."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una alberca se llena con 3 bombas en 10 horas. ¿Cuántas horas tardará con 5 bombas, al mismo ritmo cada una?",
+          "opciones": [
+            "6",
+            "16.6",
+            "30",
+            "2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k=3×10=30; con 5 bombas: 30÷5=6 horas."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "8 costureras hacen un lote de uniformes en 6 días. Si solo trabajan 4 costureras, tardarán ___ días.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "k=8×6=48; 48÷4=12 días."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una proporcionalidad inversa entre número de obreros y días de trabajo, si los obreros se triplican, el tiempo se reduce a la tercera parte.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al multiplicar una cantidad por 3, la otra queda dividida entre 3, para mantener constante el producto."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada cambio en el número de obreros con lo que sucede con el tiempo de trabajo (proporcionalidad inversa).",
+          "columnaA": [
+            "Se duplica el número de obreros",
+            "Se reduce a la mitad el número de obreros",
+            "El número de obreros se mantiene igual"
+          ],
+          "columnaB": [
+            "El tiempo se mantiene igual",
+            "El tiempo se duplica",
+            "El tiempo se reduce a la mitad"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Al duplicar obreros, el tiempo se reduce a la mitad; al reducirlos a la mitad, el tiempo se duplica; si no cambian, el tiempo se mantiene igual."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un depósito de agua se vacía con 2 válvulas en 18 horas. ¿En cuántas horas se vaciará si se abren 3 válvulas iguales?",
+          "opciones": [
+            "12",
+            "27",
+            "9",
+            "6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "k=2×18=36; con 3 válvulas: 36÷3=12 horas."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál de las siguientes es una situación de proporcionalidad inversa?",
+      "opciones": [
+        "El número de excavadoras y el tiempo para abrir una zanja, a ritmo constante",
+        "El número de kilos de arroz comprados y su costo total",
+        "Las horas trabajadas y el pago recibido a tarifa fija por hora",
+        "El número de boletos comprados y el costo total"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "A más excavadoras, menos tiempo se necesita: es proporcionalidad inversa."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Si k=60 es la constante (velocidad × tiempo) y la velocidad es 15 km/h, el tiempo es ___ horas.",
+      "respuestaCorrecta": "4",
+      "retroalimentacion": "60÷15=4 horas."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "7 jardineros podan un parque en 6 horas. Si solo trabajan 3 jardineros, tardarán menos de 6 horas.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "A menos jardineros se necesita más tiempo, no menos: tardarán más de 6 horas."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "10 máquinas producen cierta cantidad de piezas en 8 horas. ¿En cuántas horas producirán la misma cantidad 4 máquinas?",
+      "opciones": [
+        "20",
+        "3.2",
+        "12",
+        "32"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "k=10×8=80; con 4 máquinas: 80÷4=20 horas."
+    }
+  ]
+}

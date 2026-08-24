@@ -1,0 +1,245 @@
+{
+  "id": "EJ-08",
+  "grado": "Ejercítate",
+  "numero": 8,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Fracciones equivalentes",
+  "contenido": "Qué son las fracciones equivalentes y cómo obtenerlas amplificando, simplificando o hallando la fracción irreducible.",
+  "pda": "Reconoce y genera fracciones equivalentes mediante amplificación y simplificación, y obtiene la fracción irreducible para comparar y resolver problemas de proporciones en recetas y repartos.",
+  "problematizacion": {
+    "contexto": "Una receta de agua de horchata para 4 personas indica usar 2/4 de taza de azúcar. Marisol quiere preparar la misma receta para 8 personas, así que necesita duplicar todos los ingredientes.",
+    "pregunta": "¿Qué cantidad de azúcar, expresada en su forma más simple, debe usar Marisol para 8 personas si quiere conservar exactamente la misma proporción de dulzura que la receta original?"
+  },
+  "subtemas": [
+    {
+      "numero": "8.1",
+      "titulo": "¿Qué son las fracciones equivalentes?",
+      "explicacion": "Dos o más fracciones son equivalentes cuando representan la misma cantidad o proporción de un entero, aunque se escriban con números distintos. Para comprobar si dos fracciones son equivalentes se usa el producto cruzado: si el numerador de una por el denominador de la otra da el mismo resultado que el numerador de la segunda por el denominador de la primera, entonces son equivalentes.",
+      "formula": "a/b = c/d si a × d = b × c (producto cruzado)",
+      "ejemplos": [
+        "1/2 y 2/4 son equivalentes porque representan la misma cantidad: la mitad de algo. Comprobación: 1×4 = 2×2 = 4.",
+        "3/6 y 4/8 son equivalentes porque ambas representan la mitad: 3×8=24 y 6×4=24."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes fracciones es equivalente a 2/3?",
+          "opciones": ["4/6", "3/4", "2/6", "5/6"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4/6 es equivalente a 2/3 porque 2×6=12 y 3×4=12 (el producto cruzado es igual)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Las fracciones 3/5 y 6/9 son equivalentes.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "3×9=27 y 5×6=30; como los productos cruzados no son iguales, las fracciones NO son equivalentes."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Para comprobar si 4/6 y 6/9 son equivalentes, el producto cruzado da 4×9=36 y 6×6=___.",
+          "respuestaCorrecta": "36",
+          "retroalimentacion": "6×6=36; como ambos productos cruzados son iguales (36=36), las fracciones sí son equivalentes."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "María dice que 5/10 representa la misma cantidad que 1/2. ¿Es correcto?",
+          "opciones": [
+            "Sí, porque 5×2=10 y 10×1=10",
+            "No, porque 5 es mayor que 1",
+            "No, porque 10 es mayor que 2",
+            "Sí, pero solo si son números enteros"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5/10 y 1/2 son equivalentes: el producto cruzado 5×2=10 y 10×1=10 es igual, así que representan la misma cantidad (la mitad)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su fracción equivalente.",
+          "columnaA": ["1/3", "2/5", "3/4"],
+          "columnaB": ["6/8", "4/10", "2/6"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "1/3 = 2/6; 2/5 = 4/10; 3/4 = 6/8. En cada caso el producto cruzado coincide."
+        }
+      ]
+    },
+    {
+      "numero": "8.2",
+      "titulo": "Amplificar y simplificar fracciones",
+      "explicacion": "Amplificar una fracción es multiplicar el numerador y el denominador por un mismo número para obtener una fracción equivalente más grande; sirve, por ejemplo, para escalar una receta o igualar denominadores. Simplificar es lo contrario: dividir numerador y denominador entre un factor común para obtener una fracción equivalente más pequeña, con números más fáciles de manejar.",
+      "ejemplos": [
+        "Para amplificar 3/5 multiplicando por 4: (3×4)/(5×4) = 12/20.",
+        "Para simplificar 8/12, divides ambos números entre su factor común 4: 8÷4=2, 12÷4=3, resultado 2/3."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al amplificar la fracción 2/7 multiplicando por 3, ¿qué fracción obtienes?",
+          "opciones": ["6/21", "5/10", "2/21", "6/7"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Multiplicas numerador y denominador por 3: 2×3=6 y 7×3=21, resultado 6/21."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar 10/15 dividiendo entre su factor común 5, obtienes ___/3.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "10÷5=2 y 15÷5=3, entonces 10/15 simplificada es 2/3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Simplificar una fracción cambia la cantidad que representa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Simplificar solo cambia la forma de escribir la fracción (usa números más pequeños), pero la cantidad que representa sigue siendo la misma."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Para preparar una receta el doble de grande, se debe amplificar la fracción 3/8 de taza de aceite multiplicando por 2. ¿Cuál es el resultado?",
+          "opciones": ["6/16", "3/16", "6/8", "5/10"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3×2=6 y 8×2=16, entonces la cantidad amplificada es 6/16, equivalente a 3/8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con el resultado de simplificarla entre el factor común indicado.",
+          "columnaA": ["12/18 (entre 6)", "15/20 (entre 5)", "9/24 (entre 3)"],
+          "columnaB": ["3/8", "3/4", "2/3"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "12/18 entre 6 da 2/3; 15/20 entre 5 da 3/4; 9/24 entre 3 da 3/8."
+        }
+      ]
+    },
+    {
+      "numero": "8.3",
+      "titulo": "Fracción irreducible",
+      "explicacion": "Una fracción está en su forma irreducible (o mínima expresión) cuando el numerador y el denominador ya no tienen ningún factor común además del 1, es decir, cuando su Máximo Común Divisor (MCD) es 1. Para reducir cualquier fracción a su forma irreducible, se calcula el MCD del numerador y el denominador y se dividen ambos entre ese número.",
+      "ejemplos": [
+        "Para reducir 24/36 a su mínima expresión, el MCD de 24 y 36 es 12; dividiendo: 24÷12=2, 36÷12=3, resultado 2/3 (irreducible, porque el MCD de 2 y 3 es 1).",
+        "16/20 no es irreducible porque su MCD es 4; simplificando: 16÷4=4, 20÷4=5, la fracción irreducible es 4/5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes fracciones ya está en su forma irreducible?",
+          "opciones": ["5/9", "8/12", "6/10", "9/15"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5/9 es irreducible porque el MCD de 5 y 9 es 1 (no tienen factores comunes); las demás sí se pueden simplificar."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La fracción irreducible de 18/24 es 3/___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "El MCD de 18 y 24 es 6; 18÷6=3 y 24÷6=4, entonces la fracción irreducible es 3/4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La fracción irreducible de 14/21 es 2/3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "El MCD de 14 y 21 es 7; 14÷7=2 y 21÷7=3, así que 14/21 simplificada da 2/3, que ya es irreducible."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Para reducir 30/45 a su fracción irreducible, ¿cuál es el MCD de 30 y 45 que debes usar?",
+          "opciones": ["15", "5", "10", "3"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El MCD de 30 y 45 es 15; dividiendo ambos entre 15 obtienes 2/3, la fracción irreducible."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su forma irreducible.",
+          "columnaA": ["12/16", "10/25", "16/24"],
+          "columnaB": ["2/3", "2/5", "3/4"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "12/16 se reduce a 3/4; 10/25 se reduce a 2/5; 16/24 se reduce a 2/3, todas ya irreducibles."
+        }
+      ]
+    },
+    {
+      "numero": "8.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: dos fracciones son equivalentes si representan la misma cantidad (compruébalo con el producto cruzado); se amplifican multiplicando numerador y denominador por el mismo número, y se simplifican dividiendo entre un factor común hasta llegar a la fracción irreducible, donde el MCD del numerador y el denominador es 1. Esto es muy útil para ajustar cantidades de una receta manteniendo las proporciones.",
+      "ejemplos": [
+        "Marisol necesita 2/4 de taza de azúcar para 4 personas; para 8 personas amplifica ×2: 4/8, que simplificada es la fracción irreducible 1/2 taza, la misma proporción de dulzura.",
+        "Si una receta para 3 personas usa 3/9 de taza de sal, simplificada (MCD=3) queda 1/3 de taza; esa es la forma irreducible."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una receta para 4 personas usa 2/4 de taza de azúcar. Si Marisol la duplica para 8 personas, amplifica a 4/8 de taza. ¿Cuál es la fracción irreducible que representa esa cantidad?",
+          "opciones": ["1/2", "4/8", "2/4", "8/4"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4/8 se simplifica dividiendo entre su MCD (4): 4÷4=1, 8÷4=2, resultado 1/2, que es la fracción irreducible."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "2/4, 4/8 y 1/2 son todas fracciones equivalentes entre sí.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Las tres representan la misma cantidad (la mitad); solo cambia la forma en que están escritas."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una receta para 3 personas usa 3/9 de taza de sal. Simplificada a su mínima expresión, esa cantidad es 1/___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "El MCD de 3 y 9 es 3; 3÷3=1 y 9÷3=3, entonces la fracción irreducible es 1/3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Para hacer una receta el triple de grande, se amplifica 1/3 de taza de aceite multiplicando por 3. ¿Qué fracción resulta, y es irreducible?",
+          "opciones": [
+            "3/9, y no es irreducible (se simplifica a 1/3)",
+            "3/9, y sí es irreducible",
+            "1/9, y es irreducible",
+            "3/3, y es igual a un entero"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1/3 × 3 da 3/9, que es equivalente pero no irreducible; simplificada (MCD=3) vuelve a ser 1/3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada cantidad de receta con su fracción irreducible equivalente.",
+          "columnaA": ["6/8 de taza de leche", "4/6 de taza de aceite", "5/20 de taza de agua"],
+          "columnaB": ["1/4", "3/4", "2/3"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "6/8 se reduce a 3/4; 4/6 se reduce a 2/3; 5/20 se reduce a 1/4 — todas ya en su forma irreducible."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál de las siguientes fracciones es equivalente a 3/4?",
+      "opciones": ["9/12", "4/3", "3/8", "6/9"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "9/12 es equivalente a 3/4 porque 3×12=36 y 4×9=36 (el producto cruzado es igual)."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "7/11 es una fracción irreducible.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "El MCD de 7 y 11 es 1 (ambos son primos entre sí), por lo que 7/11 ya está en su forma irreducible."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Al simplificar 15/20 entre su MCD (5), obtienes 3/___.",
+      "respuestaCorrecta": "4",
+      "retroalimentacion": "15÷5=3 y 20÷5=4, entonces la fracción simplificada es 3/4."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada fracción con su fracción irreducible.",
+      "columnaA": ["8/10", "9/27", "14/16"],
+      "columnaB": ["7/8", "1/3", "4/5"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "8/10 se reduce a 4/5; 9/27 se reduce a 1/3; 14/16 se reduce a 7/8."
+    }
+  ]
+}

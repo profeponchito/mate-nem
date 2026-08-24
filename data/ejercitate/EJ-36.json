@@ -1,0 +1,232 @@
+{
+  "id": "EJ-36",
+  "grado": "Ejercítate",
+  "numero": 36,
+  "categoria": "estadistica",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Experimentos aleatorios",
+  "contenido": "Clasificación de experimentos y eventos según su grado de certeza: aleatorio o determinista, y seguro, imposible o probable.",
+  "pda": "Distingue experimentos aleatorios de deterministas, identifica el espacio muestral y los eventos asociados, y clasifica eventos como seguros, imposibles o probables.",
+  "problematizacion": {
+    "contexto": "Cada mañana, Sofía se hace varias preguntas antes de salir de casa: ¿lloverá hoy?, ¿saldrá el sol?, ¿su equipo favorito ganará el partido del domingo?, ¿sacará 7 puntos exactos si lanza dos dados?",
+    "pregunta": "¿Cuáles de estas situaciones se pueden predecir con total seguridad y cuáles dependen del azar?"
+  },
+  "subtemas": [
+    {
+      "numero": "36.1",
+      "titulo": "Aleatorio vs. determinista",
+      "explicacion": "Un experimento determinista es aquel cuyo resultado se puede predecir con certeza antes de realizarlo, porque siempre sigue las mismas reglas o leyes (como la física). Un experimento aleatorio, en cambio, tiene varios resultados posibles y no se puede saber con certeza cuál va a ocurrir, aunque se repita muchas veces en las mismas condiciones.",
+      "ejemplos": [
+        "Dejar caer una piedra es determinista: siempre cae hacia el suelo por la gravedad.",
+        "Lanzar un dado es aleatorio: aunque lo lances mil veces en las mismas condiciones, no puedes predecir con certeza qué número saldrá cada vez."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes situaciones es un experimento determinista?",
+          "opciones": ["Lanzar una moneda", "Calentar agua a 100°C al nivel del mar (hierve)", "Sacar una carta al azar de una baraja", "Girar una ruleta"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El agua siempre hierve a 100°C al nivel del mar; ese resultado se puede predecir con certeza, así que es determinista."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si repites un experimento aleatorio varias veces en las mismas condiciones, siempre obtendrás el mismo resultado.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: esa es justo la diferencia con un experimento determinista. En uno aleatorio, el resultado puede variar cada vez."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un experimento cuyo resultado se puede predecir con certeza antes de realizarlo se llama ___.",
+          "respuestaCorrecta": "determinista",
+          "retroalimentacion": "Determinista significa que el resultado está determinado de antemano, sin lugar al azar."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de estas situaciones es un experimento aleatorio?",
+          "opciones": ["El número de días de febrero en un año bisiesto", "El resultado de lanzar dos dados", "La suma de los ángulos internos de un triángulo", "La hora exacta en que el calendario marca el inicio de la primavera"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Lanzar dos dados tiene varios resultados posibles y no se puede predecir cuál ocurrirá; las otras opciones son datos fijos y predecibles."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su tipo de experimento.",
+          "columnaA": ["Lanzar una moneda", "Calentar agua a 100°C (hierve)", "Sacar una canica de una bolsa sin ver"],
+          "columnaB": ["Es determinista: el resultado siempre es el mismo", "Es aleatorio: no se sabe cuál canica saldrá", "Es aleatorio: no se sabe si será águila o sol"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "Moneda: aleatorio (águila o sol). Agua hirviendo: determinista. Canica sin ver: aleatorio."
+        }
+      ]
+    },
+    {
+      "numero": "36.2",
+      "titulo": "Espacio muestral y eventos",
+      "explicacion": "El espacio muestral es el conjunto de todos los resultados posibles de un experimento aleatorio. Un evento es un subconjunto de ese espacio muestral: un grupo de resultados que nos interesa observar. Un evento puede estar formado por un solo resultado o por varios, dependiendo de lo que se pregunte.",
+      "ejemplos": [
+        "Al lanzar un dado, el espacio muestral es {1, 2, 3, 4, 5, 6}. El evento 'sacar un número par' es el subconjunto {2, 4, 6}.",
+        "Al lanzar una moneda dos veces, el espacio muestral es {AA, AS, SA, SS}. El evento 'obtener al menos un águila' es {AA, AS, SA}."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al lanzar un dado, ¿qué resultados forman el evento 'sacar un número mayor que 4'?",
+          "opciones": ["{5, 6}", "{4, 5, 6}", "{1, 2, 3}", "{6}"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Los números del dado mayores que 4 son 5 y 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En el espacio muestral de un dado {1, 2, 3, 4, 5, 6}, el evento 'sacar un múltiplo de 3' tiene ___ resultados.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "Los múltiplos de 3 entre 1 y 6 son 3 y 6: son 2 resultados."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un evento puede estar formado por un solo resultado del espacio muestral.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: por ejemplo, el evento 'sacar exactamente un 5' en un dado está formado por un solo resultado, {5}."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al lanzar una moneda dos veces, ¿cuál es el espacio muestral completo?",
+          "opciones": ["{AA, SS}", "{AA, AS, SA, SS}", "{A, S}", "{AA, AS, SA}"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Hay 4 combinaciones posibles al lanzar dos monedas: águila-águila, águila-sol, sol-águila y sol-sol."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada evento (al lanzar un dado) con el conjunto de resultados que lo forman.",
+          "columnaA": ["Sacar un número par", "Sacar un número menor que 3", "Sacar el número 6"],
+          "columnaB": ["{6}", "{2, 4, 6}", "{1, 2}"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "Par: {2,4,6}. Menor que 3: {1,2}. El número 6: {6}."
+        }
+      ]
+    },
+    {
+      "numero": "36.3",
+      "titulo": "Eventos seguros, imposibles y probables",
+      "explicacion": "Según qué tan probable es que un evento ocurra, se puede clasificar en tres tipos: un evento seguro siempre ocurre (probabilidad 1 o 100%), un evento imposible nunca ocurre (probabilidad 0 o 0%), y un evento probable puede ocurrir o no, con una probabilidad entre 0 y 1 (entre 0% y 100%).",
+      "ejemplos": [
+        "Al lanzar un dado normal, el evento 'sacar un número entre 1 y 6' es seguro (probabilidad 1), porque todos los resultados posibles cumplen esa condición.",
+        "Al lanzar un dado normal, el evento 'sacar un 7' es imposible (probabilidad 0), porque un dado normal no tiene esa cara."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al lanzar un dado de 6 caras, ¿qué tipo de evento es 'sacar un número menor que 10'?",
+          "opciones": ["Imposible", "Seguro", "Probable", "No se puede clasificar"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Todos los números del dado (1 al 6) son menores que 10, así que el evento siempre ocurre: es seguro."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El evento 'sacar una carta roja de una baraja completa de 52 cartas (26 rojas)' es un evento seguro.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: es un evento probable, con probabilidad 26/52 = 1/2. No siempre ocurre, porque también hay 26 cartas negras."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un evento que nunca puede ocurrir tiene una probabilidad de ___.",
+          "respuestaCorrecta": "0",
+          "retroalimentacion": "Un evento imposible tiene probabilidad 0 (o 0%)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al girar una ruleta con 4 colores diferentes (rojo, azul, verde y amarillo) del mismo tamaño, ¿qué tipo de evento es 'caer en un color que no sea ninguno de esos cuatro'?",
+          "opciones": ["Seguro", "Imposible", "Probable", "No se puede saber"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La ruleta solo tiene esos 4 colores, así que caer en un color distinto nunca puede pasar: es imposible."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada evento con su clasificación.",
+          "columnaA": ["Sacar una bola blanca de una bolsa con solo bolas negras", "Sacar un número del 1 al 6 en un dado normal", "Sacar un as de una baraja de 52 cartas"],
+          "columnaB": ["Probable", "Seguro", "Imposible"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "Bola blanca en bolsa de negras: imposible. Número del 1 al 6 en un dado: seguro. Sacar un as: probable (4/52)."
+        }
+      ]
+    },
+    {
+      "numero": "36.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Para analizar cualquier situación de azar: primero identifica si el experimento es aleatorio o determinista; si es aleatorio, define su espacio muestral y el evento que te interesa; y finalmente clasifica ese evento como seguro (probabilidad 1), imposible (probabilidad 0) o probable (probabilidad entre 0 y 1), relacionando la clasificación con el cálculo de casos favorables entre posibles.",
+      "ejemplos": [
+        "En una rifa con 100 boletos donde solo 1 gana, el evento 'ganar' es probable pero poco probable (P = 1/100 = 0.01); en cambio, el evento 'que el boleto ganador esté entre el 1 y el 100' es seguro (P = 1)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una bolsa tiene 8 canicas azules y ninguna de otro color. ¿Qué tipo de evento es 'sacar una canica azul'?",
+          "opciones": ["Imposible", "Seguro", "Probable", "Aleatorio pero incierto"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Como todas las canicas son azules, siempre se sacará una azul: es un evento seguro."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes es la mejor descripción de un experimento aleatorio?",
+          "opciones": ["Su resultado se conoce antes de realizarlo", "Tiene varios resultados posibles y no se puede predecir cuál ocurrirá", "Siempre da el mismo resultado", "No tiene espacio muestral"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Un experimento aleatorio se caracteriza porque tiene resultados posibles conocidos, pero no se puede predecir cuál va a ocurrir."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si un evento tiene probabilidad 0.5, decimos que es un evento ___ (ni seguro ni imposible).",
+          "respuestaCorrecta": "probable",
+          "retroalimentacion": "Una probabilidad entre 0 y 1 (distinta de 0 y de 1) corresponde a un evento probable."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Todo experimento aleatorio tiene un espacio muestral con más de un resultado posible.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si solo hubiera un resultado posible, el resultado se podría predecir con certeza y el experimento sería determinista, no aleatorio."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada evento (al lanzar un dado) con su clasificación y probabilidad.",
+          "columnaA": ["Sacar un número del 1 al 6", "Sacar un 9", "Sacar un número par"],
+          "columnaB": ["Evento probable (P=1/2)", "Evento seguro (P=1)", "Evento imposible (P=0)"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "Del 1 al 6: seguro. Sacar un 9: imposible (el dado no lo tiene). Número par: probable, P=3/6=1/2."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál de las siguientes es un experimento determinista?",
+      "opciones": ["Lanzar una moneda", "Sumar 2 + 2", "Sacar una carta al azar", "Girar una ruleta"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "Sumar 2+2 siempre da 4; no depende del azar, así que es determinista."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El evento 'sacar un número negativo en un dado normal' es imposible.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: un dado normal solo tiene números del 1 al 6, ninguno negativo, así que ese evento nunca puede ocurrir."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "El espacio muestral de lanzar una moneda es {águila, ___}.",
+      "respuestaCorrecta": "sol",
+      "retroalimentacion": "Los dos únicos resultados posibles de lanzar una moneda son águila y sol."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un evento con probabilidad 1 se llama:",
+      "opciones": ["Imposible", "Improbable", "Seguro", "Aleatorio"],
+      "respuestaCorrecta": 2,
+      "retroalimentacion": "Probabilidad 1 (100%) significa que el evento siempre ocurre: es un evento seguro."
+    }
+  ]
+}

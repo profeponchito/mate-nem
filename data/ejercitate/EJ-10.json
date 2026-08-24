@@ -1,0 +1,234 @@
+{
+  "id": "EJ-10",
+  "grado": "Ejercítate",
+  "numero": 10,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Decimales y su relación con fracciones",
+  "contenido": "Qué es un número decimal, cómo se relaciona con las fracciones y cómo convertir entre ambas formas.",
+  "pda": "Convierte fracciones a decimales y decimales a fracciones, y compara ambas representaciones para resolver situaciones cotidianas.",
+  "problematizacion": {
+    "contexto": "Dos recetas de pan piden cantidades distintas de leche: una dice '3/4 de litro' y la otra dice '0.7 litros'. Ana quiere saber cuál receta usa más leche antes de ir al súper, pero las cantidades están escritas de dos formas diferentes.",
+    "pregunta": "¿Cómo puede Ana comparar 3/4 de litro con 0.7 litros si están escritos de forma distinta?"
+  },
+  "subtemas": [
+    {
+      "numero": "10.1",
+      "titulo": "¿Qué es un número decimal? Valor posicional",
+      "explicacion": "Un número decimal extiende el sistema de valor posicional más allá de las unidades: después del punto decimal, cada posición representa una fracción de diez cada vez más pequeña (décimos, centésimos, milésimos). Esto nos permite escribir partes de un entero sin usar una fracción, algo muy útil para el dinero, las medidas y los datos científicos.",
+      "formula": "Unidades . Décimos Centésimos Milésimos",
+      "ejemplos": [
+        "En el número 3.256, el 2 vale 2 décimos (0.2), el 5 vale 5 centésimos (0.05) y el 6 vale 6 milésimos (0.006).",
+        "$45.72 significa 45 pesos con 72 centésimos de peso, es decir, 72 centavos."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En el número 8.147, ¿qué valor tiene el dígito 4?",
+          "opciones": ["4 décimos (0.4)", "4 centésimos (0.04)", "4 milésimos (0.004)", "4 unidades"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "En 8.147: el 1 está en décimos, el 4 en centésimos y el 7 en milésimos. Por eso el 4 vale 4 centésimos (0.04)."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En 0.6, el dígito 6 representa 6 centésimos.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: el 6 está justo después del punto, en el lugar de los décimos, así que representa 6 décimos (0.6), no centésimos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En el número 12.539, el dígito que ocupa el lugar de los centésimos es ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "En 12.539: el 5 es décimos, el 3 es centésimos y el 9 es milésimos."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En el número 5.083, ¿qué valor tiene el dígito 8?",
+          "opciones": ["8 décimos (0.8)", "8 centésimos (0.08)", "8 milésimos (0.008)", "8 unidades"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "En 5.083: el 0 es décimos, el 8 es centésimos y el 3 es milésimos. Por eso el 8 vale 8 centésimos (0.08)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada posición decimal con la fracción que representa.",
+          "columnaA": ["Décimos", "Centésimos", "Milésimos"],
+          "columnaB": ["1/1000", "1/10", "1/100"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "Décimos = 1/10, Centésimos = 1/100, Milésimos = 1/1000: cada posición vale diez veces menos que la anterior."
+        }
+      ]
+    },
+    {
+      "numero": "10.2",
+      "titulo": "Convertir una fracción a decimal",
+      "explicacion": "Toda fracción es en realidad una división indicada: el numerador dividido entre el denominador. Por eso, para convertir una fracción a decimal basta con dividir; si el denominador ya es 10, 100 o 1000, el decimal se obtiene directamente colocando el punto según la cantidad de ceros.",
+      "formula": "a/b → a ÷ b = decimal",
+      "ejemplos": [
+        "3/4 = 3 ÷ 4 = 0.75.",
+        "7/10 = 0.7 porque el denominador ya es una potencia de 10."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "3/4 en decimal es ___.",
+          "respuestaCorrecta": "0.75",
+          "retroalimentacion": "3 ÷ 4 = 0.75."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el decimal equivalente a 1/8?",
+          "opciones": ["0.125", "0.18", "0.8", "0.25"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1 ÷ 8 = 0.125."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "5/8 equivale a 0.625.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 5 ÷ 8 = 0.625."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "9/20 en decimal es ___.",
+          "respuestaCorrecta": "0.45",
+          "retroalimentacion": "9 ÷ 20 = 0.45."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una receta necesita 2/5 de taza de azúcar. ¿A qué decimal equivale esta fracción?",
+          "opciones": ["0.4", "0.25", "0.52", "0.2"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2 ÷ 5 = 0.4, así que 2/5 de taza equivale a 0.4 de taza."
+        }
+      ]
+    },
+    {
+      "numero": "10.3",
+      "titulo": "Convertir un decimal a fracción",
+      "explicacion": "Para convertir un decimal a fracción, se escriben los dígitos después del punto como numerador y se coloca en el denominador la potencia de diez correspondiente (10, 100, 1000...) según cuántas cifras decimales haya; después se simplifica la fracción si es posible.",
+      "formula": "0.abc = abc/1000 (simplificar)",
+      "ejemplos": [
+        "0.75 = 75/100 = 3/4, simplificando entre 25.",
+        "0.4 = 4/10 = 2/5, simplificando entre 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.6 como fracción simplificada es ___.",
+          "respuestaCorrecta": "3/5",
+          "retroalimentacion": "0.6 = 6/10, y simplificando entre 2 queda 3/5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál fracción simplificada equivale a 0.35?",
+          "opciones": ["7/20", "35/100", "7/10", "5/14"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "0.35 = 35/100, y simplificando entre 5 queda 7/20."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.125 equivale a 1/8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 0.125 = 125/1000, y simplificando entre 125 queda 1/8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "0.08 como fracción simplificada es ___.",
+          "respuestaCorrecta": "2/25",
+          "retroalimentacion": "0.08 = 8/100, y simplificando entre 4 queda 2/25."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada decimal con su fracción equivalente.",
+          "columnaA": ["0.5", "0.2", "0.75"],
+          "columnaB": ["3/4", "1/5", "1/2"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "0.5 = 1/2, 0.2 = 1/5 y 0.75 = 3/4."
+        }
+      ]
+    },
+    {
+      "numero": "10.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Un decimal siempre puede escribirse como fracción con denominador 10, 100 o 1000, y toda fracción puede convertirse a decimal dividiendo. Para comparar una fracción con un decimal, lo más práctico es convertir la fracción a decimal y comparar dígito por dígito, empezando por los décimos.",
+      "ejemplos": [
+        "¿Qué es mayor, 3/5 o 0.55? Como 3/5 = 0.6 y 0.6 > 0.55, entonces 3/5 es mayor.",
+        "Un corredor avanzó 3/4 de la pista y otro avanzó 0.8 de la pista: 3/4 = 0.75, y como 0.8 > 0.75, el segundo corredor avanzó más."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un corredor A hizo 3/4 de la carrera y un corredor B hizo 0.8 de la carrera. ¿Quién ha avanzado más?",
+          "opciones": ["Corredor A", "Corredor B", "Llevan lo mismo", "No se puede comparar"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "3/4 = 0.75 y 0.8 > 0.75, así que el corredor B ha avanzado más."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "7/10 es mayor que 0.65.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 7/10 = 0.7, y 0.7 > 0.65."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Ordenando de menor a mayor: 0.3, 1/2, 0.45, el valor intermedio es ___.",
+          "respuestaCorrecta": "0.45",
+          "retroalimentacion": "1/2 = 0.5, así que el orden es 0.3, 0.45, 0.5. El valor intermedio es 0.45."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un pastelero usa 5/8 de kg de harina en una receta y 0.6 kg en otra. ¿Cuál receta usa más harina?",
+          "opciones": ["La de 5/8 kg (0.625 kg)", "La de 0.6 kg", "Usan la misma cantidad", "Falta información"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5/8 = 0.625, y 0.625 > 0.6, así que la receta de 5/8 kg usa más harina."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada valor con su lugar al ordenarlos de menor a mayor.",
+          "columnaA": ["3/5", "0.45", "7/10"],
+          "columnaB": ["Es el menor", "Es el mayor", "Es el intermedio"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "3/5 = 0.6 y 7/10 = 0.7, así que el orden de menor a mayor es 0.45, 3/5 (0.6), 7/10 (0.7)."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "5/4 en decimal es ___.",
+      "respuestaCorrecta": "1.25",
+      "retroalimentacion": "5 ÷ 4 = 1.25, ya que 5/4 es una fracción impropia mayor que 1."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "En 6.407, el dígito 0 está en el lugar de los centésimos.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: en 6.407 el 4 es décimos, el 0 es centésimos y el 7 es milésimos."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál fracción simplificada equivale a 0.15?",
+      "opciones": ["3/20", "15/100", "1/5", "3/10"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "0.15 = 15/100, y simplificando entre 5 queda 3/20."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada valor con su lugar al ordenarlos de menor a mayor.",
+      "columnaA": ["0.9", "4/5", "0.72"],
+      "columnaB": ["Es el mayor", "Es el intermedio", "Es el menor"],
+      "parejasCorrectas": [0, 1, 2],
+      "retroalimentacion": "4/5 = 0.8, así que el orden de menor a mayor es 0.72, 4/5 (0.8), 0.9."
+    }
+  ]
+}

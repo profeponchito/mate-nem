@@ -1,0 +1,312 @@
+{
+  "id": "EJ-14",
+  "grado": "Ejercítate",
+  "numero": 14,
+  "categoria": "intermedio",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Proporcionalidad directa",
+  "contenido": "Relación entre dos cantidades que aumentan o disminuyen en la misma proporción, manteniendo un cociente constante.",
+  "pda": "Identifica situaciones de proporcionalidad directa, calcula la constante de proporcionalidad y resuelve problemas usando la regla de tres directa.",
+  "problematizacion": {
+    "contexto": "En una tienda de abarrotes, el precio de las manzanas es de $18 por kilogramo. Mientras más kilos compres, más pagas, siempre en la misma proporción, sin importar cuántos kilos lleves.",
+    "pregunta": "Si 2 kg de manzanas cuestan $36, ¿cuánto costarán 5 kg si el precio por kilo no cambia?"
+  },
+  "subtemas": [
+    {
+      "numero": "14.1",
+      "titulo": "¿Qué es la proporcionalidad directa?",
+      "explicacion": "Dos cantidades son directamente proporcionales cuando, al multiplicar o dividir una de ellas por un número, la otra queda multiplicada o dividida por ese mismo número. Esto significa que su cociente (una entre la otra) siempre da el mismo valor, llamado constante de proporcionalidad (k). Si el precio por kilo de una fruta es fijo, comprar el doble de kilos cuesta el doble de dinero.",
+      "formula": "k = y / x (constante de proporcionalidad)",
+      "ejemplos": [
+        "Si 3 kg de naranjas cuestan $60, la constante es k = 60/3 = 20 (cada kilo cuesta $20).",
+        "Si un coche recorre 100 km en 2 horas a velocidad constante, k = 100/2 = 50 km/h."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si al doble de horas trabajadas corresponde el doble de pago, se trata de una proporcionalidad directa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Cuando una cantidad se duplica y la otra también se duplica en la misma proporción, es proporcionalidad directa."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál situación representa una proporcionalidad directa?",
+          "opciones": [
+            "El costo total de boletos de cine según el número de boletos comprados",
+            "La edad de una persona según su estatura",
+            "El tiempo que tarda en vaciarse una alberca según el número de bombas que la vacían",
+            "La temperatura del día según la hora"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El costo total aumenta en la misma proporción que el número de boletos comprados: es una relación directa."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 4 cuadernos cuestan $80, la constante de proporcionalidad (precio por cuaderno) es $___.",
+          "respuestaCorrecta": "20",
+          "retroalimentacion": "80÷4=20, cada cuaderno cuesta 20 pesos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una proporcionalidad directa, el cociente entre las dos cantidades siempre es el mismo.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Esa es justamente la definición de la constante de proporcionalidad k."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un albañil coloca 15 ladrillos en 3 minutos a ritmo constante. ¿Cuál es la constante de proporcionalidad (ladrillos por minuto)?",
+          "opciones": [
+            "5",
+            "3",
+            "15",
+            "45"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "15÷3=5 ladrillos por minuto."
+        }
+      ]
+    },
+    {
+      "numero": "14.2",
+      "titulo": "Tabla de valores y constante de proporcionalidad",
+      "explicacion": "Una tabla de proporcionalidad directa muestra pares de valores donde, al dividir cada valor de la segunda columna entre el correspondiente de la primera, siempre se obtiene la misma constante k. Esto permite completar tablas: si conoces k, puedes multiplicar cualquier valor de x por k para encontrar y, sin necesidad de conocer todos los datos de antemano.",
+      "formula": "y = k × x",
+      "ejemplos": [
+        "Tabla de kilos y precio: 1 kg→$25, 2 kg→$50, 3 kg→$75. La constante es k=25 (25/1=50/2=75/3).",
+        "Si k=8 pesos por litro de gasolina, para 6 litros: y = 8 × 6 = $48."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una tabla, 2 litros de leche cuestan $34 y 4 litros cuestan $68. ¿Cuál es la constante de proporcionalidad?",
+          "opciones": [
+            "17",
+            "2",
+            "34",
+            "68"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "34÷2=17 y 68÷4=17: la constante es 17 pesos por litro."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si la constante de proporcionalidad entre horas trabajadas y pago es k=$45 por hora, el pago por 6 horas es $___.",
+          "respuestaCorrecta": "270",
+          "retroalimentacion": "45×6=270 pesos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Con una constante k=12 pesos por kg, relaciona cada cantidad de kilos con su costo total.",
+          "columnaA": [
+            "3 kg",
+            "5 kg",
+            "8 kg"
+          ],
+          "columnaB": [
+            "96",
+            "36",
+            "60"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "3×12=36; 5×12=60; 8×12=96."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tabla muestra: 2 boletos → $90, 5 boletos → $225. ¿Cuánto cuesta 1 boleto?",
+          "opciones": [
+            "$45",
+            "$90",
+            "$225",
+            "$50"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "90÷2=45 y 225÷5=45: el precio por boleto es $45."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una tabla de proporcionalidad directa con k=7, si x=9 entonces y=63.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "y=k×x=7×9=63."
+        }
+      ]
+    },
+    {
+      "numero": "14.3",
+      "titulo": "Regla de tres directa",
+      "explicacion": "La regla de tres directa se usa para encontrar un valor desconocido cuando dos cantidades son directamente proporcionales: se acomodan los datos conocidos y el desconocido en una proporción, y se despeja multiplicando en cruz. Si sabes cuánto corresponde a una cantidad, puedes calcular cuánto corresponde a otra cantidad distinta manteniendo la misma razón.",
+      "formula": "a/b = c/x → x = (b × c) / a",
+      "ejemplos": [
+        "Si 5 kg de arroz cuestan $95, ¿cuánto cuestan 8 kg? x = (95×8)/5 = 152, o sea $152.",
+        "Si un coche recorre 180 km con 12 litros, ¿cuántos litros necesita para 300 km? x=(12×300)/180=20 litros."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 3 pizzas cuestan $270, ¿cuánto cuestan 7 pizzas al mismo precio por pizza?",
+          "opciones": [
+            "$630",
+            "$540",
+            "$810",
+            "$189"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Precio por pizza = 270÷3 = 90; 90×7 = 630 pesos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 4 trabajadores pintan 20 m² en un día, ¿cuántos m² pintará 1 trabajador? ___ m².",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "20÷4=5 m² por trabajador."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una receta para 6 personas usa 3 tazas de harina. ¿Cuántas tazas se necesitan para 10 personas?",
+          "opciones": [
+            "5",
+            "3.6",
+            "8",
+            "1.8"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3÷6=0.5 tazas por persona; 0.5×10=5 tazas."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 2 litros de pintura cubren 16 m², entonces 5 litros cubrirán 40 m².",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "16÷2=8 m² por litro; 8×5=40 m²."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En un viaje, un coche recorre 240 km con 20 litros de gasolina. ¿Cuántos litros necesita para recorrer 360 km, con el mismo rendimiento?",
+          "opciones": [
+            "30",
+            "18",
+            "15",
+            "24"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Rendimiento = 240÷20 = 12 km por litro; 360÷12 = 30 litros."
+        }
+      ]
+    },
+    {
+      "numero": "14.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: en la proporcionalidad directa, ambas cantidades aumentan o disminuyen juntas y su cociente y/x siempre es la misma constante k. Para resolver problemas puedes usar una tabla (multiplicar por k) o la regla de tres directa (multiplicar en cruz). Esto aplica a recetas, velocidad constante, precios por unidad y muchas otras situaciones cotidianas.",
+      "ejemplos": [
+        "Una receta para 4 personas usa 2 tazas de azúcar (k=0.5 tazas por persona). Para 10 personas: 0.5×10=5 tazas.",
+        "Un ciclista recorre 60 km en 3 horas (k=20 km/h constante). En 5 horas recorrerá 20×5=100 km."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una receta de agua de horchata para 8 vasos usa 4 tazas de arroz. ¿Cuántas tazas se necesitan para 20 vasos, manteniendo la proporción?",
+          "opciones": [
+            "10",
+            "8",
+            "16",
+            "5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4÷8=0.5 tazas por vaso; 0.5×20=10 tazas."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un ciclista mantiene una velocidad constante y recorre 45 km en 3 horas. En 5 horas recorrerá ___ km.",
+          "respuestaCorrecta": "75",
+          "retroalimentacion": "45÷3=15 km/h; 15×5=75 km."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si una impresora imprime 24 hojas en 2 minutos a ritmo constante, en 7 minutos imprimirá 84 hojas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "24÷2=12 hojas por minuto; 12×7=84 hojas."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación de proporcionalidad directa con su constante (k) correcta.",
+          "columnaA": [
+            "6 litros de leche cuestan $120",
+            "Un obrero coloca 40 baldosas en 5 horas",
+            "Una receta usa 9 tazas de harina para 3 pasteles"
+          ],
+          "columnaB": [
+            "3 tazas por pastel",
+            "$20 por litro",
+            "8 baldosas por hora"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "120÷6=$20 por litro; 40÷5=8 baldosas por hora; 9÷3=3 tazas por pastel."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tinaco se llena con una llave que aporta agua de manera constante: en 4 minutos junta 60 litros. ¿Cuántos litros habrá juntado en 10 minutos?",
+          "opciones": [
+            "150",
+            "120",
+            "100",
+            "240"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "60÷4=15 litros por minuto; 15×10=150 litros."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál de las siguientes es una situación de proporcionalidad directa?",
+      "opciones": [
+        "El costo de la renta de un salón según las horas rentadas, a tarifa fija por hora",
+        "La edad de un árbol según su altura",
+        "El número de páginas leídas según el color del libro",
+        "La temperatura ambiente según la hora del día"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "El costo total aumenta en la misma proporción que las horas rentadas: es una relación directa."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Si 5 boletos de camión cuestan $75, el costo de 9 boletos es $___.",
+      "respuestaCorrecta": "135",
+      "retroalimentacion": "75÷5=15 pesos por boleto; 15×9=135 pesos."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Si k=6 es la constante de proporcionalidad entre x y y, y x=8, entonces y=48.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "y=k×x=6×8=48."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Una fábrica produce 150 piezas en 5 horas a ritmo constante. ¿Cuántas piezas produce en 8 horas?",
+      "opciones": [
+        "240",
+        "200",
+        "180",
+        "300"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "150÷5=30 piezas por hora; 30×8=240 piezas."
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "id": "EJ-01",
+  "grado": "Ejercítate",
+  "numero": 1,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Números naturales y enteros",
+  "contenido": "Los números naturales y enteros: su ubicación en la recta numérica, valor absoluto y comparación.",
+  "pda": "Ubica, compara y ordena números naturales y enteros en la recta numérica para resolver situaciones de la vida cotidiana relacionadas con temperatura, altitud y dinero.",
+  "problematizacion": {
+    "contexto": "En una ciudad de montaña, el pronóstico del clima marca -3°C en la madrugada y 18°C al mediodía. Mientras tanto, un teleférico sube desde el pueblo (altitud 0, punto de referencia) hasta la cima, a 2,400 metros.",
+    "pregunta": "¿Cómo podemos comparar estas temperaturas y altitudes usando una sola recta numérica?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.1",
+      "titulo": "Números naturales y la recta numérica",
+      "explicacion": "Los números naturales son los que usamos para contar (1, 2, 3, 4...) y forman la base de la recta numérica, una línea donde cada punto representa un número. En la recta numérica, entre dos números el que está más a la derecha es siempre el mayor. Esta herramienta nos ayuda a visualizar la posición relativa de los números, no solo a memorizarlos.",
+      "formula": "0, 1, 2, 3, 4, 5, 6...",
+      "ejemplos": [
+        "En la recta numérica, el 7 está a la derecha del 4, porque 7 > 4.",
+        "Contar los 32 alumnos de un salón es un uso cotidiano de los números naturales."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes opciones es un número natural?",
+          "opciones": ["-3", "12", "2.5", "-8"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "12 es un número natural porque se usa para contar y no tiene signo negativo ni parte decimal."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El número 0 se considera parte de los números naturales según la definición más usada en la escuela.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "En la mayoría de los libros de secundaria, el 0 se incluye como el primer número natural, ya que representa 'ausencia de cantidad'."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la recta numérica, el número que está más a la derecha entre 15 y 9 es ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "15 está más a la derecha que 9 en la recta numérica, por lo tanto 15 es mayor."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué representa un punto en la recta numérica?",
+          "opciones": [
+            "Un color específico",
+            "La posición de un número respecto al 0",
+            "Una operación matemática",
+            "Un símbolo sin significado"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Cada punto de la recta numérica marca la posición de un número, medida a partir del 0 como referencia."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada número con su posición relativa entre los tres.",
+          "columnaA": ["50", "1", "18"],
+          "columnaB": ["Es el menor de los tres", "Es el mayor de los tres", "Está entre 10 y 20"],
+          "parejasCorrectas": [1, 0, 2],
+          "retroalimentacion": "50 es el mayor de los tres; 1 es el menor; 18 está entre 10 y 20."
+        }
+      ]
+    },
+    {
+      "numero": "1.2",
+      "titulo": "Enteros: valor absoluto y opuestos",
+      "explicacion": "Los números enteros incluyen los naturales, sus opuestos (los negativos) y el cero. El valor absoluto de un número es su distancia al cero en la recta numérica, sin importar el signo, por eso siempre es positivo o cero. Dos números son opuestos cuando están a la misma distancia del cero pero en direcciones distintas, como 5 y -5.",
+      "formula": "|n| = distancia de n al cero",
+      "ejemplos": [
+        "El valor absoluto de -8 es 8, porque -8 está a 8 unidades del cero.",
+        "El opuesto de 12 es -12, porque ambos están a 12 unidades del cero, pero en direcciones distintas."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El valor absoluto de -15 es ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "El valor absoluto siempre es positivo: |-15| = 15, la distancia de -15 al cero."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El opuesto de -9 es 9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -9 y 9 están a la misma distancia del cero (9 unidades), pero en direcciones opuestas."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el valor absoluto de 20?",
+          "opciones": ["-20", "0", "20", "10"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "El valor absoluto de 20 es 20, porque ya es positivo y está a 20 unidades del cero."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El opuesto de 7 es ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "El opuesto de 7 es -7: ambos están a 7 unidades del cero, pero en direcciones distintas."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": ["|-6|", "Opuesto de 14", "|10|"],
+          "columnaB": ["10", "6", "-14"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "|-6| = 6; el opuesto de 14 es -14; |10| = 10."
+        }
+      ]
+    },
+    {
+      "numero": "1.3",
+      "titulo": "Comparar y ordenar enteros",
+      "explicacion": "Para comparar enteros usamos la recta numérica: el mayor es el que está más a la derecha. Esto significa que, entre dos números negativos, el que tiene mayor valor absoluto (está 'más lejos' del cero) en realidad es el menor. Por ejemplo, una deuda de -300 pesos es 'más grande' que una de -50 pesos, pero como número, -300 es menor que -50.",
+      "ejemplos": [
+        "Comparar -20 y -5: -20 está más a la izquierda, entonces -20 < -5, aunque 20 sea mayor que 5 en valor absoluto.",
+        "Una cuenta bancaria con -300 pesos (deuda grande) representa un número menor que una con -50 pesos (deuda pequeña)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -6, 2, -9, 0",
+          "opciones": ["-9, -6, 0, 2", "2, 0, -6, -9", "-6, -9, 0, 2", "0, -6, -9, 2"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -9 < -6 < 0 < 2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": ["15, -4, -11, -20", "-20, -11, -4, 15", "-4, -11, 15, -20", "15, -20, -4, -11"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 15 > -4 > -11 > -20."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-30 es menor que -12.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "-30 está más a la izquierda que -12 en la recta numérica, así que -30 < -12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -8, -25, 3, -1 es ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "3 es el único número positivo de la lista, por lo tanto es el mayor."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
+          "opciones": ["22, -6, -14, -19", "-19, -14, -6, 22", "22, -19, -6, -14", "-6, -14, -19, 22"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 22 > -6 > -14 > -19."
+        }
+      ]
+    },
+    {
+      "numero": "1.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: los números naturales sirven para contar, y los enteros agregan el cero y los negativos. En la recta numérica, el mayor número es el que está más a la derecha; entre dos negativos, el que 'parece' más grande en valor absoluto en realidad es el menor. Estas ideas se usan todos los días para comparar temperaturas, altitudes y saldos de dinero, siempre usando el 0 como referencia.",
+      "ejemplos": [
+        "Un avión vuela a 9,000 m de altitud (positivo) y un buzo está a -30 m (bajo el nivel del mar); ambos usan el 0 como referencia.",
+        "Comparando temperaturas: -5°C es más cálido que -12°C, porque -5 está más a la derecha en la recta numérica."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un submarino está a -85 m y un dron vuela a 60 m sobre el nivel del mar. ¿Cuál de los dos está más lejos del nivel del mar (0)?",
+          "opciones": [
+            "El submarino, porque |-85| > |60|",
+            "El dron, porque 60 > -85",
+            "Ambos están a la misma distancia",
+            "No se puede saber sin más datos"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El submarino está a 85 m de distancia del 0 y el dron a 60 m; como 85 > 60, el submarino está más lejos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada saldo bancario con su descripción.",
+          "columnaA": ["-500 pesos", "150 pesos", "-20 pesos"],
+          "columnaB": ["Es una deuda pequeña", "Tiene saldo a favor", "Es la deuda más grande"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "-500 es la deuda más grande (más lejos del 0); 150 es saldo a favor; -20 es una deuda pequeña."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si la temperatura en la mañana es -6°C y baja 4°C más, la nueva temperatura es ___°C.",
+          "respuestaCorrecta": "-10",
+          "retroalimentacion": "-6 menos 4 grados más es -10°C: la temperatura sigue bajando por debajo de cero."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una altitud de -50 m (bajo el nivel del mar) es menor que una altitud de 10 m.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "-50 está más a la izquierda en la recta numérica que 10, por lo tanto -50 < 10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor estas altitudes: 200 m, -30 m, 0 m, -120 m",
+          "opciones": ["200, 0, -30, -120", "200, -30, 0, -120", "-120, -30, 0, 200", "0, 200, -30, -120"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 200 > 0 > -30 > -120."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál de los siguientes números NO es natural?",
+      "opciones": ["45", "-7", "1", "300"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "-7 no es un número natural porque los naturales no incluyen negativos."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El valor absoluto de -30 es igual al valor absoluto de 30.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: |-30| = 30 y |30| = 30, ambos representan la misma distancia al cero."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "El número menor entre 8, -14, 0, -3 es ___.",
+      "respuestaCorrecta": "-14",
+      "retroalimentacion": "-14 está más a la izquierda en la recta numérica que los demás, así que es el menor."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada número con su valor absoluto.",
+      "columnaA": ["-9", "15", "-1"],
+      "columnaB": ["1", "15", "9"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "|-9| = 9; |15| = 15; |-1| = 1."
+    }
+  ]
+}

@@ -67,8 +67,17 @@ const COLOR_EJERCITATE = {
   pista: '#334155'
 };
 
+/** "ejercitate" es un pseudo-grado: reutiliza todo el flujo de vistaPDA/
+ * vistaListaPDA (camino, gamificación, webhook, constancia) sin pertenecer
+ * a la ruta curricular de ningún grado — solo cambia el acento de color. */
 function temaGrado_(grado) {
+  if (grado === 'ejercitate') return COLOR_EJERCITATE;
   return TEMAS_GRADO[grado] || TEMAS_GRADO['1°'];
+}
+
+/** Texto legible para el encabezado/breadcrumb de un (pseudo-)grado. */
+function etiquetaGrado_(grado) {
+  return grado === 'ejercitate' ? 'Ejercítate' : `${grado} de secundaria`;
 }
 
 // Un color distinto por FASE del recorrido de un PDA: además de vistoso,
@@ -356,7 +365,7 @@ function vistaSeleccionGrado() {
     ${encabezado_(sesion)}
     <div class="max-w-3xl mx-auto px-4 py-8">
       <h2 class="font-heading text-2xl font-bold text-slate-800 mb-1">Hola, ${escapeHTML_(sesion.nombre.split(' ')[0])} 👋</h2>
-      <p class="text-slate-500 mb-6">Elige tu grado para ver los PDAs disponibles, o practica operaciones básicas sin importar tu grado.</p>
+      <p class="text-slate-500 mb-6">Elige tu grado para ver los PDAs disponibles, o practica cualquier tema de matemáticas de secundaria sin importar tu grado.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         ${grados.map((grado, i) => {
           const tema = temaGrado_(grado);
@@ -373,12 +382,12 @@ function vistaSeleccionGrado() {
           </a>
         `;
         }).join('')}
-        <a href="#/ejercitate" ${retraso_(3, 90)}
+        <a href="#/pda-lista/ejercitate" ${retraso_(3, 90)}
            class="mn-tarjeta mn-elevar group block rounded-3xl p-[2px] bg-gradient-to-br ${ej.grad} shadow-lg">
           <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full flex flex-col items-center justify-center">
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl ${ej.chip} mb-2">${icono_('operaciones', 'w-6 h-6')}</span>
             <span class="font-heading text-xl font-extrabold bg-gradient-to-br ${ej.grad} bg-clip-text text-transparent">Ejercítate</span>
-            <p class="text-slate-500 mt-1 font-medium text-sm">Operaciones básicas</p>
+            <p class="text-slate-500 mt-1 font-medium text-sm">36 temas, todos los grados</p>
             <p class="mt-3 inline-flex items-center gap-1 text-sm font-semibold ${ej.texto}">
               Practicar ${icono_('flecha', 'w-4 h-4 group-hover:translate-x-1 transition-transform')}
             </p>
@@ -390,44 +399,37 @@ function vistaSeleccionGrado() {
 }
 
 // ============================================================
-// Vista: Ejercítate (operaciones básicas) — acceso ya disponible desde la
-// pantalla de selección de grado; el contenido interactivo (problematización
-// + subtemas calificados de cada operación) todavía está en construcción.
-// ============================================================
-function vistaEjercitate() {
-  const sesion = obtenerSesion();
-  if (!sesion) { navegar('/'); return ''; }
-  const ej = COLOR_EJERCITATE;
-
-  return `
-    ${encabezado_(sesion)}
-    <div class="max-w-2xl mx-auto px-4 py-8">
-      <a href="#/grados" class="inline-flex items-center gap-1 text-sm font-semibold ${ej.texto} hover:underline">
-        ${icono_('flecha', 'w-4 h-4 rotate-180')} Volver
-      </a>
-      <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4 text-center">
-        <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl ${ej.chip} mb-3">${icono_('operaciones', 'w-7 h-7')}</span>
-        <h2 class="font-heading text-2xl font-bold text-slate-800 mb-2">Ejercítate: operaciones básicas</h2>
-        <p class="text-slate-600 mb-4">Suma, resta, multiplicación y división — práctica libre, calificada igual que un PDA, disponible para cualquier grado.</p>
-        <p class="text-slate-400 text-sm">Estamos construyendo el contenido interactivo de esta sección. Muy pronto podrás practicar aquí.</p>
-        <div class="mt-5 grid grid-cols-2 gap-2 max-w-xs mx-auto text-left">
-          ${['E.1 Suma', 'E.2 Resta', 'E.3 Multiplicación', 'E.4 División'].map((item) => `
-            <div class="text-sm px-3 py-2 rounded-xl border border-slate-100 bg-slate-50 text-slate-500">${escapeHTML_(item)}</div>
-          `).join('')}
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-// ============================================================
 // Vista: Lista de PDAs de un grado
 // ============================================================
+/** Las 4 categorías de "Ejercítate" (pseudo-grado), en el orden fijo del
+ * usuario — cada una se dibuja como su propio mini-camino serpenteante,
+ * con un encabezado, en vez de un solo camino de 36 nodos sin distinción. */
+const CATEGORIAS_EJERCITATE = [
+  { clave: 'basico', etiqueta: 'Temas básicos · 1°' },
+  { clave: 'intermedio', etiqueta: 'Temas intermedios · 2°' },
+  { clave: 'avanzado', etiqueta: 'Temas avanzados · 3°' },
+  { clave: 'estadistica', etiqueta: 'Estadística y probabilidad' }
+];
+
+function caminoEjercitateAgrupado_(pdas, grado, tema) {
+  return CATEGORIAS_EJERCITATE.map((cat) => {
+    const items = pdas.filter((p) => p.categoria === cat.clave);
+    if (items.length === 0) return '';
+    return `
+      <div class="mb-10">
+        <h3 class="font-heading text-lg font-bold ${tema.texto} text-center mb-1">${escapeHTML_(cat.etiqueta)}</h3>
+        ${caminoPDAs_(items, grado, tema)}
+      </div>
+    `;
+  }).join('');
+}
+
 async function vistaListaPDA({ grado }) {
   const sesion = obtenerSesion();
   if (!sesion) { navegar('/'); return ''; }
 
   const tema = temaGrado_(grado);
+  const esEjercitate = grado === 'ejercitate';
   let pdas = [];
   let error = null;
   try {
@@ -440,12 +442,13 @@ async function vistaListaPDA({ grado }) {
     ${encabezado_(sesion)}
     <div class="max-w-2xl mx-auto px-4 py-8">
       <a href="#/grados" class="inline-flex items-center gap-1 text-sm font-semibold ${tema.texto} hover:underline">
-        ${icono_('flecha', 'w-4 h-4 rotate-180')} Cambiar de grado
+        ${icono_('flecha', 'w-4 h-4 rotate-180')} ${esEjercitate ? 'Volver' : 'Cambiar de grado'}
       </a>
-      <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-6">PDAs de ${escapeHTML_(grado)} de secundaria</h2>
+      <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-1">${esEjercitate ? 'Ejercítate' : `PDAs de ${etiquetaGrado_(grado)}`}</h2>
+      ${esEjercitate ? `<p class="text-slate-500 mb-6">36 temas de matemáticas de secundaria, disponibles para cualquier grado.</p>` : `<div class="mb-6"></div>`}
       ${error ? `<p class="text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-4 py-3">No se pudieron cargar los PDAs: ${escapeHTML_(error)}</p>` : ''}
       ${(!error && pdas.length === 0) ? `<p class="text-slate-500">Todavía no hay PDAs cargados para este grado. Vuelve pronto.</p>` : ''}
-      ${!error && pdas.length > 0 ? caminoPDAs_(pdas, grado, tema) : ''}
+      ${!error && pdas.length > 0 ? (esEjercitate ? caminoEjercitateAgrupado_(pdas, grado, tema) : caminoPDAs_(pdas, grado, tema)) : ''}
     </div>
   `;
 }
@@ -513,7 +516,7 @@ async function vistaPDA({ grado, id }) {
       ${encabezado_(sesion)}
       <div class="max-w-2xl mx-auto px-4 py-8">
         <a href="#/pda-lista/${encodeURIComponent(grado)}" class="inline-flex items-center gap-1 text-sm font-semibold ${tema.texto} hover:underline">
-          ${icono_('flecha', 'w-4 h-4 rotate-180')} ${escapeHTML_(grado)} secundaria
+          ${icono_('flecha', 'w-4 h-4 rotate-180')} ${escapeHTML_(etiquetaGrado_(grado))}
         </a>
         ${caminoPasos_(estado.pasoIndex, pasos.length, tema)}
         <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4">
@@ -996,7 +999,6 @@ ruta('/', vistaRegistro);
 ruta('/grados', vistaSeleccionGrado);
 ruta('/pda-lista/:grado', vistaListaPDA);
 ruta('/pda/:grado/:id', vistaPDA);
-ruta('/ejercitate', vistaEjercitate);
 rutaPorDefecto(vista404);
 
 document.addEventListener('DOMContentLoaded', () => {

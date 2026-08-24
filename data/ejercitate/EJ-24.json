@@ -1,0 +1,231 @@
+{
+  "id": "EJ-24",
+  "grado": "Ejercítate",
+  "numero": 24,
+  "categoria": "avanzado",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Funciones lineales",
+  "contenido": "Identificación, tabulación y evaluación de funciones lineales de la forma y = mx + b, reconociendo pendiente y ordenada al origen.",
+  "pda": "Reconoce y evalúa funciones lineales de la forma y = mx + b, identifica su pendiente y ordenada al origen, y las aplica a situaciones de costo y distancia.",
+  "problematizacion": {
+    "contexto": "Un taxi cobra una tarifa fija de $15 al abordar, más $8 por cada kilómetro recorrido. Mateo quiere saber cuánto pagará según la distancia de su viaje, antes de subir al taxi.",
+    "pregunta": "¿Existe una fórmula que le permita a Mateo calcular el costo del viaje solo con saber los kilómetros que recorrerá?"
+  },
+  "subtemas": [
+    {
+      "numero": "24.1",
+      "titulo": "¿Qué es una función lineal? La forma y = mx + b",
+      "explicacion": "Una función lineal es una regla que relaciona dos cantidades (x, y) mediante la fórmula y = mx + b, donde m y b son números fijos. Se llama 'lineal' porque, al graficarla, siempre forma una línea recta. En situaciones reales, x suele ser lo que tú controlas (por ejemplo los kilómetros recorridos) y y es el resultado que depende de x (por ejemplo el costo del viaje).",
+      "ejemplos": [
+        "En y = 3x + 5, si x = 2, entonces y = 3(2) + 5 = 11.",
+        "La tarifa del taxi es y = 8x + 15, donde x son los kilómetros recorridos y y es el costo total."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En la función y = 4x + 7, ¿cuál es el valor de b?",
+          "opciones": ["4", "7", "11", "0"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "En y = mx + b, el número que va solo (sin multiplicar a x) es b; aquí b = 7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la función y = 2x - 3, el valor de m es 2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "En y = mx + b, m es el número que multiplica a x; aquí m = 2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la función lineal y = mx + b, la letra m representa la ___.",
+          "respuestaCorrecta": "pendiente",
+          "retroalimentacion": "La letra m es la pendiente: indica qué tan inclinada está la recta y cómo cambia y por cada unidad que cambia x."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes es una función lineal?",
+          "opciones": ["y = 5x + 2", "y = x² + 1", "y = 3/x", "y = √x"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Una función lineal tiene la forma y = mx + b, sin exponentes, raíces ni x en el denominador; solo y = 5x + 2 cumple eso."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si y = 6x + 1 y x = 3, entonces y = ___.",
+          "respuestaCorrecta": "19",
+          "retroalimentacion": "Sustituyendo: y = 6(3) + 1 = 18 + 1 = 19."
+        }
+      ]
+    },
+    {
+      "numero": "24.2",
+      "titulo": "Pendiente y ordenada al origen",
+      "explicacion": "La pendiente (m) indica qué tan inclinada está la recta y cómo cambia y por cada unidad que aumenta x: si m es positiva, la recta sube; si es negativa, baja. La ordenada al origen (b) es el valor de y cuando x = 0, es decir, el punto exacto donde la recta cruza el eje Y. Cuando conoces dos puntos de la recta, también puedes calcular la pendiente dividiendo el cambio en y entre el cambio en x.",
+      "formula": "m = (y2 - y1) / (x2 - x1)",
+      "ejemplos": [
+        "En y = -2x + 4, la pendiente es -2 (por cada unidad que aumenta x, y disminuye 2) y la ordenada al origen es 4 (el punto (0,4)).",
+        "Con los puntos (1,5) y (3,9): m = (9 - 5) / (3 - 1) = 4/2 = 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la pendiente de la recta y = -5x + 2?",
+          "opciones": ["-5", "2", "5", "-2"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La pendiente es el número que multiplica a x, aquí m = -5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La ordenada al origen de la función y = 7x - 4 es ___.",
+          "respuestaCorrecta": "-4",
+          "retroalimentacion": "La ordenada al origen es el término independiente, el que no multiplica a x; aquí b = -4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La pendiente de la recta que pasa por los puntos (2,3) y (6,11) es 2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "m = (11 - 3) / (6 - 2) = 8/4 = 2. El enunciado es correcto."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Calcula la pendiente de la recta que pasa por (0,1) y (4,9).",
+          "opciones": ["2", "4", "8", "1"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "m = (9 - 1) / (4 - 0) = 8/4 = 2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué representa la ordenada al origen en la gráfica de una función lineal?",
+          "opciones": ["El punto donde la recta cruza el eje Y", "El punto donde la recta cruza el eje X", "La inclinación de la recta", "El valor máximo de y"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La ordenada al origen es el valor de y cuando x = 0, es decir, donde la recta cruza el eje Y."
+        }
+      ]
+    },
+    {
+      "numero": "24.3",
+      "titulo": "Tabular y evaluar funciones lineales",
+      "explicacion": "Evaluar una función lineal significa sustituir un valor de x en la fórmula para calcular el valor correspondiente de y. Si repites este proceso con varios valores de x, obtienes una tabla de valores, muy útil para predecir resultados o para graficar la recta, ya que cada pareja (x, y) es un punto de esa recta.",
+      "ejemplos": [
+        "Para y = 2x + 1: si x = 0, y = 1; si x = 1, y = 3; si x = 2, y = 5.",
+        "Para la tarifa del taxi y = 8x + 15: si x = 3 km, y = 8(3) + 15 = 39 pesos."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si y = 3x + 2 y x = 5, entonces y = ___.",
+          "respuestaCorrecta": "17",
+          "retroalimentacion": "Sustituyendo: y = 3(5) + 2 = 15 + 2 = 17."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Para la función y = -x + 10, ¿cuál es el valor de y cuando x = 4?",
+          "opciones": ["6", "14", "4", "-6"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sustituyendo: y = -(4) + 10 = 6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la función y = 5x, cuando x = 0, y = 0.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Sustituyendo x = 0: y = 5(0) = 0. Esta función no tiene término independiente, así que b = 0."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada valor de x con su valor de y en la función y = 4x - 1.",
+          "columnaA": ["x = 0", "x = 2", "x = 5"],
+          "columnaB": ["19", "-1", "7"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "x=0: y=4(0)-1=-1. x=2: y=4(2)-1=7. x=5: y=4(5)-1=19."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un plan de celular cobra y = 5x + 100 pesos, donde x son los gigas usados extra. ¿Cuánto se paga si se usan 6 gigas extra?",
+          "opciones": ["130", "105", "150", "100"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sustituyendo: y = 5(6) + 100 = 30 + 100 = 130 pesos."
+        }
+      ]
+    },
+    {
+      "numero": "24.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Para trabajar con cualquier función lineal: identifica m (la pendiente, cuánto cambia y por cada unidad de x) y b (la ordenada al origen, el valor inicial cuando x = 0), sustituye el valor de x que te interese para evaluarla, e interpreta el resultado en el contexto del problema. En situaciones reales, una tarifa fija corresponde a b y un costo por unidad (por km, por hora, etc.) corresponde a m.",
+      "ejemplos": [
+        "La tarifa del taxi es y = 8x + 15. Si Mateo recorre 6 km, pagará y = 8(6) + 15 = 63 pesos.",
+        "Si un plomero cobra $200 fijos más $50 por hora, la función es y = 50x + 200; para 3 horas, y = 50(3) + 200 = 350 pesos."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Mateo aborda el taxi y recorre 5 km. Usando y = 8x + 15, ¿cuánto pagará?",
+          "opciones": ["55", "40", "63", "70"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sustituyendo: y = 8(5) + 15 = 40 + 15 = 55 pesos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una tienda de renta de bicicletas cobra $30 fijos más $12 por hora. La función que representa el costo es y = 12x + ___.",
+          "respuestaCorrecta": "30",
+          "retroalimentacion": "La tarifa fija (cuando x = 0) es la ordenada al origen b, que aquí vale 30."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si un plomero cobra y = 50x + 200 y trabaja 4 horas, cobrará $400.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Sustituyendo: y = 50(4) + 200 = 200 + 200 = 400 pesos. El enunciado es correcto."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una llamada de larga distancia cuesta $2 por minuto más una conexión fija de $5. Si Sofía habla 10 minutos, ¿cuánto paga?",
+          "opciones": ["25", "20", "15", "30"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La función es y = 2x + 5; con x = 10, y = 2(10) + 5 = 25 pesos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su función lineal.",
+          "columnaA": ["Tarifa fija de $10 más $6 por km", "Renta de $50 más $15 por hora", "Pago de $3 por minuto sin tarifa fija"],
+          "columnaB": ["y = 3x", "y = 15x + 50", "y = 6x + 10"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "Tarifa fija más costo por unidad da y = mx + b, donde b es la tarifa fija y m el costo por unidad; sin tarifa fija, b = 0."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "En la función y = 9x - 2, ¿cuál es el valor de la pendiente?",
+      "opciones": ["9", "-2", "2", "-9"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "La pendiente es el número que multiplica a x; aquí m = 9."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Si y = 4x + 3 y x = 6, entonces y = ___.",
+      "respuestaCorrecta": "27",
+      "retroalimentacion": "Sustituyendo: y = 4(6) + 3 = 24 + 3 = 27."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "La ordenada al origen de y = -3x + 8 es 8.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "La ordenada al origen es el término independiente; aquí b = 8."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un servicio de streaming cobra y = 3x + 40 pesos, donde x son las pantallas extra. ¿Cuánto se paga con 2 pantallas extra?",
+      "opciones": ["46", "43", "49", "40"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Sustituyendo: y = 3(2) + 40 = 6 + 40 = 46 pesos."
+    }
+  ]
+}

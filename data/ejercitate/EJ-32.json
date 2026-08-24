@@ -1,0 +1,231 @@
+{
+  "id": "EJ-32",
+  "grado": "Ejercítate",
+  "numero": 32,
+  "categoria": "estadistica",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Tablas de frecuencia",
+  "contenido": "Organización de datos en tablas de frecuencia absoluta y relativa para facilitar su lectura e interpretación.",
+  "pda": "Organiza un conjunto de datos en una tabla de frecuencias y calcula frecuencias absolutas y relativas para interpretar información de situaciones cotidianas.",
+  "problematizacion": {
+    "contexto": "La cooperativa escolar registró el sabor de agua fresca que pidieron 30 alumnos en el descanso: limón, jamaica, horchata y tamarindo, anotados uno por uno en una libreta conforme llegaban.",
+    "pregunta": "Si quieres saber de un vistazo cuál sabor se pidió más sin tener que contar toda la lista cada vez, ¿cómo organizarías esos 30 datos?"
+  },
+  "subtemas": [
+    {
+      "numero": "32.1",
+      "titulo": "Frecuencia absoluta",
+      "explicacion": "La frecuencia absoluta es el número de veces que se repite un dato dentro de un conjunto de información. Contar uno por uno los datos sueltos es lento y fácil de equivocar; por eso se agrupan por categoría o valor y se anota cuántas veces aparece cada uno. La suma de todas las frecuencias absolutas siempre debe ser igual al total de datos recolectados, lo cual sirve para comprobar que no falte ni sobre ningún dato.",
+      "formula": "Frecuencia absoluta (fi) = número de veces que aparece un dato o categoría",
+      "ejemplos": [
+        "En una encuesta a 20 alumnos sobre su materia favorita: Matemáticas apareció 8 veces, Español 5 veces, Ciencias 4 veces y Historia 3 veces. La frecuencia absoluta de Matemáticas es 8, y 8+5+4+3=20, que coincide con el total de alumnos.",
+        "Se registraron las faltas de asistencia de un grupo en una semana: 0, 1, 0, 2, 0, 1, 3, 0, 1, 0. El valor 0 aparece 5 veces, entonces su frecuencia absoluta es 5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una votación por el color del uniforme deportivo, azul recibió 12 votos, verde 9 votos y rojo 4 votos. ¿Cuál es la frecuencia absoluta de \"verde\"?",
+          "opciones": ["9", "12", "4", "25"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La frecuencia absoluta de una categoría es simplemente el número de veces que aparece; verde recibió 9 votos, así que su frecuencia absoluta es 9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si en un salón de 30 alumnos, 18 dicen que vienen caminando a la escuela y el resto en camión, la frecuencia absoluta de \"en camión\" es ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "El total es 30 y 18 vienen caminando, entonces 30 - 18 = 12 alumnos vienen en camión; esa es su frecuencia absoluta."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La suma de todas las frecuencias absolutas de una tabla siempre debe ser igual al número total de datos recolectados.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: cada dato se cuenta una sola vez en alguna categoría, así que al sumar todas las frecuencias absolutas se recupera el total de datos."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se preguntó a 25 personas cuántas mascotas tienen: 10 dijeron 0, 8 dijeron 1, 5 dijeron 2 y el resto dijo 3. ¿Cuántas personas dijeron tener 3 mascotas?",
+          "opciones": ["2", "5", "8", "10"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "10 + 8 + 5 = 23 personas ya están contadas; como el total es 25, quedan 25 - 23 = 2 personas que dijeron tener 3 mascotas."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si se lanza un dado 40 veces y el número 6 sale 7 veces, la frecuencia absoluta del 6 es ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "La frecuencia absoluta es el conteo directo de apariciones: el 6 salió 7 veces, así que su frecuencia absoluta es 7."
+        }
+      ]
+    },
+    {
+      "numero": "32.2",
+      "titulo": "Frecuencia relativa y porcentaje",
+      "explicacion": "La frecuencia relativa compara la frecuencia absoluta de un dato con el total de datos, e indica qué proporción representa esa categoría dentro del conjunto completo. Se calcula dividiendo la frecuencia absoluta entre el total, y multiplicando por 100 se obtiene el porcentaje. Es útil porque permite comparar grupos de distinto tamaño: no es lo mismo que 8 personas prefieran algo de un grupo de 10, que 8 personas de un grupo de 200.",
+      "formula": "Frecuencia relativa (fr) = frecuencia absoluta ÷ total de datos; Porcentaje = fr × 100",
+      "ejemplos": [
+        "En un grupo de 40 alumnos, 10 obtuvieron calificación 10. Su frecuencia relativa es 10÷40 = 0.25, que equivale al 25% del grupo.",
+        "De 50 encuestados, 15 prefieren fútbol. La frecuencia relativa es 15÷50 = 0.3, es decir, el 30% prefiere fútbol."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una tabla con 20 datos totales, la categoría \"A\" tiene frecuencia absoluta 5. ¿Cuál es su frecuencia relativa?",
+          "opciones": ["0.25", "0.20", "5.00", "0.05"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Frecuencia relativa = frecuencia absoluta ÷ total = 5 ÷ 20 = 0.25."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si de 50 alumnos encuestados, 20 eligieron \"pizza\" como su comida favorita, el porcentaje de alumnos que eligió pizza es ___%.",
+          "respuestaCorrecta": "40",
+          "retroalimentacion": "Frecuencia relativa = 20÷50 = 0.4; en porcentaje, 0.4 × 100 = 40%."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si un valor tiene frecuencia relativa 0.5, eso significa que representa el 50% de los datos totales.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: para convertir la frecuencia relativa a porcentaje se multiplica por 100, y 0.5 × 100 = 50%."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una encuesta a 80 personas sobre su transporte favorito, 24 eligieron bicicleta. ¿Qué porcentaje del total eligió bicicleta?",
+          "opciones": ["30%", "24%", "3.3%", "56%"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "24 ÷ 80 = 0.3, y 0.3 × 100 = 30%."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una tabla de frecuencias, si la frecuencia relativa de una categoría es 0.15 y el total de datos es 200, su frecuencia absoluta es ___.",
+          "respuestaCorrecta": "30",
+          "retroalimentacion": "Frecuencia absoluta = frecuencia relativa × total = 0.15 × 200 = 30."
+        }
+      ]
+    },
+    {
+      "numero": "32.3",
+      "titulo": "Construir y leer una tabla de frecuencias",
+      "explicacion": "Para construir una tabla de frecuencias se organizan los datos en categorías o valores, se cuenta cuántas veces aparece cada uno (frecuencia absoluta), y se agregan columnas de frecuencia relativa y porcentaje para facilitar la comparación. Leer correctamente una tabla implica identificar qué representa cada columna y usar las frecuencias para responder preguntas sin tener que regresar a los datos originales uno por uno.",
+      "ejemplos": [
+        "Tabla de deporte favorito de 30 alumnos: Fútbol (fi=15, fr=0.5, 50%), Básquetbol (fi=9, fr=0.3, 30%), Voleibol (fi=6, fr=0.2, 20%). Sumando: 15+9+6=30 y 50%+30%+20%=100%, lo que confirma que la tabla está completa.",
+        "Si en una tabla de calificaciones de 25 alumnos la fila del 9 dice fi=10 y fr=0.4, entonces 10 alumnos sacaron 9, y representan el 40% del grupo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tabla de frecuencias sobre el número de hermanos de 40 alumnos muestra: 0 hermanos (fi=12), 1 hermano (fi=18), 2 hermanos (fi=7), 3 hermanos (fi=?). Si el total es 40, ¿cuál es la frecuencia absoluta de \"3 hermanos\"?",
+          "opciones": ["3", "37", "12", "18"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "12+18+7 = 37; como el total debe ser 40, la frecuencia faltante es 40 - 37 = 3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Una tabla registra el color favorito de 50 alumnos. Relaciona cada color con su frecuencia relativa correspondiente.",
+          "columnaA": ["Azul (fi=25)", "Rojo (fi=10)", "Verde (fi=15)"],
+          "columnaB": ["0.30", "0.50", "0.20"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "Azul: 25÷50=0.50; Rojo: 10÷50=0.20; Verde: 15÷50=0.30."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una tabla de frecuencias bien construida, la columna de porcentajes siempre debe sumar 100% (o muy cerca, por redondeo).",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: como cada dato pertenece a una sola categoría, los porcentajes de todas las categorías juntos representan el 100% del total."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una tabla sobre el medio de transporte de 60 alumnos, si \"caminando\" tiene fi=18 y \"bicicleta\" tiene fi=12, entre ambas categorías reúnen un ___% del total.",
+          "respuestaCorrecta": "50",
+          "retroalimentacion": "18+12=30 alumnos; 30÷60=0.5, que equivale al 50%."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tienda escolar registró en una tabla las ventas de la semana: Lápiz (fi=40, 40%), Cuaderno (fi=35, 35%), Goma (fi=25, 25%). ¿Cuántos artículos se vendieron en total esa semana?",
+          "opciones": ["100", "40", "60", "75"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como los porcentajes suman 100% y la frecuencia absoluta de Lápiz (40) corresponde al 40%, el total es 40÷0.4 = 100 artículos, lo cual también se comprueba sumando 40+35+25=100."
+        }
+      ]
+    },
+    {
+      "numero": "32.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: la frecuencia absoluta es el conteo directo de cuántas veces aparece un dato; la frecuencia relativa lo compara con el total dividiendo (fi÷total), y al multiplicar por 100 se obtiene el porcentaje. Una tabla de frecuencias completa debe cumplir dos comprobaciones: la suma de las frecuencias absolutas es igual al total de datos, y la suma de los porcentajes es igual a 100%. Usar estas comprobaciones ayuda a detectar errores y a interpretar la información con confianza.",
+      "ejemplos": [
+        "En una tabla de 30 alumnos sobre su mascota favorita: Perro (fi=15, 50%), Gato (fi=9, 30%), Otro (fi=6, 20%). Se comprueba: 15+9+6=30 y 50+30+20=100%, así que la tabla es correcta."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tabla sobre 90 alumnos y su videojuego favorito muestra: Acción (fi=36), Deportes (fi=27), Estrategia (fi=?). Los porcentajes de Acción y Deportes son 40% y 30%. ¿Qué porcentaje corresponde a Estrategia?",
+          "opciones": ["30%", "27%", "36%", "10%"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como los porcentajes deben sumar 100%, Estrategia = 100% - 40% - 30% = 30%, lo que coincide con fi=90-36-27=27 y 27÷90=0.3=30%."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada concepto de tabla de frecuencias con su definición correcta.",
+          "columnaA": ["Frecuencia absoluta", "Frecuencia relativa", "Suma de frecuencias absolutas"],
+          "columnaB": ["Debe ser igual al total de datos", "Número de veces que aparece un dato", "Frecuencia absoluta dividida entre el total"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "Frecuencia absoluta: conteo directo; frecuencia relativa: fi÷total; la suma de frecuencias absolutas siempre iguala al total de datos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una tabla de 200 encuestados sobre su red social favorita, si una categoría tiene frecuencia relativa 0.35, su frecuencia absoluta es ___.",
+          "respuestaCorrecta": "70",
+          "retroalimentacion": "Frecuencia absoluta = frecuencia relativa × total = 0.35 × 200 = 70."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si una tabla de frecuencias tiene un error de captura y una categoría quedó con un dato de más, la suma de frecuencias absolutas ya no coincidirá con el total real de datos recolectados.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: por eso comprobar que la suma de frecuencias absolutas coincida con el total es una forma útil de detectar errores en la tabla."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se registró el clima de 60 días: Soleado (fi=30), Nublado (fi=18), Lluvioso (fi=12). ¿Cuál es la frecuencia relativa de los días soleados o nublados juntos?",
+          "opciones": ["0.8", "0.5", "0.3", "1.0"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "30+18=48 días; 48÷60=0.8, es decir, el 80% de los días fueron soleados o nublados."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "Si en una encuesta a 50 alumnos, 15 dijeron que su materia favorita es Educación Física, la frecuencia relativa de esa respuesta es ___ (en decimal).",
+      "respuestaCorrecta": "0.3",
+      "retroalimentacion": "Frecuencia relativa = 15 ÷ 50 = 0.3, que equivale al 30% de los encuestados."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "En una tabla de frecuencias, la frecuencia relativa siempre es un número mayor a 1.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "Falso: la frecuencia relativa es una parte del total, así que siempre está entre 0 y 1 (o entre 0% y 100%)."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Una tabla sobre 45 estudiantes y su fruta favorita muestra: Manzana (fi=18), Plátano (fi=15), Naranja (fi=12). ¿Qué porcentaje representa la manzana?",
+      "opciones": ["40%", "18%", "33%", "27%"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "18 ÷ 45 = 0.4, que en porcentaje es 40%."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada dato de una tabla sobre 40 alumnos y su día favorito con su frecuencia relativa.",
+      "columnaA": ["Sábado (fi=20)", "Viernes (fi=12)", "Domingo (fi=8)"],
+      "columnaB": ["0.20", "0.50", "0.30"],
+      "parejasCorrectas": [1, 2, 0],
+      "retroalimentacion": "Sábado: 20÷40=0.50; Viernes: 12÷40=0.30; Domingo: 8÷40=0.20."
+    }
+  ]
+}

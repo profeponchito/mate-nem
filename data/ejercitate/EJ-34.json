@@ -1,0 +1,234 @@
+{
+  "id": "EJ-34",
+  "grado": "Ejercítate",
+  "numero": 34,
+  "categoria": "estadistica",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Media, mediana y moda",
+  "contenido": "Cálculo e interpretación de las medidas de tendencia central: media, mediana y moda.",
+  "pda": "Calcula e interpreta la media, la mediana y la moda de un conjunto de datos, y decide cuál medida de tendencia central conviene usar según el contexto.",
+  "problematizacion": {
+    "contexto": "El entrenador de un equipo de basquetbol anotó los puntos que hizo su mejor jugador en los últimos 5 partidos: 18, 22, 20, 45 y 19. Quiere saber qué número representa mejor el rendimiento normal del jugador, sin que un partido excepcional (como el de 45 puntos) distorsione la idea.",
+    "pregunta": "¿Qué número te daría una idea más justa del rendimiento típico del jugador: el promedio de todos los partidos o el valor de en medio?"
+  },
+  "subtemas": [
+    {
+      "numero": "34.1",
+      "titulo": "La media o promedio",
+      "explicacion": "La media (o promedio) se calcula sumando todos los datos y dividiendo el resultado entre el número de datos. Es la medida más usada porque toma en cuenta todos los valores, pero tiene una debilidad: un solo dato muy alto o muy bajo (un valor atípico) puede 'jalar' la media y hacer que no represente bien a la mayoría.",
+      "formula": "Media = (suma de todos los datos) ÷ (número de datos)",
+      "ejemplos": [
+        "Las calificaciones de Ana en 5 exámenes fueron 8, 9, 7, 10, 6. La media es (8+9+7+10+6)÷5 = 40÷5 = 8.",
+        "Un jugador anotó 2, 5, 3, 4, 6 puntos en 5 partidos. La media es (2+5+3+4+6)÷5 = 20÷5 = 4 puntos por partido."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Calcula la media de: 4, 6, 8, 10, 12",
+          "opciones": ["6", "7", "8", "9"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "La suma es 4+6+8+10+12 = 40, y 40÷5 = 8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La media de 5, 10, 15 es ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "La suma es 5+10+15 = 30, y 30÷3 = 10."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La media de un conjunto de datos siempre tiene que ser uno de los datos originales.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por ejemplo, la media de 2, 3 y 4 es 3, pero la media de 2 y 3 es 2.5, un valor que no estaba en los datos."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un taxista registró sus propinas durante 4 días: $20, $35, $15, $30. ¿Cuál es la propina promedio por día?",
+          "opciones": ["$20", "$25", "$30", "$35"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La suma es 20+35+15+30 = 100, y 100÷4 = 25."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada conjunto de datos con su media.",
+          "columnaA": ["2, 4, 6", "10, 20, 30", "5, 5, 5, 5"],
+          "columnaB": ["5", "20", "4"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "2,4,6 suma 12÷3=4; 10,20,30 suma 60÷3=20; 5,5,5,5 suma 20÷4=5."
+        }
+      ]
+    },
+    {
+      "numero": "34.2",
+      "titulo": "La mediana",
+      "explicacion": "La mediana es el valor que queda justo en medio cuando los datos se ordenan de menor a mayor. Si hay un número impar de datos, la mediana es el dato central; si hay un número par, la mediana es el promedio de los dos datos centrales. A diferencia de la media, la mediana no se ve afectada por valores muy extremos, por eso es útil cuando hay datos 'raros' en la lista.",
+      "ejemplos": [
+        "Las edades de 5 amigos ordenadas son 12, 13, 13, 14, 16. La mediana es 13 (el valor central).",
+        "Los precios de 6 playeras ordenados son 80, 90, 100, 120, 150, 200. Como son pares, la mediana es el promedio de los dos centrales: (100+120)÷2 = 110."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Encuentra la mediana de: 3, 7, 5, 9, 1 (primero ordénalos)",
+          "opciones": ["3", "5", "7", "9"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Ordenados: 1, 3, 5, 7, 9. El valor central es 5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La mediana de 2, 8, 4, 10 es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "Ordenados: 2, 4, 8, 10. Como son 4 datos (par), la mediana es el promedio de los dos centrales: (4+8)÷2 = 6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para encontrar la mediana, primero hay que ordenar los datos de menor a mayor (o de mayor a menor).",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la mediana solo tiene sentido si los datos están ordenados, porque es el valor 'de en medio'."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una lista de 7 datos ya ordenados, ¿qué posición ocupa el dato que es la mediana?",
+          "opciones": ["La posición 3", "La posición 4", "La posición 5", "El promedio de todos"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Con 7 datos (impar), la mediana está en la posición (7+1)÷2 = 4, dejando 3 datos antes y 3 después."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada conjunto de datos con su mediana.",
+          "columnaA": ["1, 2, 3, 4, 5", "10, 20, 30, 40", "6, 6, 6, 6, 6"],
+          "columnaB": ["25", "6", "3"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "1,2,3,4,5 tiene mediana 3; 10,20,30,40 tiene mediana (20+30)÷2=25; 6,6,6,6,6 tiene mediana 6."
+        }
+      ]
+    },
+    {
+      "numero": "34.3",
+      "titulo": "La moda",
+      "explicacion": "La moda es el dato que se repite más veces en un conjunto. Puede haber una sola moda (unimodal), dos modas (bimodal) o ninguna moda si todos los valores aparecen la misma cantidad de veces. La moda es la única medida de tendencia central que se puede usar con datos que no son números, como colores o deportes favoritos.",
+      "ejemplos": [
+        "Los colores de mochila más vendidos en una semana: azul, azul, rojo, verde, azul, rojo. La moda es azul (se repite 3 veces).",
+        "Las tallas de zapatos vendidas: 24, 25, 24, 26, 25, 24. La moda es 24 (aparece 3 veces)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la moda de: 5, 7, 5, 9, 5, 3?",
+          "opciones": ["3", "5", "7", "9"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El 5 aparece 3 veces, más que cualquier otro valor, así que es la moda."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La moda de los datos 2, 4, 4, 6, 8, 8, 8 es ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "El 8 aparece 3 veces (más que el 4, que aparece 2 veces), así que es la moda."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un conjunto de datos puede no tener moda si todos los valores son diferentes.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si ningún dato se repite, no hay un valor que sea 'el más frecuente', así que no hay moda."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una encuesta sobre el deporte favorito del salón se registró: fútbol, básquetbol, fútbol, voleibol, fútbol, básquetbol. ¿Cuál es la moda?",
+          "opciones": ["Fútbol", "Básquetbol", "Voleibol", "No hay moda"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Fútbol aparece 3 veces, más que básquetbol (2 veces) y voleibol (1 vez)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada conjunto de datos con su tipo de moda.",
+          "columnaA": ["3, 3, 3, 7, 9", "2, 2, 5, 5, 8", "1, 2, 3, 4, 5"],
+          "columnaB": ["Bimodal (dos modas)", "Unimodal (una moda)", "Sin moda"],
+          "parejasCorrectas": [1, 0, 2],
+          "retroalimentacion": "3,3,3,7,9 tiene una sola moda (3); 2,2,5,5,8 tiene dos modas (2 y 5); 1,2,3,4,5 no tiene moda."
+        }
+      ]
+    },
+    {
+      "numero": "34.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: la media suma todos los datos y divide entre cuántos son; la mediana es el valor de en medio al ordenar los datos; la moda es el valor que más se repite. La media conviene cuando los datos son parejos y no hay valores extremos; la mediana conviene cuando hay valores atípicos que distorsionarían la media; y la moda conviene para datos categóricos o para saber cuál es el valor más común.",
+      "ejemplos": [
+        "Las ventas diarias (en cientos de pesos) de una tienda en 5 días fueron 2, 2, 2, 4, 20. La media es 6, un número alto por el día excepcional de 20; la mediana (2) refleja mejor las ventas típicas de la mayoría de los días."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Las ventas diarias (en cientos de pesos) de una tienda en 5 días fueron: 2, 2, 2, 4, 20. ¿Cuál es la media?",
+          "opciones": ["2", "4", "6", "20"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "La suma es 2+2+2+4+20 = 30, y 30÷5 = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En esos mismos datos (2, 2, 2, 4, 20), la mediana es ___.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "Ordenados: 2, 2, 2, 4, 20. El valor central (posición 3 de 5) es 2."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En este caso, la mediana representa mejor el comportamiento típico de las ventas que la media, porque el día de 20 fue un valor atípico.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la media (6) está 'jalada' hacia arriba por el día excepcional; la mediana (2) refleja mejor la mayoría de los días."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál medida (media, mediana o moda) conviene más usar cuando los datos son categorías, como el color favorito de un grupo?",
+          "opciones": ["Media", "Mediana", "Moda", "Cualquiera, da lo mismo"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Con datos categóricos (no numéricos) no se puede sumar ni ordenar de forma matemática, así que solo la moda tiene sentido."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con la medida de tendencia central más conveniente.",
+          "columnaA": ["Sueldos de una empresa con un valor muy alto (el del dueño)", "Tallas de playera más vendidas en una tienda", "Calificaciones parejas de un grupo, sin valores extremos"],
+          "columnaB": ["Moda", "Media", "Mediana"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "Sueldos con un valor extremo: conviene la mediana. Tallas más vendidas: conviene la moda. Calificaciones parejas: conviene la media."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Calcula la media de: 10, 20, 30, 40",
+      "opciones": ["20", "25", "30", "40"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "La suma es 10+20+30+40 = 100, y 100÷4 = 25."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "La mediana de 3, 9, 6, 12, 15 es ___.",
+      "respuestaCorrecta": "9",
+      "retroalimentacion": "Ordenados: 3, 6, 9, 12, 15. El valor central es 9."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "La moda de un conjunto de datos siempre es única.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "Falso: puede haber dos modas (bimodal), más de dos, o ninguna, si ningún valor se repite más que los demás."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada término con su definición.",
+      "columnaA": ["Media", "Mediana", "Moda"],
+      "columnaB": ["El valor que más se repite", "El promedio de todos los datos", "El valor central al ordenar los datos"],
+      "parejasCorrectas": [1, 2, 0],
+      "retroalimentacion": "Media: promedio de todos los datos. Mediana: valor central al ordenar. Moda: valor que más se repite."
+    }
+  ]
+}

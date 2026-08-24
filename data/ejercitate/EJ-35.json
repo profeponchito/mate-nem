@@ -1,0 +1,233 @@
+{
+  "id": "EJ-35",
+  "grado": "Ejercítate",
+  "numero": 35,
+  "categoria": "estadistica",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Probabilidad simple",
+  "contenido": "Cálculo de la probabilidad de eventos simples a partir de casos favorables y casos posibles.",
+  "pda": "Identifica el espacio muestral de un experimento aleatorio y calcula la probabilidad de un evento simple, expresándola como fracción, decimal y porcentaje.",
+  "problematizacion": {
+    "contexto": "En la kermés de la escuela hay una urna con 10 boletos numerados del 1 al 10, revueltos y sin poder verlos. Solo el boleto número 7 gana un premio grande. Muchos alumnos hacen fila para comprar un boleto.",
+    "pregunta": "Si compras un solo boleto y lo sacas al azar, ¿qué tan probable es que sea justo el número 7?"
+  },
+  "subtemas": [
+    {
+      "numero": "35.1",
+      "titulo": "Experimento aleatorio y espacio muestral",
+      "explicacion": "Un experimento aleatorio es aquel cuyo resultado no se puede predecir con certeza antes de realizarlo, aunque sí se conocen de antemano todos los resultados posibles. Ese conjunto de todos los resultados posibles se llama espacio muestral. Conocer el espacio muestral es el primer paso para calcular cualquier probabilidad.",
+      "ejemplos": [
+        "Lanzar una moneda es un experimento aleatorio: no sabes si caerá águila o sol, pero su espacio muestral es {águila, sol}.",
+        "Lanzar un dado de 6 caras es aleatorio; su espacio muestral es {1, 2, 3, 4, 5, 6}."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el espacio muestral de lanzar una moneda?",
+          "opciones": ["{águila}", "{águila, sol}", "{sol, cara, cruz}", "{1, 2}"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Una moneda solo tiene dos resultados posibles: águila o sol."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al lanzar un dado de 6 caras, el espacio muestral tiene 6 resultados posibles.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el espacio muestral es {1, 2, 3, 4, 5, 6}, con 6 resultados."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El experimento de elegir al azar una carta de una baraja de 52 cartas tiene un espacio muestral de ___ resultados posibles.",
+          "respuestaCorrecta": "52",
+          "retroalimentacion": "Cada una de las 52 cartas es un resultado posible distinto."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes situaciones NO es un experimento aleatorio?",
+          "opciones": ["Lanzar un dado", "Sacar una canica de una bolsa sin ver", "Que el sol salga mañana por el oriente", "Girar una ruleta"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Que el sol salga por el oriente es un hecho seguro (determinista), no depende del azar; las otras tres sí tienen resultados inciertos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada experimento con el número de resultados de su espacio muestral.",
+          "columnaA": ["Lanzar una moneda", "Lanzar un dado", "Elegir un día de la semana al azar"],
+          "columnaB": ["7 resultados posibles", "2 resultados posibles", "6 resultados posibles"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "Moneda: 2 resultados. Dado: 6 resultados. Día de la semana: 7 resultados."
+        }
+      ]
+    },
+    {
+      "numero": "35.2",
+      "titulo": "Probabilidad de un evento",
+      "explicacion": "Cuando todos los resultados de un experimento son igualmente posibles, la probabilidad de un evento se calcula dividiendo el número de casos favorables (los que cumplen lo que buscamos) entre el número de casos posibles (todo el espacio muestral). A esto se le conoce como la regla de Laplace.",
+      "formula": "P(evento) = (casos favorables) ÷ (casos posibles)",
+      "ejemplos": [
+        "En un dado, la probabilidad de sacar un 4 es 1 caso favorable entre 6 posibles: P = 1/6.",
+        "En una urna con 5 canicas rojas y 3 azules (8 en total), la probabilidad de sacar una azul es P = 3/8."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una bolsa hay 4 canicas rojas y 6 verdes (10 en total). ¿Cuál es la probabilidad de sacar una canica roja?",
+          "opciones": ["4/10", "6/10", "1/10", "10/4"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Hay 4 canicas rojas (casos favorables) de 10 en total (casos posibles): P = 4/10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al lanzar un dado, la probabilidad de obtener un número par es ___ (como fracción simplificada).",
+          "respuestaCorrecta": "1/2",
+          "retroalimentacion": "Los pares son {2, 4, 6}: 3 casos favorables de 6 posibles, 3/6 = 1/2."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una baraja de 52 cartas, la probabilidad de sacar un as (hay 4 ases) es 4/52.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 4 casos favorables (los ases) entre 52 casos posibles."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una ruleta tiene 8 secciones iguales, de las cuales 3 están premiadas. ¿Cuál es la probabilidad de caer en una sección premiada?",
+          "opciones": ["3/8", "5/8", "8/3", "3/5"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3 secciones premiadas (favorables) de 8 secciones en total (posibles): P = 3/8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su probabilidad.",
+          "columnaA": ["Sacar un 6 en un dado", "Sacar un corazón de una baraja de 52 (13 corazones)", "Sacar canica azul de una bolsa con 2 azules y 2 rojas"],
+          "columnaB": ["1/2", "1/6", "1/4"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "6 en dado: 1/6. Corazón: 13/52 = 1/4. Canica azul: 2/4 = 1/2."
+        }
+      ]
+    },
+    {
+      "numero": "35.3",
+      "titulo": "La probabilidad como fracción, decimal y porcentaje",
+      "explicacion": "Una misma probabilidad se puede expresar de tres formas equivalentes: como fracción, como decimal (dividiendo el numerador entre el denominador) o como porcentaje (multiplicando el decimal por 100). Usar una u otra forma depende del contexto: los porcentajes son fáciles de entender en la vida diaria, como cuando se dice '70% de probabilidad de lluvia'.",
+      "ejemplos": [
+        "La probabilidad 1/4 en decimal es 0.25, y en porcentaje es 25%.",
+        "Si P = 3/5, en decimal es 0.6 y en porcentaje es 60%."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "La probabilidad 1/2 expresada en porcentaje es:",
+          "opciones": ["25%", "50%", "75%", "12%"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "1/2 = 0.5, y 0.5 × 100 = 50%."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La probabilidad 3/4 en decimal es ___.",
+          "respuestaCorrecta": "0.75",
+          "retroalimentacion": "3 ÷ 4 = 0.75."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una probabilidad de 0.9 equivale a 90%.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 0.9 × 100 = 90%."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si la probabilidad de lluvia mañana es del 20%, ¿cuál es su equivalente en fracción, en su forma más simple?",
+          "opciones": ["1/5", "1/4", "1/10", "3/10"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "20% = 20/100 = 1/5 al simplificar."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su porcentaje equivalente.",
+          "columnaA": ["1/4", "1/2", "3/5"],
+          "columnaB": ["60%", "25%", "50%"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "1/4 = 25%. 1/2 = 50%. 3/5 = 0.6 = 60%."
+        }
+      ]
+    },
+    {
+      "numero": "35.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Para resolver un problema de probabilidad: primero identifica el espacio muestral (todos los resultados posibles), luego cuenta los casos favorables al evento que te interesa, calcula la fracción favorables/posibles, y si se pide, conviértela a decimal (dividiendo) o a porcentaje (multiplicando el decimal por 100).",
+      "ejemplos": [
+        "Al lanzar dos monedas, el espacio muestral es {águila-águila, águila-sol, sol-águila, sol-sol}, 4 resultados. La probabilidad de obtener exactamente un águila (2 casos favorables) es P = 2/4 = 1/2 = 50%."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al lanzar un dado, ¿cuál es la probabilidad de obtener un número mayor que 4 (es decir, 5 o 6)?",
+          "opciones": ["1/3", "1/2", "2/3", "1/6"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Los casos favorables son {5, 6}: 2 de 6 posibles, 2/6 = 1/3."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una baraja de 52 cartas, la probabilidad de sacar un trébol (hay 13 tréboles) expresada en porcentaje es ___%.",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "13/52 = 1/4 = 0.25 = 25%."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al lanzar dos monedas, la probabilidad de que ambas caigan águila es 1/4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: de los 4 resultados posibles {AA, AS, SA, SS}, solo 1 es águila-águila: P = 1/4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una bolsa con 10 boletos numerados del 1 al 10, ¿cuál es la probabilidad de sacar un número múltiplo de 3?",
+          "opciones": ["3/10", "4/10", "1/10", "7/10"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Los múltiplos de 3 entre 1 y 10 son {3, 6, 9}: 3 casos favorables de 10 posibles."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada experimento y evento con su probabilidad.",
+          "columnaA": ["Lanzar un dado y sacar un 1", "Lanzar una moneda y sacar sol", "Sacar un as de una baraja de 52"],
+          "columnaB": ["1/13", "1/2", "1/6"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "Dado y sacar 1: 1/6. Moneda y sol: 1/2. As de baraja: 4/52 = 1/13."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es el espacio muestral de lanzar un dado de 6 caras?",
+      "opciones": ["{1, 2, 3}", "{1, 2, 3, 4, 5, 6}", "{0, 1}", "{1, 2, 3, 4, 5, 6, 7}"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "Un dado normal tiene 6 caras numeradas del 1 al 6."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "En una bolsa con 5 canicas verdes y 5 rojas, la probabilidad de sacar una verde es ___ (como fracción simplificada).",
+      "respuestaCorrecta": "1/2",
+      "retroalimentacion": "5 canicas verdes de 10 en total: 5/10 = 1/2."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "La probabilidad de un evento siempre está entre 0 y 1 (o entre 0% y 100%).",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 0 significa que el evento nunca ocurre y 1 (100%) que siempre ocurre; ningún evento puede tener una probabilidad fuera de ese rango."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "La probabilidad 2/5 expresada en porcentaje es:",
+      "opciones": ["20%", "40%", "25%", "50%"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "2 ÷ 5 = 0.4, y 0.4 × 100 = 40%."
+    }
+  ]
+}

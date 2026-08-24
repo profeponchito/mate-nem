@@ -1,0 +1,230 @@
+{
+  "id": "EJ-02",
+  "grado": "Ejercítate",
+  "numero": 2,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Operaciones básicas (suma, resta, multiplicación y división)",
+  "contenido": "Las cuatro operaciones básicas —suma, resta, multiplicación y división— y su uso para resolver problemas cotidianos.",
+  "pda": "Resuelve sumas, restas, multiplicaciones y divisiones con números naturales y enteros, aplicándolas en la solución de problemas de la vida diaria.",
+  "problematizacion": {
+    "contexto": "Un puesto de tacos vendió 45 tacos el sábado y 38 el domingo. El dueño compra ingredientes en paquetes de 6 tortillas y, al final de la semana, necesita repartir las ganancias entre 4 empleados.",
+    "pregunta": "¿Qué operaciones necesita usar el dueño del puesto para saber cuánto vendió en el fin de semana y cuánto le toca a cada empleado?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.1",
+      "titulo": "Suma y resta",
+      "explicacion": "La suma reúne cantidades para obtener un total, mientras que la resta encuentra la diferencia entre dos cantidades o quita una parte de un total. Ambas operaciones son inversas: si a un número le sumamos y luego le restamos la misma cantidad, regresamos al número original. Con enteros, sumar un número negativo equivale a restar, y restar un número negativo equivale a sumar.",
+      "ejemplos": [
+        "Si tienes 250 pesos y gastas 90, te quedan 250 - 90 = 160 pesos.",
+        "Una temperatura de 5°C baja 8 grados: 5 + (-8) = -3°C."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 48 + 27?",
+          "opciones": ["65", "75", "85", "70"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "48 + 27 = 75."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "72 - 39 = ___.",
+          "respuestaCorrecta": "33",
+          "retroalimentacion": "72 - 39 = 33."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Sumar -5 a un número es lo mismo que restarle 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: sumar un negativo tiene el mismo efecto que restar su valor absoluto."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un jugador tenía 120 puntos y perdió 38 en la ronda. ¿Cuántos puntos tiene ahora?",
+          "opciones": ["82", "78", "72", "88"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "120 - 38 = 82 puntos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Debes 150 pesos y pagas 60. Ahora debes ___ pesos.",
+          "respuestaCorrecta": "90",
+          "retroalimentacion": "150 - 60 = 90 pesos: la deuda se reduce con cada pago."
+        }
+      ]
+    },
+    {
+      "numero": "2.2",
+      "titulo": "Multiplicación",
+      "explicacion": "La multiplicación es una suma repetida de un mismo número; nos ahorra tiempo cuando necesitamos sumar muchas veces la misma cantidad. Con números enteros, el signo del resultado depende de los signos de los factores: si los signos son iguales, el resultado es positivo; si son distintos, el resultado es negativo.",
+      "ejemplos": [
+        "6 paquetes de 8 galletas tienen 6 × 8 = 48 galletas en total.",
+        "(-4) × 3 = -12, porque signos distintos dan un resultado negativo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 12 × 7?",
+          "opciones": ["74", "84", "94", "81"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "12 × 7 = 84."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "9 × 6 = ___.",
+          "respuestaCorrecta": "54",
+          "retroalimentacion": "9 × 6 = 54."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-5) × (-3) = 15.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: signos iguales (ambos negativos) dan un resultado positivo, 15."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si compras 8 boletos de 45 pesos cada uno, ¿cuánto gastas en total?",
+          "opciones": ["320", "360", "400", "280"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "8 × 45 = 360 pesos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada multiplicación con su resultado.",
+          "columnaA": ["(-6) × 4", "7 × (-2)", "(-3) × (-9)"],
+          "columnaB": ["-14", "27", "-24"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "(-6)×4 = -24; 7×(-2) = -14; (-3)×(-9) = 27."
+        }
+      ]
+    },
+    {
+      "numero": "2.3",
+      "titulo": "División con residuo",
+      "explicacion": "La división reparte una cantidad en partes iguales. Cuando el reparto no es exacto, queda un residuo: lo que sobra y no alcanza para formar otra parte completa. El residuo siempre debe ser menor que el divisor; si no lo es, significa que el cociente todavía no está completo.",
+      "ejemplos": [
+        "37 dulces repartidos entre 5 niños: 37 ÷ 5 = 7 con residuo 2 (cada niño recibe 7 y sobran 2).",
+        "50 ÷ 6 = 8 con residuo 2, porque 6 × 8 = 48 y 50 - 48 = 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al dividir 29 entre 4, ¿cuál es el cociente y el residuo?",
+          "opciones": ["Cociente 7, residuo 1", "Cociente 6, residuo 5", "Cociente 7, residuo 2", "Cociente 8, residuo 0"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4 × 7 = 28, y 29 - 28 = 1, así que el cociente es 7 y el residuo es 1."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "45 ÷ 6 tiene residuo ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "6 × 7 = 42, y 45 - 42 = 3, así que el residuo es 3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al dividir 50 entre 7, el residuo es 1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "7 × 7 = 49, y 50 - 49 = 1, así que el residuo es 1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten 53 canicas entre 8 niños en partes iguales. ¿Cuántas canicas sobran?",
+          "opciones": ["3", "5", "4", "6"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "8 × 6 = 48, y 53 - 48 = 5, así que sobran 5 canicas."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una división cuyo divisor es 9, el residuo nunca puede ser igual a ___ ni mayor.",
+          "respuestaCorrecta": "9",
+          "retroalimentacion": "El residuo siempre debe ser menor que el divisor; si el divisor es 9, el residuo debe ser menor que 9."
+        }
+      ]
+    },
+    {
+      "numero": "2.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: la suma reúne, la resta quita o compara, la multiplicación es una suma repetida y la división reparte en partes iguales (con o sin residuo). En problemas de la vida real casi siempre se combinan varias de estas operaciones, así que hay que leer con cuidado qué pide cada parte del problema antes de calcular.",
+      "ejemplos": [
+        "Un puesto vendió 45 tacos el sábado y 38 el domingo: 45 + 38 = 83 tacos en total. Si cada taco cuesta 15 pesos, la venta total es 83 × 15 = 1,245 pesos.",
+        "Si el dueño reparte 1,245 pesos entre 4 empleados, cada uno recibe 1245 ÷ 4 = 311 pesos, y sobra 1 peso de residuo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tienda vende 24 playeras a 120 pesos cada una, pero recibe una devolución de 3 playeras. ¿Cuánto dinero neto recibió?",
+          "opciones": ["2,520", "2,880", "2,160", "2,400"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "24 - 3 = 21 playeras vendidas; 21 × 120 = 2,520 pesos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un grupo de 96 alumnos se divide en equipos de 8. ¿Cuántos equipos se forman? ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "96 ÷ 8 = 12 equipos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El resultado de (15 + 9) × 2 es 48.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "15 + 9 = 24, y 24 × 2 = 48."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": ["18 + 27", "100 - 37", "9 × 6"],
+          "columnaB": ["63", "54", "45"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "18 + 27 = 45; 100 - 37 = 63; 9 × 6 = 54."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cine vendió 130 boletos el viernes y 95 el sábado. Si cada boleto cuesta 60 pesos, ¿cuánto dinero recaudó en los dos días?",
+          "opciones": ["13,500", "12,000", "14,200", "13,000"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "130 + 95 = 225 boletos; 225 × 60 = 13,500 pesos."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuánto es 156 - 89?",
+      "opciones": ["67", "77", "57", "87"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "156 - 89 = 67."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "8 × 9 = 72.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 8 × 9 = 72."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "61 ÷ 7 tiene residuo ___.",
+      "respuestaCorrecta": "5",
+      "retroalimentacion": "7 × 8 = 56, y 61 - 56 = 5, así que el residuo es 5."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": ["45 + 18", "100 - 42", "6 × 11"],
+      "columnaB": ["63", "58", "66"],
+      "parejasCorrectas": [0, 1, 2],
+      "retroalimentacion": "45 + 18 = 63; 100 - 42 = 58; 6 × 11 = 66."
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "EJ-22",
+  "grado": "Ejercítate",
+  "numero": 22,
+  "categoria": "avanzado",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Sistemas de ecuaciones",
+  "contenido": "Resolución de sistemas de dos ecuaciones lineales con dos incógnitas por sustitución y eliminación.",
+  "pda": "Resuelve sistemas de ecuaciones lineales 2x2 mediante los métodos de sustitución y suma/resta (eliminación), y los aplica a problemas de la vida cotidiana.",
+  "problematizacion": {
+    "contexto": "En la cooperativa escolar, Ana compró 2 refrescos y 3 tortas y pagó $58. Su amigo Luis compró 1 refresco y 2 tortas y pagó $33. Ninguno de los dos recuerda el precio individual de cada producto.",
+    "pregunta": "¿Cómo podemos encontrar el precio de un refresco y el precio de una torta usando estos dos datos al mismo tiempo?"
+  },
+  "subtemas": [
+    {
+      "numero": "22.1",
+      "titulo": "¿Qué es un sistema de ecuaciones 2×2?",
+      "explicacion": "Un sistema de ecuaciones 2×2 son dos ecuaciones con las mismas dos incógnitas (por ejemplo, x y y) que deben cumplirse al mismo tiempo. La solución del sistema no es un solo número, sino un par ordenado (x, y) que hace verdaderas ambas ecuaciones a la vez. Por eso, antes de resolver un sistema, es útil saber comprobar si un par propuesto realmente es la solución.",
+      "ejemplos": [
+        "Para el sistema x + y = 9, x - y = 3: si probamos (6, 3), vemos que 6 + 3 = 9 ✓ y 6 - 3 = 3 ✓, así que (6, 3) sí es solución.",
+        "Para el mismo sistema, el par (5, 4) NO es solución porque 5 + 4 = 9 sí se cumple, pero 5 - 4 = 1 ≠ 3."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes pares es la solución del sistema x + y = 9, x - y = 3?",
+          "opciones": ["(6, 3)", "(3, 6)", "(5, 4)", "(7, 2)"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Con x = 6, y = 3: 6 + 3 = 9 ✓ y 6 - 3 = 3 ✓. Cumple ambas ecuaciones al mismo tiempo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El par ordenado (4, 5) es solución del sistema x + y = 9, x - y = -1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "4 + 5 = 9 ✓ y 4 - 5 = -1 ✓. Como cumple las dos ecuaciones, sí es la solución del sistema."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En un sistema de dos ecuaciones con dos incógnitas, la solución es el par de valores que hace ___ ambas ecuaciones al mismo tiempo.",
+          "respuestaCorrecta": "verdaderas",
+          "retroalimentacion": "La solución de un sistema debe cumplir, es decir hacer verdaderas, las dos ecuaciones a la vez, no solo una de ellas."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuántas incógnitas tiene un sistema de ecuaciones 2×2?",
+          "opciones": ["Una", "Dos", "Tres", "Cuatro"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El '2×2' indica dos ecuaciones y dos incógnitas (generalmente llamadas x y y)."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sistema con su solución (x, y).",
+          "columnaA": ["x + y = 5, x - y = 1", "x + y = 12, x - y = 2", "x + y = 8, x - y = 0"],
+          "columnaB": ["(4, 4)", "(7, 5)", "(3, 2)"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "x + y = 5, x - y = 1 da (3,2); x + y = 12, x - y = 2 da (7,5); x + y = 8, x - y = 0 da (4,4)."
+        }
+      ]
+    },
+    {
+      "numero": "22.2",
+      "titulo": "Método de sustitución",
+      "explicacion": "El método de sustitución consiste en despejar una de las variables en una de las ecuaciones y sustituir esa expresión en la otra ecuación. Así, el sistema se convierte en una sola ecuación con una sola incógnita, que ya sabes resolver. Una vez que encuentras esa incógnita, la sustituyes de regreso para hallar la otra.",
+      "formula": "Despejar una variable → sustituirla en la otra ecuación → resolver → regresar el valor encontrado",
+      "ejemplos": [
+        "Para y = x + 2, x + y = 10: sustituyendo, x + (x + 2) = 10 → 2x = 8 → x = 4, y entonces y = 4 + 2 = 6.",
+        "Para y = 2x, x + y = 12: sustituyendo, x + 2x = 12 → 3x = 12 → x = 4, y entonces y = 2(4) = 8."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve por sustitución: y = x + 2, x + y = 10. ¿Cuál es el valor de x?",
+          "opciones": ["4", "3", "5", "6"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sustituyendo: x + (x + 2) = 10 → 2x = 8 → x = 4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al resolver por sustitución el sistema y = 2x, x + y = 12, el valor de x es ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Sustituyendo: x + 2x = 12 → 3x = 12 → x = 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En el sistema y = 3x - 1, 2x + y = 9, al sustituir se obtiene 2x + 3x - 1 = 9, es decir 5x = 10, por lo que x = 2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2x + (3x - 1) = 9 → 5x - 1 = 9 → 5x = 10 → x = 2. El procedimiento y el resultado son correctos."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el primer paso del método de sustitución?",
+          "opciones": ["Sumar las dos ecuaciones", "Despejar una variable en una de las ecuaciones", "Graficar ambas rectas", "Multiplicar ambas ecuaciones por el mismo número"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La sustitución empieza despejando una variable (por ejemplo y) en una ecuación, para reemplazarla en la otra."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve por sustitución: x = y + 3, 2y + x = 18. ¿Cuál es el valor de y?",
+          "opciones": ["5", "4", "6", "3"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sustituyendo: 2y + (y + 3) = 18 → 3y = 15 → y = 5."
+        }
+      ]
+    },
+    {
+      "numero": "22.3",
+      "titulo": "Método de eliminación (suma y resta)",
+      "explicacion": "El método de eliminación consiste en sumar o restar las dos ecuaciones completas para que una de las variables desaparezca, dejando una sola ecuación con una sola incógnita. Esto funciona directamente cuando una variable tiene el mismo coeficiente (para restar) o coeficientes opuestos (para sumar) en ambas ecuaciones; si no, primero hay que multiplicar una o ambas ecuaciones por un número para lograrlo.",
+      "ejemplos": [
+        "Para x + y = 15, x - y = 5: sumando las dos ecuaciones, 2x = 20 → x = 10, y entonces y = 15 - 10 = 5.",
+        "Para x + 2y = 10, x - 2y = 2: sumando, la y se elimina porque 2y y -2y son opuestos: 2x = 12 → x = 6, y entonces y = 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve por eliminación: x + y = 15, x - y = 5. ¿Cuál es el valor de x?",
+          "opciones": ["10", "5", "8", "12"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sumando las ecuaciones, la y se elimina: 2x = 20 → x = 10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al sumar las ecuaciones 2x + y = 11 y x - y = 1, se obtiene 3x = ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "Al sumar, la y se elimina (y + (-y) = 0): (2x + x) = 11 + 1 = 12, es decir 3x = 12."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para eliminar la variable y en el sistema x + 2y = 10, x - 2y = 2, basta con sumar ambas ecuaciones.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Como los coeficientes de y son opuestos (2y y -2y), al sumar las ecuaciones se cancelan y queda solo la x."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En el sistema 5x + y = 20, 2x + y = 11, ¿qué operación elimina la variable y directamente?",
+          "opciones": ["Sumar las dos ecuaciones", "Restar la segunda ecuación de la primera", "Multiplicar ambas por 2", "Dividir la primera entre la segunda"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Como ambas tienen el mismo coeficiente de y (+1), al restar se elimina: (5x - 2x) + (y - y) = 20 - 11 → 3x = 9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve por eliminación: 4x + y = 19, x + y = 7. ¿Cuál es el valor de y?",
+          "opciones": ["3", "4", "7", "5"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Restando: (4x - x) + (y - y) = 19 - 7 → 3x = 12 → x = 4, y entonces y = 7 - 4 = 3."
+        }
+      ]
+    },
+    {
+      "numero": "22.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Todo sistema 2×2 se puede resolver por sustitución o por eliminación: la sustitución conviene cuando una variable ya está despejada o es fácil de despejar, y la eliminación conviene cuando los coeficientes de una variable son iguales u opuestos. Al plantear un problema real, primero se traducen los datos a dos ecuaciones (usando dos incógnitas, por ejemplo el precio de cada producto), y después se elige el método más cómodo para resolverlas.",
+      "ejemplos": [
+        "Ana compró 2 refrescos y 3 tortas por $58; Luis compró 1 refresco y 2 tortas por $33. Las ecuaciones son 2r + 3t = 58 y r + 2t = 33. Despejando r de la segunda: r = 33 - 2t. Sustituyendo: 2(33 - 2t) + 3t = 58 → 66 - 4t + 3t = 58 → 66 - t = 58 → t = 8. Entonces r = 33 - 16 = 17: la torta cuesta $8 y el refresco $17."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una tienda, 3 plumas y 2 lápices cuestan $28; 1 pluma y 2 lápices cuestan $16. ¿Cuánto cuesta una pluma?",
+          "opciones": ["$6", "$5", "$7", "$4"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Restando las ecuaciones (3p + 2l) - (1p + 2l) = 28 - 16 → 2p = 12 → p = 6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La suma de dos números es 20 y su diferencia es 4. Los números son 12 y 8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "12 + 8 = 20 ✓ y 12 - 8 = 4 ✓. El sistema x + y = 20, x - y = 4 tiene como solución x = 12, y = 8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una granja hay gallinas (2 patas) y conejos (4 patas). Si hay 10 cabezas y 32 patas, el número de conejos es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "Con g + c = 10 y 2g + 4c = 32: sustituyendo g = 10 - c, queda 20 - 2c + 4c = 32 → 2c = 12 → c = 6 conejos (y 4 gallinas)."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un boleto de niño cuesta x y uno de adulto cuesta y. 2 boletos de adulto y 1 de niño cuestan $90; 1 de adulto y 3 de niño cuestan $80. ¿Cuál es el costo de un boleto de adulto?",
+          "opciones": ["$38", "$30", "$40", "$35"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Despejando x = 90 - 2y de la primera y sustituyendo en la segunda: y + 3(90 - 2y) = 80 → -5y = -190 → y = 38."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sistema con el método más conveniente para resolverlo.",
+          "columnaA": ["y = 5x - 2, 3x + y = 18", "2x + 3y = 12, 2x - y = 4", "x + y = 9, x - y = 3"],
+          "columnaB": ["Eliminación (restar directamente)", "Sustitución (una variable ya despejada)", "Eliminación (sumar directamente)"],
+          "parejasCorrectas": [1, 0, 2],
+          "retroalimentacion": "Cuando y ya está despejada conviene sustitución; cuando una variable tiene el mismo coeficiente en ambas ecuaciones conviene eliminación (restando si el signo es igual, sumando si es opuesto)."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Resuelve el sistema x + y = 14, x - y = 2. ¿Cuál es el valor de y?",
+      "opciones": ["6", "8", "4", "7"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Sumando las ecuaciones: 2x = 16 → x = 8, y entonces y = 14 - 8 = 6."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El par (5, 1) es solución del sistema 2x + y = 11, x - y = 4.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "2(5) + 1 = 11 ✓ y 5 - 1 = 4 ✓. Cumple ambas ecuaciones, así que sí es la solución."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "En el sistema y = 4x, x + y = 20, el valor de x es ___.",
+      "respuestaCorrecta": "4",
+      "retroalimentacion": "Sustituyendo: x + 4x = 20 → 5x = 20 → x = 4."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada sistema con su solución (x, y).",
+      "columnaA": ["x + y = 6, x - y = 2", "x + y = 20, x - y = 4", "x + y = 30, x - y = 10"],
+      "columnaB": ["(12, 8)", "(20, 10)", "(4, 2)"],
+      "parejasCorrectas": [2, 0, 1],
+      "retroalimentacion": "x + y = 6, x - y = 2 da (4,2); x + y = 20, x - y = 4 da (12,8); x + y = 30, x - y = 10 da (20,10)."
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "EJ-26",
+  "grado": "Ejercítate",
+  "numero": 26,
+  "categoria": "avanzado",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Congruencia de triángulos",
+  "contenido": "Concepto de congruencia de triángulos y los criterios LLL, LAL y ALA para comprobarla.",
+  "pda": "Identifica cuándo dos triángulos son congruentes aplicando los criterios LLL, LAL y ALA, y los usa para resolver problemas de figuras y construcciones.",
+  "problematizacion": {
+    "contexto": "Un carpintero corta dos piezas triangulares de madera para reforzar una repisa. Antes de unirlas, quiere asegurarse de que ambas piezas son exactamente del mismo tamaño y forma, sin tener que sobreponerlas físicamente.",
+    "pregunta": "¿Cómo puede saber el carpintero, solo midiendo algunos lados y ángulos, si las dos piezas triangulares son exactamente iguales?"
+  },
+  "subtemas": [
+    {
+      "numero": "26.1",
+      "titulo": "¿Qué es la congruencia de triángulos?",
+      "explicacion": "Dos triángulos son congruentes cuando tienen exactamente la misma forma y el mismo tamaño: si pudieras recortar uno y ponerlo encima del otro (aunque tengas que voltearlo o girarlo), coincidirían perfectamente en sus tres lados y sus tres ángulos. Se representa con el símbolo ≅, y el orden de las letras indica qué vértices se corresponden entre los dos triángulos.",
+      "formula": "△ABC ≅ △DEF",
+      "ejemplos": [
+        "Si △ABC ≅ △DEF, entonces AB=DE, BC=EF, AC=DF, y también los ángulos correspondientes son iguales: ∠A=∠D, ∠B=∠E, ∠C=∠F.",
+        "Dos triángulos recortados de la misma plantilla de cartón son congruentes: aunque uno esté girado o volteado, sus lados y ángulos correspondientes miden lo mismo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si dos triángulos son congruentes, entonces tienen la misma forma y el mismo tamaño.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la congruencia significa que coinciden exactamente en forma y tamaño."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si △ABC ≅ △XYZ, ¿qué lado del segundo triángulo corresponde al lado AB del primero?",
+          "opciones": ["XY", "YZ", "XZ", "No se puede saber"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El orden de las letras indica la correspondencia: A↔X, B↔Y, C↔Z, así que AB corresponde a XY."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El símbolo que se usa para indicar que dos triángulos son congruentes es ___.",
+          "respuestaCorrecta": "≅",
+          "retroalimentacion": "El símbolo ≅ se lee 'es congruente con'."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Dos triángulos congruentes pueden tener ángulos diferentes, siempre y cuando sus lados midan lo mismo.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: si los triángulos son congruentes, tanto los lados como los ángulos correspondientes deben ser iguales."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Si △MNP ≅ △RST, relaciona cada elemento del primer triángulo con su correspondiente en el segundo.",
+          "columnaA": ["Lado MN", "Ángulo ∠P", "Lado NP"],
+          "columnaB": ["Ángulo ∠T", "Lado ST", "Lado RS"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "Con la correspondencia M↔R, N↔S, P↔T: MN↔RS, ∠P↔∠T, NP↔ST."
+        }
+      ]
+    },
+    {
+      "numero": "26.2",
+      "titulo": "Criterios LLL y LAL",
+      "explicacion": "No es necesario comprobar los tres lados y los tres ángulos para saber si dos triángulos son congruentes; basta con algunos datos. El criterio LLL (Lado-Lado-Lado) dice que si los tres lados de un triángulo son iguales a los tres lados del otro, los triángulos son congruentes. El criterio LAL (Lado-Ángulo-Lado) dice que si dos lados y el ángulo comprendido entre ellos son iguales en ambos triángulos, también son congruentes.",
+      "ejemplos": [
+        "Si un triángulo tiene lados 5cm, 7cm, 9cm y otro también tiene lados 5cm, 7cm, 9cm, son congruentes por LLL, sin importar el orden en que se acomoden.",
+        "Si dos triángulos tienen un lado de 6cm, un ángulo de 40° entre ese lado y otro de 8cm, y el segundo triángulo tiene exactamente esos mismos datos (6cm, 40°, 8cm en ese orden), son congruentes por LAL."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Dos triángulos tienen lados 4cm, 6cm, 8cm y 4cm, 6cm, 8cm respectivamente. ¿Qué criterio confirma que son congruentes?",
+          "opciones": ["LLL", "LAL", "ALA", "No son congruentes"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como los tres lados coinciden en ambos triángulos, se aplica el criterio LLL."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El criterio LAL requiere que el ángulo igual esté comprendido entre los dos lados iguales, no en cualquier posición.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si el ángulo no está entre los dos lados, no se puede aplicar el criterio LAL."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El criterio que compara los tres lados de dos triángulos se llama ___.",
+          "respuestaCorrecta": "LLL",
+          "retroalimentacion": "LLL significa Lado-Lado-Lado."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo tiene lados de 10cm y 12cm con un ángulo de 55° entre ellos. Otro triángulo tiene lados de 10cm y 12cm con un ángulo de 55° entre ellos. ¿Son congruentes?",
+          "opciones": ["Sí, por LAL", "Sí, por LLL", "No, falta un dato", "No, los ángulos deben ser diferentes"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Dos lados iguales y el ángulo comprendido entre ellos igual confirman congruencia por el criterio LAL."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada conjunto de datos con el criterio de congruencia que aplica.",
+          "columnaA": ["Tres lados iguales en ambos triángulos", "Dos lados y el ángulo entre ellos iguales", "Un solo lado igual en ambos triángulos"],
+          "columnaB": ["No es suficiente para asegurar congruencia", "LAL", "LLL"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "Tres lados iguales = LLL; dos lados y el ángulo entre ellos = LAL; un solo lado igual no basta para asegurar congruencia."
+        }
+      ]
+    },
+    {
+      "numero": "26.3",
+      "titulo": "Criterio ALA",
+      "explicacion": "El criterio ALA (Ángulo-Lado-Ángulo) establece que si dos ángulos de un triángulo y el lado comprendido entre ellos son iguales a los de otro triángulo, ambos triángulos son congruentes. Este criterio es muy útil cuando es más fácil medir ángulos que lados, por ejemplo al triangular distancias lejanas o al usar instrumentos de medición angular.",
+      "formula": "Si ∠A=∠D, AB=DE y ∠B=∠E, entonces △ABC ≅ △DEF (ALA)",
+      "ejemplos": [
+        "Un triángulo tiene ángulos de 50° y 60° con un lado de 8cm entre ellos; otro triángulo tiene exactamente esos mismos ángulos (50° y 60°) con un lado de 8cm entre ellos: son congruentes por ALA.",
+        "Un topógrafo mide dos ángulos y la distancia entre dos puntos de referencia para triangular la posición de un tercer punto lejano, usando el criterio ALA sin tener que medir directamente todos los lados."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué elementos compara el criterio ALA?",
+          "opciones": ["Dos ángulos y el lado entre ellos", "Tres lados", "Dos lados y un ángulo cualquiera", "Tres ángulos"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "ALA significa Ángulo-Lado-Ángulo: compara dos ángulos y el lado comprendido entre ellos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En el criterio ALA, el lado debe estar comprendido entre los dos ángulos iguales.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si el lado no está entre los dos ángulos, no se puede aplicar el criterio ALA."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si dos triángulos tienen ángulos de 45° y 65°, con un lado de 10cm entre ellos, y el otro triángulo tiene exactamente los mismos datos, son congruentes por el criterio ___.",
+          "respuestaCorrecta": "ALA",
+          "retroalimentacion": "Dos ángulos y el lado comprendido entre ellos iguales confirman congruencia por ALA."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo tiene ángulos de 30° y 80°, con un lado de 6cm entre ellos. Otro triángulo tiene ángulos de 30° y 80°, con un lado de 9cm entre ellos. ¿Son congruentes por ALA?",
+          "opciones": ["No, porque el lado entre los ángulos no mide igual", "Sí, porque los ángulos son iguales", "Sí, porque dos ángulos iguales siempre bastan", "No se puede saber sin más datos"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Aunque los ángulos coincidan, el lado comprendido entre ellos mide diferente (6cm vs 9cm), así que no se cumple el criterio ALA."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada criterio de congruencia con los datos que necesita.",
+          "columnaA": ["LLL", "LAL", "ALA"],
+          "columnaB": ["Dos ángulos y el lado comprendido entre ellos", "Dos lados y el ángulo comprendido entre ellos", "Los tres lados de cada triángulo"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "LLL necesita los tres lados; LAL necesita dos lados y el ángulo entre ellos; ALA necesita dos ángulos y el lado entre ellos."
+        }
+      ]
+    },
+    {
+      "numero": "26.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recapitulando: dos triángulos son congruentes si tienen la misma forma y tamaño exactos. Para comprobarlo sin sobreponerlos, se usan los criterios LLL (tres lados iguales), LAL (dos lados y el ángulo entre ellos iguales) y ALA (dos ángulos y el lado entre ellos iguales). Al resolver un problema, primero identifica qué datos te dan (lados, ángulos y su posición relativa) y elige el criterio que corresponde.",
+      "ejemplos": [
+        "Dos piezas de un rompecabezas triangular con lados 3cm, 4cm, 5cm cada una son congruentes por LLL, sin importar cómo estén giradas.",
+        "Para armar un techo con dos triángulos de madera idénticos, un carpintero puede comprobar la congruencia midiendo solo dos lados y el ángulo entre ellos (LAL), en vez de medir los tres lados."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Dos triángulos tienen sus tres ángulos iguales (60°, 60°, 60° cada uno) pero uno mide el doble de tamaño que el otro. ¿Son congruentes?",
+          "opciones": ["No, tener los mismos ángulos no garantiza el mismo tamaño", "Sí, porque los ángulos son iguales", "Sí, por el criterio ALA", "No se puede determinar"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Tener los mismos ángulos solo garantiza la misma forma (semejanza), no el mismo tamaño; para congruencia también se necesita que los lados coincidan."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Dos triángulos congruentes siempre tienen la misma área.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si tienen la misma forma y el mismo tamaño exacto, su área también es igual."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si un carpintero mide los tres lados de dos piezas triangulares y coinciden, puede afirmar que las piezas son congruentes por el criterio ___.",
+          "respuestaCorrecta": "LLL",
+          "retroalimentacion": "Con los tres lados iguales, se aplica el criterio LLL."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo tiene lados 5cm y 7cm con un ángulo de 40° entre ellos. Un segundo triángulo tiene lados 5cm y 7cm con un ángulo de 50° entre ellos. ¿Son congruentes?",
+          "opciones": ["No, porque el ángulo entre los lados es diferente", "Sí, por LAL", "Sí, porque los lados son iguales", "No se puede saber"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Aunque los lados coinciden, el ángulo comprendido entre ellos es diferente (40° vs 50°), así que no se cumple LAL y no son congruentes."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación de dos triángulos con la conclusión correcta sobre su congruencia.",
+          "columnaA": ["Tienen los tres lados iguales", "Tienen los tres ángulos iguales pero tamaños distintos", "Tienen dos ángulos y el lado entre ellos iguales"],
+          "columnaB": ["Son congruentes por ALA", "No son congruentes (solo son semejantes)", "Son congruentes por LLL"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "Tres lados iguales = congruentes por LLL; mismos ángulos y distinto tamaño = solo semejantes; dos ángulos y el lado entre ellos = congruentes por ALA."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El criterio LLL requiere conocer los tres ángulos de cada triángulo.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "Falso: el criterio LLL requiere conocer los tres lados, no los ángulos."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Dos triángulos tienen lados 6cm, 8cm, 10cm y 6cm, 8cm, 10cm. ¿Qué criterio confirma su congruencia?",
+      "opciones": ["LLL", "ALA", "Ninguno, faltan los ángulos", "LAL"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Con los tres lados iguales en ambos triángulos, se aplica el criterio LLL."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Si △PQR ≅ △STU, entonces el lado QR es igual al lado ___.",
+      "respuestaCorrecta": "TU",
+      "retroalimentacion": "Con la correspondencia P↔S, Q↔T, R↔U, el lado QR corresponde al lado TU."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada nombre de criterio con su abreviatura correcta.",
+      "columnaA": ["Lado-Lado-Lado", "Lado-Ángulo-Lado", "Ángulo-Lado-Ángulo"],
+      "columnaB": ["ALA", "LAL", "LLL"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "Lado-Lado-Lado = LLL; Lado-Ángulo-Lado = LAL; Ángulo-Lado-Ángulo = ALA."
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "id": "EJ-25",
+  "grado": "Ejercítate",
+  "numero": 25,
+  "categoria": "avanzado",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Gráficas y su interpretación",
+  "contenido": "Lectura e interpretación de gráficas: sus elementos, cómo leer valores y cómo identificar tendencias.",
+  "pda": "Interpreta gráficas de situaciones cotidianas identificando sus elementos, leyendo valores específicos y reconociendo tendencias de crecimiento, decrecimiento o constancia, para tomar decisiones informadas.",
+  "problematizacion": {
+    "contexto": "Marisol registró la distancia que llevaba recorrida en su bicicleta cada 5 minutos, desde su casa hasta la escuela. Al graficar sus datos (tiempo en el eje horizontal, distancia en el eje vertical), la línea sube, luego se vuelve plana un tramo, sube de nuevo y finalmente se vuelve plana al llegar a la escuela.",
+    "pregunta": "¿Cómo puedes saber, solo viendo la gráfica y sin usar un cronómetro, en qué momento Marisol se detuvo a descansar?"
+  },
+  "subtemas": [
+    {
+      "numero": "25.1",
+      "titulo": "Elementos de una gráfica: ejes y escala",
+      "explicacion": "Toda gráfica tiene un eje horizontal (eje X), que casi siempre representa la variable independiente como el tiempo, y un eje vertical (eje Y), que representa la variable dependiente, como la distancia o el dinero. Cada eje tiene una escala: la distancia entre dos marcas consecutivas siempre representa la misma cantidad, y hay que identificarla antes de leer cualquier valor, porque no todas las gráficas usan la misma escala.",
+      "ejemplos": [
+        "En una gráfica del clima, el eje horizontal marca las horas del día (0 a 24) y el eje vertical la temperatura en °C con marcas cada 5°C; si un punto está 3 marcas arriba del 0, representa 15°C.",
+        "En una gráfica de ahorro semanal, el eje vertical va de 0 en 0, con marcas cada 200 pesos; un punto que está a la altura de la segunda marca representa 400 pesos, no 2 pesos."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "En una gráfica que muestra cuántos litros de agua hay en una alberca a lo largo del día, ¿qué variable debería ir en el eje horizontal?",
+          "opciones": ["El tiempo", "Los litros de agua", "El color de la alberca", "La temperatura del agua"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El eje horizontal casi siempre representa la variable independiente, en este caso el tiempo; los litros de agua dependen del tiempo, así que van en el eje vertical."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una gráfica, la distancia entre dos marcas consecutivas de un eje siempre representa la misma cantidad.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: eso es lo que significa que un eje tenga una escala uniforme; cada espacio entre marcas vale lo mismo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si en el eje vertical de una gráfica cada marca representa 50 pesos y un punto está 4 marcas arriba del cero, ese punto representa ___ pesos.",
+          "respuestaCorrecta": "200",
+          "retroalimentacion": "4 marcas × 50 pesos cada una = 200 pesos."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un termómetro digital grafica la temperatura del salón durante 8 horas de clase. ¿Qué variable es la independiente y debe ir en el eje horizontal?",
+          "opciones": ["El tiempo transcurrido", "La temperatura", "El número de alumnos", "El tamaño del salón"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El tiempo transcurrido es la variable independiente: la temperatura (variable dependiente) se mide en función del tiempo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada elemento de una gráfica con su función.",
+          "columnaA": ["Eje horizontal (X)", "Eje vertical (Y)", "Escala de un eje"],
+          "columnaB": ["Indica cuánto vale cada marca del eje", "Generalmente representa la variable independiente, como el tiempo", "Generalmente representa la variable dependiente, como la distancia o el dinero"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "El eje X suele ser la variable independiente, el eje Y la dependiente, y la escala indica el valor de cada marca."
+        }
+      ]
+    },
+    {
+      "numero": "25.2",
+      "titulo": "Leer valores en una gráfica",
+      "explicacion": "Para leer el valor de un punto en una gráfica, primero ubica la posición horizontal que te interesa (por ejemplo, una hora específica), traza una línea imaginaria hacia arriba hasta tocar la curva, y desde ahí traza una línea horizontal hasta el eje vertical: el número donde toca es el valor que buscabas. Es importante contar las marcas usando la escala correcta, no solo 'a ojo'.",
+      "ejemplos": [
+        "En una gráfica de distancia recorrida por un autobús, si a las 2 horas la línea está a la altura de la marca de 80 km, entonces a las 2 horas el autobús ha recorrido 80 km.",
+        "En la gráfica de ahorro de Pedro, la línea pasa por el punto (semana 3, 600 pesos): eso significa que en la semana 3 Pedro ya había ahorrado 600 pesos."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "La gráfica de un camión de carga muestra la distancia recorrida así: hora 0 = 0 km, hora 1 = 60 km, hora 2 = 120 km, hora 3 = 120 km, hora 4 = 180 km, hora 5 = 240 km, hora 6 = 240 km. Según la gráfica, la distancia recorrida a las 4 horas fue de ___ km.",
+          "respuestaCorrecta": "180",
+          "retroalimentacion": "Al ubicar la hora 4 en el eje horizontal y subir hasta la línea, el valor correspondiente en el eje vertical es 180 km."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Usando la misma gráfica del camión (hora 0=0km, 1=60km, 2=120km, 3=120km, 4=180km, 5=240km, 6=240km), ¿cuántos kilómetros había recorrido a las 5 horas?",
+          "opciones": ["180 km", "240 km", "120 km", "300 km"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "En la hora 5 la gráfica marca 240 km."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Según la gráfica del camión, a las 2 horas ya había recorrido más de 100 km.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "A las 2 horas la gráfica marca 120 km, que es más de 100 km."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Según la gráfica del camión, la distancia recorrida a las 6 horas fue de ___ km.",
+          "respuestaCorrecta": "240",
+          "retroalimentacion": "En la hora 6 la gráfica sigue marcando 240 km, igual que en la hora 5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada hora del viaje con la distancia recorrida según la gráfica del camión.",
+          "columnaA": ["Hora 1", "Hora 3", "Hora 5"],
+          "columnaB": ["240 km", "60 km", "120 km"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "Hora 1 = 60 km, hora 3 = 120 km, hora 5 = 240 km, según los valores de la gráfica."
+        }
+      ]
+    },
+    {
+      "numero": "25.3",
+      "titulo": "Interpretar tendencias: crece, decrece, constante",
+      "explicacion": "En una gráfica, un tramo que sube de izquierda a derecha indica que la variable está creciendo (aumenta); un tramo que baja indica que está decreciendo (disminuye); y un tramo horizontal (plano) indica que se mantiene constante, sin cambiar. Entre más inclinado es un tramo que sube o baja, más rápido cambia la variable en ese periodo.",
+      "ejemplos": [
+        "En la gráfica del camión, entre la hora 2 y la hora 3 la línea es horizontal (120 km en ambas horas): eso significa que el camión estuvo detenido, sin avanzar.",
+        "Si la temperatura sube de 15°C a 25°C entre las 8 y las 12 horas, el tramo de la gráfica en ese periodo es creciente."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "La gráfica de temperatura de un salón marca: hora 0 = 20°C, hora 1 = 24°C, hora 2 = 24°C, hora 3 = 18°C, hora 4 = 18°C. ¿En qué intervalo la temperatura fue constante por primera vez?",
+          "opciones": ["Entre la hora 1 y la hora 2", "Entre la hora 0 y la hora 1", "Entre la hora 2 y la hora 3", "Entre la hora 3 y la hora 4"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Entre la hora 1 y la hora 2 la temperatura se mantiene en 24°C, sin subir ni bajar: ese es el primer tramo constante."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la gráfica de la temperatura del salón, entre la hora 2 y la hora 3 la temperatura decreció.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "La temperatura bajó de 24°C (hora 2) a 18°C (hora 3), así que ese tramo es decreciente."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la gráfica de la temperatura del salón, entre la hora 0 y la hora 1 (de 20°C a 24°C) la temperatura ___ (creció, decreció o se mantuvo constante).",
+          "respuestaCorrecta": "creció",
+          "retroalimentacion": "La temperatura pasó de 20°C a 24°C, es decir, aumentó: ese tramo de la gráfica es creciente."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes descripciones corresponde a un tramo 'decreciente' en una gráfica?",
+          "opciones": ["Una línea que baja de izquierda a derecha", "Una línea que sube de izquierda a derecha", "Una línea horizontal", "Un punto aislado"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Un tramo decreciente es aquel donde la línea baja de izquierda a derecha, indicando que la variable disminuye."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada tramo de la gráfica de temperatura del salón con su tendencia.",
+          "columnaA": ["De la hora 0 a la 1", "De la hora 1 a la 2", "De la hora 2 a la 3"],
+          "columnaB": ["Constante", "Decreciente", "Creciente"],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "De 0 a 1 la temperatura sube (creciente); de 1 a 2 se mantiene (constante); de 2 a 3 baja (decreciente)."
+        }
+      ]
+    },
+    {
+      "numero": "25.4",
+      "titulo": "Síntesis y aplicación: comparando gráficas",
+      "explicacion": "Recapitulando: para interpretar una gráfica necesitas identificar sus ejes y su escala (qué representa cada uno y cuánto vale cada marca), saber leer valores específicos ubicando el punto correcto, y reconocer si la variable crece, decrece o se mantiene constante en cada tramo. Comparar dos gráficas significa fijarse en cuál tiene valores más altos, cuál crece más rápido, o en qué momento se cruzan o se igualan.",
+      "ejemplos": [
+        "Si la gráfica de ahorro de Ana crece más rápido (más inclinada) que la de Luis, Ana está ahorrando más dinero por semana que Luis, aunque ambos hayan empezado con la misma cantidad.",
+        "Si dos gráficas de distancia recorrida se cruzan en un punto, en ese momento ambos vehículos han recorrido exactamente la misma distancia."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ana ahorra 100 pesos cada semana empezando en 0; Luis ahorra 50 pesos cada semana pero ya tenía 200 pesos ahorrados desde la semana 0. En la semana 0, ¿quién tiene más dinero ahorrado?",
+          "opciones": ["Luis", "Ana", "Los dos igual", "No se puede saber"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "En la semana 0, Ana tiene 0 pesos y Luis ya tiene 200 pesos, así que Luis tiene más."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con los datos anteriores (Ana ahorra 100 pesos/semana desde 0), en la semana 3 Ana tiene ___ pesos ahorrados.",
+          "respuestaCorrecta": "300",
+          "retroalimentacion": "100 pesos × 3 semanas = 300 pesos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Con los datos anteriores, en la semana 5 Ana ya tendría más dinero ahorrado que Luis.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "En la semana 5, Ana tiene 100×5=500 pesos y Luis tiene 200+50×5=450 pesos; como Ana crece más rápido, en la semana 4 se igualan (400=400) y desde la 5 Ana ya tiene más."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿En qué semana Ana y Luis tienen exactamente la misma cantidad ahorrada?",
+          "opciones": ["Semana 4", "Semana 2", "Semana 3", "Nunca se igualan"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "En la semana 4: Ana tiene 100×4=400 pesos y Luis tiene 200+50×4=400 pesos. Ambos se igualan."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada gráfica de ahorro con su característica.",
+          "columnaA": ["Gráfica de Ana", "Gráfica de Luis", "El punto donde se cruzan las dos gráficas"],
+          "columnaB": ["Muestra que ambos tienen la misma cantidad ahorrada (semana 4)", "Tiene la pendiente más inclinada (crece más rápido)", "Empieza más arriba pero crece más despacio"],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "La gráfica de Ana es más inclinada (crece 100/semana), la de Luis empieza arriba pero crece más despacio (50/semana), y se cruzan en la semana 4."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "En una gráfica de velocidad de un ciclista, el eje vertical tiene marcas cada 5 km/h. Si un punto está 6 marcas arriba del cero, ¿a qué velocidad representa?",
+      "opciones": ["30 km/h", "6 km/h", "11 km/h", "25 km/h"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "6 marcas × 5 km/h cada una = 30 km/h."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Según la gráfica del camión de carga (hora 0=0km, 1=60km, 2=120km, 3=120km, 4=180km, 5=240km, 6=240km), el camión recorrió más distancia entre la hora 4 y la hora 5 que entre la hora 2 y la hora 3.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Entre la hora 4 y 5 avanzó 240-180=60 km; entre la hora 2 y 3 avanzó 120-120=0 km (estuvo detenido). 60 km es más que 0 km."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Si una gráfica muestra que el nivel de una alberca baja de 2 metros a 1.5 metros entre las 10 y las 12 horas, ese tramo de la gráfica es ___ (creciente, decreciente o constante).",
+      "respuestaCorrecta": "decreciente",
+      "retroalimentacion": "El nivel del agua disminuyó, así que el tramo de la gráfica es decreciente."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada situación con el tipo de tendencia que describe en una gráfica.",
+      "columnaA": ["El precio de una acción sube todos los días", "La temperatura se mantiene en 20°C toda la tarde", "Las ventas de una tienda bajan cada mes"],
+      "columnaB": ["Decreciente", "Creciente", "Constante"],
+      "parejasCorrectas": [1, 2, 0],
+      "retroalimentacion": "Subir es creciente, mantenerse igual es constante, y bajar es decreciente."
+    }
+  ]
+}

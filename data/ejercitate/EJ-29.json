@@ -1,0 +1,317 @@
+{
+  "id": "EJ-29",
+  "grado": "Ejercítate",
+  "numero": 29,
+  "categoria": "avanzado",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Teorema de Pitágoras",
+  "contenido": "Relación entre los catetos y la hipotenusa de un triángulo rectángulo, y su aplicación al cálculo de longitudes.",
+  "pda": "Aplica el Teorema de Pitágoras para calcular la hipotenusa o un cateto de un triángulo rectángulo, y lo utiliza para resolver problemas de distancias en contextos reales.",
+  "problematizacion": {
+    "contexto": "Un electricista necesita tender un cable en línea recta desde la esquina superior de una pared hasta un punto en el piso, a cierta distancia de la base de la pared. La pared, el piso y el cable forman un triángulo rectángulo.",
+    "pregunta": "Si el electricista conoce la altura de la pared y la distancia en el piso, ¿cómo puede saber la longitud exacta del cable sin medirlo directamente?"
+  },
+  "subtemas": [
+    {
+      "numero": "29.1",
+      "titulo": "¿Qué es el Teorema de Pitágoras?",
+      "explicacion": "En todo triángulo rectángulo hay un ángulo de 90°; los dos lados que forman ese ángulo se llaman catetos, y el lado opuesto al ángulo recto, que siempre es el más largo, se llama hipotenusa. El Teorema de Pitágoras dice que el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos. Esto funciona porque, si construyes un cuadrado sobre cada lado del triángulo, el área del cuadrado grande (sobre la hipotenusa) es exactamente igual a la suma de las áreas de los dos cuadrados pequeños (sobre los catetos).",
+      "formula": "c² = a² + b² (c = hipotenusa, a y b = catetos)",
+      "ejemplos": [
+        "Un triángulo rectángulo tiene catetos de 3 cm y 4 cm. Su hipotenusa mide √(3²+4²) = √(9+16) = √25 = 5 cm.",
+        "Una escalera recargada en una pared forma un triángulo rectángulo con la pared y el piso: el tramo de pared y el tramo de piso son los catetos, y la escalera misma es la hipotenusa."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En un triángulo rectángulo, la hipotenusa es siempre el lado más largo.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la hipotenusa, al ser opuesta al ángulo de 90°, siempre es el lado de mayor longitud."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se llaman los dos lados que forman el ángulo recto en un triángulo rectángulo?",
+          "opciones": [
+            "Catetos",
+            "Hipotenusas",
+            "Vértices",
+            "Diagonales"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Los dos lados que forman el ángulo de 90° se llaman catetos; el tercer lado es la hipotenusa."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El lado opuesto al ángulo recto en un triángulo rectángulo se llama ___.",
+          "respuestaCorrecta": "hipotenusa",
+          "retroalimentacion": "La hipotenusa es el lado opuesto al ángulo de 90° y siempre es el más largo del triángulo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El Teorema de Pitágoras se puede aplicar a cualquier triángulo, sin importar si tiene o no un ángulo recto.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: el Teorema de Pitágoras solo es válido en triángulos rectángulos, es decir, con un ángulo de exactamente 90°."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada elemento del triángulo rectángulo con su descripción.",
+          "columnaA": [
+            "Cateto",
+            "Hipotenusa",
+            "Ángulo recto"
+          ],
+          "columnaB": [
+            "Mide 90°",
+            "Lado opuesto al ángulo recto",
+            "Cada uno de los dos lados que forman el ángulo recto"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "El ángulo recto mide 90°, la hipotenusa es el lado opuesto a él, y los catetos son los lados que lo forman."
+        }
+      ]
+    },
+    {
+      "numero": "29.2",
+      "titulo": "Calcular la hipotenusa",
+      "explicacion": "Cuando conoces los dos catetos de un triángulo rectángulo, puedes encontrar la hipotenusa elevando al cuadrado cada cateto, sumando los resultados y sacando la raíz cuadrada de esa suma. Es importante sumar primero los cuadrados y sacar la raíz al final, no sacar raíz de cada cateto por separado.",
+      "ejemplos": [
+        "Un terreno rectangular mide 6 m de ancho y 8 m de largo. Su diagonal (hipotenusa) mide √(6²+8²) = √(36+64) = √100 = 10 m.",
+        "Un triángulo rectángulo tiene catetos de 5 cm y 12 cm. Su hipotenusa mide √(5²+12²) = √(25+144) = √169 = 13 cm."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un triángulo rectángulo tiene catetos de 9 cm y 12 cm. Su hipotenusa mide ___ cm.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "√(9²+12²) = √(81+144) = √225 = 15 cm."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo rectángulo tiene catetos de 7 cm y 24 cm. ¿Cuánto mide la hipotenusa?",
+          "opciones": [
+            "25 cm",
+            "31 cm",
+            "17 cm",
+            "20 cm"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "√(7²+24²) = √(49+576) = √625 = 25 cm."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si los catetos de un triángulo rectángulo miden 8 cm y 15 cm, la hipotenusa mide 17 cm.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "√(8²+15²) = √(64+225) = √289 = 17 cm. La afirmación es correcta."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un rectángulo mide 20 m de largo y 15 m de ancho. Su diagonal mide ___ m.",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "√(20²+15²) = √(400+225) = √625 = 25 m."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de catetos con la hipotenusa que le corresponde.",
+          "columnaA": [
+            "6 y 8",
+            "9 y 40",
+            "10 y 24"
+          ],
+          "columnaB": [
+            "10",
+            "41",
+            "26"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "√(6²+8²)=10; √(9²+40²)=√1681=41; √(10²+24²)=√676=26."
+        }
+      ]
+    },
+    {
+      "numero": "29.3",
+      "titulo": "Calcular un cateto",
+      "explicacion": "Si conoces la hipotenusa y uno de los catetos, puedes despejar el cateto que falta: en vez de sumar los cuadrados, ahora restas el cuadrado del cateto conocido al cuadrado de la hipotenusa, y sacas la raíz cuadrada del resultado. Es un reacomodo de la misma fórmula, solo que despejando otra incógnita.",
+      "formula": "a = √(c² − b²)",
+      "ejemplos": [
+        "Una escalera de 13 m está apoyada en una pared y su base está a 5 m de la pared. La altura a la que llega es √(13²−5²) = √(169−25) = √144 = 12 m.",
+        "Un triángulo rectángulo tiene hipotenusa de 10 cm y un cateto de 6 cm. El otro cateto mide √(10²−6²) = √(100−36) = √64 = 8 cm."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un triángulo rectángulo tiene hipotenusa de 25 cm y un cateto de 7 cm. El otro cateto mide ___ cm.",
+          "respuestaCorrecta": "24",
+          "retroalimentacion": "√(25²−7²) = √(625−49) = √576 = 24 cm."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una escalera de 15 m está recargada en una pared, con la base a 9 m de la pared. ¿A qué altura llega la escalera?",
+          "opciones": [
+            "12 m",
+            "10 m",
+            "18 m",
+            "6 m"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "√(15²−9²) = √(225−81) = √144 = 12 m."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si la hipotenusa mide 17 cm y un cateto mide 8 cm, el otro cateto mide 15 cm.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "√(17²−8²) = √(289−64) = √225 = 15 cm. La afirmación es correcta."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un triángulo rectángulo tiene hipotenusa de 20 cm y un cateto de 12 cm. El otro cateto mide ___ cm.",
+          "respuestaCorrecta": "16",
+          "retroalimentacion": "√(20²−12²) = √(400−144) = √256 = 16 cm."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par (hipotenusa, cateto conocido) con el cateto que falta.",
+          "columnaA": [
+            "Hipotenusa 10, cateto 6",
+            "Hipotenusa 26, cateto 24",
+            "Hipotenusa 41, cateto 40"
+          ],
+          "columnaB": [
+            "8",
+            "10",
+            "9"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "√(10²−6²)=8; √(26²−24²)=√100=10; √(41²−40²)=√81=9."
+        }
+      ]
+    },
+    {
+      "numero": "29.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: si conoces los dos catetos, sumas sus cuadrados y sacas raíz para obtener la hipotenusa; si conoces la hipotenusa y un cateto, restas los cuadrados para obtener el cateto que falta. El Teorema de Pitágoras sirve para calcular distancias reales en línea recta —como escaleras, cables o el camino más corto entre dos puntos— cuando esa distancia forma un triángulo rectángulo con datos que sí puedes medir.",
+      "ejemplos": [
+        "Para ir de un punto a otro de un parque rectangular de 30 m por 40 m cruzando en diagonal, la distancia es √(30²+40²) = √(900+1600) = √2500 = 50 m, en vez de caminar 30+40 = 70 m bordeando dos lados.",
+        "Una escalera de 10 m debe alcanzar una ventana a 8 m de altura; la base debe colocarse a √(10²−8²) = √36 = 6 m de la pared."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un parque rectangular mide 30 m de largo y 40 m de ancho. ¿Cuántos metros ahorra una persona al cruzar en diagonal en vez de bordear dos lados?",
+          "opciones": [
+            "20 m",
+            "10 m",
+            "30 m",
+            "50 m"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La diagonal mide √(30²+40²)=50 m; bordear los dos lados es 30+40=70 m; el ahorro es 70−50=20 m."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una cometa está sostenida por un hilo que mide 26 m en línea recta y se encuentra a 24 m de altura. La distancia horizontal entre el punto donde se sostiene el hilo y la cometa es ___ m.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "√(26²−24²) = √(676−576) = √100 = 10 m."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para calcular la distancia más corta entre dos puntos que forman un ángulo recto con un tercer punto, se usa el Teorema de Pitágoras sobre los dos catetos.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si los dos segmentos conocidos forman un ángulo de 90°, la distancia directa entre los otros dos extremos es la hipotenusa."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una escalera de 10 m debe alcanzar una ventana a 8 m de altura. La base de la escalera debe colocarse a ___ m de la pared.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "√(10²−8²) = √(100−64) = √36 = 6 m."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el cálculo del Teorema de Pitágoras que se necesita.",
+          "columnaA": [
+            "Conozco los dos catetos y busco la hipotenusa",
+            "Conozco la hipotenusa y un cateto, busco el otro cateto",
+            "Quiero comparar la diagonal con el recorrido por las orillas"
+          ],
+          "columnaB": [
+            "c = √(a²+b²)",
+            "a = √(c²−b²)",
+            "Comparar la diagonal calculada con la suma de los dos lados"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "Cada situación corresponde a una forma distinta de usar la misma relación c²=a²+b²."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un triángulo rectángulo tiene catetos de 5 cm y 12 cm. ¿Cuánto mide la hipotenusa?",
+      "opciones": [
+        "13 cm",
+        "17 cm",
+        "10 cm",
+        "15 cm"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "√(5²+12²) = √(25+144) = √169 = 13 cm."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Si la hipotenusa mide 25 cm y un cateto mide 20 cm, el otro cateto mide 15 cm.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "√(25²−20²) = √(625−400) = √225 = 15 cm. La afirmación es correcta."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Una escalera de 17 m está apoyada en una pared, con la base a 8 m de la pared. La escalera llega a una altura de ___ m.",
+      "respuestaCorrecta": "15",
+      "retroalimentacion": "√(17²−8²) = √(289−64) = √225 = 15 m."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada triángulo rectángulo con su hipotenusa.",
+      "columnaA": [
+        "Catetos 9 y 12",
+        "Catetos 8 y 6",
+        "Catetos 20 y 21"
+      ],
+      "columnaB": [
+        "15",
+        "10",
+        "29"
+      ],
+      "parejasCorrectas": [
+        0,
+        1,
+        2
+      ],
+      "retroalimentacion": "√(9²+12²)=15; √(8²+6²)=10; √(20²+21²)=√841=29."
+    }
+  ]
+}

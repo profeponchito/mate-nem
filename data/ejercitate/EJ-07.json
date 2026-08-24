@@ -1,0 +1,255 @@
+{
+  "id": "EJ-07",
+  "grado": "Ejercítate",
+  "numero": 7,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Fracciones: concepto y tipos",
+  "contenido": "El significado de una fracción como parte de un todo y su clasificación en propias, impropias y mixtas.",
+  "pda": "Identifica y representa fracciones como partes de un todo o de una colección, y las clasifica en propias, impropias y mixtas para resolver situaciones de reparto y medición.",
+  "problematizacion": {
+    "contexto": "En una fiesta de cumpleaños hay una pizza grande cortada en 8 rebanadas iguales. Daniela se comió 3 rebanadas y su hermano se comió 5. Al día siguiente sobraron 2 pizzas completas más 3 rebanadas de otra pizza también cortada en 8.",
+    "pregunta": "¿Cómo puedes escribir con un solo número la cantidad de pizza que sobró, si son más de una pizza completa?"
+  },
+  "subtemas": [
+    {
+      "numero": "7.1",
+      "titulo": "¿Qué es una fracción?",
+      "explicacion": "Una fracción representa una o varias partes de un entero que se dividió en partes iguales. El número de abajo (denominador) indica en cuántas partes iguales se dividió el entero, y el número de arriba (numerador) indica cuántas de esas partes se están tomando o considerando. Por eso el denominador nunca puede ser cero: no tiene sentido dividir algo en 'cero partes'.",
+      "formula": "fracción = numerador/denominador (partes tomadas ÷ total de partes iguales)",
+      "ejemplos": [
+        "Si divides una barra de chocolate en 4 partes iguales y comes 1, comiste 1/4 de la barra.",
+        "En un salón de 30 alumnos, si 12 son mujeres, la fracción de mujeres respecto al total es 12/30."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un jardín se dividió en 6 partes iguales y se sembraron flores en 4 de ellas. ¿Qué fracción del jardín tiene flores?",
+          "opciones": ["4/6", "6/4", "2/6", "4/2"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se tomaron 4 partes de las 6 partes iguales en que se dividió el jardín, por eso la fracción es 4/6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la fracción 3/8, el número 8 indica cuántas partes se tomaron del total.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "El 8 es el denominador: indica el total de partes iguales en que se dividió el entero, no las que se tomaron. El 3 (numerador) es el que se tomó."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la fracción 5/12, el denominador es ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "El denominador es el número de abajo; indica en cuántas partes iguales se dividió el entero: 12."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un pastel se partió en 10 rebanadas iguales. Si se sirvieron 7 rebanadas, ¿qué fracción del pastel queda sin servir?",
+          "opciones": ["3/10", "7/10", "3/7", "10/7"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Si se sirvieron 7 de 10, quedan 10-7=3 rebanadas, es decir 3/10 del pastel."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada término con su definición.",
+          "columnaA": ["Numerador", "Denominador", "Línea de fracción"],
+          "columnaB": [
+            "Indica cuántas partes se tomaron del entero",
+            "Indica en cuántas partes iguales se dividió el entero",
+            "Separa el numerador del denominador y significa 'entre'"
+          ],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "El numerador (arriba) indica las partes tomadas; el denominador (abajo) las partes totales iguales; la línea de fracción significa 'entre' y separa ambos."
+        }
+      ]
+    },
+    {
+      "numero": "7.2",
+      "titulo": "Fracciones propias, impropias y mixtas",
+      "explicacion": "Una fracción es propia cuando el numerador es menor que el denominador (representa menos de un entero completo). Es impropia cuando el numerador es mayor o igual que el denominador (representa un entero completo o más). Una fracción impropia puede escribirse como número mixto: un entero acompañado de una fracción propia, lo cual suele ser más fácil de interpretar en la vida diaria.",
+      "ejemplos": [
+        "3/4 es una fracción propia porque el numerador (3) es menor que el denominador (4): representa menos de un entero.",
+        "9/4 es una fracción impropia porque 9 es mayor que 4; equivale a 2 enteros y 1/4, es decir, 2 1/4 (fracción mixta)."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes fracciones es impropia?",
+          "opciones": ["3/5", "7/8", "11/6", "2/9"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "11/6 es impropia porque el numerador (11) es mayor que el denominador (6); representa más de un entero."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La fracción 5/5 es una fracción propia.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "5/5 es igual a 1 entero completo (numerador igual al denominador), por lo que no es propia; se considera impropia."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La fracción mixta equivalente a 13/4 es 3 ___/4.",
+          "respuestaCorrecta": "1",
+          "retroalimentacion": "13 entre 4 da 3 enteros con residuo 1, entonces 13/4 = 3 1/4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un albañil necesita 17/5 bultos de cemento para una obra. ¿Cómo se expresa esta cantidad como número mixto?",
+          "opciones": ["3 2/5 bultos", "2 3/5 bultos", "5 2/3 bultos", "17 5/1 bultos"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "17 entre 5 = 3 con residuo 2, entonces 17/5 = 3 2/5 bultos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su tipo.",
+          "columnaA": ["7/9", "10/3", "6/6"],
+          "columnaB": [
+            "Es menor que un entero (propia)",
+            "Es mayor que un entero (impropia)",
+            "Es exactamente un entero (impropia, numerador = denominador)"
+          ],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "7/9 es propia (7<9); 10/3 es impropia y mayor que un entero (10>3); 6/6 es impropia pero igual a exactamente 1 entero (numerador = denominador)."
+        }
+      ]
+    },
+    {
+      "numero": "7.3",
+      "titulo": "Representación gráfica y en la recta numérica",
+      "explicacion": "Una fracción se puede representar dibujando una figura dividida en partes iguales (el denominador) y sombreando cuántas se toman (el numerador), o ubicándola en la recta numérica: el segmento entre dos enteros consecutivos se divide en tantas partes iguales como indique el denominador, y se cuenta a partir del entero menor tantas partes como indique el numerador.",
+      "ejemplos": [
+        "Para ubicar 3/4 en la recta numérica, divides el segmento entre 0 y 1 en 4 partes iguales y cuentas 3 de ellas.",
+        "Para representar 2/3 con un dibujo, divides un círculo en 3 partes iguales y sombreas 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Para ubicar la fracción 5/6 en la recta numérica entre 0 y 1, ¿en cuántas partes iguales debes dividir ese segmento?",
+          "opciones": ["5", "6", "11", "1"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El denominador (6) indica en cuántas partes iguales se divide el segmento entre 0 y 1; luego se cuentan 5 de esas partes."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para representar gráficamente 3/5, se puede dividir una figura en 5 partes iguales y sombrear 3 de ellas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el denominador indica el número de partes iguales de la figura, y el numerador cuántas se sombrean."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si divides el segmento entre 0 y 1 en 8 partes iguales y cuentas 5, ubicaste la fracción ___.",
+          "respuestaCorrecta": "5/8",
+          "retroalimentacion": "8 partes iguales indica el denominador, y contar 5 indica el numerador: la fracción es 5/8."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un rectángulo dividido en 9 cuadros iguales tiene 4 cuadros sombreados. ¿Qué fracción representa la parte sombreada?",
+          "opciones": ["4/9", "9/4", "5/9", "4/5"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se sombrearon 4 de los 9 cuadros iguales, por lo que la fracción es 4/9."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su ubicación aproximada en la recta numérica entre 0 y 1.",
+          "columnaA": ["1/4", "1/2", "3/4"],
+          "columnaB": [
+            "Muy cerca de 0, apenas pasado el inicio",
+            "Justo a la mitad del segmento",
+            "Cerca de 1, casi al final del segmento"
+          ],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "1/4 está cerca del inicio; 1/2 está justo a la mitad; 3/4 está cerca del final del segmento entre 0 y 1."
+        }
+      ]
+    },
+    {
+      "numero": "7.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: una fracción tiene numerador (partes tomadas) y denominador (partes totales iguales); es propia si el numerador es menor que el denominador, impropia si es mayor o igual, y toda impropia puede escribirse como número mixto. Además, se puede representar gráficamente o ubicar en la recta numérica dividiendo el segmento entre enteros según el denominador.",
+      "ejemplos": [
+        "La fracción 7/4 es impropia; equivale a la mixta 1 3/4 y se ubica entre 1 y 2 en la recta numérica, más cerca de 2.",
+        "De las 2 pizzas completas más 3 rebanadas de una pizza cortada en 8, la cantidad total de pizza sobrante es 2 3/8, que es una fracción mixta equivalente a la impropia 19/8."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Sobraron 2 pizzas completas más 5 rebanadas de una pizza cortada en 8. ¿Cuál es la fracción mixta que representa el total de pizza sobrante?",
+          "opciones": ["2 5/8", "5 2/8", "2 3/8", "8 5/2"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Hay 2 enteros completos más 5/8 de otra pizza, entonces la fracción mixta es 2 5/8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La fracción mixta 2 5/8 escrita como fracción impropia es ___/8.",
+          "respuestaCorrecta": "21",
+          "retroalimentacion": "2 enteros equivalen a 16/8 (2×8); sumando 5/8 da 21/8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La fracción 21/8 se ubica en la recta numérica entre los enteros 2 y 3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "21/8 equivale a 2.625, que está entre 2 y 3 en la recta numérica."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes fracciones es propia?",
+          "opciones": ["9/8", "8/8", "5/8", "21/8"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "5/8 es propia porque 5 es menor que 8; las demás son impropias o iguales a un entero."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su clasificación correcta.",
+          "columnaA": ["3/10", "17/10", "10/10"],
+          "columnaB": [
+            "Propia, menor que un entero",
+            "Impropia, mayor que un entero",
+            "Impropia, exactamente igual a un entero"
+          ],
+          "parejasCorrectas": [0, 1, 2],
+          "retroalimentacion": "3/10 es propia (menor que un entero); 17/10 es impropia y mayor que un entero; 10/10 es impropia pero igual exactamente a 1 entero."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un salón tiene 24 estudiantes; 9 usan lentes. ¿Qué fracción de estudiantes usa lentes?",
+      "opciones": ["9/24", "24/9", "9/15", "15/9"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "9 de los 24 estudiantes usan lentes, así que la fracción es 9/24."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "13/13 es una fracción propia.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "13/13 es igual a 1 entero completo, por lo que es impropia (numerador igual al denominador), no propia."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "La fracción mixta equivalente a 22/5 es 4 ___/5.",
+      "respuestaCorrecta": "2",
+      "retroalimentacion": "22 entre 5 = 4 con residuo 2, entonces 22/5 = 4 2/5."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada situación con la fracción que la representa.",
+      "columnaA": [
+        "Un pastel dividido en 8 partes con 5 partes comidas",
+        "Una caja con 20 chocolates, de los cuales 20 son de leche",
+        "Una cinta dividida en 6 partes iguales con 1 usada"
+      ],
+      "columnaB": ["1/6", "20/20", "5/8"],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "El pastel comido es 5/8; la caja completa de chocolates es 20/20 (un entero); la cinta usada es 1/6."
+    }
+  ]
+}

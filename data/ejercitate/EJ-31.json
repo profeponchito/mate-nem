@@ -1,0 +1,273 @@
+{
+  "id": "EJ-31",
+  "grado": "Ejercítate",
+  "numero": 31,
+  "categoria": "estadistica",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Población y muestra",
+  "contenido": "Diferencia entre población y muestra, tipos de muestreo y su uso en la recolección de datos.",
+  "pda": "Distingue entre población y muestra en situaciones de la vida cotidiana y explica por qué se usa el muestreo para obtener información representativa de manera eficiente.",
+  "problematizacion": {
+    "contexto": "Una maestra quiere saber la opinión de los 900 alumnos de su secundaria sobre el menú de la cafetería, pero no tiene tiempo de preguntarle a cada uno. Decide elegir al azar solo a 90 alumnos y preguntarles a ellos.",
+    "pregunta": "¿Los 90 alumnos que sí contestó representan de verdad la opinión de los 900, o hace falta preguntarle a todos?"
+  },
+  "subtemas": [
+    {
+      "numero": "31.1",
+      "titulo": "¿Qué es población y qué es muestra?",
+      "explicacion": "En estadística, la población es el conjunto completo de todos los individuos u objetos que nos interesa estudiar, mientras que la muestra es solo una parte de esa población, elegida para representarla. Usamos la muestra porque, en la mayoría de los casos, estudiar a toda la población sería demasiado caro, lento o incluso imposible. Lo importante es que la muestra se elija bien, para que sí refleje las características del grupo completo.",
+      "ejemplos": [
+        "Si un dueño de tienda quiere conocer la opinión de sus 500 clientes frecuentes, la población son los 500 clientes; si solo entrevista a 40 de ellos, esos 40 son la muestra.",
+        "En una escuela de 800 alumnos, si el director revisa las calificaciones de los 800, está estudiando a toda la población; si solo revisa las de 2 grupos (60 alumnos), esos 60 son una muestra."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un biólogo quiere conocer el peso promedio de las tortugas marinas de una playa donde hay 3,000 tortugas. Pesa a las 3,000. ¿Qué está estudiando?",
+          "opciones": ["Una muestra", "La población completa", "Un censo parcial", "Una encuesta rápida"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Si estudia a las 3,000 tortugas, es decir a todos los individuos del grupo de interés, está estudiando la población completa, no solo una parte."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La muestra siempre es más grande que la población de la que se toma.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Es al revés: la muestra es una PARTE de la población, así que siempre es igual o menor en tamaño, nunca mayor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si un hospital tiene 1,200 pacientes registrados y un investigador estudia el expediente de los 1,200, se dice que estudió a la ___.",
+          "respuestaCorrecta": "población",
+          "retroalimentacion": "Como estudió a todos los pacientes del grupo de interés, estudió a la población completa."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una fábrica produce 10,000 tornillos al día. El control de calidad revisa 50 tornillos tomados al azar para ver si tienen defectos. ¿Qué representan esos 50 tornillos?",
+          "opciones": ["La población", "Una muestra", "El censo completo", "Un error de medición"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Los 50 tornillos son una parte del total de 10,000, elegidos para representar al grupo completo: eso es una muestra."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el concepto que representa.",
+          "columnaA": [
+            "Los 45 alumnos de un salón específico, cuando solo te interesa ese salón",
+            "Los 800 alumnos de toda la secundaria, cuando te interesa toda la escuela",
+            "30 alumnos elegidos al azar de los 800 para una encuesta rápida"
+          ],
+          "columnaB": [
+            "Es una muestra de los 800 alumnos",
+            "Es la población (si el interés es solo ese salón)",
+            "Es la población (si el interés es toda la escuela)"
+          ],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "El primer caso es población del salón; el segundo es población de toda la escuela; el tercero es una muestra porque son solo 30 de los 800."
+        }
+      ]
+    },
+    {
+      "numero": "31.2",
+      "titulo": "Tipos de muestreo",
+      "explicacion": "Existen varias formas de elegir una muestra representativa de la población. En el muestreo aleatorio simple, cada individuo tiene la misma probabilidad de ser elegido (como sacar papelitos de una urna). En el muestreo sistemático se elige un elemento cada cierto intervalo fijo (por ejemplo, uno de cada 10). En el muestreo estratificado se divide la población en grupos o 'estratos' y se toma una parte proporcional de cada uno. Y en el muestreo por conveniencia se eligen los sujetos más fáciles de alcanzar, lo cual puede hacer que la muestra no sea representativa.",
+      "ejemplos": [
+        "Para saber la opinión sobre el uniforme, un director numera a los 900 alumnos y elige, con una tómbola, a 90 al azar: es un muestreo aleatorio simple.",
+        "En una fábrica, un inspector revisa 1 de cada 20 productos que salen de la línea de producción: es un muestreo sistemático."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un investigador divide a los habitantes de una ciudad en grupos por edad (niños, jóvenes, adultos, adultos mayores) y toma una parte proporcional de cada grupo para su encuesta. ¿Qué tipo de muestreo es?",
+          "opciones": ["Aleatorio simple", "Sistemático", "Estratificado", "Por conveniencia"],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Dividir a la población en grupos (estratos) y tomar una parte proporcional de cada uno es muestreo estratificado."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un encuestador entrevista solo a las primeras 20 personas que encuentra en la entrada del súper, porque le queda cerca y es rápido. ¿Qué tipo de muestreo usó?",
+          "opciones": ["Aleatorio simple", "Estratificado", "Sistemático", "Por conveniencia"],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "Elegir a quien es más fácil de alcanzar, sin ningún método de selección, es muestreo por conveniencia; puede no ser representativo."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En el muestreo sistemático se elige a los individuos siguiendo un intervalo fijo, por ejemplo cada quinta persona de una lista.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto, el muestreo sistemático usa un patrón regular (cada n-ésimo elemento) para elegir a los integrantes de la muestra."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si de una lista de 500 clientes se elige uno al azar y luego cada 25.º cliente después de ese, el tipo de muestreo es ___.",
+          "respuestaCorrecta": "sistemático",
+          "retroalimentacion": "Elegir con un intervalo fijo (cada 25.º) a partir de un punto inicial es muestreo sistemático."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada forma de elegir la muestra con el tipo de muestreo que le corresponde.",
+          "columnaA": [
+            "Sacar 30 nombres de una urna con los nombres de los 300 alumnos",
+            "Dividir a los alumnos por grado y tomar un porcentaje igual de cada grado",
+            "Entrevistar solo a los amigos que están cerca en el patio"
+          ],
+          "columnaB": [
+            "Muestreo por conveniencia",
+            "Muestreo aleatorio simple",
+            "Muestreo estratificado"
+          ],
+          "parejasCorrectas": [1, 2, 0],
+          "retroalimentacion": "La urna es aleatorio simple; dividir por grado y tomar proporciones es estratificado; entrevistar solo a los amigos cercanos es por conveniencia."
+        }
+      ]
+    },
+    {
+      "numero": "31.3",
+      "titulo": "Ventajas de la muestra frente al censo",
+      "explicacion": "Un censo estudia a TODA la población, mientras que un muestreo solo estudia una parte. Usar una muestra bien elegida tiene ventajas claras: es más rápida, más barata y requiere menos personal que un censo completo; además, en estudios donde medir destruye el objeto (como probar la vida útil de un foco), es imposible hacer un censo porque se acabarían todos los productos. Sin embargo, el censo da información exacta de cada individuo, mientras que la muestra siempre tiene algún margen de error, por lo que debe ser representativa para que sus resultados sean confiables.",
+      "ejemplos": [
+        "El Censo de Población y Vivienda en México pregunta a TODOS los hogares del país cada 10 años: es costoso y tarda meses, pero da datos exactos de cada persona.",
+        "Una empresa de focos no puede probar la duración de los 50,000 focos que fabricó en un día (los destruiría todos); en cambio, prueba una muestra de 100 focos y calcula la duración promedio."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la principal ventaja de usar una muestra en lugar de un censo cuando se quiere probar cuánto dura encendido un foco antes de fundirse?",
+          "opciones": ["La muestra es más exacta que el censo", "No se destruyen todos los focos fabricados", "La muestra siempre tiene cero error", "El censo es más barato de hacer"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Si se probaran todos los focos, se destruirían todos; con una muestra se conserva la mayoría y aun así se obtiene información útil."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un censo siempre es más rápido y barato de realizar que un muestreo.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Es al revés: el censo estudia a toda la población, así que suele ser más lento y costoso que estudiar solo una muestra."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una universidad con 40,000 estudiantes quiere saber, en una semana, si están satisfechos con la nueva plataforma en línea. ¿Qué conviene más?",
+          "opciones": ["Hacer un censo a los 40,000", "Tomar una muestra representativa de unos cientos de estudiantes", "No preguntar a nadie", "Preguntar solo a los estudiantes de un salón"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Un censo a 40,000 tomaría demasiado tiempo; una muestra representativa da resultados confiables en menos tiempo (a diferencia de preguntar solo a un salón, que no representa a toda la universidad)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Cuando medir a un individuo implica destruirlo o consumirlo (como probar la duración de una pila), conviene usar una ___ y no un censo.",
+          "respuestaCorrecta": "muestra",
+          "retroalimentacion": "Con una muestra se conservan la mayoría de las piezas, en vez de destruirlas todas como pasaría con un censo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada característica con censo o muestreo.",
+          "columnaA": [
+            "Estudiar a cada uno de los 100,000 habitantes de un municipio",
+            "Estudiar a 500 habitantes elegidos al azar del municipio",
+            "Tardar varios meses y usar miles de encuestadores"
+          ],
+          "columnaB": [
+            "Es un muestreo (parte de la población)",
+            "Es típico de un censo, por su tamaño",
+            "Es un censo (población completa)"
+          ],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "Estudiar a los 100,000 es un censo; estudiar a 500 elegidos al azar es un muestreo; tardar meses con miles de encuestadores es típico de un censo por su gran tamaño."
+        }
+      ]
+    },
+    {
+      "numero": "31.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: la población es el grupo completo que te interesa estudiar y la muestra es una parte de ese grupo, elegida para representarlo. Para elegir bien una muestra existen distintos métodos (aleatorio simple, sistemático, estratificado o por conveniencia), y usar una muestra en vez de un censo ahorra tiempo y dinero, aunque siempre existe algún margen de error. Ante cualquier situación real, primero identifica cuál es la población de interés y después decide si conviene estudiarla completa (censo) o solo una muestra representativa.",
+      "ejemplos": [
+        "Una alcaldía quiere saber cuántos de los 250,000 hogares de la ciudad tienen acceso a agua potable. Estudiar todos los hogares sería un censo; entrevistar a 1,000 hogares elegidos por colonia sería una muestra estratificada."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un club deportivo tiene 600 socios. Para saber su opinión sobre el nuevo horario, el club numera a los 600 socios y elige 60 con un sorteo digital. ¿Cuál es la población y cuál la muestra?",
+          "opciones": ["Población: 60; Muestra: 600", "Población: 600; Muestra: 60", "Ambos son la población", "Ambos son la muestra"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El grupo completo de interés (600 socios) es la población; los 60 elegidos por sorteo son la muestra."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Elegir siempre a los compañeros más cercanos para una encuesta escolar es un buen ejemplo de muestreo aleatorio simple.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Elegir a los más cercanos, sin dar a todos la misma oportunidad de participar, es muestreo por conveniencia, no aleatorio simple."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si una empresa divide a sus 1,000 empleados por departamento y toma una parte proporcional de cada uno para encuestarlos, el tipo de muestreo usado es el ___.",
+          "respuestaCorrecta": "estratificado",
+          "retroalimentacion": "Dividir en grupos (departamentos) y tomar una parte proporcional de cada uno es muestreo estratificado."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Por qué un país no levanta un censo de población todos los años, sino que usa encuestas por muestreo la mayoría de los años?",
+          "opciones": ["Porque el censo es ilegal", "Porque un censo completo es muy costoso y tardado de repetir cada año", "Porque las muestras dan datos falsos", "Porque la población no cambia nunca"],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Un censo requiere visitar a toda la población, lo cual es muy costoso y toma mucho tiempo, por eso no se repite cada año."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ejemplo con el concepto que mejor lo describe.",
+          "columnaA": [
+            "Preguntar a los 50 alumnos de un solo salón, cuando te interesa solo ese salón",
+            "Elegir 1 de cada 10 productos de una línea de producción para revisarlos",
+            "Entrevistar únicamente a las personas que pasan frente a tu puesto en el mercado"
+          ],
+          "columnaB": [
+            "Muestreo sistemático",
+            "Muestreo por conveniencia",
+            "Población completa (censo del salón)"
+          ],
+          "parejasCorrectas": [2, 0, 1],
+          "retroalimentacion": "Preguntar a los 50 del salón cuando solo interesa ese salón es censo de esa población; elegir 1 de cada 10 es sistemático; entrevistar solo a quien pasa cerca es por conveniencia."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un veterinario quiere saber el peso promedio de los 15 perros de su clínica y los pesa a todos. ¿Qué hizo?",
+      "opciones": ["Tomó una muestra", "Hizo un censo de esos 15 perros", "Hizo un muestreo estratificado", "Hizo un muestreo por conveniencia"],
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "Al pesar a los 15 perros (todos los de la clínica), estudió a la población completa, es decir, hizo un censo."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El muestreo estratificado divide a la población en grupos y toma una parte de cada grupo.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto, así se define el muestreo estratificado: se forman estratos o grupos y se toma una porción proporcional de cada uno."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "La parte de la población que se elige para representarla se llama ___.",
+      "respuestaCorrecta": "muestra",
+      "retroalimentacion": "La muestra es el subconjunto de la población elegido para representarla en un estudio."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada situación con el tipo de muestreo.",
+      "columnaA": [
+        "Numerar a todos y sortear quiénes participan",
+        "Encuestar solo a quien conteste primero en el chat del grupo",
+        "Elegir cada 5.º cliente que entra a la tienda"
+      ],
+      "columnaB": [
+        "Muestreo sistemático",
+        "Muestreo por conveniencia",
+        "Muestreo aleatorio simple"
+      ],
+      "parejasCorrectas": [2, 1, 0],
+      "retroalimentacion": "Sortear entre todos es aleatorio simple; encuestar a quien conteste primero es por conveniencia; elegir cada 5.º cliente es sistemático."
+    }
+  ]
+}

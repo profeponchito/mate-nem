@@ -2,7 +2,9 @@
 
 Cada Proceso de Desarrollo de Aprendizaje (PDA) vive en su propio archivo
 JSON, agrupado por grado escolar. El Trimestre 1 completo (eje "Sentido
-numérico y pensamiento algebraico") ya está construido para los 3 grados:
+numérico y pensamiento algebraico") ya está construido para los 3 grados, y
+además hay un apartado independiente de práctica libre ("Ejercítate") con
+36 temas — ver la sección dedicada más abajo:
 
 ```
 data/
@@ -14,9 +16,12 @@ data/
 ├── grado-2/
 │   ├── index.json
 │   └── 2S-B1-PDA01.json … 2S-B1-PDA06.json   (6 PDAs)
-└── grado-3/
+├── grado-3/
+│   ├── index.json
+│   └── 3S-B1-PDA01.json … 3S-B1-PDA04.json   (4 PDAs)
+└── ejercitate/
     ├── index.json
-    └── 3S-B1-PDA01.json … 3S-B1-PDA04.json   (4 PDAs)
+    └── EJ-01.json … EJ-36.json               (36 temas)
 ```
 
 Los contenidos y PDA se basan en el Programa Sintético de la Fase 6 (SEP,
@@ -154,25 +159,73 @@ de los 4 subtemas: teoría → 5 preguntas → mini-resultado) → resultado
 GLOBAL (suma de los 4) → práctica extra (opcional, si el PDA la incluye) →
 constancia (con fecha y hora de generación).
 
-## Apartado "Ejercítate" (operaciones básicas) — acceso ya disponible, contenido en construcción
+## Apartado "Ejercítate" (36 temas de práctica libre) — completo
 
-Independiente de los PDAs por grado, hay un apartado de práctica libre de
-operaciones básicas (suma, resta, multiplicación, división), calificado
-igual que un PDA pero sin pertenecer a la ruta curricular de ningún grado
-en particular ni bloquear nada. Ya es accesible desde la pantalla de
-selección de grado (tarjeta "Ejercítate", ruta `#/ejercitate`) — por ahora
-muestra un aviso de "en construcción" con la vista previa de sus 4 items.
-Su manifiesto ya existe en `data/ejercitate/index.json`, con numeración
-propia (`E.1`…`E.4`, prefijo "E" para no confundirse con el número de Tema
-de un PDA):
+Independiente de los PDAs por grado, "Ejercítate" es un apartado de
+práctica libre con **36 temas** de matemáticas de secundaria, agrupados en
+4 categorías, disponible para cualquier alumno sin importar su grado. Cada
+tema sigue exactamente la misma dinámica que un PDA (problematización → 4
+subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad
+calificada de 5 reactivos → resultado global → práctica extra → constancia)
+y no bloquea ni pertenece a la ruta curricular de ningún grado en
+particular: el docente puede pedir cualquier tema, a cualquier alumno, en
+cualquier momento.
 
-- `E.1` Suma
-- `E.2` Resta
-- `E.3` Multiplicación
-- `E.4` División
+### El "pseudo-grado" `ejercitate`
 
-Cada item apuntará a un futuro `data/ejercitate/<id>.json` con la misma
-estructura que un PDA v4 (`problematizacion`/`subtemas` de 4×5 reactivos),
-todavía por construir — es parte del rediseño de la interfaz estilo
-Duolingo que sigue en curso (falta también el trazado en "serpiente" del
-camino de PDAs/actividades y la paleta de colores propia).
+Técnicamente, Ejercítate reutiliza el 100% del motor de PDAs: en vez de
+crear un sistema paralelo, `'ejercitate'` se trata como un **grado
+sintético** que fluye por exactamente las mismas rutas, carga de datos y
+vistas que un grado real (`#/pda-lista/:grado`, `#/pda/:grado/:id`,
+`vistaListaPDA`, `vistaPDA`, gamificación, webhook, constancia). Solo
+difiere en dos puntos, ambos ya resueltos en el código:
+
+- **Carpeta de datos:** `pda-loader.js` resuelve `'ejercitate'` a la
+  carpeta `data/ejercitate/` en vez de `data/grado-N/` (función
+  `carpetaDeGrado_`).
+- **Color y etiqueta:** `app.js` usa `COLOR_EJERCITATE` (paleta "Aula NEM",
+  tono grafito) en vez del color del grado, y muestra la etiqueta
+  "Ejercítate" en vez de "N° de secundaria" (`temaGrado_`/`etiquetaGrado_`).
+
+El campo `grado` dentro del JSON de cada tema es literalmente el string
+`"Ejercítate"` (con acento) — así lo exige `pda.schema.json` — y cada
+archivo agrega además el campo `categoria` (uno de `basico`, `intermedio`,
+`avanzado`, `estadistica`), que la pantalla de Ejercítate usa para agrupar
+los 36 temas en **4 mini-caminos** (uno por categoría, cada uno con su
+propio encabezado y su propio trazo serpenteante), en vez de un solo camino
+plano de 36 nodos.
+
+### Los 36 temas
+
+Numerados 1-36 (`numero` en el JSON, también usado en el nombre de archivo
+`EJ-01.json`…`EJ-36.json` y en el campo `id`), en el orden y con los textos
+exactos que definió el docente:
+
+**Básicos (1-10):** Números naturales y enteros · Operaciones básicas (suma,
+resta, multiplicación y división) · Jerarquía de operaciones · Múltiplos y
+divisores · Máximo Común Divisor (MCD) · Mínimo Común Múltiplo (MCM) ·
+Fracciones: concepto y tipos · Fracciones equivalentes · Suma y resta de
+fracciones · Decimales y su relación con fracciones.
+
+**Intermedios (11-20):** Números racionales e irracionales · Potencias y
+raíces · Leyes de los exponentes · Proporcionalidad directa ·
+Proporcionalidad inversa · Razones y proporciones · Porcentajes y
+aplicaciones en la vida diaria · Expresiones algebraicas · Monomios y
+polinomios · Perímetro y área de figuras planas.
+
+**Avanzados (21-30):** Ecuaciones de primer grado · Sistemas de ecuaciones ·
+Plano cartesiano · Funciones lineales · Gráficas y su interpretación ·
+Congruencia de triángulos · Semejanza de triángulos · Teorema de Tales ·
+Teorema de Pitágoras · Volumen y área de cuerpos geométricos.
+
+**Estadística y probabilidad (31-36):** Población y muestra · Tablas de
+frecuencia · Gráficas (barras, circulares y lineales) · Media, mediana y
+moda · Probabilidad simple · Experimentos aleatorios.
+
+Los 36 archivos (864 reactivos en total: 720 calificados + 144 de práctica
+extra) están validados contra `pda.schema.json`, revisados uno por uno con
+el flujo completo en Playwright (`qa-full-sweep-v6.mjs`, que también
+verifica el camino agrupado por categoría), y pasados por un escáner de
+duplicados semánticos (mismo tipo + mismo contenido matemático real, no
+solo texto) para evitar que dos reactivos del mismo subtema sean, en los
+hechos, la misma pregunta repetida.

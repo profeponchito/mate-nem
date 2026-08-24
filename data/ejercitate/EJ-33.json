@@ -1,0 +1,246 @@
+{
+  "id": "EJ-33",
+  "grado": "Ejercítate",
+  "numero": 33,
+  "categoria": "estadistica",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Gráficas (barras, circulares y lineales)",
+  "contenido": "Lectura, interpretación y elección del tipo de gráfica adecuado (barras, circular o lineal) para representar un conjunto de datos.",
+  "pda": "Interpreta y selecciona el tipo de gráfica más adecuado (barras, circular o lineal) para representar y comunicar información de situaciones cotidianas.",
+  "problematizacion": {
+    "contexto": "El comité de la kermés escolar recolectó, durante los últimos 6 meses, el dinero reunido cada mes, y también encuestó a los alumnos sobre su juego favorito de la kermés (lotería, tiro al blanco, pesca de patitos y costalazo).",
+    "pregunta": "Si el comité quiere mostrar en un cartel cómo ha cambiado el dinero reunido mes con mes, y en otro cartel qué porcentaje de alumnos prefiere cada juego, ¿el mismo tipo de gráfica sirve para ambos casos?"
+  },
+  "subtemas": [
+    {
+      "numero": "33.1",
+      "titulo": "Gráfica de barras",
+      "explicacion": "La gráfica de barras usa rectángulos de distinta altura (o longitud) para comparar cantidades entre categorías distintas, como sabores, equipos o materias. Entre más alta la barra, mayor es la cantidad que representa esa categoría. Es la gráfica más útil cuando se quiere comparar de un vistazo varios grupos separados entre sí, porque las diferencias de altura se ven de inmediato.",
+      "ejemplos": [
+        "En una gráfica de barras sobre mascotas favoritas, la barra de \"perro\" llega a 18 y la de \"pez\" llega a 4; se ve claramente que perro es mucho más popular que pez.",
+        "Una gráfica de barras del número de goles por equipo (A=5, B=8, C=3) muestra que el equipo B tiene la barra más alta, por lo tanto es el que más goles anotó."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la principal ventaja de una gráfica de barras para representar datos?",
+          "opciones": [
+            "Permite comparar rápidamente cantidades entre categorías distintas por la altura de cada barra",
+            "Solo sirve para mostrar cambios a lo largo del tiempo",
+            "Solo puede usarse con dos categorías como máximo",
+            "Muestra únicamente porcentajes, nunca cantidades exactas"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La gráfica de barras compara categorías distintas mediante la altura de cada barra, lo que facilita ver de un vistazo cuál es mayor o menor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una gráfica de barras, mientras más alta es la barra de una categoría, mayor es la cantidad que representa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la altura de cada barra es proporcional a la cantidad de esa categoría."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una gráfica de barras sobre deportes favoritos, si fútbol tiene barra=20, básquetbol tiene barra=12 y natación tiene barra=8, el deporte con la barra más alta es ___.",
+          "respuestaCorrecta": "fútbol",
+          "retroalimentacion": "20 es la cantidad más alta de las tres, así que la barra de fútbol es la más alta."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una gráfica de barras muestra las calificaciones más comunes de un grupo: 7 (barra=6), 8 (barra=14), 9 (barra=9), 10 (barra=1). ¿Cuál calificación fue la más frecuente?",
+          "opciones": ["8", "7", "9", "10"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La barra más alta corresponde a la calificación 8, con 14 alumnos, así que fue la más frecuente."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una gráfica de barras es adecuada para comparar las ventas de cuatro sabores de paleta distintos en un mismo día.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: comparar cantidades entre categorías (los sabores) es exactamente para lo que sirve la gráfica de barras."
+        }
+      ]
+    },
+    {
+      "numero": "33.2",
+      "titulo": "Gráfica circular (de pastel)",
+      "explicacion": "La gráfica circular, también llamada gráfica de pastel, representa un todo (el 100%) dividido en partes o \"rebanadas\", donde cada rebanada muestra qué porcentaje del total corresponde a una categoría. Es útil cuando se quiere mostrar cómo se reparte algo completo entre sus partes, no tanto para comparar valores exactos entre categorías. Entre más grande la rebanada, mayor es el porcentaje que representa esa categoría dentro del total.",
+      "ejemplos": [
+        "En una gráfica circular sobre el uso del tiempo libre de un alumno: Videojuegos 40%, Deporte 30%, Lectura 20%, Otro 10%; las cuatro rebanadas suman 100% del tiempo libre total.",
+        "Una gráfica circular del presupuesto familiar mensual muestra: Renta 45%, Comida 30%, Transporte 15%, Ahorro 10%; la rebanada de Renta es la más grande porque representa el mayor porcentaje."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Para qué tipo de información es más adecuada una gráfica circular?",
+          "opciones": [
+            "Para mostrar cómo se reparte un total en porcentajes entre varias categorías",
+            "Para mostrar cómo cambia una cantidad a lo largo del tiempo",
+            "Para comparar cantidades exactas cuando no importa el total",
+            "Para representar datos que no tienen ninguna relación entre sí"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La gráfica circular muestra cómo un total (100%) se divide en partes, por eso es ideal para representar porcentajes de un conjunto completo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si una gráfica circular sobre el color favorito de un grupo muestra Azul=50%, Rojo=30% y Verde=20%, las tres rebanadas juntas deben sumar ___%.",
+          "respuestaCorrecta": "100",
+          "retroalimentacion": "En una gráfica circular, todas las rebanadas representan partes de un mismo total, así que siempre suman 100%."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En una gráfica circular, la rebanada más grande siempre corresponde a la categoría con mayor porcentaje.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el tamaño de cada rebanada es proporcional al porcentaje que representa esa categoría."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una gráfica circular sobre el destino de vacaciones de un grupo muestra: Playa 45%, Montaña 25%, Ciudad 20%, Campo 10%. ¿Qué porcentaje de alumnos NO eligió playa?",
+          "opciones": ["55%", "45%", "25%", "10%"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como el total es 100% y playa es 45%, el resto es 100% - 45% = 55%."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una gráfica circular sobre los tipos de mascota de un grupo, si Perro=40%, Gato=35%, Pez=15% y Otro=___%, entonces Otro representa 10%.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "40+35+15=90%; como el total debe ser 100%, a Otro le corresponde 100-90=10%."
+        }
+      ]
+    },
+    {
+      "numero": "33.3",
+      "titulo": "Gráfica lineal",
+      "explicacion": "La gráfica lineal usa puntos unidos por líneas para mostrar cómo cambia una cantidad a lo largo del tiempo, como días, meses o años. La dirección de la línea indica la tendencia: si sube, la cantidad aumenta; si baja, disminuye; si se mantiene horizontal, permanece constante. Es la gráfica más adecuada cuando el objetivo es observar la evolución de un dato, no solo compararlo entre categorías separadas.",
+      "ejemplos": [
+        "Una gráfica lineal de la temperatura de una ciudad durante el día muestra que sube de 15°C a las 6 am hasta 28°C a las 2 pm, y después baja; la línea sube y luego baja.",
+        "La gráfica lineal de las ventas mensuales de una tienda pasa de $2,000 en enero a $5,000 en junio; la línea tiene una tendencia claramente ascendente."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué tipo de información representa mejor una gráfica lineal?",
+          "opciones": [
+            "Cómo cambia una cantidad a lo largo del tiempo",
+            "Cómo se reparte un total entre varias categorías en un solo momento",
+            "La comparación de categorías sin ningún orden temporal",
+            "Solo valores que nunca cambian"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La gráfica lineal conecta puntos en el tiempo para mostrar la evolución o tendencia de una cantidad."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si la línea de una gráfica lineal va hacia arriba de izquierda a derecha, la cantidad representada está aumentando.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: una línea ascendente indica que el valor crece conforme avanza el tiempo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En una gráfica lineal del peso de una planta durante 4 semanas (10 g, 10 g, 10 g, 10 g), la tendencia de la línea es ___.",
+          "respuestaCorrecta": "constante",
+          "retroalimentacion": "Como el valor no cambia de una semana a otra, la línea se mantiene horizontal, es decir, constante."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una gráfica lineal muestra el número de visitantes a un museo: Lunes=50, Martes=80, Miércoles=60, Jueves=40. ¿Qué describe mejor la tendencia entre martes y jueves?",
+          "opciones": ["La línea baja de forma continua", "La línea sube de forma continua", "La línea se mantiene constante", "No se puede saber sin una gráfica circular"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De martes (80) a miércoles (60) a jueves (40), los valores disminuyen cada día, así que la línea baja de forma continua."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una gráfica lineal sería adecuada para mostrar cómo cambió la estatura de un estudiante cada año durante la secundaria.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: al ser datos que cambian a lo largo del tiempo (los años), una gráfica lineal permite ver claramente la tendencia de crecimiento."
+        }
+      ]
+    },
+    {
+      "numero": "33.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: la gráfica de barras compara cantidades entre categorías distintas usando la altura de cada barra; la gráfica circular reparte un total (100%) en porcentajes por categoría, útil cuando quieres ver qué parte del todo ocupa cada grupo; y la gráfica lineal muestra cómo cambia una cantidad a través del tiempo mediante la tendencia de una línea. Elegir la gráfica correcta depende de qué pregunta quieres responder: ¿comparar grupos?, ¿ver un reparto porcentual?, ¿observar una evolución en el tiempo?",
+      "ejemplos": [
+        "Para mostrar el dinero reunido cada mes en una kermés durante 6 meses, la gráfica lineal es la mejor opción porque muestra la evolución en el tiempo; para mostrar qué porcentaje de alumnos prefiere cada juego de la kermés, la gráfica circular es más adecuada porque reparte el 100% de las preferencias."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un equipo de futbol quiere mostrar cuántos goles anotó cada uno de sus 5 delanteros esta temporada. ¿Qué tipo de gráfica es más adecuada?",
+          "opciones": ["Gráfica de barras", "Gráfica circular", "Gráfica lineal", "Ninguna gráfica sirve para esto"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Al comparar cantidades entre categorías distintas (los 5 delanteros), la gráfica de barras es la más adecuada."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el tipo de gráfica más adecuado para representarla.",
+          "columnaA": [
+            "Población de una ciudad registrada cada año durante una década",
+            "Porcentaje de alumnos que eligió cada actividad extraescolar",
+            "Número de libros leídos por cada uno de 6 alumnos en un mes"
+          ],
+          "columnaB": ["Gráfica de barras", "Gráfica circular", "Gráfica lineal"],
+          "parejasCorrectas": [2, 1, 0],
+          "retroalimentacion": "La población a través del tiempo usa gráfica lineal; el reparto porcentual usa gráfica circular; comparar alumnos entre sí usa gráfica de barras."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Es correcto usar una gráfica circular para mostrar cómo cambió la temperatura de una ciudad hora por hora durante un día.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: para mostrar cambios a lo largo del tiempo se usa una gráfica lineal, no una circular, que sirve para repartos porcentuales de un total."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Para representar qué porcentaje de los ingresos de una familia se destina a renta, comida, transporte y ahorro, la gráfica más adecuada es la gráfica ___.",
+          "respuestaCorrecta": "circular",
+          "retroalimentacion": "Como se trata de repartir un total (los ingresos) en porcentajes entre varias categorías, la gráfica circular es la más adecuada."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un doctor registra el peso de un bebé cada mes durante su primer año de vida para ver cómo ha crecido. ¿Qué gráfica conviene usar?",
+          "opciones": ["Gráfica lineal", "Gráfica circular", "Gráfica de barras", "Cualquiera, da igual"],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como se quiere observar la evolución del peso a lo largo del tiempo (los meses), la gráfica lineal es la más adecuada."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Una tienda quiere mostrar sus ventas totales de enero a diciembre para ver si van creciendo. ¿Qué gráfica debería usar?",
+      "opciones": ["Gráfica lineal", "Gráfica circular", "Gráfica de barras horizontales sin orden", "Ninguna, mejor una tabla sin gráfica"],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Al tratarse de una evolución mes a mes durante el año, la gráfica lineal es la más adecuada para ver la tendencia de las ventas."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "En una gráfica circular, todas las rebanadas juntas siempre representan el 100% de los datos.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: la gráfica circular representa un total completo dividido en partes, así que la suma de todas las rebanadas es 100%."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "En una gráfica de barras sobre mascotas favoritas de un grupo, si la barra de \"gato\" es más alta que la de \"pez\", entonces hay más alumnos que prefieren ___ que pez.",
+      "respuestaCorrecta": "gato",
+      "retroalimentacion": "Una barra más alta representa una cantidad mayor, así que más alumnos prefieren gato que pez."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada tipo de gráfica con la característica que mejor la describe.",
+      "columnaA": ["Gráfica de barras", "Gráfica circular", "Gráfica lineal"],
+      "columnaB": ["Muestra la tendencia de un dato a través del tiempo con una línea", "Compara cantidades entre categorías con rectángulos de distinta altura", "Reparte un total en porcentajes mediante rebanadas"],
+      "parejasCorrectas": [1, 2, 0],
+      "retroalimentacion": "Barras: compara categorías con altura; circular: reparte un total en porcentajes; lineal: muestra tendencias en el tiempo."
+    }
+  ]
+}
