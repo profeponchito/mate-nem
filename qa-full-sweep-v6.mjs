@@ -73,8 +73,10 @@ async function probarPDA(page, grado, pda, consoleErrors) {
     throw new Error(`se esperaba al menos 1 subtema, hay ${pda.subtemas.length}`);
   }
   const totalReactivos = pda.subtemas.reduce((acc, s) => acc + s.reactivos.length, 0);
-  if (totalReactivos !== pda.subtemas.length * 5) {
-    throw new Error(`se esperaban ${pda.subtemas.length * 5} reactivos en total (${pda.subtemas.length}×5), hay ${totalReactivos}`);
+  for (const s of pda.subtemas) {
+    if (s.reactivos.length % 5 !== 0 || s.reactivos.length < 5) {
+      throw new Error(`un subtema debe tener un múltiplo de 5 reactivos (≥5, una ronda de actividad por cada 5 — Paso 16), tiene ${s.reactivos.length}`);
+    }
   }
 
   // problematización: debe verse el título (pda.titulo)
@@ -88,9 +90,7 @@ async function probarPDA(page, grado, pda, consoleErrors) {
 
   for (let si = 0; si < pda.subtemas.length; si++) {
     const subtema = pda.subtemas[si];
-    if (subtema.reactivos.length !== 5) {
-      throw new Error(`subtema[${si}] debe tener exactamente 5 reactivos, tiene ${subtema.reactivos.length}`);
-    }
+    const totalPartes = Math.ceil(subtema.reactivos.length / 5); // Paso 16: 1 ronda por cada 5 reactivos
 
     // Panel de teoría del subtema: título, explicación y nivel de dificultad correcto.
     bodyText = await page.innerText('body');
@@ -120,82 +120,99 @@ async function probarPDA(page, grado, pda, consoleErrors) {
     await page.click('[data-accion="continuar"]');
     await page.waitForTimeout(100);
 
-    // Panel de actividad: exactamente 5 reactivos, prefijo act-{si}-{i}.
-    bodyText = await page.innerText('body');
-    if (!bodyText.includes(subtema.titulo)) throw new Error(`actividad[${si}] no muestra el título del subtema`);
-    if (!bodyText.includes(`DE 5`)) throw new Error(`actividad[${si}] no muestra el conteo "REACTIVO N DE 5"`);
-
-    // No se puede saber de antemano el orden barajado de los reactivos —
-    // se identifica cada bloque (contenedor "REACTIVO N DE 5") por su
-    // posición renderizada, comparando el texto EXACTO de su enunciado
-    // (el primer <p>, sin las opciones/labels) contra los 5 reactivos
-    // originales del subtema, para saber a cuál corresponde cada uno.
-    const bloques = page.locator('div.border-t.border-slate-100');
-    await bloques.first().waitFor({ state: 'attached' });
-    const totalBloques = await bloques.count();
-    if (totalBloques !== 5) {
-      throw new Error(`actividad[${si}] esperaba 5 bloques de reactivo, hay ${totalBloques}`);
-    }
+    // Panel(es) de actividad: una ronda de 5 reactivos por cada 5 en total
+    // (Paso 16 — `totalPartes` calculado arriba). `yaIdentificados` vive
+    // FUERA del bucle de rondas: un subtema de 10 reactivos barajados los
+    // reparte entre 2 rondas de 5, así que un reactivo ya usado en la ronda
+    // 1 no debe volver a emparejarse en la ronda 2.
     const yaIdentificados = new Set();
-    for (let i = 0; i < 5; i++) {
-      const prefijo = `act-${si}-${i}`;
-      const bloque = bloques.nth(i);
-      // El primer <p> del bloque es la etiqueta "REACTIVO N DE 5"; el
-      // enunciado real es el segundo <p> (nth(1)).
-      const textoPregunta = (await bloque.locator('p').nth(1).innerText()).trim().replace(/\s+/g, ' ');
-      let candidatos = subtema.reactivos.filter((r) => {
-        if (yaIdentificados.has(r)) return false;
-        let texto;
-        if (r.tipo === 'llenar_frase') {
-          // El <input> es un elemento reemplazado (sin texto propio), así que
-          // el innerText del <p> es "antes"+"después" pegados, sin el hueco.
-          const [antes, despues] = r.frase.split('___');
-          texto = `${antes || ''}${despues || ''}`;
-        } else {
-          texto = r.pregunta || r.enunciado || r.instruccion || '';
-        }
-        return texto && texto.trim().replace(/\s+/g, ' ') === textoPregunta;
-      });
-      if (candidatos.length > 1) {
-        // Varios reactivos (típicamente relacionar_columnas, o preguntas con
-        // un mismo enunciado "plantilla" pero distintos números/opciones) pueden
-        // compartir el mismo texto visible — se desambigua con contenido que
-        // NUNCA se baraja: las etiquetas de columnaA (columna izquierda) para
-        // relacionar_columnas, o el CONJUNTO de opciones (como conjunto, no en
-        // orden, porque sí se barajan) para opcion_multiple.
-        const etiquetas = (await bloque.locator('span.flex-1').allInnerTexts()).map((t) => t.trim());
-        if (etiquetas.length > 0) {
-          candidatos = candidatos.filter((r) => Array.isArray(r.columnaA) && JSON.stringify(r.columnaA) === JSON.stringify(etiquetas));
-        } else {
-          const opcionesRenderizadas = (await bloque.locator('label').allInnerTexts()).map((t) => t.trim()).sort();
-          if (opcionesRenderizadas.length > 0) {
-            candidatos = candidatos.filter((r) => {
-              if (!Array.isArray(r.opciones)) return false;
-              const propias = r.opciones.map((o) => String(o).trim()).sort();
-              return JSON.stringify(propias) === JSON.stringify(opcionesRenderizadas);
-            });
+    for (let parte = 0; parte < totalPartes; parte++) {
+      bodyText = await page.innerText('body');
+      if (!bodyText.includes(subtema.titulo)) throw new Error(`actividad[${si}][ronda ${parte}] no muestra el título del subtema`);
+      if (!bodyText.includes(`DE 5`)) throw new Error(`actividad[${si}][ronda ${parte}] no muestra el conteo "REACTIVO N DE 5"`);
+      if (totalPartes > 1 && !bodyText.includes(`Ronda ${parte + 1} de ${totalPartes}`)) {
+        throw new Error(`actividad[${si}][ronda ${parte}] no muestra la etiqueta "Ronda ${parte + 1} de ${totalPartes}"`);
+      }
+
+      // No se puede saber de antemano el orden barajado de los reactivos —
+      // se identifica cada bloque (contenedor "REACTIVO N DE 5") por su
+      // posición renderizada, comparando el texto EXACTO de su enunciado
+      // (el primer <p>, sin las opciones/labels) contra los reactivos
+      // originales del subtema aún no identificados, para saber a cuál
+      // corresponde cada uno.
+      const bloques = page.locator('div.border-t.border-slate-100');
+      await bloques.first().waitFor({ state: 'attached' });
+      const totalBloques = await bloques.count();
+      if (totalBloques !== 5) {
+        throw new Error(`actividad[${si}][ronda ${parte}] esperaba 5 bloques de reactivo, hay ${totalBloques}`);
+      }
+      for (let i = 0; i < 5; i++) {
+        const prefijo = `act-${si}-${i}`;
+        const bloque = bloques.nth(i);
+        // El primer <p> del bloque es la etiqueta "REACTIVO N DE 5"; el
+        // enunciado real es el segundo <p> (nth(1)).
+        const textoPregunta = (await bloque.locator('p').nth(1).innerText()).trim().replace(/\s+/g, ' ');
+        let candidatos = subtema.reactivos.filter((r) => {
+          if (yaIdentificados.has(r)) return false;
+          let texto;
+          if (r.tipo === 'llenar_frase') {
+            // El <input> es un elemento reemplazado (sin texto propio), así que
+            // el innerText del <p> es "antes"+"después" pegados, sin el hueco.
+            const [antes, despues] = r.frase.split('___');
+            texto = `${antes || ''}${despues || ''}`;
+          } else {
+            texto = r.pregunta || r.enunciado || r.instruccion || '';
+          }
+          return texto && texto.trim().replace(/\s+/g, ' ') === textoPregunta;
+        });
+        if (candidatos.length > 1) {
+          // Varios reactivos (típicamente relacionar_columnas, o preguntas con
+          // un mismo enunciado "plantilla" pero distintos números/opciones) pueden
+          // compartir el mismo texto visible — se desambigua con contenido que
+          // NUNCA se baraja: las etiquetas de columnaA (columna izquierda) para
+          // relacionar_columnas, o el CONJUNTO de opciones (como conjunto, no en
+          // orden, porque sí se barajan) para opcion_multiple.
+          const etiquetas = (await bloque.locator('span.flex-1').allInnerTexts()).map((t) => t.trim());
+          if (etiquetas.length > 0) {
+            candidatos = candidatos.filter((r) => Array.isArray(r.columnaA) && JSON.stringify(r.columnaA) === JSON.stringify(etiquetas));
+          } else {
+            const opcionesRenderizadas = (await bloque.locator('label').allInnerTexts()).map((t) => t.trim()).sort();
+            if (opcionesRenderizadas.length > 0) {
+              candidatos = candidatos.filter((r) => {
+                if (!Array.isArray(r.opciones)) return false;
+                const propias = r.opciones.map((o) => String(o).trim()).sort();
+                return JSON.stringify(propias) === JSON.stringify(opcionesRenderizadas);
+              });
+            }
           }
         }
+        if (candidatos.length !== 1) {
+          throw new Error(`actividad[${si}][ronda ${parte}] no se pudo identificar sin ambigüedad el reactivo en la posición ${i} (barajado): "${textoPregunta.slice(0, 120)}" — ${candidatos.length} candidatos`);
+        }
+        const reactivoOriginal = candidatos[0];
+        yaIdentificados.add(reactivoOriginal);
+        await responder(page, prefijo, reactivoOriginal);
       }
-      if (candidatos.length !== 1) {
-        throw new Error(`actividad[${si}] no se pudo identificar sin ambigüedad el reactivo en la posición ${i} (barajado): "${textoPregunta.slice(0, 120)}" — ${candidatos.length} candidatos`);
+
+      const esUltimaRonda = parte === totalPartes - 1;
+      const bloqueBoton = await page.locator('[data-accion="enviar-actividad"]').innerText();
+      if (!bloqueBoton.includes(esUltimaRonda ? 'Enviar respuestas' : 'Siguiente ronda')) {
+        throw new Error(`actividad[${si}][ronda ${parte}] botón inesperado: "${bloqueBoton}"`);
       }
-      const reactivoOriginal = candidatos[0];
-      yaIdentificados.add(reactivoOriginal);
-      await responder(page, prefijo, reactivoOriginal);
+      await page.click('[data-accion="enviar-actividad"]');
+      await page.waitForTimeout(150);
     }
 
-    await page.click('[data-accion="enviar-actividad"]');
-    await page.waitForTimeout(150);
-
-    // Mini-resultado del subtema: 5/5 correctas, 5 de 5 estrellas máx (3
-    // por defecto), puntaje "50 de 50 pts" (10 pts × 5).
+    // Mini-resultado del subtema: todas sus rondas ya combinadas en un solo
+    // resultado — N/N correctas (N = reactivos.length del subtema), N de N
+    // estrellas máx (3 por defecto), puntaje "X de X pts" (puntosPorReactivo × N).
+    const totalSubtema = subtema.reactivos.length;
     bodyText = await page.innerText('body');
-    if (!bodyText.includes('5 / 5 correctas')) {
-      throw new Error(`mini-resultado[${si}] esperaba "5 / 5 correctas", vio: ${bodyText.slice(0, 300)}`);
+    if (!bodyText.includes(`${totalSubtema} / ${totalSubtema} correctas`)) {
+      throw new Error(`mini-resultado[${si}] esperaba "${totalSubtema} / ${totalSubtema} correctas", vio: ${bodyText.slice(0, 300)}`);
     }
     const puntosPorReactivo = subtema.puntosPorReactivo;
-    const puntajeMaxSubtema = puntosPorReactivo * 5;
+    const puntajeMaxSubtema = puntosPorReactivo * totalSubtema;
     if (!bodyText.includes(`de ${puntajeMaxSubtema} pts`)) {
       throw new Error(`mini-resultado[${si}] no muestra "de ${puntajeMaxSubtema} pts"`);
     }
@@ -221,7 +238,7 @@ async function probarPDA(page, grado, pda, consoleErrors) {
   if (!bodyText.includes(`${totalReactivos} / ${totalReactivos} correctas`)) {
     throw new Error(`resultado global esperaba "${totalReactivos} / ${totalReactivos} correctas", vio: ${bodyText.slice(0, 300)}`);
   }
-  const puntajeMaxGlobal = pda.subtemas.reduce((acc, s) => acc + s.puntosPorReactivo * 5, 0);
+  const puntajeMaxGlobal = pda.subtemas.reduce((acc, s) => acc + s.puntosPorReactivo * s.reactivos.length, 0);
   if (!bodyText.includes(`de ${puntajeMaxGlobal} pts`)) {
     throw new Error(`resultado global no muestra "de ${puntajeMaxGlobal} pts"`);
   }

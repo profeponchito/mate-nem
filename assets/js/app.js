@@ -486,13 +486,19 @@ async function vistaPDA({ grado, id }) {
   }
 
   // Aplana el PDA en una secuencia lineal de pasos: problematización, y por
-  // cada uno de los 4 subtemas (de menor a mayor dificultad) su teoría, su
-  // mini-actividad calificada (5 reactivos) y su mini-resultado propio; al
-  // final, el resultado GLOBAL del PDA (suma de los 4 mini-resultados).
+  // cada subtema (de menor a mayor dificultad) su teoría, una o más RONDAS
+  // de actividad calificada (5 reactivos cada una — Paso 16: un subtema con
+  // 10 reactivos se presenta en 2 rondas consecutivas, ej. "paso 3" y
+  // "paso 4" del recorrido, en vez de una sola pantalla de 10) y su
+  // mini-resultado propio (suma de TODAS sus rondas); al final, el
+  // resultado GLOBAL del PDA (suma de todos los mini-resultados).
   const pasos = [{ tipo: 'problematizacion' }];
   pda.subtemas.forEach((subtema, si) => {
     pasos.push({ tipo: 'subtema', subtemaIndex: si });
-    pasos.push({ tipo: 'actividad', subtemaIndex: si });
+    const totalPartes = Math.ceil(subtema.reactivos.length / 5);
+    for (let parte = 0; parte < totalPartes; parte++) {
+      pasos.push({ tipo: 'actividad', subtemaIndex: si, parte, totalPartes });
+    }
     pasos.push({ tipo: 'miniResultado', subtemaIndex: si });
   });
   pasos.push({ tipo: 'resultado' });
@@ -501,19 +507,27 @@ async function vistaPDA({ grado, id }) {
   const estado = {
     pasoIndex: 0,
     resultadosSubtemas: new Array(pda.subtemas.length).fill(null),
-    resultado: null, // resultado global, se calcula al terminar el subtema 4
+    resultado: null, // resultado global, se calcula al terminar el último subtema
     codigoVerificacion: null,
-    reactivosVariados: {} // { [subtemaIndex]: reactivos de esa mini-actividad, ya barajados para este intento }
+    reactivosVariados: {}, // { [subtemaIndex]: TODOS los reactivos de ese subtema, ya barajados para este intento }
+    respuestasParciales: {} // { [subtemaIndex]: respuestas acumuladas de las rondas ya enviadas, mientras faltan más rondas }
   };
 
-  /** Reactivos (orden + opciones mezclados) de la mini-actividad de un
+  /** Reactivos (orden + opciones mezclados) de TODAS las rondas de un
    * subtema para el intento actual — se calculan una sola vez por intento
-   * y se reutilizan en repintados posteriores del mismo paso. */
+   * (barajando el arreglo completo, 5 o 10 reactivos) y se reutilizan en
+   * repintados posteriores y entre rondas del mismo subtema. */
   function reactivosDeActividad_(subtemaIndex) {
     if (!estado.reactivosVariados[subtemaIndex]) {
       estado.reactivosVariados[subtemaIndex] = variarReactivos_(pda.subtemas[subtemaIndex].reactivos);
     }
     return estado.reactivosVariados[subtemaIndex];
+  }
+
+  /** Los 5 reactivos visibles en una ronda concreta (parte 0 = los primeros
+   * 5 del arreglo ya barajado, parte 1 = los siguientes 5, etc.). */
+  function reactivosDeParte_(subtemaIndex, parte) {
+    return reactivosDeActividad_(subtemaIndex).slice(parte * 5, parte * 5 + 5);
   }
 
   function repintar() {
@@ -529,7 +543,7 @@ async function vistaPDA({ grado, id }) {
         <div class="mn-panel bg-white rounded-3xl shadow-lg shadow-slate-200/60 border border-slate-100 p-6 sm:p-7 mt-4">
           ${paso.tipo === 'problematizacion' ? panelProblematizacion_(pda, PASO_COLOR.problematizacion) : ''}
           ${paso.tipo === 'subtema' ? panelSubtema_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, PASO_COLOR.subtema) : ''}
-          ${paso.tipo === 'actividad' ? panelActividad_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, reactivosDeActividad_(paso.subtemaIndex), PASO_COLOR.reto) : ''}
+          ${paso.tipo === 'actividad' ? panelActividad_(pda.subtemas[paso.subtemaIndex], paso.subtemaIndex, pda.subtemas.length, reactivosDeParte_(paso.subtemaIndex, paso.parte), PASO_COLOR.reto, paso.parte, paso.totalPartes) : ''}
           ${paso.tipo === 'miniResultado' ? panelMiniResultado_(pda.subtemas[paso.subtemaIndex], estado.resultadosSubtemas[paso.subtemaIndex], paso.subtemaIndex === pda.subtemas.length - 1, PASO_COLOR.reto) : ''}
           ${esResultado ? panelResultado_(pda, estado, PASO_COLOR.resultado) : ''}
         </div>
@@ -581,23 +595,39 @@ async function vistaPDA({ grado, id }) {
       repintar();
     });
 
-    // Envía las 5 respuestas de la mini-actividad de un subtema: la califica,
-    // guarda su mini-resultado, avanza al panel de "mini-resultado" y registra
-    // ese subtema en Sheets en segundo plano (no bloquea la navegación).
+    // Envía las 5 respuestas de la ronda actual de un subtema. Si quedan más
+    // rondas (Paso 16: subtema con 10 reactivos = 2 rondas), solo guarda esas
+    // 5 respuestas y avanza a la siguiente ronda, sin calificar todavía. En
+    // la ÚLTIMA ronda: junta las respuestas de todas las rondas del subtema,
+    // califica el subtema completo de una vez, avanza al panel de
+    // "mini-resultado" y lo registra en Sheets en segundo plano (no bloquea
+    // la navegación).
     raiz.querySelector('[data-accion="enviar-actividad"]')?.addEventListener('click', () => {
       const paso = pasos[estado.pasoIndex];
       const subtema = pda.subtemas[paso.subtemaIndex];
-      const reactivos = reactivosDeActividad_(paso.subtemaIndex);
-      const respuestas = reactivos.map((reactivo, i) => leerRespuesta_(raiz, `act-${paso.subtemaIndex}-${i}`, reactivo.tipo));
+      const reactivosRonda = reactivosDeParte_(paso.subtemaIndex, paso.parte);
+      const respuestasRonda = reactivosRonda.map((reactivo, i) => leerRespuesta_(raiz, `act-${paso.subtemaIndex}-${i}`, reactivo.tipo));
 
-      if (respuestas.some((r) => r === null)) {
+      if (respuestasRonda.some((r) => r === null)) {
         alert('Responde los 5 reactivos antes de continuar.');
         return;
       }
 
+      const previas = estado.respuestasParciales[paso.subtemaIndex] || [];
+      const acumuladas = previas.concat(respuestasRonda);
+
+      if (paso.parte < paso.totalPartes - 1) {
+        estado.respuestasParciales[paso.subtemaIndex] = acumuladas;
+        estado.pasoIndex++; // avanza a la siguiente ronda de este mismo subtema
+        repintar();
+        return;
+      }
+
+      delete estado.respuestasParciales[paso.subtemaIndex];
+      const reactivosCompletos = reactivosDeActividad_(paso.subtemaIndex); // todas las rondas juntas, ya barajadas
       const resultado = calcularResultado(
-        { reactivos, puntosPorReactivo: subtema.puntosPorReactivo, estrellasMax: subtema.estrellasMax },
-        respuestas
+        { reactivos: reactivosCompletos, puntosPorReactivo: subtema.puntosPorReactivo, estrellasMax: subtema.estrellasMax },
+        acumuladas
       );
       estado.resultadosSubtemas[paso.subtemaIndex] = resultado;
       estado.pasoIndex++; // avanza a 'miniResultado'
@@ -747,11 +777,16 @@ function panelSubtema_(subtema, indice, total, color) {
   `;
 }
 
-/** Mini-actividad calificada de un subtema: sus 5 reactivos (ya barajados
- * para este intento), calificados de forma independiente al resto del PDA. */
-function panelActividad_(subtema, indice, total, reactivos, color) {
+/** Mini-actividad calificada de un subtema: una ronda de 5 reactivos (ya
+ * barajados para este intento). Un subtema con más de 5 reactivos en total
+ * se recorre en varias rondas consecutivas (Paso 16: `parte`/`totalPartes`,
+ * ej. "Ronda 1 de 2" y "Ronda 2 de 2" — misma pantalla, mismo estilo, solo
+ * el siguiente bloque de 5); todas las rondas de un subtema se califican
+ * juntas al enviar la última (ver conectarEventos_). */
+function panelActividad_(subtema, indice, total, reactivos, color, parte = 0, totalPartes = 1) {
+  const etiquetaRonda = totalPartes > 1 ? ` · Ronda ${parte + 1} de ${totalPartes}` : '';
   return `
-    ${overline_(nivelChip_(subtema, indice, total), 'trofeo', color)}
+    ${overline_(nivelChip_(subtema, indice, total) + etiquetaRonda, 'trofeo', color)}
     <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-800 mb-4">${numeroChip_(subtema.numero, '')}${escapeHTML_(subtema.titulo)}</h3>
     <div class="space-y-6">
       ${reactivos.map((reactivo, i) => `
@@ -762,7 +797,7 @@ function panelActividad_(subtema, indice, total, reactivos, color) {
       `).join('')}
     </div>
     <div class="mt-6">
-      ${botonPrimario_('Enviar respuestas', 'enviar-actividad', color)}
+      ${botonPrimario_(parte < totalPartes - 1 ? 'Siguiente ronda →' : 'Enviar respuestas', 'enviar-actividad', color)}
     </div>
   `;
 }
@@ -808,7 +843,7 @@ function panelResultado_(pda, estado, color) {
       </p>
     </div>
     <p class="text-slate-600 font-semibold mb-4">${r.puntaje} de ${r.puntajeMax} pts</p>
-    <p class="text-slate-400 text-xs mb-4">${pda.subtemas.length === 1 ? 'Resultado de este tema (5 preguntas).' : `Suma de los ${pda.subtemas.length} subtemas (5 preguntas cada uno).`}</p>
+    <p class="text-slate-400 text-xs mb-4">${pda.subtemas.length === 1 ? `Resultado de este tema (${r.total} preguntas).` : `Suma de los ${pda.subtemas.length} subtemas (${Math.round(r.total / pda.subtemas.length)} preguntas cada uno).`}</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
       ${r.detalle.map((d) => `
