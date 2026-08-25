@@ -394,7 +394,7 @@ function vistaSeleccionGrado() {
           <div class="bg-white rounded-[calc(1.5rem-2px)] px-6 py-8 text-center h-full flex flex-col items-center justify-center">
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-2xl ${ej.chip} mb-2">${icono_('operaciones', 'w-6 h-6')}</span>
             <span class="font-heading text-xl font-extrabold bg-gradient-to-br ${ej.grad} bg-clip-text text-transparent">Ejercítate</span>
-            <p class="text-slate-500 mt-1 font-medium text-sm">36 temas, todos los grados</p>
+            <p class="text-slate-500 mt-1 font-medium text-sm">40 temas, todos los grados</p>
             <p class="mt-3 inline-flex items-center gap-1 text-sm font-semibold ${ej.texto}">
               Practicar ${icono_('flecha', 'w-4 h-4 group-hover:translate-x-1 transition-transform')}
             </p>
@@ -452,7 +452,7 @@ async function vistaListaPDA({ grado }) {
         ${icono_('flecha', 'w-4 h-4 rotate-180')} ${esEjercitate ? 'Volver' : 'Cambiar de grado'}
       </a>
       <h2 class="font-heading text-2xl font-bold text-slate-800 mt-3 mb-1">${esEjercitate ? 'Ejercítate' : `PDAs de ${etiquetaGrado_(grado)}`}</h2>
-      ${esEjercitate ? `<p class="text-slate-500 mb-6">36 temas de matemáticas de secundaria, disponibles para cualquier grado.</p>` : `<div class="mb-6"></div>`}
+      ${esEjercitate ? `<p class="text-slate-500 mb-6">40 temas de matemáticas de secundaria, disponibles para cualquier grado.</p>` : `<div class="mb-6"></div>`}
       ${error ? `<p class="text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-4 py-3">No se pudieron cargar los PDAs: ${escapeHTML_(error)}</p>` : ''}
       ${(!error && pdas.length === 0) ? `<p class="text-slate-500">Todavía no hay PDAs cargados para este grado. Vuelve pronto.</p>` : ''}
       ${!error && pdas.length > 0 ? (esEjercitate ? caminoEjercitateAgrupado_(pdas, grado, tema) : caminoPDAs_(pdas, grado, tema)) : ''}
