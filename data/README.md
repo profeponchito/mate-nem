@@ -4,7 +4,7 @@ Cada Proceso de Desarrollo de Aprendizaje (PDA) vive en su propio archivo
 JSON, agrupado por grado escolar. El Trimestre 1 completo (eje "Sentido
 numérico y pensamiento algebraico") ya está construido para los 3 grados, y
 además hay un apartado independiente de práctica libre ("Ejercítate") con
-36 temas — ver la sección dedicada más abajo:
+40 temas — ver la sección dedicada más abajo:
 
 ```
 data/
@@ -21,7 +21,7 @@ data/
 │   └── 3S-B1-PDA01-S1.json … 3S-B1-PDA04-S7.json   (28 tarjetas)
 └── ejercitate/
     ├── index.json
-    └── EJ-01.json … EJ-36.json               (36 temas)
+    └── EJ-01.json … EJ-40.json               (40 temas)
 ```
 
 Desde el Paso 15, cada carpeta `grado-N/` no contiene ya los 7/6/4 PDAs
@@ -341,10 +341,10 @@ etiqueta "Ronda N de M" y el texto del botón en cada una, y calificar el
 subtema completo contra su total real de reactivos (ya no fijo en 5); las
 155 tarjetas/temas pasan de punta a punta (155/155).
 
-## Apartado "Ejercítate" (36 temas de práctica libre) — completo
+## Apartado "Ejercítate" (40 temas de práctica libre) — completo
 
 Independiente de los PDAs por grado, "Ejercítate" es un apartado de
-práctica libre con **36 temas** de matemáticas de secundaria, agrupados en
+práctica libre con **40 temas** de matemáticas de secundaria, agrupados en
 4 categorías, disponible para cualquier alumno sin importar su grado. Cada
 tema sigue exactamente la misma dinámica que un PDA (problematización → 4
 subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad
@@ -372,12 +372,13 @@ difiere en dos puntos, ambos ya resueltos en el código:
 El campo `grado` dentro del JSON de cada tema es literalmente el string
 `"Ejercítate"` (con acento) — así lo exige `pda.schema.json` — y cada
 archivo agrega además el campo `categoria` (uno de `basico`, `intermedio`,
-`avanzado`, `estadistica`), que la pantalla de Ejercítate usa para agrupar
-los 36 temas en **4 mini-caminos** (uno por categoría, cada uno con su
-propio encabezado y su propio trazo serpenteante), en vez de un solo camino
-plano de 36 nodos.
+`avanzado`, `estadistica` — es un enum cerrado en el esquema, no admite
+categorías nuevas), que la pantalla de Ejercítate usa para agrupar los 40
+temas en **4 mini-caminos** (uno por categoría, cada uno con su propio
+encabezado y su propio trazo serpenteante), en vez de un solo camino plano
+de 40 nodos.
 
-### Los 36 temas
+### Los 36 temas originales
 
 Numerados 1-36 (`numero` en el JSON, también usado en el nombre de archivo
 `EJ-01.json`…`EJ-36.json` y en el campo `id`), en el orden y con los textos
@@ -404,10 +405,73 @@ Teorema de Pitágoras · Volumen y área de cuerpos geométricos.
 frecuencia · Gráficas (barras, circulares y lineales) · Media, mediana y
 moda · Probabilidad simple · Experimentos aleatorios.
 
-Los 36 archivos (864 reactivos en total: 720 calificados + 144 de práctica
-extra) están validados contra `pda.schema.json`, revisados uno por uno con
-el flujo completo en Playwright (`qa-full-sweep-v6.mjs`, que también
-verifica el camino agrupado por categoría), y pasados por un escáner de
-duplicados semánticos (mismo tipo + mismo contenido matemático real, no
-solo texto) para evitar que dos reactivos del mismo subtema sean, en los
-hechos, la misma pregunta repetida.
+Los 36 archivos originales (864 reactivos en total: 720 calificados + 144
+de práctica extra) están validados contra `pda.schema.json`, revisados uno
+por uno con el flujo completo en Playwright (`qa-full-sweep-v6.mjs`, que
+también verifica el camino agrupado por categoría), y pasados por un
+escáner de duplicados semánticos (mismo tipo + mismo contenido matemático
+real, no solo texto) para evitar que dos reactivos del mismo subtema sean,
+en los hechos, la misma pregunta repetida.
+
+### Los 4 temas nuevos (Paso 17): algoritmos de completar dígitos y números con signo
+
+El docente pidió 4 temas más, todos en la categoría `basico`, enfocados en
+el **proceso** de los algoritmos escritos de las 4 operaciones (no solo en
+"calcular el resultado final", que es lo que ya cubrían los temas
+originales):
+
+**EJ-37 — Completar dígitos del algoritmo de la suma y resta.** Identificar
+y completar el dígito que se lleva al sumar (acarreo) o el que queda al
+pedir prestado al restar (préstamo), incluyendo el caso de pedir prestado
+a través de uno o más ceros.
+
+**EJ-38 — Suma y resta de números con signo.** Regla de signos al sumar
+(mismo signo se suma y conserva signo; signos distintos se restan y queda
+el signo del mayor en valor absoluto), la resta como "sumar el opuesto"
+(a - b = a + (-b), a - (-b) = a + b), cadenas de varios números con signo,
+y aplicaciones reales (temperatura, buceo/montañismo, saldo de cuenta,
+elevador).
+
+**EJ-39 — Completar dígitos del algoritmo de la multiplicación y
+división.** El dígito que se lleva al multiplicar, los productos
+parciales de una multiplicación por un multiplicador de 2 cifras, el
+dígito que se "baja" al dividir, y el residuo o cociente parcial de un
+paso.
+
+**EJ-40 — Completar dígitos del algoritmo de la multiplicación y división
+con decimales.** Contar y colocar las cifras decimales del resultado al
+multiplicar decimales, y correr el punto decimal (en divisor y dividendo)
+antes de dividir con decimales.
+
+**Restricción de formato que definió el diseño de los reactivos:** el
+renderizador de `llenar_frase` (`renderizarPregunta_` en `app.js`) muestra
+la `frase` como texto de una sola línea con un input inline donde va el
+`___` (solo reconoce el primero, vía `frase.split('___')`) — no soporta un
+bloque multilínea ni una cuadrícula de columnas alineadas como un
+"algoritmo vertical" en papel. Por eso cada reactivo de "completar
+dígitos" describe el paso del algoritmo en una frase de prosa (ej. "Al
+sumar 267 + 158, en las unidades: 7 + 8 = 15, escribes 5 y llevas ___.")
+en vez de intentar dibujar el algoritmo con saltos de línea. Esto no
+requirió ningún cambio de código — solo una convención de redacción del
+contenido, igual que los demás temas.
+
+**Categoría:** los 4 se clasificaron como `basico` — el esquema define un
+enum cerrado de 4 categorías (`basico`/`intermedio`/`avanzado`/
+`estadistica`) y ninguna de las otras 3 encaja con temas de algoritmo
+aritmético; se mantiene la convención de que "básico" agrupa las
+operaciones fundamentales. Como consecuencia, dentro del mini-camino de
+"Temas básicos" conviven ahora los `numero` 1-10 (originales) y 37-40
+(nuevos) — un salto visible en la numeración, ya documentado aquí para que
+no se confunda con un error.
+
+**Numeración e ids:** `numero` 37-40, ids `EJ-37`…`EJ-40`, mismo patrón de
+archivo que los originales. `data/ejercitate/index.json` se actualizó para
+listarlos al final del arreglo `archivos`.
+
+Los 160 reactivos nuevos (4 temas × 4 subtemas × 5 + 4 de práctica extra
+cada uno) están validados contra `pda.schema.json` (0 errores), revisados
+por sanidad estructural (huecos `___` únicos en cada `frase`, valores
+únicos en cada `columnaB`, índices de `respuestaCorrecta` dentro de rango,
+`retroalimentacion` presente en todos), y comparados por firma completa de
+contenido contra el resto del banco (155 archivos existentes): 0
+duplicados reales introducidos por estos 4 temas nuevos.

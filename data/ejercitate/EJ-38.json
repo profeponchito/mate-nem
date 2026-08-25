@@ -1,0 +1,342 @@
+{
+  "id": "EJ-38",
+  "grado": "Ejercítate",
+  "numero": 38,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Suma y resta de números con signo",
+  "contenido": "Los números enteros positivos y negativos, y las operaciones de suma y resta entre ellos, incluyendo su representación en la recta numérica y su uso para modelar situaciones de la vida cotidiana.",
+  "pda": "Resuelve sumas y restas de números con signo, aplicando la regla de los signos y la recta numérica, para modelar y resolver situaciones cotidianas como temperaturas, alturas, saldos de dinero y desplazamientos.",
+  "problematizacion": {
+    "contexto": "En un centro comercial, un elevador parte de la planta baja (piso 0). Primero sube 4 pisos para llegar al área de cines y, más tarde, baja 7 pisos para llegar al nivel más profundo del estacionamiento subterráneo.",
+    "pregunta": "¿En qué piso queda el elevador después de esos dos movimientos? ¿Cómo se representa con números con signo cada subida y cada bajada?"
+  },
+  "subtemas": [
+    {
+      "numero": "38.1",
+      "titulo": "Suma de números con signo: mismo signo y signos distintos",
+      "explicacion": "Para sumar dos números con signo hay dos casos. Si tienen el mismo signo, se suman sus valores absolutos y el resultado conserva ese mismo signo. Si tienen signos distintos, se restan sus valores absolutos (el mayor menos el menor) y el resultado toma el signo del número que tiene mayor valor absoluto. En la recta numérica, sumar un número positivo mueve el punto hacia la derecha, y sumar un número negativo lo mueve hacia la izquierda.",
+      "formula": "Mismo signo: se suman los valores absolutos y se conserva el signo común. Signos distintos: se restan los valores absolutos (mayor menos menor) y se conserva el signo del número con mayor valor absoluto.",
+      "ejemplos": [
+        "(-4) + (-6) = -10, porque ambos números son negativos: se suman sus valores absolutos (4 + 6 = 10) y el resultado conserva el signo negativo.",
+        "(-9) + 5 = -4, porque los signos son distintos: se restan los valores absolutos (9 - 5 = 4) y el resultado toma el signo del número con mayor valor absoluto, que es -9."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es (-7) + (-5)?",
+          "opciones": [
+            "-12",
+            "-2",
+            "12",
+            "2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(-7) + (-5) = -12: mismo signo, se suman los valores absolutos (7 + 5 = 12) y se conserva el signo negativo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-8) + 3 = ___.",
+          "respuestaCorrecta": "-5",
+          "retroalimentacion": "Signos distintos: se restan los valores absolutos (8 - 3 = 5) y el resultado toma el signo del número con mayor valor absoluto, -8, así que queda -5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la recta numérica, sumar un número negativo significa moverse hacia la izquierda.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: sumar un número positivo mueve el punto a la derecha, y sumar un número negativo lo mueve a la izquierda."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un buzo se sumerge 6 metros bajo el nivel del mar y después desciende 4 metros más. ¿A qué profundidad se encuentra?",
+          "opciones": [
+            "-10 m",
+            "-2 m",
+            "10 m",
+            "-6 m"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "(-6) + (-4) = -10: ambos desplazamientos son hacia abajo (negativos), se suman sus valores absolutos y el resultado es -10 m."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada suma con su resultado.",
+          "columnaA": [
+            "(-3) + (-9)",
+            "(-12) + 7",
+            "6 + (-2)"
+          ],
+          "columnaB": [
+            "4",
+            "-12",
+            "-5"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(-3)+(-9) = -12; (-12)+7 = -5; 6+(-2) = 4."
+        }
+      ]
+    },
+    {
+      "numero": "38.2",
+      "titulo": "Resta de números con signo: sumar el opuesto",
+      "explicacion": "Restar un número es lo mismo que sumar su opuesto: a - b = a + (-b). Esta idea es muy útil cuando el número que se resta ya es negativo, porque restar un número negativo equivale a sumar un positivo: a - (-b) = a + b. Para resolver una resta con signos, primero cambia la operación por una suma del opuesto y después aplica la regla de los signos para sumar.",
+      "formula": "a - b = a + (-b)     a - (-b) = a + b",
+      "ejemplos": [
+        "9 - 15 = 9 + (-15) = -6: cambiamos la resta por la suma del opuesto de 15, que es -15, y sumamos con signos distintos.",
+        "(-4) - (-10) = (-4) + 10 = 6: restar -10 es lo mismo que sumar 10, porque el opuesto de -10 es 10."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es 8 - 13?",
+          "opciones": [
+            "-5",
+            "5",
+            "-21",
+            "21"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "8 - 13 = 8 + (-13) = -5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-6) - (-9) = ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "Restar -9 equivale a sumar 9: (-6) + 9 = 3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Restar -7 a un número es lo mismo que sumarle 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: a - (-7) = a + 7, porque el opuesto de -7 es 7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "La temperatura estaba en -2°C y bajó 6 grados más. ¿Cuál es la temperatura final?",
+          "opciones": [
+            "-8°C",
+            "4°C",
+            "-4°C",
+            "8°C"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-2 - 6 = -2 + (-6) = -8°C: bajar la temperatura es restar, y aquí ambos valores son negativos."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada resta con su resultado, convirtiéndola primero en una suma del opuesto.",
+          "columnaA": [
+            "5 - 12",
+            "(-8) - (-3)",
+            "(-6) - 4"
+          ],
+          "columnaB": [
+            "-10",
+            "-7",
+            "-5"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "5-12 = -7; (-8)-(-3) = -8+3 = -5; (-6)-4 = -10."
+        }
+      ]
+    },
+    {
+      "numero": "38.3",
+      "titulo": "Cadenas de sumas y restas con números con signo",
+      "explicacion": "Cuando una expresión combina varias sumas y restas de números con signo, conviene resolverla en orden, de izquierda a derecha, convirtiendo cada resta en una suma del opuesto antes de operar. Presta especial atención a los dobles signos: un signo menos seguido de un número negativo, como en -(-b), se convierte en una suma, +b. Simplificar los dobles signos antes de calcular evita errores.",
+      "formula": "+(+) = +      +(-) = -      -(+) = -      -(-) = +",
+      "ejemplos": [
+        "-5 + 8 - (-3) = -5 + 8 + 3 = 6: primero convertimos -(-3) en +3, y después sumamos de izquierda a derecha: -5+8=3, 3+3=6.",
+        "10 - 15 - (-2) + (-6) = 10 - 15 + 2 - 6 = -9: convertimos cada resta y doble signo, y sumamos en orden: 10-15=-5, -5+2=-3, -3-6=-9."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuánto es -4 + 9 - (-2)?",
+          "opciones": [
+            "7",
+            "3",
+            "-7",
+            "-15"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-4+9=5, y 5-(-2)=5+2=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "8 - (-5) - 10 = ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "8-(-5)=8+5=13, y 13-10=3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El resultado de -6 - (-6) + (-6) es -6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -6-(-6)=-6+6=0, y 0+(-6)=-6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un jugador tenía 0 puntos, ganó 15, perdió 22 y ganó 6 más (0 + 15 - 22 + 6). ¿Cuántos puntos tiene ahora?",
+          "opciones": [
+            "-1",
+            "1",
+            "-7",
+            "7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "0+15=15, 15-22=-7, -7+6=-1."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada cadena de operaciones con su resultado.",
+          "columnaA": [
+            "-3 + 7 - (-4)",
+            "12 - 20 - (-5)",
+            "-8 - (-8) + (-8)"
+          ],
+          "columnaB": [
+            "-8",
+            "8",
+            "-3"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "-3+7-(-4) = 4+4 = 8; 12-20-(-5) = -8+5 = -3; -8-(-8)+(-8) = 0-8 = -8."
+        }
+      ]
+    },
+    {
+      "numero": "38.4",
+      "titulo": "Síntesis y aplicación: números con signo en la vida real",
+      "explicacion": "Recuerda: para sumar números con signo, si tienen el mismo signo se suman los valores absolutos y se conserva el signo; si tienen signos distintos, se restan los valores absolutos y el resultado toma el signo del mayor. Para restar, conviene convertir la resta en una suma del opuesto (a - b = a + (-b), y a - (-b) = a + b). Estas ideas modelan muchas situaciones reales: temperaturas que suben o bajan, profundidades bajo el nivel del mar frente a alturas sobre él, saldos de una cuenta con cargos y abonos, y pisos de un elevador que sube y baja.",
+      "ejemplos": [
+        "La temperatura en una ciudad fue de -3°C en la madrugada y subió 11°C durante el día: -3 + 11 = 8°C.",
+        "Un buzo está a -12 m (bajo el nivel del mar) y un alpinista está a 1500 m sobre el nivel del mar. La diferencia de altura entre ellos es 1500 - (-12) = 1512 m."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una cuenta bancaria tiene un saldo de -350 pesos (números rojos). El titular deposita 500 pesos. ¿Cuál es el nuevo saldo?",
+          "opciones": [
+            "150",
+            "850",
+            "-850",
+            "-150"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-350 + 500 = 150 pesos: el depósito es positivo y reduce la deuda hasta dejar saldo a favor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un elevador está en el piso 6 y baja 9 pisos. Queda en el piso ___.",
+          "respuestaCorrecta": "-3",
+          "retroalimentacion": "6 - 9 = -3: el elevador queda 3 pisos por debajo de la planta baja."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si un buzo está a -18 m y sube 5 m, queda a -13 m.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -18 + 5 = -13 m, porque subir es sumar."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "La temperatura marcaba -7°C por la mañana. Al mediodía subió 15°C y por la noche bajó 9°C más. ¿Cuál fue la temperatura por la noche?",
+          "opciones": [
+            "-1°C",
+            "1°C",
+            "-16°C",
+            "16°C"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-7+15=8, y 8-9=-1°C."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el número entero que la representa.",
+          "columnaA": [
+            "Una deuda de 200 pesos",
+            "Un ascenso de 350 metros sobre el nivel del mar",
+            "Descender 40 metros bajo el nivel del mar"
+          ],
+          "columnaB": [
+            "-40",
+            "350",
+            "-200"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Una deuda se representa como -200; un ascenso sobre el nivel del mar como 350; descender bajo el nivel del mar como -40."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuánto es (-9) + (-6)?",
+      "opciones": [
+        "-15",
+        "15",
+        "-3",
+        "3"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "(-9) + (-6) = -15: mismo signo, se suman los valores absolutos y se conserva el signo negativo."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "14 - (-8) = ___.",
+      "respuestaCorrecta": "22",
+      "retroalimentacion": "Restar -8 equivale a sumar 8: 14 + 8 = 22."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El opuesto de -20 es 20.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: todo número y su opuesto están a la misma distancia del cero pero en direcciones contrarias."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": [
+        "-5 + (-11)",
+        "20 - 27",
+        "-9 - (-9)"
+      ],
+      "columnaB": [
+        "-7",
+        "0",
+        "-16"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
+      "retroalimentacion": "-5+(-11) = -16; 20-27 = -7; -9-(-9) = 0."
+    }
+  ]
+}

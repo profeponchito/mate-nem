@@ -1,0 +1,310 @@
+{
+  "id": "EJ-40",
+  "grado": "Ejercítate",
+  "numero": 40,
+  "categoria": "basico",
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Completar dígitos del algoritmo de la multiplicación y división con decimales",
+  "contenido": "El algoritmo escrito de la multiplicación y la división cuando alguno de los factores o el divisor tiene cifras decimales, y cómo ubicar correctamente el punto decimal en el resultado.",
+  "pda": "Aplica y completa correctamente los pasos del algoritmo escrito de la multiplicación y la división con números decimales, contando y colocando el punto decimal en el resultado.",
+  "problematizacion": {
+    "contexto": "En el mercado, el kilogramo de queso cuesta $84.50 y doña Rosa quiere comprar 2.5 kilogramos. Para saber cuánto debe pagar, tiene que multiplicar 84.50 × 2.5, pero no recuerda en qué lugar exacto va el punto decimal del resultado.",
+    "pregunta": "¿Cómo puede doña Rosa saber en qué posición colocar el punto decimal al multiplicar o dividir números con decimales?"
+  },
+  "subtemas": [
+    {
+      "numero": "40.1",
+      "titulo": "Multiplicar un decimal por un número entero",
+      "explicacion": "Para multiplicar un decimal por un número entero, primero multiplicas los dígitos como si ambos fueran números enteros, ignorando el punto. Al final, cuentas cuántas cifras decimales tiene el factor decimal (el entero no aporta ninguna) y colocas el punto decimal en el resultado contando esa cantidad de lugares desde la derecha.",
+      "formula": "cifras decimales del resultado = cifras decimales del factor decimal + cifras decimales del factor entero (0)",
+      "ejemplos": [
+        "6.2 × 3: multiplicas 62 × 3 = 186; como 6.2 tiene 1 cifra decimal, el resultado es 18.6.",
+        "0.45 × 6: multiplicas 45 × 6 = 270; como 0.45 tiene 2 cifras decimales, el resultado es 2.70 = 2.7."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al multiplicar 4.3 × 2: multiplicas como si fueran enteros, 43 × 2 = 86; como 4.3 tiene 1 cifra decimal, el resultado es ___.",
+          "respuestaCorrecta": "8.6",
+          "retroalimentacion": "43 × 2 = 86, y como 4.3 tiene 1 cifra decimal, el resultado es 8.6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al multiplicar 3.14 × 3, ¿cuántas cifras decimales debe tener el resultado?",
+          "opciones": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "3.14 tiene 2 cifras decimales y 3 no tiene ninguna, así que el resultado tiene 2 cifras decimales: 3.14 × 3 = 9.42."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al multiplicar 5.6 × 4, el resultado es 22.4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 56 × 4 = 224, y como 5.6 tiene 1 cifra decimal, el resultado es 22.4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al multiplicar 2.7 × 5: multiplicas como si fueran enteros, 27 × 5 = ___.",
+          "respuestaCorrecta": "135",
+          "retroalimentacion": "27 × 5 = 135; luego, como 2.7 tiene 1 cifra decimal, el resultado final es 13.5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada multiplicación con su resultado.",
+          "columnaA": [
+            "6.3 × 2",
+            "1.5 × 4",
+            "9.2 × 3"
+          ],
+          "columnaB": [
+            "27.6",
+            "6",
+            "12.6"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "6.3 × 2 = 12.6; 1.5 × 4 = 6; 9.2 × 3 = 27.6."
+        }
+      ]
+    },
+    {
+      "numero": "40.2",
+      "titulo": "Multiplicar decimal por decimal y dividir un decimal entre un entero",
+      "explicacion": "Al multiplicar dos números decimales, multiplicas los dígitos como si fueran enteros y luego SUMAS las cifras decimales de los DOS factores para saber cuántas cifras decimales lleva el resultado. Al dividir un decimal entre un número entero, divides igual que con números enteros y colocas el punto decimal en el cociente justo arriba de donde está en el dividendo.",
+      "formula": "cifras decimales del resultado = cifras decimales del factor 1 + cifras decimales del factor 2",
+      "ejemplos": [
+        "1.2 × 0.3: multiplicas 12 × 3 = 36; como hay 1+1=2 cifras decimales entre los dos factores, el resultado es 0.36.",
+        "8.4 ÷ 4 = 2.1, porque divides igual que 84 ÷ 4 = 21 y colocas el punto en el mismo lugar que en el dividendo."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al multiplicar 1.4 × 1.3: multiplicas 14 × 13 = 182; como hay 2 cifras decimales en total entre los dos factores, el resultado es ___.",
+          "respuestaCorrecta": "1.82",
+          "retroalimentacion": "14 × 13 = 182, y con 2 cifras decimales en total, el resultado es 1.82."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Al multiplicar 0.7 × 0.06, ¿cuántas cifras decimales en total debe tener el resultado?",
+          "opciones": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "0.7 tiene 1 cifra decimal y 0.06 tiene 2, así que el resultado tiene 1+2=3 cifras decimales: 0.7 × 0.06 = 0.042."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al dividir 9.6 ÷ 3, el cociente es 3.2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 96 ÷ 3 = 32, y colocando el punto en el mismo lugar que en el dividendo, el cociente es 3.2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al dividir 7.5 ÷ 5: divides igual que 75 ÷ 5 = 15, y colocas el punto decimal en el mismo lugar que en el dividendo, así que el cociente es ___.",
+          "respuestaCorrecta": "1.5",
+          "retroalimentacion": "75 ÷ 5 = 15, y colocando el punto como en 7.5, el cociente es 1.5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "0.5 × 0.4",
+            "1.1 × 0.2",
+            "0.3 × 0.3"
+          ],
+          "columnaB": [
+            "0.09",
+            "0.22",
+            "0.2"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "0.5 × 0.4 = 0.2; 1.1 × 0.2 = 0.22; 0.3 × 0.3 = 0.09."
+        }
+      ]
+    },
+    {
+      "numero": "40.3",
+      "titulo": "Dividir un número entre un decimal, y un decimal entre otro decimal",
+      "explicacion": "Cuando el divisor es un número decimal, no se puede dividir directamente: primero se recorre el punto decimal del divisor hacia la derecha hasta convertirlo en un número entero, y se recorre el punto del dividendo la MISMA cantidad de lugares (agregando ceros si hace falta). Así se obtiene una división equivalente con divisor entero, que se resuelve como cualquier otra división.",
+      "formula": "a ÷ b (b decimal) → (a × 10ⁿ) ÷ (b × 10ⁿ), donde n = cifras decimales de b",
+      "ejemplos": [
+        "6 ÷ 0.5: recorres el punto un lugar en ambos (0.5 → 5, 6 → 60); la división equivalente es 60 ÷ 5 = 12.",
+        "1.44 ÷ 0.12: recorres el punto dos lugares en ambos (0.12 → 12, 1.44 → 144); la división equivalente es 144 ÷ 12 = 12."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al dividir 8 ÷ 0.4, primero recorres el punto decimal un lugar a la derecha en ambos números para quitar el decimal del divisor: la división equivalente es 80 ÷ ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "0.4 tiene 1 cifra decimal; recorriendo el punto un lugar, 8 se convierte en 80 y 0.4 en 4, así que la división equivalente es 80 ÷ 4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al dividir 2.5 ÷ 0.05, recorres el punto dos lugares a la derecha en ambos números: la división equivalente es 250 ÷ ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "0.05 tiene 2 cifras decimales; recorriendo el punto dos lugares, 2.5 se convierte en 250 y 0.05 en 5, así que la división equivalente es 250 ÷ 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Para dividir 3.6 ÷ 0.9, ¿cuántos lugares debes recorrer el punto decimal en ambos números para que el divisor sea entero?",
+          "opciones": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "0.9 tiene 1 cifra decimal, así que recorres el punto 1 lugar: la división equivalente es 36 ÷ 9 = 4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al dividir 5 ÷ 0.25, la división equivalente (recorriendo el punto) es 500 ÷ 25.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 0.25 tiene 2 cifras decimales; recorriendo el punto 2 lugares, 5 se convierte en 500 y 0.25 en 25, así que la división equivalente es 500 ÷ 25 = 20."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada división con su división equivalente entre enteros.",
+          "columnaA": [
+            "4.8 ÷ 0.6",
+            "0.81 ÷ 0.09",
+            "12 ÷ 0.4"
+          ],
+          "columnaB": [
+            "81 ÷ 9",
+            "120 ÷ 4",
+            "48 ÷ 6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "4.8 ÷ 0.6 = 48 ÷ 6 = 8; 0.81 ÷ 0.09 = 81 ÷ 9 = 9; 12 ÷ 0.4 = 120 ÷ 4 = 30."
+        }
+      ]
+    },
+    {
+      "numero": "40.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: al multiplicar decimales, sumas las cifras decimales de los dos factores para colocar el punto en el resultado. Al dividir, si el divisor es decimal, recorres el punto hacia la derecha en el divisor hasta que sea entero y recorres el punto la misma cantidad de lugares en el dividendo. Estas reglas se usan todo el tiempo con dinero (precios por kilogramo o por metro) y con medidas (repartir longitudes o volúmenes en partes iguales).",
+      "ejemplos": [
+        "84.5 × 2.5: multiplicas 845 × 25 = 21125; como hay 1+1=2 cifras decimales entre los factores, el resultado es 211.25 pesos.",
+        "Un listón de 7.5 metros se corta en trozos de 0.5 metros: al dividir 7.5 ÷ 0.5, recorres el punto un lugar y la división equivalente es 75 ÷ 5 = 15 trozos."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "En la tienda, el kilogramo de jamón cuesta $95.80 y Marisol compra 1.5 kg. Al multiplicar 95.80 × 1.5, multiplicas como enteros 9580 × 15 = 143700; como hay 2+1=3 cifras decimales en total, el resultado es ___ pesos.",
+          "respuestaCorrecta": "143.7",
+          "retroalimentacion": "9580 × 15 = 143700, y con 3 cifras decimales en total, el resultado es 143.7 pesos."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tinaco tiene 18 litros de agua y se reparte en botellas de 0.75 litros cada una. ¿Cuántas botellas se llenan?",
+          "opciones": [
+            "16",
+            "20",
+            "24",
+            "30"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "0.75 tiene 2 cifras decimales; recorriendo el punto 2 lugares, la división equivalente es 1800 ÷ 75 = 24 botellas."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un albañil corta una varilla de 12.6 metros en trozos de 0.6 metros. Al dividir 12.6 ÷ 0.6, la división equivalente (recorriendo el punto) es 126 ÷ 6, y el resultado es 21 trozos.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 0.6 tiene 1 cifra decimal; recorriendo el punto un lugar, la división equivalente es 126 ÷ 6 = 21 trozos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un paquete de 3.2 kg de arroz cuesta $54.40 en total. Para saber el precio por kilogramo, divides 54.40 ÷ 3.2: recorres el punto un lugar en ambos números, y la división equivalente es 544 ÷ ___.",
+          "respuestaCorrecta": "32",
+          "retroalimentacion": "3.2 tiene 1 cifra decimal; recorriendo el punto un lugar, 54.4 se convierte en 544 y 3.2 en 32, así que la división equivalente es 544 ÷ 32 = 17 pesos por kilogramo."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tela cuesta $46.50 el metro. Si Emilia compra 3.4 metros, multiplicas 46.50 × 3.4. ¿Cuántas cifras decimales debe tener el resultado antes de simplificar?",
+          "opciones": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "46.50 tiene 2 cifras decimales y 3.4 tiene 1, así que el resultado tiene 2+1=3 cifras decimales: 46.50 × 3.4 = 158.1 pesos."
+        }
+      ]
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "Al multiplicar 5.2 × 3: multiplicas como enteros, 52 × 3 = 156; como 5.2 tiene 1 cifra decimal, el resultado es ___.",
+      "respuestaCorrecta": "15.6",
+      "retroalimentacion": "52 × 3 = 156, y como 5.2 tiene 1 cifra decimal, el resultado es 15.6."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Al dividir 9 ÷ 0.3, ¿cuál es la división equivalente después de recorrer el punto decimal?",
+      "opciones": [
+        "90 ÷ 3",
+        "9 ÷ 3",
+        "900 ÷ 3",
+        "90 ÷ 30"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "0.3 tiene 1 cifra decimal; recorriendo el punto un lugar, 9 se convierte en 90 y 0.3 en 3, así que la división equivalente es 90 ÷ 3 = 30."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Al multiplicar 0.8 × 0.09, el resultado tiene 3 cifras decimales.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 0.8 tiene 1 cifra decimal y 0.09 tiene 2, así que el resultado tiene 1+2=3 cifras decimales: 0.8 × 0.09 = 0.072."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación decimal con su resultado.",
+      "columnaA": [
+        "4.8 ÷ 0.6",
+        "2.4 × 0.5",
+        "0.63 ÷ 0.07"
+      ],
+      "columnaB": [
+        "1.2",
+        "9",
+        "8"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
+      "retroalimentacion": "4.8 ÷ 0.6 = 8; 2.4 × 0.5 = 1.2; 0.63 ÷ 0.07 = 9."
+    }
+  ]
+}
