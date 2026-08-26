@@ -27,7 +27,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es el MCM de 3 y 4?",
-          "opciones": ["7", "12", "24", "36"],
+          "opciones": [
+            "7",
+            "12",
+            "24",
+            "36"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "Múltiplos de 3: 3,6,9,12... Múltiplos de 4: 4,8,12... El menor múltiplo común es 12."
         },
@@ -46,16 +51,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es el MCM de 5 y 9?",
-          "opciones": ["14", "25", "45", "90"],
+          "opciones": [
+            "14",
+            "25",
+            "45",
+            "90"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "5 y 9 no comparten factores, así que su MCM es el producto de ambos: 5×9=45."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada par de números con su Mínimo Común Múltiplo.",
-          "columnaA": ["2 y 5", "4 y 10", "3 y 7"],
-          "columnaB": ["21", "10", "20"],
-          "parejasCorrectas": [1, 2, 0],
+          "columnaA": [
+            "2 y 5",
+            "4 y 10",
+            "3 y 7"
+          ],
+          "columnaB": [
+            "21",
+            "10",
+            "20"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
           "retroalimentacion": "MCM(2,5)=10; MCM(4,10)=20; MCM(3,7)=21."
         }
       ]
@@ -75,7 +97,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Si 14=2×7 y 21=3×7, ¿cuál es su MCM usando descomposición en primos?",
-          "opciones": ["7", "21", "42", "49"],
+          "opciones": [
+            "7",
+            "21",
+            "42",
+            "49"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "Se toman todos los factores con su mayor exponente: 2¹, 3¹ y 7¹, entonces MCM=2×3×7=42."
         },
@@ -94,16 +121,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Descompón 15=3×5 y 25=5². ¿Cuál es su MCM?",
-          "opciones": ["5", "15", "25", "75"],
+          "opciones": [
+            "5",
+            "15",
+            "25",
+            "75"
+          ],
           "respuestaCorrecta": 3,
           "retroalimentacion": "Se toman 3¹ y 5², entonces MCM=3×25=75."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada par de números (ya descompuestos) con su MCM.",
-          "columnaA": ["6=2×3 y 10=2×5", "9=3² y 12=2²×3", "8=2³ y 20=2²×5"],
-          "columnaB": ["40", "30", "36"],
-          "parejasCorrectas": [1, 2, 0],
+          "columnaA": [
+            "6=2×3 y 10=2×5",
+            "9=3² y 12=2²×3",
+            "8=2³ y 20=2²×5"
+          ],
+          "columnaB": [
+            "40",
+            "30",
+            "36"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
           "retroalimentacion": "MCM(6,10)=2×3×5=30; MCM(9,12)=2²×3²=36; MCM(8,20)=2³×5=40."
         }
       ]
@@ -122,7 +166,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Listando múltiplos de 4 (4,8,12,16,20...) y de 10 (10,20,30...), ¿cuál es su MCM?",
-          "opciones": ["10", "20", "40", "80"],
+          "opciones": [
+            "10",
+            "20",
+            "40",
+            "80"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "El primer valor que aparece en ambas listas es 20, así que MCM(4,10)=20."
         },
@@ -141,16 +190,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Usando el método de listas, ¿cuál es el MCM de 7 y 6?",
-          "opciones": ["13", "21", "42", "84"],
+          "opciones": [
+            "13",
+            "21",
+            "42",
+            "84"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "Múltiplos de 7: 7,14,21,28,35,42... Múltiplos de 6: 6,12,18,24,30,36,42... El primero en común es 42."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada conjunto de números con su Mínimo Común Múltiplo hallado por listas.",
-          "columnaA": ["2, 3 y 4", "3 y 5", "5 y 6"],
-          "columnaB": ["30", "12", "15"],
-          "parejasCorrectas": [1, 2, 0],
+          "columnaA": [
+            "2, 3 y 4",
+            "3 y 5",
+            "5 y 6"
+          ],
+          "columnaB": [
+            "30",
+            "12",
+            "15"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
           "retroalimentacion": "MCM(2,3,4)=12; MCM(3,5)=15; MCM(5,6)=30."
         }
       ]
@@ -169,7 +235,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Dos autobuses salen juntos de la central. Uno regresa cada 15 minutos y otro cada 20 minutos. ¿Cada cuántos minutos vuelven a salir juntos?",
-          "opciones": ["5", "35", "60", "300"],
+          "opciones": [
+            "5",
+            "35",
+            "60",
+            "300"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "MCM(15,20)=60, así que los autobuses vuelven a salir juntos cada 60 minutos."
         },
@@ -188,16 +259,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Dos luces intermitentes parpadean, una cada 5 segundos y otra cada 8 segundos. Si encienden juntas en el segundo 0, ¿en qué segundo volverán a encender juntas?",
-          "opciones": ["13", "20", "40", "80"],
+          "opciones": [
+            "13",
+            "20",
+            "40",
+            "80"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "MCM(5,8)=40, así que las dos luces volverán a encender juntas en el segundo 40."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada par de eventos periódicos con cada cuántas unidades de tiempo vuelven a coincidir (usa el MCM).",
-          "columnaA": ["Riegos cada 6 y cada 9 días", "Trenes cada 10 y cada 15 minutos", "Campanadas cada 12 y cada 18 segundos"],
-          "columnaB": ["30 minutos", "36 segundos", "18 días"],
-          "parejasCorrectas": [2, 0, 1],
+          "columnaA": [
+            "Riegos cada 6 y cada 9 días",
+            "Trenes cada 10 y cada 15 minutos",
+            "Campanadas cada 12 y cada 18 segundos"
+          ],
+          "columnaB": [
+            "30 minutos",
+            "36 segundos",
+            "18 días"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
           "retroalimentacion": "MCM(6,9)=18 días; MCM(10,15)=30 minutos; MCM(12,18)=36 segundos."
         }
       ]
@@ -219,16 +307,32 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "Con 10=2×5 y 15=3×5, ¿cuál es su MCM?",
-      "opciones": ["5", "15", "30", "150"],
+      "opciones": [
+        "5",
+        "15",
+        "30",
+        "150"
+      ],
       "respuestaCorrecta": 2,
       "retroalimentacion": "Se toman todos los factores con su mayor exponente: 2¹, 3¹ y 5¹, entonces MCM=2×3×5=30."
     },
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada situación con la operación que la resuelve: Máximo Común Divisor (MCD) o Mínimo Común Múltiplo (MCM).",
-      "columnaA": ["Saber cada cuántos días vuelven a coincidir dos eventos que se repiten", "Repartir objetos en el mayor número de grupos iguales sin que sobren", "Encontrar el menor número que sea múltiplo de 4 y de 6 a la vez"],
-      "columnaB": ["MCM", "MCD"],
-      "parejasCorrectas": [0, 1, 0],
+      "columnaA": [
+        "Saber cada cuántos días vuelven a coincidir dos eventos que se repiten",
+        "Repartir objetos en el mayor número de grupos iguales sin que sobren",
+        "Encontrar el menor número que sea múltiplo de 4 y de 6 a la vez"
+      ],
+      "columnaB": [
+        "MCM",
+        "MCD"
+      ],
+      "parejasCorrectas": [
+        0,
+        1,
+        0
+      ],
       "retroalimentacion": "Coincidencias periódicas y menores múltiplos comunes se resuelven con el MCM; repartir en el mayor número de grupos iguales se resuelve con el MCD."
     }
   ]

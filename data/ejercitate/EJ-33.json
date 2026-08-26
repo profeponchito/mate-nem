@@ -2,214 +2,268 @@
   "id": "EJ-33",
   "grado": "Ejercítate",
   "numero": 33,
-  "categoria": "estadistica",
+  "categoria": "avanzado",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Análisis de datos y probabilidad",
-  "titulo": "Gráficas (barras, circulares y lineales)",
-  "contenido": "Lectura, interpretación y elección del tipo de gráfica adecuado (barras, circular o lineal) para representar un conjunto de datos.",
-  "pda": "Interpreta y selecciona el tipo de gráfica más adecuado (barras, circular o lineal) para representar y comunicar información de situaciones cotidianas.",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Teorema de Pitágoras",
+  "contenido": "Relación entre los catetos y la hipotenusa de un triángulo rectángulo, y su aplicación al cálculo de longitudes.",
+  "pda": "Aplica el Teorema de Pitágoras para calcular la hipotenusa o un cateto de un triángulo rectángulo, y lo utiliza para resolver problemas de distancias en contextos reales.",
   "problematizacion": {
-    "contexto": "El comité de la kermés escolar recolectó, durante los últimos 6 meses, el dinero reunido cada mes, y también encuestó a los alumnos sobre su juego favorito de la kermés (lotería, tiro al blanco, pesca de patitos y costalazo).",
-    "pregunta": "Si el comité quiere mostrar en un cartel cómo ha cambiado el dinero reunido mes con mes, y en otro cartel qué porcentaje de alumnos prefiere cada juego, ¿el mismo tipo de gráfica sirve para ambos casos?"
+    "contexto": "Un electricista necesita tender un cable en línea recta desde la esquina superior de una pared hasta un punto en el piso, a cierta distancia de la base de la pared. La pared, el piso y el cable forman un triángulo rectángulo.",
+    "pregunta": "Si el electricista conoce la altura de la pared y la distancia en el piso, ¿cómo puede saber la longitud exacta del cable sin medirlo directamente?"
   },
   "subtemas": [
     {
       "numero": "33.1",
-      "titulo": "Gráfica de barras",
-      "explicacion": "La gráfica de barras usa rectángulos de distinta altura (o longitud) para comparar cantidades entre categorías distintas, como sabores, equipos o materias. Entre más alta la barra, mayor es la cantidad que representa esa categoría. Es la gráfica más útil cuando se quiere comparar de un vistazo varios grupos separados entre sí, porque las diferencias de altura se ven de inmediato.",
+      "titulo": "¿Qué es el Teorema de Pitágoras?",
+      "explicacion": "En todo triángulo rectángulo hay un ángulo de 90°; los dos lados que forman ese ángulo se llaman catetos, y el lado opuesto al ángulo recto, que siempre es el más largo, se llama hipotenusa. El Teorema de Pitágoras dice que el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos. Esto funciona porque, si construyes un cuadrado sobre cada lado del triángulo, el área del cuadrado grande (sobre la hipotenusa) es exactamente igual a la suma de las áreas de los dos cuadrados pequeños (sobre los catetos).",
+      "formula": "c² = a² + b² (c = hipotenusa, a y b = catetos)",
       "ejemplos": [
-        "En una gráfica de barras sobre mascotas favoritas, la barra de \"perro\" llega a 18 y la de \"pez\" llega a 4; se ve claramente que perro es mucho más popular que pez.",
-        "Una gráfica de barras del número de goles por equipo (A=5, B=8, C=3) muestra que el equipo B tiene la barra más alta, por lo tanto es el que más goles anotó."
+        "Un triángulo rectángulo tiene catetos de 3 cm y 4 cm. Su hipotenusa mide √(3²+4²) = √(9+16) = √25 = 5 cm.",
+        "Una escalera recargada en una pared forma un triángulo rectángulo con la pared y el piso: el tramo de pared y el tramo de piso son los catetos, y la escalera misma es la hipotenusa."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es la principal ventaja de una gráfica de barras para representar datos?",
-          "opciones": [
-            "Permite comparar rápidamente cantidades entre categorías distintas por la altura de cada barra",
-            "Solo sirve para mostrar cambios a lo largo del tiempo",
-            "Solo puede usarse con dos categorías como máximo",
-            "Muestra únicamente porcentajes, nunca cantidades exactas"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "La gráfica de barras compara categorías distintas mediante la altura de cada barra, lo que facilita ver de un vistazo cuál es mayor o menor."
+          "tipo": "verdadero_falso",
+          "enunciado": "En un triángulo rectángulo, la hipotenusa es siempre el lado más largo.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la hipotenusa, al ser opuesta al ángulo de 90°, siempre es el lado de mayor longitud."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "En una gráfica de barras, mientras más alta es la barra de una categoría, mayor es la cantidad que representa.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la altura de cada barra es proporcional a la cantidad de esa categoría."
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se llaman los dos lados que forman el ángulo recto en un triángulo rectángulo?",
+          "opciones": [
+            "Catetos",
+            "Hipotenusas",
+            "Vértices",
+            "Diagonales"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Los dos lados que forman el ángulo de 90° se llaman catetos; el tercer lado es la hipotenusa."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En una gráfica de barras sobre deportes favoritos, si fútbol tiene barra=20, básquetbol tiene barra=12 y natación tiene barra=8, el deporte con la barra más alta es ___.",
-          "respuestaCorrecta": "fútbol",
-          "retroalimentacion": "20 es la cantidad más alta de las tres, así que la barra de fútbol es la más alta."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una gráfica de barras muestra las calificaciones más comunes de un grupo: 7 (barra=6), 8 (barra=14), 9 (barra=9), 10 (barra=1). ¿Cuál calificación fue la más frecuente?",
-          "opciones": ["8", "7", "9", "10"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "La barra más alta corresponde a la calificación 8, con 14 alumnos, así que fue la más frecuente."
+          "frase": "El lado opuesto al ángulo recto en un triángulo rectángulo se llama ___.",
+          "respuestaCorrecta": "hipotenusa",
+          "retroalimentacion": "La hipotenusa es el lado opuesto al ángulo de 90° y siempre es el más largo del triángulo."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Una gráfica de barras es adecuada para comparar las ventas de cuatro sabores de paleta distintos en un mismo día.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: comparar cantidades entre categorías (los sabores) es exactamente para lo que sirve la gráfica de barras."
+          "enunciado": "El Teorema de Pitágoras se puede aplicar a cualquier triángulo, sin importar si tiene o no un ángulo recto.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: el Teorema de Pitágoras solo es válido en triángulos rectángulos, es decir, con un ángulo de exactamente 90°."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada elemento del triángulo rectángulo con su descripción.",
+          "columnaA": [
+            "Cateto",
+            "Hipotenusa",
+            "Ángulo recto"
+          ],
+          "columnaB": [
+            "Mide 90°",
+            "Lado opuesto al ángulo recto",
+            "Cada uno de los dos lados que forman el ángulo recto"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "El ángulo recto mide 90°, la hipotenusa es el lado opuesto a él, y los catetos son los lados que lo forman."
         }
       ]
     },
     {
       "numero": "33.2",
-      "titulo": "Gráfica circular (de pastel)",
-      "explicacion": "La gráfica circular, también llamada gráfica de pastel, representa un todo (el 100%) dividido en partes o \"rebanadas\", donde cada rebanada muestra qué porcentaje del total corresponde a una categoría. Es útil cuando se quiere mostrar cómo se reparte algo completo entre sus partes, no tanto para comparar valores exactos entre categorías. Entre más grande la rebanada, mayor es el porcentaje que representa esa categoría dentro del total.",
+      "titulo": "Calcular la hipotenusa",
+      "explicacion": "Cuando conoces los dos catetos de un triángulo rectángulo, puedes encontrar la hipotenusa elevando al cuadrado cada cateto, sumando los resultados y sacando la raíz cuadrada de esa suma. Es importante sumar primero los cuadrados y sacar la raíz al final, no sacar raíz de cada cateto por separado.",
       "ejemplos": [
-        "En una gráfica circular sobre el uso del tiempo libre de un alumno: Videojuegos 40%, Deporte 30%, Lectura 20%, Otro 10%; las cuatro rebanadas suman 100% del tiempo libre total.",
-        "Una gráfica circular del presupuesto familiar mensual muestra: Renta 45%, Comida 30%, Transporte 15%, Ahorro 10%; la rebanada de Renta es la más grande porque representa el mayor porcentaje."
+        "Un terreno rectangular mide 6 m de ancho y 8 m de largo. Su diagonal (hipotenusa) mide √(6²+8²) = √(36+64) = √100 = 10 m.",
+        "Un triángulo rectángulo tiene catetos de 5 cm y 12 cm. Su hipotenusa mide √(5²+12²) = √(25+144) = √169 = 13 cm."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Para qué tipo de información es más adecuada una gráfica circular?",
-          "opciones": [
-            "Para mostrar cómo se reparte un total en porcentajes entre varias categorías",
-            "Para mostrar cómo cambia una cantidad a lo largo del tiempo",
-            "Para comparar cantidades exactas cuando no importa el total",
-            "Para representar datos que no tienen ninguna relación entre sí"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "La gráfica circular muestra cómo un total (100%) se divide en partes, por eso es ideal para representar porcentajes de un conjunto completo."
+          "tipo": "llenar_frase",
+          "frase": "Un triángulo rectángulo tiene catetos de 9 cm y 12 cm. Su hipotenusa mide ___ cm.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "√(9²+12²) = √(81+144) = √225 = 15 cm."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Si una gráfica circular sobre el color favorito de un grupo muestra Azul=50%, Rojo=30% y Verde=20%, las tres rebanadas juntas deben sumar ___%.",
-          "respuestaCorrecta": "100",
-          "retroalimentacion": "En una gráfica circular, todas las rebanadas representan partes de un mismo total, así que siempre suman 100%."
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo rectángulo tiene catetos de 7 cm y 24 cm. ¿Cuánto mide la hipotenusa?",
+          "opciones": [
+            "25 cm",
+            "31 cm",
+            "17 cm",
+            "20 cm"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "√(7²+24²) = √(49+576) = √625 = 25 cm."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En una gráfica circular, la rebanada más grande siempre corresponde a la categoría con mayor porcentaje.",
+          "enunciado": "Si los catetos de un triángulo rectángulo miden 8 cm y 15 cm, la hipotenusa mide 17 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: el tamaño de cada rebanada es proporcional al porcentaje que representa esa categoría."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una gráfica circular sobre el destino de vacaciones de un grupo muestra: Playa 45%, Montaña 25%, Ciudad 20%, Campo 10%. ¿Qué porcentaje de alumnos NO eligió playa?",
-          "opciones": ["55%", "45%", "25%", "10%"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Como el total es 100% y playa es 45%, el resto es 100% - 45% = 55%."
+          "retroalimentacion": "√(8²+15²) = √(64+225) = √289 = 17 cm. La afirmación es correcta."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En una gráfica circular sobre los tipos de mascota de un grupo, si Perro=40%, Gato=35%, Pez=15% y Otro=___%, entonces Otro representa 10%.",
-          "respuestaCorrecta": "10",
-          "retroalimentacion": "40+35+15=90%; como el total debe ser 100%, a Otro le corresponde 100-90=10%."
+          "frase": "Un rectángulo mide 20 m de largo y 15 m de ancho. Su diagonal mide ___ m.",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "√(20²+15²) = √(400+225) = √625 = 25 m."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de catetos con la hipotenusa que le corresponde.",
+          "columnaA": [
+            "6 y 8",
+            "9 y 40",
+            "10 y 24"
+          ],
+          "columnaB": [
+            "10",
+            "41",
+            "26"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "√(6²+8²)=10; √(9²+40²)=√1681=41; √(10²+24²)=√676=26."
         }
       ]
     },
     {
       "numero": "33.3",
-      "titulo": "Gráfica lineal",
-      "explicacion": "La gráfica lineal usa puntos unidos por líneas para mostrar cómo cambia una cantidad a lo largo del tiempo, como días, meses o años. La dirección de la línea indica la tendencia: si sube, la cantidad aumenta; si baja, disminuye; si se mantiene horizontal, permanece constante. Es la gráfica más adecuada cuando el objetivo es observar la evolución de un dato, no solo compararlo entre categorías separadas.",
+      "titulo": "Calcular un cateto",
+      "explicacion": "Si conoces la hipotenusa y uno de los catetos, puedes despejar el cateto que falta: en vez de sumar los cuadrados, ahora restas el cuadrado del cateto conocido al cuadrado de la hipotenusa, y sacas la raíz cuadrada del resultado. Es un reacomodo de la misma fórmula, solo que despejando otra incógnita.",
+      "formula": "a = √(c² − b²)",
       "ejemplos": [
-        "Una gráfica lineal de la temperatura de una ciudad durante el día muestra que sube de 15°C a las 6 am hasta 28°C a las 2 pm, y después baja; la línea sube y luego baja.",
-        "La gráfica lineal de las ventas mensuales de una tienda pasa de $2,000 en enero a $5,000 en junio; la línea tiene una tendencia claramente ascendente."
+        "Una escalera de 13 m está apoyada en una pared y su base está a 5 m de la pared. La altura a la que llega es √(13²−5²) = √(169−25) = √144 = 12 m.",
+        "Un triángulo rectángulo tiene hipotenusa de 10 cm y un cateto de 6 cm. El otro cateto mide √(10²−6²) = √(100−36) = √64 = 8 cm."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
+          "tipo": "llenar_frase",
+          "frase": "Un triángulo rectángulo tiene hipotenusa de 25 cm y un cateto de 7 cm. El otro cateto mide ___ cm.",
+          "respuestaCorrecta": "24",
+          "retroalimentacion": "√(25²−7²) = √(625−49) = √576 = 24 cm."
+        },
+        {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Qué tipo de información representa mejor una gráfica lineal?",
+          "pregunta": "Una escalera de 15 m está recargada en una pared, con la base a 9 m de la pared. ¿A qué altura llega la escalera?",
           "opciones": [
-            "Cómo cambia una cantidad a lo largo del tiempo",
-            "Cómo se reparte un total entre varias categorías en un solo momento",
-            "La comparación de categorías sin ningún orden temporal",
-            "Solo valores que nunca cambian"
+            "12 m",
+            "10 m",
+            "18 m",
+            "6 m"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La gráfica lineal conecta puntos en el tiempo para mostrar la evolución o tendencia de una cantidad."
+          "retroalimentacion": "√(15²−9²) = √(225−81) = √144 = 12 m."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si la línea de una gráfica lineal va hacia arriba de izquierda a derecha, la cantidad representada está aumentando.",
+          "enunciado": "Si la hipotenusa mide 17 cm y un cateto mide 8 cm, el otro cateto mide 15 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: una línea ascendente indica que el valor crece conforme avanza el tiempo."
+          "retroalimentacion": "√(17²−8²) = √(289−64) = √225 = 15 cm. La afirmación es correcta."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En una gráfica lineal del peso de una planta durante 4 semanas (10 g, 10 g, 10 g, 10 g), la tendencia de la línea es ___.",
-          "respuestaCorrecta": "constante",
-          "retroalimentacion": "Como el valor no cambia de una semana a otra, la línea se mantiene horizontal, es decir, constante."
+          "frase": "Un triángulo rectángulo tiene hipotenusa de 20 cm y un cateto de 12 cm. El otro cateto mide ___ cm.",
+          "respuestaCorrecta": "16",
+          "retroalimentacion": "√(20²−12²) = √(400−144) = √256 = 16 cm."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una gráfica lineal muestra el número de visitantes a un museo: Lunes=50, Martes=80, Miércoles=60, Jueves=40. ¿Qué describe mejor la tendencia entre martes y jueves?",
-          "opciones": ["La línea baja de forma continua", "La línea sube de forma continua", "La línea se mantiene constante", "No se puede saber sin una gráfica circular"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "De martes (80) a miércoles (60) a jueves (40), los valores disminuyen cada día, así que la línea baja de forma continua."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "Una gráfica lineal sería adecuada para mostrar cómo cambió la estatura de un estudiante cada año durante la secundaria.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: al ser datos que cambian a lo largo del tiempo (los años), una gráfica lineal permite ver claramente la tendencia de crecimiento."
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par (hipotenusa, cateto conocido) con el cateto que falta.",
+          "columnaA": [
+            "Hipotenusa 10, cateto 6",
+            "Hipotenusa 26, cateto 24",
+            "Hipotenusa 41, cateto 40"
+          ],
+          "columnaB": [
+            "8",
+            "10",
+            "9"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "√(10²−6²)=8; √(26²−24²)=√100=10; √(41²−40²)=√81=9."
         }
       ]
     },
     {
       "numero": "33.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: la gráfica de barras compara cantidades entre categorías distintas usando la altura de cada barra; la gráfica circular reparte un total (100%) en porcentajes por categoría, útil cuando quieres ver qué parte del todo ocupa cada grupo; y la gráfica lineal muestra cómo cambia una cantidad a través del tiempo mediante la tendencia de una línea. Elegir la gráfica correcta depende de qué pregunta quieres responder: ¿comparar grupos?, ¿ver un reparto porcentual?, ¿observar una evolución en el tiempo?",
+      "explicacion": "Recuerda: si conoces los dos catetos, sumas sus cuadrados y sacas raíz para obtener la hipotenusa; si conoces la hipotenusa y un cateto, restas los cuadrados para obtener el cateto que falta. El Teorema de Pitágoras sirve para calcular distancias reales en línea recta —como escaleras, cables o el camino más corto entre dos puntos— cuando esa distancia forma un triángulo rectángulo con datos que sí puedes medir.",
       "ejemplos": [
-        "Para mostrar el dinero reunido cada mes en una kermés durante 6 meses, la gráfica lineal es la mejor opción porque muestra la evolución en el tiempo; para mostrar qué porcentaje de alumnos prefiere cada juego de la kermés, la gráfica circular es más adecuada porque reparte el 100% de las preferencias."
+        "Para ir de un punto a otro de un parque rectangular de 30 m por 40 m cruzando en diagonal, la distancia es √(30²+40²) = √(900+1600) = √2500 = 50 m, en vez de caminar 30+40 = 70 m bordeando dos lados.",
+        "Una escalera de 10 m debe alcanzar una ventana a 8 m de altura; la base debe colocarse a √(10²−8²) = √36 = 6 m de la pared."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un equipo de futbol quiere mostrar cuántos goles anotó cada uno de sus 5 delanteros esta temporada. ¿Qué tipo de gráfica es más adecuada?",
-          "opciones": ["Gráfica de barras", "Gráfica circular", "Gráfica lineal", "Ninguna gráfica sirve para esto"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Al comparar cantidades entre categorías distintas (los 5 delanteros), la gráfica de barras es la más adecuada."
-        },
-        {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con el tipo de gráfica más adecuado para representarla.",
-          "columnaA": [
-            "Población de una ciudad registrada cada año durante una década",
-            "Porcentaje de alumnos que eligió cada actividad extraescolar",
-            "Número de libros leídos por cada uno de 6 alumnos en un mes"
+          "pregunta": "Un parque rectangular mide 30 m de largo y 40 m de ancho. ¿Cuántos metros ahorra una persona al cruzar en diagonal en vez de bordear dos lados?",
+          "opciones": [
+            "20 m",
+            "10 m",
+            "30 m",
+            "50 m"
           ],
-          "columnaB": ["Gráfica de barras", "Gráfica circular", "Gráfica lineal"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "La población a través del tiempo usa gráfica lineal; el reparto porcentual usa gráfica circular; comparar alumnos entre sí usa gráfica de barras."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "Es correcto usar una gráfica circular para mostrar cómo cambió la temperatura de una ciudad hora por hora durante un día.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: para mostrar cambios a lo largo del tiempo se usa una gráfica lineal, no una circular, que sirve para repartos porcentuales de un total."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La diagonal mide √(30²+40²)=50 m; bordear los dos lados es 30+40=70 m; el ahorro es 70−50=20 m."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Para representar qué porcentaje de los ingresos de una familia se destina a renta, comida, transporte y ahorro, la gráfica más adecuada es la gráfica ___.",
-          "respuestaCorrecta": "circular",
-          "retroalimentacion": "Como se trata de repartir un total (los ingresos) en porcentajes entre varias categorías, la gráfica circular es la más adecuada."
+          "frase": "Una cometa está sostenida por un hilo que mide 26 m en línea recta y se encuentra a 24 m de altura. La distancia horizontal entre el punto donde se sostiene el hilo y la cometa es ___ m.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "√(26²−24²) = √(676−576) = √100 = 10 m."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un doctor registra el peso de un bebé cada mes durante su primer año de vida para ver cómo ha crecido. ¿Qué gráfica conviene usar?",
-          "opciones": ["Gráfica lineal", "Gráfica circular", "Gráfica de barras", "Cualquiera, da igual"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Como se quiere observar la evolución del peso a lo largo del tiempo (los meses), la gráfica lineal es la más adecuada."
+          "tipo": "verdadero_falso",
+          "enunciado": "Para calcular la distancia más corta entre dos puntos que forman un ángulo recto con un tercer punto, se usa el Teorema de Pitágoras sobre los dos catetos.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si los dos segmentos conocidos forman un ángulo de 90°, la distancia directa entre los otros dos extremos es la hipotenusa."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una escalera de 10 m debe alcanzar una ventana a 8 m de altura. La base de la escalera debe colocarse a ___ m de la pared.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "√(10²−8²) = √(100−64) = √36 = 6 m."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el cálculo del Teorema de Pitágoras que se necesita.",
+          "columnaA": [
+            "Conozco los dos catetos y busco la hipotenusa",
+            "Conozco la hipotenusa y un cateto, busco el otro cateto",
+            "Quiero comparar la diagonal con el recorrido por las orillas"
+          ],
+          "columnaB": [
+            "c = √(a²+b²)",
+            "a = √(c²−b²)",
+            "Comparar la diagonal calculada con la suma de los dos lados"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "Cada situación corresponde a una forma distinta de usar la misma relación c²=a²+b²."
         }
       ]
     }
@@ -217,30 +271,47 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "Una tienda quiere mostrar sus ventas totales de enero a diciembre para ver si van creciendo. ¿Qué gráfica debería usar?",
-      "opciones": ["Gráfica lineal", "Gráfica circular", "Gráfica de barras horizontales sin orden", "Ninguna, mejor una tabla sin gráfica"],
+      "pregunta": "Un triángulo rectángulo tiene catetos de 5 cm y 12 cm. ¿Cuánto mide la hipotenusa?",
+      "opciones": [
+        "13 cm",
+        "17 cm",
+        "10 cm",
+        "15 cm"
+      ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "Al tratarse de una evolución mes a mes durante el año, la gráfica lineal es la más adecuada para ver la tendencia de las ventas."
+      "retroalimentacion": "√(5²+12²) = √(25+144) = √169 = 13 cm."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "En una gráfica circular, todas las rebanadas juntas siempre representan el 100% de los datos.",
+      "enunciado": "Si la hipotenusa mide 25 cm y un cateto mide 20 cm, el otro cateto mide 15 cm.",
       "respuestaCorrecta": true,
-      "retroalimentacion": "Correcto: la gráfica circular representa un total completo dividido en partes, así que la suma de todas las rebanadas es 100%."
+      "retroalimentacion": "√(25²−20²) = √(625−400) = √225 = 15 cm. La afirmación es correcta."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "En una gráfica de barras sobre mascotas favoritas de un grupo, si la barra de \"gato\" es más alta que la de \"pez\", entonces hay más alumnos que prefieren ___ que pez.",
-      "respuestaCorrecta": "gato",
-      "retroalimentacion": "Una barra más alta representa una cantidad mayor, así que más alumnos prefieren gato que pez."
+      "frase": "Una escalera de 17 m está apoyada en una pared, con la base a 8 m de la pared. La escalera llega a una altura de ___ m.",
+      "respuestaCorrecta": "15",
+      "retroalimentacion": "√(17²−8²) = √(289−64) = √225 = 15 m."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada tipo de gráfica con la característica que mejor la describe.",
-      "columnaA": ["Gráfica de barras", "Gráfica circular", "Gráfica lineal"],
-      "columnaB": ["Muestra la tendencia de un dato a través del tiempo con una línea", "Compara cantidades entre categorías con rectángulos de distinta altura", "Reparte un total en porcentajes mediante rebanadas"],
-      "parejasCorrectas": [1, 2, 0],
-      "retroalimentacion": "Barras: compara categorías con altura; circular: reparte un total en porcentajes; lineal: muestra tendencias en el tiempo."
+      "instruccion": "Relaciona cada triángulo rectángulo con su hipotenusa.",
+      "columnaA": [
+        "Catetos 9 y 12",
+        "Catetos 8 y 6",
+        "Catetos 20 y 21"
+      ],
+      "columnaB": [
+        "15",
+        "10",
+        "29"
+      ],
+      "parejasCorrectas": [
+        0,
+        1,
+        2
+      ],
+      "retroalimentacion": "√(9²+12²)=15; √(8²+6²)=10; √(20²+21²)=√841=29."
     }
   ]
 }

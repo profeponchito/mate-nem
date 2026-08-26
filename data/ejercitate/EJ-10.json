@@ -28,7 +28,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "En el número 8.147, ¿qué valor tiene el dígito 4?",
-          "opciones": ["4 décimos (0.4)", "4 centésimos (0.04)", "4 milésimos (0.004)", "4 unidades"],
+          "opciones": [
+            "4 décimos (0.4)",
+            "4 centésimos (0.04)",
+            "4 milésimos (0.004)",
+            "4 unidades"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "En 8.147: el 1 está en décimos, el 4 en centésimos y el 7 en milésimos. Por eso el 4 vale 4 centésimos (0.04)."
         },
@@ -47,16 +52,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "En el número 5.083, ¿qué valor tiene el dígito 8?",
-          "opciones": ["8 décimos (0.8)", "8 centésimos (0.08)", "8 milésimos (0.008)", "8 unidades"],
+          "opciones": [
+            "8 décimos (0.8)",
+            "8 centésimos (0.08)",
+            "8 milésimos (0.008)",
+            "8 unidades"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "En 5.083: el 0 es décimos, el 8 es centésimos y el 3 es milésimos. Por eso el 8 vale 8 centésimos (0.08)."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada posición decimal con la fracción que representa.",
-          "columnaA": ["Décimos", "Centésimos", "Milésimos"],
-          "columnaB": ["1/1000", "1/10", "1/100"],
-          "parejasCorrectas": [1, 2, 0],
+          "columnaA": [
+            "Décimos",
+            "Centésimos",
+            "Milésimos"
+          ],
+          "columnaB": [
+            "1/1000",
+            "1/10",
+            "1/100"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
           "retroalimentacion": "Décimos = 1/10, Centésimos = 1/100, Milésimos = 1/1000: cada posición vale diez veces menos que la anterior."
         }
       ]
@@ -82,7 +104,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es el decimal equivalente a 1/8?",
-          "opciones": ["0.125", "0.18", "0.8", "0.25"],
+          "opciones": [
+            "0.125",
+            "0.18",
+            "0.8",
+            "0.25"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "1 ÷ 8 = 0.125."
         },
@@ -101,7 +128,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Una receta necesita 2/5 de taza de azúcar. ¿A qué decimal equivale esta fracción?",
-          "opciones": ["0.4", "0.25", "0.52", "0.2"],
+          "opciones": [
+            "0.4",
+            "0.25",
+            "0.52",
+            "0.2"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "2 ÷ 5 = 0.4, así que 2/5 de taza equivale a 0.4 de taza."
         }
@@ -128,7 +160,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál fracción simplificada equivale a 0.35?",
-          "opciones": ["7/20", "35/100", "7/10", "5/14"],
+          "opciones": [
+            "7/20",
+            "35/100",
+            "7/10",
+            "5/14"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "0.35 = 35/100, y simplificando entre 5 queda 7/20."
         },
@@ -147,9 +184,21 @@
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada decimal con su fracción equivalente.",
-          "columnaA": ["0.5", "0.2", "0.75"],
-          "columnaB": ["3/4", "1/5", "1/2"],
-          "parejasCorrectas": [2, 1, 0],
+          "columnaA": [
+            "0.5",
+            "0.2",
+            "0.75"
+          ],
+          "columnaB": [
+            "3/4",
+            "1/5",
+            "1/2"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
           "retroalimentacion": "0.5 = 1/2, 0.2 = 1/5 y 0.75 = 3/4."
         }
       ]
@@ -168,7 +217,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un corredor A hizo 3/4 de la carrera y un corredor B hizo 0.8 de la carrera. ¿Quién ha avanzado más?",
-          "opciones": ["Corredor A", "Corredor B", "Llevan lo mismo", "No se puede comparar"],
+          "opciones": [
+            "Corredor A",
+            "Corredor B",
+            "Llevan lo mismo",
+            "No se puede comparar"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "3/4 = 0.75 y 0.8 > 0.75, así que el corredor B ha avanzado más."
         },
@@ -187,16 +241,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un pastelero usa 5/8 de kg de harina en una receta y 0.6 kg en otra. ¿Cuál receta usa más harina?",
-          "opciones": ["La de 5/8 kg (0.625 kg)", "La de 0.6 kg", "Usan la misma cantidad", "Falta información"],
+          "opciones": [
+            "La de 5/8 kg (0.625 kg)",
+            "La de 0.6 kg",
+            "Usan la misma cantidad",
+            "Falta información"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "5/8 = 0.625, y 0.625 > 0.6, así que la receta de 5/8 kg usa más harina."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada valor con su lugar al ordenarlos de menor a mayor.",
-          "columnaA": ["3/5", "0.45", "7/10"],
-          "columnaB": ["Es el menor", "Es el mayor", "Es el intermedio"],
-          "parejasCorrectas": [2, 0, 1],
+          "columnaA": [
+            "3/5",
+            "0.45",
+            "7/10"
+          ],
+          "columnaB": [
+            "Es el menor",
+            "Es el mayor",
+            "Es el intermedio"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
           "retroalimentacion": "3/5 = 0.6 y 7/10 = 0.7, así que el orden de menor a mayor es 0.45, 3/5 (0.6), 7/10 (0.7)."
         }
       ]
@@ -218,16 +289,33 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "¿Cuál fracción simplificada equivale a 0.15?",
-      "opciones": ["3/20", "15/100", "1/5", "3/10"],
+      "opciones": [
+        "3/20",
+        "15/100",
+        "1/5",
+        "3/10"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "0.15 = 15/100, y simplificando entre 5 queda 3/20."
     },
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada valor con su lugar al ordenarlos de menor a mayor.",
-      "columnaA": ["0.9", "4/5", "0.72"],
-      "columnaB": ["Es el mayor", "Es el intermedio", "Es el menor"],
-      "parejasCorrectas": [0, 1, 2],
+      "columnaA": [
+        "0.9",
+        "4/5",
+        "0.72"
+      ],
+      "columnaB": [
+        "Es el mayor",
+        "Es el intermedio",
+        "Es el menor"
+      ],
+      "parejasCorrectas": [
+        0,
+        1,
+        2
+      ],
       "retroalimentacion": "4/5 = 0.8, así que el orden de menor a mayor es 0.72, 4/5 (0.8), 0.9."
     }
   ]

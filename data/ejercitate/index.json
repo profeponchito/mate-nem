@@ -1,6 +1,6 @@
 {
   "grado": "Ejercítate",
-  "descripcion": "Manifiesto de los 40 temas de práctica libre de 'Ejercítate', agrupados en 4 categorías (básicos, intermedios, avanzados, estadística y probabilidad). Cada tema sigue la misma dinámica que un PDA (problematización + 4 subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad calificada de 5 reactivos) y no bloquea ni pertenece a la ruta curricular de ningún grado en particular: cualquier alumno, de cualquier grado, puede practicar cualquier tema en cualquier momento. Los temas 37-40 (Paso 17) se agregaron después de los 36 originales del usuario, todos en la categoría 'basico'.",
+  "descripcion": "Manifiesto de los 40 temas de práctica libre de 'Ejercítate', agrupados en 4 categorías (básicos 1-14, intermedios 15-24, avanzados 25-34, estadística y probabilidad 35-40). Cada tema sigue la misma dinámica que un PDA (problematización + 4 subtemas de menor a mayor dificultad, cada uno con su propia mini-actividad calificada de 5 reactivos) y no bloquea ni pertenece a la ruta curricular de ningún grado en particular: cualquier alumno, de cualquier grado, puede practicar cualquier tema en cualquier momento.",
   "archivos": [
     "EJ-01.json",
     "EJ-02.json",

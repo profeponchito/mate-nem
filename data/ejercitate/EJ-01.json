@@ -28,7 +28,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál de las siguientes opciones es un número natural?",
-          "opciones": ["-3", "12", "2.5", "-8"],
+          "opciones": [
+            "-3",
+            "12",
+            "2.5",
+            "-8"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "12 es un número natural porque se usa para contar y no tiene signo negativo ni parte decimal."
         },
@@ -59,9 +64,21 @@
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada número con su posición relativa entre los tres.",
-          "columnaA": ["50", "1", "18"],
-          "columnaB": ["Es el menor de los tres", "Es el mayor de los tres", "Está entre 10 y 20"],
-          "parejasCorrectas": [1, 0, 2],
+          "columnaA": [
+            "50",
+            "1",
+            "18"
+          ],
+          "columnaB": [
+            "Es el menor de los tres",
+            "Es el mayor de los tres",
+            "Está entre 10 y 20"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
           "retroalimentacion": "50 es el mayor de los tres; 1 es el menor; 18 está entre 10 y 20."
         }
       ]
@@ -93,7 +110,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es el valor absoluto de 20?",
-          "opciones": ["-20", "0", "20", "10"],
+          "opciones": [
+            "-20",
+            "0",
+            "20",
+            "10"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "El valor absoluto de 20 es 20, porque ya es positivo y está a 20 unidades del cero."
         },
@@ -106,9 +128,21 @@
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada expresión con su resultado.",
-          "columnaA": ["|-6|", "Opuesto de 14", "|10|"],
-          "columnaB": ["10", "6", "-14"],
-          "parejasCorrectas": [1, 2, 0],
+          "columnaA": [
+            "|-6|",
+            "Opuesto de 14",
+            "|10|"
+          ],
+          "columnaB": [
+            "10",
+            "6",
+            "-14"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
           "retroalimentacion": "|-6| = 6; el opuesto de 14 es -14; |10| = 10."
         }
       ]
@@ -127,14 +161,24 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Ordena de menor a mayor: -6, 2, -9, 0",
-          "opciones": ["-9, -6, 0, 2", "2, 0, -6, -9", "-6, -9, 0, 2", "0, -6, -9, 2"],
+          "opciones": [
+            "-9, -6, 0, 2",
+            "2, 0, -6, -9",
+            "-6, -9, 0, 2",
+            "0, -6, -9, 2"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "De menor a mayor: -9 < -6 < 0 < 2."
         },
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
-          "opciones": ["15, -4, -11, -20", "-20, -11, -4, 15", "-4, -11, 15, -20", "15, -20, -4, -11"],
+          "opciones": [
+            "15, -4, -11, -20",
+            "-20, -11, -4, 15",
+            "-4, -11, 15, -20",
+            "15, -20, -4, -11"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "De mayor a menor: 15 > -4 > -11 > -20."
         },
@@ -153,7 +197,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál de las siguientes listas está ordenada de mayor a menor?",
-          "opciones": ["22, -6, -14, -19", "-19, -14, -6, 22", "22, -19, -6, -14", "-6, -14, -19, 22"],
+          "opciones": [
+            "22, -6, -14, -19",
+            "-19, -14, -6, 22",
+            "22, -19, -6, -14",
+            "-6, -14, -19, 22"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "De mayor a menor: 22 > -6 > -14 > -19."
         }
@@ -185,9 +234,21 @@
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada saldo bancario con su descripción.",
-          "columnaA": ["-500 pesos", "150 pesos", "-20 pesos"],
-          "columnaB": ["Es una deuda pequeña", "Tiene saldo a favor", "Es la deuda más grande"],
-          "parejasCorrectas": [2, 1, 0],
+          "columnaA": [
+            "-500 pesos",
+            "150 pesos",
+            "-20 pesos"
+          ],
+          "columnaB": [
+            "Es una deuda pequeña",
+            "Tiene saldo a favor",
+            "Es la deuda más grande"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
           "retroalimentacion": "-500 es la deuda más grande (más lejos del 0); 150 es saldo a favor; -20 es una deuda pequeña."
         },
         {
@@ -205,7 +266,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Ordena de mayor a menor estas altitudes: 200 m, -30 m, 0 m, -120 m",
-          "opciones": ["200, 0, -30, -120", "200, -30, 0, -120", "-120, -30, 0, 200", "0, 200, -30, -120"],
+          "opciones": [
+            "200, 0, -30, -120",
+            "200, -30, 0, -120",
+            "-120, -30, 0, 200",
+            "0, 200, -30, -120"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "De mayor a menor: 200 > 0 > -30 > -120."
         }
@@ -216,7 +282,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "¿Cuál de los siguientes números NO es natural?",
-      "opciones": ["45", "-7", "1", "300"],
+      "opciones": [
+        "45",
+        "-7",
+        "1",
+        "300"
+      ],
       "respuestaCorrecta": 1,
       "retroalimentacion": "-7 no es un número natural porque los naturales no incluyen negativos."
     },
@@ -235,9 +306,21 @@
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada número con su valor absoluto.",
-      "columnaA": ["-9", "15", "-1"],
-      "columnaB": ["1", "15", "9"],
-      "parejasCorrectas": [2, 1, 0],
+      "columnaA": [
+        "-9",
+        "15",
+        "-1"
+      ],
+      "columnaB": [
+        "1",
+        "15",
+        "9"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
       "retroalimentacion": "|-9| = 9; |15| = 15; |-1| = 1."
     }
   ]

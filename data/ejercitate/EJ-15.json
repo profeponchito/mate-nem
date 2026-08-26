@@ -5,308 +5,307 @@
   "categoria": "intermedio",
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Proporcionalidad inversa",
-  "contenido": "Relación entre dos cantidades donde una aumenta mientras la otra disminuye, manteniendo constante su producto.",
-  "pda": "Identifica situaciones de proporcionalidad inversa, calcula la constante del producto y resuelve problemas usando la regla de tres inversa.",
+  "titulo": "Números racionales e irracionales",
+  "contenido": "Qué distingue a un número racional de uno irracional, y cómo ubicarlos y clasificarlos.",
+  "pda": "Clasifica números como racionales o irracionales según su expresión decimal, y los ubica de forma aproximada en la recta numérica.",
   "problematizacion": {
-    "contexto": "Para pintar un salón, un solo pintor tarda 12 horas trabajando solo. Si se contratan más pintores para el mismo trabajo, se tardan menos horas, pero no de cualquier forma: aquí a más trabajadores, menos tiempo, siempre en la misma proporción inversa.",
-    "pregunta": "Si 2 pintores tardan 6 horas en pintar el salón, ¿cuánto tardarán 4 pintores en hacer el mismo trabajo, si todos trabajan al mismo ritmo?"
+    "contexto": "Un jardinero quiere poner una cerca alrededor de una fuente circular. Mide el diámetro (2 m) y usa la fórmula C = π·d para saber cuántos metros de cerca comprar. Al calcular con la calculadora, obtiene 6.283185307... un número que nunca termina ni parece repetirse.",
+    "pregunta": "¿Por qué π nunca se puede escribir como una fracción exacta, y cuántos metros de cerca debería comprar el jardinero en realidad?"
   },
   "subtemas": [
     {
       "numero": "15.1",
-      "titulo": "¿Qué es la proporcionalidad inversa?",
-      "explicacion": "Dos cantidades son inversamente proporcionales cuando, al multiplicar una de ellas por un número, la otra queda dividida entre ese mismo número (y viceversa). Es decir, cuando una aumenta la otra disminuye, pero no de cualquier forma: su producto siempre se mantiene igual. Por ejemplo, entre más obreros trabajen en una obra al mismo ritmo, menos tiempo tardarán en terminarla.",
-      "formula": "x × y = k (constante)",
+      "titulo": "¿Qué es un número racional?",
+      "explicacion": "Un número racional es cualquier número que se puede escribir como una fracción a/b, donde a y b son enteros y b es distinto de cero. A esta familia pertenecen los enteros, las fracciones y los decimales que terminan o que se repiten en un patrón (periódicos), porque todos ellos se pueden expresar como una división exacta de dos enteros.",
+      "formula": "Racional = a/b, con a, b enteros y b ≠ 0",
       "ejemplos": [
-        "Si 3 grifos llenan una alberca en 8 horas, 6 grifos (el doble) la llenarán en 4 horas (la mitad).",
-        "A mayor velocidad de un coche, menor es el tiempo del recorrido, para la misma distancia."
+        "0.75 es racional porque es igual a 3/4.",
+        "0.333... (3 periódico) es racional porque es igual a 1/3."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si al doble de obreros trabajando corresponde la mitad del tiempo para terminar una obra, se trata de proporcionalidad inversa.",
+          "enunciado": "Todo número entero es también un número racional.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Cuando una cantidad se duplica y la otra se reduce a la mitad, es proporcionalidad inversa."
+          "retroalimentacion": "Correcto: cualquier entero n se puede escribir como la fracción n/1, así que siempre es racional."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál situación representa una proporcionalidad inversa?",
+          "pregunta": "¿Cuál de las siguientes fracciones es equivalente a un número entero?",
           "opciones": [
-            "El número de trabajadores y el tiempo que tardan en terminar una obra, a ritmo constante",
-            "El número de kilos de manzanas y su costo total",
-            "El número de horas trabajadas y el pago recibido a tarifa fija por hora",
-            "El número de boletos comprados y el costo total"
+            "8/2",
+            "3/4",
+            "5/6",
+            "7/9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "A más trabajadores, menos tiempo se necesita: es proporcionalidad inversa; las demás opciones son directas."
+          "retroalimentacion": "8/2 = 4, que es un número entero (y también racional)."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Si 4 máquinas tejen cierta cantidad de tela en 6 horas, al aumentar el número de máquinas el tiempo necesario ___ (aumenta o disminuye).",
-          "respuestaCorrecta": "disminuye",
-          "retroalimentacion": "En la proporcionalidad inversa, cuando una cantidad aumenta, la otra disminuye."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "En una proporcionalidad inversa, al aumentar una cantidad, la otra también aumenta.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "En la proporcionalidad inversa, cuando una cantidad aumenta, la otra disminuye, no aumenta."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un tinaco se llena con 1 llave en 20 minutos. Si se abren más llaves iguales, ¿qué pasa con el tiempo de llenado?",
-          "opciones": [
-            "Disminuye",
-            "Aumenta",
-            "No cambia",
-            "Depende del color del tinaco"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "A más llaves abiertas (mismo caudal cada una), se necesita menos tiempo para llenar el tinaco: es proporcionalidad inversa."
-        }
-      ]
-    },
-    {
-      "numero": "15.2",
-      "titulo": "Producto constante",
-      "explicacion": "En la proporcionalidad inversa, el producto de las dos cantidades relacionadas siempre da el mismo valor, llamado constante k. Esto permite comprobar si dos cantidades son inversamente proporcionales (todas las parejas de datos deben dar el mismo producto) y también encontrar valores desconocidos: si conoces k y una cantidad, divides k entre esa cantidad para hallar la otra.",
-      "formula": "k = x × y → y = k / x",
-      "ejemplos": [
-        "Si 2 pintores tardan 6 horas, k = 2×6 = 12. Con 4 pintores: y = 12/4 = 3 horas.",
-        "3 grifos llenan una alberca en 8 horas: k=3×8=24. Con 6 grifos: y=24/6=4 horas."
-      ],
-      "puntosPorReactivo": 10,
-      "estrellasMax": 3,
-      "reactivos": [
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Si 5 obreros terminan un trabajo en 8 días, ¿cuál es la constante del producto (k)?",
-          "opciones": [
-            "40",
-            "13",
-            "1.6",
-            "5"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "k=x×y=5×8=40."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "Con una constante k=36 (obreros × días), si trabajan 4 obreros, tardarán ___ días.",
-          "respuestaCorrecta": "9",
-          "retroalimentacion": "36÷4=9 días."
+          "frase": "0.5 se puede escribir como la fracción ___ (en su forma más simple).",
+          "respuestaCorrecta": "1/2",
+          "retroalimentacion": "0.5 = 5/10, y simplificando entre 5 queda 1/2."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Con una constante k=24 (velocidad × tiempo), relaciona cada velocidad con el tiempo que tarda el recorrido.",
+          "instruccion": "Relaciona cada número decimal con la fracción que lo representa.",
           "columnaA": [
-            "4 km/h",
-            "6 km/h",
-            "8 km/h"
+            "0.25",
+            "0.5",
+            "0.2"
           ],
           "columnaB": [
-            "3 horas",
-            "4 horas",
-            "6 horas"
+            "1/5",
+            "1/2",
+            "1/4"
           ],
           "parejasCorrectas": [
             2,
             1,
             0
           ],
-          "retroalimentacion": "24÷4=6 horas; 24÷6=4 horas; 24÷8=3 horas."
+          "retroalimentacion": "0.25 = 1/4, 0.5 = 1/2 y 0.2 = 1/5."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Si 6 grifos llenan un tanque en 10 horas, ¿cuál es la constante del producto?",
+          "pregunta": "Un pastel se reparte en 8 partes iguales y Juan se come 3. ¿Qué número racional representa lo que comió Juan?",
           "opciones": [
-            "60",
-            "16",
-            "1.6",
-            "6"
+            "3/8",
+            "8/3",
+            "3.8",
+            "0.38"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=6×10=60."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "Si la constante de una proporcionalidad inversa es k=48 y x=8, entonces y=6.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "y=k/x=48/8=6."
+          "retroalimentacion": "Juan comió 3 de las 8 partes iguales, es decir, la fracción (racional) 3/8."
         }
       ]
     },
     {
-      "numero": "15.3",
-      "titulo": "Regla de tres inversa",
-      "explicacion": "La regla de tres inversa se usa para encontrar un valor desconocido cuando dos cantidades son inversamente proporcionales: en vez de multiplicar en cruz como en la directa, se multiplican los dos valores conocidos de una situación para obtener la constante, y luego se divide esa constante entre el valor conocido de la otra situación.",
-      "formula": "x1 × y1 = x2 × y2 → x2 = (x1 × y1) / y2",
+      "numero": "15.2",
+      "titulo": "¿Qué es un número irracional?",
+      "explicacion": "Un número irracional NO se puede escribir como fracción de dos enteros; su expresión decimal es infinita y no sigue ningún patrón que se repita. Las raíces cuadradas de números que no son cuadrados perfectos (como √2 o √20) y el número π son ejemplos clásicos de números irracionales.",
       "ejemplos": [
-        "Si 3 obreros hacen una barda en 12 días, ¿cuántos obreros se necesitan para hacerla en 4 días? x2=(3×12)/4=9 obreros.",
-        "Un coche a 60 km/h tarda 5 horas en un trayecto. ¿Cuánto tardará a 100 km/h? y2=(60×5)/100=3 horas."
+        "√2 = 1.41421356... nunca termina ni se repite, por eso es irracional.",
+        "π = 3.14159265... es irracional; por eso en la práctica usamos la aproximación 3.14."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
+          "tipo": "verdadero_falso",
+          "enunciado": "√9 es un número irracional.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: 9 es un cuadrado perfecto (3×3=9), así que √9 = 3, que es un número racional (entero)."
+        },
+        {
           "tipo": "opcion_multiple",
-          "pregunta": "Si 4 pintores terminan un mural en 9 días, ¿en cuántos días lo terminarán 6 pintores al mismo ritmo?",
+          "pregunta": "¿Cuál de las siguientes raíces es irracional?",
           "opciones": [
-            "6",
-            "13.5",
-            "54",
-            "2.4"
+            "√16",
+            "√25",
+            "√20",
+            "√36"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "k=4×9=36; con 6 pintores: 36÷6=6 días."
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "20 no es un cuadrado perfecto (no hay un entero que multiplicado por sí mismo dé 20), así que √20 es irracional."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Un coche a 80 km/h tarda 3 horas en un viaje. Si va a 120 km/h, tardará ___ horas.",
-          "respuestaCorrecta": "2",
-          "retroalimentacion": "k=80×3=240; 240÷120=2 horas."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "12 obreros construyen una barda en 15 días. ¿Cuántos obreros se necesitan para hacerla en 9 días?",
-          "opciones": [
-            "20",
-            "18",
-            "10",
-            "7.5"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "k=12×15=180; 180÷9=20 obreros."
+          "frase": "El número π es aproximadamente ___ (usa dos decimales).",
+          "respuestaCorrecta": "3.14",
+          "retroalimentacion": "π = 3.14159265..., y la aproximación usual con dos decimales es 3.14."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si 5 máquinas tejen cierta tela en 8 horas, entonces 10 máquinas (el doble) tardarán 4 horas (la mitad) en tejer la misma tela.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "k=5×8=40; con 10 máquinas: 40÷10=4 horas."
+          "enunciado": "√50 es racional porque 50 es un número entero.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: que 50 sea entero no significa que su raíz lo sea. 50 no es un cuadrado perfecto, así que √50 es irracional."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un grupo de 8 trabajadores termina una cosecha en 6 días. ¿En cuántos días la terminarían 4 trabajadores, al mismo ritmo?",
+          "pregunta": "¿Por qué √2 es un número irracional?",
           "opciones": [
-            "12",
-            "3",
-            "24",
-            "2"
+            "Porque no existe ningún número que multiplicado por sí mismo dé exactamente 2 con decimales exactos o periódicos",
+            "Porque 2 es un número primo",
+            "Porque no se puede calcular con calculadora",
+            "Porque es mayor que 1"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=8×6=48; con 4 trabajadores: 48÷4=12 días."
+          "retroalimentacion": "√2 es irracional porque su decimal (1.41421356...) nunca termina ni se repite en un patrón; no existe una fracción exacta que lo represente."
+        }
+      ]
+    },
+    {
+      "numero": "15.3",
+      "titulo": "Ubicar irracionales en la recta numérica",
+      "explicacion": "Como no podemos escribir un número irracional como fracción exacta, lo ubicamos en la recta numérica usando una aproximación decimal: buscamos entre qué dos enteros consecutivos se encuentra (comparando sus cuadrados) y luego afinamos con más decimales.",
+      "ejemplos": [
+        "√10 está entre 3 y 4, porque 3²=9 y 4²=16, y 9<10<16; su aproximación es 3.16.",
+        "π está entre 3 y 4, más cerca de 3; su aproximación usual es 3.14."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "√10 está entre los enteros ___ y 4.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "3²=9 y 4²=16, y como 9<10<16, entonces √10 está entre 3 y 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Entre qué par de enteros se ubica √20?",
+          "opciones": [
+            "4 y 5",
+            "3 y 4",
+            "5 y 6",
+            "2 y 3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4²=16 y 5²=25, y como 16<20<25, entonces √20 está entre 4 y 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√30 está entre 5 y 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 5²=25 y 6²=36, y como 25<30<36, √30 está entre 5 y 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una aproximación de √2 con dos decimales es 1.___.",
+          "respuestaCorrecta": "41",
+          "retroalimentacion": "√2 = 1.41421356..., así que con dos decimales es 1.41."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Para ubicar π en la recta numérica de forma práctica, ¿qué aproximación conviene usar?",
+          "opciones": [
+            "3.14",
+            "3",
+            "4",
+            "3.5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3.14 es la aproximación más usada de π y basta para ubicarlo con precisión razonable en la recta."
         }
       ]
     },
     {
       "numero": "15.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: en la proporcionalidad inversa el producto de las dos cantidades es constante (x×y=k), y cuando una cantidad aumenta la otra disminuye. Para resolver problemas se usa la regla de tres inversa: se multiplican los dos valores conocidos de una situación para obtener k, y se divide k entre el dato conocido de la otra situación. Esto aplica a obreros y tiempo, velocidad y tiempo, grifos y llenado, entre otras situaciones cotidianas — no confundir con la proporcionalidad directa, donde lo constante es el cociente, no el producto.",
+      "explicacion": "Para clasificar un número, revisa su expresión decimal: si termina o se repite en un patrón, es racional (siempre se puede escribir como fracción); si es infinita y sin ningún patrón que se repita, como en las raíces de números que no son cuadrados perfectos o en π, es irracional.",
       "ejemplos": [
-        "6 obreros construyen una casa en 20 días. Si se contratan 4 obreros más (10 en total), tardarán (6×20)/10=12 días.",
-        "Un ciclista a 15 km/h tarda 4 horas en un recorrido. A 20 km/h tardará (15×4)/20=3 horas."
+        "0.666... es racional (=2/3); √5=2.236... es irracional porque 5 no es un cuadrado perfecto."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una alberca se llena con 3 bombas en 10 horas. ¿Cuántas horas tardará con 5 bombas, al mismo ritmo cada una?",
-          "opciones": [
-            "6",
-            "16.6",
-            "30",
-            "2"
+          "tipo": "relacionar_columnas",
+          "instruccion": "Clasifica cada número según su tipo.",
+          "columnaA": [
+            "√4",
+            "π",
+            "0.75"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "k=3×10=30; con 5 bombas: 30÷5=6 horas."
+          "columnaB": [
+            "Irracional",
+            "Racional (entero)",
+            "Racional (decimal exacto)"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "√4 = 2 es racional (entero); π es irracional; 0.75 es racional (decimal exacto, = 3/4)."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "8 costureras hacen un lote de uniformes en 6 días. Si solo trabajan 4 costureras, tardarán ___ días.",
-          "respuestaCorrecta": "12",
-          "retroalimentacion": "k=8×6=48; 48÷4=12 días."
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes números NO es racional?",
+          "opciones": [
+            "1/3",
+            "√49",
+            "√11",
+            "0.4"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "11 no es un cuadrado perfecto, así que √11 es irracional. Las demás opciones sí son racionales (√49=7)."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En una proporcionalidad inversa entre número de obreros y días de trabajo, si los obreros se triplican, el tiempo se reduce a la tercera parte.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Al multiplicar una cantidad por 3, la otra queda dividida entre 3, para mantener constante el producto."
+          "enunciado": "El número 2.101001000100001... (donde el patrón nunca se repite igual) es racional.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: aunque parece tener un patrón, cada vez cambia y nunca se repite exactamente igual, así que es un decimal infinito no periódico, es decir, irracional."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada cambio en el número de obreros con lo que sucede con el tiempo de trabajo (proporcionalidad inversa).",
-          "columnaA": [
-            "Se duplica el número de obreros",
-            "Se reduce a la mitad el número de obreros",
-            "El número de obreros se mantiene igual"
-          ],
-          "columnaB": [
-            "El tiempo se mantiene igual",
-            "El tiempo se duplica",
-            "El tiempo se reduce a la mitad"
-          ],
-          "parejasCorrectas": [
-            2,
-            1,
-            0
-          ],
-          "retroalimentacion": "Al duplicar obreros, el tiempo se reduce a la mitad; al reducirlos a la mitad, el tiempo se duplica; si no cambian, el tiempo se mantiene igual."
+          "tipo": "llenar_frase",
+          "frase": "El número √36 es racional porque es igual a ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "36 es un cuadrado perfecto (6×6=36), así que √36 = 6, un número entero y por lo tanto racional."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un depósito de agua se vacía con 2 válvulas en 18 horas. ¿En cuántas horas se vaciará si se abren 3 válvulas iguales?",
+          "pregunta": "Un arquitecto calcula la diagonal de un terreno cuadrado de 1 km de lado y obtiene √2 km. ¿Este resultado es racional o irracional?",
           "opciones": [
-            "12",
-            "27",
-            "9",
-            "6"
+            "Irracional, porque √2 no se puede escribir como fracción exacta",
+            "Racional, porque es una raíz cuadrada",
+            "Racional, porque 2 es un número entero",
+            "No es un número real"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "k=2×18=36; con 3 válvulas: 36÷3=12 horas."
+          "retroalimentacion": "Como 2 no es un cuadrado perfecto, √2 tiene un decimal infinito no periódico: es irracional."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
-      "tipo": "opcion_multiple",
-      "pregunta": "¿Cuál de las siguientes es una situación de proporcionalidad inversa?",
-      "opciones": [
-        "El número de excavadoras y el tiempo para abrir una zanja, a ritmo constante",
-        "El número de kilos de arroz comprados y su costo total",
-        "Las horas trabajadas y el pago recibido a tarifa fija por hora",
-        "El número de boletos comprados y el costo total"
-      ],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "A más excavadoras, menos tiempo se necesita: es proporcionalidad inversa."
+      "tipo": "verdadero_falso",
+      "enunciado": "√81 es un número racional.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 81 es un cuadrado perfecto (9×9=81), así que √81 = 9, un número entero y racional."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "Si k=60 es la constante (velocidad × tiempo) y la velocidad es 15 km/h, el tiempo es ___ horas.",
-      "respuestaCorrecta": "4",
-      "retroalimentacion": "60÷15=4 horas."
-    },
-    {
-      "tipo": "verdadero_falso",
-      "enunciado": "7 jardineros podan un parque en 6 horas. Si solo trabajan 3 jardineros, tardarán menos de 6 horas.",
-      "respuestaCorrecta": false,
-      "retroalimentacion": "A menos jardineros se necesita más tiempo, no menos: tardarán más de 6 horas."
+      "frase": "0.1666... (6 periódico) se puede escribir como la fracción ___.",
+      "respuestaCorrecta": "1/6",
+      "retroalimentacion": "0.1666... es un decimal periódico, y equivale exactamente a la fracción 1/6."
     },
     {
       "tipo": "opcion_multiple",
-      "pregunta": "10 máquinas producen cierta cantidad de piezas en 8 horas. ¿En cuántas horas producirán la misma cantidad 4 máquinas?",
+      "pregunta": "¿Entre qué enteros se ubica √70?",
       "opciones": [
-        "20",
-        "3.2",
-        "12",
-        "32"
+        "8 y 9",
+        "7 y 8",
+        "9 y 10",
+        "6 y 7"
       ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "k=10×8=80; con 4 máquinas: 80÷4=20 horas."
+      "retroalimentacion": "8²=64 y 9²=81, y como 64<70<81, entonces √70 está entre 8 y 9."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Clasifica cada número según su tipo.",
+      "columnaA": [
+        "√5",
+        "4/9",
+        "√100"
+      ],
+      "columnaB": [
+        "Racional (fracción)",
+        "Racional (entero)",
+        "Irracional"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
+      "retroalimentacion": "√5 es irracional (5 no es cuadrado perfecto); 4/9 es racional (fracción); √100 = 10 es racional (entero)."
     }
   ]
 }

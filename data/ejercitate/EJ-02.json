@@ -27,7 +27,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es 48 + 27?",
-          "opciones": ["65", "75", "85", "70"],
+          "opciones": [
+            "65",
+            "75",
+            "85",
+            "70"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "48 + 27 = 75."
         },
@@ -46,7 +51,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un jugador tenía 120 puntos y perdió 38 en la ronda. ¿Cuántos puntos tiene ahora?",
-          "opciones": ["82", "78", "72", "88"],
+          "opciones": [
+            "82",
+            "78",
+            "72",
+            "88"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "120 - 38 = 82 puntos."
         },
@@ -72,7 +82,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es 12 × 7?",
-          "opciones": ["74", "84", "94", "81"],
+          "opciones": [
+            "74",
+            "84",
+            "94",
+            "81"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "12 × 7 = 84."
         },
@@ -91,16 +106,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Si compras 8 boletos de 45 pesos cada uno, ¿cuánto gastas en total?",
-          "opciones": ["320", "360", "400", "280"],
+          "opciones": [
+            "320",
+            "360",
+            "400",
+            "280"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "8 × 45 = 360 pesos."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada multiplicación con su resultado.",
-          "columnaA": ["(-6) × 4", "7 × (-2)", "(-3) × (-9)"],
-          "columnaB": ["-14", "27", "-24"],
-          "parejasCorrectas": [2, 0, 1],
+          "columnaA": [
+            "(-6) × 4",
+            "7 × (-2)",
+            "(-3) × (-9)"
+          ],
+          "columnaB": [
+            "-14",
+            "27",
+            "-24"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
           "retroalimentacion": "(-6)×4 = -24; 7×(-2) = -14; (-3)×(-9) = 27."
         }
       ]
@@ -119,7 +151,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Al dividir 29 entre 4, ¿cuál es el cociente y el residuo?",
-          "opciones": ["Cociente 7, residuo 1", "Cociente 6, residuo 5", "Cociente 7, residuo 2", "Cociente 8, residuo 0"],
+          "opciones": [
+            "Cociente 7, residuo 1",
+            "Cociente 6, residuo 5",
+            "Cociente 7, residuo 2",
+            "Cociente 8, residuo 0"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "4 × 7 = 28, y 29 - 28 = 1, así que el cociente es 7 y el residuo es 1."
         },
@@ -138,7 +175,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Se reparten 53 canicas entre 8 niños en partes iguales. ¿Cuántas canicas sobran?",
-          "opciones": ["3", "5", "4", "6"],
+          "opciones": [
+            "3",
+            "5",
+            "4",
+            "6"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "8 × 6 = 48, y 53 - 48 = 5, así que sobran 5 canicas."
         },
@@ -164,7 +206,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Una tienda vende 24 playeras a 120 pesos cada una, pero recibe una devolución de 3 playeras. ¿Cuánto dinero neto recibió?",
-          "opciones": ["2,520", "2,880", "2,160", "2,400"],
+          "opciones": [
+            "2,520",
+            "2,880",
+            "2,160",
+            "2,400"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "24 - 3 = 21 playeras vendidas; 21 × 120 = 2,520 pesos."
         },
@@ -183,15 +230,32 @@
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada operación con su resultado.",
-          "columnaA": ["18 + 27", "100 - 37", "9 × 6"],
-          "columnaB": ["63", "54", "45"],
-          "parejasCorrectas": [1, 2, 0],
+          "columnaA": [
+            "18 + 27",
+            "100 - 37",
+            "9 × 6"
+          ],
+          "columnaB": [
+            "63",
+            "54",
+            "45"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
           "retroalimentacion": "18 + 27 = 45; 100 - 37 = 63; 9 × 6 = 54."
         },
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un cine vendió 130 boletos el viernes y 95 el sábado. Si cada boleto cuesta 60 pesos, ¿cuánto dinero recaudó en los dos días?",
-          "opciones": ["13,500", "12,000", "14,200", "13,000"],
+          "opciones": [
+            "13,500",
+            "12,000",
+            "14,200",
+            "13,000"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "130 + 95 = 225 boletos; 225 × 60 = 13,500 pesos."
         }
@@ -202,7 +266,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "¿Cuánto es 156 - 89?",
-      "opciones": ["67", "77", "57", "87"],
+      "opciones": [
+        "67",
+        "77",
+        "57",
+        "87"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "156 - 89 = 67."
     },
@@ -221,9 +290,21 @@
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada operación con su resultado.",
-      "columnaA": ["45 + 18", "100 - 42", "6 × 11"],
-      "columnaB": ["63", "58", "66"],
-      "parejasCorrectas": [0, 1, 2],
+      "columnaA": [
+        "45 + 18",
+        "100 - 42",
+        "6 × 11"
+      ],
+      "columnaB": [
+        "63",
+        "58",
+        "66"
+      ],
+      "parejasCorrectas": [
+        0,
+        1,
+        2
+      ],
       "retroalimentacion": "45 + 18 = 63; 100 - 42 = 58; 6 × 11 = 66."
     }
   ]

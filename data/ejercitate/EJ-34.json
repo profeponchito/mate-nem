@@ -2,202 +2,293 @@
   "id": "EJ-34",
   "grado": "Ejercítate",
   "numero": 34,
-  "categoria": "estadistica",
+  "categoria": "avanzado",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Análisis de datos y probabilidad",
-  "titulo": "Media, mediana y moda",
-  "contenido": "Cálculo e interpretación de las medidas de tendencia central: media, mediana y moda.",
-  "pda": "Calcula e interpreta la media, la mediana y la moda de un conjunto de datos, y decide cuál medida de tendencia central conviene usar según el contexto.",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Volumen y área de cuerpos geométricos",
+  "contenido": "Cálculo del área total y el volumen de prismas, cubos, cilindros, pirámides y conos.",
+  "pda": "Calcula el área total y el volumen de prismas, cilindros, pirámides y conos para resolver problemas relacionados con el espacio que ocupan o el contenido que caben en objetos y recipientes de la vida cotidiana.",
   "problematizacion": {
-    "contexto": "El entrenador de un equipo de basquetbol anotó los puntos que hizo su mejor jugador en los últimos 5 partidos: 18, 22, 20, 45 y 19. Quiere saber qué número representa mejor el rendimiento normal del jugador, sin que un partido excepcional (como el de 45 puntos) distorsione la idea.",
-    "pregunta": "¿Qué número te daría una idea más justa del rendimiento típico del jugador: el promedio de todos los partidos o el valor de en medio?"
+    "contexto": "En la azotea de una casa hay un tinaco cilíndrico que guarda el agua para toda la familia, y junto a él hay una caja de herramientas en forma de prisma rectangular. El papá quiere saber cuál de los dos objetos 'guarda' más espacio en su interior.",
+    "pregunta": "¿Cómo se puede calcular cuánto espacio ocupa (o cuánta agua cabe) en cada uno de estos objetos, si tienen formas tan distintas?"
   },
   "subtemas": [
     {
       "numero": "34.1",
-      "titulo": "La media o promedio",
-      "explicacion": "La media (o promedio) se calcula sumando todos los datos y dividiendo el resultado entre el número de datos. Es la medida más usada porque toma en cuenta todos los valores, pero tiene una debilidad: un solo dato muy alto o muy bajo (un valor atípico) puede 'jalar' la media y hacer que no represente bien a la mayoría.",
-      "formula": "Media = (suma de todos los datos) ÷ (número de datos)",
+      "titulo": "Área y volumen de prismas y cubos",
+      "explicacion": "El volumen de un cuerpo geométrico es la cantidad de espacio que ocupa, y se mide en unidades cúbicas (cm³, m³, etc.). En un prisma rectangular, el volumen se obtiene multiplicando largo × ancho × alto, porque en el fondo estamos 'apilando' capas del área de la base tantas veces como indique la altura. El cubo es un caso especial de prisma donde las tres medidas son iguales, así que su volumen es arista³. El área total (o área de la superficie) es la suma de las áreas de todas sus caras: en el cubo son 6 caras cuadradas iguales, y en el prisma rectangular son 3 pares de caras rectangulares iguales.",
+      "formula": "Cubo: V = a³, A = 6a² | Prisma rectangular: V = l × w × h, A = 2(lw + lh + wh)",
       "ejemplos": [
-        "Las calificaciones de Ana en 5 exámenes fueron 8, 9, 7, 10, 6. La media es (8+9+7+10+6)÷5 = 40÷5 = 8.",
-        "Un jugador anotó 2, 5, 3, 4, 6 puntos en 5 partidos. La media es (2+5+3+4+6)÷5 = 20÷5 = 4 puntos por partido."
+        "Un cubo de arista 4 cm tiene un volumen de V = 4³ = 64 cm³ y un área total de A = 6 × 4² = 6 × 16 = 96 cm².",
+        "Un prisma rectangular de 5 cm × 3 cm × 2 cm tiene un volumen de V = 5 × 3 × 2 = 30 cm³ y un área total de A = 2(5×3 + 5×2 + 3×2) = 2(15+10+6) = 62 cm²."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Calcula la media de: 4, 6, 8, 10, 12",
-          "opciones": ["6", "7", "8", "9"],
-          "respuestaCorrecta": 2,
-          "retroalimentacion": "La suma es 4+6+8+10+12 = 40, y 40÷5 = 8."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "La media de 5, 10, 15 es ___.",
-          "respuestaCorrecta": "10",
-          "retroalimentacion": "La suma es 5+10+15 = 30, y 30÷3 = 10."
+          "pregunta": "¿Cuál es el volumen de un cubo de arista 3 cm?",
+          "opciones": [
+            "27 cm³",
+            "9 cm³",
+            "18 cm³",
+            "6 cm³"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "V = a³ = 3³ = 3×3×3 = 27 cm³."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "La media de un conjunto de datos siempre tiene que ser uno de los datos originales.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: por ejemplo, la media de 2, 3 y 4 es 3, pero la media de 2 y 3 es 2.5, un valor que no estaba en los datos."
+          "enunciado": "El volumen de un prisma rectangular de 4 cm × 2 cm × 5 cm es 40 cm³.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = l×w×h = 4×2×5 = 40 cm³. La afirmación es correcta."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El volumen de un cubo de arista 6 cm es ___ cm³.",
+          "respuestaCorrecta": "216",
+          "retroalimentacion": "V = a³ = 6³ = 6×6×6 = 216 cm³."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un taxista registró sus propinas durante 4 días: $20, $35, $15, $30. ¿Cuál es la propina promedio por día?",
-          "opciones": ["$20", "$25", "$30", "$35"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "La suma es 20+35+15+30 = 100, y 100÷4 = 25."
+          "pregunta": "¿Cuál es el área total de un cubo de arista 5 cm?",
+          "opciones": [
+            "150 cm²",
+            "125 cm²",
+            "100 cm²",
+            "25 cm²"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "A = 6a² = 6 × 5² = 6 × 25 = 150 cm², porque el cubo tiene 6 caras cuadradas iguales."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada conjunto de datos con su media.",
-          "columnaA": ["2, 4, 6", "10, 20, 30", "5, 5, 5, 5"],
-          "columnaB": ["5", "20", "4"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "2,4,6 suma 12÷3=4; 10,20,30 suma 60÷3=20; 5,5,5,5 suma 20÷4=5."
+          "instruccion": "Relaciona cada cuerpo geométrico con su volumen correcto.",
+          "columnaA": [
+            "Cubo de arista 2 cm",
+            "Prisma de 3 cm × 4 cm × 2 cm",
+            "Cubo de arista 4 cm"
+          ],
+          "columnaB": [
+            "64 cm³",
+            "8 cm³",
+            "24 cm³"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "Cubo arista 2: 2³=8 cm³. Prisma 3×4×2 = 24 cm³. Cubo arista 4: 4³=64 cm³."
         }
       ]
     },
     {
       "numero": "34.2",
-      "titulo": "La mediana",
-      "explicacion": "La mediana es el valor que queda justo en medio cuando los datos se ordenan de menor a mayor. Si hay un número impar de datos, la mediana es el dato central; si hay un número par, la mediana es el promedio de los dos datos centrales. A diferencia de la media, la mediana no se ve afectada por valores muy extremos, por eso es útil cuando hay datos 'raros' en la lista.",
+      "titulo": "Área y volumen de cilindros",
+      "explicacion": "Un cilindro se puede imaginar como un montón de círculos (la base) apilados hasta alcanzar la altura, por eso su volumen es el área del círculo de la base (πr²) multiplicada por la altura. Para el área total hay que sumar las dos tapas circulares (2πr²) más el área lateral, que es el rectángulo que se forma al 'desenrollar' la superficie curva del cilindro (2πrh, porque su base mide lo mismo que el perímetro del círculo). En todos los cálculos de este tema usaremos π ≈ 3.14.",
+      "formula": "V = π × r² × h | A = 2πr² + 2πrh",
       "ejemplos": [
-        "Las edades de 5 amigos ordenadas son 12, 13, 13, 14, 16. La mediana es 13 (el valor central).",
-        "Los precios de 6 playeras ordenados son 80, 90, 100, 120, 150, 200. Como son pares, la mediana es el promedio de los dos centrales: (100+120)÷2 = 110."
+        "Un cilindro con r = 3 cm y h = 10 cm tiene un volumen de V = 3.14 × 3² × 10 = 3.14 × 9 × 10 = 282.6 cm³.",
+        "Ese mismo cilindro tiene un área total de A = 2×3.14×9 + 2×3.14×3×10 = 56.52 + 188.4 = 244.92 cm²."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Encuentra la mediana de: 3, 7, 5, 9, 1 (primero ordénalos)",
-          "opciones": ["3", "5", "7", "9"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Ordenados: 1, 3, 5, 7, 9. El valor central es 5."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "La mediana de 2, 8, 4, 10 es ___.",
-          "respuestaCorrecta": "6",
-          "retroalimentacion": "Ordenados: 2, 4, 8, 10. Como son 4 datos (par), la mediana es el promedio de los dos centrales: (4+8)÷2 = 6."
+          "pregunta": "¿Cuál es el volumen de un cilindro con radio 2 cm y altura 7 cm? (usa π = 3.14)",
+          "opciones": [
+            "87.92 cm³",
+            "43.96 cm³",
+            "175.84 cm³",
+            "28.26 cm³"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "V = πr²h = 3.14 × 2² × 7 = 3.14 × 4 × 7 = 87.92 cm³."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Para encontrar la mediana, primero hay que ordenar los datos de menor a mayor (o de mayor a menor).",
+          "enunciado": "Un cilindro con radio 5 cm y altura 4 cm tiene un volumen de 314 cm³ (usando π = 3.14).",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la mediana solo tiene sentido si los datos están ordenados, porque es el valor 'de en medio'."
+          "retroalimentacion": "V = πr²h = 3.14 × 5² × 4 = 3.14 × 25 × 4 = 314 cm³. La afirmación es correcta."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El volumen de un cilindro con radio 1 cm y altura 10 cm (π = 3.14) es ___ cm³.",
+          "respuestaCorrecta": "31.4",
+          "retroalimentacion": "V = πr²h = 3.14 × 1² × 10 = 3.14 × 1 × 10 = 31.4 cm³."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "En una lista de 7 datos ya ordenados, ¿qué posición ocupa el dato que es la mediana?",
-          "opciones": ["La posición 3", "La posición 4", "La posición 5", "El promedio de todos"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Con 7 datos (impar), la mediana está en la posición (7+1)÷2 = 4, dejando 3 datos antes y 3 después."
+          "pregunta": "¿Cuál fórmula sirve para calcular el área lateral (la parte curva) de un cilindro?",
+          "opciones": [
+            "2πrh",
+            "πr²h",
+            "(1/3)πr²h",
+            "2πr²"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El área lateral es el rectángulo que resulta de 'desenrollar' la superficie curva: su base mide 2πr (el perímetro del círculo) y su altura mide h, así que A = 2πrh."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada conjunto de datos con su mediana.",
-          "columnaA": ["1, 2, 3, 4, 5", "10, 20, 30, 40", "6, 6, 6, 6, 6"],
-          "columnaB": ["25", "6", "3"],
-          "parejasCorrectas": [2, 0, 1],
-          "retroalimentacion": "1,2,3,4,5 tiene mediana 3; 10,20,30,40 tiene mediana (20+30)÷2=25; 6,6,6,6,6 tiene mediana 6."
+          "instruccion": "Relaciona cada cilindro (radio y altura) con su volumen correcto (usa π = 3.14).",
+          "columnaA": [
+            "r = 2 cm, h = 3 cm",
+            "r = 1 cm, h = 4 cm",
+            "r = 3 cm, h = 1 cm"
+          ],
+          "columnaB": [
+            "12.56 cm³",
+            "28.26 cm³",
+            "37.68 cm³"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "r=2,h=3: 3.14×4×3=37.68 cm³. r=1,h=4: 3.14×1×4=12.56 cm³. r=3,h=1: 3.14×9×1=28.26 cm³."
         }
       ]
     },
     {
       "numero": "34.3",
-      "titulo": "La moda",
-      "explicacion": "La moda es el dato que se repite más veces en un conjunto. Puede haber una sola moda (unimodal), dos modas (bimodal) o ninguna moda si todos los valores aparecen la misma cantidad de veces. La moda es la única medida de tendencia central que se puede usar con datos que no son números, como colores o deportes favoritos.",
+      "titulo": "Área y volumen de pirámides y conos",
+      "explicacion": "Las pirámides y los conos son 'primos' de los prismas y los cilindros, pero terminan en una punta (vértice) en lugar de en otra base igual. Por eso su volumen es exactamente la tercera parte del volumen de un prisma o cilindro que tuviera la misma base y la misma altura: V = (1/3) × área de la base × altura. En el cono, la base es un círculo, así que su volumen es (1/3)πr²h. Para el área total del cono también se necesita la generatriz (l), que es la distancia del vértice a la orilla de la base, y se calcula con el teorema de Pitágoras: l = √(r² + h²).",
+      "formula": "Pirámide: V = (1/3) × Área base × h | Cono: V = (1/3)πr²h, l = √(r²+h²)",
       "ejemplos": [
-        "Los colores de mochila más vendidos en una semana: azul, azul, rojo, verde, azul, rojo. La moda es azul (se repite 3 veces).",
-        "Las tallas de zapatos vendidas: 24, 25, 24, 26, 25, 24. La moda es 24 (aparece 3 veces)."
+        "Una pirámide de base cuadrada de 6 cm × 6 cm y altura 9 cm tiene un volumen de V = (1/3) × 36 × 9 = (1/3) × 324 = 108 cm³.",
+        "Un cono con r = 3 cm y h = 4 cm tiene un volumen de V = (1/3) × 3.14 × 9 × 4 = (1/3) × 113.04 = 37.68 cm³, y su generatriz es l = √(3²+4²) = √25 = 5 cm."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es la moda de: 5, 7, 5, 9, 5, 3?",
-          "opciones": ["3", "5", "7", "9"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "El 5 aparece 3 veces, más que cualquier otro valor, así que es la moda."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "La moda de los datos 2, 4, 4, 6, 8, 8, 8 es ___.",
-          "respuestaCorrecta": "8",
-          "retroalimentacion": "El 8 aparece 3 veces (más que el 4, que aparece 2 veces), así que es la moda."
+          "pregunta": "¿Cuál es el volumen de una pirámide de base cuadrada de 4 cm de lado y altura 6 cm?",
+          "opciones": [
+            "32 cm³",
+            "96 cm³",
+            "64 cm³",
+            "16 cm³"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Área de la base = 4×4 = 16 cm². V = (1/3) × 16 × 6 = (1/3) × 96 = 32 cm³."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Un conjunto de datos puede no tener moda si todos los valores son diferentes.",
+          "enunciado": "El volumen de un cono con radio 2 cm y altura 6 cm (usando π = 3.14) es 25.12 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: si ningún dato se repite, no hay un valor que sea 'el más frecuente', así que no hay moda."
+          "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 4 × 6 = (1/3) × 75.36 = 25.12 cm³. La afirmación es correcta."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El volumen de una pirámide con base rectangular de 5 cm × 4 cm y altura 3 cm es ___ cm³.",
+          "respuestaCorrecta": "20",
+          "retroalimentacion": "Área de la base = 5×4 = 20 cm². V = (1/3) × 20 × 3 = (1/3) × 60 = 20 cm³."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "En una encuesta sobre el deporte favorito del salón se registró: fútbol, básquetbol, fútbol, voleibol, fútbol, básquetbol. ¿Cuál es la moda?",
-          "opciones": ["Fútbol", "Básquetbol", "Voleibol", "No hay moda"],
+          "pregunta": "Un cono tiene radio 6 cm y altura 8 cm. ¿Cuánto mide su generatriz (l)?",
+          "opciones": [
+            "10 cm",
+            "14 cm",
+            "7 cm",
+            "12 cm"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Fútbol aparece 3 veces, más que básquetbol (2 veces) y voleibol (1 vez)."
+          "retroalimentacion": "Por el teorema de Pitágoras, l = √(r²+h²) = √(6²+8²) = √(36+64) = √100 = 10 cm."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada conjunto de datos con su tipo de moda.",
-          "columnaA": ["3, 3, 3, 7, 9", "2, 2, 5, 5, 8", "1, 2, 3, 4, 5"],
-          "columnaB": ["Bimodal (dos modas)", "Unimodal (una moda)", "Sin moda"],
-          "parejasCorrectas": [1, 0, 2],
-          "retroalimentacion": "3,3,3,7,9 tiene una sola moda (3); 2,2,5,5,8 tiene dos modas (2 y 5); 1,2,3,4,5 no tiene moda."
+          "instruccion": "Relaciona cada cuerpo geométrico con su volumen correcto (usa π = 3.14 donde se necesite).",
+          "columnaA": [
+            "Pirámide, base 3 cm × 3 cm, altura 4 cm",
+            "Cono, r = 3 cm, h = 2 cm",
+            "Pirámide, base 2 cm × 2 cm, altura 6 cm"
+          ],
+          "columnaB": [
+            "8 cm³",
+            "18.84 cm³",
+            "12 cm³"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Pirámide 3×3, h=4: (1/3)×9×4=12 cm³. Cono r=3,h=2: (1/3)×3.14×9×2=18.84 cm³. Pirámide 2×2, h=6: (1/3)×4×6=8 cm³."
         }
       ]
     },
     {
       "numero": "34.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: la media suma todos los datos y divide entre cuántos son; la mediana es el valor de en medio al ordenar los datos; la moda es el valor que más se repite. La media conviene cuando los datos son parejos y no hay valores extremos; la mediana conviene cuando hay valores atípicos que distorsionarían la media; y la moda conviene para datos categóricos o para saber cuál es el valor más común.",
+      "explicacion": "Recuerda: el volumen de un prisma o un cubo se calcula multiplicando el área de la base por la altura de forma directa (V = área base × h, o a³ en el cubo). El volumen de un cilindro también es área de la base por altura, pero la base es un círculo (V = πr²h). Las pirámides y los conos terminan en punta, así que su volumen es solo la tercera parte de esa misma cuenta: V = (1/3) × área base × h. Estas fórmulas sirven para resolver problemas reales con tinacos, cajas, silos, envases y otros recipientes: primero identifica de qué forma se trata, y después aplica la fórmula que le corresponde.",
       "ejemplos": [
-        "Las ventas diarias (en cientos de pesos) de una tienda en 5 días fueron 2, 2, 2, 4, 20. La media es 6, un número alto por el día excepcional de 20; la mediana (2) refleja mejor las ventas típicas de la mayoría de los días."
+        "Un tinaco cilíndrico con r = 0.5 m y h = 1.2 m tiene un volumen de V = 3.14 × 0.25 × 1.2 = 0.942 m³, es decir, aproximadamente 942 litros (1 m³ = 1000 litros).",
+        "Una caja de cartón en forma de prisma rectangular de 0.4 m × 0.3 m × 0.5 m tiene un volumen de V = 0.4 × 0.3 × 0.5 = 0.06 m³."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Las ventas diarias (en cientos de pesos) de una tienda en 5 días fueron: 2, 2, 2, 4, 20. ¿Cuál es la media?",
-          "opciones": ["2", "4", "6", "20"],
-          "respuestaCorrecta": 2,
-          "retroalimentacion": "La suma es 2+2+2+4+20 = 30, y 30÷5 = 6."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "En esos mismos datos (2, 2, 2, 4, 20), la mediana es ___.",
-          "respuestaCorrecta": "2",
-          "retroalimentacion": "Ordenados: 2, 2, 2, 4, 20. El valor central (posición 3 de 5) es 2."
+          "pregunta": "Un tinaco cilíndrico tiene radio 1 m y altura 2 m. Usando π = 3.14 y sabiendo que 1 m³ = 1000 litros, ¿cuántos litros de agua caben?",
+          "opciones": [
+            "6 280 L",
+            "3 140 L",
+            "6.28 L",
+            "12 560 L"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "V = πr²h = 3.14 × 1² × 2 = 6.28 m³. Como 1 m³ = 1000 L, entonces 6.28 m³ = 6 280 litros."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En este caso, la mediana representa mejor el comportamiento típico de las ventas que la media, porque el día de 20 fue un valor atípico.",
+          "enunciado": "Una caja de regalo en forma de cubo con arista de 20 cm tiene un volumen de 8 000 cm³.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: la media (6) está 'jalada' hacia arriba por el día excepcional; la mediana (2) refleja mejor la mayoría de los días."
+          "retroalimentacion": "V = a³ = 20³ = 20×20×20 = 8 000 cm³. La afirmación es correcta."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un silo con forma de cono tiene radio 3 m y altura 6 m. Usando π = 3.14, su volumen es ___ m³.",
+          "respuestaCorrecta": "56.52",
+          "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 9 × 6 = (1/3) × 169.56 = 56.52 m³."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál medida (media, mediana o moda) conviene más usar cuando los datos son categorías, como el color favorito de un grupo?",
-          "opciones": ["Media", "Mediana", "Moda", "Cualquiera, da lo mismo"],
-          "respuestaCorrecta": 2,
-          "retroalimentacion": "Con datos categóricos (no numéricos) no se puede sumar ni ordenar de forma matemática, así que solo la moda tiene sentido."
+          "pregunta": "Una caja rectangular mide 2 m × 3 m × 4 m y un tanque cilíndrico tiene r = 2 m y h = 3 m (usa π = 3.14). ¿Cuál de los dos contenedores tiene mayor volumen?",
+          "opciones": [
+            "El tanque cilíndrico (37.68 m³ contra 24 m³)",
+            "La caja rectangular",
+            "Ambos tienen el mismo volumen",
+            "No se puede saber sin más datos"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Caja: V = 2×3×4 = 24 m³. Cilindro: V = 3.14×2²×3 = 3.14×4×3 = 37.68 m³. El cilindro tiene mayor volumen."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con la medida de tendencia central más conveniente.",
-          "columnaA": ["Sueldos de una empresa con un valor muy alto (el del dueño)", "Tallas de playera más vendidas en una tienda", "Calificaciones parejas de un grupo, sin valores extremos"],
-          "columnaB": ["Moda", "Media", "Mediana"],
-          "parejasCorrectas": [2, 0, 1],
-          "retroalimentacion": "Sueldos con un valor extremo: conviene la mediana. Tallas más vendidas: conviene la moda. Calificaciones parejas: conviene la media."
+          "instruccion": "Relaciona cada tipo de contenedor con la fórmula de volumen que le corresponde.",
+          "columnaA": [
+            "Tinaco cilíndrico",
+            "Caja rectangular (prisma)",
+            "Silo cónico"
+          ],
+          "columnaB": [
+            "V = πr²h",
+            "V = (1/3)πr²h",
+            "V = largo × ancho × alto"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "El tinaco (cilindro) usa V=πr²h; la caja (prisma) usa V=largo×ancho×alto; el silo (cono) usa V=(1/3)πr²h."
         }
       ]
     }
@@ -205,30 +296,47 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "Calcula la media de: 10, 20, 30, 40",
-      "opciones": ["20", "25", "30", "40"],
-      "respuestaCorrecta": 1,
-      "retroalimentacion": "La suma es 10+20+30+40 = 100, y 100÷4 = 25."
-    },
-    {
-      "tipo": "llenar_frase",
-      "frase": "La mediana de 3, 9, 6, 12, 15 es ___.",
-      "respuestaCorrecta": "9",
-      "retroalimentacion": "Ordenados: 3, 6, 9, 12, 15. El valor central es 9."
+      "pregunta": "¿Cuál es el volumen de un cubo de arista 7 cm?",
+      "opciones": [
+        "343 cm³",
+        "49 cm³",
+        "21 cm³",
+        "147 cm³"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "V = a³ = 7³ = 7×7×7 = 343 cm³."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "La moda de un conjunto de datos siempre es única.",
-      "respuestaCorrecta": false,
-      "retroalimentacion": "Falso: puede haber dos modas (bimodal), más de dos, o ninguna, si ningún valor se repite más que los demás."
+      "enunciado": "Un cilindro con radio 4 cm y altura 5 cm tiene un volumen de 251.2 cm³ (usando π = 3.14).",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "V = πr²h = 3.14 × 4² × 5 = 3.14 × 16 × 5 = 251.2 cm³. La afirmación es correcta."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "Un cono con radio 5 cm y altura 6 cm (π = 3.14) tiene un volumen de ___ cm³.",
+      "respuestaCorrecta": "157",
+      "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 25 × 6 = (1/3) × 471 = 157 cm³."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada término con su definición.",
-      "columnaA": ["Media", "Mediana", "Moda"],
-      "columnaB": ["El valor que más se repite", "El promedio de todos los datos", "El valor central al ordenar los datos"],
-      "parejasCorrectas": [1, 2, 0],
-      "retroalimentacion": "Media: promedio de todos los datos. Mediana: valor central al ordenar. Moda: valor que más se repite."
+      "instruccion": "Relaciona cada cuerpo geométrico con su volumen correcto.",
+      "columnaA": [
+        "Prisma de 2 cm × 5 cm × 3 cm",
+        "Pirámide, base 4 cm × 4 cm, altura 3 cm",
+        "Cubo de arista 3 cm"
+      ],
+      "columnaB": [
+        "27 cm³",
+        "16 cm³",
+        "30 cm³"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
+      "retroalimentacion": "Prisma 2×5×3 = 30 cm³. Pirámide base 4×4, h=3: (1/3)×16×3=16 cm³. Cubo arista 3: 3³=27 cm³."
     }
   ]
 }

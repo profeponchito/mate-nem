@@ -27,7 +27,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es el MCD de 8 y 12?",
-          "opciones": ["2", "4", "6", "8"],
+          "opciones": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "Divisores de 8: 1,2,4,8. Divisores de 12: 1,2,3,4,6,12. El mayor divisor común es 4."
         },
@@ -46,16 +51,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es el MCD de 9 y 28?",
-          "opciones": ["1", "3", "7", "9"],
+          "opciones": [
+            "1",
+            "3",
+            "7",
+            "9"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "9 y 28 no comparten ningún factor además del 1, así que su único divisor común es 1: MCD(9,28)=1."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada par de números con su Máximo Común Divisor.",
-          "columnaA": ["16 y 24", "9 y 27", "14 y 21"],
-          "columnaB": ["7", "9", "8"],
-          "parejasCorrectas": [2, 1, 0],
+          "columnaA": [
+            "16 y 24",
+            "9 y 27",
+            "14 y 21"
+          ],
+          "columnaB": [
+            "7",
+            "9",
+            "8"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
           "retroalimentacion": "MCD(16,24)=8, MCD(9,27)=9 y MCD(14,21)=7."
         }
       ]
@@ -75,7 +97,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Si 28=2²×7 y 42=2×3×7, ¿cuál es su MCD usando los factores comunes?",
-          "opciones": ["7", "14", "21", "28"],
+          "opciones": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "Los factores comunes son 2¹ y 7¹, así que MCD=2×7=14."
         },
@@ -94,16 +121,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Descompón 50=2×5² y 30=2×3×5. ¿Cuál es su MCD?",
-          "opciones": ["2", "5", "10", "15"],
+          "opciones": [
+            "2",
+            "5",
+            "10",
+            "15"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "Los factores comunes son 2¹ y 5¹, así que MCD=2×5=10."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada par de números (ya descompuestos) con su MCD.",
-          "columnaA": ["24=2³×3 y 36=2²×3²", "20=2²×5 y 50=2×5²", "27=3³ y 63=3²×7"],
-          "columnaB": ["9", "10", "12"],
-          "parejasCorrectas": [2, 1, 0],
+          "columnaA": [
+            "24=2³×3 y 36=2²×3²",
+            "20=2²×5 y 50=2×5²",
+            "27=3³ y 63=3²×7"
+          ],
+          "columnaB": [
+            "9",
+            "10",
+            "12"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
           "retroalimentacion": "MCD(24,36)=2²×3=12; MCD(20,50)=2×5=10; MCD(27,63)=3²=9."
         }
       ]
@@ -123,7 +167,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Usando divisiones sucesivas: 56÷42=1 residuo 14; 42÷14=3 residuo 0. ¿Cuál es el MCD(56,42)?",
-          "opciones": ["7", "14", "21", "28"],
+          "opciones": [
+            "7",
+            "14",
+            "21",
+            "28"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "El último divisor usado antes de llegar a residuo 0 fue 14, así que MCD(56,42)=14."
         },
@@ -142,16 +191,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es la principal ventaja del método de divisiones sucesivas frente a listar todos los divisores?",
-          "opciones": ["Funciona solo con números pares", "Es más rápido con números grandes, sin necesidad de listar todos los divisores", "Solo sirve cuando hay tres números o más", "Da un resultado aproximado"],
+          "opciones": [
+            "Funciona solo con números pares",
+            "Es más rápido con números grandes, sin necesidad de listar todos los divisores",
+            "Solo sirve cuando hay tres números o más",
+            "Da un resultado aproximado"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "La ventaja del algoritmo de Euclides es que llega al MCD en pocos pasos, sin tener que listar todos los divisores de números grandes."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada par de números con su MCD calculado por divisiones sucesivas.",
-          "columnaA": ["35 y 14", "54 y 24", "64 y 48"],
-          "columnaB": ["16", "6", "7"],
-          "parejasCorrectas": [2, 1, 0],
+          "columnaA": [
+            "35 y 14",
+            "54 y 24",
+            "64 y 48"
+          ],
+          "columnaB": [
+            "16",
+            "6",
+            "7"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
           "retroalimentacion": "MCD(35,14)=7 (35÷14=2 res7; 14÷7=2 res0); MCD(54,24)=6; MCD(64,48)=16."
         }
       ]
@@ -169,7 +235,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un club tiene 45 balones de futbol y 60 balones de voleibol. Quiere guardarlos en el mayor número posible de cajas iguales, sin mezclar tipos y sin que sobre ningún balón. ¿Cuántas cajas usará como máximo?",
-          "opciones": ["5", "10", "15", "20"],
+          "opciones": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "MCD(45,60)=15, así que el club puede formar 15 cajas iguales como máximo."
         },
@@ -188,16 +259,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Con 90 cuadernos y 54 lápices, ¿en cuántos paquetes iguales como máximo se pueden repartir sin que sobre material?",
-          "opciones": ["6", "9", "18", "27"],
+          "opciones": [
+            "6",
+            "9",
+            "18",
+            "27"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "MCD(90,54)=18, así que se pueden formar 18 paquetes iguales como máximo."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada situación de reparto equitativo con el número máximo de grupos iguales que se pueden formar (usa el MCD).",
-          "columnaA": ["32 plumas y 48 lápices", "20 manzanas y 35 naranjas", "18 niñas y 24 niños"],
-          "columnaB": ["6", "5", "16"],
-          "parejasCorrectas": [2, 1, 0],
+          "columnaA": [
+            "32 plumas y 48 lápices",
+            "20 manzanas y 35 naranjas",
+            "18 niñas y 24 niños"
+          ],
+          "columnaB": [
+            "6",
+            "5",
+            "16"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
           "retroalimentacion": "MCD(32,48)=16; MCD(20,35)=5; MCD(18,24)=6."
         }
       ]
@@ -219,16 +307,33 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "Al descomponer 63=3²×7 y 90=2×3²×5, ¿cuál es su MCD?",
-      "opciones": ["3", "9", "18", "21"],
+      "opciones": [
+        "3",
+        "9",
+        "18",
+        "21"
+      ],
       "respuestaCorrecta": 1,
       "retroalimentacion": "El único factor común es 3², así que MCD(63,90)=9."
     },
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada par de números con su Máximo Común Divisor.",
-      "columnaA": ["12 y 18", "150 y 275", "9 y 16"],
-      "columnaB": ["MCD = 6", "MCD = 25", "MCD = 1"],
-      "parejasCorrectas": [0, 1, 2],
+      "columnaA": [
+        "12 y 18",
+        "150 y 275",
+        "9 y 16"
+      ],
+      "columnaB": [
+        "MCD = 6",
+        "MCD = 25",
+        "MCD = 1"
+      ],
+      "parejasCorrectas": [
+        0,
+        1,
+        2
+      ],
       "retroalimentacion": "MCD(12,18)=6; MCD(150,275)=25; MCD(9,16)=1 porque no comparten factores."
     }
   ]

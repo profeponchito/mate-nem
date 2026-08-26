@@ -4,201 +4,271 @@
   "numero": 20,
   "categoria": "intermedio",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Forma, espacio y medida",
-  "titulo": "Perímetro y área de figuras planas",
-  "contenido": "Cálculo del perímetro de polígonos y del área de triángulos, cuadriláteros y figuras compuestas.",
-  "pda": "Calcula el perímetro y el área de figuras planas (triángulos, cuadriláteros y figuras compuestas) aplicándolos a la solución de problemas de medición en contextos reales.",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Razones y proporciones",
+  "contenido": "Comparar cantidades mediante razones y resolver proporciones para encontrar valores desconocidos.",
+  "pda": "Identifica y establece razones entre cantidades, y resuelve proporciones usando la propiedad de que el producto de medios es igual al producto de extremos, para resolver problemas de escalas y comparaciones en contextos reales.",
   "problematizacion": {
-    "contexto": "La familia Ramírez quiere cercar con malla un terreno rectangular de su patio para hacer un jardín, y después cubrir toda la superficie con pasto en rollo.",
-    "pregunta": "¿Qué operación necesitan usar para saber cuántos metros de malla comprar, y cuál para saber cuántos metros cuadrados de pasto necesitan?"
+    "contexto": "En el mapa de la escuela, cada 2 centímetros representan 50 metros reales. El equipo de dibujo técnico necesita calcular la distancia real entre la cancha y la biblioteca, que en el mapa mide 6 centímetros.",
+    "pregunta": "¿Cómo puedes usar la relación entre el mapa y la realidad para saber la distancia verdadera sin salir a medirla?"
   },
   "subtemas": [
     {
       "numero": "20.1",
-      "titulo": "Perímetro de polígonos",
-      "explicacion": "El perímetro es la medida del contorno de una figura: se obtiene sumando la longitud de todos sus lados. En un polígono regular, como todos los lados miden lo mismo, basta con multiplicar la medida de un lado por el número de lados. El perímetro sirve para saber cuánto material se necesita para bordear algo, como una cerca o un marco.",
-      "formula": "P = suma de todos los lados; polígono regular: P = n · lado",
+      "titulo": "¿Qué es una razón?",
+      "explicacion": "Una razón compara dos cantidades por medio de una división y se escribe como a:b o a/b. El orden importa: la razón de manzanas a naranjas no es igual que la de naranjas a manzanas. Igual que una fracción, una razón se puede simplificar dividiendo ambos términos entre su máximo común divisor.",
+      "formula": "a : b = a/b",
       "ejemplos": [
-        "Un rectángulo de 8 m por 5 m tiene perímetro 2(8)+2(5) = 26 m.",
-        "Un hexágono regular de lado 4 cm tiene perímetro 6×4 = 24 cm."
+        "En un salón hay 18 mujeres y 12 hombres. La razón de mujeres a hombres es 18:12, que se simplifica a 3:2.",
+        "Un jugador anotó 8 goles en 20 partidos; la razón de goles a partidos es 8:20, o simplificada 2:5."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el perímetro de un rectángulo de 12 m de largo y 7 m de ancho?",
-          "opciones": ["38 m", "19 m", "84 m", "36 m"],
+          "pregunta": "En una fiesta hay 15 niñas y 10 niños. ¿Cuál es la razón simplificada de niñas a niños?",
+          "opciones": [
+            "3:2",
+            "15:10",
+            "2:3",
+            "5:3"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "El perímetro de un rectángulo es 2×(largo+ancho): 2×(12+7)=38 m."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "El perímetro de un cuadrado de lado 9 cm es ___ cm.",
-          "respuestaCorrecta": "36",
-          "retroalimentacion": "Un cuadrado tiene 4 lados iguales: 9×4=36 cm."
+          "retroalimentacion": "15:10 se simplifica dividiendo ambos términos entre 5, lo que da 3:2."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "El perímetro de un pentágono regular de lado 6 cm es 30 cm.",
+          "enunciado": "La razón de 4 a 8 es la misma que la razón de 1 a 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Un pentágono regular tiene 5 lados iguales: 5×6=30 cm."
+          "retroalimentacion": "4:8 simplificado (dividiendo entre 4) es 1:2, así que representan la misma comparación."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un triángulo tiene lados de 5 cm, 7 cm y 9 cm. ¿Cuál es su perímetro?",
-          "opciones": ["21 cm", "24 cm", "19 cm", "16 cm"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suman los tres lados: 5+7+9=21 cm."
+          "tipo": "llenar_frase",
+          "frase": "En un equipo hay 6 defensas y 4 delanteros. La razón de defensas a delanteros, simplificada, es ___.",
+          "respuestaCorrecta": "3:2",
+          "retroalimentacion": "6:4 se simplifica dividiendo ambos términos entre 2, lo que da 3:2."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada figura con su perímetro.",
-          "columnaA": ["Cuadrado de lado 5 cm", "Rectángulo de 10 cm x 3 cm", "Hexágono regular de lado 2 cm"],
-          "columnaB": ["12 cm", "26 cm", "20 cm"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "Cuadrado lado 5: 4×5=20 cm. Rectángulo 10x3: 2×(10+3)=26 cm. Hexágono lado 2: 6×2=12 cm."
+          "instruccion": "Relaciona cada razón con su forma simplificada.",
+          "columnaA": [
+            "10:15",
+            "9:6",
+            "8:20"
+          ],
+          "columnaB": [
+            "3:2",
+            "2:5",
+            "2:3"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "10:15 = 2:3; 9:6 = 3:2; 8:20 = 2:5, simplificando cada una entre su máximo común divisor."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un pastel se reparte entre 3 hermanos y 5 primos. ¿Cuál es la razón de hermanos a primos?",
+          "opciones": [
+            "3:5",
+            "5:3",
+            "3:8",
+            "8:3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La razón compara hermanos (3) a primos (5) en ese orden exacto: 3:5."
         }
       ]
     },
     {
       "numero": "20.2",
-      "titulo": "Área de triángulos y cuadriláteros",
-      "explicacion": "El área mide cuánta superficie cubre una figura. Para triángulos se multiplica la base por la altura y se divide entre 2, porque un triángulo es 'la mitad' de un rectángulo con la misma base y altura. En rectángulos y paralelogramos se multiplica base por altura, y en trapecios se promedian las dos bases antes de multiplicar por la altura.",
-      "formula": "Triángulo: A = (b·h)/2 ; Rectángulo/paralelogramo: A = b·h ; Trapecio: A = ((B+b)·h)/2",
+      "titulo": "¿Qué es una proporción?",
+      "explicacion": "Una proporción es la igualdad entre dos razones: a/b = c/d. Para comprobar si es verdadera se usa el 'producto cruzado': el producto de los medios (los números de en medio) debe ser igual al producto de los extremos. Si a×d = b×c, las dos razones representan la misma relación aunque sus números sean distintos.",
+      "formula": "a/b = c/d es proporción si a × d = b × c",
       "ejemplos": [
-        "Un triángulo con base 10 cm y altura 6 cm tiene área (10×6)/2=30 cm².",
-        "Un trapecio con bases 8 cm y 4 cm y altura 5 cm tiene área ((8+4)×5)/2=30 cm²."
+        "¿Es 3/4 = 6/8 una proporción? Multiplicando en cruz: 3×8=24 y 4×6=24. Como son iguales, sí es una proporción verdadera.",
+        "¿Es 2/5 = 4/9 una proporción? 2×9=18 y 5×4=20. Como 18≠20, no es una proporción."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el área de un triángulo con base 14 cm y altura 8 cm?",
-          "opciones": ["56 cm²", "112 cm²", "22 cm²", "44 cm²"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Área = (base×altura)/2 = (14×8)/2=56 cm²."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "El área de un rectángulo de 9 m de base y 4 m de altura es ___ m².",
-          "respuestaCorrecta": "36",
-          "retroalimentacion": "Área = base×altura = 9×4=36 m²."
+          "tipo": "verdadero_falso",
+          "enunciado": "La igualdad 3/5 = 9/15 es una proporción verdadera.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "3×15=45 y 5×9=45. Como los productos cruzados son iguales, sí es una proporción."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "El área de un cuadrado de lado 7 cm es 49 cm².",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "El área de un cuadrado es lado×lado: 7×7=49 cm²."
+          "enunciado": "La igualdad 4/6 = 10/12 es una proporción verdadera.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "4×12=48 y 6×10=60. Como los productos cruzados son distintos, no es una proporción."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el área de un trapecio con bases de 10 cm y 6 cm y altura de 4 cm?",
-          "opciones": ["32 cm²", "64 cm²", "40 cm²", "16 cm²"],
+          "pregunta": "¿Cuál de las siguientes igualdades es una proporción verdadera?",
+          "opciones": [
+            "2/3 = 8/12",
+            "5/6 = 10/15",
+            "3/4 = 9/10",
+            "7/8 = 21/16"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área = ((base mayor+base menor)×altura)/2 = ((10+6)×4)/2=32 cm²."
+          "retroalimentacion": "2/3 = 8/12 es verdadera porque 2×12=24 y 3×8=24; en las demás opciones los productos cruzados no coinciden."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el área de un paralelogramo con base 12 cm y altura 5 cm?",
-          "opciones": ["60 cm²", "17 cm²", "34 cm²", "30 cm²"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Área = base×altura = 12×5=60 cm²."
+          "tipo": "llenar_frase",
+          "frase": "Para que 5/8 = x/24 sea una proporción verdadera, el valor de x debe ser ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "Multiplicando en cruz: 5×24 = 8×x, entonces 120 = 8x, por lo que x = 15."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de razones con el resultado de su producto cruzado.",
+          "columnaA": [
+            "4/5 y 12/15",
+            "2/3 y 5/9",
+            "3/4 y 6/9"
+          ],
+          "columnaB": [
+            "3×9=27 y 4×6=24 (no proporción)",
+            "4×15=60 y 5×12=60 (proporción)",
+            "2×9=18 y 3×5=15 (no proporción)"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "Solo 4/5 y 12/15 tienen productos cruzados iguales (60=60), por eso son la única proporción verdadera del grupo."
         }
       ]
     },
     {
       "numero": "20.3",
-      "titulo": "Área de figuras compuestas",
-      "explicacion": "Una figura compuesta es la que se forma al unir o recortar figuras simples (rectángulos, triángulos, etc.). Para hallar su área, se descompone en las figuras simples que la forman: si están unidas, se suman sus áreas; si una parte fue recortada, se resta. Dibujar líneas auxiliares ayuda a ver claramente en qué figuras se puede dividir.",
+      "titulo": "Resolver proporciones con x desconocida",
+      "explicacion": "Cuando en una proporción uno de los cuatro valores es desconocido, se encuentra aplicando el producto cruzado: si a/b = c/d, entonces a×d = b×c. Despejando la incógnita, se divide el producto conocido entre el número que acompaña a la x. Este método es la base de la 'regla de tres' y se usa para escalar recetas, planos y mapas.",
+      "formula": "a/b = c/d → x = (producto cruzado conocido) ÷ (coeficiente de x)",
       "ejemplos": [
-        "Una sala en forma de L se descompone en dos rectángulos: uno de 6×3=18 m² y otro de 4×2=8 m², área total 26 m².",
-        "Un terreno rectangular de 10×8 con una esquina triangular recortada (base 4, altura 3, área 6) tiene área final 80-6=74 m²."
+        "Resuelve 3/4 = x/20. Multiplicando en cruz: 3×20 = 4×x → 60 = 4x → x = 15.",
+        "Resuelve x/9 = 6/18. Cruz: 18x = 9×6 = 54 → x = 54÷18 = 3."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una sala tiene forma de L: un rectángulo de 6 m x 4 m unido a otro de 3 m x 2 m. ¿Cuál es el área total?",
-          "opciones": ["30 m²", "24 m²", "18 m²", "36 m²"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suman las dos áreas: (6×4)+(3×2)=24+6=30 m²."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un terreno rectangular de 15 m x 8 m tiene una esquina triangular recortada de base 4 m y altura 3 m (para una banqueta). ¿Cuál es el área útil del terreno?",
-          "opciones": ["114 m²", "120 m²", "108 m²", "126 m²"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Área del rectángulo: 15×8=120 m². Área del triángulo recortado: (4×3)/2=6 m². Área útil: 120-6=114 m²."
+          "tipo": "llenar_frase",
+          "frase": "Resuelve la proporción 2/5 = x/30. El valor de x es ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "2×30 = 5×x → 60 = 5x → x = 12."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Una figura compuesta por un rectángulo de 5 m x 3 m y un triángulo de base 5 m y altura 4 m (unidos) tiene un área total de ___ m².",
-          "respuestaCorrecta": "25",
-          "retroalimentacion": "Rectángulo: 5×3=15 m². Triángulo: (5×4)/2=10 m². Total: 15+10=25 m²."
+          "frase": "Resuelve la proporción x/6 = 8/12. El valor de x es ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "12×x = 6×8 → 12x = 48 → x = 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el valor de x en 7/x = 21/9?",
+          "opciones": [
+            "3",
+            "9",
+            "21",
+            "7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "7×9 = 21×x → 63 = 21x → x = 3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el valor de x en 5/8 = 15/x?",
+          "opciones": [
+            "24",
+            "15",
+            "40",
+            "20"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5×x = 8×15 → 5x = 120 → x = 24."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Para hallar el área de una figura compuesta, se puede dividir en figuras simples y sumar (o restar) sus áreas.",
+          "enunciado": "En la proporción 4/9 = x/27, el valor de x es 12.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: se identifican las figuras simples que la forman y se suman si están unidas o se restan si fueron recortadas."
-        },
-        {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada figura compuesta con su área total.",
-          "columnaA": ["Rectángulo 8x5 más triángulo base 4 altura 3 (unidos)", "Rectángulo 10x6 menos triángulo base 4 altura 3 (recortado)", "Cuadrado de lado 6 más rectángulo 2x3"],
-          "columnaB": ["42 cm²", "54 cm²", "46 cm²"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "8x5+((4×3)/2)=40+6=46. 10x6-((4×3)/2)=60-6=54. 6x6+2x3=36+6=42."
+          "retroalimentacion": "4×27 = 9×x → 108 = 9x → x = 12, así que el enunciado es correcto."
         }
       ]
     },
     {
       "numero": "20.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: el perímetro (suma de los lados) indica cuánto material se necesita para bordear una figura, como una cerca; el área (superficie que cubre) indica cuánto se necesita para cubrirla, como pasto o piso. Para figuras compuestas, se descompone en partes simples y se suman o restan sus áreas según estén unidas o recortadas.",
+      "explicacion": "Recuerda: una razón compara dos cantidades (a:b), una proporción es la igualdad de dos razones que se comprueba con el producto cruzado (a×d = b×c), y cuando falta un valor se despeja usando esa misma propiedad. Las escalas de mapas y planos son proporciones: relacionan una medida pequeña (en el dibujo) con una medida real mucho más grande, manteniendo siempre la misma razón.",
       "ejemplos": [
-        "Un jardín rectangular de 20 m x 12 m necesita 2(20+12)=64 m de malla perimetral y 20×12=240 m² de pasto.",
-        "Si al jardín se le quita una zona cuadrada de 4 m de lado para un andador, el área de pasto real es 240-16=224 m²."
+        "Un mapa tiene escala 1:50000, esto significa que 1 cm en el mapa equivale a 50000 cm (500 m) reales. Si dos ciudades están a 6 cm en el mapa, la distancia real es 6×500 m = 3000 m = 3 km.",
+        "En una maqueta a escala 2 cm : 3 m, si un edificio real mide 24 m de alto, en la maqueta medirá (2×24)/3 = 16 cm."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un terreno rectangular mide 18 m de largo y 10 m de ancho. ¿Cuántos metros de malla se necesitan para cercarlo completo?",
-          "opciones": ["56 m", "180 m", "28 m", "90 m"],
+          "pregunta": "Un mapa usa la escala 2 cm : 5 km. Si dos pueblos están a 8 cm en el mapa, ¿cuál es la distancia real?",
+          "opciones": [
+            "20 km",
+            "16 km",
+            "10 km",
+            "40 km"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Perímetro = 2×(largo+ancho) = 2×(18+10)=56 m."
+          "retroalimentacion": "2/5 = 8/x → 2x = 40 → x = 20 km."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "El área de pasto necesaria para cubrir el mismo terreno de 18 m x 10 m es ___ m².",
-          "respuestaCorrecta": "180",
-          "retroalimentacion": "Área = largo×ancho = 18×10=180 m²."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un jardín cuadrado de 14 m de lado tiene un camino rectangular de 14 m x 2 m que lo atraviesa (sin pasto). ¿Cuántos m² de pasto se necesitan?",
-          "opciones": ["168 m²", "196 m²", "28 m²", "182 m²"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Área del jardín: 14×14=196 m². Área del camino: 14×2=28 m². Área con pasto: 196-28=168 m²."
+          "frase": "En un plano con escala 1 cm : 3 m, una habitación que mide 5 cm de largo en el plano mide ___ m en la realidad.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "1/3 = 5/x → x = 15 m, porque la razón se mantiene constante."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "El perímetro se usa para saber cuánto material se necesita para bordear una figura, y el área para saber cuánto se necesita para cubrir su superficie.",
+          "enunciado": "En una maqueta con escala 1:100, un objeto real de 250 cm se representa con 2.5 cm en la maqueta.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: el perímetro mide el contorno (por ejemplo, una cerca) y el área mide la superficie (por ejemplo, pasto o piso)."
+          "retroalimentacion": "250 cm entre 100 (la escala) da 2.5 cm en la maqueta, así que el enunciado es correcto."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada terreno con la cantidad correcta que necesita.",
-          "columnaA": ["Cercar un terreno de 9 m x 6 m", "Cubrir de pasto un terreno de 9 m x 6 m", "Cercar un terreno cuadrado de lado 10 m"],
-          "columnaB": ["40 m", "54 m²", "30 m"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "Cercar 9x6: 2×(9+6)=30 m. Cubrir 9x6: 9×6=54 m². Cercar cuadrado de 10: 4×10=40 m."
+          "instruccion": "Relaciona cada escala de mapa con la distancia real correspondiente a 4 cm en el mapa.",
+          "columnaA": [
+            "Escala 1cm:10km",
+            "Escala 1cm:25km",
+            "Escala 1cm:2km"
+          ],
+          "columnaB": [
+            "100 km",
+            "8 km",
+            "40 km"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "4 cm × 10 km/cm = 40 km; 4 cm × 25 km/cm = 100 km; 4 cm × 2 km/cm = 8 km."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Dos ciudades están separadas 180 km en la realidad. En un mapa con escala 1 cm : 30 km, ¿cuántos centímetros las separan en el mapa?",
+          "opciones": [
+            "6 cm",
+            "30 cm",
+            "18 cm",
+            "3 cm"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1/30 = x/180 → 30x = 180 → x = 6 cm."
         }
       ]
     }
@@ -206,29 +276,39 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "¿Cuál es el perímetro de un triángulo equilátero de lado 8 cm?",
-      "opciones": ["24 cm", "16 cm", "32 cm", "20 cm"],
+      "pregunta": "En un salón hay 20 alumnos: 12 mujeres y 8 hombres. ¿Cuál es la razón simplificada de hombres a mujeres?",
+      "opciones": [
+        "2:3",
+        "3:2",
+        "8:12",
+        "4:6"
+      ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "Un triángulo equilátero tiene 3 lados iguales: 3×8=24 cm."
+      "retroalimentacion": "8:12 se simplifica dividiendo entre 4, lo que da 2:3."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "El área de un triángulo con base 16 cm y altura 5 cm es ___ cm².",
-      "respuestaCorrecta": "40",
-      "retroalimentacion": "Área = (base×altura)/2 = (16×5)/2=40 cm²."
+      "frase": "Resuelve la proporción 6/x = 18/27. El valor de x es ___.",
+      "respuestaCorrecta": "9",
+      "retroalimentacion": "6×27 = 18×x → 162 = 18x → x = 9."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "Un rectángulo de 7 m x 3 m tiene la misma área que uno de 6 m x 4 m.",
-      "respuestaCorrecta": false,
-      "retroalimentacion": "7×3=21 m² y 6×4=24 m²; las áreas son distintas."
+      "enunciado": "La igualdad 5/7 = 20/28 es una proporción verdadera.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "5×28=140 y 7×20=140. Como los productos cruzados son iguales, sí es una proporción."
     },
     {
       "tipo": "opcion_multiple",
-      "pregunta": "Un patio compuesto por un rectángulo de 12 m x 5 m y un triángulo adicional de base 5 m y altura 4 m tiene un área total de:",
-      "opciones": ["70 m²", "60 m²", "65 m²", "75 m²"],
+      "pregunta": "Un plano de una casa usa escala 1 cm : 2 m. Si el patio mide 7 cm en el plano, ¿cuánto mide en la realidad?",
+      "opciones": [
+        "14 m",
+        "9 m",
+        "7 m",
+        "2 m"
+      ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "Rectángulo: 12×5=60 m². Triángulo: (5×4)/2=10 m². Total: 60+10=70 m²."
+      "retroalimentacion": "1/2 = 7/x → x = 14 m, manteniendo la misma razón de la escala."
     }
   ]
 }

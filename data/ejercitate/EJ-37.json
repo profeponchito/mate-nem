@@ -2,316 +2,295 @@
   "id": "EJ-37",
   "grado": "Ejercítate",
   "numero": 37,
-  "categoria": "basico",
+  "categoria": "estadistica",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Completar dígitos del algoritmo de la suma y resta",
-  "contenido": "El algoritmo escrito de la suma y la resta con números naturales: el proceso de acarreo (llevar) al sumar y de préstamo (pedir prestado) al restar, incluyendo préstamos encadenados a través de ceros.",
-  "pda": "Identifica y completa correctamente el dígito que se lleva al sumar (acarreo) o el dígito que resulta al pedir prestado en la resta (préstamo), en operaciones de dos, tres y más cifras, incluyendo casos con ceros, aplicándolo en situaciones cotidianas.",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Gráficas (barras, circulares y lineales)",
+  "contenido": "Lectura, interpretación y elección del tipo de gráfica adecuado (barras, circular o lineal) para representar un conjunto de datos.",
+  "pda": "Interpreta y selecciona el tipo de gráfica más adecuado (barras, circular o lineal) para representar y comunicar información de situaciones cotidianas.",
   "problematizacion": {
-    "contexto": "En la papelería de doña Rosa, los empleados llevan las cuentas de ventas y el corte de caja a mano, sumando y restando en columna sin calculadora. A veces el corte no cuadra porque alguien se equivocó justo en el dígito que se lleva al sumar o en el que queda al pedir prestado en la resta, sobre todo cuando hay ceros de por medio.",
-    "pregunta": "¿Puedes identificar con exactitud qué dígito se lleva al sumar en cada columna, o qué dígito queda al pedir prestado en la resta —incluso cuando hay que \"saltar\" varios ceros— para que ni un peso se pierda en el corte de caja?"
+    "contexto": "El comité de la kermés escolar recolectó, durante los últimos 6 meses, el dinero reunido cada mes, y también encuestó a los alumnos sobre su juego favorito de la kermés (lotería, tiro al blanco, pesca de patitos y costalazo).",
+    "pregunta": "Si el comité quiere mostrar en un cartel cómo ha cambiado el dinero reunido mes con mes, y en otro cartel qué porcentaje de alumnos prefiere cada juego, ¿el mismo tipo de gráfica sirve para ambos casos?"
   },
   "subtemas": [
     {
       "numero": "37.1",
-      "titulo": "Acarreo al sumar y préstamo al restar (dos cifras)",
-      "explicacion": "Cuando sumamos en columna, si la suma de una columna llega a 10 o más, escribimos solo el dígito de las unidades de ese resultado y 'llevamos' 1 a la columna siguiente: eso es el acarreo. Cuando restamos en columna, si el dígito de arriba es menor que el de abajo, 'pedimos prestada' 1 decena a la columna siguiente: el dígito de arriba se convierte en (dígito + 10), y la columna de la que se pidió prestado se reduce en 1 antes de continuar restando.",
-      "formula": "Suma: si a + b ≥ 10, escribes (a+b)-10 y llevas 1. Resta: si a < b, calculas (a+10)-b y le restas 1 a la siguiente columna antes de continuar.",
+      "titulo": "Gráfica de barras",
+      "explicacion": "La gráfica de barras usa rectángulos de distinta altura (o longitud) para comparar cantidades entre categorías distintas, como sabores, equipos o materias. Entre más alta la barra, mayor es la cantidad que representa esa categoría. Es la gráfica más útil cuando se quiere comparar de un vistazo varios grupos separados entre sí, porque las diferencias de altura se ven de inmediato.",
       "ejemplos": [
-        "En 28 + 45, las unidades son 8 + 5 = 13: escribes 3 y llevas 1 a las decenas; las decenas quedan 2 + 4 + 1 = 7, así que el resultado es 73.",
-        "En 61 - 38, las unidades no alcanzan (1 - 8), así que pides prestada 1 decena: 11 - 8 = 3; las decenas quedan en 5 (porque el 6 prestó 1) menos 3 = 2, así que el resultado es 23."
+        "En una gráfica de barras sobre mascotas favoritas, la barra de \"perro\" llega a 18 y la de \"pez\" llega a 4; se ve claramente que perro es mucho más popular que pez.",
+        "Una gráfica de barras del número de goles por equipo (A=5, B=8, C=3) muestra que el equipo B tiene la barra más alta, por lo tanto es el que más goles anotó."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "llenar_frase",
-          "frase": "Al sumar 28 + 45, en las unidades: 8 + 5 = 13, escribes 3 y llevas ___.",
-          "respuestaCorrecta": "1",
-          "retroalimentacion": "8 + 5 = 13: escribes el 3 (unidades) y llevas 1 a las decenas."
-        },
-        {
           "tipo": "opcion_multiple",
-          "pregunta": "Al sumar 36 + 27, en las unidades: 6 + 7 = 13. ¿Cuánto llevas a las decenas?",
+          "pregunta": "¿Cuál es la principal ventaja de una gráfica de barras para representar datos?",
           "opciones": [
-            "0",
-            "1",
-            "2",
-            "3"
+            "Permite comparar rápidamente cantidades entre categorías distintas por la altura de cada barra",
+            "Solo sirve para mostrar cambios a lo largo del tiempo",
+            "Solo puede usarse con dos categorías como máximo",
+            "Muestra únicamente porcentajes, nunca cantidades exactas"
           ],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "6 + 7 = 13: escribes 3 y llevas 1 a las decenas."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La gráfica de barras compara categorías distintas mediante la altura de cada barra, lo que facilita ver de un vistazo cuál es mayor o menor."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Al restar 52 - 27, en las unidades no alcanza (2 - 7), así que hay que pedir prestada 1 decena.",
+          "enunciado": "En una gráfica de barras, mientras más alta es la barra de una categoría, mayor es la cantidad que representa.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: como 2 es menor que 7, se pide prestada 1 decena y la resta de unidades se convierte en 12 - 7."
+          "retroalimentacion": "Correcto: la altura de cada barra es proporcional a la cantidad de esa categoría."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Al restar 61 - 38, en las unidades pides prestada 1 decena: 11 - 8 = ___.",
-          "respuestaCorrecta": "3",
-          "retroalimentacion": "11 - 8 = 3 en las unidades, después de pedir prestada 1 decena."
+          "frase": "En una gráfica de barras sobre deportes favoritos, si fútbol tiene barra=20, básquetbol tiene barra=12 y natación tiene barra=8, el deporte con la barra más alta es ___.",
+          "respuestaCorrecta": "fútbol",
+          "retroalimentacion": "20 es la cantidad más alta de las tres, así que la barra de fútbol es la más alta."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada resta con el dígito de las unidades que resulta después de pedir prestado.",
-          "columnaA": [
-            "43 - 18",
-            "72 - 35",
-            "94 - 56"
-          ],
-          "columnaB": [
+          "tipo": "opcion_multiple",
+          "pregunta": "Una gráfica de barras muestra las calificaciones más comunes de un grupo: 7 (barra=6), 8 (barra=14), 9 (barra=9), 10 (barra=1). ¿Cuál calificación fue la más frecuente?",
+          "opciones": [
+            "8",
             "7",
-            "5",
-            "8"
+            "9",
+            "10"
           ],
-          "parejasCorrectas": [
-            1,
-            0,
-            2
-          ],
-          "retroalimentacion": "43 - 18 = 25 (unidades: 5); 72 - 35 = 37 (unidades: 7); 94 - 56 = 38 (unidades: 8)."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La barra más alta corresponde a la calificación 8, con 14 alumnos, así que fue la más frecuente."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una gráfica de barras es adecuada para comparar las ventas de cuatro sabores de paleta distintos en un mismo día.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: comparar cantidades entre categorías (los sabores) es exactamente para lo que sirve la gráfica de barras."
         }
       ]
     },
     {
       "numero": "37.2",
-      "titulo": "Varias columnas: acarreos y préstamos encadenados",
-      "explicacion": "Con números de tres cifras, el acarreo que sale de una columna se suma como un dígito extra en la siguiente columna antes de decidir si esa columna también genera acarreo. De forma parecida, un préstamo hecho en una columna resta 1 a la siguiente columna antes de decidir si ella también necesita pedir prestado. Por eso, en una operación de varias cifras puede haber acarreos o préstamos en más de una columna, uno detrás de otro.",
-      "formula": "Si (a + b + acarreo_anterior) ≥ 10, el nuevo acarreo es 1 y el dígito escrito es (a+b+acarreo_anterior) - 10.",
+      "titulo": "Gráfica circular (de pastel)",
+      "explicacion": "La gráfica circular, también llamada gráfica de pastel, representa un todo (el 100%) dividido en partes o \"rebanadas\", donde cada rebanada muestra qué porcentaje del total corresponde a una categoría. Es útil cuando se quiere mostrar cómo se reparte algo completo entre sus partes, no tanto para comparar valores exactos entre categorías. Entre más grande la rebanada, mayor es el porcentaje que representa esa categoría dentro del total.",
       "ejemplos": [
-        "275 + 168 = 443: unidades 5+8=13 (escribe 3, lleva 1); decenas 7+6+1=14 (escribe 4, lleva 1); centenas 2+1+1=4.",
-        "512 - 347 = 165: en las unidades, 2 - 7 pide prestado: 12 - 7 = 5. Las decenas (1) ya prestaron 1 a las unidades y quedan en 0; como 0 - 4 tampoco alcanza, piden prestado a las centenas: 10 - 4 = 6. Las centenas quedan en 5 - 1 - 3 = 1."
+        "En una gráfica circular sobre el uso del tiempo libre de un alumno: Videojuegos 40%, Deporte 30%, Lectura 20%, Otro 10%; las cuatro rebanadas suman 100% del tiempo libre total.",
+        "Una gráfica circular del presupuesto familiar mensual muestra: Renta 45%, Comida 30%, Transporte 15%, Ahorro 10%; la rebanada de Renta es la más grande porque representa el mayor porcentaje."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "llenar_frase",
-          "frase": "Al sumar 348 + 276, en las decenas: 4 + 7 + 1 (el acarreo de las unidades) = 12, escribes 2 y llevas ___.",
-          "respuestaCorrecta": "1",
-          "retroalimentacion": "4 + 7 + 1 = 12: escribes 2 en las decenas y llevas 1 a las centenas."
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Para qué tipo de información es más adecuada una gráfica circular?",
+          "opciones": [
+            "Para mostrar cómo se reparte un total en porcentajes entre varias categorías",
+            "Para mostrar cómo cambia una cantidad a lo largo del tiempo",
+            "Para comparar cantidades exactas cuando no importa el total",
+            "Para representar datos que no tienen ninguna relación entre sí"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La gráfica circular muestra cómo un total (100%) se divide en partes, por eso es ideal para representar porcentajes de un conjunto completo."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Al sumar 483 + 358, en las unidades: 3 + 8 = 11. ¿Cuánto llevas a las decenas?",
-          "opciones": [
-            "0",
-            "1",
-            "2",
-            "11"
-          ],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "3 + 8 = 11: escribes 1 y llevas 1 a las decenas."
+          "tipo": "llenar_frase",
+          "frase": "Si una gráfica circular sobre el color favorito de un grupo muestra Azul=50%, Rojo=30% y Verde=20%, las tres rebanadas juntas deben sumar ___%.",
+          "respuestaCorrecta": "100",
+          "retroalimentacion": "En una gráfica circular, todas las rebanadas representan partes de un mismo total, así que siempre suman 100%."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Al restar 523 - 267, la columna de las decenas también necesita pedir prestado, además de las unidades.",
+          "enunciado": "En una gráfica circular, la rebanada más grande siempre corresponde a la categoría con mayor porcentaje.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: las unidades piden prestado (3-7) y dejan las decenas en 1; como 1 - 6 tampoco alcanza, las decenas también piden prestado a las centenas."
+          "retroalimentacion": "Correcto: el tamaño de cada rebanada es proporcional al porcentaje que representa esa categoría."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una gráfica circular sobre el destino de vacaciones de un grupo muestra: Playa 45%, Montaña 25%, Ciudad 20%, Campo 10%. ¿Qué porcentaje de alumnos NO eligió playa?",
+          "opciones": [
+            "55%",
+            "45%",
+            "25%",
+            "10%"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como el total es 100% y playa es 45%, el resto es 100% - 45% = 55%."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Al restar 604 - 178, en las decenas: como las unidades piden prestado, quedan 9 (porque las decenas eran 0 y también tuvieron que pedir prestado a las centenas); 9 - 7 = ___.",
-          "respuestaCorrecta": "2",
-          "retroalimentacion": "Las decenas quedan en 9 después de la cadena de préstamos, y 9 - 7 = 2."
-        },
-        {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada resta con el dígito de las decenas que queda en el resultado, después de los préstamos necesarios.",
-          "columnaA": [
-            "342 - 176",
-            "704 - 258",
-            "951 - 372"
-          ],
-          "columnaB": [
-            "4",
-            "7",
-            "6"
-          ],
-          "parejasCorrectas": [
-            2,
-            0,
-            1
-          ],
-          "retroalimentacion": "342 - 176 = 166 (decenas: 6); 704 - 258 = 446 (decenas: 4); 951 - 372 = 579 (decenas: 7)."
+          "frase": "En una gráfica circular sobre los tipos de mascota de un grupo, si Perro=40%, Gato=35%, Pez=15% y Otro=___%, entonces Otro representa 10%.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "40+35+15=90%; como el total debe ser 100%, a Otro le corresponde 100-90=10%."
         }
       ]
     },
     {
       "numero": "37.3",
-      "titulo": "Préstamo a través de ceros",
-      "explicacion": "Cuando la columna a la que se le pide prestado es un cero, ese cero no tiene nada que prestar, así que el préstamo 'viaja' hacia la siguiente columna distinta de cero. Cada cero por el que pasa el préstamo se convierte en 9 (porque recibe 10 prestados y a la vez tiene que prestar 1 a la columna anterior), y la primera columna distinta de cero que encuentra el préstamo se reduce en 1. Algo parecido pasa al sumar: si varias columnas seguidas tienen un 9, un acarreo puede 'encadenarse' y hacer que varias columnas cambien de golpe.",
+      "titulo": "Gráfica lineal",
+      "explicacion": "La gráfica lineal usa puntos unidos por líneas para mostrar cómo cambia una cantidad a lo largo del tiempo, como días, meses o años. La dirección de la línea indica la tendencia: si sube, la cantidad aumenta; si baja, disminuye; si se mantiene horizontal, permanece constante. Es la gráfica más adecuada cuando el objetivo es observar la evolución de un dato, no solo compararlo entre categorías separadas.",
       "ejemplos": [
-        "5,002 - 1,847 = 3,155: en las unidades, 2 - 7 pide prestado; como las decenas y las centenas son 0, el préstamo viaja hasta los millares: el 5 baja a 4, y las decenas y centenas se convierten en 9. Unidades: 12 - 7 = 5; decenas: 9 - 4 = 5; centenas: 9 - 8 = 1.",
-        "3,899 + 2,106 = 6,005: unidades 9+6=15 (escribe 5, lleva 1); decenas 9+0+1=10 (escribe 0, lleva 1); centenas 8+1+1=10 (escribe 0, lleva 1); millares 3+2+1=6."
+        "Una gráfica lineal de la temperatura de una ciudad durante el día muestra que sube de 15°C a las 6 am hasta 28°C a las 2 pm, y después baja; la línea sube y luego baja.",
+        "La gráfica lineal de las ventas mensuales de una tienda pasa de $2,000 en enero a $5,000 en junio; la línea tiene una tendencia claramente ascendente."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "llenar_frase",
-          "frase": "Al restar 5,002 - 1,847, en las unidades no alcanza (2 - 7); como las decenas y las centenas son 0, el préstamo viaja hasta los millares: el 5 baja a 4, y las decenas y centenas se convierten en 9. Unidades: 12 - 7 = ___.",
-          "respuestaCorrecta": "5",
-          "retroalimentacion": "12 - 7 = 5. El préstamo tuvo que atravesar dos ceros (decenas y centenas) antes de llegar a los millares."
-        },
-        {
           "tipo": "opcion_multiple",
-          "pregunta": "Al restar 7,306 - 2,458, las unidades piden prestado, pero las decenas son 0. ¿En qué dígito se convierten las decenas después de recibir el préstamo de las centenas y prestarle 1 a las unidades?",
+          "pregunta": "¿Qué tipo de información representa mejor una gráfica lineal?",
           "opciones": [
-            "0",
-            "9",
-            "10",
-            "1"
+            "Cómo cambia una cantidad a lo largo del tiempo",
+            "Cómo se reparte un total entre varias categorías en un solo momento",
+            "La comparación de categorías sin ningún orden temporal",
+            "Solo valores que nunca cambian"
           ],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Las decenas reciben 10 prestados de las centenas, pero de inmediato prestan 1 a las unidades, así que quedan en 9."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La gráfica lineal conecta puntos en el tiempo para mostrar la evolución o tendencia de una cantidad."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Al restar 8,004 - 3,586, el préstamo tiene que atravesar dos ceros (decenas y centenas) antes de llegar a los millares.",
+          "enunciado": "Si la línea de una gráfica lineal va hacia arriba de izquierda a derecha, la cantidad representada está aumentando.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: las decenas y las centenas de 8,004 son 0, así que el préstamo viaja desde los millares (8) hasta las unidades."
+          "retroalimentacion": "Correcto: una línea ascendente indica que el valor crece conforme avanza el tiempo."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Al sumar 3,899 + 2,106, en las decenas: 9 + 0 + 1 (el acarreo de las unidades) = 10, escribes 0 y llevas ___.",
-          "respuestaCorrecta": "1",
-          "retroalimentacion": "9 + 0 + 1 = 10: escribes 0 en las decenas y llevas 1 a las centenas, donde vuelve a pasar lo mismo."
+          "frase": "En una gráfica lineal del peso de una planta durante 4 semanas (10 g, 10 g, 10 g, 10 g), la tendencia de la línea es ___.",
+          "respuestaCorrecta": "constante",
+          "retroalimentacion": "Como el valor no cambia de una semana a otra, la línea se mantiene horizontal, es decir, constante."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada resta con el dígito de las centenas que resulta en la respuesta.",
-          "columnaA": [
-            "5,002 - 1,847",
-            "8,004 - 3,586",
-            "6,050 - 2,384"
+          "tipo": "opcion_multiple",
+          "pregunta": "Una gráfica lineal muestra el número de visitantes a un museo: Lunes=50, Martes=80, Miércoles=60, Jueves=40. ¿Qué describe mejor la tendencia entre martes y jueves?",
+          "opciones": [
+            "La línea baja de forma continua",
+            "La línea sube de forma continua",
+            "La línea se mantiene constante",
+            "No se puede saber sin una gráfica circular"
           ],
-          "columnaB": [
-            "6",
-            "1",
-            "4"
-          ],
-          "parejasCorrectas": [
-            1,
-            2,
-            0
-          ],
-          "retroalimentacion": "5,002 - 1,847 = 3,155 (centenas: 1); 8,004 - 3,586 = 4,418 (centenas: 4); 6,050 - 2,384 = 3,666 (centenas: 6)."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De martes (80) a miércoles (60) a jueves (40), los valores disminuyen cada día, así que la línea baja de forma continua."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una gráfica lineal sería adecuada para mostrar cómo cambió la estatura de un estudiante cada año durante la secundaria.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: al ser datos que cambian a lo largo del tiempo (los años), una gráfica lineal permite ver claramente la tendencia de crecimiento."
         }
       ]
     },
     {
       "numero": "37.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "En la vida diaria, sumamos y restamos en columna para llevar cuentas de dinero, distancias o inventarios. El acarreo y el préstamo funcionan siempre igual, sin importar si se trata de pesos, kilómetros o piezas: si una columna suma 10 o más, se lleva 1 a la siguiente; si el dígito de arriba es menor, se pide prestada 1 decena, y si esa columna es un cero, el préstamo sigue viajando hasta encontrar un dígito que sí pueda prestar.",
+      "explicacion": "Recuerda: la gráfica de barras compara cantidades entre categorías distintas usando la altura de cada barra; la gráfica circular reparte un total (100%) en porcentajes por categoría, útil cuando quieres ver qué parte del todo ocupa cada grupo; y la gráfica lineal muestra cómo cambia una cantidad a través del tiempo mediante la tendencia de una línea. Elegir la gráfica correcta depende de qué pregunta quieres responder: ¿comparar grupos?, ¿ver un reparto porcentual?, ¿observar una evolución en el tiempo?",
       "ejemplos": [
-        "En el corte de caja, doña Rosa suma las ventas de dos turnos: 486 + 275 = 761. En las unidades, 6 + 5 = 11: escribe 1 y lleva 1 a las decenas.",
-        "Un camión debe recorrer 1,200 km y ya lleva 468 km recorridos: 1,200 - 468 = 732 km faltantes. Como las unidades y las decenas de 1,200 son 0, el préstamo viaja desde las centenas."
+        "Para mostrar el dinero reunido cada mes en una kermés durante 6 meses, la gráfica lineal es la mejor opción porque muestra la evolución en el tiempo; para mostrar qué porcentaje de alumnos prefiere cada juego de la kermés, la gráfica circular es más adecuada porque reparte el 100% de las preferencias."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "llenar_frase",
-          "frase": "Doña Rosa vendió 486 pesos en la mañana y 275 en la tarde. Al sumar 486 + 275, en las unidades: 6 + 5 = 11, escribe 1 y lleva ___.",
-          "respuestaCorrecta": "1",
-          "retroalimentacion": "6 + 5 = 11: se escribe 1 en las unidades y se lleva 1 a las decenas."
-        },
-        {
           "tipo": "opcion_multiple",
-          "pregunta": "Un camión recorrió en total 1,200 km y ya llevaba recorridos 468 km. Para saber cuántos km faltan se calcula 1,200 - 468. En las unidades (0 - 8) hay que pedir prestado; como las decenas también son 0, el préstamo viaja hasta las centenas. ¿En qué dígito se convierten las decenas después de esa cadena de préstamos?",
+          "pregunta": "Un equipo de futbol quiere mostrar cuántos goles anotó cada uno de sus 5 delanteros esta temporada. ¿Qué tipo de gráfica es más adecuada?",
           "opciones": [
-            "0",
-            "9",
-            "10",
-            "2"
+            "Gráfica de barras",
+            "Gráfica circular",
+            "Gráfica lineal",
+            "Ninguna gráfica sirve para esto"
           ],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Las decenas reciben el préstamo de las centenas y de inmediato prestan 1 a las unidades, así que quedan en 9."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "Una bodega tenía 3,004 cajas y salieron 1,876 para reparto. Al calcular 3,004 - 1,876, el préstamo debe atravesar dos ceros (decenas y centenas) antes de llegar a un dígito distinto de cero.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: las decenas y las centenas de 3,004 son 0, así que el préstamo viaja desde los millares (3) hasta las unidades."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "Un tianguis registró ventas de 2,997 pesos el sábado y 1,008 el domingo. Al sumar 2,997 + 1,008, en las decenas: 9 + 0 + 1 (el acarreo de las unidades) = 10, escribe 0 y lleva ___.",
-          "respuestaCorrecta": "1",
-          "retroalimentacion": "9 + 0 + 1 = 10: se escribe 0 en las decenas y se lleva 1 a las centenas, donde vuelve a pasar lo mismo."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Al comparar cantidades entre categorías distintas (los 5 delanteros), la gráfica de barras es la más adecuada."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con el dígito de las decenas que resulta al calcular la resta.",
+          "instruccion": "Relaciona cada situación con el tipo de gráfica más adecuado para representarla.",
           "columnaA": [
-            "Cambio de 500 pesos al pagar algo de 268 pesos",
-            "Kilómetros que faltan de un viaje de 1,000 km si ya se recorrieron 456 km",
-            "Piezas que quedan en una tienda con 800 si se vendieron 375"
+            "Población de una ciudad registrada cada año durante una década",
+            "Porcentaje de alumnos que eligió cada actividad extraescolar",
+            "Número de libros leídos por cada uno de 6 alumnos en un mes"
           ],
           "columnaB": [
-            "4",
-            "2",
-            "3"
+            "Gráfica de barras",
+            "Gráfica circular",
+            "Gráfica lineal"
           ],
           "parejasCorrectas": [
             2,
-            0,
-            1
+            1,
+            0
           ],
-          "retroalimentacion": "500 - 268 = 232 (decenas: 3); 1,000 - 456 = 544 (decenas: 4); 800 - 375 = 425 (decenas: 2)."
+          "retroalimentacion": "La población a través del tiempo usa gráfica lineal; el reparto porcentual usa gráfica circular; comparar alumnos entre sí usa gráfica de barras."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Es correcto usar una gráfica circular para mostrar cómo cambió la temperatura de una ciudad hora por hora durante un día.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: para mostrar cambios a lo largo del tiempo se usa una gráfica lineal, no una circular, que sirve para repartos porcentuales de un total."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Para representar qué porcentaje de los ingresos de una familia se destina a renta, comida, transporte y ahorro, la gráfica más adecuada es la gráfica ___.",
+          "respuestaCorrecta": "circular",
+          "retroalimentacion": "Como se trata de repartir un total (los ingresos) en porcentajes entre varias categorías, la gráfica circular es la más adecuada."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un doctor registra el peso de un bebé cada mes durante su primer año de vida para ver cómo ha crecido. ¿Qué gráfica conviene usar?",
+          "opciones": [
+            "Gráfica lineal",
+            "Gráfica circular",
+            "Gráfica de barras",
+            "Cualquiera, da igual"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como se quiere observar la evolución del peso a lo largo del tiempo (los meses), la gráfica lineal es la más adecuada."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
-      "tipo": "llenar_frase",
-      "frase": "Al sumar 539 + 274, en las unidades: 9 + 4 = 13, escribes 3 y llevas ___.",
-      "respuestaCorrecta": "1",
-      "retroalimentacion": "9 + 4 = 13: escribes 3 y llevas 1 a las decenas."
-    },
-    {
       "tipo": "opcion_multiple",
-      "pregunta": "Al restar 402 - 165, las decenas (que eran 0) piden prestado a las centenas. ¿En qué dígito se convierten las decenas después de recibir el préstamo y prestarle 1 a las unidades?",
+      "pregunta": "Una tienda quiere mostrar sus ventas totales de enero a diciembre para ver si van creciendo. ¿Qué gráfica debería usar?",
       "opciones": [
-        "0",
-        "9",
-        "10",
-        "1"
+        "Gráfica lineal",
+        "Gráfica circular",
+        "Gráfica de barras horizontales sin orden",
+        "Ninguna, mejor una tabla sin gráfica"
       ],
-      "respuestaCorrecta": 1,
-      "retroalimentacion": "Las decenas reciben 10 prestados de las centenas, pero de inmediato prestan 1 a las unidades, así que quedan en 9."
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Al tratarse de una evolución mes a mes durante el año, la gráfica lineal es la más adecuada para ver la tendencia de las ventas."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "Al sumar 275 + 138, en las unidades: 5 + 8 = 13, se escribe 3 y se lleva 1 a las decenas.",
+      "enunciado": "En una gráfica circular, todas las rebanadas juntas siempre representan el 100% de los datos.",
       "respuestaCorrecta": true,
-      "retroalimentacion": "Correcto: 5 + 8 = 13, se escribe el 3 y se lleva 1."
+      "retroalimentacion": "Correcto: la gráfica circular representa un total completo dividido en partes, así que la suma de todas las rebanadas es 100%."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "En una gráfica de barras sobre mascotas favoritas de un grupo, si la barra de \"gato\" es más alta que la de \"pez\", entonces hay más alumnos que prefieren ___ que pez.",
+      "respuestaCorrecta": "gato",
+      "retroalimentacion": "Una barra más alta representa una cantidad mayor, así que más alumnos prefieren gato que pez."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada resta con el dígito de las unidades que resulta después de pedir prestado.",
+      "instruccion": "Relaciona cada tipo de gráfica con la característica que mejor la describe.",
       "columnaA": [
-        "63 - 28",
-        "91 - 47",
-        "120 - 77"
+        "Gráfica de barras",
+        "Gráfica circular",
+        "Gráfica lineal"
       ],
       "columnaB": [
-        "3",
-        "5",
-        "4"
+        "Muestra la tendencia de un dato a través del tiempo con una línea",
+        "Compara cantidades entre categorías con rectángulos de distinta altura",
+        "Reparte un total en porcentajes mediante rebanadas"
       ],
       "parejasCorrectas": [
         1,
         2,
         0
       ],
-      "retroalimentacion": "63 - 28 = 35 (unidades: 5); 91 - 47 = 44 (unidades: 4); 120 - 77 = 43 (unidades: 3)."
+      "retroalimentacion": "Barras: compara categorías con altura; circular: reparte un total en porcentajes; lineal: muestra tendencias en el tiempo."
     }
   ]
 }

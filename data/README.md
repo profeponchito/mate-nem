@@ -378,100 +378,192 @@ temas en **4 mini-caminos** (uno por categoría, cada uno con su propio
 encabezado y su propio trazo serpenteante), en vez de un solo camino plano
 de 40 nodos.
 
-### Los 36 temas originales
+### Los 36 temas originales del docente + 4 temas de algoritmos (Paso 17) — numeración actual (Paso 18)
 
-Numerados 1-36 (`numero` en el JSON, también usado en el nombre de archivo
-`EJ-01.json`…`EJ-36.json` y en el campo `id`), en el orden y con los textos
-exactos que definió el docente:
+Los 36 temas que definió el docente originalmente y los 4 temas de
+algoritmos agregados después (Paso 17) están numerados de forma
+**contigua por categoría** desde el Paso 18 — ver "Por qué se renumeraron"
+más abajo si buscas la numeración anterior (37-40) usada solo entre el
+Paso 17 y el Paso 18:
 
-**Básicos (1-10):** Números naturales y enteros · Operaciones básicas (suma,
+**Básicos (1-14):** Números naturales y enteros · Operaciones básicas (suma,
 resta, multiplicación y división) · Jerarquía de operaciones · Múltiplos y
 divisores · Máximo Común Divisor (MCD) · Mínimo Común Múltiplo (MCM) ·
 Fracciones: concepto y tipos · Fracciones equivalentes · Suma y resta de
-fracciones · Decimales y su relación con fracciones.
+fracciones · Decimales y su relación con fracciones · **Completar dígitos
+del algoritmo de la suma y resta** (EJ-11) · **Suma y resta de números con
+signo** (EJ-12) · **Completar dígitos del algoritmo de la multiplicación y
+división** (EJ-13) · **Completar dígitos del algoritmo de la
+multiplicación y división con decimales** (EJ-14).
 
-**Intermedios (11-20):** Números racionales e irracionales · Potencias y
+**Intermedios (15-24):** Números racionales e irracionales · Potencias y
 raíces · Leyes de los exponentes · Proporcionalidad directa ·
 Proporcionalidad inversa · Razones y proporciones · Porcentajes y
 aplicaciones en la vida diaria · Expresiones algebraicas · Monomios y
 polinomios · Perímetro y área de figuras planas.
 
-**Avanzados (21-30):** Ecuaciones de primer grado · Sistemas de ecuaciones ·
+**Avanzados (25-34):** Ecuaciones de primer grado · Sistemas de ecuaciones ·
 Plano cartesiano · Funciones lineales · Gráficas y su interpretación ·
 Congruencia de triángulos · Semejanza de triángulos · Teorema de Tales ·
 Teorema de Pitágoras · Volumen y área de cuerpos geométricos.
 
-**Estadística y probabilidad (31-36):** Población y muestra · Tablas de
+**Estadística y probabilidad (35-40):** Población y muestra · Tablas de
 frecuencia · Gráficas (barras, circulares y lineales) · Media, mediana y
 moda · Probabilidad simple · Experimentos aleatorios.
 
-Los 36 archivos originales (864 reactivos en total: 720 calificados + 144
-de práctica extra) están validados contra `pda.schema.json`, revisados uno
-por uno con el flujo completo en Playwright (`qa-full-sweep-v6.mjs`, que
-también verifica el camino agrupado por categoría), y pasados por un
-escáner de duplicados semánticos (mismo tipo + mismo contenido matemático
-real, no solo texto) para evitar que dos reactivos del mismo subtema sean,
-en los hechos, la misma pregunta repetida.
+Los 36 temas originales (864 reactivos: 720 calificados + 144 de práctica
+extra) están validados contra `pda.schema.json`, revisados uno por uno con
+el flujo completo en Playwright (`qa-full-sweep-v6.mjs`), y pasados por un
+escáner de duplicados semánticos. Los 4 temas de algoritmos (EJ-11 a
+EJ-14) se describen en la sección "Paso 18" más abajo, junto con el nuevo
+formato de reactivo que usan.
 
-### Los 4 temas nuevos (Paso 17): algoritmos de completar dígitos y números con signo
+### Por qué se renumeraron (Paso 18)
 
-El docente pidió 4 temas más, todos en la categoría `basico`, enfocados en
-el **proceso** de los algoritmos escritos de las 4 operaciones (no solo en
-"calcular el resultado final", que es lo que ya cubrían los temas
-originales):
+Al agregar los 4 temas de algoritmos en el Paso 17, se les dio `numero`
+37-40 (para no reordenar nada) — pero como los 4 son de categoría
+`basico`, dentro del mini-camino "Temas básicos" quedaban pegados después
+del 10 con un salto directo a 37, mientras las demás categorías seguían
+en 11-20/21-30/31-36. El docente pidió que la numeración fuera contigua.
+Se corrigió así: los 4 temas de algoritmos pasaron a `numero` 11-14
+(justo después de los 10 básicos originales), y los demás 26 temas
+recorrieron su `numero` original **+4** para dejarles el espacio:
+intermedios 11-20 → 15-24, avanzados 21-30 → 25-34, estadística 31-36 →
+35-40. El resultado: los 40 temas quedan numerados 1-40 sin huecos ni
+saltos, con cada categoría en un bloque contiguo.
 
-**EJ-37 — Completar dígitos del algoritmo de la suma y resta.** Identificar
-y completar el dígito que se lleva al sumar (acarreo) o el que queda al
-pedir prestado al restar (préstamo), incluyendo el caso de pedir prestado
-a través de uno o más ceros.
+**Qué cambió exactamente:** en cada uno de los 40 archivos, el campo
+`numero` de nivel superior y el prefijo del campo `numero` de cada
+subtema (ej. `"37.1"` → `"11.1"`) se recalcularon con la tabla de arriba;
+el archivo se renombró (`EJ-37.json` → `EJ-11.json`, etc., desplazando los
+demás) y el campo `id` se actualizó para que siga coincidiendo con el
+nombre de archivo (`cargarPDAporId` busca por `startsWith` del `id`). El
+contenido matemático de cada tema (título, problematización, subtemas,
+reactivos) **no cambió** por la renumeración — es un reordenamiento puro.
+`data/ejercitate/index.json` se reconstruyó para listar los 40 archivos en
+el nuevo orden numérico.
 
-**EJ-38 — Suma y resta de números con signo.** Regla de signos al sumar
-(mismo signo se suma y conserva signo; signos distintos se restan y queda
-el signo del mayor en valor absoluto), la resta como "sumar el opuesto"
-(a - b = a + (-b), a - (-b) = a + b), cadenas de varios números con signo,
-y aplicaciones reales (temperatura, buceo/montañismo, saldo de cuenta,
-elevador).
+## Paso 18: nuevo tipo de reactivo `algoritmo_columnas` y rediseño visual de los 3 temas de algoritmos
 
-**EJ-39 — Completar dígitos del algoritmo de la multiplicación y
-división.** El dígito que se lleva al multiplicar, los productos
-parciales de una multiplicación por un multiplicador de 2 cifras, el
-dígito que se "baja" al dividir, y el residuo o cociente parcial de un
-paso.
+El docente compartió imágenes de hojas de ejercicios de cuaderno
+("Resuelve las sumas y completa los espacios en blanco", "Encuentra las
+cifras a colocar en los casilleros para que las sustracciones sean
+correctas") y pidió que las actividades de evaluación de los 4 temas de
+algoritmos usaran ese mismo diseño: el algoritmo vertical dibujado con
+casillas vacías para los dígitos que faltan, en vez de una frase de texto
+describiendo el paso.
 
-**EJ-40 — Completar dígitos del algoritmo de la multiplicación y división
-con decimales.** Contar y colocar las cifras decimales del resultado al
-multiplicar decimales, y correr el punto decimal (en divisor y dividendo)
-antes de dividir con decimales.
+### El nuevo tipo de reactivo
 
-**Restricción de formato que definió el diseño de los reactivos:** el
-renderizador de `llenar_frase` (`renderizarPregunta_` en `app.js`) muestra
-la `frase` como texto de una sola línea con un input inline donde va el
-`___` (solo reconoce el primero, vía `frase.split('___')`) — no soporta un
-bloque multilínea ni una cuadrícula de columnas alineadas como un
-"algoritmo vertical" en papel. Por eso cada reactivo de "completar
-dígitos" describe el paso del algoritmo en una frase de prosa (ej. "Al
-sumar 267 + 158, en las unidades: 7 + 8 = 15, escribes 5 y llevas ___.")
-en vez de intentar dibujar el algoritmo con saltos de línea. Esto no
-requirió ningún cambio de código — solo una convención de redacción del
-contenido, igual que los demás temas.
+Se agregó un 5.º tipo de reactivo al esquema (`data/schema/pda.schema.json`,
+`definitions.pregunta`), `algoritmo_columnas`:
 
-**Categoría:** los 4 se clasificaron como `basico` — el esquema define un
-enum cerrado de 4 categorías (`basico`/`intermedio`/`avanzado`/
-`estadistica`) y ninguna de las otras 3 encaja con temas de algoritmo
-aritmético; se mantiene la convención de que "básico" agrupa las
-operaciones fundamentales. Como consecuencia, dentro del mini-camino de
-"Temas básicos" conviven ahora los `numero` 1-10 (originales) y 37-40
-(nuevos) — un salto visible en la numeración, ya documentado aquí para que
-no se confunda con un error.
+```json
+{
+  "tipo": "algoritmo_columnas",
+  "operacion": "suma",
+  "filas": [
+    { "valor": "267", "signo": "+" },
+    { "valor": "158", "signo": "+" },
+    { "valor": "425", "esResultado": true }
+  ],
+  "ocultos": [[1], [0, 2], [0]],
+  "retroalimentacion": "267 + 158 = 425: en las unidades 7+8=15..."
+}
+```
 
-**Numeración e ids:** `numero` 37-40, ids `EJ-37`…`EJ-40`, mismo patrón de
-archivo que los originales. `data/ejercitate/index.json` se actualizó para
-listarlos al final del arreglo `archivos`.
+- `filas`: cada fila del algoritmo vertical, de arriba hacia abajo (los
+  operandos, y en una multiplicación con multiplicador de 2+ cifras
+  también sus productos parciales, seguidos de la fila `esResultado`).
+  Todas se alinean a la derecha automáticamente.
+- `valor`: el número COMPLETO y correcto de esa fila (puede llevar un
+  punto decimal). De ahí se derivan tanto los dígitos ya dados como los
+  correctos de las casillas vacías — no hay un campo `respuestaCorrecta`
+  separado en este tipo.
+- `ocultos`: mismo largo que `filas`; para cada fila, la lista de
+  posiciones (índice de carácter en `valor`, 0 = el dígito más a la
+  izquierda) que se muestran como casilla `<input>` vacía en vez de texto
+  ya escrito. El punto decimal nunca se marca como oculto.
+- `operacion`: `suma` | `resta` | `multiplicacion` — solo determina el
+  texto de apoyo mostrado ("Completa las casillas para que la X sea
+  correcta."); la calificación siempre compara dígito por dígito contra
+  `valor`, columna por columna, sin importar qué dice `operacion`.
 
-Los 160 reactivos nuevos (4 temas × 4 subtemas × 5 + 4 de práctica extra
-cada uno) están validados contra `pda.schema.json` (0 errores), revisados
-por sanidad estructural (huecos `___` únicos en cada `frase`, valores
-únicos en cada `columnaB`, índices de `respuestaCorrecta` dentro de rango,
-`retroalimentacion` presente en todos), y comparados por firma completa de
-contenido contra el resto del banco (155 archivos existentes): 0
-duplicados reales introducidos por estos 4 temas nuevos.
+**Motor (`app.js`):** `renderizarAlgoritmoColumnas_` dibuja las filas
+alineadas a la derecha (dígitos dados como texto, ocultos como
+`<input maxlength="1">`, línea horizontal arriba de la fila `esResultado`);
+`leerRespuesta_` junta lo escrito en cada casilla (por fila/columna) y
+devuelve `null` si falta alguna; `esRespuestaCorrecta` (`gamification.js`)
+compara cada casilla oculta contra el dígito real de `valor` en esa
+posición — todas deben coincidir para que el reactivo cuente como
+correcto. El barajado de posición del reactivo dentro del subtema (Paso
+11) sigue aplicando igual que a cualquier otro tipo; el contenido interno
+del reactivo (qué casillas están ocultas) no se baraja, es fijo por
+diseño (igual que `llenar_frase` o `verdadero_falso`).
+
+**QA (`qa-full-sweep-v6.mjs`):** como el texto de apoyo genérico
+("Completa las casillas para que la suma sea correcta.") se repite entre
+varios reactivos de la misma operación dentro de un subtema, la
+identificación del reactivo barajado se desambigua con la **firma de las
+cifras ya dadas** (las que nunca se ocultan ni se barajan) — mismo
+principio que ya se usaba para `relacionar_columnas` (columnaA) y
+`opcion_multiple` (conjunto de opciones).
+
+### División representada como verificación por multiplicación
+
+El esquema de `algoritmo_columnas` no incluye una operación `division`
+porque el algoritmo de la división larga no tiene la misma relación
+directa "columna por columna" entre operandos y resultado que sí tienen
+suma, resta y multiplicación (los dígitos del cociente no se alinean con
+los del dividendo de forma posicional simple) — intentar forzarlo hubiera
+significado un widget genuinamente distinto, no una variación del mismo.
+
+En vez de eso, los reactivos "de división" de EJ-13 y EJ-14 muestran la
+**multiplicación que verifica la división** (cociente × divisor =
+dividendo), con `operacion: "multiplicacion"` y la aclaración explícita
+en `retroalimentacion` (ej. *"Esto verifica que 156 ÷ 4 = 39, porque 39 ×
+4 = 156."*). Es una simplificación deliberada, no un intento fallido de
+dibujar la división — comprobar una división multiplicando el cociente
+por el divisor es una técnica válida y común en la escuela.
+
+### Los 3 temas rediseñados (EJ-11, EJ-13, EJ-14) — EJ-12 se queda en prosa
+
+**EJ-11 (suma y resta)** y **EJ-13/EJ-14 (multiplicación y división,
+entero y decimal)** se reescribieron por completo: sus 20 reactivos
+calificados + 4 de práctica extra (24 por tema, 72 en total) ahora son
+`algoritmo_columnas`. **EJ-12 (números con signo) se dejó tal como estaba
+en el Paso 17**, en el formato de prosa (`llenar_frase`/`opcion_multiple`/
+etc.) — no tiene un "algoritmo vertical" que dibujar (no hay acarreos ni
+préstamos en la regla de signos), así que el nuevo widget no le
+correspondía; forzarlo ahí no habría representado nada real.
+
+Progresión de dificultad conservada en los 3 temas rediseñados
+(Introductorio/Intermedio/Avanzado/Síntesis, ver los propios archivos para
+el detalle exacto de cada subtema):
+- **EJ-11**: de sumas/restas de 2 cifras con 1 acarreo/préstamo, hasta
+  restas de 5-6 cifras con préstamo encadenado a través de varios ceros.
+- **EJ-13**: de multiplicación por 1 dígito (y su verificación de división
+  correspondiente), hasta multiplicador/divisor de 2 cifras con productos
+  parciales.
+- **EJ-14**: igual que EJ-13 pero con decimales — los productos parciales
+  se escriben como enteros sin punto (el corrimiento de posición ya
+  incluido en el valor) y el punto decimal se coloca solo en la fila
+  final, contando las cifras decimales de los factores originales — así
+  es como se hace el algoritmo en papel.
+
+**Autoría:** 3 agentes en paralelo, uno por archivo, cada uno con el
+formato exacto documentado arriba, 2 ejemplos completos ya resueltos
+(incluido el caso de productos parciales con corrimiento), y la
+instrucción de verificar la aritmética de cada reactivo con
+`decimal.Decimal` de Python (nunca `float`, para evitar errores de
+redondeo en los decimales) antes de fijar las posiciones ocultas.
+
+**Validación centralizada** (independiente de la de cada agente): 72/72
+reactivos con aritmética correcta (suma/resta/multiplicación, y en los de
+5 filas también que los productos parciales sumen exactamente al
+resultado), 0 errores de esquema, ninguna fila con el 100% de sus dígitos
+ocultos, entre 2 y 7 casillas ocultas por reactivo, el punto decimal
+nunca marcado como oculto, y 0 duplicados reales introducidos al
+comparar contra el resto del banco (159 archivos) por firma completa de
+contenido. Probado de punta a punta con Playwright junto con el resto del
+banco: **159/159**.

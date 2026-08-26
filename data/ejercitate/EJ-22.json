@@ -2,231 +2,312 @@
   "id": "EJ-22",
   "grado": "Ejercítate",
   "numero": 22,
-  "categoria": "avanzado",
+  "categoria": "intermedio",
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Sistemas de ecuaciones",
-  "contenido": "Resolución de sistemas de dos ecuaciones lineales con dos incógnitas por sustitución y eliminación.",
-  "pda": "Resuelve sistemas de ecuaciones lineales 2x2 mediante los métodos de sustitución y suma/resta (eliminación), y los aplica a problemas de la vida cotidiana.",
+  "titulo": "Expresiones algebraicas",
+  "contenido": "Introducción al lenguaje algebraico: variables, términos, traducción de enunciados y evaluación numérica de expresiones.",
+  "pda": "Reconoce variables, coeficientes y términos en una expresión algebraica, traduce enunciados del lenguaje cotidiano al lenguaje algebraico y evalúa expresiones sustituyendo valores numéricos, para modelar situaciones de la vida diaria.",
   "problematizacion": {
-    "contexto": "En la cooperativa escolar, Ana compró 2 refrescos y 3 tortas y pagó $58. Su amigo Luis compró 1 refresco y 2 tortas y pagó $33. Ninguno de los dos recuerda el precio individual de cada producto.",
-    "pregunta": "¿Cómo podemos encontrar el precio de un refresco y el precio de una torta usando estos dos datos al mismo tiempo?"
+    "contexto": "En una fiesta, cada invitado debe pagar $50 de entrada más $20 por cada boleto extra de rifa que compre. Ana no sabe cuánto pagará hasta que decide cuántos boletos comprar.",
+    "pregunta": "¿Cómo puedes escribir una expresión que calcule el pago total de Ana sin importar cuántos boletos compre?"
   },
   "subtemas": [
     {
       "numero": "22.1",
-      "titulo": "¿Qué es un sistema de ecuaciones 2×2?",
-      "explicacion": "Un sistema de ecuaciones 2×2 son dos ecuaciones con las mismas dos incógnitas (por ejemplo, x y y) que deben cumplirse al mismo tiempo. La solución del sistema no es un solo número, sino un par ordenado (x, y) que hace verdaderas ambas ecuaciones a la vez. Por eso, antes de resolver un sistema, es útil saber comprobar si un par propuesto realmente es la solución.",
+      "titulo": "¿Qué es una expresión algebraica? Variables y términos",
+      "explicacion": "Una expresión algebraica combina números, letras (llamadas variables, porque su valor puede cambiar) y operaciones. Cada parte separada por + o − se llama término, y cada término tiene un coeficiente (el número que multiplica a la variable) y una parte literal (la variable). Por ejemplo, en 5x + 3, el término 5x tiene coeficiente 5 y parte literal x, mientras que 3 es un término independiente, sin variable.",
+      "formula": "coeficiente · variable (ej. 7x: coeficiente 7, variable x)",
       "ejemplos": [
-        "Para el sistema x + y = 9, x - y = 3: si probamos (6, 3), vemos que 6 + 3 = 9 ✓ y 6 - 3 = 3 ✓, así que (6, 3) sí es solución.",
-        "Para el mismo sistema, el par (5, 4) NO es solución porque 5 + 4 = 9 sí se cumple, pero 5 - 4 = 1 ≠ 3."
+        "En la expresión 4x + 9, el término 4x tiene coeficiente 4 y variable x; el término 9 es independiente.",
+        "En 2a − 6b + 1, hay tres términos: 2a (coeficiente 2), −6b (coeficiente −6) y 1 (independiente)."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de los siguientes pares es la solución del sistema x + y = 9, x - y = 3?",
-          "opciones": ["(6, 3)", "(3, 6)", "(5, 4)", "(7, 2)"],
+          "pregunta": "¿Cuál es el coeficiente del término 7y en la expresión 7y + 4?",
+          "opciones": [
+            "7",
+            "4",
+            "y",
+            "11"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Con x = 6, y = 3: 6 + 3 = 9 ✓ y 6 - 3 = 3 ✓. Cumple ambas ecuaciones al mismo tiempo."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "El par ordenado (4, 5) es solución del sistema x + y = 9, x - y = -1.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "4 + 5 = 9 ✓ y 4 - 5 = -1 ✓. Como cumple las dos ecuaciones, sí es la solución del sistema."
+          "retroalimentacion": "El coeficiente es el número que multiplica a la variable; en 7y, ese número es 7."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En un sistema de dos ecuaciones con dos incógnitas, la solución es el par de valores que hace ___ ambas ecuaciones al mismo tiempo.",
-          "respuestaCorrecta": "verdaderas",
-          "retroalimentacion": "La solución de un sistema debe cumplir, es decir hacer verdaderas, las dos ecuaciones a la vez, no solo una de ellas."
+          "frase": "En la expresión 9x − 5, el término independiente es ___.",
+          "respuestaCorrecta": "-5",
+          "retroalimentacion": "El término independiente es el que no tiene variable; en este caso es −5."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuántas incógnitas tiene un sistema de ecuaciones 2×2?",
-          "opciones": ["Una", "Dos", "Tres", "Cuatro"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "El '2×2' indica dos ecuaciones y dos incógnitas (generalmente llamadas x y y)."
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 3m + 8, 'm' es una variable.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "'m' representa un valor que puede cambiar, por lo tanto es una variable."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La expresión 6a + 2b − 7 tiene ___ términos.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "Los términos son 6a, 2b y −7, separados por los signos + y −, así que son 3 términos."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada sistema con su solución (x, y).",
-          "columnaA": ["x + y = 5, x - y = 1", "x + y = 12, x - y = 2", "x + y = 8, x - y = 0"],
-          "columnaB": ["(4, 4)", "(7, 5)", "(3, 2)"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "x + y = 5, x - y = 1 da (3,2); x + y = 12, x - y = 2 da (7,5); x + y = 8, x - y = 0 da (4,4)."
+          "instruccion": "Relaciona cada término con su coeficiente.",
+          "columnaA": [
+            "8x",
+            "-3y",
+            "z"
+          ],
+          "columnaB": [
+            "1",
+            "-3",
+            "8"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "8x tiene coeficiente 8; -3y tiene coeficiente -3; z equivale a 1z, así que su coeficiente es 1."
         }
       ]
     },
     {
       "numero": "22.2",
-      "titulo": "Método de sustitución",
-      "explicacion": "El método de sustitución consiste en despejar una de las variables en una de las ecuaciones y sustituir esa expresión en la otra ecuación. Así, el sistema se convierte en una sola ecuación con una sola incógnita, que ya sabes resolver. Una vez que encuentras esa incógnita, la sustituyes de regreso para hallar la otra.",
-      "formula": "Despejar una variable → sustituirla en la otra ecuación → resolver → regresar el valor encontrado",
+      "titulo": "Traducir lenguaje cotidiano a algebraico",
+      "explicacion": "Muchos problemas se describen con palabras, pero para resolverlos con álgebra hay que traducir esas frases a símbolos. Palabras como 'más', 'aumentado en' o 'suma' indican +; 'menos' o 'disminuido' indican −; 'el doble', 'el triple' o 'veces' indican multiplicación; y 'un número' se representa con una letra como x o n.",
       "ejemplos": [
-        "Para y = x + 2, x + y = 10: sustituyendo, x + (x + 2) = 10 → 2x = 8 → x = 4, y entonces y = 4 + 2 = 6.",
-        "Para y = 2x, x + y = 12: sustituyendo, x + 2x = 12 → 3x = 12 → x = 4, y entonces y = 2(4) = 8."
+        "'El doble de un número más 5' se traduce como 2x + 5.",
+        "'La mitad de un número disminuido en 3' se traduce como x/2 − 3."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Resuelve por sustitución: y = x + 2, x + y = 10. ¿Cuál es el valor de x?",
-          "opciones": ["4", "3", "5", "6"],
+          "pregunta": "¿Cuál expresión representa 'el triple de un número aumentado en 7'?",
+          "opciones": [
+            "3x + 7",
+            "x + 7",
+            "3x − 7",
+            "7x + 3"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sustituyendo: x + (x + 2) = 10 → 2x = 8 → x = 4."
+          "retroalimentacion": "'El triple de un número' es 3x, y 'aumentado en 7' significa sumarle 7: 3x + 7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál expresión representa 'la mitad de un número disminuida en 4'?",
+          "opciones": [
+            "x/2 − 4",
+            "x − 4/2",
+            "4 − x/2",
+            "2x − 4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'La mitad de un número' es x/2, y 'disminuida en 4' significa restarle 4: x/2 − 4."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Al resolver por sustitución el sistema y = 2x, x + y = 12, el valor de x es ___.",
-          "respuestaCorrecta": "4",
-          "retroalimentacion": "Sustituyendo: x + 2x = 12 → 3x = 12 → x = 4."
+          "frase": "El costo de comprar 'n' boletos a $20 cada uno más una entrada fija de $50 se traduce como 50 + ___.",
+          "respuestaCorrecta": "20n",
+          "retroalimentacion": "Cada boleto cuesta $20, así que n boletos cuestan 20n; sumado a la entrada fija queda 50 + 20n."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En el sistema y = 3x - 1, 2x + y = 9, al sustituir se obtiene 2x + 3x - 1 = 9, es decir 5x = 10, por lo que x = 2.",
+          "enunciado": "'El cuádruple de un número menos 6' se traduce como 4x − 6.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "2x + (3x - 1) = 9 → 5x - 1 = 9 → 5x = 10 → x = 2. El procedimiento y el resultado son correctos."
+          "retroalimentacion": "'El cuádruple de un número' es 4x, y 'menos 6' indica restar 6: 4x − 6."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el primer paso del método de sustitución?",
-          "opciones": ["Sumar las dos ecuaciones", "Despejar una variable en una de las ecuaciones", "Graficar ambas rectas", "Multiplicar ambas ecuaciones por el mismo número"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "La sustitución empieza despejando una variable (por ejemplo y) en una ecuación, para reemplazarla en la otra."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Resuelve por sustitución: x = y + 3, 2y + x = 18. ¿Cuál es el valor de y?",
-          "opciones": ["5", "4", "6", "3"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Sustituyendo: 2y + (y + 3) = 18 → 3y = 15 → y = 5."
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase con su expresión algebraica.",
+          "columnaA": [
+            "El doble de un número más 3",
+            "Un número disminuido en 5",
+            "El triple de un número"
+          ],
+          "columnaB": [
+            "3x",
+            "x - 5",
+            "2x + 3"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "'El doble más 3' es 2x+3; 'disminuido en 5' es x-5; 'el triple' es 3x."
         }
       ]
     },
     {
       "numero": "22.3",
-      "titulo": "Método de eliminación (suma y resta)",
-      "explicacion": "El método de eliminación consiste en sumar o restar las dos ecuaciones completas para que una de las variables desaparezca, dejando una sola ecuación con una sola incógnita. Esto funciona directamente cuando una variable tiene el mismo coeficiente (para restar) o coeficientes opuestos (para sumar) en ambas ecuaciones; si no, primero hay que multiplicar una o ambas ecuaciones por un número para lograrlo.",
+      "titulo": "Evaluar expresiones (sustituir valores)",
+      "explicacion": "Evaluar una expresión algebraica significa sustituir la variable por un valor numérico específico y luego realizar las operaciones indicadas, respetando la jerarquía de operaciones. Esto permite saber el resultado concreto de una fórmula para un caso particular, como calcular el pago exacto de Ana si decide comprar cierto número de boletos.",
+      "formula": "Sustituir x = valor, luego operar",
       "ejemplos": [
-        "Para x + y = 15, x - y = 5: sumando las dos ecuaciones, 2x = 20 → x = 10, y entonces y = 15 - 10 = 5.",
-        "Para x + 2y = 10, x - 2y = 2: sumando, la y se elimina porque 2y y -2y son opuestos: 2x = 12 → x = 6, y entonces y = 2."
+        "Evalúa 3x + 5 para x = 4: 3(4) + 5 = 12 + 5 = 17.",
+        "Evalúa 2a² − 1 para a = 3: 2(3)² − 1 = 2(9) − 1 = 18 − 1 = 17."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Resuelve por eliminación: x + y = 15, x - y = 5. ¿Cuál es el valor de x?",
-          "opciones": ["10", "5", "8", "12"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Sumando las ecuaciones, la y se elimina: 2x = 20 → x = 10."
+          "tipo": "llenar_frase",
+          "frase": "El valor de 5x − 2 cuando x = 6 es ___.",
+          "respuestaCorrecta": "28",
+          "retroalimentacion": "5(6) − 2 = 30 − 2 = 28."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Al sumar las ecuaciones 2x + y = 11 y x - y = 1, se obtiene 3x = ___.",
-          "respuestaCorrecta": "12",
-          "retroalimentacion": "Al sumar, la y se elimina (y + (-y) = 0): (2x + x) = 11 + 1 = 12, es decir 3x = 12."
+          "frase": "El valor de 4x + 3 cuando x = 5 es ___.",
+          "respuestaCorrecta": "23",
+          "retroalimentacion": "4(5) + 3 = 20 + 3 = 23."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el valor de 2x² + 1 cuando x = 3?",
+          "opciones": [
+            "19",
+            "13",
+            "37",
+            "7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2(3)² + 1 = 2(9) + 1 = 18 + 1 = 19."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si el costo total de una fiesta es 50 + 20n, ¿cuánto pagará alguien que compra n = 4 boletos?",
+          "opciones": [
+            "$130",
+            "$100",
+            "$150",
+            "$120"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "50 + 20(4) = 50 + 80 = $130."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Para eliminar la variable y en el sistema x + 2y = 10, x - 2y = 2, basta con sumar ambas ecuaciones.",
+          "enunciado": "El valor de 3x − 4 cuando x = 2 es 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Como los coeficientes de y son opuestos (2y y -2y), al sumar las ecuaciones se cancelan y queda solo la x."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "En el sistema 5x + y = 20, 2x + y = 11, ¿qué operación elimina la variable y directamente?",
-          "opciones": ["Sumar las dos ecuaciones", "Restar la segunda ecuación de la primera", "Multiplicar ambas por 2", "Dividir la primera entre la segunda"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Como ambas tienen el mismo coeficiente de y (+1), al restar se elimina: (5x - 2x) + (y - y) = 20 - 11 → 3x = 9."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Resuelve por eliminación: 4x + y = 19, x + y = 7. ¿Cuál es el valor de y?",
-          "opciones": ["3", "4", "7", "5"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Restando: (4x - x) + (y - y) = 19 - 7 → 3x = 12 → x = 4, y entonces y = 7 - 4 = 3."
+          "retroalimentacion": "3(2) − 4 = 6 − 4 = 2, así que el enunciado es correcto."
         }
       ]
     },
     {
       "numero": "22.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Todo sistema 2×2 se puede resolver por sustitución o por eliminación: la sustitución conviene cuando una variable ya está despejada o es fácil de despejar, y la eliminación conviene cuando los coeficientes de una variable son iguales u opuestos. Al plantear un problema real, primero se traducen los datos a dos ecuaciones (usando dos incógnitas, por ejemplo el precio de cada producto), y después se elige el método más cómodo para resolverlas.",
+      "explicacion": "Recuerda: en una expresión algebraica cada término tiene un coeficiente y una parte literal; frases como 'el doble', 'aumentado' o 'disminuido' se traducen a operaciones con una variable; y para conocer un resultado concreto se evalúa sustituyendo la variable por un número y respetando la jerarquía de operaciones. Estas tres habilidades juntas permiten modelar y resolver situaciones reales, como el costo total de una fiesta según el número de boletos.",
       "ejemplos": [
-        "Ana compró 2 refrescos y 3 tortas por $58; Luis compró 1 refresco y 2 tortas por $33. Las ecuaciones son 2r + 3t = 58 y r + 2t = 33. Despejando r de la segunda: r = 33 - 2t. Sustituyendo: 2(33 - 2t) + 3t = 58 → 66 - 4t + 3t = 58 → 66 - t = 58 → t = 8. Entonces r = 33 - 16 = 17: la torta cuesta $8 y el refresco $17."
+        "'El doble de un número aumentado en 3' es 2x+3; evaluado en x=5 da 2(5)+3=13.",
+        "Ana paga 50+20n por la fiesta; si compra n=3 boletos, paga 50+20(3)=$110."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "En una tienda, 3 plumas y 2 lápices cuestan $28; 1 pluma y 2 lápices cuestan $16. ¿Cuánto cuesta una pluma?",
-          "opciones": ["$6", "$5", "$7", "$4"],
+          "pregunta": "Traduce 'el triple de un número disminuido en 2' y evalúalo para x = 6.",
+          "opciones": [
+            "16",
+            "18",
+            "20",
+            "10"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Restando las ecuaciones (3p + 2l) - (1p + 2l) = 28 - 16 → 2p = 12 → p = 6."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "La suma de dos números es 20 y su diferencia es 4. Los números son 12 y 8.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "12 + 8 = 20 ✓ y 12 - 8 = 4 ✓. El sistema x + y = 20, x - y = 4 tiene como solución x = 12, y = 8."
+          "retroalimentacion": "La expresión es 3x − 2; evaluada en x=6: 3(6) − 2 = 18 − 2 = 16."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En una granja hay gallinas (2 patas) y conejos (4 patas). Si hay 10 cabezas y 32 patas, el número de conejos es ___.",
-          "respuestaCorrecta": "6",
-          "retroalimentacion": "Con g + c = 10 y 2g + 4c = 32: sustituyendo g = 10 - c, queda 20 - 2c + 4c = 32 → 2c = 12 → c = 6 conejos (y 4 gallinas)."
+          "frase": "La expresión que representa 'un número aumentado en 8' es x + ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "'Aumentado en 8' significa sumarle 8 al número: x + 8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La expresión 4x − 1, evaluada en x = 3, da 11.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "4(3) − 1 = 12 − 1 = 11, así que el enunciado es correcto."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un boleto de niño cuesta x y uno de adulto cuesta y. 2 boletos de adulto y 1 de niño cuestan $90; 1 de adulto y 3 de niño cuestan $80. ¿Cuál es el costo de un boleto de adulto?",
-          "opciones": ["$38", "$30", "$40", "$35"],
+          "pregunta": "Un taxi cobra una tarifa fija de $15 más $8 por cada kilómetro recorrido (k). ¿Cuánto se paga por un viaje de 5 km?",
+          "opciones": [
+            "$55",
+            "$40",
+            "$23",
+            "$63"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Despejando x = 90 - 2y de la primera y sustituyendo en la segunda: y + 3(90 - 2y) = 80 → -5y = -190 → y = 38."
+          "retroalimentacion": "La expresión es 15 + 8k; evaluada en k=5: 15 + 8(5) = 15 + 40 = $55."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada sistema con el método más conveniente para resolverlo.",
-          "columnaA": ["y = 5x - 2, 3x + y = 18", "2x + 3y = 12, 2x - y = 4", "x + y = 9, x - y = 3"],
-          "columnaB": ["Eliminación (restar directamente)", "Sustitución (una variable ya despejada)", "Eliminación (sumar directamente)"],
-          "parejasCorrectas": [1, 0, 2],
-          "retroalimentacion": "Cuando y ya está despejada conviene sustitución; cuando una variable tiene el mismo coeficiente en ambas ecuaciones conviene eliminación (restando si el signo es igual, sumando si es opuesto)."
+          "instruccion": "Relaciona cada expresión con su valor cuando x = 4.",
+          "columnaA": [
+            "3x + 1",
+            "2x - 5",
+            "5x"
+          ],
+          "columnaB": [
+            "20",
+            "3",
+            "13"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "3(4)+1=13; 2(4)-5=3; 5(4)=20."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
+      "tipo": "llenar_frase",
+      "frase": "El valor de 6x + 2 cuando x = 3 es ___.",
+      "respuestaCorrecta": "20",
+      "retroalimentacion": "6(3) + 2 = 18 + 2 = 20."
+    },
+    {
       "tipo": "opcion_multiple",
-      "pregunta": "Resuelve el sistema x + y = 14, x - y = 2. ¿Cuál es el valor de y?",
-      "opciones": ["6", "8", "4", "7"],
+      "pregunta": "¿Cuál expresión representa 'el doble de un número menos 9'?",
+      "opciones": [
+        "2x - 9",
+        "x - 9",
+        "9 - 2x",
+        "2x + 9"
+      ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "Sumando las ecuaciones: 2x = 16 → x = 8, y entonces y = 14 - 8 = 6."
+      "retroalimentacion": "'El doble de un número' es 2x, y 'menos 9' indica restar 9: 2x - 9."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "El par (5, 1) es solución del sistema 2x + y = 11, x - y = 4.",
+      "enunciado": "En la expresión 5m - 3, el coeficiente de m es 5.",
       "respuestaCorrecta": true,
-      "retroalimentacion": "2(5) + 1 = 11 ✓ y 5 - 1 = 4 ✓. Cumple ambas ecuaciones, así que sí es la solución."
+      "retroalimentacion": "El coeficiente es el número que multiplica a la variable; en 5m, ese número es 5."
     },
     {
-      "tipo": "llenar_frase",
-      "frase": "En el sistema y = 4x, x + y = 20, el valor de x es ___.",
-      "respuestaCorrecta": "4",
-      "retroalimentacion": "Sustituyendo: x + 4x = 20 → 5x = 20 → x = 4."
-    },
-    {
-      "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada sistema con su solución (x, y).",
-      "columnaA": ["x + y = 6, x - y = 2", "x + y = 20, x - y = 4", "x + y = 30, x - y = 10"],
-      "columnaB": ["(12, 8)", "(20, 10)", "(4, 2)"],
-      "parejasCorrectas": [2, 0, 1],
-      "retroalimentacion": "x + y = 6, x - y = 2 da (4,2); x + y = 20, x - y = 4 da (12,8); x + y = 30, x - y = 10 da (20,10)."
+      "tipo": "opcion_multiple",
+      "pregunta": "Un plan de telefonía cobra $100 fijos más $2 por cada minuto (m) usado. ¿Cuánto se paga por 40 minutos?",
+      "opciones": [
+        "$180",
+        "$140",
+        "$200",
+        "$102"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "La expresión es 100 + 2m; evaluada en m=40: 100 + 2(40) = 100 + 80 = $180."
     }
   ]
 }

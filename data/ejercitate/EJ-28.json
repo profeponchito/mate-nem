@@ -4,224 +4,267 @@
   "numero": 28,
   "categoria": "avanzado",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Forma, espacio y medida",
-  "titulo": "Teorema de Tales",
-  "contenido": "Proporcionalidad de segmentos generada por rectas paralelas cortadas por transversales, y su aplicación al cálculo de distancias y alturas.",
-  "pda": "Aplica el Teorema de Tales para establecer proporciones entre segmentos formados por rectas paralelas cortadas por transversales, y lo utiliza para calcular longitudes desconocidas en situaciones reales.",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Funciones lineales",
+  "contenido": "Identificación, tabulación y evaluación de funciones lineales de la forma y = mx + b, reconociendo pendiente y ordenada al origen.",
+  "pda": "Reconoce y evalúa funciones lineales de la forma y = mx + b, identifica su pendiente y ordenada al origen, y las aplica a situaciones de costo y distancia.",
   "problematizacion": {
-    "contexto": "En una calle, varios cables de luz corren paralelos entre los postes y cruzan dos banquetas que no son paralelas entre sí. Un electricista necesita calcular la distancia entre dos postes, pero no puede medir directamente porque hay un jardín cercado en medio.",
-    "pregunta": "¿Cómo puede el electricista usar las proporciones que forman los cables paralelos y las banquetas para encontrar esa distancia sin cruzar el jardín?"
+    "contexto": "Un taxi cobra una tarifa fija de $15 al abordar, más $8 por cada kilómetro recorrido. Mateo quiere saber cuánto pagará según la distancia de su viaje, antes de subir al taxi.",
+    "pregunta": "¿Existe una fórmula que le permita a Mateo calcular el costo del viaje solo con saber los kilómetros que recorrerá?"
   },
   "subtemas": [
     {
       "numero": "28.1",
-      "titulo": "¿Qué dice el Teorema de Tales?",
-      "explicacion": "El Teorema de Tales dice que cuando dos o más rectas paralelas son cortadas por dos rectas transversales (que no tienen que ser paralelas entre sí), los segmentos que se forman en una transversal son proporcionales a los segmentos correspondientes en la otra. Esto funciona porque las paralelas mantienen siempre la misma 'separación relativa', como si fueran las líneas de una cuadrícula que se estira o se encoge pero conserva sus proporciones.",
-      "formula": "Si a ‖ b ‖ c cortadas por dos transversales, entonces AB/BC = A'B'/B'C'",
+      "titulo": "¿Qué es una función lineal? La forma y = mx + b",
+      "explicacion": "Una función lineal es una regla que relaciona dos cantidades (x, y) mediante la fórmula y = mx + b, donde m y b son números fijos. Se llama 'lineal' porque, al graficarla, siempre forma una línea recta. En situaciones reales, x suele ser lo que tú controlas (por ejemplo los kilómetros recorridos) y y es el resultado que depende de x (por ejemplo el costo del viaje).",
       "ejemplos": [
-        "En una cancha, tres líneas paralelas pintadas en el piso son cruzadas por dos líneas rectas que salen de una esquina. Si en la primera transversal los segmentos miden 4 cm y 6 cm, en la segunda transversal los segmentos correspondientes guardan la misma razón 4:6 (es decir, 2:3).",
-        "Tres calles paralelas cortan dos avenidas. Si en la avenida 1 las distancias entre calles son 3 km y 5 km, en la avenida 2 esas mismas calles determinan segmentos en la razón 3:5."
+        "En y = 3x + 5, si x = 2, entonces y = 3(2) + 5 = 11.",
+        "La tarifa del taxi es y = 8x + 15, donde x son los kilómetros recorridos y y es el costo total."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "El Teorema de Tales establece que rectas paralelas cortadas por dos transversales determinan segmentos proporcionales.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: esa es exactamente la idea central del Teorema de Tales."
-        },
-        {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de las siguientes condiciones es indispensable para aplicar el Teorema de Tales?",
+          "pregunta": "En la función y = 4x + 7, ¿cuál es el valor de b?",
           "opciones": [
-            "Tener al menos dos rectas paralelas cortadas por transversales",
-            "Tener un triángulo rectángulo",
-            "Tener dos círculos concéntricos",
-            "Tener únicamente ángulos de 90°"
+            "4",
+            "7",
+            "11",
+            "0"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "El Teorema de Tales necesita rectas paralelas cruzadas por transversales; no requiere ángulos rectos ni círculos."
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "En y = mx + b, el número que va solo (sin multiplicar a x) es b; aquí b = 7."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Las dos transversales que cruzan las rectas paralelas deben medir exactamente lo mismo.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: las transversales pueden tener longitudes distintas; lo que importa es que los segmentos que forman sean proporcionales, no que midan igual."
+          "enunciado": "En la función y = 2x - 3, el valor de m es 2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "En y = mx + b, m es el número que multiplica a x; aquí m = 2."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En el Teorema de Tales, los segmentos que se forman sobre las transversales son ___ entre sí.",
-          "respuestaCorrecta": "proporcionales",
-          "retroalimentacion": "Los segmentos correspondientes guardan siempre la misma razón, es decir, son proporcionales."
+          "frase": "En la función lineal y = mx + b, la letra m representa la ___.",
+          "respuestaCorrecta": "pendiente",
+          "retroalimentacion": "La letra m es la pendiente: indica qué tan inclinada está la recta y cómo cambia y por cada unidad que cambia x."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada elemento del Teorema de Tales con su papel.",
-          "columnaA": [
-            "Rectas paralelas",
-            "Transversales",
-            "Segmentos correspondientes"
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes es una función lineal?",
+          "opciones": [
+            "y = 5x + 2",
+            "y = x² + 1",
+            "y = 3/x",
+            "y = √x"
           ],
-          "columnaB": [
-            "Líneas que cruzan a las paralelas y forman los segmentos",
-            "Mantienen siempre la misma separación relativa",
-            "Guardan la misma razón entre sí (son proporcionales)"
-          ],
-          "parejasCorrectas": [1, 0, 2],
-          "retroalimentacion": "Las paralelas mantienen su separación relativa, las transversales las cruzan formando segmentos, y esos segmentos correspondientes son proporcionales."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Una función lineal tiene la forma y = mx + b, sin exponentes, raíces ni x en el denominador; solo y = 5x + 2 cumple eso."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si y = 6x + 1 y x = 3, entonces y = ___.",
+          "respuestaCorrecta": "19",
+          "retroalimentacion": "Sustituyendo: y = 6(3) + 1 = 18 + 1 = 19."
         }
       ]
     },
     {
       "numero": "28.2",
-      "titulo": "Proporciones en triángulos con paralelas",
-      "explicacion": "Un caso muy común del Teorema de Tales ocurre dentro de un triángulo: si trazas una recta paralela a uno de los lados, esa paralela corta a los otros dos lados en segmentos proporcionales. Esto sucede porque la paralela crea un triángulo más pequeño, semejante al original, y todos sus lados se reducen (o aumentan) en la misma proporción.",
-      "formula": "Si en un triángulo ABC, DE ‖ BC (D en AB, E en AC), entonces AD/DB = AE/EC",
+      "titulo": "Pendiente y ordenada al origen",
+      "explicacion": "La pendiente (m) indica qué tan inclinada está la recta y cómo cambia y por cada unidad que aumenta x: si m es positiva, la recta sube; si es negativa, baja. La ordenada al origen (b) es el valor de y cuando x = 0, es decir, el punto exacto donde la recta cruza el eje Y. Cuando conoces dos puntos de la recta, también puedes calcular la pendiente dividiendo el cambio en y entre el cambio en x.",
+      "formula": "m = (y2 - y1) / (x2 - x1)",
       "ejemplos": [
-        "En un triángulo ABC, una línea paralela a BC corta a AB en D y a AC en E. Si AD=3, DB=6 y AE=4, entonces EC = (6×4)/3 = 8.",
-        "En un triángulo XYZ, PQ ‖ YZ (P en XY, Q en XZ). Si XP=5, PY=10 y XQ=8, entonces QZ = (10×8)/5 = 16."
+        "En y = -2x + 4, la pendiente es -2 (por cada unidad que aumenta x, y disminuye 2) y la ordenada al origen es 4 (el punto (0,4)).",
+        "Con los puntos (1,5) y (3,9): m = (9 - 5) / (3 - 1) = 4/2 = 2."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "llenar_frase",
-          "frase": "En un triángulo ABC, DE es paralela a BC, con D en AB y E en AC. Si AD=3 cm, DB=6 cm y AE=4 cm, entonces EC = ___ cm.",
-          "respuestaCorrecta": "8",
-          "retroalimentacion": "AD/DB = AE/EC → 3/6 = 4/EC → EC = (4×6)/3 = 8 cm."
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es la pendiente de la recta y = -5x + 2?",
+          "opciones": [
+            "-5",
+            "2",
+            "5",
+            "-2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La pendiente es el número que multiplica a x, aquí m = -5."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "En un triángulo XYZ, PQ ‖ YZ (P en XY, Q en XZ). Si XP=5, PY=10 y XQ=8, ¿cuánto mide QZ?",
-          "opciones": ["16", "13", "20", "10"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "XP/PY = XQ/QZ → 5/10 = 8/QZ → QZ = (8×10)/5 = 16."
+          "tipo": "llenar_frase",
+          "frase": "La ordenada al origen de la función y = 7x - 4 es ___.",
+          "respuestaCorrecta": "-4",
+          "retroalimentacion": "La ordenada al origen es el término independiente, el que no multiplica a x; aquí b = -4."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si una recta es paralela a un lado de un triángulo y corta a los otros dos lados, los divide en segmentos proporcionales.",
+          "enunciado": "La pendiente de la recta que pasa por los puntos (2,3) y (6,11) es 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: es el caso particular del Teorema de Tales aplicado a triángulos."
+          "retroalimentacion": "m = (11 - 3) / (6 - 2) = 8/4 = 2. El enunciado es correcto."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "En un triángulo con DE ‖ BC, AD=2, DB=5 y AE=6. Entonces EC = ___.",
-          "respuestaCorrecta": "15",
-          "retroalimentacion": "AD/DB = AE/EC → 2/5 = 6/EC → EC = (6×5)/2 = 15."
-        },
-        {
-          "tipo": "relacionar_columnas",
-          "instruccion": "En el triángulo ABC con DE ‖ BC (D en AB, E en AC), relaciona cada pareja de segmentos con lo que representa.",
-          "columnaA": ["AD y DB", "AE y EC", "DE y BC"],
-          "columnaB": [
-            "Segmentos en los que la paralela divide al lado AB",
-            "Segmentos en los que la paralela divide al lado AC",
-            "El lado paralelo y el lado original del triángulo (razón de semejanza)"
+          "tipo": "opcion_multiple",
+          "pregunta": "Calcula la pendiente de la recta que pasa por (0,1) y (4,9).",
+          "opciones": [
+            "2",
+            "4",
+            "8",
+            "1"
           ],
-          "parejasCorrectas": [0, 1, 2],
-          "retroalimentacion": "AD-DB corresponden a AB, AE-EC corresponden a AC, y DE-BC son el lado paralelo comparado con el lado completo."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "m = (9 - 1) / (4 - 0) = 8/4 = 2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué representa la ordenada al origen en la gráfica de una función lineal?",
+          "opciones": [
+            "El punto donde la recta cruza el eje Y",
+            "El punto donde la recta cruza el eje X",
+            "La inclinación de la recta",
+            "El valor máximo de y"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La ordenada al origen es el valor de y cuando x = 0, es decir, donde la recta cruza el eje Y."
         }
       ]
     },
     {
       "numero": "28.3",
-      "titulo": "Calcular segmentos desconocidos",
-      "explicacion": "Para encontrar un segmento desconocido con el Teorema de Tales, primero identifica qué segmentos se corresponden entre las dos transversales (o entre los dos lados del triángulo), luego arma la proporción y resuélvela multiplicando en cruz. El valor 'x' puede aparecer en cualquier posición de la proporción, así que hay que tener cuidado de despejarlo correctamente.",
+      "titulo": "Tabular y evaluar funciones lineales",
+      "explicacion": "Evaluar una función lineal significa sustituir un valor de x en la fórmula para calcular el valor correspondiente de y. Si repites este proceso con varios valores de x, obtienes una tabla de valores, muy útil para predecir resultados o para graficar la recta, ya que cada pareja (x, y) es un punto de esa recta.",
       "ejemplos": [
-        "Tres calles paralelas cruzan dos avenidas. En la avenida 1 los tramos miden 6 m y 9 m; en la avenida 2, el tramo correspondiente al de 6 m mide 8 m. El tramo x correspondiente al de 9 m se calcula: 6/9 = 8/x → x = (9×8)/6 = 12 m.",
-        "En una proporción de Tales 4/10 = 6/x, se despeja x multiplicando en cruz: x = (10×6)/4 = 15."
+        "Para y = 2x + 1: si x = 0, y = 1; si x = 1, y = 3; si x = 2, y = 5.",
+        "Para la tarifa del taxi y = 8x + 15: si x = 3 km, y = 8(3) + 15 = 39 pesos."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "llenar_frase",
-          "frase": "Dos rectas paralelas son cortadas por dos transversales. En la primera transversal los segmentos miden 4 cm y 10 cm; en la segunda, el segmento correspondiente al de 4 cm mide 6 cm. El segmento correspondiente al de 10 cm mide x = ___ cm.",
-          "respuestaCorrecta": "15",
-          "retroalimentacion": "4/10 = 6/x → x = (10×6)/4 = 15 cm."
+          "frase": "Si y = 3x + 2 y x = 5, entonces y = ___.",
+          "respuestaCorrecta": "17",
+          "retroalimentacion": "Sustituyendo: y = 3(5) + 2 = 15 + 2 = 17."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "En un solar, tres cercas paralelas son cruzadas por dos senderos. En el sendero A los tramos son 5 m y 7 m; en el sendero B, el tramo correspondiente al de 5 m mide 15 m. ¿Cuánto mide el tramo correspondiente al de 7 m?",
-          "opciones": ["21 m", "17 m", "10.7 m", "35 m"],
+          "pregunta": "Para la función y = -x + 10, ¿cuál es el valor de y cuando x = 4?",
+          "opciones": [
+            "6",
+            "14",
+            "4",
+            "-6"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "5/7 = 15/x → x = (7×15)/5 = 21 m."
+          "retroalimentacion": "Sustituyendo: y = -(4) + 10 = 6."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En la proporción de Tales 3/5 = 9/x, el valor de x es 15.",
+          "enunciado": "En la función y = 5x, cuando x = 0, y = 0.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "3/5 = 9/x → x = (5×9)/3 = 15. La afirmación es correcta."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "En un triángulo con DE ‖ BC, AD=6, DB=x, AE=9 y EC=12. El valor de x es ___.",
-          "respuestaCorrecta": "8",
-          "retroalimentacion": "AD/DB = AE/EC → 6/x = 9/12 → x = (6×12)/9 = 8."
+          "retroalimentacion": "Sustituyendo x = 0: y = 5(0) = 0. Esta función no tiene término independiente, así que b = 0."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada proporción de Tales con el valor correcto de x.",
-          "columnaA": ["2/3 = x/12", "5/x = 10/4", "x/7 = 6/14"],
-          "columnaB": ["x = 8", "x = 2", "x = 3"],
-          "parejasCorrectas": [0, 1, 2],
-          "retroalimentacion": "2/3=x/12 → x=8; 5/x=10/4 → x=2; x/7=6/14 → x=3."
+          "instruccion": "Relaciona cada valor de x con su valor de y en la función y = 4x - 1.",
+          "columnaA": [
+            "x = 0",
+            "x = 2",
+            "x = 5"
+          ],
+          "columnaB": [
+            "19",
+            "-1",
+            "7"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x=0: y=4(0)-1=-1. x=2: y=4(2)-1=7. x=5: y=4(5)-1=19."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un plan de celular cobra y = 5x + 100 pesos, donde x son los gigas usados extra. ¿Cuánto se paga si se usan 6 gigas extra?",
+          "opciones": [
+            "130",
+            "105",
+            "150",
+            "100"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Sustituyendo: y = 5(6) + 100 = 30 + 100 = 130 pesos."
         }
       ]
     },
     {
       "numero": "28.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: el Teorema de Tales dice que rectas paralelas cortadas por transversales (o por los lados de un triángulo) forman segmentos proporcionales. Para resolver, identifica los segmentos correspondientes, arma la proporción y despeja el valor buscado multiplicando en cruz. Una de sus aplicaciones más útiles es medir alturas de forma indirecta: comparando la sombra de un objeto de altura conocida con la sombra de un objeto que no se puede medir directamente.",
-      "formula": "altura objeto / sombra objeto = altura referencia / sombra referencia",
+      "explicacion": "Para trabajar con cualquier función lineal: identifica m (la pendiente, cuánto cambia y por cada unidad de x) y b (la ordenada al origen, el valor inicial cuando x = 0), sustituye el valor de x que te interese para evaluarla, e interpreta el resultado en el contexto del problema. En situaciones reales, una tarifa fija corresponde a b y un costo por unidad (por km, por hora, etc.) corresponde a m.",
       "ejemplos": [
-        "Un asta de 3 m proyecta una sombra de 2 m. Al mismo tiempo, un árbol proyecta una sombra de 10 m. Su altura es (3×10)/2 = 15 m.",
-        "Un poste de 2 m proyecta una sombra de 3 m; un edificio cercano proyecta una sombra de 18 m al mismo tiempo, así que su altura es (2×18)/3 = 12 m."
+        "La tarifa del taxi es y = 8x + 15. Si Mateo recorre 6 km, pagará y = 8(6) + 15 = 63 pesos.",
+        "Si un plomero cobra $200 fijos más $50 por hora, la función es y = 50x + 200; para 3 horas, y = 50(3) + 200 = 350 pesos."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un poste de 2 m de altura proyecta una sombra de 3 m. En el mismo momento, un edificio proyecta una sombra de 18 m. ¿Cuál es la altura del edificio?",
-          "opciones": ["12 m", "27 m", "9 m", "15 m"],
+          "pregunta": "Mateo aborda el taxi y recorre 5 km. Usando y = 8x + 15, ¿cuánto pagará?",
+          "opciones": [
+            "55",
+            "40",
+            "63",
+            "70"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "2/3 = x/18 → x = (2×18)/3 = 12 m."
+          "retroalimentacion": "Sustituyendo: y = 8(5) + 15 = 40 + 15 = 55 pesos."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Una persona de 1.6 m de estatura proyecta una sombra de 2 m. Un árbol cercano proyecta una sombra de 7.5 m al mismo tiempo. La altura del árbol es ___ m.",
-          "respuestaCorrecta": "6",
-          "retroalimentacion": "1.6/2 = x/7.5 → x = (1.6×7.5)/2 = 6 m."
+          "frase": "Una tienda de renta de bicicletas cobra $30 fijos más $12 por hora. La función que representa el costo es y = 12x + ___.",
+          "respuestaCorrecta": "30",
+          "retroalimentacion": "La tarifa fija (cuando x = 0) es la ordenada al origen b, que aquí vale 30."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "El método de las sombras para medir alturas funciona porque, en el mismo momento del día, los rayos del sol forman triángulos semejantes con cualquier objeto vertical y su sombra.",
+          "enunciado": "Si un plomero cobra y = 50x + 200 y trabaja 4 horas, cobrará $400.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: como los rayos del sol llegan paralelos, los triángulos objeto-sombra son semejantes y sus lados son proporcionales (Teorema de Tales)."
+          "retroalimentacion": "Sustituyendo: y = 50(4) + 200 = 200 + 200 = 400 pesos. El enunciado es correcto."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Una escalera recargada en una pared forma un triángulo con el suelo. Si a 2 m de la base de la escalera hay una marca de 1.5 m de altura sobre la pared, y la escalera llega hasta 4 m de la base, la escalera alcanza una altura de ___ m en la pared (usa 2/1.5 = 4/x).",
-          "respuestaCorrecta": "3",
-          "retroalimentacion": "2/1.5 = 4/x → x = (1.5×4)/2 = 3 m."
+          "tipo": "opcion_multiple",
+          "pregunta": "Una llamada de larga distancia cuesta $2 por minuto más una conexión fija de $5. Si Sofía habla 10 minutos, ¿cuánto paga?",
+          "opciones": [
+            "25",
+            "20",
+            "15",
+            "30"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La función es y = 2x + 5; con x = 10, y = 2(10) + 5 = 25 pesos."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con el dato que permite aplicar el Teorema de Tales.",
+          "instruccion": "Relaciona cada situación con su función lineal.",
           "columnaA": [
-            "Sombra de un poste y de un edificio",
-            "Segmentos de una calle cruzada por avenidas paralelas",
-            "Lados de un triángulo cortados por una paralela a la base"
+            "Tarifa fija de $10 más $6 por km",
+            "Renta de $50 más $15 por hora",
+            "Pago de $3 por minuto sin tarifa fija"
           ],
           "columnaB": [
-            "Razón altura/sombra igual para ambos objetos",
-            "Proporción entre los tramos que separan las avenidas",
-            "Segmentos proporcionales según el Teorema de Tales en triángulos"
+            "y = 3x",
+            "y = 15x + 50",
+            "y = 6x + 10"
           ],
-          "parejasCorrectas": [0, 1, 2],
-          "retroalimentacion": "En cada caso se compara una razón de segmentos correspondientes formados por paralelas y transversales."
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Tarifa fija más costo por unidad da y = mx + b, donde b es la tarifa fija y m el costo por unidad; sin tarifa fija, b = 0."
         }
       ]
     }
@@ -229,34 +272,39 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "En un triángulo ABC, DE ‖ BC. Si AD=4, AB=10 (por lo que DB=6) y AE=5, ¿cuánto mide EC?",
-      "opciones": ["7.5", "6", "8.3", "12"],
+      "pregunta": "En la función y = 9x - 2, ¿cuál es el valor de la pendiente?",
+      "opciones": [
+        "9",
+        "-2",
+        "2",
+        "-9"
+      ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "AD/DB = AE/EC → 4/6 = 5/EC → EC = (5×6)/4 = 7.5."
-    },
-    {
-      "tipo": "verdadero_falso",
-      "enunciado": "El Teorema de Tales solo se puede aplicar cuando las dos transversales forman un ángulo recto entre sí.",
-      "respuestaCorrecta": false,
-      "retroalimentacion": "Falso: las transversales pueden cruzarse en cualquier ángulo; lo único indispensable es que las rectas cortadas sean paralelas."
+      "retroalimentacion": "La pendiente es el número que multiplica a x; aquí m = 9."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "Un árbol proyecta una sombra de 12 m mientras una estaca de 1 m de altura proyecta una sombra de 1.5 m. La altura del árbol es ___ m.",
-      "respuestaCorrecta": "8",
-      "retroalimentacion": "1/1.5 = x/12 → x = (1×12)/1.5 = 8 m."
+      "frase": "Si y = 4x + 3 y x = 6, entonces y = ___.",
+      "respuestaCorrecta": "27",
+      "retroalimentacion": "Sustituyendo: y = 4(6) + 3 = 24 + 3 = 27."
     },
     {
-      "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada término con su definición.",
-      "columnaA": ["Segmentos proporcionales", "Recta transversal", "Triángulos semejantes"],
-      "columnaB": [
-        "Triángulos con ángulos iguales y lados en la misma razón",
-        "Recta que corta a las rectas paralelas",
-        "Segmentos que mantienen la misma razón entre sí"
+      "tipo": "verdadero_falso",
+      "enunciado": "La ordenada al origen de y = -3x + 8 es 8.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "La ordenada al origen es el término independiente; aquí b = 8."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un servicio de streaming cobra y = 3x + 40 pesos, donde x son las pantallas extra. ¿Cuánto se paga con 2 pantallas extra?",
+      "opciones": [
+        "46",
+        "43",
+        "49",
+        "40"
       ],
-      "parejasCorrectas": [2, 1, 0],
-      "retroalimentacion": "Los segmentos proporcionales guardan la misma razón, la transversal cruza a las paralelas, y los triángulos semejantes tienen ángulos iguales y lados proporcionales."
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Sustituyendo: y = 3(2) + 40 = 6 + 40 = 46 pesos."
     }
   ]
 }

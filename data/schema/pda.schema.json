@@ -89,12 +89,12 @@
   "definitions": {
     "pregunta": {
       "type": "object",
-      "description": "Una pregunta de cualquiera de los 4 tipos soportados. Los campos requeridos varían según 'tipo'.",
+      "description": "Una pregunta de cualquiera de los 5 tipos soportados. Los campos requeridos varían según 'tipo'.",
       "required": ["tipo", "retroalimentacion"],
       "properties": {
         "tipo": {
           "type": "string",
-          "enum": ["opcion_multiple", "verdadero_falso", "llenar_frase", "relacionar_columnas"]
+          "enum": ["opcion_multiple", "verdadero_falso", "llenar_frase", "relacionar_columnas", "algoritmo_columnas"]
         },
         "retroalimentacion": { "type": "string", "description": "Explicación mostrada después de responder, sea correcta o incorrecta." },
 
@@ -115,6 +115,30 @@
           "type": "array",
           "items": { "type": "integer" },
           "description": "[relacionar_columnas] Mismo orden que columnaA; cada valor es el índice en columnaB de su pareja correcta."
+        },
+
+        "operacion": {
+          "type": "string",
+          "enum": ["suma", "resta", "multiplicacion"],
+          "description": "[algoritmo_columnas] Qué operación representa el algoritmo vertical dibujado (Paso 18). Determina solo el texto de apoyo mostrado, no la validación — la validación siempre compara dígito por dígito contra 'valor'."
+        },
+        "filas": {
+          "type": "array",
+          "minItems": 2,
+          "description": "[algoritmo_columnas] Las filas del algoritmo vertical, en orden de arriba hacia abajo: primero los operandos (y, en una multiplicación con multiplicador de 2+ cifras, los productos parciales), al final la fila con 'esResultado':true (bajo la línea horizontal). Todas las filas se alinean a la derecha como en un algoritmo escrito en papel.",
+          "items": {
+            "type": "object",
+            "required": ["valor"],
+            "properties": {
+              "valor": { "type": "string", "pattern": "^[0-9]+(\\.[0-9]+)?$", "description": "El número COMPLETO y correcto de esta fila (con punto decimal si aplica), tal como debe quedar una vez resuelto — de aquí se derivan tanto los dígitos ya dados como los correctos de las casillas vacías." },
+              "signo": { "type": "string", "enum": ["+", "-", "×"], "description": "Si se muestra un signo de operación a la izquierda de esta fila (normalmente solo en la última fila de operandos/productos parciales, justo arriba de la línea)." },
+              "esResultado": { "type": "boolean", "description": "true en la fila del resultado final (se dibuja una línea horizontal arriba de ella)." }
+            }
+          }
+        },
+        "ocultos": {
+          "type": "array",
+          "description": "[algoritmo_columnas] Mismo largo y mismo orden que 'filas': para cada fila, la lista de posiciones (índice de carácter dentro de 'valor', 0 = el dígito más a la izquierda; si 'valor' tiene punto decimal, el punto también cuenta como una posición del string pero nunca debe marcarse como oculto) que se muestran como casilla vacía para que el alumno la complete. Las posiciones que NO aparecen aquí se muestran como dígito ya escrito (dado)."
         }
       }
     }

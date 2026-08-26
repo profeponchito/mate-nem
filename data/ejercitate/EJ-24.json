@@ -2,200 +2,284 @@
   "id": "EJ-24",
   "grado": "Ejercítate",
   "numero": 24,
-  "categoria": "avanzado",
+  "categoria": "intermedio",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Funciones lineales",
-  "contenido": "Identificación, tabulación y evaluación de funciones lineales de la forma y = mx + b, reconociendo pendiente y ordenada al origen.",
-  "pda": "Reconoce y evalúa funciones lineales de la forma y = mx + b, identifica su pendiente y ordenada al origen, y las aplica a situaciones de costo y distancia.",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Perímetro y área de figuras planas",
+  "contenido": "Cálculo del perímetro de polígonos y del área de triángulos, cuadriláteros y figuras compuestas.",
+  "pda": "Calcula el perímetro y el área de figuras planas (triángulos, cuadriláteros y figuras compuestas) aplicándolos a la solución de problemas de medición en contextos reales.",
   "problematizacion": {
-    "contexto": "Un taxi cobra una tarifa fija de $15 al abordar, más $8 por cada kilómetro recorrido. Mateo quiere saber cuánto pagará según la distancia de su viaje, antes de subir al taxi.",
-    "pregunta": "¿Existe una fórmula que le permita a Mateo calcular el costo del viaje solo con saber los kilómetros que recorrerá?"
+    "contexto": "La familia Ramírez quiere cercar con malla un terreno rectangular de su patio para hacer un jardín, y después cubrir toda la superficie con pasto en rollo.",
+    "pregunta": "¿Qué operación necesitan usar para saber cuántos metros de malla comprar, y cuál para saber cuántos metros cuadrados de pasto necesitan?"
   },
   "subtemas": [
     {
       "numero": "24.1",
-      "titulo": "¿Qué es una función lineal? La forma y = mx + b",
-      "explicacion": "Una función lineal es una regla que relaciona dos cantidades (x, y) mediante la fórmula y = mx + b, donde m y b son números fijos. Se llama 'lineal' porque, al graficarla, siempre forma una línea recta. En situaciones reales, x suele ser lo que tú controlas (por ejemplo los kilómetros recorridos) y y es el resultado que depende de x (por ejemplo el costo del viaje).",
+      "titulo": "Perímetro de polígonos",
+      "explicacion": "El perímetro es la medida del contorno de una figura: se obtiene sumando la longitud de todos sus lados. En un polígono regular, como todos los lados miden lo mismo, basta con multiplicar la medida de un lado por el número de lados. El perímetro sirve para saber cuánto material se necesita para bordear algo, como una cerca o un marco.",
+      "formula": "P = suma de todos los lados; polígono regular: P = n · lado",
       "ejemplos": [
-        "En y = 3x + 5, si x = 2, entonces y = 3(2) + 5 = 11.",
-        "La tarifa del taxi es y = 8x + 15, donde x son los kilómetros recorridos y y es el costo total."
+        "Un rectángulo de 8 m por 5 m tiene perímetro 2(8)+2(5) = 26 m.",
+        "Un hexágono regular de lado 4 cm tiene perímetro 6×4 = 24 cm."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "En la función y = 4x + 7, ¿cuál es el valor de b?",
-          "opciones": ["4", "7", "11", "0"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "En y = mx + b, el número que va solo (sin multiplicar a x) es b; aquí b = 7."
+          "pregunta": "¿Cuál es el perímetro de un rectángulo de 12 m de largo y 7 m de ancho?",
+          "opciones": [
+            "38 m",
+            "19 m",
+            "84 m",
+            "36 m"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El perímetro de un rectángulo es 2×(largo+ancho): 2×(12+7)=38 m."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro de un cuadrado de lado 9 cm es ___ cm.",
+          "respuestaCorrecta": "36",
+          "retroalimentacion": "Un cuadrado tiene 4 lados iguales: 9×4=36 cm."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En la función y = 2x - 3, el valor de m es 2.",
+          "enunciado": "El perímetro de un pentágono regular de lado 6 cm es 30 cm.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "En y = mx + b, m es el número que multiplica a x; aquí m = 2."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "En la función lineal y = mx + b, la letra m representa la ___.",
-          "respuestaCorrecta": "pendiente",
-          "retroalimentacion": "La letra m es la pendiente: indica qué tan inclinada está la recta y cómo cambia y por cada unidad que cambia x."
+          "retroalimentacion": "Un pentágono regular tiene 5 lados iguales: 5×6=30 cm."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de las siguientes es una función lineal?",
-          "opciones": ["y = 5x + 2", "y = x² + 1", "y = 3/x", "y = √x"],
+          "pregunta": "Un triángulo tiene lados de 5 cm, 7 cm y 9 cm. ¿Cuál es su perímetro?",
+          "opciones": [
+            "21 cm",
+            "24 cm",
+            "19 cm",
+            "16 cm"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Una función lineal tiene la forma y = mx + b, sin exponentes, raíces ni x en el denominador; solo y = 5x + 2 cumple eso."
+          "retroalimentacion": "Se suman los tres lados: 5+7+9=21 cm."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Si y = 6x + 1 y x = 3, entonces y = ___.",
-          "respuestaCorrecta": "19",
-          "retroalimentacion": "Sustituyendo: y = 6(3) + 1 = 18 + 1 = 19."
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada figura con su perímetro.",
+          "columnaA": [
+            "Cuadrado de lado 5 cm",
+            "Rectángulo de 10 cm x 3 cm",
+            "Hexágono regular de lado 2 cm"
+          ],
+          "columnaB": [
+            "12 cm",
+            "26 cm",
+            "20 cm"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Cuadrado lado 5: 4×5=20 cm. Rectángulo 10x3: 2×(10+3)=26 cm. Hexágono lado 2: 6×2=12 cm."
         }
       ]
     },
     {
       "numero": "24.2",
-      "titulo": "Pendiente y ordenada al origen",
-      "explicacion": "La pendiente (m) indica qué tan inclinada está la recta y cómo cambia y por cada unidad que aumenta x: si m es positiva, la recta sube; si es negativa, baja. La ordenada al origen (b) es el valor de y cuando x = 0, es decir, el punto exacto donde la recta cruza el eje Y. Cuando conoces dos puntos de la recta, también puedes calcular la pendiente dividiendo el cambio en y entre el cambio en x.",
-      "formula": "m = (y2 - y1) / (x2 - x1)",
+      "titulo": "Área de triángulos y cuadriláteros",
+      "explicacion": "El área mide cuánta superficie cubre una figura. Para triángulos se multiplica la base por la altura y se divide entre 2, porque un triángulo es 'la mitad' de un rectángulo con la misma base y altura. En rectángulos y paralelogramos se multiplica base por altura, y en trapecios se promedian las dos bases antes de multiplicar por la altura.",
+      "formula": "Triángulo: A = (b·h)/2 ; Rectángulo/paralelogramo: A = b·h ; Trapecio: A = ((B+b)·h)/2",
       "ejemplos": [
-        "En y = -2x + 4, la pendiente es -2 (por cada unidad que aumenta x, y disminuye 2) y la ordenada al origen es 4 (el punto (0,4)).",
-        "Con los puntos (1,5) y (3,9): m = (9 - 5) / (3 - 1) = 4/2 = 2."
+        "Un triángulo con base 10 cm y altura 6 cm tiene área (10×6)/2=30 cm².",
+        "Un trapecio con bases 8 cm y 4 cm y altura 5 cm tiene área ((8+4)×5)/2=30 cm²."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es la pendiente de la recta y = -5x + 2?",
-          "opciones": ["-5", "2", "5", "-2"],
+          "pregunta": "¿Cuál es el área de un triángulo con base 14 cm y altura 8 cm?",
+          "opciones": [
+            "56 cm²",
+            "112 cm²",
+            "22 cm²",
+            "44 cm²"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La pendiente es el número que multiplica a x, aquí m = -5."
+          "retroalimentacion": "Área = (base×altura)/2 = (14×8)/2=56 cm²."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "La ordenada al origen de la función y = 7x - 4 es ___.",
-          "respuestaCorrecta": "-4",
-          "retroalimentacion": "La ordenada al origen es el término independiente, el que no multiplica a x; aquí b = -4."
+          "frase": "El área de un rectángulo de 9 m de base y 4 m de altura es ___ m².",
+          "respuestaCorrecta": "36",
+          "retroalimentacion": "Área = base×altura = 9×4=36 m²."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "La pendiente de la recta que pasa por los puntos (2,3) y (6,11) es 2.",
+          "enunciado": "El área de un cuadrado de lado 7 cm es 49 cm².",
           "respuestaCorrecta": true,
-          "retroalimentacion": "m = (11 - 3) / (6 - 2) = 8/4 = 2. El enunciado es correcto."
+          "retroalimentacion": "El área de un cuadrado es lado×lado: 7×7=49 cm²."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Calcula la pendiente de la recta que pasa por (0,1) y (4,9).",
-          "opciones": ["2", "4", "8", "1"],
+          "pregunta": "¿Cuál es el área de un trapecio con bases de 10 cm y 6 cm y altura de 4 cm?",
+          "opciones": [
+            "32 cm²",
+            "64 cm²",
+            "40 cm²",
+            "16 cm²"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "m = (9 - 1) / (4 - 0) = 8/4 = 2."
+          "retroalimentacion": "Área = ((base mayor+base menor)×altura)/2 = ((10+6)×4)/2=32 cm²."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Qué representa la ordenada al origen en la gráfica de una función lineal?",
-          "opciones": ["El punto donde la recta cruza el eje Y", "El punto donde la recta cruza el eje X", "La inclinación de la recta", "El valor máximo de y"],
+          "pregunta": "¿Cuál es el área de un paralelogramo con base 12 cm y altura 5 cm?",
+          "opciones": [
+            "60 cm²",
+            "17 cm²",
+            "34 cm²",
+            "30 cm²"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La ordenada al origen es el valor de y cuando x = 0, es decir, donde la recta cruza el eje Y."
+          "retroalimentacion": "Área = base×altura = 12×5=60 cm²."
         }
       ]
     },
     {
       "numero": "24.3",
-      "titulo": "Tabular y evaluar funciones lineales",
-      "explicacion": "Evaluar una función lineal significa sustituir un valor de x en la fórmula para calcular el valor correspondiente de y. Si repites este proceso con varios valores de x, obtienes una tabla de valores, muy útil para predecir resultados o para graficar la recta, ya que cada pareja (x, y) es un punto de esa recta.",
+      "titulo": "Área de figuras compuestas",
+      "explicacion": "Una figura compuesta es la que se forma al unir o recortar figuras simples (rectángulos, triángulos, etc.). Para hallar su área, se descompone en las figuras simples que la forman: si están unidas, se suman sus áreas; si una parte fue recortada, se resta. Dibujar líneas auxiliares ayuda a ver claramente en qué figuras se puede dividir.",
       "ejemplos": [
-        "Para y = 2x + 1: si x = 0, y = 1; si x = 1, y = 3; si x = 2, y = 5.",
-        "Para la tarifa del taxi y = 8x + 15: si x = 3 km, y = 8(3) + 15 = 39 pesos."
+        "Una sala en forma de L se descompone en dos rectángulos: uno de 6×3=18 m² y otro de 4×2=8 m², área total 26 m².",
+        "Un terreno rectangular de 10×8 con una esquina triangular recortada (base 4, altura 3, área 6) tiene área final 80-6=74 m²."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "llenar_frase",
-          "frase": "Si y = 3x + 2 y x = 5, entonces y = ___.",
-          "respuestaCorrecta": "17",
-          "retroalimentacion": "Sustituyendo: y = 3(5) + 2 = 15 + 2 = 17."
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sala tiene forma de L: un rectángulo de 6 m x 4 m unido a otro de 3 m x 2 m. ¿Cuál es el área total?",
+          "opciones": [
+            "30 m²",
+            "24 m²",
+            "18 m²",
+            "36 m²"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se suman las dos áreas: (6×4)+(3×2)=24+6=30 m²."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Para la función y = -x + 10, ¿cuál es el valor de y cuando x = 4?",
-          "opciones": ["6", "14", "4", "-6"],
+          "pregunta": "Un terreno rectangular de 15 m x 8 m tiene una esquina triangular recortada de base 4 m y altura 3 m (para una banqueta). ¿Cuál es el área útil del terreno?",
+          "opciones": [
+            "114 m²",
+            "120 m²",
+            "108 m²",
+            "126 m²"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sustituyendo: y = -(4) + 10 = 6."
+          "retroalimentacion": "Área del rectángulo: 15×8=120 m². Área del triángulo recortado: (4×3)/2=6 m². Área útil: 120-6=114 m²."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Una figura compuesta por un rectángulo de 5 m x 3 m y un triángulo de base 5 m y altura 4 m (unidos) tiene un área total de ___ m².",
+          "respuestaCorrecta": "25",
+          "retroalimentacion": "Rectángulo: 5×3=15 m². Triángulo: (5×4)/2=10 m². Total: 15+10=25 m²."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En la función y = 5x, cuando x = 0, y = 0.",
+          "enunciado": "Para hallar el área de una figura compuesta, se puede dividir en figuras simples y sumar (o restar) sus áreas.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Sustituyendo x = 0: y = 5(0) = 0. Esta función no tiene término independiente, así que b = 0."
+          "retroalimentacion": "Correcto: se identifican las figuras simples que la forman y se suman si están unidas o se restan si fueron recortadas."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada valor de x con su valor de y en la función y = 4x - 1.",
-          "columnaA": ["x = 0", "x = 2", "x = 5"],
-          "columnaB": ["19", "-1", "7"],
-          "parejasCorrectas": [1, 2, 0],
-          "retroalimentacion": "x=0: y=4(0)-1=-1. x=2: y=4(2)-1=7. x=5: y=4(5)-1=19."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un plan de celular cobra y = 5x + 100 pesos, donde x son los gigas usados extra. ¿Cuánto se paga si se usan 6 gigas extra?",
-          "opciones": ["130", "105", "150", "100"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Sustituyendo: y = 5(6) + 100 = 30 + 100 = 130 pesos."
+          "instruccion": "Relaciona cada figura compuesta con su área total.",
+          "columnaA": [
+            "Rectángulo 8x5 más triángulo base 4 altura 3 (unidos)",
+            "Rectángulo 10x6 menos triángulo base 4 altura 3 (recortado)",
+            "Cuadrado de lado 6 más rectángulo 2x3"
+          ],
+          "columnaB": [
+            "42 cm²",
+            "54 cm²",
+            "46 cm²"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "8x5+((4×3)/2)=40+6=46. 10x6-((4×3)/2)=60-6=54. 6x6+2x3=36+6=42."
         }
       ]
     },
     {
       "numero": "24.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Para trabajar con cualquier función lineal: identifica m (la pendiente, cuánto cambia y por cada unidad de x) y b (la ordenada al origen, el valor inicial cuando x = 0), sustituye el valor de x que te interese para evaluarla, e interpreta el resultado en el contexto del problema. En situaciones reales, una tarifa fija corresponde a b y un costo por unidad (por km, por hora, etc.) corresponde a m.",
+      "explicacion": "Recuerda: el perímetro (suma de los lados) indica cuánto material se necesita para bordear una figura, como una cerca; el área (superficie que cubre) indica cuánto se necesita para cubrirla, como pasto o piso. Para figuras compuestas, se descompone en partes simples y se suman o restan sus áreas según estén unidas o recortadas.",
       "ejemplos": [
-        "La tarifa del taxi es y = 8x + 15. Si Mateo recorre 6 km, pagará y = 8(6) + 15 = 63 pesos.",
-        "Si un plomero cobra $200 fijos más $50 por hora, la función es y = 50x + 200; para 3 horas, y = 50(3) + 200 = 350 pesos."
+        "Un jardín rectangular de 20 m x 12 m necesita 2(20+12)=64 m de malla perimetral y 20×12=240 m² de pasto.",
+        "Si al jardín se le quita una zona cuadrada de 4 m de lado para un andador, el área de pasto real es 240-16=224 m²."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Mateo aborda el taxi y recorre 5 km. Usando y = 8x + 15, ¿cuánto pagará?",
-          "opciones": ["55", "40", "63", "70"],
+          "pregunta": "Un terreno rectangular mide 18 m de largo y 10 m de ancho. ¿Cuántos metros de malla se necesitan para cercarlo completo?",
+          "opciones": [
+            "56 m",
+            "180 m",
+            "28 m",
+            "90 m"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Sustituyendo: y = 8(5) + 15 = 40 + 15 = 55 pesos."
+          "retroalimentacion": "Perímetro = 2×(largo+ancho) = 2×(18+10)=56 m."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Una tienda de renta de bicicletas cobra $30 fijos más $12 por hora. La función que representa el costo es y = 12x + ___.",
-          "respuestaCorrecta": "30",
-          "retroalimentacion": "La tarifa fija (cuando x = 0) es la ordenada al origen b, que aquí vale 30."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "Si un plomero cobra y = 50x + 200 y trabaja 4 horas, cobrará $400.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Sustituyendo: y = 50(4) + 200 = 200 + 200 = 400 pesos. El enunciado es correcto."
+          "frase": "El área de pasto necesaria para cubrir el mismo terreno de 18 m x 10 m es ___ m².",
+          "respuestaCorrecta": "180",
+          "retroalimentacion": "Área = largo×ancho = 18×10=180 m²."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Una llamada de larga distancia cuesta $2 por minuto más una conexión fija de $5. Si Sofía habla 10 minutos, ¿cuánto paga?",
-          "opciones": ["25", "20", "15", "30"],
+          "pregunta": "Un jardín cuadrado de 14 m de lado tiene un camino rectangular de 14 m x 2 m que lo atraviesa (sin pasto). ¿Cuántos m² de pasto se necesitan?",
+          "opciones": [
+            "168 m²",
+            "196 m²",
+            "28 m²",
+            "182 m²"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La función es y = 2x + 5; con x = 10, y = 2(10) + 5 = 25 pesos."
+          "retroalimentacion": "Área del jardín: 14×14=196 m². Área del camino: 14×2=28 m². Área con pasto: 196-28=168 m²."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro se usa para saber cuánto material se necesita para bordear una figura, y el área para saber cuánto se necesita para cubrir su superficie.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: el perímetro mide el contorno (por ejemplo, una cerca) y el área mide la superficie (por ejemplo, pasto o piso)."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con su función lineal.",
-          "columnaA": ["Tarifa fija de $10 más $6 por km", "Renta de $50 más $15 por hora", "Pago de $3 por minuto sin tarifa fija"],
-          "columnaB": ["y = 3x", "y = 15x + 50", "y = 6x + 10"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "Tarifa fija más costo por unidad da y = mx + b, donde b es la tarifa fija y m el costo por unidad; sin tarifa fija, b = 0."
+          "instruccion": "Relaciona cada terreno con la cantidad correcta que necesita.",
+          "columnaA": [
+            "Cercar un terreno de 9 m x 6 m",
+            "Cubrir de pasto un terreno de 9 m x 6 m",
+            "Cercar un terreno cuadrado de lado 10 m"
+          ],
+          "columnaB": [
+            "40 m",
+            "54 m²",
+            "30 m"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Cercar 9x6: 2×(9+6)=30 m. Cubrir 9x6: 9×6=54 m². Cercar cuadrado de 10: 4×10=40 m."
         }
       ]
     }
@@ -203,29 +287,39 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "En la función y = 9x - 2, ¿cuál es el valor de la pendiente?",
-      "opciones": ["9", "-2", "2", "-9"],
+      "pregunta": "¿Cuál es el perímetro de un triángulo equilátero de lado 8 cm?",
+      "opciones": [
+        "24 cm",
+        "16 cm",
+        "32 cm",
+        "20 cm"
+      ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "La pendiente es el número que multiplica a x; aquí m = 9."
+      "retroalimentacion": "Un triángulo equilátero tiene 3 lados iguales: 3×8=24 cm."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "Si y = 4x + 3 y x = 6, entonces y = ___.",
-      "respuestaCorrecta": "27",
-      "retroalimentacion": "Sustituyendo: y = 4(6) + 3 = 24 + 3 = 27."
+      "frase": "El área de un triángulo con base 16 cm y altura 5 cm es ___ cm².",
+      "respuestaCorrecta": "40",
+      "retroalimentacion": "Área = (base×altura)/2 = (16×5)/2=40 cm²."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "La ordenada al origen de y = -3x + 8 es 8.",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "La ordenada al origen es el término independiente; aquí b = 8."
+      "enunciado": "Un rectángulo de 7 m x 3 m tiene la misma área que uno de 6 m x 4 m.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "7×3=21 m² y 6×4=24 m²; las áreas son distintas."
     },
     {
       "tipo": "opcion_multiple",
-      "pregunta": "Un servicio de streaming cobra y = 3x + 40 pesos, donde x son las pantallas extra. ¿Cuánto se paga con 2 pantallas extra?",
-      "opciones": ["46", "43", "49", "40"],
+      "pregunta": "Un patio compuesto por un rectángulo de 12 m x 5 m y un triángulo adicional de base 5 m y altura 4 m tiene un área total de:",
+      "opciones": [
+        "70 m²",
+        "60 m²",
+        "65 m²",
+        "75 m²"
+      ],
       "respuestaCorrecta": 0,
-      "retroalimentacion": "Sustituyendo: y = 3(2) + 40 = 6 + 40 = 46 pesos."
+      "retroalimentacion": "Rectángulo: 12×5=60 m². Triángulo: (5×4)/2=10 m². Total: 60+10=70 m²."
     }
   ]
 }

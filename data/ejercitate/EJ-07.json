@@ -28,7 +28,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un jardín se dividió en 6 partes iguales y se sembraron flores en 4 de ellas. ¿Qué fracción del jardín tiene flores?",
-          "opciones": ["4/6", "6/4", "2/6", "4/2"],
+          "opciones": [
+            "4/6",
+            "6/4",
+            "2/6",
+            "4/2"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Se tomaron 4 partes de las 6 partes iguales en que se dividió el jardín, por eso la fracción es 4/6."
         },
@@ -47,20 +52,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un pastel se partió en 10 rebanadas iguales. Si se sirvieron 7 rebanadas, ¿qué fracción del pastel queda sin servir?",
-          "opciones": ["3/10", "7/10", "3/7", "10/7"],
+          "opciones": [
+            "3/10",
+            "7/10",
+            "3/7",
+            "10/7"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Si se sirvieron 7 de 10, quedan 10-7=3 rebanadas, es decir 3/10 del pastel."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada término con su definición.",
-          "columnaA": ["Numerador", "Denominador", "Línea de fracción"],
+          "columnaA": [
+            "Numerador",
+            "Denominador",
+            "Línea de fracción"
+          ],
           "columnaB": [
             "Indica cuántas partes se tomaron del entero",
             "Indica en cuántas partes iguales se dividió el entero",
             "Separa el numerador del denominador y significa 'entre'"
           ],
-          "parejasCorrectas": [0, 1, 2],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
           "retroalimentacion": "El numerador (arriba) indica las partes tomadas; el denominador (abajo) las partes totales iguales; la línea de fracción significa 'entre' y separa ambos."
         }
       ]
@@ -79,7 +97,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál de las siguientes fracciones es impropia?",
-          "opciones": ["3/5", "7/8", "11/6", "2/9"],
+          "opciones": [
+            "3/5",
+            "7/8",
+            "11/6",
+            "2/9"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "11/6 es impropia porque el numerador (11) es mayor que el denominador (6); representa más de un entero."
         },
@@ -98,20 +121,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un albañil necesita 17/5 bultos de cemento para una obra. ¿Cómo se expresa esta cantidad como número mixto?",
-          "opciones": ["3 2/5 bultos", "2 3/5 bultos", "5 2/3 bultos", "17 5/1 bultos"],
+          "opciones": [
+            "3 2/5 bultos",
+            "2 3/5 bultos",
+            "5 2/3 bultos",
+            "17 5/1 bultos"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "17 entre 5 = 3 con residuo 2, entonces 17/5 = 3 2/5 bultos."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada fracción con su tipo.",
-          "columnaA": ["7/9", "10/3", "6/6"],
+          "columnaA": [
+            "7/9",
+            "10/3",
+            "6/6"
+          ],
           "columnaB": [
             "Es menor que un entero (propia)",
             "Es mayor que un entero (impropia)",
             "Es exactamente un entero (impropia, numerador = denominador)"
           ],
-          "parejasCorrectas": [0, 1, 2],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
           "retroalimentacion": "7/9 es propia (7<9); 10/3 es impropia y mayor que un entero (10>3); 6/6 es impropia pero igual a exactamente 1 entero (numerador = denominador)."
         }
       ]
@@ -130,7 +166,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Para ubicar la fracción 5/6 en la recta numérica entre 0 y 1, ¿en cuántas partes iguales debes dividir ese segmento?",
-          "opciones": ["5", "6", "11", "1"],
+          "opciones": [
+            "5",
+            "6",
+            "11",
+            "1"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "El denominador (6) indica en cuántas partes iguales se divide el segmento entre 0 y 1; luego se cuentan 5 de esas partes."
         },
@@ -149,20 +190,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Un rectángulo dividido en 9 cuadros iguales tiene 4 cuadros sombreados. ¿Qué fracción representa la parte sombreada?",
-          "opciones": ["4/9", "9/4", "5/9", "4/5"],
+          "opciones": [
+            "4/9",
+            "9/4",
+            "5/9",
+            "4/5"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Se sombrearon 4 de los 9 cuadros iguales, por lo que la fracción es 4/9."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada fracción con su ubicación aproximada en la recta numérica entre 0 y 1.",
-          "columnaA": ["1/4", "1/2", "3/4"],
+          "columnaA": [
+            "1/4",
+            "1/2",
+            "3/4"
+          ],
           "columnaB": [
             "Muy cerca de 0, apenas pasado el inicio",
             "Justo a la mitad del segmento",
             "Cerca de 1, casi al final del segmento"
           ],
-          "parejasCorrectas": [0, 1, 2],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
           "retroalimentacion": "1/4 está cerca del inicio; 1/2 está justo a la mitad; 3/4 está cerca del final del segmento entre 0 y 1."
         }
       ]
@@ -181,7 +235,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "Sobraron 2 pizzas completas más 5 rebanadas de una pizza cortada en 8. ¿Cuál es la fracción mixta que representa el total de pizza sobrante?",
-          "opciones": ["2 5/8", "5 2/8", "2 3/8", "8 5/2"],
+          "opciones": [
+            "2 5/8",
+            "5 2/8",
+            "2 3/8",
+            "8 5/2"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Hay 2 enteros completos más 5/8 de otra pizza, entonces la fracción mixta es 2 5/8."
         },
@@ -200,20 +259,33 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál de las siguientes fracciones es propia?",
-          "opciones": ["9/8", "8/8", "5/8", "21/8"],
+          "opciones": [
+            "9/8",
+            "8/8",
+            "5/8",
+            "21/8"
+          ],
           "respuestaCorrecta": 2,
           "retroalimentacion": "5/8 es propia porque 5 es menor que 8; las demás son impropias o iguales a un entero."
         },
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada fracción con su clasificación correcta.",
-          "columnaA": ["3/10", "17/10", "10/10"],
+          "columnaA": [
+            "3/10",
+            "17/10",
+            "10/10"
+          ],
           "columnaB": [
             "Propia, menor que un entero",
             "Impropia, mayor que un entero",
             "Impropia, exactamente igual a un entero"
           ],
-          "parejasCorrectas": [0, 1, 2],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
           "retroalimentacion": "3/10 es propia (menor que un entero); 17/10 es impropia y mayor que un entero; 10/10 es impropia pero igual exactamente a 1 entero."
         }
       ]
@@ -223,7 +295,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "Un salón tiene 24 estudiantes; 9 usan lentes. ¿Qué fracción de estudiantes usa lentes?",
-      "opciones": ["9/24", "24/9", "9/15", "15/9"],
+      "opciones": [
+        "9/24",
+        "24/9",
+        "9/15",
+        "15/9"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "9 de los 24 estudiantes usan lentes, así que la fracción es 9/24."
     },
@@ -247,8 +324,16 @@
         "Una caja con 20 chocolates, de los cuales 20 son de leche",
         "Una cinta dividida en 6 partes iguales con 1 usada"
       ],
-      "columnaB": ["1/6", "20/20", "5/8"],
-      "parejasCorrectas": [2, 1, 0],
+      "columnaB": [
+        "1/6",
+        "20/20",
+        "5/8"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
       "retroalimentacion": "El pastel comido es 5/8; la caja completa de chocolates es 20/20 (un entero); la cinta usada es 1/6."
     }
   ]

@@ -2,233 +2,287 @@
   "id": "EJ-31",
   "grado": "Ejercítate",
   "numero": 31,
-  "categoria": "estadistica",
+  "categoria": "avanzado",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Análisis de datos y probabilidad",
-  "titulo": "Población y muestra",
-  "contenido": "Diferencia entre población y muestra, tipos de muestreo y su uso en la recolección de datos.",
-  "pda": "Distingue entre población y muestra en situaciones de la vida cotidiana y explica por qué se usa el muestreo para obtener información representativa de manera eficiente.",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Semejanza de triángulos",
+  "contenido": "Condiciones para que dos triángulos sean semejantes (ángulos iguales y lados proporcionales) y cálculo de lados desconocidos usando la razón de semejanza.",
+  "pda": "Identifica condiciones de semejanza entre triángulos, aplica el criterio AA para justificarla y calcula la razón de semejanza y lados desconocidos para resolver problemas de medición indirecta.",
   "problematizacion": {
-    "contexto": "Una maestra quiere saber la opinión de los 900 alumnos de su secundaria sobre el menú de la cafetería, pero no tiene tiempo de preguntarle a cada uno. Decide elegir al azar solo a 90 alumnos y preguntarles a ellos.",
-    "pregunta": "¿Los 90 alumnos que sí contestó representan de verdad la opinión de los 900, o hace falta preguntarle a todos?"
+    "contexto": "Para la feria de la escuela, el comité de decoración diseñó un triángulo pequeño (base 6 cm, altura 4 cm) para el programa impreso del evento. Después, para el letrero gigante de bienvenida en la entrada, ampliaron exactamente el mismo triángulo, conservando su forma, pero 5 veces más grande.",
+    "pregunta": "Si el triángulo grande tiene exactamente la misma forma que el pequeño pero distinto tamaño, ¿qué debe cumplirse entre sus ángulos y entre sus lados para que en verdad sean 'el mismo diseño, a otra escala'?"
   },
   "subtemas": [
     {
       "numero": "31.1",
-      "titulo": "¿Qué es población y qué es muestra?",
-      "explicacion": "En estadística, la población es el conjunto completo de todos los individuos u objetos que nos interesa estudiar, mientras que la muestra es solo una parte de esa población, elegida para representarla. Usamos la muestra porque, en la mayoría de los casos, estudiar a toda la población sería demasiado caro, lento o incluso imposible. Lo importante es que la muestra se elija bien, para que sí refleje las características del grupo completo.",
+      "titulo": "¿Qué es la semejanza de triángulos?",
+      "explicacion": "Dos triángulos son semejantes cuando tienen exactamente la misma forma, aunque no el mismo tamaño: sus ángulos correspondientes son iguales (congruentes) y sus lados correspondientes son proporcionales, es decir, todos guardan la misma razón o 'factor de escala'. Esto es distinto de la congruencia, donde además del mismo ángulo se exige el mismo tamaño exacto en los lados. Pensar en una fotografía ampliada ayuda: al agrandarla, los ángulos de las figuras no cambian, pero todas las distancias se multiplican por el mismo número.",
+      "formula": "Si △ABC ~ △DEF: ∠A=∠D, ∠B=∠E, ∠C=∠F y AB/DE = BC/EF = CA/FD",
       "ejemplos": [
-        "Si un dueño de tienda quiere conocer la opinión de sus 500 clientes frecuentes, la población son los 500 clientes; si solo entrevista a 40 de ellos, esos 40 son la muestra.",
-        "En una escuela de 800 alumnos, si el director revisa las calificaciones de los 800, está estudiando a toda la población; si solo revisa las de 2 grupos (60 alumnos), esos 60 son una muestra."
+        "Un triángulo tiene ángulos de 50°, 60° y 70°. Otro triángulo, más grande, también tiene ángulos de 50°, 60° y 70°: tienen la misma forma, así que son semejantes aunque su tamaño sea distinto.",
+        "Un triángulo con lados 3 cm, 4 cm y 5 cm, y otro con lados 6 cm, 8 cm y 10 cm: cada lado del segundo es exactamente el doble del correspondiente en el primero (razón constante = 2), así que son semejantes."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un biólogo quiere conocer el peso promedio de las tortugas marinas de una playa donde hay 3,000 tortugas. Pesa a las 3,000. ¿Qué está estudiando?",
-          "opciones": ["Una muestra", "La población completa", "Un censo parcial", "Una encuesta rápida"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Si estudia a las 3,000 tortugas, es decir a todos los individuos del grupo de interés, está estudiando la población completa, no solo una parte."
+          "pregunta": "Dos triángulos son semejantes cuando...",
+          "opciones": [
+            "sus ángulos correspondientes son iguales y sus lados correspondientes son proporcionales",
+            "tienen exactamente el mismo tamaño y la misma posición",
+            "tienen la misma área, sin importar la forma",
+            "uno de los dos es un triángulo rectángulo"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La semejanza exige la misma forma: ángulos correspondientes iguales y lados correspondientes en la misma proporción (no necesariamente el mismo tamaño)."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "La muestra siempre es más grande que la población de la que se toma.",
+          "enunciado": "Dos triángulos semejantes siempre tienen el mismo tamaño.",
           "respuestaCorrecta": false,
-          "retroalimentacion": "Es al revés: la muestra es una PARTE de la población, así que siempre es igual o menor en tamaño, nunca mayor."
+          "retroalimentacion": "Falso: la semejanza garantiza la misma forma, pero el tamaño puede ser distinto (por eso existe una razón de semejanza que puede ser diferente de 1)."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Si un hospital tiene 1,200 pacientes registrados y un investigador estudia el expediente de los 1,200, se dice que estudió a la ___.",
-          "respuestaCorrecta": "población",
-          "retroalimentacion": "Como estudió a todos los pacientes del grupo de interés, estudió a la población completa."
+          "frase": "Si △ABC ~ △DEF, entonces el ángulo A es congruente con el ángulo ___.",
+          "respuestaCorrecta": "D",
+          "retroalimentacion": "En la notación △ABC ~ △DEF, cada letra corresponde en orden: A con D, B con E y C con F."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una fábrica produce 10,000 tornillos al día. El control de calidad revisa 50 tornillos tomados al azar para ver si tienen defectos. ¿Qué representan esos 50 tornillos?",
-          "opciones": ["La población", "Una muestra", "El censo completo", "Un error de medición"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Los 50 tornillos son una parte del total de 10,000, elegidos para representar al grupo completo: eso es una muestra."
+          "tipo": "verdadero_falso",
+          "enunciado": "Un triángulo con lados 2 cm, 3 cm y 4 cm, y otro con lados 4 cm, 6 cm y 8 cm son semejantes, porque cada lado del segundo es el doble del correspondiente en el primero.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Verdadero: 4/2 = 6/3 = 8/4 = 2. Como los tres lados guardan la misma razón, los triángulos son semejantes."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con el concepto que representa.",
+          "instruccion": "Relaciona cada par de triángulos con su relación.",
           "columnaA": [
-            "Los 45 alumnos de un salón específico, cuando solo te interesa ese salón",
-            "Los 800 alumnos de toda la secundaria, cuando te interesa toda la escuela",
-            "30 alumnos elegidos al azar de los 800 para una encuesta rápida"
+            "Ángulos 40°,60°,80° y lados 3,4,5 vs. ángulos 40°,60°,80° y lados 6,8,10",
+            "Ángulos 30°,60°,90° y lados 3,4,5 vs. ángulos 30°,60°,90° y lados 3,4,5",
+            "Ángulos 50°,60°,70° vs. ángulos 45°,55°,80°"
           ],
           "columnaB": [
-            "Es una muestra de los 800 alumnos",
-            "Es la población (si el interés es solo ese salón)",
-            "Es la población (si el interés es toda la escuela)"
+            "Semejantes (misma forma, distinto tamaño)",
+            "Congruentes (misma forma y mismo tamaño)",
+            "Ninguna relación (sus ángulos no coinciden)"
           ],
-          "parejasCorrectas": [1, 2, 0],
-          "retroalimentacion": "El primer caso es población del salón; el segundo es población de toda la escuela; el tercero es una muestra porque son solo 30 de los 800."
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "El primer par tiene mismos ángulos y lados en razón 2: semejantes. El segundo tiene mismos ángulos y mismos lados: congruentes. El tercero tiene ángulos distintos: no hay relación."
         }
       ]
     },
     {
       "numero": "31.2",
-      "titulo": "Tipos de muestreo",
-      "explicacion": "Existen varias formas de elegir una muestra representativa de la población. En el muestreo aleatorio simple, cada individuo tiene la misma probabilidad de ser elegido (como sacar papelitos de una urna). En el muestreo sistemático se elige un elemento cada cierto intervalo fijo (por ejemplo, uno de cada 10). En el muestreo estratificado se divide la población en grupos o 'estratos' y se toma una parte proporcional de cada uno. Y en el muestreo por conveniencia se eligen los sujetos más fáciles de alcanzar, lo cual puede hacer que la muestra no sea representativa.",
+      "titulo": "Criterio AA (Ángulo-Ángulo)",
+      "explicacion": "El criterio AA dice que si dos ángulos de un triángulo son congruentes con dos ángulos de otro triángulo, entonces los triángulos son semejantes, sin necesidad de comprobar los lados. Esto funciona porque los ángulos internos de cualquier triángulo siempre suman 180°: si dos ángulos ya coinciden, el tercero queda determinado y también coincide automáticamente. Es el criterio más práctico cuando podemos medir ángulos (con un transportador o por geometría) pero no tenemos forma sencilla de medir todos los lados.",
+      "formula": "Si ∠A = ∠D y ∠B = ∠E, entonces △ABC ~ △DEF (criterio AA)",
       "ejemplos": [
-        "Para saber la opinión sobre el uniforme, un director numera a los 900 alumnos y elige, con una tómbola, a 90 al azar: es un muestreo aleatorio simple.",
-        "En una fábrica, un inspector revisa 1 de cada 20 productos que salen de la línea de producción: es un muestreo sistemático."
+        "Un triángulo tiene ángulos de 35° y 85°; otro triángulo también tiene ángulos de 35° y 85°. Por AA son semejantes (el tercer ángulo en ambos es 180-35-85 = 60°).",
+        "Un poste vertical y una persona vertical, bajo el mismo sol, forman un ángulo de 90° con el suelo y comparten el mismo ángulo de elevación del sol: por AA, el triángulo poste-sombra y el triángulo persona-sombra son semejantes."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un investigador divide a los habitantes de una ciudad en grupos por edad (niños, jóvenes, adultos, adultos mayores) y toma una parte proporcional de cada grupo para su encuesta. ¿Qué tipo de muestreo es?",
-          "opciones": ["Aleatorio simple", "Sistemático", "Estratificado", "Por conveniencia"],
-          "respuestaCorrecta": 2,
-          "retroalimentacion": "Dividir a la población en grupos (estratos) y tomar una parte proporcional de cada uno es muestreo estratificado."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un encuestador entrevista solo a las primeras 20 personas que encuentra en la entrada del súper, porque le queda cerca y es rápido. ¿Qué tipo de muestreo usó?",
-          "opciones": ["Aleatorio simple", "Estratificado", "Sistemático", "Por conveniencia"],
-          "respuestaCorrecta": 3,
-          "retroalimentacion": "Elegir a quien es más fácil de alcanzar, sin ningún método de selección, es muestreo por conveniencia; puede no ser representativo."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "En el muestreo sistemático se elige a los individuos siguiendo un intervalo fijo, por ejemplo cada quinta persona de una lista.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto, el muestreo sistemático usa un patrón regular (cada n-ésimo elemento) para elegir a los integrantes de la muestra."
+          "pregunta": "Para aplicar el criterio AA de semejanza, ¿cuántos ángulos correspondientes deben coincidir como mínimo?",
+          "opciones": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Basta con 2 ángulos iguales: como los tres ángulos internos suman 180°, el tercero queda determinado y coincide automáticamente."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Si de una lista de 500 clientes se elige uno al azar y luego cada 25.º cliente después de ese, el tipo de muestreo es ___.",
-          "respuestaCorrecta": "sistemático",
-          "retroalimentacion": "Elegir con un intervalo fijo (cada 25.º) a partir de un punto inicial es muestreo sistemático."
+          "frase": "Un triángulo tiene ángulos de 42° y 78°. Su tercer ángulo mide ___°.",
+          "respuestaCorrecta": "60",
+          "retroalimentacion": "180 - 42 - 78 = 60°."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si dos triángulos comparten dos ángulos iguales, su tercer ángulo también resulta igual automáticamente.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Verdadero: como los ángulos internos de cualquier triángulo suman 180°, si dos ya coinciden, el tercero se obtiene restando y también coincide."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Triángulo A tiene ángulos de 55° y 65°. Triángulo B tiene ángulos de 55° y 70°. ¿Son semejantes por el criterio AA?",
+          "opciones": [
+            "No, porque el tercer ángulo de A mide 60° y el de B mide 55°, no coinciden",
+            "Sí, porque comparten un ángulo de 55°",
+            "Sí, siempre que compartan al menos un ángulo",
+            "No se puede determinar sin conocer los lados"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El tercer ángulo de A es 180-55-65=60°, y el de B es 180-55-70=55°. Como no comparten los mismos tres ángulos, no son semejantes por AA."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada forma de elegir la muestra con el tipo de muestreo que le corresponde.",
+          "instruccion": "Relaciona cada par de triángulos con su relación de semejanza según sus ángulos.",
           "columnaA": [
-            "Sacar 30 nombres de una urna con los nombres de los 300 alumnos",
-            "Dividir a los alumnos por grado y tomar un porcentaje igual de cada grado",
-            "Entrevistar solo a los amigos que están cerca en el patio"
+            "Triángulo con ángulos 40° y 70° vs. triángulo con ángulos 40° y 70°",
+            "Triángulo con ángulos 30° y 90° vs. triángulo con ángulos 50° y 90°",
+            "Triángulo con solo el ángulo de 25° conocido vs. otro triángulo con solo el ángulo de 25° conocido"
           ],
           "columnaB": [
-            "Muestreo por conveniencia",
-            "Muestreo aleatorio simple",
-            "Muestreo estratificado"
+            "Son semejantes por AA (comparten dos ángulos iguales)",
+            "No son semejantes (su tercer ángulo resulta distinto)",
+            "No se puede aplicar AA (falta un segundo ángulo conocido en cada uno)"
           ],
-          "parejasCorrectas": [1, 2, 0],
-          "retroalimentacion": "La urna es aleatorio simple; dividir por grado y tomar proporciones es estratificado; entrevistar solo a los amigos cercanos es por conveniencia."
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "El primer par comparte dos ángulos: son semejantes. El segundo tiene distinto tercer ángulo (60° vs 40°): no son semejantes. El tercero solo da un ángulo por triángulo: no alcanza para aplicar AA."
         }
       ]
     },
     {
       "numero": "31.3",
-      "titulo": "Ventajas de la muestra frente al censo",
-      "explicacion": "Un censo estudia a TODA la población, mientras que un muestreo solo estudia una parte. Usar una muestra bien elegida tiene ventajas claras: es más rápida, más barata y requiere menos personal que un censo completo; además, en estudios donde medir destruye el objeto (como probar la vida útil de un foco), es imposible hacer un censo porque se acabarían todos los productos. Sin embargo, el censo da información exacta de cada individuo, mientras que la muestra siempre tiene algún margen de error, por lo que debe ser representativa para que sus resultados sean confiables.",
+      "titulo": "Razón de semejanza y cálculo de lados",
+      "explicacion": "La razón de semejanza es el número constante por el cual se multiplican los lados de un triángulo para obtener los lados correspondientes del otro triángulo semejante. Se calcula dividiendo un lado del triángulo grande entre su correspondiente en el triángulo pequeño (k = lado grande ÷ lado pequeño). Una vez que se conoce k, cualquier lado desconocido se obtiene con una simple multiplicación o división, siempre y cuando se identifique correctamente qué lado corresponde a cuál (el orden de los vértices en la notación △ABC ~ △DEF indica esa correspondencia).",
+      "formula": "k = lado del triángulo grande ÷ lado correspondiente del triángulo pequeño",
       "ejemplos": [
-        "El Censo de Población y Vivienda en México pregunta a TODOS los hogares del país cada 10 años: es costoso y tarda meses, pero da datos exactos de cada persona.",
-        "Una empresa de focos no puede probar la duración de los 50,000 focos que fabricó en un día (los destruiría todos); en cambio, prueba una muestra de 100 focos y calcula la duración promedio."
+        "△ABC ~ △DEF con razón de semejanza k=3. Si AB=5 cm, entonces su correspondiente DE mide 5×3 = 15 cm.",
+        "Dos triángulos semejantes tienen lados correspondientes de 6 cm y 9 cm, así que k = 9/6 = 1.5. Si otro lado del triángulo pequeño mide 4 cm, su correspondiente en el grande mide 4×1.5 = 6 cm."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es la principal ventaja de usar una muestra en lugar de un censo cuando se quiere probar cuánto dura encendido un foco antes de fundirse?",
-          "opciones": ["La muestra es más exacta que el censo", "No se destruyen todos los focos fabricados", "La muestra siempre tiene cero error", "El censo es más barato de hacer"],
+          "pregunta": "Dos triángulos semejantes tienen razón de semejanza k=2. Si un lado del triángulo pequeño mide 7 cm, ¿cuánto mide su correspondiente en el triángulo grande?",
+          "opciones": [
+            "9 cm",
+            "14 cm",
+            "3.5 cm",
+            "49 cm"
+          ],
           "respuestaCorrecta": 1,
-          "retroalimentacion": "Si se probaran todos los focos, se destruirían todos; con una muestra se conserva la mayoría y aun así se obtiene información útil."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "Un censo siempre es más rápido y barato de realizar que un muestreo.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Es al revés: el censo estudia a toda la población, así que suele ser más lento y costoso que estudiar solo una muestra."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una universidad con 40,000 estudiantes quiere saber, en una semana, si están satisfechos con la nueva plataforma en línea. ¿Qué conviene más?",
-          "opciones": ["Hacer un censo a los 40,000", "Tomar una muestra representativa de unos cientos de estudiantes", "No preguntar a nadie", "Preguntar solo a los estudiantes de un salón"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Un censo a 40,000 tomaría demasiado tiempo; una muestra representativa da resultados confiables en menos tiempo (a diferencia de preguntar solo a un salón, que no representa a toda la universidad)."
+          "retroalimentacion": "7 × 2 = 14 cm: el lado del triángulo grande se obtiene multiplicando el del pequeño por la razón de semejanza."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Cuando medir a un individuo implica destruirlo o consumirlo (como probar la duración de una pila), conviene usar una ___ y no un censo.",
-          "respuestaCorrecta": "muestra",
-          "retroalimentacion": "Con una muestra se conservan la mayoría de las piezas, en vez de destruirlas todas como pasaría con un censo."
+          "frase": "Si △ABC ~ △DEF con razón de semejanza 4, y DE = 8 cm corresponde a AB, entonces AB mide ___ cm.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "Como DE es del triángulo grande, AB = DE ÷ 4 = 8 ÷ 4 = 2 cm."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si la razón de semejanza entre dos triángulos es 1, entonces los triángulos son congruentes.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Verdadero: una razón k=1 significa que todos los lados correspondientes miden exactamente lo mismo, es decir, además de semejantes son congruentes."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo pequeño tiene lados 3 cm, 5 cm y 6 cm. Uno semejante y más grande tiene el lado correspondiente al de 3 cm midiendo 9 cm. ¿Cuánto miden los otros dos lados del triángulo grande?",
+          "opciones": [
+            "15 cm y 18 cm",
+            "8 cm y 9 cm",
+            "6 cm y 9 cm",
+            "10 cm y 12 cm"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La razón de semejanza es 9÷3=3. Entonces 5×3=15 cm y 6×3=18 cm."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada característica con censo o muestreo.",
+          "instruccion": "Relaciona cada lado del triángulo pequeño con su correspondiente en el triángulo grande, sabiendo que la razón de semejanza es k=2.5.",
           "columnaA": [
-            "Estudiar a cada uno de los 100,000 habitantes de un municipio",
-            "Estudiar a 500 habitantes elegidos al azar del municipio",
-            "Tardar varios meses y usar miles de encuestadores"
+            "Lado de 4 cm",
+            "Lado de 6 cm",
+            "Lado de 10 cm"
           ],
           "columnaB": [
-            "Es un muestreo (parte de la población)",
-            "Es típico de un censo, por su tamaño",
-            "Es un censo (población completa)"
+            "25 cm",
+            "10 cm",
+            "15 cm"
           ],
-          "parejasCorrectas": [2, 0, 1],
-          "retroalimentacion": "Estudiar a los 100,000 es un censo; estudiar a 500 elegidos al azar es un muestreo; tardar meses con miles de encuestadores es típico de un censo por su gran tamaño."
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "4×2.5=10 cm, 6×2.5=15 cm, 10×2.5=25 cm."
         }
       ]
     },
     {
       "numero": "31.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: la población es el grupo completo que te interesa estudiar y la muestra es una parte de ese grupo, elegida para representarlo. Para elegir bien una muestra existen distintos métodos (aleatorio simple, sistemático, estratificado o por conveniencia), y usar una muestra en vez de un censo ahorra tiempo y dinero, aunque siempre existe algún margen de error. Ante cualquier situación real, primero identifica cuál es la población de interés y después decide si conviene estudiarla completa (censo) o solo una muestra representativa.",
+      "explicacion": "Recapitulando: dos triángulos son semejantes cuando tienen los mismos ángulos y lados proporcionales; el criterio AA permite comprobarlo con solo dos ángulos iguales, sin medir lados; y una vez identificada la semejanza, la razón de semejanza (lado grande ÷ lado correspondiente pequeño) permite calcular cualquier lado desconocido con una multiplicación o división. Esta cadena de ideas es la base de la medición indirecta: cuando no podemos medir algo directamente (la altura de un edificio, una distancia en un mapa), formamos dos triángulos semejantes con datos que sí podemos medir y despejamos lo que falta.",
       "ejemplos": [
-        "Una alcaldía quiere saber cuántos de los 250,000 hogares de la ciudad tienen acceso a agua potable. Estudiar todos los hogares sería un censo; entrevistar a 1,000 hogares elegidos por colonia sería una muestra estratificada."
+        "Un poste de 3 m proyecta una sombra de 2 m. En ese mismo momento, un árbol proyecta una sombra de 8 m. Como los triángulos poste-sombra y árbol-sombra son semejantes (mismo ángulo del sol, criterio AA), la razón es 3/2=1.5, y la altura del árbol es 8×1.5=12 m.",
+        "En un mapa a escala, un triángulo que representa un terreno tiene lados 2 cm, 3 cm y 4 cm. El terreno real es semejante, con razón 500 (1 cm del mapa = 500 cm reales), así que el lado real correspondiente al de 3 cm mide 3×500=1500 cm = 15 m."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un club deportivo tiene 600 socios. Para saber su opinión sobre el nuevo horario, el club numera a los 600 socios y elige 60 con un sorteo digital. ¿Cuál es la población y cuál la muestra?",
-          "opciones": ["Población: 60; Muestra: 600", "Población: 600; Muestra: 60", "Ambos son la población", "Ambos son la muestra"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "El grupo completo de interés (600 socios) es la población; los 60 elegidos por sorteo son la muestra."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "Elegir siempre a los compañeros más cercanos para una encuesta escolar es un buen ejemplo de muestreo aleatorio simple.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Elegir a los más cercanos, sin dar a todos la misma oportunidad de participar, es muestreo por conveniencia, no aleatorio simple."
+          "pregunta": "Una persona de 1.6 m de estatura proyecta una sombra de 2 m. En ese mismo instante, un asta bandera proyecta una sombra de 7.5 m. ¿Cuál es la altura del asta bandera?",
+          "opciones": [
+            "6 m",
+            "9.375 m",
+            "5.9 m",
+            "4 m"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La razón persona/sombra es 1.6/2=0.8. Como los triángulos son semejantes (mismo ángulo del sol), la altura del asta es 7.5×0.8=6 m."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Si una empresa divide a sus 1,000 empleados por departamento y toma una parte proporcional de cada uno para encuestarlos, el tipo de muestreo usado es el ___.",
-          "respuestaCorrecta": "estratificado",
-          "retroalimentacion": "Dividir en grupos (departamentos) y tomar una parte proporcional de cada uno es muestreo estratificado."
+          "frase": "En un plano, un triángulo tiene un lado de 5 cm que representa 100 m reales (triángulo semejante al terreno real). Si otro lado del plano mide 8 cm, ese lado real mide ___ m.",
+          "respuestaCorrecta": "160",
+          "retroalimentacion": "La razón de semejanza es 100÷5=20. Entonces 8×20=160 m."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Para calcular la altura real de un objeto usando su sombra y la de un objeto de referencia, basta con que ambos sean verticales y que las sombras se midan al mismo tiempo (mismo ángulo del sol).",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Verdadero: ambos objetos forman un ángulo de 90° con el suelo y comparten el mismo ángulo de elevación del sol, lo que garantiza la semejanza por AA entre los triángulos objeto-sombra."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Por qué un país no levanta un censo de población todos los años, sino que usa encuestas por muestreo la mayoría de los años?",
-          "opciones": ["Porque el censo es ilegal", "Porque un censo completo es muy costoso y tardado de repetir cada año", "Porque las muestras dan datos falsos", "Porque la población no cambia nunca"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Un censo requiere visitar a toda la población, lo cual es muy costoso y toma mucho tiempo, por eso no se repite cada año."
+          "pregunta": "¿Qué concepto se usa para pasar de las medidas de un triángulo pequeño (sombra, plano) a las medidas reales de un triángulo semejante más grande?",
+          "opciones": [
+            "La razón de semejanza (proporción entre lados correspondientes)",
+            "La suma de los ángulos internos",
+            "El área de los triángulos",
+            "El perímetro total"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "La razón de semejanza es la proporción constante entre lados correspondientes; multiplicándola por un lado conocido se obtiene el lado real desconocido."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada ejemplo con el concepto que mejor lo describe.",
+          "instruccion": "Relaciona cada situación con el concepto de semejanza de triángulos que aplica principalmente.",
           "columnaA": [
-            "Preguntar a los 50 alumnos de un solo salón, cuando te interesa solo ese salón",
-            "Elegir 1 de cada 10 productos de una línea de producción para revisarlos",
-            "Entrevistar únicamente a las personas que pasan frente a tu puesto en el mercado"
+            "Un edificio y su sombra, junto con un poste de referencia y su sombra, bajo el mismo sol",
+            "Un plano de una casa dibujado a escala 1:50",
+            "Dos triángulos donde solo sabemos que comparten dos ángulos iguales"
           ],
           "columnaB": [
-            "Muestreo sistemático",
-            "Muestreo por conveniencia",
-            "Población completa (censo del salón)"
+            "Razón de semejanza para hallar la altura real",
+            "Razón de semejanza para hallar medidas reales a partir del plano",
+            "Criterio AA para confirmar que son semejantes"
           ],
-          "parejasCorrectas": [2, 0, 1],
-          "retroalimentacion": "Preguntar a los 50 del salón cuando solo interesa ese salón es censo de esa población; elegir 1 de cada 10 es sistemático; entrevistar solo a quien pasa cerca es por conveniencia."
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "Sombras y postes de referencia se resuelven con razón de semejanza para alturas; los planos a escala usan razón de semejanza para medidas reales; y cuando solo hay dos ángulos iguales, se aplica el criterio AA para confirmar la semejanza."
         }
       ]
     }
@@ -236,38 +290,47 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "Un veterinario quiere saber el peso promedio de los 15 perros de su clínica y los pesa a todos. ¿Qué hizo?",
-      "opciones": ["Tomó una muestra", "Hizo un censo de esos 15 perros", "Hizo un muestreo estratificado", "Hizo un muestreo por conveniencia"],
-      "respuestaCorrecta": 1,
-      "retroalimentacion": "Al pesar a los 15 perros (todos los de la clínica), estudió a la población completa, es decir, hizo un censo."
-    },
-    {
-      "tipo": "verdadero_falso",
-      "enunciado": "El muestreo estratificado divide a la población en grupos y toma una parte de cada grupo.",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "Correcto, así se define el muestreo estratificado: se forman estratos o grupos y se toma una porción proporcional de cada uno."
+      "pregunta": "Dos fotografías del mismo dibujo, una tamaño postal y otra ampliada tamaño póster, mantienen la misma forma. ¿Qué característica NO cambia entre ambas versiones?",
+      "opciones": [
+        "Los ángulos internos",
+        "El tamaño de los lados",
+        "El área total",
+        "El perímetro"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Al ampliar una figura semejante, los ángulos se mantienen iguales; lo que cambia (se multiplica por la razón de semejanza) son los lados, el perímetro y el área."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "La parte de la población que se elige para representarla se llama ___.",
-      "respuestaCorrecta": "muestra",
-      "retroalimentacion": "La muestra es el subconjunto de la población elegido para representarla en un estudio."
+      "frase": "Un triángulo pequeño con lados 4, 6 y 8 cm es semejante a uno grande cuya razón de semejanza es 3. El lado del triángulo grande correspondiente al de 8 cm mide ___ cm.",
+      "respuestaCorrecta": "24",
+      "retroalimentacion": "8 × 3 = 24 cm."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "Dos triángulos rectángulos que comparten un ángulo agudo de 35° siempre son semejantes.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Verdadero: ambos tienen un ángulo recto de 90° y comparten el ángulo de 35°, es decir, comparten dos ángulos iguales, así que por el criterio AA son semejantes."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada situación con el tipo de muestreo.",
+      "instruccion": "Relaciona cada par de lados correspondientes (pequeño y grande) con su razón de semejanza (lado grande ÷ lado pequeño).",
       "columnaA": [
-        "Numerar a todos y sortear quiénes participan",
-        "Encuestar solo a quien conteste primero en el chat del grupo",
-        "Elegir cada 5.º cliente que entra a la tienda"
+        "Lados de 2 cm y 6 cm",
+        "Lados de 5 cm y 20 cm",
+        "Lados de 3 cm y 7.5 cm"
       ],
       "columnaB": [
-        "Muestreo sistemático",
-        "Muestreo por conveniencia",
-        "Muestreo aleatorio simple"
+        "k = 2.5",
+        "k = 4",
+        "k = 3"
       ],
-      "parejasCorrectas": [2, 1, 0],
-      "retroalimentacion": "Sortear entre todos es aleatorio simple; encuestar a quien conteste primero es por conveniencia; elegir cada 5.º cliente es sistemático."
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
+      "retroalimentacion": "6÷2=3, 20÷5=4, 7.5÷3=2.5."
     }
   ]
 }

@@ -2,311 +2,814 @@
   "id": "EJ-14",
   "grado": "Ejercítate",
   "numero": 14,
-  "categoria": "intermedio",
+  "categoria": "basico",
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Proporcionalidad directa",
-  "contenido": "Relación entre dos cantidades que aumentan o disminuyen en la misma proporción, manteniendo un cociente constante.",
-  "pda": "Identifica situaciones de proporcionalidad directa, calcula la constante de proporcionalidad y resuelve problemas usando la regla de tres directa.",
+  "titulo": "Completar dígitos del algoritmo de la multiplicación y división con decimales",
+  "contenido": "El algoritmo escrito de la multiplicación y la división cuando alguno de los factores o el divisor tiene cifras decimales, y cómo ubicar correctamente el punto decimal en el resultado.",
+  "pda": "Aplica y completa correctamente los pasos del algoritmo escrito de la multiplicación y la división con números decimales, contando y colocando el punto decimal en el resultado.",
   "problematizacion": {
-    "contexto": "En una tienda de abarrotes, el precio de las manzanas es de $18 por kilogramo. Mientras más kilos compres, más pagas, siempre en la misma proporción, sin importar cuántos kilos lleves.",
-    "pregunta": "Si 2 kg de manzanas cuestan $36, ¿cuánto costarán 5 kg si el precio por kilo no cambia?"
+    "contexto": "En el mercado, el kilogramo de queso cuesta $84.50 y doña Rosa quiere comprar 2.5 kilogramos. Para saber cuánto debe pagar, tiene que multiplicar 84.50 × 2.5, pero no recuerda en qué lugar exacto va el punto decimal del resultado.",
+    "pregunta": "¿Cómo puede doña Rosa saber en qué posición colocar el punto decimal al multiplicar o dividir números con decimales?"
   },
   "subtemas": [
     {
       "numero": "14.1",
-      "titulo": "¿Qué es la proporcionalidad directa?",
-      "explicacion": "Dos cantidades son directamente proporcionales cuando, al multiplicar o dividir una de ellas por un número, la otra queda multiplicada o dividida por ese mismo número. Esto significa que su cociente (una entre la otra) siempre da el mismo valor, llamado constante de proporcionalidad (k). Si el precio por kilo de una fruta es fijo, comprar el doble de kilos cuesta el doble de dinero.",
-      "formula": "k = y / x (constante de proporcionalidad)",
+      "titulo": "Multiplicar un decimal por un número entero",
+      "explicacion": "Para multiplicar un decimal por un número entero, completas el algoritmo vertical multiplicando los dígitos como si ambos fueran números enteros, ignorando el punto. Al final, cuentas cuántas cifras decimales tiene el factor decimal (el entero no aporta ninguna) y colocas el punto decimal en el resultado contando esa cantidad de lugares desde la derecha. En los ejercicios de esta sección, algunas casillas del algoritmo ya vienen escritas y otras las debes completar tú.",
+      "formula": "cifras decimales del resultado = cifras decimales del factor decimal + cifras decimales del factor entero (0)",
       "ejemplos": [
-        "Si 3 kg de naranjas cuestan $60, la constante es k = 60/3 = 20 (cada kilo cuesta $20).",
-        "Si un coche recorre 100 km en 2 horas a velocidad constante, k = 100/2 = 50 km/h."
+        "6.2 × 3, en columnas: multiplicas 62 × 3 = 186; como 6.2 tiene 1 cifra decimal, colocas el punto un lugar desde la derecha y el resultado es 18.6.",
+        "0.45 × 6, en columnas: multiplicas 45 × 6 = 270; como 0.45 tiene 2 cifras decimales, el resultado es 2.70, es decir 2.7."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "Si al doble de horas trabajadas corresponde el doble de pago, se trata de una proporcionalidad directa.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Cuando una cantidad se duplica y la otra también se duplica en la misma proporción, es proporcionalidad directa."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál situación representa una proporcionalidad directa?",
-          "opciones": [
-            "El costo total de boletos de cine según el número de boletos comprados",
-            "La edad de una persona según su estatura",
-            "El tiempo que tarda en vaciarse una alberca según el número de bombas que la vacían",
-            "La temperatura del día según la hora"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "3.2"
+            },
+            {
+              "valor": "4",
+              "signo": "×"
+            },
+            {
+              "valor": "12.8",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "El costo total aumenta en la misma proporción que el número de boletos comprados: es una relación directa."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "Si 4 cuadernos cuestan $80, la constante de proporcionalidad (precio por cuaderno) es $___.",
-          "respuestaCorrecta": "20",
-          "retroalimentacion": "80÷4=20, cada cuaderno cuesta 20 pesos."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "En una proporcionalidad directa, el cociente entre las dos cantidades siempre es el mismo.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Esa es justamente la definición de la constante de proporcionalidad k."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un albañil coloca 15 ladrillos en 3 minutos a ritmo constante. ¿Cuál es la constante de proporcionalidad (ladrillos por minuto)?",
-          "opciones": [
-            "5",
-            "3",
-            "15",
-            "45"
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              1,
+              3
+            ]
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "15÷3=5 ladrillos por minuto."
+          "retroalimentacion": "3.2 × 4: multiplicas como enteros 32 × 4 = 128; como 3.2 tiene 1 cifra decimal, el resultado es 12.8."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "5.6"
+            },
+            {
+              "valor": "3",
+              "signo": "×"
+            },
+            {
+              "valor": "16.8",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2
+            ],
+            [],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "5.6 × 3: multiplicas como enteros 56 × 3 = 168; como 5.6 tiene 1 cifra decimal, el resultado es 16.8."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "2.7"
+            },
+            {
+              "valor": "6",
+              "signo": "×"
+            },
+            {
+              "valor": "16.2",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2
+            ],
+            [],
+            [
+              0
+            ]
+          ],
+          "retroalimentacion": "2.7 × 6: multiplicas como enteros 27 × 6 = 162; como 2.7 tiene 1 cifra decimal, el resultado es 16.2."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "8.3"
+            },
+            {
+              "valor": "5",
+              "signo": "×"
+            },
+            {
+              "valor": "41.5",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              1,
+              3
+            ]
+          ],
+          "retroalimentacion": "8.3 × 5: multiplicas como enteros 83 × 5 = 415; como 8.3 tiene 1 cifra decimal, el resultado es 41.5."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "4.9"
+            },
+            {
+              "valor": "7",
+              "signo": "×"
+            },
+            {
+              "valor": "34.3",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2
+            ],
+            [],
+            [
+              0
+            ]
+          ],
+          "retroalimentacion": "4.9 × 7: multiplicas como enteros 49 × 7 = 343; como 4.9 tiene 1 cifra decimal, el resultado es 34.3."
         }
       ]
     },
     {
       "numero": "14.2",
-      "titulo": "Tabla de valores y constante de proporcionalidad",
-      "explicacion": "Una tabla de proporcionalidad directa muestra pares de valores donde, al dividir cada valor de la segunda columna entre el correspondiente de la primera, siempre se obtiene la misma constante k. Esto permite completar tablas: si conoces k, puedes multiplicar cualquier valor de x por k para encontrar y, sin necesidad de conocer todos los datos de antemano.",
-      "formula": "y = k × x",
+      "titulo": "Multiplicar decimal por decimal y verificar una división",
+      "explicacion": "Al multiplicar dos números decimales en columnas, multiplicas los dígitos como si fueran enteros y luego SUMAS las cifras decimales de los DOS factores para saber cuántas cifras decimales lleva el resultado. Para comprobar una división de un decimal entre un número entero, se arma el algoritmo de la multiplicación al revés: el cociente (cuadro de arriba) multiplicado por el divisor (cuadro de en medio, con el signo ×) debe dar exactamente el dividendo (cuadro final, bajo la línea).",
+      "formula": "cifras decimales del resultado de una multiplicación = cifras decimales del factor 1 + cifras decimales del factor 2",
       "ejemplos": [
-        "Tabla de kilos y precio: 1 kg→$25, 2 kg→$50, 3 kg→$75. La constante es k=25 (25/1=50/2=75/3).",
-        "Si k=8 pesos por litro de gasolina, para 6 litros: y = 8 × 6 = $48."
+        "1.2 × 0.3, en columnas: multiplicas 12 × 3 = 36; como hay 1+1=2 cifras decimales entre los dos factores, el resultado es 0.36.",
+        "Para comprobar que 8.4 ÷ 4 = 2.1, armas el algoritmo con 2.1 arriba, × 4 en medio y 8.4 como resultado: 2.1 × 4 = 8.4, así que la división es correcta."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "En una tabla, 2 litros de leche cuestan $34 y 4 litros cuestan $68. ¿Cuál es la constante de proporcionalidad?",
-          "opciones": [
-            "17",
-            "2",
-            "34",
-            "68"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "1.4"
+            },
+            {
+              "valor": "0.3",
+              "signo": "×"
+            },
+            {
+              "valor": "0.42",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "34÷2=17 y 68÷4=17: la constante es 17 pesos por litro."
+          "ocultos": [
+            [
+              2
+            ],
+            [
+              0
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "retroalimentacion": "1.4 × 0.3: multiplicas como enteros 14 × 3 = 42; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.42."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Si la constante de proporcionalidad entre horas trabajadas y pago es k=$45 por hora, el pago por 6 horas es $___.",
-          "respuestaCorrecta": "270",
-          "retroalimentacion": "45×6=270 pesos."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "2.3"
+            },
+            {
+              "valor": "0.4",
+              "signo": "×"
+            },
+            {
+              "valor": "0.92",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              2
+            ]
+          ],
+          "retroalimentacion": "2.3 × 0.4: multiplicas como enteros 23 × 4 = 92; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.92."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Con una constante k=12 pesos por kg, relaciona cada cantidad de kilos con su costo total.",
-          "columnaA": [
-            "3 kg",
-            "5 kg",
-            "8 kg"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "1.6"
+            },
+            {
+              "valor": "0.2",
+              "signo": "×"
+            },
+            {
+              "valor": "0.32",
+              "esResultado": true
+            }
           ],
-          "columnaB": [
-            "96",
-            "36",
-            "60"
+          "ocultos": [
+            [
+              2
+            ],
+            [
+              0
+            ],
+            [
+              3
+            ]
           ],
-          "parejasCorrectas": [
-            1,
-            2,
-            0
-          ],
-          "retroalimentacion": "3×12=36; 5×12=60; 8×12=96."
+          "retroalimentacion": "1.6 × 0.2: multiplicas como enteros 16 × 2 = 32; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.32."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una tabla muestra: 2 boletos → $90, 5 boletos → $225. ¿Cuánto cuesta 1 boleto?",
-          "opciones": [
-            "$45",
-            "$90",
-            "$225",
-            "$50"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "2.1"
+            },
+            {
+              "valor": "4",
+              "signo": "×"
+            },
+            {
+              "valor": "8.4",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "90÷2=45 y 225÷5=45: el precio por boleto es $45."
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              2
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 8.4 ÷ 4 = 2.1, porque 2.1 × 4 = 8.4."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "En una tabla de proporcionalidad directa con k=7, si x=9 entonces y=63.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "y=k×x=7×9=63."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "3.2"
+            },
+            {
+              "valor": "3",
+              "signo": "×"
+            },
+            {
+              "valor": "9.6",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2
+            ],
+            [],
+            [
+              0
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 9.6 ÷ 3 = 3.2, porque 3.2 × 3 = 9.6."
         }
       ]
     },
     {
       "numero": "14.3",
-      "titulo": "Regla de tres directa",
-      "explicacion": "La regla de tres directa se usa para encontrar un valor desconocido cuando dos cantidades son directamente proporcionales: se acomodan los datos conocidos y el desconocido en una proporción, y se despeja multiplicando en cruz. Si sabes cuánto corresponde a una cantidad, puedes calcular cuánto corresponde a otra cantidad distinta manteniendo la misma razón.",
-      "formula": "a/b = c/x → x = (b × c) / a",
+      "titulo": "Multiplicador de dos cifras y división con divisor decimal",
+      "explicacion": "Cuando el multiplicador tiene dos cifras (aunque una de las dos cantidades sea decimal), el algoritmo necesita dos filas de producto parcial antes de la fila de resultado: una por cada dígito del multiplicador, y se suman para obtener el resultado final; el punto decimal se coloca hasta el final, contando las cifras decimales de ambos factores. Para comprobar una división en la que el divisor es decimal (o ambos, dividendo y divisor, son decimales), se arma igual que antes: cociente × divisor = dividendo.",
+      "formula": "a ÷ b (b decimal), verificación: cociente × divisor = dividendo",
       "ejemplos": [
-        "Si 5 kg de arroz cuestan $95, ¿cuánto cuestan 8 kg? x = (95×8)/5 = 152, o sea $152.",
-        "Si un coche recorre 180 km con 12 litros, ¿cuántos litros necesita para 300 km? x=(12×300)/180=20 litros."
+        "2.3 × 1.6, en columnas: multiplicas 23 × 6 = 138 y 23 × 1 (desplazado un lugar) = 230; sumas 138 + 230 = 368; como hay 1+1=2 cifras decimales entre los factores, el resultado es 3.68.",
+        "Para comprobar que 1.44 ÷ 0.12 = 12, armas el algoritmo con 12 arriba, × 0.12 en medio y 1.44 como resultado: 12 × 0.12 = 1.44, así que la división es correcta."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Si 3 pizzas cuestan $270, ¿cuánto cuestan 7 pizzas al mismo precio por pizza?",
-          "opciones": [
-            "$630",
-            "$540",
-            "$810",
-            "$189"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "2.3"
+            },
+            {
+              "valor": "1.6",
+              "signo": "×"
+            },
+            {
+              "valor": "138"
+            },
+            {
+              "valor": "230",
+              "signo": "+"
+            },
+            {
+              "valor": "3.68",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Precio por pizza = 270÷3 = 90; 90×7 = 630 pesos."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "Si 4 trabajadores pintan 20 m² en un día, ¿cuántos m² pintará 1 trabajador? ___ m².",
-          "respuestaCorrecta": "5",
-          "retroalimentacion": "20÷4=5 m² por trabajador."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una receta para 6 personas usa 3 tazas de harina. ¿Cuántas tazas se necesitan para 10 personas?",
-          "opciones": [
-            "5",
-            "3.6",
-            "8",
-            "1.8"
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "3÷6=0.5 tazas por persona; 0.5×10=5 tazas."
+          "retroalimentacion": "2.3 × 1.6: multiplicas como enteros 23 × 16 (138 + 230) = 368; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 3.68."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "Si 2 litros de pintura cubren 16 m², entonces 5 litros cubrirán 40 m².",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "16÷2=8 m² por litro; 8×5=40 m²."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "En un viaje, un coche recorre 240 km con 20 litros de gasolina. ¿Cuántos litros necesita para recorrer 360 km, con el mismo rendimiento?",
-          "opciones": [
-            "30",
-            "18",
-            "15",
-            "24"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "15"
+            },
+            {
+              "valor": "0.4",
+              "signo": "×"
+            },
+            {
+              "valor": "6",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Rendimiento = 240÷20 = 12 km por litro; 360÷12 = 30 litros."
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            []
+          ],
+          "retroalimentacion": "Esto verifica que 6 ÷ 0.4 = 15, porque 15 × 0.4 = 6."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "12"
+            },
+            {
+              "valor": "0.12",
+              "signo": "×"
+            },
+            {
+              "valor": "1.44",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 1.44 ÷ 0.12 = 12, porque 12 × 0.12 = 1.44."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "1.2"
+            },
+            {
+              "valor": "2.4",
+              "signo": "×"
+            },
+            {
+              "valor": "48"
+            },
+            {
+              "valor": "240",
+              "signo": "+"
+            },
+            {
+              "valor": "2.88",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "retroalimentacion": "1.2 × 2.4: multiplicas como enteros 12 × 24 (48 + 240) = 288; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 2.88."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "12"
+            },
+            {
+              "valor": "0.75",
+              "signo": "×"
+            },
+            {
+              "valor": "9",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            []
+          ],
+          "retroalimentacion": "Esto verifica que 9 ÷ 0.75 = 12, porque 12 × 0.75 = 9."
         }
       ]
     },
     {
       "numero": "14.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: en la proporcionalidad directa, ambas cantidades aumentan o disminuyen juntas y su cociente y/x siempre es la misma constante k. Para resolver problemas puedes usar una tabla (multiplicar por k) o la regla de tres directa (multiplicar en cruz). Esto aplica a recetas, velocidad constante, precios por unidad y muchas otras situaciones cotidianas.",
+      "explicacion": "Recuerda: al multiplicar decimales en columnas, sumas las cifras decimales de los dos factores para colocar el punto en el resultado, y si el multiplicador tiene dos cifras necesitas sumar dos productos parciales antes de llegar al resultado. Al comprobar una división, sin importar si el divisor o el dividendo (o ambos) son decimales, siempre arma el algoritmo como una multiplicación: cociente × divisor = dividendo. Esta sección mezcla los casos anteriores con más cifras decimales y dígitos.",
       "ejemplos": [
-        "Una receta para 4 personas usa 2 tazas de azúcar (k=0.5 tazas por persona). Para 10 personas: 0.5×10=5 tazas.",
-        "Un ciclista recorre 60 km en 3 horas (k=20 km/h constante). En 5 horas recorrerá 20×5=100 km."
+        "3.15 × 12, en columnas: multiplicas 315 × 2 = 630 y 315 × 1 (desplazado un lugar) = 3150; sumas 630 + 3150 = 3780; como 3.15 tiene 2 cifras decimales, el resultado es 37.80.",
+        "Para comprobar que 5.28 ÷ 0.24 = 22, armas el algoritmo con 22 arriba, × 0.24 en medio y 5.28 como resultado: 22 × 0.24 = 5.28, así que la división es correcta."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una receta de agua de horchata para 8 vasos usa 4 tazas de arroz. ¿Cuántas tazas se necesitan para 20 vasos, manteniendo la proporción?",
-          "opciones": [
-            "10",
-            "8",
-            "16",
-            "5"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "3.15"
+            },
+            {
+              "valor": "12",
+              "signo": "×"
+            },
+            {
+              "valor": "630"
+            },
+            {
+              "valor": "3150",
+              "signo": "+"
+            },
+            {
+              "valor": "37.80",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "4÷8=0.5 tazas por vaso; 0.5×20=10 tazas."
+          "ocultos": [
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "retroalimentacion": "3.15 × 12: multiplicas como enteros 315 × 12 (630 + 3150) = 3780; como 3.15 tiene 2 cifras decimales, el resultado es 37.80."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Un ciclista mantiene una velocidad constante y recorre 45 km en 3 horas. En 5 horas recorrerá ___ km.",
-          "respuestaCorrecta": "75",
-          "retroalimentacion": "45÷3=15 km/h; 15×5=75 km."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "60"
+            },
+            {
+              "valor": "0.25",
+              "signo": "×"
+            },
+            {
+              "valor": "15",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 15 ÷ 0.25 = 60, porque 60 × 0.25 = 15."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "Si una impresora imprime 24 hojas en 2 minutos a ritmo constante, en 7 minutos imprimirá 84 hojas.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "24÷2=12 hojas por minuto; 12×7=84 hojas."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "22"
+            },
+            {
+              "valor": "0.24",
+              "signo": "×"
+            },
+            {
+              "valor": "5.28",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 5.28 ÷ 0.24 = 22, porque 22 × 0.24 = 5.28."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación de proporcionalidad directa con su constante (k) correcta.",
-          "columnaA": [
-            "6 litros de leche cuestan $120",
-            "Un obrero coloca 40 baldosas en 5 horas",
-            "Una receta usa 9 tazas de harina para 3 pasteles"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "12.4"
+            },
+            {
+              "valor": "0.3",
+              "signo": "×"
+            },
+            {
+              "valor": "3.72",
+              "esResultado": true
+            }
           ],
-          "columnaB": [
-            "3 tazas por pastel",
-            "$20 por litro",
-            "8 baldosas por hora"
+          "ocultos": [
+            [
+              0,
+              3
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ]
           ],
-          "parejasCorrectas": [
-            1,
-            2,
-            0
-          ],
-          "retroalimentacion": "120÷6=$20 por litro; 40÷5=8 baldosas por hora; 9÷3=3 tazas por pastel."
+          "retroalimentacion": "12.4 × 0.3: multiplicas como enteros 124 × 3 = 372; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 3.72."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un tinaco se llena con una llave que aporta agua de manera constante: en 4 minutos junta 60 litros. ¿Cuántos litros habrá juntado en 10 minutos?",
-          "opciones": [
-            "150",
-            "120",
-            "100",
-            "240"
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "4.5"
+            },
+            {
+              "valor": "23",
+              "signo": "×"
+            },
+            {
+              "valor": "135"
+            },
+            {
+              "valor": "900",
+              "signo": "+"
+            },
+            {
+              "valor": "103.5",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "60÷4=15 litros por minuto; 15×10=150 litros."
+          "ocultos": [
+            [
+              2
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "retroalimentacion": "4.5 × 23: multiplicas como enteros 45 × 23 (135 + 900) = 1035; como 4.5 tiene 1 cifra decimal, el resultado es 103.5."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
-      "tipo": "opcion_multiple",
-      "pregunta": "¿Cuál de las siguientes es una situación de proporcionalidad directa?",
-      "opciones": [
-        "El costo de la renta de un salón según las horas rentadas, a tarifa fija por hora",
-        "La edad de un árbol según su altura",
-        "El número de páginas leídas según el color del libro",
-        "La temperatura ambiente según la hora del día"
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "6.3"
+        },
+        {
+          "valor": "4",
+          "signo": "×"
+        },
+        {
+          "valor": "25.2",
+          "esResultado": true
+        }
       ],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "El costo total aumenta en la misma proporción que las horas rentadas: es una relación directa."
-    },
-    {
-      "tipo": "llenar_frase",
-      "frase": "Si 5 boletos de camión cuestan $75, el costo de 9 boletos es $___.",
-      "respuestaCorrecta": "135",
-      "retroalimentacion": "75÷5=15 pesos por boleto; 15×9=135 pesos."
-    },
-    {
-      "tipo": "verdadero_falso",
-      "enunciado": "Si k=6 es la constante de proporcionalidad entre x y y, y x=8, entonces y=48.",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "y=k×x=6×8=48."
-    },
-    {
-      "tipo": "opcion_multiple",
-      "pregunta": "Una fábrica produce 150 piezas en 5 horas a ritmo constante. ¿Cuántas piezas produce en 8 horas?",
-      "opciones": [
-        "240",
-        "200",
-        "180",
-        "300"
+      "ocultos": [
+        [
+          0
+        ],
+        [],
+        [
+          1,
+          3
+        ]
       ],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "150÷5=30 piezas por hora; 30×8=240 piezas."
+      "retroalimentacion": "6.3 × 4: multiplicas como enteros 63 × 4 = 252; como 6.3 tiene 1 cifra decimal, el resultado es 25.2."
+    },
+    {
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "3.4"
+        },
+        {
+          "valor": "0.2",
+          "signo": "×"
+        },
+        {
+          "valor": "0.68",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          2
+        ],
+        [
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "retroalimentacion": "3.4 × 0.2: multiplicas como enteros 34 × 2 = 68; como hay 1+1=2 cifras decimales en total entre los factores, el resultado es 0.68."
+    },
+    {
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "3.2"
+        },
+        {
+          "valor": "2",
+          "signo": "×"
+        },
+        {
+          "valor": "6.4",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          0
+        ],
+        [],
+        [
+          2
+        ]
+      ],
+      "retroalimentacion": "Esto verifica que 6.4 ÷ 2 = 3.2, porque 3.2 × 2 = 6.4."
+    },
+    {
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "20"
+        },
+        {
+          "valor": "0.7",
+          "signo": "×"
+        },
+        {
+          "valor": "14",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "retroalimentacion": "Esto verifica que 14 ÷ 0.7 = 20, porque 20 × 0.7 = 14."
     }
   ]
 }

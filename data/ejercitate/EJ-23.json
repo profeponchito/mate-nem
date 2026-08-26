@@ -2,200 +2,278 @@
   "id": "EJ-23",
   "grado": "Ejercítate",
   "numero": 23,
-  "categoria": "avanzado",
+  "categoria": "intermedio",
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Plano cartesiano",
-  "contenido": "Ubicación e identificación de puntos en el plano cartesiano mediante pares ordenados, cuadrantes y distancias simples.",
-  "pda": "Ubica e identifica puntos en el plano cartesiano usando pares ordenados, reconoce en qué cuadrante se encuentran y calcula distancias entre puntos que comparten una coordenada.",
+  "titulo": "Monomios y polinomios",
+  "contenido": "Identificación de monomios y polinomios, sus términos y las operaciones básicas de suma y resta entre ellos.",
+  "pda": "Identifica monomios y polinomios, reconoce términos semejantes y resuelve sumas y restas de polinomios para simplificar expresiones algebraicas en contextos cotidianos.",
   "problematizacion": {
-    "contexto": "En un videojuego de estrategia, el mapa está dividido en una cuadrícula donde cada casilla se ubica con dos números: uno para la posición horizontal y otro para la vertical. Tu personaje está en la posición (3, -2) y el tesoro está en la posición (3, 4).",
-    "pregunta": "¿Cómo puedes usar esas dos coordenadas para saber qué tan lejos está tu personaje del tesoro?"
+    "contexto": "En su tienda de abarrotes, don Mario anota el costo semanal de su mercancía con una expresión algebraica: si x representa el precio de una caja de fruta y y el de una caja de verdura, su compra de esta semana fue 3x + 2y. La próxima semana compró más: 5x + 4y.",
+    "pregunta": "¿Cómo puede don Mario sumar ambas expresiones para saber su gasto total de las dos semanas, sin necesidad de conocer los precios exactos de x y y?"
   },
   "subtemas": [
     {
       "numero": "23.1",
-      "titulo": "Ejes, cuadrantes y el origen",
-      "explicacion": "El plano cartesiano está formado por dos rectas numéricas perpendiculares: el eje X (horizontal) y el eje Y (vertical). El punto donde se cruzan se llama origen y corresponde a (0, 0). Estos dos ejes dividen el plano en cuatro regiones llamadas cuadrantes, numerados del I al IV en sentido contrario a las manecillas del reloj, y cada uno tiene una combinación distinta de signos para sus coordenadas.",
+      "titulo": "¿Qué es un monomio?",
+      "explicacion": "Un monomio es una expresión algebraica formada por un solo término: un número (coeficiente) multiplicado por una o más letras con exponentes (parte literal). El grado del monomio es la suma de los exponentes de su parte literal. Reconocer estas partes es la base para operar con expresiones algebraicas más complejas.",
+      "formula": "coeficiente · parte literal (con exponente) — grado = suma de los exponentes",
       "ejemplos": [
-        "El punto (2, 3) está en el cuadrante I porque ambas coordenadas son positivas.",
-        "El punto (-4, -1) está en el cuadrante III porque ambas coordenadas son negativas."
+        "7x² tiene coeficiente 7, parte literal x² y grado 2.",
+        "-4xy tiene coeficiente -4, parte literal xy y grado 2 (porque 1+1=2)."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿En qué cuadrante se ubica el punto (-3, 5)?",
-          "opciones": ["I", "II", "III", "IV"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Con x negativa y y positiva, el punto está en el cuadrante II."
+          "pregunta": "¿Cuál es el coeficiente del monomio -8x³?",
+          "opciones": [
+            "-8",
+            "3",
+            "x",
+            "8"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El coeficiente es el número que multiplica a la parte literal; en -8x³ es -8."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "El punto (0, 4) se encuentra sobre el eje Y.",
+          "enunciado": "El grado del monomio 5x⁴ es 4.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Cuando la coordenada x es 0, el punto siempre está sobre el eje Y."
+          "retroalimentacion": "El grado es el exponente de la parte literal; en 5x⁴ el exponente es 4."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "El punto donde se cruzan el eje X y el eje Y se llama ___.",
-          "respuestaCorrecta": "origen",
-          "retroalimentacion": "El origen tiene coordenadas (0, 0) y es el punto de referencia del plano cartesiano."
+          "frase": "El grado del monomio 6xy² es ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "El grado es la suma de los exponentes: x tiene exponente 1 y y² tiene exponente 2, entonces 1+2=3."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el signo de las coordenadas de un punto en el cuadrante IV?",
-          "opciones": ["(+, +)", "(-, +)", "(-, -)", "(+, -)"],
-          "respuestaCorrecta": 3,
-          "retroalimentacion": "En el cuadrante IV, la x es positiva y la y es negativa: (+, -)."
+          "pregunta": "¿Cuál es la parte literal del monomio 9a²b?",
+          "opciones": [
+            "9",
+            "a²b",
+            "2",
+            "ab²"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La parte literal son las letras con sus exponentes, sin el número que las multiplica: a²b."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada punto con su cuadrante.",
-          "columnaA": ["(5, 2)", "(-1, 6)", "(-3, -7)"],
-          "columnaB": ["Cuadrante II", "Cuadrante I", "Cuadrante III"],
-          "parejasCorrectas": [1, 0, 2],
-          "retroalimentacion": "(5,2) tiene ambas positivas: cuadrante I. (-1,6) tiene x negativa y y positiva: cuadrante II. (-3,-7) tiene ambas negativas: cuadrante III."
+          "instruccion": "Relaciona cada monomio con su grado.",
+          "columnaA": [
+            "7x³",
+            "-2xy",
+            "5"
+          ],
+          "columnaB": [
+            "Grado 0",
+            "Grado 3",
+            "Grado 2"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "7x³ tiene grado 3; -2xy tiene grado 2 (1+1); 5 es un número solo, sin letras, así que su grado es 0."
         }
       ]
     },
     {
       "numero": "23.2",
-      "titulo": "Ubicar puntos con pares ordenados",
-      "explicacion": "Un par ordenado (x, y) indica exactamente cómo llegar a un punto desde el origen: el primer número (x) dice cuánto moverse horizontalmente (derecha si es positivo, izquierda si es negativo) y el segundo número (y) dice cuánto moverse verticalmente (arriba si es positivo, abajo si es negativo). El orden importa: (3, 5) y (5, 3) son puntos distintos.",
+      "titulo": "Polinomios y términos semejantes",
+      "explicacion": "Un polinomio es la suma o resta de dos o más monomios. Dos términos son semejantes cuando tienen exactamente la misma parte literal (mismas letras con los mismos exponentes), aunque su coeficiente sea distinto. Identificar términos semejantes es indispensable para poder simplificar un polinomio más adelante.",
       "ejemplos": [
-        "Para ubicar (4, -2): desde el origen te mueves 4 unidades a la derecha y 2 hacia abajo.",
-        "Para ubicar (-3, 5): desde el origen te mueves 3 unidades a la izquierda y 5 hacia arriba."
+        "3x² + 5x - 2 es un polinomio de tres términos (trinomio).",
+        "En 4x + 7x - 2, los términos 4x y 7x son semejantes porque ambos tienen la parte literal x."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Para ubicar el punto (-5, 3), ¿qué movimientos haces desde el origen?",
-          "opciones": ["5 a la izquierda, 3 hacia arriba", "5 a la derecha, 3 hacia arriba", "3 a la izquierda, 5 hacia arriba", "5 a la izquierda, 3 hacia abajo"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Como x = -5, te mueves 5 a la izquierda; como y = 3, te mueves 3 hacia arriba."
+          "tipo": "verdadero_falso",
+          "enunciado": "3x² y 3x son términos semejantes.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "No son semejantes: aunque tienen el mismo coeficiente, sus exponentes son distintos (2 y 1), así que la parte literal no es igual."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Para ubicar el punto (6, -4), te mueves 6 unidades a la derecha y 4 hacia abajo.",
+          "enunciado": "5xy y -2xy son términos semejantes.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "x = 6 (positivo) es 6 a la derecha, y y = -4 (negativo) es 4 hacia abajo."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "En el par ordenado (7, -2), el primer número (7) indica el movimiento sobre el eje ___.",
-          "respuestaCorrecta": "X",
-          "retroalimentacion": "El primer número de un par ordenado siempre corresponde al movimiento horizontal, sobre el eje X."
+          "retroalimentacion": "Sí: ambos tienen la misma parte literal, xy, aunque sus coeficientes sean diferentes."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de los siguientes pares ordenados corresponde a moverse 2 a la izquierda y 8 hacia arriba desde el origen?",
-          "opciones": ["(2, 8)", "(-2, 8)", "(8, -2)", "(-2, -8)"],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "2 a la izquierda es x = -2, y 8 hacia arriba es y = 8, así que el par es (-2, 8)."
+          "pregunta": "¿Cuántos términos tiene el polinomio 4x³ - 2x² + x - 7?",
+          "opciones": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "El polinomio tiene 4 términos: 4x³, -2x², x y -7."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En el par ordenado (-3, 9), el segundo número (9) indica el movimiento sobre el eje ___.",
-          "respuestaCorrecta": "Y",
-          "retroalimentacion": "El segundo número de un par ordenado siempre corresponde al movimiento vertical, sobre el eje Y."
+          "frase": "En el polinomio 6a - 3b + 9a, los términos semejantes son 6a y ___.",
+          "respuestaCorrecta": "9a",
+          "retroalimentacion": "6a y 9a tienen la misma parte literal (a), así que son semejantes; -3b no lo es porque su letra es distinta."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes expresiones es un binomio?",
+          "opciones": [
+            "5x",
+            "3x + 2y",
+            "x² - 4x + 1",
+            "7"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Un binomio tiene exactamente dos términos; 3x + 2y cumple con eso."
         }
       ]
     },
     {
       "numero": "23.3",
-      "titulo": "Identificar las coordenadas de un punto dado",
-      "explicacion": "Este proceso es el inverso al de ubicar: cuando ya tienes un punto marcado en el plano, para saber sus coordenadas cuentas cuántas unidades hay que moverse horizontalmente desde el origen (ese es el valor de x) y cuántas verticalmente (ese es el valor de y), sin olvidar el signo según la dirección del movimiento.",
+      "titulo": "Suma y resta de polinomios",
+      "explicacion": "Para sumar polinomios se combinan (se suman o restan) los coeficientes de los términos semejantes, dejando igual los que no tienen pareja. Para restar, primero se cambia el signo de cada término del polinomio que se resta y después se suma como de costumbre; olvidar cambiar algún signo es el error más común.",
+      "formula": "(ax + b) + (cx + d) = (a+c)x + (b+d)",
       "ejemplos": [
-        "Un punto que está 6 a la derecha y 2 hacia arriba del origen tiene coordenadas (6, 2).",
-        "Un punto que está 3 a la izquierda y sobre el eje X (sin moverse verticalmente) tiene coordenadas (-3, 0)."
+        "(3x + 5) + (2x - 1) = 5x + 4.",
+        "(6x² - 3x) - (2x² + x) = 4x² - 4x."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar (4x + 3) + (2x - 5) se obtiene ___.",
+          "respuestaCorrecta": "6x - 2",
+          "retroalimentacion": "Se suman los términos semejantes: 4x+2x=6x y 3-5=-2, entonces queda 6x-2."
+        },
+        {
           "tipo": "opcion_multiple",
-          "pregunta": "Un punto está ubicado 4 unidades a la derecha del origen y 6 hacia abajo. ¿Cuáles son sus coordenadas?",
-          "opciones": ["(4, -6)", "(-4, 6)", "(4, 6)", "(-4, -6)"],
+          "pregunta": "¿Cuál es el resultado de (7x² - 3x) + (2x² + 5x)?",
+          "opciones": [
+            "9x² + 2x",
+            "5x² - 8x",
+            "9x² - 2x",
+            "5x² + 2x"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "4 a la derecha es x = 4, y 6 hacia abajo es y = -6, así que el punto es (4, -6)."
+          "retroalimentacion": "7x²+2x²=9x² y -3x+5x=2x, entonces el resultado es 9x²+2x."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de (5x - 2) - (3x + 4)?",
+          "opciones": [
+            "2x - 6",
+            "2x + 6",
+            "8x - 6",
+            "2x + 2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Se cambia el signo al segundo polinomio: 5x-2-3x-4=2x-6."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Un punto ubicado 5 a la izquierda y 5 hacia arriba del origen tiene coordenadas (5, 5).",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Como el movimiento es hacia la izquierda, x debe ser negativo: las coordenadas correctas son (-5, 5), no (5, 5)."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "Un punto que está 8 unidades a la izquierda del origen y sobre el eje X (sin moverse verticalmente) tiene coordenadas (___, 0).",
-          "respuestaCorrecta": "-8",
-          "retroalimentacion": "8 a la izquierda del origen corresponde a x = -8; como no hay movimiento vertical, y = 0."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un punto está 3 unidades a la derecha y 7 hacia arriba del origen. ¿Cuáles son sus coordenadas?",
-          "opciones": ["(3, 7)", "(7, 3)", "(-3, 7)", "(3, -7)"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "3 a la derecha es x = 3, y 7 hacia arriba es y = 7, así que el punto es (3, 7)."
+          "enunciado": "Al restar polinomios, se debe cambiar el signo de cada término del segundo polinomio antes de sumar.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: restar un polinomio equivale a sumar su opuesto, por eso se invierten los signos de todos sus términos."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona la descripción del movimiento desde el origen con las coordenadas correctas.",
-          "columnaA": ["2 a la derecha, 9 hacia abajo", "6 a la izquierda, 1 hacia abajo", "0 movimiento horizontal, 5 hacia arriba"],
-          "columnaB": ["(-6, -1)", "(0, 5)", "(2, -9)"],
-          "parejasCorrectas": [2, 0, 1],
-          "retroalimentacion": "2 a la derecha y 9 abajo es (2,-9); 6 a la izquierda y 1 abajo es (-6,-1); sin movimiento horizontal y 5 arriba es (0,5)."
+          "instruccion": "Relaciona cada operación con su resultado simplificado.",
+          "columnaA": [
+            "(3x+4)+(2x+1)",
+            "(6x-2)-(2x+3)",
+            "(x²+3x)+(2x²-x)"
+          ],
+          "columnaB": [
+            "3x² + 2x",
+            "4x - 5",
+            "5x + 5"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "(3x+4)+(2x+1)=5x+5; (6x-2)-(2x+3)=4x-5; (x²+3x)+(2x²-x)=3x²+2x."
         }
       ]
     },
     {
       "numero": "23.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: el eje X es horizontal y el eje Y es vertical, se cruzan en el origen (0,0) y forman cuatro cuadrantes según el signo de las coordenadas. Un par ordenado (x, y) siempre se lee primero el movimiento horizontal y después el vertical. Cuando dos puntos comparten la misma coordenada x (están alineados verticalmente) o la misma coordenada y (están alineados horizontalmente), la distancia entre ellos es simplemente la diferencia, en valor absoluto, de la coordenada que cambia.",
+      "explicacion": "Recuerda: un monomio tiene coeficiente, parte literal y grado; un polinomio agrupa varios monomios y solo se pueden sumar o restar directamente los términos semejantes; al restar, primero cambia los signos del segundo polinomio. Estas ideas sirven para modelar situaciones reales, como sumar gastos o áreas expresadas con letras.",
       "ejemplos": [
-        "La distancia entre (2, 3) y (2, 8), que tienen la misma x, es |8 - 3| = 5 unidades.",
-        "La distancia entre (-4, 1) y (5, 1), que tienen la misma y, es |5 - (-4)| = 9 unidades."
+        "Si el gasto semanal es (3x+2y) y la siguiente semana es (5x+4y), el total es (3x+2y)+(5x+4y) = 8x+6y.",
+        "Si a ese total se le resta un descuento de (x+y), queda (8x+6y)-(x+y) = 7x+5y."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es la distancia entre los puntos (3, 2) y (3, 9)?",
-          "opciones": ["7", "11", "6", "9"],
+          "pregunta": "Un taller cobra por mano de obra (2x + 50) pesos y por materiales (x + 120) pesos, donde x son las horas trabajadas. ¿Cuál es el costo total en función de x?",
+          "opciones": [
+            "3x + 170",
+            "2x + 170",
+            "3x + 70",
+            "x + 170"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como ambos comparten x = 3, la distancia es |9 - 2| = 7 unidades."
+          "retroalimentacion": "Se suman los términos semejantes: 2x+x=3x y 50+120=170, entonces el costo total es 3x+170."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En el videojuego, el personaje está en (3, -2) y el tesoro en (3, 4). Como comparten la misma coordenada x, la distancia entre ellos es ___ casillas.",
-          "respuestaCorrecta": "6",
-          "retroalimentacion": "|4 - (-2)| = 6, así que el tesoro está a 6 casillas de distancia vertical del personaje."
+          "frase": "Si el gasto de la semana 1 es (4x+3y) y el de la semana 2 es (2x+5y), el gasto total es ___.",
+          "respuestaCorrecta": "6x + 8y",
+          "retroalimentacion": "Se suman los términos semejantes: 4x+2x=6x y 3y+5y=8y, entonces el total es 6x+8y."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Los puntos (-2, 5) y (6, 5) están a una distancia de 8 unidades porque comparten la misma coordenada y.",
+          "enunciado": "El grado del polinomio resultante de sumar 3x²+2x y 5x-1 es 2.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Como comparten y = 5, la distancia es |6 - (-2)| = 8 unidades."
+          "retroalimentacion": "3x²+2x+5x-1=3x²+7x-1; el término de mayor grado es 3x², así que el polinomio es de grado 2."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un cuadrado tiene vértices en (1,1), (1,5), (5,5) y (5,1). ¿Cuánto mide cada lado?",
-          "opciones": ["4", "5", "3", "6"],
+          "pregunta": "Una recámara tiene un área expresada como (x²+3x) y se le agrega un clóset de área (2x+5). ¿Cuál es el área total?",
+          "opciones": [
+            "x² + 5x + 5",
+            "x² + 3x + 5",
+            "3x² + 5",
+            "x² + 5x + 2"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Entre (1,1) y (1,5), que comparten x = 1, la distancia es |5 - 1| = 4 unidades: ese es el lado del cuadrado."
+          "retroalimentacion": "x²+3x+2x+5 = x²+5x+5, sumando los términos semejantes 3x y 2x."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada par de puntos con la distancia entre ellos.",
-          "columnaA": ["(2, 3) y (2, 10)", "(-5, 4) y (3, 4)", "(0, -6) y (0, 6)"],
-          "columnaB": ["8", "12", "7"],
-          "parejasCorrectas": [2, 0, 1],
-          "retroalimentacion": "(2,3)-(2,10) comparten x: distancia 7. (-5,4)-(3,4) comparten y: distancia 8. (0,-6)-(0,6) comparten x: distancia 12."
+          "instruccion": "Relaciona cada situación algebraica con su expresión simplificada.",
+          "columnaA": [
+            "Suma de (2x+3) y (5x+1)",
+            "Resta de (8x-2) menos (3x+4)",
+            "Suma de (x²+2x) y (3x²-x)"
+          ],
+          "columnaB": [
+            "4x² + x",
+            "7x + 4",
+            "5x - 6"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(2x+3)+(5x+1)=7x+4; (8x-2)-(3x+4)=5x-6; (x²+2x)+(3x²-x)=4x²+x."
         }
       ]
     }
@@ -203,30 +281,39 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "¿En qué cuadrante está el punto (7, -3)?",
-      "opciones": ["I", "II", "III", "IV"],
-      "respuestaCorrecta": 3,
-      "retroalimentacion": "Con x positiva y y negativa, el punto está en el cuadrante IV."
-    },
-    {
-      "tipo": "verdadero_falso",
-      "enunciado": "El punto (-6, 0) está sobre el eje X.",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "Cuando la coordenada y es 0, el punto siempre está sobre el eje X."
+      "pregunta": "¿Cuál es el coeficiente del monomio -3x⁵?",
+      "opciones": [
+        "-3",
+        "5",
+        "x",
+        "3"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "El coeficiente es el número que multiplica a la parte literal; en -3x⁵ es -3."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "La distancia entre los puntos (4, 2) y (4, 15) es ___ unidades.",
-      "respuestaCorrecta": "13",
-      "retroalimentacion": "Como comparten x = 4, la distancia es |15 - 2| = 13 unidades."
+      "frase": "Al simplificar (5x+2)+(3x-6) se obtiene ___.",
+      "respuestaCorrecta": "8x - 4",
+      "retroalimentacion": "Se suman los términos semejantes: 5x+3x=8x y 2-6=-4."
     },
     {
-      "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada punto con su cuadrante.",
-      "columnaA": ["(-8, -2)", "(3, -5)", "(-1, 9)"],
-      "columnaB": ["Cuadrante IV", "Cuadrante II", "Cuadrante III"],
-      "parejasCorrectas": [2, 0, 1],
-      "retroalimentacion": "(-8,-2) tiene ambas negativas: cuadrante III. (3,-5) tiene x positiva y y negativa: cuadrante IV. (-1,9) tiene x negativa y y positiva: cuadrante II."
+      "tipo": "verdadero_falso",
+      "enunciado": "9xy y 9x son términos semejantes.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "No son semejantes: tienen distinta parte literal (xy contra x)."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "Un puesto vende manzanas y peras: el gasto en manzanas es (3x+10) y en peras es (2x+15), donde x es el precio por kilo. ¿Cuál es el gasto total?",
+      "opciones": [
+        "5x + 25",
+        "5x + 15",
+        "x + 25",
+        "5x + 10"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "3x+2x=5x y 10+15=25, entonces el gasto total es 5x+25."
     }
   ]
 }

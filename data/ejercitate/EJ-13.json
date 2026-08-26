@@ -2,235 +2,890 @@
   "id": "EJ-13",
   "grado": "Ejercítate",
   "numero": 13,
-  "categoria": "intermedio",
+  "categoria": "basico",
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Leyes de los exponentes",
-  "contenido": "Reglas para multiplicar, dividir y elevar potencias que tienen la misma base.",
-  "pda": "Aplica las leyes de los exponentes (producto, cociente, potencia de potencia y exponente cero) para simplificar expresiones con potencias de la misma base.",
+  "titulo": "Completar dígitos del algoritmo de la multiplicación y división",
+  "contenido": "El algoritmo convencional de la multiplicación y la división con números naturales: productos parciales, acarreos (dígitos que se \"llevan\") y el proceso de bajar dígitos.",
+  "pda": "Explica y aplica correctamente cada paso del algoritmo escrito de la multiplicación y la división con números naturales, identificando acarreos, productos parciales y dígitos que se bajan, para resolver problemas cotidianos.",
   "problematizacion": {
-    "contexto": "Un técnico en cómputo trabaja con memorias que se miden en potencias de 2: un USB tiene 2³ gigabytes y necesita combinarlo con otras memorias de 2⁵ y 2² gigabytes para calcular capacidades totales, todo usando la misma base 2.",
-    "pregunta": "Si necesita multiplicar 2³ por 2⁵ sin convertir todo a números normales, ¿cómo puede simplificar esa operación usando solo los exponentes?"
+    "contexto": "En la cooperativa escolar, Valeria necesita calcular cuántos cuadernos hay en 27 paquetes de 18 cada uno, y después repartir 936 lápices entre 24 salones en partes iguales. Al hacer las cuentas a mano, se le olvida si en ese paso debe \"llevar\" un dígito o \"bajar\" el siguiente, y eso le hace equivocarse.",
+    "pregunta": "¿Qué significa exactamente \"llevar\" un dígito al multiplicar y \"bajar\" un dígito al dividir, y cómo saber qué paso del algoritmo sigue en cada momento?"
   },
   "subtemas": [
     {
       "numero": "13.1",
-      "titulo": "Producto de potencias de igual base",
-      "explicacion": "Cuando multiplicamos potencias con la misma base, sumamos los exponentes. Esto funciona porque una potencia representa repetir la base como factor tantas veces como indica el exponente; al juntar dos potencias de la misma base en una sola multiplicación, el número total de veces que se repite la base es la suma de ambos exponentes.",
-      "formula": "a^m × a^n = a^(m+n)",
+      "titulo": "Un acarreo en las casillas del algoritmo",
+      "explicacion": "El algoritmo vertical de la multiplicación se escribe en columnas alineadas a la derecha: si el producto de una posición es 10 o más, escribes solo la cifra de las unidades en esa columna y \"llevas\" (acarreas) la cifra de las decenas para sumarla al siguiente producto. La división también puede comprobarse con columnas: si el cociente es correcto, al multiplicarlo por el divisor debe reproducirse exactamente el dividendo, dígito por dígito — por eso, para verificar una división, se completa el mismo algoritmo de multiplicación con el cociente y el divisor, y el resultado debe coincidir con el dividendo.",
       "ejemplos": [
-        "2^3 × 2^4 = 2^(3+4) = 2^7 = 128",
-        "x^2 × x^5 = x^7 (se suman los exponentes 2 y 5)"
+        "En 47 × 3: 3×7=21, escribes 1 y llevas 2; 3×4=12, más el 2 que llevabas = 14. El resultado es 141.",
+        "Para verificar que 156 ÷ 4 = 39, multiplicas 39 × 4: 4×9=36, escribes 6 y llevas 3; 4×3=12, más el 3 que llevabas = 15. El resultado es 156, así que la división es correcta."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el resultado de 3^2 × 3^5?",
-          "opciones": ["3^7", "3^10", "3^3", "9^7"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Se suman los exponentes de igual base: 2+5=7, entonces 3^2 × 3^5 = 3^7."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "47"
+            },
+            {
+              "valor": "3",
+              "signo": "×"
+            },
+            {
+              "valor": "141",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "47 × 3: primero 3×7=21, escribes 1 y llevas 2; luego 3×4=12, más el 2 que llevabas = 14. Resultado: 141."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "5^3 × 5^2 es igual a 5^5.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Al multiplicar potencias de igual base se suman los exponentes: 3+2=5, así 5^3 × 5^2 = 5^5."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "62"
+            },
+            {
+              "valor": "4",
+              "signo": "×"
+            },
+            {
+              "valor": "248",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [],
+            [
+              0,
+              2
+            ]
+          ],
+          "retroalimentacion": "62 × 4: primero 4×2=8 (sin acarreo); luego 4×6=24, escribes 4 y llevas 2 a las centenas. Resultado: 248."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Al simplificar x^4 × x^6, el exponente resultante es ___.",
-          "respuestaCorrecta": "10",
-          "retroalimentacion": "4+6=10, entonces x^4 × x^6 = x^10."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "39"
+            },
+            {
+              "valor": "4",
+              "signo": "×"
+            },
+            {
+              "valor": "156",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              1,
+              2
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 156 ÷ 4 = 39, porque 39 × 4 = 156: 4×9=36, escribes 6 y llevas 3; 4×3=12, más el 3 que llevabas = 15."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de las siguientes expresiones es equivalente a 2^3 × 2^5?",
-          "opciones": ["2^8", "2^15", "4^8", "2^2"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "3+5=8, así que 2^3 × 2^5 = 2^8."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "24"
+            },
+            {
+              "valor": "4",
+              "signo": "×"
+            },
+            {
+              "valor": "96",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 96 ÷ 4 = 24, porque 24 × 4 = 96: 4×4=16, escribes 6 y llevas 1; 4×2=8, más el 1 que llevabas = 9."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada multiplicación de potencias con su resultado simplificado.",
-          "columnaA": ["7^2 × 7^3", "a^4 × a^4", "10^1 × 10^6"],
-          "columnaB": ["10^7", "a^8", "7^5"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "7^2×7^3=7^5 (2+3=5); a^4×a^4=a^8 (4+4=8); 10^1×10^6=10^7 (1+6=7)."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "19"
+            },
+            {
+              "valor": "5",
+              "signo": "×"
+            },
+            {
+              "valor": "95",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [],
+            [
+              0
+            ]
+          ],
+          "retroalimentacion": "19 × 5: primero 5×9=45, escribes 5 y llevas 4; luego 5×1=5, más el 4 que llevabas = 9. Resultado: 95."
         }
       ]
     },
     {
       "numero": "13.2",
-      "titulo": "Cociente de potencias de igual base",
-      "explicacion": "Al dividir potencias de la misma base, restamos los exponentes. Esto sucede porque dividir es 'quitar' factores repetidos: si la base aparece multiplicada m veces y la dividimos entre la misma base multiplicada n veces, se cancelan n factores y quedan solo m-n.",
-      "formula": "a^m ÷ a^n = a^(m-n), con a ≠ 0",
+      "titulo": "Varios acarreos en números más grandes",
+      "explicacion": "Cuando el multiplicando tiene tres cifras, puede haber más de un acarreo seguido: cada acarreo se suma al siguiente producto parcial antes de escribir el nuevo dígito de esa columna. Para verificar una división con divisor de una cifra y cociente más grande, se completa igual el algoritmo de multiplicación (cociente × divisor); si el cociente tiene dos o tres cifras, cada columna puede llevar su propio acarreo, igual que en cualquier multiplicación.",
       "ejemplos": [
-        "5^6 ÷ 5^2 = 5^(6-2) = 5^4 = 625",
-        "x^9 ÷ x^3 = x^6"
+        "En 246 × 3: 3×6=18, escribes 8 y llevas 1; 3×4=12+1=13, escribes 3 y llevas 1; 3×2=6+1=7. El resultado es 738.",
+        "Para verificar que 372 ÷ 3 = 124, multiplicas 124 × 3: 3×4=12, escribes 2 y llevas 1; 3×2=6+1=7; 3×1=3. El resultado es 372, así que la división es correcta."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el resultado de 4^7 ÷ 4^3?",
-          "opciones": ["4^4", "4^10", "4^2.33", "1^4"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Se restan los exponentes: 7-3=4, entonces 4^7 ÷ 4^3 = 4^4."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "246"
+            },
+            {
+              "valor": "3",
+              "signo": "×"
+            },
+            {
+              "valor": "738",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0,
+              2
+            ],
+            [],
+            [
+              1,
+              2
+            ]
+          ],
+          "retroalimentacion": "246 × 3: 3×6=18, escribes 8 y llevas 1; 3×4=12+1=13, escribes 3 y llevas 1; 3×2=6+1=7. Resultado: 738."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "8^5 ÷ 8^5 es igual a 8^0.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Al restar los exponentes: 5-5=0, así que 8^5 ÷ 8^5 = 8^0 (y su valor es 1)."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "158"
+            },
+            {
+              "valor": "6",
+              "signo": "×"
+            },
+            {
+              "valor": "948",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              2
+            ],
+            [],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "158 × 6: 6×8=48, escribes 8 y llevas 4; 6×5=30+4=34, escribes 4 y llevas 3; 6×1=6+3=9. Resultado: 948."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Al simplificar y^10 ÷ y^4, el exponente resultante es ___.",
-          "respuestaCorrecta": "6",
-          "retroalimentacion": "10-4=6, entonces y^10 ÷ y^4 = y^6."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "324"
+            },
+            {
+              "valor": "7",
+              "signo": "×"
+            },
+            {
+              "valor": "2268",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0,
+              2
+            ],
+            [],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "retroalimentacion": "324 × 7: 7×4=28, escribes 8 y llevas 2; 7×2=14+2=16, escribes 6 y llevas 1; 7×3=21+1=22. Resultado: 2,268."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Simplifica 6^9 ÷ 6^5.",
-          "opciones": ["6^4", "6^14", "6^1.8", "36^4"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "9-5=4, entonces 6^9 ÷ 6^5 = 6^4."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "124"
+            },
+            {
+              "valor": "3",
+              "signo": "×"
+            },
+            {
+              "valor": "372",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              2
+            ],
+            [],
+            [
+              0,
+              2
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 372 ÷ 3 = 124, porque 124 × 3 = 372: 3×4=12, escribes 2 y llevas 1; 3×2=6+1=7; 3×1=3."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada división de potencias con su resultado simplificado.",
-          "columnaA": ["3^8 ÷ 3^3", "b^7 ÷ b^2", "10^5 ÷ 10^4"],
-          "columnaB": ["10^1", "b^5", "3^5"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "3^8÷3^3=3^5 (8-3=5); b^7÷b^2=b^5 (7-2=5); 10^5÷10^4=10^1 (5-4=1)."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "87"
+            },
+            {
+              "valor": "5",
+              "signo": "×"
+            },
+            {
+              "valor": "435",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              1,
+              2
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 435 ÷ 5 = 87, porque 87 × 5 = 435: 5×7=35, escribes 5 y llevas 3; 5×8=40+3=43."
         }
       ]
     },
     {
       "numero": "13.3",
-      "titulo": "Potencia de potencia y exponente cero",
-      "explicacion": "Cuando elevamos una potencia a otro exponente, multiplicamos los exponentes: estamos repitiendo el bloque a^m un total de n veces, y al sumar ese exponente m consigo mismo n veces se obtiene m×n. Además, cualquier número distinto de cero elevado a la potencia 0 es igual a 1, porque al aplicar la ley del cociente a una potencia dividida entre sí misma (a^m ÷ a^m) siempre resulta exponente 0, y dividir un número entre sí mismo da 1.",
-      "formula": "(a^m)^n = a^(m×n); a^0 = 1 (a ≠ 0)",
+      "titulo": "Multiplicador y divisor de dos cifras",
+      "explicacion": "Cuando el multiplicador tiene dos cifras, el algoritmo se completa con dos filas de producto parcial: la de las unidades del multiplicador, y la de las decenas, ya recorrida un lugar a la izquierda (multiplicada por 10) para que se alinee en las columnas correctas; luego se suman ambas filas para obtener el resultado. Para verificar una división con divisor de dos cifras, se sigue el mismo procedimiento con el cociente y el divisor: cociente × unidades del divisor, cociente × decenas del divisor (recorrido), y la suma de ambos productos parciales debe coincidir exactamente con el dividendo.",
+      "formula": "producto final = (número × unidades del multiplicador) + (número × decenas del multiplicador × 10)",
       "ejemplos": [
-        "(2^3)^2 = 2^(3×2) = 2^6 = 64",
-        "7^0 = 1, y también 250^0 = 1"
+        "En 43 × 26: el primer producto parcial es 43 × 6 = 258; el segundo es 43 × 2, recorrido un lugar a la izquierda: 860. La suma final es 258 + 860 = 1,118.",
+        "Para verificar que 588 ÷ 12 = 49, multiplicas 49 × 12: el primer producto parcial es 49 × 2 = 98; el segundo es 49 × 1, recorrido: 490. La suma 98 + 490 = 588 confirma que la división es correcta."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el resultado de (5^2)^3?",
-          "opciones": ["5^6", "5^5", "5^9", "5^8"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Se multiplican los exponentes: 2×3=6, entonces (5^2)^3 = 5^6."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "43"
+            },
+            {
+              "valor": "26",
+              "signo": "×"
+            },
+            {
+              "valor": "258"
+            },
+            {
+              "valor": "860",
+              "signo": "+"
+            },
+            {
+              "valor": "1118",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "retroalimentacion": "43 × 26 = 43×6 + 43×2×10 = 258 + 860 = 1,118."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "(x^4)^3 es igual a x^7.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "En potencia de potencia los exponentes se multiplican, no se suman: 4×3=12, así que (x^4)^3 = x^12."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "34"
+            },
+            {
+              "valor": "23",
+              "signo": "×"
+            },
+            {
+              "valor": "102"
+            },
+            {
+              "valor": "680",
+              "signo": "+"
+            },
+            {
+              "valor": "782",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "34 × 23 = 34×3 + 34×2×10 = 102 + 680 = 782."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "El valor de 15^0 es ___.",
-          "respuestaCorrecta": "1",
-          "retroalimentacion": "Todo número distinto de cero elevado a la potencia 0 es igual a 1."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "49"
+            },
+            {
+              "valor": "12",
+              "signo": "×"
+            },
+            {
+              "valor": "98"
+            },
+            {
+              "valor": "490",
+              "signo": "+"
+            },
+            {
+              "valor": "588",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 588 ÷ 12 = 49, porque 49 × 12 = 49×2 + 49×1×10 = 98 + 490 = 588."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el resultado de (a^3)^4?",
-          "opciones": ["a^12", "a^7", "a^81", "a^43"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "3×4=12, entonces (a^3)^4 = a^12."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "13"
+            },
+            {
+              "valor": "21",
+              "signo": "×"
+            },
+            {
+              "valor": "13"
+            },
+            {
+              "valor": "260",
+              "signo": "+"
+            },
+            {
+              "valor": "273",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 273 ÷ 21 = 13, porque 13 × 21 = 13×1 + 13×2×10 = 13 + 260 = 273."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada expresión con su valor simplificado.",
-          "columnaA": ["(2^2)^3", "9^0", "(m^5)^2"],
-          "columnaB": ["m^10", "2^6", "1"],
-          "parejasCorrectas": [1, 2, 0],
-          "retroalimentacion": "(2^2)^3=2^6 (2×3=6); 9^0=1 (exponente cero); (m^5)^2=m^10 (5×2=10)."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "52"
+            },
+            {
+              "valor": "34",
+              "signo": "×"
+            },
+            {
+              "valor": "208"
+            },
+            {
+              "valor": "1560",
+              "signo": "+"
+            },
+            {
+              "valor": "1768",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "retroalimentacion": "52 × 34 = 52×4 + 52×3×10 = 208 + 1,560 = 1,768."
         }
       ]
     },
     {
       "numero": "13.4",
-      "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda las tres leyes: al multiplicar potencias de igual base se suman los exponentes (a^m×a^n=a^(m+n)); al dividirlas se restan (a^m÷a^n=a^(m-n)); y al elevar una potencia a otro exponente se multiplican (a^m)^n=a^(m×n), mientras que cualquier base distinta de cero elevada a 0 vale 1. En problemas combinados, aplica primero la potencia de potencia, luego el producto, y al final el cociente, sin perder de vista que todas las bases deben ser iguales para poder combinar los exponentes.",
+      "titulo": "Síntesis: multiplicación y verificación de división",
+      "explicacion": "Recuerda: en la multiplicación, cada cifra del multiplicador genera un producto parcial que se recorre según su posición, y los acarreos se suman al siguiente producto antes de escribir el dígito. Para verificar cualquier división —con divisor de una o de dos cifras— se sigue exactamente el mismo algoritmo, usando el cociente como multiplicando y el divisor como multiplicador: si el resultado final coincide dígito por dígito con el dividendo, la división es correcta.",
       "ejemplos": [
-        "(3^2 × 3^4) ÷ 3^3 = 3^6 ÷ 3^3 = 3^3 = 27 (primero se suman los exponentes del producto, luego se resta el del cociente)",
-        "(x^2)^3 × x^4 = x^6 × x^4 = x^10"
+        "En 356 × 4: 4×6=24, escribes 4 y llevas 2; 4×5=20+2=22, escribes 2 y llevas 2; 4×3=12+2=14. El resultado es 1,424.",
+        "Para verificar que 936 ÷ 24 = 39, multiplicas 39 × 24: el primer producto parcial es 39 × 4 = 156; el segundo es 39 × 2, recorrido: 780. La suma 156 + 780 = 936 confirma que la división es correcta."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Simplifica: (2^3 × 2^2) ÷ 2^4",
-          "opciones": ["2^1", "2^9", "2^5", "2^24"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Primero se suman los exponentes del producto (3+2=5), luego se resta el del cociente (5-4=1): el resultado es 2^1."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "356"
+            },
+            {
+              "valor": "4",
+              "signo": "×"
+            },
+            {
+              "valor": "1424",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0,
+              1
+            ],
+            [],
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "retroalimentacion": "356 × 4: 4×6=24, escribes 4 y llevas 2; 4×5=20+2=22, escribes 2 y llevas 2; 4×3=12+2=14. Resultado: 1,424."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "(x^2)^3 × x^1 es igual a x^7.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Se multiplican los exponentes de la potencia de potencia (2×3=6) y se suma el del producto (6+1=7)."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "216"
+            },
+            {
+              "valor": "4",
+              "signo": "×"
+            },
+            {
+              "valor": "864",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              2
+            ],
+            [],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 864 ÷ 4 = 216, porque 216 × 4 = 864: 4×6=24, escribes 4 y llevas 2; 4×1=4+2=6; 4×2=8."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Al simplificar (a^5 ÷ a^2) × a^0, el exponente final de a es ___.",
-          "respuestaCorrecta": "3",
-          "retroalimentacion": "En el cociente 5-2=3; multiplicar por a^0 (que vale 1) no cambia el resultado, así que el exponente final es 3."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "67"
+            },
+            {
+              "valor": "48",
+              "signo": "×"
+            },
+            {
+              "valor": "536"
+            },
+            {
+              "valor": "2680",
+              "signo": "+"
+            },
+            {
+              "valor": "3216",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "retroalimentacion": "67 × 48 = 67×8 + 67×4×10 = 536 + 2,680 = 3,216."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un cultivo de bacterias comienza con 3^4 bacterias y luego se multiplica por 3^2. ¿Cuántas bacterias hay, expresado como potencia de 3?",
-          "opciones": ["3^6", "3^8", "3^2", "3^16"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Multiplicar por 3^2 significa sumar exponentes: 4+2=6, entonces hay 3^6 bacterias."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "39"
+            },
+            {
+              "valor": "24",
+              "signo": "×"
+            },
+            {
+              "valor": "156"
+            },
+            {
+              "valor": "780",
+              "signo": "+"
+            },
+            {
+              "valor": "936",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "Esto verifica que 936 ÷ 24 = 39, porque 39 × 24 = 39×4 + 39×2×10 = 156 + 780 = 936."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada expresión combinada con su resultado simplificado.",
-          "columnaA": ["(5^2)^2 ÷ 5^1", "7^3 × 7^0", "(x^3 × x^2) ÷ x^1"],
-          "columnaB": ["x^4", "7^3", "5^3"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "(5^2)^2÷5^1=5^4÷5^1=5^3; 7^3×7^0=7^3 (7^0=1); (x^3×x^2)÷x^1=x^5÷x^1=x^4."
+          "tipo": "algoritmo_columnas",
+          "operacion": "multiplicacion",
+          "filas": [
+            {
+              "valor": "289"
+            },
+            {
+              "valor": "6",
+              "signo": "×"
+            },
+            {
+              "valor": "1734",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              2
+            ],
+            [],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "retroalimentacion": "289 × 6: 6×9=54, escribes 4 y llevas 5; 6×8=48+5=53, escribes 3 y llevas 5; 6×2=12+5=17. Resultado: 1,734."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
-      "tipo": "opcion_multiple",
-      "pregunta": "¿Cuál es el resultado de 4^2 × 4^3?",
-      "opciones": ["4^5", "4^6", "4^1", "16^5"],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "2+3=5, entonces 4^2 × 4^3 = 4^5."
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "68"
+        },
+        {
+          "valor": "5",
+          "signo": "×"
+        },
+        {
+          "valor": "340",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          0
+        ],
+        [],
+        [
+          1,
+          2
+        ]
+      ],
+      "retroalimentacion": "68 × 5: 5×8=40, escribes 0 y llevas 4; luego 5×6=30+4=34. Resultado: 340."
     },
     {
-      "tipo": "llenar_frase",
-      "frase": "El exponente resultante de simplificar b^12 ÷ b^5 es ___.",
-      "respuestaCorrecta": "7",
-      "retroalimentacion": "12-5=7, entonces b^12 ÷ b^5 = b^7."
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "117"
+        },
+        {
+          "valor": "8",
+          "signo": "×"
+        },
+        {
+          "valor": "936",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          0,
+          2
+        ],
+        [],
+        [
+          1,
+          2
+        ]
+      ],
+      "retroalimentacion": "Esto verifica que 936 ÷ 8 = 117, porque 117 × 8 = 936: 8×7=56, escribes 6 y llevas 5; 8×1=8+5=13, escribes 3 y llevas 1; 8×1=8+1=9."
     },
     {
-      "tipo": "verdadero_falso",
-      "enunciado": "(3^4)^0 es igual a 1.",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "Cualquier expresión con base distinta de cero elevada a la potencia 0 es igual a 1, incluyendo (3^4)^0."
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "63"
+        },
+        {
+          "valor": "42",
+          "signo": "×"
+        },
+        {
+          "valor": "126"
+        },
+        {
+          "valor": "2520",
+          "signo": "+"
+        },
+        {
+          "valor": "2646",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "retroalimentacion": "63 × 42 = 63×2 + 63×4×10 = 126 + 2,520 = 2,646."
     },
     {
-      "tipo": "opcion_multiple",
-      "pregunta": "Simplifica (2^2)^3 × 2^1",
-      "opciones": ["2^7", "2^6", "2^5", "2^12"],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "En la potencia de potencia 2×3=6, y sumando el exponente del producto 6+1=7, el resultado es 2^7."
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "39"
+        },
+        {
+          "valor": "21",
+          "signo": "×"
+        },
+        {
+          "valor": "39"
+        },
+        {
+          "valor": "780",
+          "signo": "+"
+        },
+        {
+          "valor": "819",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "retroalimentacion": "Esto verifica que 819 ÷ 21 = 39, porque 39 × 21 = 39×1 + 39×2×10 = 39 + 780 = 819."
     }
   ]
 }

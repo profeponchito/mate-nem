@@ -33,7 +33,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuál es el resultado correcto de 5 + 2 × 3?",
-          "opciones": ["21", "11", "10", "15"],
+          "opciones": [
+            "21",
+            "11",
+            "10",
+            "15"
+          ],
           "respuestaCorrecta": 1,
           "retroalimentacion": "Primero se multiplica: 2 × 3 = 6, luego se suma: 5 + 6 = 11."
         },
@@ -77,7 +82,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es 20 - 3 × 5 + 2?",
-          "opciones": ["7", "9", "17", "2"],
+          "opciones": [
+            "7",
+            "9",
+            "17",
+            "2"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Primero se multiplica: 3 × 5 = 15. Luego: 20 - 15 + 2 = 7."
         },
@@ -96,7 +106,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es 8 + 9 ÷ 3 - 1?",
-          "opciones": ["10", "6", "5", "12"],
+          "opciones": [
+            "10",
+            "6",
+            "5",
+            "12"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Primero la división: 9 ÷ 3 = 3. Luego: 8 + 3 - 1 = 10."
         },
@@ -123,7 +138,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es (6 + 4) × 3?",
-          "opciones": ["30", "22", "13", "19"],
+          "opciones": [
+            "30",
+            "22",
+            "13",
+            "19"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Primero el paréntesis: 6 + 4 = 10. Luego: 10 × 3 = 30."
         },
@@ -142,7 +162,12 @@
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es 18 - (5 + 1) × 2?",
-          "opciones": ["6", "24", "12", "30"],
+          "opciones": [
+            "6",
+            "24",
+            "12",
+            "30"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "Primero el paréntesis: 5 + 1 = 6. Luego la multiplicación: 6 × 2 = 12. Por último: 18 - 12 = 6."
         },
@@ -192,15 +217,32 @@
         {
           "tipo": "relacionar_columnas",
           "instruccion": "Relaciona cada expresión con su resultado.",
-          "columnaA": ["4 + 2 × 5", "(4 + 2) × 5", "20 ÷ 2 - 3"],
-          "columnaB": ["30", "7", "14"],
-          "parejasCorrectas": [2, 0, 1],
+          "columnaA": [
+            "4 + 2 × 5",
+            "(4 + 2) × 5",
+            "20 ÷ 2 - 3"
+          ],
+          "columnaB": [
+            "30",
+            "7",
+            "14"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
           "retroalimentacion": "4 + 2×5 = 14; (4+2)×5 = 30; 20÷2 - 3 = 7."
         },
         {
           "tipo": "opcion_multiple",
           "pregunta": "¿Cuánto es 2 × [ (10 - 4) + 3 ]?",
-          "opciones": ["18", "26", "20", "14"],
+          "opciones": [
+            "18",
+            "26",
+            "20",
+            "14"
+          ],
           "respuestaCorrecta": 0,
           "retroalimentacion": "10 - 4 = 6; 6 + 3 = 9 (esto es el corchete); 2 × 9 = 18."
         }
@@ -211,7 +253,12 @@
     {
       "tipo": "opcion_multiple",
       "pregunta": "¿Cuánto es 7 + 6 × 2?",
-      "opciones": ["19", "26", "13", "24"],
+      "opciones": [
+        "19",
+        "26",
+        "13",
+        "24"
+      ],
       "respuestaCorrecta": 0,
       "retroalimentacion": "Primero se multiplica: 6 × 2 = 12. Luego: 7 + 12 = 19."
     },
@@ -230,9 +277,21 @@
     {
       "tipo": "relacionar_columnas",
       "instruccion": "Relaciona cada expresión con su resultado.",
-      "columnaA": ["3 × 4 + 2", "3 × (4 + 2)", "12 - 2 × 3"],
-      "columnaB": ["6", "18", "14"],
-      "parejasCorrectas": [2, 1, 0],
+      "columnaA": [
+        "3 × 4 + 2",
+        "3 × (4 + 2)",
+        "12 - 2 × 3"
+      ],
+      "columnaB": [
+        "6",
+        "18",
+        "14"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
       "retroalimentacion": "3×4 + 2 = 14; 3×(4+2) = 18; 12 - 2×3 = 6."
     }
   ]

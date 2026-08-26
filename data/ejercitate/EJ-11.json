@@ -2,239 +2,798 @@
   "id": "EJ-11",
   "grado": "Ejercítate",
   "numero": 11,
-  "categoria": "intermedio",
+  "categoria": "basico",
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Números racionales e irracionales",
-  "contenido": "Qué distingue a un número racional de uno irracional, y cómo ubicarlos y clasificarlos.",
-  "pda": "Clasifica números como racionales o irracionales según su expresión decimal, y los ubica de forma aproximada en la recta numérica.",
+  "titulo": "Completar dígitos del algoritmo de la suma y resta",
+  "contenido": "El algoritmo escrito de la suma y la resta con números naturales: el proceso de acarreo (llevar) al sumar y de préstamo (pedir prestado) al restar, incluyendo préstamos encadenados a través de ceros.",
+  "pda": "Identifica y completa correctamente el dígito que se lleva al sumar (acarreo) o el dígito que resulta al pedir prestado en la resta (préstamo), en operaciones de dos, tres y más cifras, incluyendo casos con ceros, aplicándolo en situaciones cotidianas.",
   "problematizacion": {
-    "contexto": "Un jardinero quiere poner una cerca alrededor de una fuente circular. Mide el diámetro (2 m) y usa la fórmula C = π·d para saber cuántos metros de cerca comprar. Al calcular con la calculadora, obtiene 6.283185307... un número que nunca termina ni parece repetirse.",
-    "pregunta": "¿Por qué π nunca se puede escribir como una fracción exacta, y cuántos metros de cerca debería comprar el jardinero en realidad?"
+    "contexto": "En la papelería de doña Rosa, los empleados llevan las cuentas de ventas y el corte de caja a mano, sumando y restando en columna sin calculadora. A veces el corte no cuadra porque alguien se equivocó justo en el dígito que se lleva al sumar o en el que queda al pedir prestado en la resta, sobre todo cuando hay ceros de por medio.",
+    "pregunta": "¿Puedes identificar con exactitud qué dígito se lleva al sumar en cada columna, o qué dígito queda al pedir prestado en la resta —incluso cuando hay que \"saltar\" varios ceros— para que ni un peso se pierda en el corte de caja?"
   },
   "subtemas": [
     {
       "numero": "11.1",
-      "titulo": "¿Qué es un número racional?",
-      "explicacion": "Un número racional es cualquier número que se puede escribir como una fracción a/b, donde a y b son enteros y b es distinto de cero. A esta familia pertenecen los enteros, las fracciones y los decimales que terminan o que se repiten en un patrón (periódicos), porque todos ellos se pueden expresar como una división exacta de dos enteros.",
-      "formula": "Racional = a/b, con a, b enteros y b ≠ 0",
+      "titulo": "Acarreo al sumar y préstamo al restar (dos cifras)",
+      "explicacion": "Cuando sumamos en columna, si la suma de una columna llega a 10 o más, escribimos solo el dígito de las unidades de ese resultado y 'llevamos' 1 a la columna siguiente: eso es el acarreo. Cuando restamos en columna, si el dígito de arriba es menor que el de abajo, 'pedimos prestada' 1 decena a la columna siguiente: el dígito de arriba se convierte en (dígito + 10), y la columna de la que se pidió prestado se reduce en 1 antes de continuar restando. A partir de aquí resolverás estos algoritmos de forma visual: verás el número acomodado en columnas, con algunas casillas ya llenas y otras vacías que debes completar con el dígito correcto.",
+      "formula": "Suma: si a + b ≥ 10, escribes (a+b)-10 y llevas 1. Resta: si a < b, calculas (a+10)-b y le restas 1 a la siguiente columna antes de continuar.",
       "ejemplos": [
-        "0.75 es racional porque es igual a 3/4.",
-        "0.333... (3 periódico) es racional porque es igual a 1/3."
+        "En 28 + 45, las unidades son 8 + 5 = 13: escribes 3 y llevas 1 a las decenas; las decenas quedan 2 + 4 + 1 = 7, así que el resultado es 73.",
+        "En 61 - 38, las unidades no alcanzan (1 - 8), así que pides prestada 1 decena: 11 - 8 = 3; las decenas quedan en 5 (porque el 6 prestó 1) menos 3 = 2, así que el resultado es 23."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "Todo número entero es también un número racional.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: cualquier entero n se puede escribir como la fracción n/1, así que siempre es racional."
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "28"
+            },
+            {
+              "valor": "45",
+              "signo": "+"
+            },
+            {
+              "valor": "73",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "retroalimentacion": "28 + 45 = 73: en las unidades 8+5=13, escribes 3 y llevas 1; en las decenas 2+4+1=7."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de las siguientes fracciones es equivalente a un número entero?",
-          "opciones": ["8/2", "3/4", "5/6", "7/9"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "8/2 = 4, que es un número entero (y también racional)."
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "61"
+            },
+            {
+              "valor": "38",
+              "signo": "-"
+            },
+            {
+              "valor": "23",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "61 - 38 = 23: en las unidades no alcanza (1-8), pides prestada 1 decena: 11-8=3; en las decenas, 5 (porque el 6 prestó 1) - 3 = 2."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "0.5 se puede escribir como la fracción ___ (en su forma más simple).",
-          "respuestaCorrecta": "1/2",
-          "retroalimentacion": "0.5 = 5/10, y simplificando entre 5 queda 1/2."
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "36"
+            },
+            {
+              "valor": "27",
+              "signo": "+"
+            },
+            {
+              "valor": "63",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "retroalimentacion": "36 + 27 = 63: en las unidades 6+7=13, escribes 3 y llevas 1; en las decenas 3+2+1=6."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada número decimal con la fracción que lo representa.",
-          "columnaA": ["0.25", "0.5", "0.2"],
-          "columnaB": ["1/5", "1/2", "1/4"],
-          "parejasCorrectas": [2, 1, 0],
-          "retroalimentacion": "0.25 = 1/4, 0.5 = 1/2 y 0.2 = 1/5."
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "52"
+            },
+            {
+              "valor": "27",
+              "signo": "-"
+            },
+            {
+              "valor": "25",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "52 - 27 = 25: en las unidades no alcanza (2-7), pides prestada 1 decena: 12-7=5; en las decenas, 4 (porque el 5 prestó 1) - 2 = 2."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un pastel se reparte en 8 partes iguales y Juan se come 3. ¿Qué número racional representa lo que comió Juan?",
-          "opciones": ["3/8", "8/3", "3.8", "0.38"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Juan comió 3 de las 8 partes iguales, es decir, la fracción (racional) 3/8."
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "47"
+            },
+            {
+              "valor": "38",
+              "signo": "+"
+            },
+            {
+              "valor": "85",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "retroalimentacion": "47 + 38 = 85: en las unidades 7+8=15, escribes 5 y llevas 1; en las decenas 4+3+1=8."
         }
       ]
     },
     {
       "numero": "11.2",
-      "titulo": "¿Qué es un número irracional?",
-      "explicacion": "Un número irracional NO se puede escribir como fracción de dos enteros; su expresión decimal es infinita y no sigue ningún patrón que se repita. Las raíces cuadradas de números que no son cuadrados perfectos (como √2 o √20) y el número π son ejemplos clásicos de números irracionales.",
+      "titulo": "Varias columnas: acarreos y préstamos encadenados",
+      "explicacion": "Con números de tres cifras, el acarreo que sale de una columna se suma como un dígito extra en la siguiente columna antes de decidir si esa columna también genera acarreo. De forma parecida, un préstamo hecho en una columna resta 1 a la siguiente columna antes de decidir si ella también necesita pedir prestado. Por eso, en una operación de varias cifras puede haber acarreos o préstamos en más de una columna, uno detrás de otro.",
+      "formula": "Si (a + b + acarreo_anterior) ≥ 10, el nuevo acarreo es 1 y el dígito escrito es (a+b+acarreo_anterior) - 10.",
       "ejemplos": [
-        "√2 = 1.41421356... nunca termina ni se repite, por eso es irracional.",
-        "π = 3.14159265... es irracional; por eso en la práctica usamos la aproximación 3.14."
+        "275 + 168 = 443: unidades 5+8=13 (escribe 3, lleva 1); decenas 7+6+1=14 (escribe 4, lleva 1); centenas 2+1+1=4.",
+        "512 - 347 = 165: en las unidades, 2 - 7 pide prestado: 12 - 7 = 5. Las decenas (1) ya prestaron 1 a las unidades y quedan en 0; como 0 - 4 tampoco alcanza, piden prestado a las centenas: 10 - 4 = 6. Las centenas quedan en 5 - 1 - 3 = 1."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "√9 es un número irracional.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: 9 es un cuadrado perfecto (3×3=9), así que √9 = 3, que es un número racional (entero)."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de las siguientes raíces es irracional?",
-          "opciones": ["√16", "√25", "√20", "√36"],
-          "respuestaCorrecta": 2,
-          "retroalimentacion": "20 no es un cuadrado perfecto (no hay un entero que multiplicado por sí mismo dé 20), así que √20 es irracional."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "El número π es aproximadamente ___ (usa dos decimales).",
-          "respuestaCorrecta": "3.14",
-          "retroalimentacion": "π = 3.14159265..., y la aproximación usual con dos decimales es 3.14."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "√50 es racional porque 50 es un número entero.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: que 50 sea entero no significa que su raíz lo sea. 50 no es un cuadrado perfecto, así que √50 es irracional."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Por qué √2 es un número irracional?",
-          "opciones": [
-            "Porque no existe ningún número que multiplicado por sí mismo dé exactamente 2 con decimales exactos o periódicos",
-            "Porque 2 es un número primo",
-            "Porque no se puede calcular con calculadora",
-            "Porque es mayor que 1"
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "348"
+            },
+            {
+              "valor": "276",
+              "signo": "+"
+            },
+            {
+              "valor": "624",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "√2 es irracional porque su decimal (1.41421356...) nunca termina ni se repite en un patrón; no existe una fracción exacta que lo represente."
+          "ocultos": [
+            [
+              2
+            ],
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "retroalimentacion": "348 + 276 = 624: en las unidades 8+6=14, escribes 4 y llevas 1; en las decenas 4+7+1=12, escribes 2 y llevas 1; en las centenas 3+2+1=6."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "523"
+            },
+            {
+              "valor": "267",
+              "signo": "-"
+            },
+            {
+              "valor": "256",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "523 - 267 = 256: en las unidades no alcanza (3-7), pides prestada 1 decena: 13-7=6; en las decenas, 1 (porque prestaron) - 6 tampoco alcanza, se pide prestado a las centenas: 11-6=5; en las centenas, 4 (porque prestaron) - 2 = 2."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "483"
+            },
+            {
+              "valor": "358",
+              "signo": "+"
+            },
+            {
+              "valor": "841",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "retroalimentacion": "483 + 358 = 841: en las unidades 3+8=11, escribes 1 y llevas 1; en las decenas 8+5+1=14, escribes 4 y llevas 1; en las centenas 4+3+1=8."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "604"
+            },
+            {
+              "valor": "178",
+              "signo": "-"
+            },
+            {
+              "valor": "426",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "604 - 178 = 426: en las unidades no alcanza (4-8), pides prestada 1 decena; como las decenas son 0, el préstamo viaja a las centenas: las decenas quedan en 9 y las centenas bajan de 6 a 5. Unidades: 14-8=6; decenas: 9-7=2; centenas: 5-1=4."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "275"
+            },
+            {
+              "valor": "168",
+              "signo": "+"
+            },
+            {
+              "valor": "443",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2
+            ],
+            [
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "retroalimentacion": "275 + 168 = 443: en las unidades 5+8=13, escribes 3 y llevas 1; en las decenas 7+6+1=14, escribes 4 y llevas 1; en las centenas 2+1+1=4."
         }
       ]
     },
     {
       "numero": "11.3",
-      "titulo": "Ubicar irracionales en la recta numérica",
-      "explicacion": "Como no podemos escribir un número irracional como fracción exacta, lo ubicamos en la recta numérica usando una aproximación decimal: buscamos entre qué dos enteros consecutivos se encuentra (comparando sus cuadrados) y luego afinamos con más decimales.",
+      "titulo": "Préstamo a través de ceros",
+      "explicacion": "Cuando la columna a la que se le pide prestado es un cero, ese cero no tiene nada que prestar, así que el préstamo 'viaja' hacia la siguiente columna distinta de cero. Cada cero por el que pasa el préstamo se convierte en 9 (porque recibe 10 prestados y a la vez tiene que prestar 1 a la columna anterior), y la primera columna distinta de cero que encuentra el préstamo se reduce en 1. Algo parecido pasa al sumar: si varias columnas seguidas tienen un 9, un acarreo puede 'encadenarse' y hacer que varias columnas cambien de golpe.",
       "ejemplos": [
-        "√10 está entre 3 y 4, porque 3²=9 y 4²=16, y 9<10<16; su aproximación es 3.16.",
-        "π está entre 3 y 4, más cerca de 3; su aproximación usual es 3.14."
+        "5002 - 1847 = 3155: en las unidades, 2 - 7 pide prestado; como las decenas y las centenas son 0, el préstamo viaja hasta los millares: el 5 baja a 4, y las decenas y centenas se convierten en 9. Unidades: 12 - 7 = 5; decenas: 9 - 4 = 5; centenas: 9 - 8 = 1.",
+        "3899 + 2106 = 6005: unidades 9+6=15 (escribe 5, lleva 1); decenas 9+0+1=10 (escribe 0, lleva 1); centenas 8+1+1=10 (escribe 0, lleva 1); millares 3+2+1=6."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "llenar_frase",
-          "frase": "√10 está entre los enteros ___ y 4.",
-          "respuestaCorrecta": "3",
-          "retroalimentacion": "3²=9 y 4²=16, y como 9<10<16, entonces √10 está entre 3 y 4."
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "5002"
+            },
+            {
+              "valor": "1847",
+              "signo": "-"
+            },
+            {
+              "valor": "3155",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "retroalimentacion": "5002 - 1847 = 3155: en las unidades no alcanza (2-7); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 5 baja a 4 y las decenas y centenas se vuelven 9. Unidades: 12-7=5; decenas: 9-4=5; centenas: 9-8=1; millares: 4-1=3."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Entre qué par de enteros se ubica √20?",
-          "opciones": ["4 y 5", "3 y 4", "5 y 6", "2 y 3"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "4²=16 y 5²=25, y como 16<20<25, entonces √20 está entre 4 y 5."
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "8004"
+            },
+            {
+              "valor": "3586",
+              "signo": "-"
+            },
+            {
+              "valor": "4418",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "retroalimentacion": "8004 - 3586 = 4418: en las unidades no alcanza (4-6); como las decenas y centenas son 0, el préstamo viaja hasta los millares: el 8 baja a 7 y las decenas y centenas se vuelven 9. Unidades: 14-6=8; decenas: 9-8=1; centenas: 9-5=4; millares: 7-3=4."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "√30 está entre 5 y 6.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: 5²=25 y 6²=36, y como 25<30<36, √30 está entre 5 y 6."
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "3899"
+            },
+            {
+              "valor": "2106",
+              "signo": "+"
+            },
+            {
+              "valor": "6005",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              3
+            ],
+            [
+              0
+            ],
+            [
+              3
+            ]
+          ],
+          "retroalimentacion": "3899 + 2106 = 6005: en las unidades 9+6=15, escribes 5 y llevas 1; en las decenas 9+0+1=10, escribes 0 y llevas 1; en las centenas 8+1+1=10, escribes 0 y llevas 1; en los millares 3+2+1=6."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Una aproximación de √2 con dos decimales es 1.___.",
-          "respuestaCorrecta": "41",
-          "retroalimentacion": "√2 = 1.41421356..., así que con dos decimales es 1.41."
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "51234"
+            },
+            {
+              "valor": "28567",
+              "signo": "-"
+            },
+            {
+              "valor": "22667",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2,
+              4
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "retroalimentacion": "51234 - 28567 = 22667: en las unidades no alcanza (4-7), pides prestada 1 decena: 14-7=7; en las decenas, 2 (porque prestó) - 6 tampoco alcanza, se pide prestado a las centenas: 12-6=6; en las centenas, 1-5 tampoco alcanza, se pide prestado a los millares: 11-5=6; en los millares, 0-8 tampoco alcanza, se pide prestado a las decenas de millar: 10-8=2; en las decenas de millar, 4 (porque prestó) - 2 = 2."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Para ubicar π en la recta numérica de forma práctica, ¿qué aproximación conviene usar?",
-          "opciones": ["3.14", "3", "4", "3.5"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "3.14 es la aproximación más usada de π y basta para ubicarlo con precisión razonable en la recta."
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "48376"
+            },
+            {
+              "valor": "29548",
+              "signo": "+"
+            },
+            {
+              "valor": "77924",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              3
+            ],
+            [
+              4
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "retroalimentacion": "48376 + 29548 = 77924: en las unidades 6+8=14, escribes 4 y llevas 1; en las decenas 7+4+1=12, escribes 2 y llevas 1; en las centenas 3+5+1=9; en los millares 8+9=17, escribes 7 y llevas 1; en las decenas de millar 4+2+1=7."
         }
       ]
     },
     {
       "numero": "11.4",
-      "titulo": "Síntesis y aplicación",
-      "explicacion": "Para clasificar un número, revisa su expresión decimal: si termina o se repite en un patrón, es racional (siempre se puede escribir como fracción); si es infinita y sin ningún patrón que se repita, como en las raíces de números que no son cuadrados perfectos o en π, es irracional.",
+      "titulo": "Síntesis: los algoritmos más grandes",
+      "explicacion": "Este último bloque reúne todo lo aprendido: acarreos en varias columnas, préstamos que se encadenan y préstamos que tienen que atravesar uno o más ceros, ahora con números de hasta seis cifras. El procedimiento es idéntico al de los subtemas anteriores, columna por columna de derecha a izquierda; lo único que cambia es que hay más columnas en las que estar atento.",
       "ejemplos": [
-        "0.666... es racional (=2/3); √5=2.236... es irracional porque 5 no es un cuadrado perfecto."
+        "700005 - 268347 = 431658: en las unidades no alcanza (5-7); como las decenas, centenas, millares y decenas de millar son 0, el préstamo viaja a través de los cuatro ceros hasta las centenas de millar, que bajan de 7 a 6, y esos cuatro ceros se vuelven 9.",
+        "384756 + 219268 = 604024: unidades 6+8=14 (escribe 4, lleva 1); decenas 5+6+1=12 (escribe 2, lleva 1); centenas 7+2+1=10 (escribe 0, lleva 1); millares 4+9+1=14 (escribe 4, lleva 1); decenas de millar 8+1+1=10 (escribe 0, lleva 1); centenas de millar 3+2+1=6."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Clasifica cada número según su tipo.",
-          "columnaA": ["√4", "π", "0.75"],
-          "columnaB": ["Irracional", "Racional (entero)", "Racional (decimal exacto)"],
-          "parejasCorrectas": [1, 0, 2],
-          "retroalimentacion": "√4 = 2 es racional (entero); π es irracional; 0.75 es racional (decimal exacto, = 3/4)."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál de los siguientes números NO es racional?",
-          "opciones": ["1/3", "√49", "√11", "0.4"],
-          "respuestaCorrecta": 2,
-          "retroalimentacion": "11 no es un cuadrado perfecto, así que √11 es irracional. Las demás opciones sí son racionales (√49=7)."
-        },
-        {
-          "tipo": "verdadero_falso",
-          "enunciado": "El número 2.101001000100001... (donde el patrón nunca se repite igual) es racional.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: aunque parece tener un patrón, cada vez cambia y nunca se repite exactamente igual, así que es un decimal infinito no periódico, es decir, irracional."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "El número √36 es racional porque es igual a ___.",
-          "respuestaCorrecta": "6",
-          "retroalimentacion": "36 es un cuadrado perfecto (6×6=36), así que √36 = 6, un número entero y por lo tanto racional."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Un arquitecto calcula la diagonal de un terreno cuadrado de 1 km de lado y obtiene √2 km. ¿Este resultado es racional o irracional?",
-          "opciones": [
-            "Irracional, porque √2 no se puede escribir como fracción exacta",
-            "Racional, porque es una raíz cuadrada",
-            "Racional, porque 2 es un número entero",
-            "No es un número real"
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "700005"
+            },
+            {
+              "valor": "268347",
+              "signo": "-"
+            },
+            {
+              "valor": "431658",
+              "esResultado": true
+            }
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Como 2 no es un cuadrado perfecto, √2 tiene un decimal infinito no periódico: es irracional."
+          "ocultos": [
+            [
+              0,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "retroalimentacion": "700005 - 268347 = 431658: en las unidades no alcanza (5-7); como las decenas, centenas, millares y decenas de millar son 0, el préstamo viaja a través de los cuatro ceros hasta las centenas de millar: el 7 baja a 6 y esos cuatro ceros se vuelven 9. Unidades: 15-7=8; decenas: 9-4=5; centenas: 9-3=6; millares: 9-8=1; decenas de millar: 9-6=3; centenas de millar: 6-2=4."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "384756"
+            },
+            {
+              "valor": "219268",
+              "signo": "+"
+            },
+            {
+              "valor": "604024",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "retroalimentacion": "384756 + 219268 = 604024: en las unidades 6+8=14, escribes 4 y llevas 1; en las decenas 5+6+1=12, escribes 2 y llevas 1; en las centenas 7+2+1=10, escribes 0 y llevas 1; en los millares 4+9+1=14, escribes 4 y llevas 1; en las decenas de millar 8+1+1=10, escribes 0 y llevas 1; en las centenas de millar 3+2+1=6."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "82045"
+            },
+            {
+              "valor": "37689",
+              "signo": "-"
+            },
+            {
+              "valor": "44356",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              2
+            ]
+          ],
+          "retroalimentacion": "82045 - 37689 = 44356: en las unidades no alcanza (5-9), pides prestada 1 decena: 15-9=6; en las decenas, 3 (porque prestaron) - 8 tampoco alcanza, se pide prestado a las centenas: 13-8=5; como las centenas eran 0, también piden prestado a los millares y se vuelven 9: 9-6=3; en los millares, 1 (porque prestaron) - 7 tampoco alcanza, se pide prestado a las decenas de millar: 11-7=4; en las decenas de millar, 7 (porque prestaron) - 3 = 4."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "suma",
+          "filas": [
+            {
+              "valor": "456789"
+            },
+            {
+              "valor": "128965",
+              "signo": "+"
+            },
+            {
+              "valor": "585754",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              1,
+              3,
+              5
+            ],
+            [
+              2
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "retroalimentacion": "456789 + 128965 = 585754: en las unidades 9+5=14, escribes 4 y llevas 1; en las decenas 8+6+1=15, escribes 5 y llevas 1; en las centenas 7+9+1=17, escribes 7 y llevas 1; en los millares 6+8+1=15, escribes 5 y llevas 1; en las decenas de millar 5+2+1=8; en las centenas de millar 4+1=5."
+        },
+        {
+          "tipo": "algoritmo_columnas",
+          "operacion": "resta",
+          "filas": [
+            {
+              "valor": "900000"
+            },
+            {
+              "valor": "345678",
+              "signo": "-"
+            },
+            {
+              "valor": "554322",
+              "esResultado": true
+            }
+          ],
+          "ocultos": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "retroalimentacion": "900000 - 345678 = 554322: en las unidades no alcanza (0-8); como las cinco columnas siguientes son 0, el préstamo viaja a través de todos esos ceros hasta el 9, que baja a 8, y cada cero se vuelve 9. Unidades: 10-8=2; decenas: 9-7=2; centenas: 9-6=3; millares: 9-5=4; decenas de millar: 9-4=5; centenas de millar: 8-3=5."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
-      "tipo": "verdadero_falso",
-      "enunciado": "√81 es un número racional.",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "Correcto: 81 es un cuadrado perfecto (9×9=81), así que √81 = 9, un número entero y racional."
+      "tipo": "algoritmo_columnas",
+      "operacion": "suma",
+      "filas": [
+        {
+          "valor": "539"
+        },
+        {
+          "valor": "274",
+          "signo": "+"
+        },
+        {
+          "valor": "813",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          2
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "retroalimentacion": "539 + 274 = 813: en las unidades 9+4=13, escribes 3 y llevas 1; en las decenas 3+7+1=11, escribes 1 y llevas 1; en las centenas 5+2+1=8."
     },
     {
-      "tipo": "llenar_frase",
-      "frase": "0.1666... (6 periódico) se puede escribir como la fracción ___.",
-      "respuestaCorrecta": "1/6",
-      "retroalimentacion": "0.1666... es un decimal periódico, y equivale exactamente a la fracción 1/6."
+      "tipo": "algoritmo_columnas",
+      "operacion": "resta",
+      "filas": [
+        {
+          "valor": "402"
+        },
+        {
+          "valor": "165",
+          "signo": "-"
+        },
+        {
+          "valor": "237",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "retroalimentacion": "402 - 165 = 237: en las unidades no alcanza (2-5), pides prestada 1 decena: 12-5=7; en las decenas, como eran 0, también piden prestado a las centenas y se vuelven 9: 9-6=3; en las centenas, 3 (porque prestaron) - 1 = 2."
     },
     {
-      "tipo": "opcion_multiple",
-      "pregunta": "¿Entre qué enteros se ubica √70?",
-      "opciones": ["8 y 9", "7 y 8", "9 y 10", "6 y 7"],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "8²=64 y 9²=81, y como 64<70<81, entonces √70 está entre 8 y 9."
+      "tipo": "algoritmo_columnas",
+      "operacion": "suma",
+      "filas": [
+        {
+          "valor": "3456"
+        },
+        {
+          "valor": "2789",
+          "signo": "+"
+        },
+        {
+          "valor": "6245",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "retroalimentacion": "3456 + 2789 = 6245: en las unidades 6+9=15, escribes 5 y llevas 1; en las decenas 5+8+1=14, escribes 4 y llevas 1; en las centenas 4+7+1=12, escribes 2 y llevas 1; en los millares 3+2+1=6."
     },
     {
-      "tipo": "relacionar_columnas",
-      "instruccion": "Clasifica cada número según su tipo.",
-      "columnaA": ["√5", "4/9", "√100"],
-      "columnaB": ["Racional (fracción)", "Racional (entero)", "Irracional"],
-      "parejasCorrectas": [2, 0, 1],
-      "retroalimentacion": "√5 es irracional (5 no es cuadrado perfecto); 4/9 es racional (fracción); √100 = 10 es racional (entero)."
+      "tipo": "algoritmo_columnas",
+      "operacion": "resta",
+      "filas": [
+        {
+          "valor": "5123"
+        },
+        {
+          "valor": "2867",
+          "signo": "-"
+        },
+        {
+          "valor": "2256",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "retroalimentacion": "5123 - 2867 = 2256: en las unidades no alcanza (3-7), pides prestada 1 decena: 13-7=6; en las decenas, 1 (porque prestaron) - 6 tampoco alcanza, se pide prestado a las centenas: 11-6=5; en las centenas, 0 (porque prestaron) - 8 tampoco alcanza, se pide prestado a los millares: 10-8=2; en los millares, 4 (porque prestaron) - 2 = 2."
     }
   ]
 }

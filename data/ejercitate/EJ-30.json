@@ -5,338 +5,331 @@
   "categoria": "avanzado",
   "campoFormativo": "Saberes y Pensamiento Científico",
   "eje": "Forma, espacio y medida",
-  "titulo": "Volumen y área de cuerpos geométricos",
-  "contenido": "Cálculo del área total y el volumen de prismas, cubos, cilindros, pirámides y conos.",
-  "pda": "Calcula el área total y el volumen de prismas, cilindros, pirámides y conos para resolver problemas relacionados con el espacio que ocupan o el contenido que caben en objetos y recipientes de la vida cotidiana.",
+  "titulo": "Congruencia de triángulos",
+  "contenido": "Concepto de congruencia de triángulos y los criterios LLL, LAL y ALA para comprobarla.",
+  "pda": "Identifica cuándo dos triángulos son congruentes aplicando los criterios LLL, LAL y ALA, y los usa para resolver problemas de figuras y construcciones.",
   "problematizacion": {
-    "contexto": "En la azotea de una casa hay un tinaco cilíndrico que guarda el agua para toda la familia, y junto a él hay una caja de herramientas en forma de prisma rectangular. El papá quiere saber cuál de los dos objetos 'guarda' más espacio en su interior.",
-    "pregunta": "¿Cómo se puede calcular cuánto espacio ocupa (o cuánta agua cabe) en cada uno de estos objetos, si tienen formas tan distintas?"
+    "contexto": "Un carpintero corta dos piezas triangulares de madera para reforzar una repisa. Antes de unirlas, quiere asegurarse de que ambas piezas son exactamente del mismo tamaño y forma, sin tener que sobreponerlas físicamente.",
+    "pregunta": "¿Cómo puede saber el carpintero, solo midiendo algunos lados y ángulos, si las dos piezas triangulares son exactamente iguales?"
   },
   "subtemas": [
     {
       "numero": "30.1",
-      "titulo": "Área y volumen de prismas y cubos",
-      "explicacion": "El volumen de un cuerpo geométrico es la cantidad de espacio que ocupa, y se mide en unidades cúbicas (cm³, m³, etc.). En un prisma rectangular, el volumen se obtiene multiplicando largo × ancho × alto, porque en el fondo estamos 'apilando' capas del área de la base tantas veces como indique la altura. El cubo es un caso especial de prisma donde las tres medidas son iguales, así que su volumen es arista³. El área total (o área de la superficie) es la suma de las áreas de todas sus caras: en el cubo son 6 caras cuadradas iguales, y en el prisma rectangular son 3 pares de caras rectangulares iguales.",
-      "formula": "Cubo: V = a³, A = 6a² | Prisma rectangular: V = l × w × h, A = 2(lw + lh + wh)",
+      "titulo": "¿Qué es la congruencia de triángulos?",
+      "explicacion": "Dos triángulos son congruentes cuando tienen exactamente la misma forma y el mismo tamaño: si pudieras recortar uno y ponerlo encima del otro (aunque tengas que voltearlo o girarlo), coincidirían perfectamente en sus tres lados y sus tres ángulos. Se representa con el símbolo ≅, y el orden de las letras indica qué vértices se corresponden entre los dos triángulos.",
+      "formula": "△ABC ≅ △DEF",
       "ejemplos": [
-        "Un cubo de arista 4 cm tiene un volumen de V = 4³ = 64 cm³ y un área total de A = 6 × 4² = 6 × 16 = 96 cm².",
-        "Un prisma rectangular de 5 cm × 3 cm × 2 cm tiene un volumen de V = 5 × 3 × 2 = 30 cm³ y un área total de A = 2(5×3 + 5×2 + 3×2) = 2(15+10+6) = 62 cm²."
+        "Si △ABC ≅ △DEF, entonces AB=DE, BC=EF, AC=DF, y también los ángulos correspondientes son iguales: ∠A=∠D, ∠B=∠E, ∠C=∠F.",
+        "Dos triángulos recortados de la misma plantilla de cartón son congruentes: aunque uno esté girado o volteado, sus lados y ángulos correspondientes miden lo mismo."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el volumen de un cubo de arista 3 cm?",
-          "opciones": [
-            "27 cm³",
-            "9 cm³",
-            "18 cm³",
-            "6 cm³"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "V = a³ = 3³ = 3×3×3 = 27 cm³."
+          "tipo": "verdadero_falso",
+          "enunciado": "Si dos triángulos son congruentes, entonces tienen la misma forma y el mismo tamaño.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la congruencia significa que coinciden exactamente en forma y tamaño."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "El volumen de un prisma rectangular de 4 cm × 2 cm × 5 cm es 40 cm³.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "V = l×w×h = 4×2×5 = 40 cm³. La afirmación es correcta."
+          "tipo": "opcion_multiple",
+          "pregunta": "Si △ABC ≅ △XYZ, ¿qué lado del segundo triángulo corresponde al lado AB del primero?",
+          "opciones": [
+            "XY",
+            "YZ",
+            "XZ",
+            "No se puede saber"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El orden de las letras indica la correspondencia: A↔X, B↔Y, C↔Z, así que AB corresponde a XY."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "El volumen de un cubo de arista 6 cm es ___ cm³.",
-          "respuestaCorrecta": "216",
-          "retroalimentacion": "V = a³ = 6³ = 6×6×6 = 216 cm³."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el área total de un cubo de arista 5 cm?",
-          "opciones": [
-            "150 cm²",
-            "125 cm²",
-            "100 cm²",
-            "25 cm²"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "A = 6a² = 6 × 5² = 6 × 25 = 150 cm², porque el cubo tiene 6 caras cuadradas iguales."
-        },
-        {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada cuerpo geométrico con su volumen correcto.",
-          "columnaA": [
-            "Cubo de arista 2 cm",
-            "Prisma de 3 cm × 4 cm × 2 cm",
-            "Cubo de arista 4 cm"
-          ],
-          "columnaB": [
-            "64 cm³",
-            "8 cm³",
-            "24 cm³"
-          ],
-          "parejasCorrectas": [
-            1,
-            2,
-            0
-          ],
-          "retroalimentacion": "Cubo arista 2: 2³=8 cm³. Prisma 3×4×2 = 24 cm³. Cubo arista 4: 4³=64 cm³."
-        }
-      ]
-    },
-    {
-      "numero": "30.2",
-      "titulo": "Área y volumen de cilindros",
-      "explicacion": "Un cilindro se puede imaginar como un montón de círculos (la base) apilados hasta alcanzar la altura, por eso su volumen es el área del círculo de la base (πr²) multiplicada por la altura. Para el área total hay que sumar las dos tapas circulares (2πr²) más el área lateral, que es el rectángulo que se forma al 'desenrollar' la superficie curva del cilindro (2πrh, porque su base mide lo mismo que el perímetro del círculo). En todos los cálculos de este tema usaremos π ≈ 3.14.",
-      "formula": "V = π × r² × h | A = 2πr² + 2πrh",
-      "ejemplos": [
-        "Un cilindro con r = 3 cm y h = 10 cm tiene un volumen de V = 3.14 × 3² × 10 = 3.14 × 9 × 10 = 282.6 cm³.",
-        "Ese mismo cilindro tiene un área total de A = 2×3.14×9 + 2×3.14×3×10 = 56.52 + 188.4 = 244.92 cm²."
-      ],
-      "puntosPorReactivo": 10,
-      "estrellasMax": 3,
-      "reactivos": [
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el volumen de un cilindro con radio 2 cm y altura 7 cm? (usa π = 3.14)",
-          "opciones": [
-            "87.92 cm³",
-            "43.96 cm³",
-            "175.84 cm³",
-            "28.26 cm³"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "V = πr²h = 3.14 × 2² × 7 = 3.14 × 4 × 7 = 87.92 cm³."
+          "frase": "El símbolo que se usa para indicar que dos triángulos son congruentes es ___.",
+          "respuestaCorrecta": "≅",
+          "retroalimentacion": "El símbolo ≅ se lee 'es congruente con'."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Un cilindro con radio 5 cm y altura 4 cm tiene un volumen de 314 cm³ (usando π = 3.14).",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "V = πr²h = 3.14 × 5² × 4 = 3.14 × 25 × 4 = 314 cm³. La afirmación es correcta."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "El volumen de un cilindro con radio 1 cm y altura 10 cm (π = 3.14) es ___ cm³.",
-          "respuestaCorrecta": "31.4",
-          "retroalimentacion": "V = πr²h = 3.14 × 1² × 10 = 3.14 × 1 × 10 = 31.4 cm³."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál fórmula sirve para calcular el área lateral (la parte curva) de un cilindro?",
-          "opciones": [
-            "2πrh",
-            "πr²h",
-            "(1/3)πr²h",
-            "2πr²"
-          ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "El área lateral es el rectángulo que resulta de 'desenrollar' la superficie curva: su base mide 2πr (el perímetro del círculo) y su altura mide h, así que A = 2πrh."
+          "enunciado": "Dos triángulos congruentes pueden tener ángulos diferentes, siempre y cuando sus lados midan lo mismo.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: si los triángulos son congruentes, tanto los lados como los ángulos correspondientes deben ser iguales."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada cilindro (radio y altura) con su volumen correcto (usa π = 3.14).",
+          "instruccion": "Si △MNP ≅ △RST, relaciona cada elemento del primer triángulo con su correspondiente en el segundo.",
           "columnaA": [
-            "r = 2 cm, h = 3 cm",
-            "r = 1 cm, h = 4 cm",
-            "r = 3 cm, h = 1 cm"
+            "Lado MN",
+            "Ángulo ∠P",
+            "Lado NP"
           ],
           "columnaB": [
-            "12.56 cm³",
-            "28.26 cm³",
-            "37.68 cm³"
+            "Ángulo ∠T",
+            "Lado ST",
+            "Lado RS"
           ],
           "parejasCorrectas": [
             2,
             0,
             1
           ],
-          "retroalimentacion": "r=2,h=3: 3.14×4×3=37.68 cm³. r=1,h=4: 3.14×1×4=12.56 cm³. r=3,h=1: 3.14×9×1=28.26 cm³."
+          "retroalimentacion": "Con la correspondencia M↔R, N↔S, P↔T: MN↔RS, ∠P↔∠T, NP↔ST."
         }
       ]
     },
     {
-      "numero": "30.3",
-      "titulo": "Área y volumen de pirámides y conos",
-      "explicacion": "Las pirámides y los conos son 'primos' de los prismas y los cilindros, pero terminan en una punta (vértice) en lugar de en otra base igual. Por eso su volumen es exactamente la tercera parte del volumen de un prisma o cilindro que tuviera la misma base y la misma altura: V = (1/3) × área de la base × altura. En el cono, la base es un círculo, así que su volumen es (1/3)πr²h. Para el área total del cono también se necesita la generatriz (l), que es la distancia del vértice a la orilla de la base, y se calcula con el teorema de Pitágoras: l = √(r² + h²).",
-      "formula": "Pirámide: V = (1/3) × Área base × h | Cono: V = (1/3)πr²h, l = √(r²+h²)",
+      "numero": "30.2",
+      "titulo": "Criterios LLL y LAL",
+      "explicacion": "No es necesario comprobar los tres lados y los tres ángulos para saber si dos triángulos son congruentes; basta con algunos datos. El criterio LLL (Lado-Lado-Lado) dice que si los tres lados de un triángulo son iguales a los tres lados del otro, los triángulos son congruentes. El criterio LAL (Lado-Ángulo-Lado) dice que si dos lados y el ángulo comprendido entre ellos son iguales en ambos triángulos, también son congruentes.",
       "ejemplos": [
-        "Una pirámide de base cuadrada de 6 cm × 6 cm y altura 9 cm tiene un volumen de V = (1/3) × 36 × 9 = (1/3) × 324 = 108 cm³.",
-        "Un cono con r = 3 cm y h = 4 cm tiene un volumen de V = (1/3) × 3.14 × 9 × 4 = (1/3) × 113.04 = 37.68 cm³, y su generatriz es l = √(3²+4²) = √25 = 5 cm."
+        "Si un triángulo tiene lados 5cm, 7cm, 9cm y otro también tiene lados 5cm, 7cm, 9cm, son congruentes por LLL, sin importar el orden en que se acomoden.",
+        "Si dos triángulos tienen un lado de 6cm, un ángulo de 40° entre ese lado y otro de 8cm, y el segundo triángulo tiene exactamente esos mismos datos (6cm, 40°, 8cm en ese orden), son congruentes por LAL."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuál es el volumen de una pirámide de base cuadrada de 4 cm de lado y altura 6 cm?",
+          "pregunta": "Dos triángulos tienen lados 4cm, 6cm, 8cm y 4cm, 6cm, 8cm respectivamente. ¿Qué criterio confirma que son congruentes?",
           "opciones": [
-            "32 cm³",
-            "96 cm³",
-            "64 cm³",
-            "16 cm³"
+            "LLL",
+            "LAL",
+            "ALA",
+            "No son congruentes"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Área de la base = 4×4 = 16 cm². V = (1/3) × 16 × 6 = (1/3) × 96 = 32 cm³."
+          "retroalimentacion": "Como los tres lados coinciden en ambos triángulos, se aplica el criterio LLL."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "El volumen de un cono con radio 2 cm y altura 6 cm (usando π = 3.14) es 25.12 cm³.",
+          "enunciado": "El criterio LAL requiere que el ángulo igual esté comprendido entre los dos lados iguales, no en cualquier posición.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 4 × 6 = (1/3) × 75.36 = 25.12 cm³. La afirmación es correcta."
+          "retroalimentacion": "Correcto: si el ángulo no está entre los dos lados, no se puede aplicar el criterio LAL."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "El volumen de una pirámide con base rectangular de 5 cm × 4 cm y altura 3 cm es ___ cm³.",
-          "respuestaCorrecta": "20",
-          "retroalimentacion": "Área de la base = 5×4 = 20 cm². V = (1/3) × 20 × 3 = (1/3) × 60 = 20 cm³."
+          "frase": "El criterio que compara los tres lados de dos triángulos se llama ___.",
+          "respuestaCorrecta": "LLL",
+          "retroalimentacion": "LLL significa Lado-Lado-Lado."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un cono tiene radio 6 cm y altura 8 cm. ¿Cuánto mide su generatriz (l)?",
+          "pregunta": "Un triángulo tiene lados de 10cm y 12cm con un ángulo de 55° entre ellos. Otro triángulo tiene lados de 10cm y 12cm con un ángulo de 55° entre ellos. ¿Son congruentes?",
           "opciones": [
-            "10 cm",
-            "14 cm",
-            "7 cm",
-            "12 cm"
+            "Sí, por LAL",
+            "Sí, por LLL",
+            "No, falta un dato",
+            "No, los ángulos deben ser diferentes"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Por el teorema de Pitágoras, l = √(r²+h²) = √(6²+8²) = √(36+64) = √100 = 10 cm."
+          "retroalimentacion": "Dos lados iguales y el ángulo comprendido entre ellos igual confirman congruencia por el criterio LAL."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada cuerpo geométrico con su volumen correcto (usa π = 3.14 donde se necesite).",
+          "instruccion": "Relaciona cada conjunto de datos con el criterio de congruencia que aplica.",
           "columnaA": [
-            "Pirámide, base 3 cm × 3 cm, altura 4 cm",
-            "Cono, r = 3 cm, h = 2 cm",
-            "Pirámide, base 2 cm × 2 cm, altura 6 cm"
+            "Tres lados iguales en ambos triángulos",
+            "Dos lados y el ángulo entre ellos iguales",
+            "Un solo lado igual en ambos triángulos"
           ],
           "columnaB": [
-            "8 cm³",
-            "18.84 cm³",
-            "12 cm³"
+            "No es suficiente para asegurar congruencia",
+            "LAL",
+            "LLL"
           ],
           "parejasCorrectas": [
             2,
             1,
             0
           ],
-          "retroalimentacion": "Pirámide 3×3, h=4: (1/3)×9×4=12 cm³. Cono r=3,h=2: (1/3)×3.14×9×2=18.84 cm³. Pirámide 2×2, h=6: (1/3)×4×6=8 cm³."
+          "retroalimentacion": "Tres lados iguales = LLL; dos lados y el ángulo entre ellos = LAL; un solo lado igual no basta para asegurar congruencia."
+        }
+      ]
+    },
+    {
+      "numero": "30.3",
+      "titulo": "Criterio ALA",
+      "explicacion": "El criterio ALA (Ángulo-Lado-Ángulo) establece que si dos ángulos de un triángulo y el lado comprendido entre ellos son iguales a los de otro triángulo, ambos triángulos son congruentes. Este criterio es muy útil cuando es más fácil medir ángulos que lados, por ejemplo al triangular distancias lejanas o al usar instrumentos de medición angular.",
+      "formula": "Si ∠A=∠D, AB=DE y ∠B=∠E, entonces △ABC ≅ △DEF (ALA)",
+      "ejemplos": [
+        "Un triángulo tiene ángulos de 50° y 60° con un lado de 8cm entre ellos; otro triángulo tiene exactamente esos mismos ángulos (50° y 60°) con un lado de 8cm entre ellos: son congruentes por ALA.",
+        "Un topógrafo mide dos ángulos y la distancia entre dos puntos de referencia para triangular la posición de un tercer punto lejano, usando el criterio ALA sin tener que medir directamente todos los lados."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué elementos compara el criterio ALA?",
+          "opciones": [
+            "Dos ángulos y el lado entre ellos",
+            "Tres lados",
+            "Dos lados y un ángulo cualquiera",
+            "Tres ángulos"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "ALA significa Ángulo-Lado-Ángulo: compara dos ángulos y el lado comprendido entre ellos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En el criterio ALA, el lado debe estar comprendido entre los dos ángulos iguales.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: si el lado no está entre los dos ángulos, no se puede aplicar el criterio ALA."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si dos triángulos tienen ángulos de 45° y 65°, con un lado de 10cm entre ellos, y el otro triángulo tiene exactamente los mismos datos, son congruentes por el criterio ___.",
+          "respuestaCorrecta": "ALA",
+          "retroalimentacion": "Dos ángulos y el lado comprendido entre ellos iguales confirman congruencia por ALA."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triángulo tiene ángulos de 30° y 80°, con un lado de 6cm entre ellos. Otro triángulo tiene ángulos de 30° y 80°, con un lado de 9cm entre ellos. ¿Son congruentes por ALA?",
+          "opciones": [
+            "No, porque el lado entre los ángulos no mide igual",
+            "Sí, porque los ángulos son iguales",
+            "Sí, porque dos ángulos iguales siempre bastan",
+            "No se puede saber sin más datos"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Aunque los ángulos coincidan, el lado comprendido entre ellos mide diferente (6cm vs 9cm), así que no se cumple el criterio ALA."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada criterio de congruencia con los datos que necesita.",
+          "columnaA": [
+            "LLL",
+            "LAL",
+            "ALA"
+          ],
+          "columnaB": [
+            "Dos ángulos y el lado comprendido entre ellos",
+            "Dos lados y el ángulo comprendido entre ellos",
+            "Los tres lados de cada triángulo"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "LLL necesita los tres lados; LAL necesita dos lados y el ángulo entre ellos; ALA necesita dos ángulos y el lado entre ellos."
         }
       ]
     },
     {
       "numero": "30.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: el volumen de un prisma o un cubo se calcula multiplicando el área de la base por la altura de forma directa (V = área base × h, o a³ en el cubo). El volumen de un cilindro también es área de la base por altura, pero la base es un círculo (V = πr²h). Las pirámides y los conos terminan en punta, así que su volumen es solo la tercera parte de esa misma cuenta: V = (1/3) × área base × h. Estas fórmulas sirven para resolver problemas reales con tinacos, cajas, silos, envases y otros recipientes: primero identifica de qué forma se trata, y después aplica la fórmula que le corresponde.",
+      "explicacion": "Recapitulando: dos triángulos son congruentes si tienen la misma forma y tamaño exactos. Para comprobarlo sin sobreponerlos, se usan los criterios LLL (tres lados iguales), LAL (dos lados y el ángulo entre ellos iguales) y ALA (dos ángulos y el lado entre ellos iguales). Al resolver un problema, primero identifica qué datos te dan (lados, ángulos y su posición relativa) y elige el criterio que corresponde.",
       "ejemplos": [
-        "Un tinaco cilíndrico con r = 0.5 m y h = 1.2 m tiene un volumen de V = 3.14 × 0.25 × 1.2 = 0.942 m³, es decir, aproximadamente 942 litros (1 m³ = 1000 litros).",
-        "Una caja de cartón en forma de prisma rectangular de 0.4 m × 0.3 m × 0.5 m tiene un volumen de V = 0.4 × 0.3 × 0.5 = 0.06 m³."
+        "Dos piezas de un rompecabezas triangular con lados 3cm, 4cm, 5cm cada una son congruentes por LLL, sin importar cómo estén giradas.",
+        "Para armar un techo con dos triángulos de madera idénticos, un carpintero puede comprobar la congruencia midiendo solo dos lados y el ángulo entre ellos (LAL), en vez de medir los tres lados."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un tinaco cilíndrico tiene radio 1 m y altura 2 m. Usando π = 3.14 y sabiendo que 1 m³ = 1000 litros, ¿cuántos litros de agua caben?",
+          "pregunta": "Dos triángulos tienen sus tres ángulos iguales (60°, 60°, 60° cada uno) pero uno mide el doble de tamaño que el otro. ¿Son congruentes?",
           "opciones": [
-            "6 280 L",
-            "3 140 L",
-            "6.28 L",
-            "12 560 L"
+            "No, tener los mismos ángulos no garantiza el mismo tamaño",
+            "Sí, porque los ángulos son iguales",
+            "Sí, por el criterio ALA",
+            "No se puede determinar"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "V = πr²h = 3.14 × 1² × 2 = 6.28 m³. Como 1 m³ = 1000 L, entonces 6.28 m³ = 6 280 litros."
+          "retroalimentacion": "Tener los mismos ángulos solo garantiza la misma forma (semejanza), no el mismo tamaño; para congruencia también se necesita que los lados coincidan."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Una caja de regalo en forma de cubo con arista de 20 cm tiene un volumen de 8 000 cm³.",
+          "enunciado": "Dos triángulos congruentes siempre tienen la misma área.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "V = a³ = 20³ = 20×20×20 = 8 000 cm³. La afirmación es correcta."
+          "retroalimentacion": "Correcto: si tienen la misma forma y el mismo tamaño exacto, su área también es igual."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Un silo con forma de cono tiene radio 3 m y altura 6 m. Usando π = 3.14, su volumen es ___ m³.",
-          "respuestaCorrecta": "56.52",
-          "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 9 × 6 = (1/3) × 169.56 = 56.52 m³."
+          "frase": "Si un carpintero mide los tres lados de dos piezas triangulares y coinciden, puede afirmar que las piezas son congruentes por el criterio ___.",
+          "respuestaCorrecta": "LLL",
+          "retroalimentacion": "Con los tres lados iguales, se aplica el criterio LLL."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Una caja rectangular mide 2 m × 3 m × 4 m y un tanque cilíndrico tiene r = 2 m y h = 3 m (usa π = 3.14). ¿Cuál de los dos contenedores tiene mayor volumen?",
+          "pregunta": "Un triángulo tiene lados 5cm y 7cm con un ángulo de 40° entre ellos. Un segundo triángulo tiene lados 5cm y 7cm con un ángulo de 50° entre ellos. ¿Son congruentes?",
           "opciones": [
-            "El tanque cilíndrico (37.68 m³ contra 24 m³)",
-            "La caja rectangular",
-            "Ambos tienen el mismo volumen",
-            "No se puede saber sin más datos"
+            "No, porque el ángulo entre los lados es diferente",
+            "Sí, por LAL",
+            "Sí, porque los lados son iguales",
+            "No se puede saber"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Caja: V = 2×3×4 = 24 m³. Cilindro: V = 3.14×2²×3 = 3.14×4×3 = 37.68 m³. El cilindro tiene mayor volumen."
+          "retroalimentacion": "Aunque los lados coinciden, el ángulo comprendido entre ellos es diferente (40° vs 50°), así que no se cumple LAL y no son congruentes."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada tipo de contenedor con la fórmula de volumen que le corresponde.",
+          "instruccion": "Relaciona cada situación de dos triángulos con la conclusión correcta sobre su congruencia.",
           "columnaA": [
-            "Tinaco cilíndrico",
-            "Caja rectangular (prisma)",
-            "Silo cónico"
+            "Tienen los tres lados iguales",
+            "Tienen los tres ángulos iguales pero tamaños distintos",
+            "Tienen dos ángulos y el lado entre ellos iguales"
           ],
           "columnaB": [
-            "V = πr²h",
-            "V = (1/3)πr²h",
-            "V = largo × ancho × alto"
+            "Son congruentes por ALA",
+            "No son congruentes (solo son semejantes)",
+            "Son congruentes por LLL"
           ],
           "parejasCorrectas": [
-            0,
             2,
-            1
+            1,
+            0
           ],
-          "retroalimentacion": "El tinaco (cilindro) usa V=πr²h; la caja (prisma) usa V=largo×ancho×alto; el silo (cono) usa V=(1/3)πr²h."
+          "retroalimentacion": "Tres lados iguales = congruentes por LLL; mismos ángulos y distinto tamaño = solo semejantes; dos ángulos y el lado entre ellos = congruentes por ALA."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
-      "tipo": "opcion_multiple",
-      "pregunta": "¿Cuál es el volumen de un cubo de arista 7 cm?",
-      "opciones": [
-        "343 cm³",
-        "49 cm³",
-        "21 cm³",
-        "147 cm³"
-      ],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "V = a³ = 7³ = 7×7×7 = 343 cm³."
+      "tipo": "verdadero_falso",
+      "enunciado": "El criterio LLL requiere conocer los tres ángulos de cada triángulo.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "Falso: el criterio LLL requiere conocer los tres lados, no los ángulos."
     },
     {
-      "tipo": "verdadero_falso",
-      "enunciado": "Un cilindro con radio 4 cm y altura 5 cm tiene un volumen de 251.2 cm³ (usando π = 3.14).",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "V = πr²h = 3.14 × 4² × 5 = 3.14 × 16 × 5 = 251.2 cm³. La afirmación es correcta."
+      "tipo": "opcion_multiple",
+      "pregunta": "Dos triángulos tienen lados 6cm, 8cm, 10cm y 6cm, 8cm, 10cm. ¿Qué criterio confirma su congruencia?",
+      "opciones": [
+        "LLL",
+        "ALA",
+        "Ninguno, faltan los ángulos",
+        "LAL"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "Con los tres lados iguales en ambos triángulos, se aplica el criterio LLL."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "Un cono con radio 5 cm y altura 6 cm (π = 3.14) tiene un volumen de ___ cm³.",
-      "respuestaCorrecta": "157",
-      "retroalimentacion": "V = (1/3)πr²h = (1/3) × 3.14 × 25 × 6 = (1/3) × 471 = 157 cm³."
+      "frase": "Si △PQR ≅ △STU, entonces el lado QR es igual al lado ___.",
+      "respuestaCorrecta": "TU",
+      "retroalimentacion": "Con la correspondencia P↔S, Q↔T, R↔U, el lado QR corresponde al lado TU."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada cuerpo geométrico con su volumen correcto.",
+      "instruccion": "Relaciona cada nombre de criterio con su abreviatura correcta.",
       "columnaA": [
-        "Prisma de 2 cm × 5 cm × 3 cm",
-        "Pirámide, base 4 cm × 4 cm, altura 3 cm",
-        "Cubo de arista 3 cm"
+        "Lado-Lado-Lado",
+        "Lado-Ángulo-Lado",
+        "Ángulo-Lado-Ángulo"
       ],
       "columnaB": [
-        "27 cm³",
-        "16 cm³",
-        "30 cm³"
+        "ALA",
+        "LAL",
+        "LLL"
       ],
       "parejasCorrectas": [
         2,
         1,
         0
       ],
-      "retroalimentacion": "Prisma 2×5×3 = 30 cm³. Pirámide base 4×4, h=3: (1/3)×16×3=16 cm³. Cubo arista 3: 3³=27 cm³."
+      "retroalimentacion": "Lado-Lado-Lado = LLL; Lado-Ángulo-Lado = LAL; Ángulo-Lado-Ángulo = ALA."
     }
   ]
 }

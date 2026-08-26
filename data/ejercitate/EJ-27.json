@@ -4,285 +4,274 @@
   "numero": 27,
   "categoria": "avanzado",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Forma, espacio y medida",
-  "titulo": "Semejanza de triángulos",
-  "contenido": "Condiciones para que dos triángulos sean semejantes (ángulos iguales y lados proporcionales) y cálculo de lados desconocidos usando la razón de semejanza.",
-  "pda": "Identifica condiciones de semejanza entre triángulos, aplica el criterio AA para justificarla y calcula la razón de semejanza y lados desconocidos para resolver problemas de medición indirecta.",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Plano cartesiano",
+  "contenido": "Ubicación e identificación de puntos en el plano cartesiano mediante pares ordenados, cuadrantes y distancias simples.",
+  "pda": "Ubica e identifica puntos en el plano cartesiano usando pares ordenados, reconoce en qué cuadrante se encuentran y calcula distancias entre puntos que comparten una coordenada.",
   "problematizacion": {
-    "contexto": "Para la feria de la escuela, el comité de decoración diseñó un triángulo pequeño (base 6 cm, altura 4 cm) para el programa impreso del evento. Después, para el letrero gigante de bienvenida en la entrada, ampliaron exactamente el mismo triángulo, conservando su forma, pero 5 veces más grande.",
-    "pregunta": "Si el triángulo grande tiene exactamente la misma forma que el pequeño pero distinto tamaño, ¿qué debe cumplirse entre sus ángulos y entre sus lados para que en verdad sean 'el mismo diseño, a otra escala'?"
+    "contexto": "En un videojuego de estrategia, el mapa está dividido en una cuadrícula donde cada casilla se ubica con dos números: uno para la posición horizontal y otro para la vertical. Tu personaje está en la posición (3, -2) y el tesoro está en la posición (3, 4).",
+    "pregunta": "¿Cómo puedes usar esas dos coordenadas para saber qué tan lejos está tu personaje del tesoro?"
   },
   "subtemas": [
     {
       "numero": "27.1",
-      "titulo": "¿Qué es la semejanza de triángulos?",
-      "explicacion": "Dos triángulos son semejantes cuando tienen exactamente la misma forma, aunque no el mismo tamaño: sus ángulos correspondientes son iguales (congruentes) y sus lados correspondientes son proporcionales, es decir, todos guardan la misma razón o 'factor de escala'. Esto es distinto de la congruencia, donde además del mismo ángulo se exige el mismo tamaño exacto en los lados. Pensar en una fotografía ampliada ayuda: al agrandarla, los ángulos de las figuras no cambian, pero todas las distancias se multiplican por el mismo número.",
-      "formula": "Si △ABC ~ △DEF: ∠A=∠D, ∠B=∠E, ∠C=∠F y AB/DE = BC/EF = CA/FD",
+      "titulo": "Ejes, cuadrantes y el origen",
+      "explicacion": "El plano cartesiano está formado por dos rectas numéricas perpendiculares: el eje X (horizontal) y el eje Y (vertical). El punto donde se cruzan se llama origen y corresponde a (0, 0). Estos dos ejes dividen el plano en cuatro regiones llamadas cuadrantes, numerados del I al IV en sentido contrario a las manecillas del reloj, y cada uno tiene una combinación distinta de signos para sus coordenadas.",
       "ejemplos": [
-        "Un triángulo tiene ángulos de 50°, 60° y 70°. Otro triángulo, más grande, también tiene ángulos de 50°, 60° y 70°: tienen la misma forma, así que son semejantes aunque su tamaño sea distinto.",
-        "Un triángulo con lados 3 cm, 4 cm y 5 cm, y otro con lados 6 cm, 8 cm y 10 cm: cada lado del segundo es exactamente el doble del correspondiente en el primero (razón constante = 2), así que son semejantes."
+        "El punto (2, 3) está en el cuadrante I porque ambas coordenadas son positivas.",
+        "El punto (-4, -1) está en el cuadrante III porque ambas coordenadas son negativas."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Dos triángulos son semejantes cuando...",
+          "pregunta": "¿En qué cuadrante se ubica el punto (-3, 5)?",
           "opciones": [
-            "sus ángulos correspondientes son iguales y sus lados correspondientes son proporcionales",
-            "tienen exactamente el mismo tamaño y la misma posición",
-            "tienen la misma área, sin importar la forma",
-            "uno de los dos es un triángulo rectángulo"
+            "I",
+            "II",
+            "III",
+            "IV"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "La semejanza exige la misma forma: ángulos correspondientes iguales y lados correspondientes en la misma proporción (no necesariamente el mismo tamaño)."
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Con x negativa y y positiva, el punto está en el cuadrante II."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Dos triángulos semejantes siempre tienen el mismo tamaño.",
-          "respuestaCorrecta": false,
-          "retroalimentacion": "Falso: la semejanza garantiza la misma forma, pero el tamaño puede ser distinto (por eso existe una razón de semejanza que puede ser diferente de 1)."
+          "enunciado": "El punto (0, 4) se encuentra sobre el eje Y.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Cuando la coordenada x es 0, el punto siempre está sobre el eje Y."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Si △ABC ~ △DEF, entonces el ángulo A es congruente con el ángulo ___.",
-          "respuestaCorrecta": "D",
-          "retroalimentacion": "En la notación △ABC ~ △DEF, cada letra corresponde en orden: A con D, B con E y C con F."
+          "frase": "El punto donde se cruzan el eje X y el eje Y se llama ___.",
+          "respuestaCorrecta": "origen",
+          "retroalimentacion": "El origen tiene coordenadas (0, 0) y es el punto de referencia del plano cartesiano."
         },
         {
-          "tipo": "verdadero_falso",
-          "enunciado": "Un triángulo con lados 2 cm, 3 cm y 4 cm, y otro con lados 4 cm, 6 cm y 8 cm son semejantes, porque cada lado del segundo es el doble del correspondiente en el primero.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: 4/2 = 6/3 = 8/4 = 2. Como los tres lados guardan la misma razón, los triángulos son semejantes."
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el signo de las coordenadas de un punto en el cuadrante IV?",
+          "opciones": [
+            "(+, +)",
+            "(-, +)",
+            "(-, -)",
+            "(+, -)"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "En el cuadrante IV, la x es positiva y la y es negativa: (+, -)."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada par de triángulos con su relación.",
+          "instruccion": "Relaciona cada punto con su cuadrante.",
           "columnaA": [
-            "Ángulos 40°,60°,80° y lados 3,4,5 vs. ángulos 40°,60°,80° y lados 6,8,10",
-            "Ángulos 30°,60°,90° y lados 3,4,5 vs. ángulos 30°,60°,90° y lados 3,4,5",
-            "Ángulos 50°,60°,70° vs. ángulos 45°,55°,80°"
+            "(5, 2)",
+            "(-1, 6)",
+            "(-3, -7)"
           ],
           "columnaB": [
-            "Semejantes (misma forma, distinto tamaño)",
-            "Congruentes (misma forma y mismo tamaño)",
-            "Ninguna relación (sus ángulos no coinciden)"
+            "Cuadrante II",
+            "Cuadrante I",
+            "Cuadrante III"
           ],
           "parejasCorrectas": [
-            0,
             1,
+            0,
             2
           ],
-          "retroalimentacion": "El primer par tiene mismos ángulos y lados en razón 2: semejantes. El segundo tiene mismos ángulos y mismos lados: congruentes. El tercero tiene ángulos distintos: no hay relación."
+          "retroalimentacion": "(5,2) tiene ambas positivas: cuadrante I. (-1,6) tiene x negativa y y positiva: cuadrante II. (-3,-7) tiene ambas negativas: cuadrante III."
         }
       ]
     },
     {
       "numero": "27.2",
-      "titulo": "Criterio AA (Ángulo-Ángulo)",
-      "explicacion": "El criterio AA dice que si dos ángulos de un triángulo son congruentes con dos ángulos de otro triángulo, entonces los triángulos son semejantes, sin necesidad de comprobar los lados. Esto funciona porque los ángulos internos de cualquier triángulo siempre suman 180°: si dos ángulos ya coinciden, el tercero queda determinado y también coincide automáticamente. Es el criterio más práctico cuando podemos medir ángulos (con un transportador o por geometría) pero no tenemos forma sencilla de medir todos los lados.",
-      "formula": "Si ∠A = ∠D y ∠B = ∠E, entonces △ABC ~ △DEF (criterio AA)",
+      "titulo": "Ubicar puntos con pares ordenados",
+      "explicacion": "Un par ordenado (x, y) indica exactamente cómo llegar a un punto desde el origen: el primer número (x) dice cuánto moverse horizontalmente (derecha si es positivo, izquierda si es negativo) y el segundo número (y) dice cuánto moverse verticalmente (arriba si es positivo, abajo si es negativo). El orden importa: (3, 5) y (5, 3) son puntos distintos.",
       "ejemplos": [
-        "Un triángulo tiene ángulos de 35° y 85°; otro triángulo también tiene ángulos de 35° y 85°. Por AA son semejantes (el tercer ángulo en ambos es 180-35-85 = 60°).",
-        "Un poste vertical y una persona vertical, bajo el mismo sol, forman un ángulo de 90° con el suelo y comparten el mismo ángulo de elevación del sol: por AA, el triángulo poste-sombra y el triángulo persona-sombra son semejantes."
+        "Para ubicar (4, -2): desde el origen te mueves 4 unidades a la derecha y 2 hacia abajo.",
+        "Para ubicar (-3, 5): desde el origen te mueves 3 unidades a la izquierda y 5 hacia arriba."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Para aplicar el criterio AA de semejanza, ¿cuántos ángulos correspondientes deben coincidir como mínimo?",
+          "pregunta": "Para ubicar el punto (-5, 3), ¿qué movimientos haces desde el origen?",
           "opciones": [
-            "1",
-            "2",
-            "3",
-            "4"
+            "5 a la izquierda, 3 hacia arriba",
+            "5 a la derecha, 3 hacia arriba",
+            "3 a la izquierda, 5 hacia arriba",
+            "5 a la izquierda, 3 hacia abajo"
           ],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "Basta con 2 ángulos iguales: como los tres ángulos internos suman 180°, el tercero queda determinado y coincide automáticamente."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "Un triángulo tiene ángulos de 42° y 78°. Su tercer ángulo mide ___°.",
-          "respuestaCorrecta": "60",
-          "retroalimentacion": "180 - 42 - 78 = 60°."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Como x = -5, te mueves 5 a la izquierda; como y = 3, te mueves 3 hacia arriba."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si dos triángulos comparten dos ángulos iguales, su tercer ángulo también resulta igual automáticamente.",
+          "enunciado": "Para ubicar el punto (6, -4), te mueves 6 unidades a la derecha y 4 hacia abajo.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: como los ángulos internos de cualquier triángulo suman 180°, si dos ya coinciden, el tercero se obtiene restando y también coincide."
+          "retroalimentacion": "x = 6 (positivo) es 6 a la derecha, y y = -4 (negativo) es 4 hacia abajo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "En el par ordenado (7, -2), el primer número (7) indica el movimiento sobre el eje ___.",
+          "respuestaCorrecta": "X",
+          "retroalimentacion": "El primer número de un par ordenado siempre corresponde al movimiento horizontal, sobre el eje X."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Triángulo A tiene ángulos de 55° y 65°. Triángulo B tiene ángulos de 55° y 70°. ¿Son semejantes por el criterio AA?",
+          "pregunta": "¿Cuál de los siguientes pares ordenados corresponde a moverse 2 a la izquierda y 8 hacia arriba desde el origen?",
           "opciones": [
-            "No, porque el tercer ángulo de A mide 60° y el de B mide 55°, no coinciden",
-            "Sí, porque comparten un ángulo de 55°",
-            "Sí, siempre que compartan al menos un ángulo",
-            "No se puede determinar sin conocer los lados"
+            "(2, 8)",
+            "(-2, 8)",
+            "(8, -2)",
+            "(-2, -8)"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "El tercer ángulo de A es 180-55-65=60°, y el de B es 180-55-70=55°. Como no comparten los mismos tres ángulos, no son semejantes por AA."
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "2 a la izquierda es x = -2, y 8 hacia arriba es y = 8, así que el par es (-2, 8)."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada par de triángulos con su relación de semejanza según sus ángulos.",
-          "columnaA": [
-            "Triángulo con ángulos 40° y 70° vs. triángulo con ángulos 40° y 70°",
-            "Triángulo con ángulos 30° y 90° vs. triángulo con ángulos 50° y 90°",
-            "Triángulo con solo el ángulo de 25° conocido vs. otro triángulo con solo el ángulo de 25° conocido"
-          ],
-          "columnaB": [
-            "Son semejantes por AA (comparten dos ángulos iguales)",
-            "No son semejantes (su tercer ángulo resulta distinto)",
-            "No se puede aplicar AA (falta un segundo ángulo conocido en cada uno)"
-          ],
-          "parejasCorrectas": [
-            0,
-            1,
-            2
-          ],
-          "retroalimentacion": "El primer par comparte dos ángulos: son semejantes. El segundo tiene distinto tercer ángulo (60° vs 40°): no son semejantes. El tercero solo da un ángulo por triángulo: no alcanza para aplicar AA."
+          "tipo": "llenar_frase",
+          "frase": "En el par ordenado (-3, 9), el segundo número (9) indica el movimiento sobre el eje ___.",
+          "respuestaCorrecta": "Y",
+          "retroalimentacion": "El segundo número de un par ordenado siempre corresponde al movimiento vertical, sobre el eje Y."
         }
       ]
     },
     {
       "numero": "27.3",
-      "titulo": "Razón de semejanza y cálculo de lados",
-      "explicacion": "La razón de semejanza es el número constante por el cual se multiplican los lados de un triángulo para obtener los lados correspondientes del otro triángulo semejante. Se calcula dividiendo un lado del triángulo grande entre su correspondiente en el triángulo pequeño (k = lado grande ÷ lado pequeño). Una vez que se conoce k, cualquier lado desconocido se obtiene con una simple multiplicación o división, siempre y cuando se identifique correctamente qué lado corresponde a cuál (el orden de los vértices en la notación △ABC ~ △DEF indica esa correspondencia).",
-      "formula": "k = lado del triángulo grande ÷ lado correspondiente del triángulo pequeño",
+      "titulo": "Identificar las coordenadas de un punto dado",
+      "explicacion": "Este proceso es el inverso al de ubicar: cuando ya tienes un punto marcado en el plano, para saber sus coordenadas cuentas cuántas unidades hay que moverse horizontalmente desde el origen (ese es el valor de x) y cuántas verticalmente (ese es el valor de y), sin olvidar el signo según la dirección del movimiento.",
       "ejemplos": [
-        "△ABC ~ △DEF con razón de semejanza k=3. Si AB=5 cm, entonces su correspondiente DE mide 5×3 = 15 cm.",
-        "Dos triángulos semejantes tienen lados correspondientes de 6 cm y 9 cm, así que k = 9/6 = 1.5. Si otro lado del triángulo pequeño mide 4 cm, su correspondiente en el grande mide 4×1.5 = 6 cm."
+        "Un punto que está 6 a la derecha y 2 hacia arriba del origen tiene coordenadas (6, 2).",
+        "Un punto que está 3 a la izquierda y sobre el eje X (sin moverse verticalmente) tiene coordenadas (-3, 0)."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Dos triángulos semejantes tienen razón de semejanza k=2. Si un lado del triángulo pequeño mide 7 cm, ¿cuánto mide su correspondiente en el triángulo grande?",
+          "pregunta": "Un punto está ubicado 4 unidades a la derecha del origen y 6 hacia abajo. ¿Cuáles son sus coordenadas?",
           "opciones": [
-            "9 cm",
-            "14 cm",
-            "3.5 cm",
-            "49 cm"
+            "(4, -6)",
+            "(-4, 6)",
+            "(4, 6)",
+            "(-4, -6)"
           ],
-          "respuestaCorrecta": 1,
-          "retroalimentacion": "7 × 2 = 14 cm: el lado del triángulo grande se obtiene multiplicando el del pequeño por la razón de semejanza."
-        },
-        {
-          "tipo": "llenar_frase",
-          "frase": "Si △ABC ~ △DEF con razón de semejanza 4, y DE = 8 cm corresponde a AB, entonces AB mide ___ cm.",
-          "respuestaCorrecta": "2",
-          "retroalimentacion": "Como DE es del triángulo grande, AB = DE ÷ 4 = 8 ÷ 4 = 2 cm."
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "4 a la derecha es x = 4, y 6 hacia abajo es y = -6, así que el punto es (4, -6)."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si la razón de semejanza entre dos triángulos es 1, entonces los triángulos son congruentes.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: una razón k=1 significa que todos los lados correspondientes miden exactamente lo mismo, es decir, además de semejantes son congruentes."
+          "enunciado": "Un punto ubicado 5 a la izquierda y 5 hacia arriba del origen tiene coordenadas (5, 5).",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Como el movimiento es hacia la izquierda, x debe ser negativo: las coordenadas correctas son (-5, 5), no (5, 5)."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un punto que está 8 unidades a la izquierda del origen y sobre el eje X (sin moverse verticalmente) tiene coordenadas (___, 0).",
+          "respuestaCorrecta": "-8",
+          "retroalimentacion": "8 a la izquierda del origen corresponde a x = -8; como no hay movimiento vertical, y = 0."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un triángulo pequeño tiene lados 3 cm, 5 cm y 6 cm. Uno semejante y más grande tiene el lado correspondiente al de 3 cm midiendo 9 cm. ¿Cuánto miden los otros dos lados del triángulo grande?",
+          "pregunta": "Un punto está 3 unidades a la derecha y 7 hacia arriba del origen. ¿Cuáles son sus coordenadas?",
           "opciones": [
-            "15 cm y 18 cm",
-            "8 cm y 9 cm",
-            "6 cm y 9 cm",
-            "10 cm y 12 cm"
+            "(3, 7)",
+            "(7, 3)",
+            "(-3, 7)",
+            "(3, -7)"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La razón de semejanza es 9÷3=3. Entonces 5×3=15 cm y 6×3=18 cm."
+          "retroalimentacion": "3 a la derecha es x = 3, y 7 hacia arriba es y = 7, así que el punto es (3, 7)."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada lado del triángulo pequeño con su correspondiente en el triángulo grande, sabiendo que la razón de semejanza es k=2.5.",
+          "instruccion": "Relaciona la descripción del movimiento desde el origen con las coordenadas correctas.",
           "columnaA": [
-            "Lado de 4 cm",
-            "Lado de 6 cm",
-            "Lado de 10 cm"
+            "2 a la derecha, 9 hacia abajo",
+            "6 a la izquierda, 1 hacia abajo",
+            "0 movimiento horizontal, 5 hacia arriba"
           ],
           "columnaB": [
-            "25 cm",
-            "10 cm",
-            "15 cm"
+            "(-6, -1)",
+            "(0, 5)",
+            "(2, -9)"
           ],
           "parejasCorrectas": [
-            1,
             2,
-            0
+            0,
+            1
           ],
-          "retroalimentacion": "4×2.5=10 cm, 6×2.5=15 cm, 10×2.5=25 cm."
+          "retroalimentacion": "2 a la derecha y 9 abajo es (2,-9); 6 a la izquierda y 1 abajo es (-6,-1); sin movimiento horizontal y 5 arriba es (0,5)."
         }
       ]
     },
     {
       "numero": "27.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recapitulando: dos triángulos son semejantes cuando tienen los mismos ángulos y lados proporcionales; el criterio AA permite comprobarlo con solo dos ángulos iguales, sin medir lados; y una vez identificada la semejanza, la razón de semejanza (lado grande ÷ lado correspondiente pequeño) permite calcular cualquier lado desconocido con una multiplicación o división. Esta cadena de ideas es la base de la medición indirecta: cuando no podemos medir algo directamente (la altura de un edificio, una distancia en un mapa), formamos dos triángulos semejantes con datos que sí podemos medir y despejamos lo que falta.",
+      "explicacion": "Recuerda: el eje X es horizontal y el eje Y es vertical, se cruzan en el origen (0,0) y forman cuatro cuadrantes según el signo de las coordenadas. Un par ordenado (x, y) siempre se lee primero el movimiento horizontal y después el vertical. Cuando dos puntos comparten la misma coordenada x (están alineados verticalmente) o la misma coordenada y (están alineados horizontalmente), la distancia entre ellos es simplemente la diferencia, en valor absoluto, de la coordenada que cambia.",
       "ejemplos": [
-        "Un poste de 3 m proyecta una sombra de 2 m. En ese mismo momento, un árbol proyecta una sombra de 8 m. Como los triángulos poste-sombra y árbol-sombra son semejantes (mismo ángulo del sol, criterio AA), la razón es 3/2=1.5, y la altura del árbol es 8×1.5=12 m.",
-        "En un mapa a escala, un triángulo que representa un terreno tiene lados 2 cm, 3 cm y 4 cm. El terreno real es semejante, con razón 500 (1 cm del mapa = 500 cm reales), así que el lado real correspondiente al de 3 cm mide 3×500=1500 cm = 15 m."
+        "La distancia entre (2, 3) y (2, 8), que tienen la misma x, es |8 - 3| = 5 unidades.",
+        "La distancia entre (-4, 1) y (5, 1), que tienen la misma y, es |5 - (-4)| = 9 unidades."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Una persona de 1.6 m de estatura proyecta una sombra de 2 m. En ese mismo instante, un asta bandera proyecta una sombra de 7.5 m. ¿Cuál es la altura del asta bandera?",
+          "pregunta": "¿Cuál es la distancia entre los puntos (3, 2) y (3, 9)?",
           "opciones": [
-            "6 m",
-            "9.375 m",
-            "5.9 m",
-            "4 m"
+            "7",
+            "11",
+            "6",
+            "9"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La razón persona/sombra es 1.6/2=0.8. Como los triángulos son semejantes (mismo ángulo del sol), la altura del asta es 7.5×0.8=6 m."
+          "retroalimentacion": "Como ambos comparten x = 3, la distancia es |9 - 2| = 7 unidades."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En un plano, un triángulo tiene un lado de 5 cm que representa 100 m reales (triángulo semejante al terreno real). Si otro lado del plano mide 8 cm, ese lado real mide ___ m.",
-          "respuestaCorrecta": "160",
-          "retroalimentacion": "La razón de semejanza es 100÷5=20. Entonces 8×20=160 m."
+          "frase": "En el videojuego, el personaje está en (3, -2) y el tesoro en (3, 4). Como comparten la misma coordenada x, la distancia entre ellos es ___ casillas.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "|4 - (-2)| = 6, así que el tesoro está a 6 casillas de distancia vertical del personaje."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Para calcular la altura real de un objeto usando su sombra y la de un objeto de referencia, basta con que ambos sean verticales y que las sombras se midan al mismo tiempo (mismo ángulo del sol).",
+          "enunciado": "Los puntos (-2, 5) y (6, 5) están a una distancia de 8 unidades porque comparten la misma coordenada y.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Verdadero: ambos objetos forman un ángulo de 90° con el suelo y comparten el mismo ángulo de elevación del sol, lo que garantiza la semejanza por AA entre los triángulos objeto-sombra."
+          "retroalimentacion": "Como comparten y = 5, la distancia es |6 - (-2)| = 8 unidades."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Qué concepto se usa para pasar de las medidas de un triángulo pequeño (sombra, plano) a las medidas reales de un triángulo semejante más grande?",
+          "pregunta": "Un cuadrado tiene vértices en (1,1), (1,5), (5,5) y (5,1). ¿Cuánto mide cada lado?",
           "opciones": [
-            "La razón de semejanza (proporción entre lados correspondientes)",
-            "La suma de los ángulos internos",
-            "El área de los triángulos",
-            "El perímetro total"
+            "4",
+            "5",
+            "3",
+            "6"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "La razón de semejanza es la proporción constante entre lados correspondientes; multiplicándola por un lado conocido se obtiene el lado real desconocido."
+          "retroalimentacion": "Entre (1,1) y (1,5), que comparten x = 1, la distancia es |5 - 1| = 4 unidades: ese es el lado del cuadrado."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con el concepto de semejanza de triángulos que aplica principalmente.",
+          "instruccion": "Relaciona cada par de puntos con la distancia entre ellos.",
           "columnaA": [
-            "Un edificio y su sombra, junto con un poste de referencia y su sombra, bajo el mismo sol",
-            "Un plano de una casa dibujado a escala 1:50",
-            "Dos triángulos donde solo sabemos que comparten dos ángulos iguales"
+            "(2, 3) y (2, 10)",
+            "(-5, 4) y (3, 4)",
+            "(0, -6) y (0, 6)"
           ],
           "columnaB": [
-            "Razón de semejanza para hallar la altura real",
-            "Razón de semejanza para hallar medidas reales a partir del plano",
-            "Criterio AA para confirmar que son semejantes"
+            "8",
+            "12",
+            "7"
           ],
           "parejasCorrectas": [
+            2,
             0,
-            1,
-            2
+            1
           ],
-          "retroalimentacion": "Sombras y postes de referencia se resuelven con razón de semejanza para alturas; los planos a escala usan razón de semejanza para medidas reales; y cuando solo hay dos ángulos iguales, se aplica el criterio AA para confirmar la semejanza."
+          "retroalimentacion": "(2,3)-(2,10) comparten x: distancia 7. (-5,4)-(3,4) comparten y: distancia 8. (0,-6)-(0,6) comparten x: distancia 12."
         }
       ]
     }
@@ -290,47 +279,47 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "Dos fotografías del mismo dibujo, una tamaño postal y otra ampliada tamaño póster, mantienen la misma forma. ¿Qué característica NO cambia entre ambas versiones?",
+      "pregunta": "¿En qué cuadrante está el punto (7, -3)?",
       "opciones": [
-        "Los ángulos internos",
-        "El tamaño de los lados",
-        "El área total",
-        "El perímetro"
+        "I",
+        "II",
+        "III",
+        "IV"
       ],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "Al ampliar una figura semejante, los ángulos se mantienen iguales; lo que cambia (se multiplica por la razón de semejanza) son los lados, el perímetro y el área."
-    },
-    {
-      "tipo": "llenar_frase",
-      "frase": "Un triángulo pequeño con lados 4, 6 y 8 cm es semejante a uno grande cuya razón de semejanza es 3. El lado del triángulo grande correspondiente al de 8 cm mide ___ cm.",
-      "respuestaCorrecta": "24",
-      "retroalimentacion": "8 × 3 = 24 cm."
+      "respuestaCorrecta": 3,
+      "retroalimentacion": "Con x positiva y y negativa, el punto está en el cuadrante IV."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "Dos triángulos rectángulos que comparten un ángulo agudo de 35° siempre son semejantes.",
+      "enunciado": "El punto (-6, 0) está sobre el eje X.",
       "respuestaCorrecta": true,
-      "retroalimentacion": "Verdadero: ambos tienen un ángulo recto de 90° y comparten el ángulo de 35°, es decir, comparten dos ángulos iguales, así que por el criterio AA son semejantes."
+      "retroalimentacion": "Cuando la coordenada y es 0, el punto siempre está sobre el eje X."
+    },
+    {
+      "tipo": "llenar_frase",
+      "frase": "La distancia entre los puntos (4, 2) y (4, 15) es ___ unidades.",
+      "respuestaCorrecta": "13",
+      "retroalimentacion": "Como comparten x = 4, la distancia es |15 - 2| = 13 unidades."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada par de lados correspondientes (pequeño y grande) con su razón de semejanza (lado grande ÷ lado pequeño).",
+      "instruccion": "Relaciona cada punto con su cuadrante.",
       "columnaA": [
-        "Lados de 2 cm y 6 cm",
-        "Lados de 5 cm y 20 cm",
-        "Lados de 3 cm y 7.5 cm"
+        "(-8, -2)",
+        "(3, -5)",
+        "(-1, 9)"
       ],
       "columnaB": [
-        "k = 2.5",
-        "k = 4",
-        "k = 3"
+        "Cuadrante IV",
+        "Cuadrante II",
+        "Cuadrante III"
       ],
       "parejasCorrectas": [
         2,
-        1,
-        0
+        0,
+        1
       ],
-      "retroalimentacion": "6÷2=3, 20÷5=4, 7.5÷3=2.5."
+      "retroalimentacion": "(-8,-2) tiene ambas negativas: cuadrante III. (3,-5) tiene x positiva y y negativa: cuadrante IV. (-1,9) tiene x negativa y y positiva: cuadrante II."
     }
   ]
 }

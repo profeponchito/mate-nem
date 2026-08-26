@@ -2,293 +2,290 @@
   "id": "EJ-38",
   "grado": "Ejercítate",
   "numero": 38,
-  "categoria": "basico",
+  "categoria": "estadistica",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Sentido numérico y pensamiento algebraico",
-  "titulo": "Suma y resta de números con signo",
-  "contenido": "Los números enteros positivos y negativos, y las operaciones de suma y resta entre ellos, incluyendo su representación en la recta numérica y su uso para modelar situaciones de la vida cotidiana.",
-  "pda": "Resuelve sumas y restas de números con signo, aplicando la regla de los signos y la recta numérica, para modelar y resolver situaciones cotidianas como temperaturas, alturas, saldos de dinero y desplazamientos.",
+  "eje": "Análisis de datos y probabilidad",
+  "titulo": "Media, mediana y moda",
+  "contenido": "Cálculo e interpretación de las medidas de tendencia central: media, mediana y moda.",
+  "pda": "Calcula e interpreta la media, la mediana y la moda de un conjunto de datos, y decide cuál medida de tendencia central conviene usar según el contexto.",
   "problematizacion": {
-    "contexto": "En un centro comercial, un elevador parte de la planta baja (piso 0). Primero sube 4 pisos para llegar al área de cines y, más tarde, baja 7 pisos para llegar al nivel más profundo del estacionamiento subterráneo.",
-    "pregunta": "¿En qué piso queda el elevador después de esos dos movimientos? ¿Cómo se representa con números con signo cada subida y cada bajada?"
+    "contexto": "El entrenador de un equipo de basquetbol anotó los puntos que hizo su mejor jugador en los últimos 5 partidos: 18, 22, 20, 45 y 19. Quiere saber qué número representa mejor el rendimiento normal del jugador, sin que un partido excepcional (como el de 45 puntos) distorsione la idea.",
+    "pregunta": "¿Qué número te daría una idea más justa del rendimiento típico del jugador: el promedio de todos los partidos o el valor de en medio?"
   },
   "subtemas": [
     {
       "numero": "38.1",
-      "titulo": "Suma de números con signo: mismo signo y signos distintos",
-      "explicacion": "Para sumar dos números con signo hay dos casos. Si tienen el mismo signo, se suman sus valores absolutos y el resultado conserva ese mismo signo. Si tienen signos distintos, se restan sus valores absolutos (el mayor menos el menor) y el resultado toma el signo del número que tiene mayor valor absoluto. En la recta numérica, sumar un número positivo mueve el punto hacia la derecha, y sumar un número negativo lo mueve hacia la izquierda.",
-      "formula": "Mismo signo: se suman los valores absolutos y se conserva el signo común. Signos distintos: se restan los valores absolutos (mayor menos menor) y se conserva el signo del número con mayor valor absoluto.",
+      "titulo": "La media o promedio",
+      "explicacion": "La media (o promedio) se calcula sumando todos los datos y dividiendo el resultado entre el número de datos. Es la medida más usada porque toma en cuenta todos los valores, pero tiene una debilidad: un solo dato muy alto o muy bajo (un valor atípico) puede 'jalar' la media y hacer que no represente bien a la mayoría.",
+      "formula": "Media = (suma de todos los datos) ÷ (número de datos)",
       "ejemplos": [
-        "(-4) + (-6) = -10, porque ambos números son negativos: se suman sus valores absolutos (4 + 6 = 10) y el resultado conserva el signo negativo.",
-        "(-9) + 5 = -4, porque los signos son distintos: se restan los valores absolutos (9 - 5 = 4) y el resultado toma el signo del número con mayor valor absoluto, que es -9."
+        "Las calificaciones de Ana en 5 exámenes fueron 8, 9, 7, 10, 6. La media es (8+9+7+10+6)÷5 = 40÷5 = 8.",
+        "Un jugador anotó 2, 5, 3, 4, 6 puntos en 5 partidos. La media es (2+5+3+4+6)÷5 = 20÷5 = 4 puntos por partido."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuánto es (-7) + (-5)?",
+          "pregunta": "Calcula la media de: 4, 6, 8, 10, 12",
           "opciones": [
-            "-12",
-            "-2",
-            "12",
-            "2"
+            "6",
+            "7",
+            "8",
+            "9"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "(-7) + (-5) = -12: mismo signo, se suman los valores absolutos (7 + 5 = 12) y se conserva el signo negativo."
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "La suma es 4+6+8+10+12 = 40, y 40÷5 = 8."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "(-8) + 3 = ___.",
-          "respuestaCorrecta": "-5",
-          "retroalimentacion": "Signos distintos: se restan los valores absolutos (8 - 3 = 5) y el resultado toma el signo del número con mayor valor absoluto, -8, así que queda -5."
+          "frase": "La media de 5, 10, 15 es ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "La suma es 5+10+15 = 30, y 30÷3 = 10."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En la recta numérica, sumar un número negativo significa moverse hacia la izquierda.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: sumar un número positivo mueve el punto a la derecha, y sumar un número negativo lo mueve a la izquierda."
+          "enunciado": "La media de un conjunto de datos siempre tiene que ser uno de los datos originales.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por ejemplo, la media de 2, 3 y 4 es 3, pero la media de 2 y 3 es 2.5, un valor que no estaba en los datos."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un buzo se sumerge 6 metros bajo el nivel del mar y después desciende 4 metros más. ¿A qué profundidad se encuentra?",
+          "pregunta": "Un taxista registró sus propinas durante 4 días: $20, $35, $15, $30. ¿Cuál es la propina promedio por día?",
           "opciones": [
-            "-10 m",
-            "-2 m",
-            "10 m",
-            "-6 m"
+            "$20",
+            "$25",
+            "$30",
+            "$35"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "(-6) + (-4) = -10: ambos desplazamientos son hacia abajo (negativos), se suman sus valores absolutos y el resultado es -10 m."
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "La suma es 20+35+15+30 = 100, y 100÷4 = 25."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada suma con su resultado.",
+          "instruccion": "Relaciona cada conjunto de datos con su media.",
           "columnaA": [
-            "(-3) + (-9)",
-            "(-12) + 7",
-            "6 + (-2)"
+            "2, 4, 6",
+            "10, 20, 30",
+            "5, 5, 5, 5"
           ],
           "columnaB": [
-            "4",
-            "-12",
-            "-5"
+            "5",
+            "20",
+            "4"
           ],
           "parejasCorrectas": [
-            1,
             2,
+            1,
             0
           ],
-          "retroalimentacion": "(-3)+(-9) = -12; (-12)+7 = -5; 6+(-2) = 4."
+          "retroalimentacion": "2,4,6 suma 12÷3=4; 10,20,30 suma 60÷3=20; 5,5,5,5 suma 20÷4=5."
         }
       ]
     },
     {
       "numero": "38.2",
-      "titulo": "Resta de números con signo: sumar el opuesto",
-      "explicacion": "Restar un número es lo mismo que sumar su opuesto: a - b = a + (-b). Esta idea es muy útil cuando el número que se resta ya es negativo, porque restar un número negativo equivale a sumar un positivo: a - (-b) = a + b. Para resolver una resta con signos, primero cambia la operación por una suma del opuesto y después aplica la regla de los signos para sumar.",
-      "formula": "a - b = a + (-b)     a - (-b) = a + b",
+      "titulo": "La mediana",
+      "explicacion": "La mediana es el valor que queda justo en medio cuando los datos se ordenan de menor a mayor. Si hay un número impar de datos, la mediana es el dato central; si hay un número par, la mediana es el promedio de los dos datos centrales. A diferencia de la media, la mediana no se ve afectada por valores muy extremos, por eso es útil cuando hay datos 'raros' en la lista.",
       "ejemplos": [
-        "9 - 15 = 9 + (-15) = -6: cambiamos la resta por la suma del opuesto de 15, que es -15, y sumamos con signos distintos.",
-        "(-4) - (-10) = (-4) + 10 = 6: restar -10 es lo mismo que sumar 10, porque el opuesto de -10 es 10."
+        "Las edades de 5 amigos ordenadas son 12, 13, 13, 14, 16. La mediana es 13 (el valor central).",
+        "Los precios de 6 playeras ordenados son 80, 90, 100, 120, 150, 200. Como son pares, la mediana es el promedio de los dos centrales: (100+120)÷2 = 110."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuánto es 8 - 13?",
+          "pregunta": "Encuentra la mediana de: 3, 7, 5, 9, 1 (primero ordénalos)",
           "opciones": [
-            "-5",
+            "3",
             "5",
-            "-21",
-            "21"
+            "7",
+            "9"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "8 - 13 = 8 + (-13) = -5."
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Ordenados: 1, 3, 5, 7, 9. El valor central es 5."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "(-6) - (-9) = ___.",
-          "respuestaCorrecta": "3",
-          "retroalimentacion": "Restar -9 equivale a sumar 9: (-6) + 9 = 3."
+          "frase": "La mediana de 2, 8, 4, 10 es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "Ordenados: 2, 4, 8, 10. Como son 4 datos (par), la mediana es el promedio de los dos centrales: (4+8)÷2 = 6."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Restar -7 a un número es lo mismo que sumarle 7.",
+          "enunciado": "Para encontrar la mediana, primero hay que ordenar los datos de menor a mayor (o de mayor a menor).",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: a - (-7) = a + 7, porque el opuesto de -7 es 7."
+          "retroalimentacion": "Correcto: la mediana solo tiene sentido si los datos están ordenados, porque es el valor 'de en medio'."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "La temperatura estaba en -2°C y bajó 6 grados más. ¿Cuál es la temperatura final?",
+          "pregunta": "En una lista de 7 datos ya ordenados, ¿qué posición ocupa el dato que es la mediana?",
           "opciones": [
-            "-8°C",
-            "4°C",
-            "-4°C",
-            "8°C"
+            "La posición 3",
+            "La posición 4",
+            "La posición 5",
+            "El promedio de todos"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "-2 - 6 = -2 + (-6) = -8°C: bajar la temperatura es restar, y aquí ambos valores son negativos."
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Con 7 datos (impar), la mediana está en la posición (7+1)÷2 = 4, dejando 3 datos antes y 3 después."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada resta con su resultado, convirtiéndola primero en una suma del opuesto.",
+          "instruccion": "Relaciona cada conjunto de datos con su mediana.",
           "columnaA": [
-            "5 - 12",
-            "(-8) - (-3)",
-            "(-6) - 4"
+            "1, 2, 3, 4, 5",
+            "10, 20, 30, 40",
+            "6, 6, 6, 6, 6"
           ],
           "columnaB": [
-            "-10",
-            "-7",
-            "-5"
+            "25",
+            "6",
+            "3"
           ],
           "parejasCorrectas": [
-            1,
             2,
-            0
+            0,
+            1
           ],
-          "retroalimentacion": "5-12 = -7; (-8)-(-3) = -8+3 = -5; (-6)-4 = -10."
+          "retroalimentacion": "1,2,3,4,5 tiene mediana 3; 10,20,30,40 tiene mediana (20+30)÷2=25; 6,6,6,6,6 tiene mediana 6."
         }
       ]
     },
     {
       "numero": "38.3",
-      "titulo": "Cadenas de sumas y restas con números con signo",
-      "explicacion": "Cuando una expresión combina varias sumas y restas de números con signo, conviene resolverla en orden, de izquierda a derecha, convirtiendo cada resta en una suma del opuesto antes de operar. Presta especial atención a los dobles signos: un signo menos seguido de un número negativo, como en -(-b), se convierte en una suma, +b. Simplificar los dobles signos antes de calcular evita errores.",
-      "formula": "+(+) = +      +(-) = -      -(+) = -      -(-) = +",
+      "titulo": "La moda",
+      "explicacion": "La moda es el dato que se repite más veces en un conjunto. Puede haber una sola moda (unimodal), dos modas (bimodal) o ninguna moda si todos los valores aparecen la misma cantidad de veces. La moda es la única medida de tendencia central que se puede usar con datos que no son números, como colores o deportes favoritos.",
       "ejemplos": [
-        "-5 + 8 - (-3) = -5 + 8 + 3 = 6: primero convertimos -(-3) en +3, y después sumamos de izquierda a derecha: -5+8=3, 3+3=6.",
-        "10 - 15 - (-2) + (-6) = 10 - 15 + 2 - 6 = -9: convertimos cada resta y doble signo, y sumamos en orden: 10-15=-5, -5+2=-3, -3-6=-9."
+        "Los colores de mochila más vendidos en una semana: azul, azul, rojo, verde, azul, rojo. La moda es azul (se repite 3 veces).",
+        "Las tallas de zapatos vendidas: 24, 25, 24, 26, 25, 24. La moda es 24 (aparece 3 veces)."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "¿Cuánto es -4 + 9 - (-2)?",
+          "pregunta": "¿Cuál es la moda de: 5, 7, 5, 9, 5, 3?",
           "opciones": [
-            "7",
             "3",
-            "-7",
-            "-15"
+            "5",
+            "7",
+            "9"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "-4+9=5, y 5-(-2)=5+2=7."
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "El 5 aparece 3 veces, más que cualquier otro valor, así que es la moda."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "8 - (-5) - 10 = ___.",
-          "respuestaCorrecta": "3",
-          "retroalimentacion": "8-(-5)=8+5=13, y 13-10=3."
+          "frase": "La moda de los datos 2, 4, 4, 6, 8, 8, 8 es ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "El 8 aparece 3 veces (más que el 4, que aparece 2 veces), así que es la moda."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "El resultado de -6 - (-6) + (-6) es -6.",
+          "enunciado": "Un conjunto de datos puede no tener moda si todos los valores son diferentes.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -6-(-6)=-6+6=0, y 0+(-6)=-6."
+          "retroalimentacion": "Correcto: si ningún dato se repite, no hay un valor que sea 'el más frecuente', así que no hay moda."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Un jugador tenía 0 puntos, ganó 15, perdió 22 y ganó 6 más (0 + 15 - 22 + 6). ¿Cuántos puntos tiene ahora?",
+          "pregunta": "En una encuesta sobre el deporte favorito del salón se registró: fútbol, básquetbol, fútbol, voleibol, fútbol, básquetbol. ¿Cuál es la moda?",
           "opciones": [
-            "-1",
-            "1",
-            "-7",
-            "7"
+            "Fútbol",
+            "Básquetbol",
+            "Voleibol",
+            "No hay moda"
           ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "0+15=15, 15-22=-7, -7+6=-1."
+          "retroalimentacion": "Fútbol aparece 3 veces, más que básquetbol (2 veces) y voleibol (1 vez)."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada cadena de operaciones con su resultado.",
+          "instruccion": "Relaciona cada conjunto de datos con su tipo de moda.",
           "columnaA": [
-            "-3 + 7 - (-4)",
-            "12 - 20 - (-5)",
-            "-8 - (-8) + (-8)"
+            "3, 3, 3, 7, 9",
+            "2, 2, 5, 5, 8",
+            "1, 2, 3, 4, 5"
           ],
           "columnaB": [
-            "-8",
-            "8",
-            "-3"
+            "Bimodal (dos modas)",
+            "Unimodal (una moda)",
+            "Sin moda"
           ],
           "parejasCorrectas": [
             1,
-            2,
-            0
+            0,
+            2
           ],
-          "retroalimentacion": "-3+7-(-4) = 4+4 = 8; 12-20-(-5) = -8+5 = -3; -8-(-8)+(-8) = 0-8 = -8."
+          "retroalimentacion": "3,3,3,7,9 tiene una sola moda (3); 2,2,5,5,8 tiene dos modas (2 y 5); 1,2,3,4,5 no tiene moda."
         }
       ]
     },
     {
       "numero": "38.4",
-      "titulo": "Síntesis y aplicación: números con signo en la vida real",
-      "explicacion": "Recuerda: para sumar números con signo, si tienen el mismo signo se suman los valores absolutos y se conserva el signo; si tienen signos distintos, se restan los valores absolutos y el resultado toma el signo del mayor. Para restar, conviene convertir la resta en una suma del opuesto (a - b = a + (-b), y a - (-b) = a + b). Estas ideas modelan muchas situaciones reales: temperaturas que suben o bajan, profundidades bajo el nivel del mar frente a alturas sobre él, saldos de una cuenta con cargos y abonos, y pisos de un elevador que sube y baja.",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: la media suma todos los datos y divide entre cuántos son; la mediana es el valor de en medio al ordenar los datos; la moda es el valor que más se repite. La media conviene cuando los datos son parejos y no hay valores extremos; la mediana conviene cuando hay valores atípicos que distorsionarían la media; y la moda conviene para datos categóricos o para saber cuál es el valor más común.",
       "ejemplos": [
-        "La temperatura en una ciudad fue de -3°C en la madrugada y subió 11°C durante el día: -3 + 11 = 8°C.",
-        "Un buzo está a -12 m (bajo el nivel del mar) y un alpinista está a 1500 m sobre el nivel del mar. La diferencia de altura entre ellos es 1500 - (-12) = 1512 m."
+        "Las ventas diarias (en cientos de pesos) de una tienda en 5 días fueron 2, 2, 2, 4, 20. La media es 6, un número alto por el día excepcional de 20; la mediana (2) refleja mejor las ventas típicas de la mayoría de los días."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Una cuenta bancaria tiene un saldo de -350 pesos (números rojos). El titular deposita 500 pesos. ¿Cuál es el nuevo saldo?",
+          "pregunta": "Las ventas diarias (en cientos de pesos) de una tienda en 5 días fueron: 2, 2, 2, 4, 20. ¿Cuál es la media?",
           "opciones": [
-            "150",
-            "850",
-            "-850",
-            "-150"
+            "2",
+            "4",
+            "6",
+            "20"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "-350 + 500 = 150 pesos: el depósito es positivo y reduce la deuda hasta dejar saldo a favor."
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "La suma es 2+2+2+4+20 = 30, y 30÷5 = 6."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Un elevador está en el piso 6 y baja 9 pisos. Queda en el piso ___.",
-          "respuestaCorrecta": "-3",
-          "retroalimentacion": "6 - 9 = -3: el elevador queda 3 pisos por debajo de la planta baja."
+          "frase": "En esos mismos datos (2, 2, 2, 4, 20), la mediana es ___.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "Ordenados: 2, 2, 2, 4, 20. El valor central (posición 3 de 5) es 2."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si un buzo está a -18 m y sube 5 m, queda a -13 m.",
+          "enunciado": "En este caso, la mediana representa mejor el comportamiento típico de las ventas que la media, porque el día de 20 fue un valor atípico.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: -18 + 5 = -13 m, porque subir es sumar."
+          "retroalimentacion": "Correcto: la media (6) está 'jalada' hacia arriba por el día excepcional; la mediana (2) refleja mejor la mayoría de los días."
         },
         {
           "tipo": "opcion_multiple",
-          "pregunta": "La temperatura marcaba -7°C por la mañana. Al mediodía subió 15°C y por la noche bajó 9°C más. ¿Cuál fue la temperatura por la noche?",
+          "pregunta": "¿Cuál medida (media, mediana o moda) conviene más usar cuando los datos son categorías, como el color favorito de un grupo?",
           "opciones": [
-            "-1°C",
-            "1°C",
-            "-16°C",
-            "16°C"
+            "Media",
+            "Mediana",
+            "Moda",
+            "Cualquiera, da lo mismo"
           ],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "-7+15=8, y 8-9=-1°C."
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Con datos categóricos (no numéricos) no se puede sumar ni ordenar de forma matemática, así que solo la moda tiene sentido."
         },
         {
           "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada situación con el número entero que la representa.",
+          "instruccion": "Relaciona cada situación con la medida de tendencia central más conveniente.",
           "columnaA": [
-            "Una deuda de 200 pesos",
-            "Un ascenso de 350 metros sobre el nivel del mar",
-            "Descender 40 metros bajo el nivel del mar"
+            "Sueldos de una empresa con un valor muy alto (el del dueño)",
+            "Tallas de playera más vendidas en una tienda",
+            "Calificaciones parejas de un grupo, sin valores extremos"
           ],
           "columnaB": [
-            "-40",
-            "350",
-            "-200"
+            "Moda",
+            "Media",
+            "Mediana"
           ],
           "parejasCorrectas": [
             2,
-            1,
-            0
+            0,
+            1
           ],
-          "retroalimentacion": "Una deuda se representa como -200; un ascenso sobre el nivel del mar como 350; descender bajo el nivel del mar como -40."
+          "retroalimentacion": "Sueldos con un valor extremo: conviene la mediana. Tallas más vendidas: conviene la moda. Calificaciones parejas: conviene la media."
         }
       ]
     }
@@ -296,47 +293,47 @@
   "practicaExtra": [
     {
       "tipo": "opcion_multiple",
-      "pregunta": "¿Cuánto es (-9) + (-6)?",
+      "pregunta": "Calcula la media de: 10, 20, 30, 40",
       "opciones": [
-        "-15",
-        "15",
-        "-3",
-        "3"
+        "20",
+        "25",
+        "30",
+        "40"
       ],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "(-9) + (-6) = -15: mismo signo, se suman los valores absolutos y se conserva el signo negativo."
+      "respuestaCorrecta": 1,
+      "retroalimentacion": "La suma es 10+20+30+40 = 100, y 100÷4 = 25."
     },
     {
       "tipo": "llenar_frase",
-      "frase": "14 - (-8) = ___.",
-      "respuestaCorrecta": "22",
-      "retroalimentacion": "Restar -8 equivale a sumar 8: 14 + 8 = 22."
+      "frase": "La mediana de 3, 9, 6, 12, 15 es ___.",
+      "respuestaCorrecta": "9",
+      "retroalimentacion": "Ordenados: 3, 6, 9, 12, 15. El valor central es 9."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "El opuesto de -20 es 20.",
-      "respuestaCorrecta": true,
-      "retroalimentacion": "Correcto: todo número y su opuesto están a la misma distancia del cero pero en direcciones contrarias."
+      "enunciado": "La moda de un conjunto de datos siempre es única.",
+      "respuestaCorrecta": false,
+      "retroalimentacion": "Falso: puede haber dos modas (bimodal), más de dos, o ninguna, si ningún valor se repite más que los demás."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada operación con su resultado.",
+      "instruccion": "Relaciona cada término con su definición.",
       "columnaA": [
-        "-5 + (-11)",
-        "20 - 27",
-        "-9 - (-9)"
+        "Media",
+        "Mediana",
+        "Moda"
       ],
       "columnaB": [
-        "-7",
-        "0",
-        "-16"
+        "El valor que más se repite",
+        "El promedio de todos los datos",
+        "El valor central al ordenar los datos"
       ],
       "parejasCorrectas": [
+        1,
         2,
-        0,
-        1
+        0
       ],
-      "retroalimentacion": "-5+(-11) = -16; 20-27 = -7; -9-(-9) = 0."
+      "retroalimentacion": "Media: promedio de todos los datos. Mediana: valor central al ordenar. Moda: valor que más se repite."
     }
   ]
 }

@@ -2,230 +2,317 @@
   "id": "EJ-32",
   "grado": "Ejercítate",
   "numero": 32,
-  "categoria": "estadistica",
+  "categoria": "avanzado",
   "campoFormativo": "Saberes y Pensamiento Científico",
-  "eje": "Análisis de datos y probabilidad",
-  "titulo": "Tablas de frecuencia",
-  "contenido": "Organización de datos en tablas de frecuencia absoluta y relativa para facilitar su lectura e interpretación.",
-  "pda": "Organiza un conjunto de datos en una tabla de frecuencias y calcula frecuencias absolutas y relativas para interpretar información de situaciones cotidianas.",
+  "eje": "Forma, espacio y medida",
+  "titulo": "Teorema de Tales",
+  "contenido": "Proporcionalidad de segmentos generada por rectas paralelas cortadas por transversales, y su aplicación al cálculo de distancias y alturas.",
+  "pda": "Aplica el Teorema de Tales para establecer proporciones entre segmentos formados por rectas paralelas cortadas por transversales, y lo utiliza para calcular longitudes desconocidas en situaciones reales.",
   "problematizacion": {
-    "contexto": "La cooperativa escolar registró el sabor de agua fresca que pidieron 30 alumnos en el descanso: limón, jamaica, horchata y tamarindo, anotados uno por uno en una libreta conforme llegaban.",
-    "pregunta": "Si quieres saber de un vistazo cuál sabor se pidió más sin tener que contar toda la lista cada vez, ¿cómo organizarías esos 30 datos?"
+    "contexto": "En una calle, varios cables de luz corren paralelos entre los postes y cruzan dos banquetas que no son paralelas entre sí. Un electricista necesita calcular la distancia entre dos postes, pero no puede medir directamente porque hay un jardín cercado en medio.",
+    "pregunta": "¿Cómo puede el electricista usar las proporciones que forman los cables paralelos y las banquetas para encontrar esa distancia sin cruzar el jardín?"
   },
   "subtemas": [
     {
       "numero": "32.1",
-      "titulo": "Frecuencia absoluta",
-      "explicacion": "La frecuencia absoluta es el número de veces que se repite un dato dentro de un conjunto de información. Contar uno por uno los datos sueltos es lento y fácil de equivocar; por eso se agrupan por categoría o valor y se anota cuántas veces aparece cada uno. La suma de todas las frecuencias absolutas siempre debe ser igual al total de datos recolectados, lo cual sirve para comprobar que no falte ni sobre ningún dato.",
-      "formula": "Frecuencia absoluta (fi) = número de veces que aparece un dato o categoría",
+      "titulo": "¿Qué dice el Teorema de Tales?",
+      "explicacion": "El Teorema de Tales dice que cuando dos o más rectas paralelas son cortadas por dos rectas transversales (que no tienen que ser paralelas entre sí), los segmentos que se forman en una transversal son proporcionales a los segmentos correspondientes en la otra. Esto funciona porque las paralelas mantienen siempre la misma 'separación relativa', como si fueran las líneas de una cuadrícula que se estira o se encoge pero conserva sus proporciones.",
+      "formula": "Si a ‖ b ‖ c cortadas por dos transversales, entonces AB/BC = A'B'/B'C'",
       "ejemplos": [
-        "En una encuesta a 20 alumnos sobre su materia favorita: Matemáticas apareció 8 veces, Español 5 veces, Ciencias 4 veces y Historia 3 veces. La frecuencia absoluta de Matemáticas es 8, y 8+5+4+3=20, que coincide con el total de alumnos.",
-        "Se registraron las faltas de asistencia de un grupo en una semana: 0, 1, 0, 2, 0, 1, 3, 0, 1, 0. El valor 0 aparece 5 veces, entonces su frecuencia absoluta es 5."
+        "En una cancha, tres líneas paralelas pintadas en el piso son cruzadas por dos líneas rectas que salen de una esquina. Si en la primera transversal los segmentos miden 4 cm y 6 cm, en la segunda transversal los segmentos correspondientes guardan la misma razón 4:6 (es decir, 2:3).",
+        "Tres calles paralelas cortan dos avenidas. Si en la avenida 1 las distancias entre calles son 3 km y 5 km, en la avenida 2 esas mismas calles determinan segmentos en la razón 3:5."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "En una votación por el color del uniforme deportivo, azul recibió 12 votos, verde 9 votos y rojo 4 votos. ¿Cuál es la frecuencia absoluta de \"verde\"?",
-          "opciones": ["9", "12", "4", "25"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "La frecuencia absoluta de una categoría es simplemente el número de veces que aparece; verde recibió 9 votos, así que su frecuencia absoluta es 9."
+          "tipo": "verdadero_falso",
+          "enunciado": "El Teorema de Tales establece que rectas paralelas cortadas por dos transversales determinan segmentos proporcionales.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: esa es exactamente la idea central del Teorema de Tales."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Si en un salón de 30 alumnos, 18 dicen que vienen caminando a la escuela y el resto en camión, la frecuencia absoluta de \"en camión\" es ___.",
-          "respuestaCorrecta": "12",
-          "retroalimentacion": "El total es 30 y 18 vienen caminando, entonces 30 - 18 = 12 alumnos vienen en camión; esa es su frecuencia absoluta."
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de las siguientes condiciones es indispensable para aplicar el Teorema de Tales?",
+          "opciones": [
+            "Tener al menos dos rectas paralelas cortadas por transversales",
+            "Tener un triángulo rectángulo",
+            "Tener dos círculos concéntricos",
+            "Tener únicamente ángulos de 90°"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El Teorema de Tales necesita rectas paralelas cruzadas por transversales; no requiere ángulos rectos ni círculos."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "La suma de todas las frecuencias absolutas de una tabla siempre debe ser igual al número total de datos recolectados.",
-          "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: cada dato se cuenta una sola vez en alguna categoría, así que al sumar todas las frecuencias absolutas se recupera el total de datos."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "Se preguntó a 25 personas cuántas mascotas tienen: 10 dijeron 0, 8 dijeron 1, 5 dijeron 2 y el resto dijo 3. ¿Cuántas personas dijeron tener 3 mascotas?",
-          "opciones": ["2", "5", "8", "10"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "10 + 8 + 5 = 23 personas ya están contadas; como el total es 25, quedan 25 - 23 = 2 personas que dijeron tener 3 mascotas."
+          "enunciado": "Las dos transversales que cruzan las rectas paralelas deben medir exactamente lo mismo.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: las transversales pueden tener longitudes distintas; lo que importa es que los segmentos que forman sean proporcionales, no que midan igual."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "Si se lanza un dado 40 veces y el número 6 sale 7 veces, la frecuencia absoluta del 6 es ___.",
-          "respuestaCorrecta": "7",
-          "retroalimentacion": "La frecuencia absoluta es el conteo directo de apariciones: el 6 salió 7 veces, así que su frecuencia absoluta es 7."
+          "frase": "En el Teorema de Tales, los segmentos que se forman sobre las transversales son ___ entre sí.",
+          "respuestaCorrecta": "proporcionales",
+          "retroalimentacion": "Los segmentos correspondientes guardan siempre la misma razón, es decir, son proporcionales."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada elemento del Teorema de Tales con su papel.",
+          "columnaA": [
+            "Rectas paralelas",
+            "Transversales",
+            "Segmentos correspondientes"
+          ],
+          "columnaB": [
+            "Líneas que cruzan a las paralelas y forman los segmentos",
+            "Mantienen siempre la misma separación relativa",
+            "Guardan la misma razón entre sí (son proporcionales)"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "Las paralelas mantienen su separación relativa, las transversales las cruzan formando segmentos, y esos segmentos correspondientes son proporcionales."
         }
       ]
     },
     {
       "numero": "32.2",
-      "titulo": "Frecuencia relativa y porcentaje",
-      "explicacion": "La frecuencia relativa compara la frecuencia absoluta de un dato con el total de datos, e indica qué proporción representa esa categoría dentro del conjunto completo. Se calcula dividiendo la frecuencia absoluta entre el total, y multiplicando por 100 se obtiene el porcentaje. Es útil porque permite comparar grupos de distinto tamaño: no es lo mismo que 8 personas prefieran algo de un grupo de 10, que 8 personas de un grupo de 200.",
-      "formula": "Frecuencia relativa (fr) = frecuencia absoluta ÷ total de datos; Porcentaje = fr × 100",
+      "titulo": "Proporciones en triángulos con paralelas",
+      "explicacion": "Un caso muy común del Teorema de Tales ocurre dentro de un triángulo: si trazas una recta paralela a uno de los lados, esa paralela corta a los otros dos lados en segmentos proporcionales. Esto sucede porque la paralela crea un triángulo más pequeño, semejante al original, y todos sus lados se reducen (o aumentan) en la misma proporción.",
+      "formula": "Si en un triángulo ABC, DE ‖ BC (D en AB, E en AC), entonces AD/DB = AE/EC",
       "ejemplos": [
-        "En un grupo de 40 alumnos, 10 obtuvieron calificación 10. Su frecuencia relativa es 10÷40 = 0.25, que equivale al 25% del grupo.",
-        "De 50 encuestados, 15 prefieren fútbol. La frecuencia relativa es 15÷50 = 0.3, es decir, el 30% prefiere fútbol."
+        "En un triángulo ABC, una línea paralela a BC corta a AB en D y a AC en E. Si AD=3, DB=6 y AE=4, entonces EC = (6×4)/3 = 8.",
+        "En un triángulo XYZ, PQ ‖ YZ (P en XY, Q en XZ). Si XP=5, PY=10 y XQ=8, entonces QZ = (10×8)/5 = 16."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "En una tabla con 20 datos totales, la categoría \"A\" tiene frecuencia absoluta 5. ¿Cuál es su frecuencia relativa?",
-          "opciones": ["0.25", "0.20", "5.00", "0.05"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Frecuencia relativa = frecuencia absoluta ÷ total = 5 ÷ 20 = 0.25."
+          "tipo": "llenar_frase",
+          "frase": "En un triángulo ABC, DE es paralela a BC, con D en AB y E en AC. Si AD=3 cm, DB=6 cm y AE=4 cm, entonces EC = ___ cm.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "AD/DB = AE/EC → 3/6 = 4/EC → EC = (4×6)/3 = 8 cm."
         },
         {
-          "tipo": "llenar_frase",
-          "frase": "Si de 50 alumnos encuestados, 20 eligieron \"pizza\" como su comida favorita, el porcentaje de alumnos que eligió pizza es ___%.",
-          "respuestaCorrecta": "40",
-          "retroalimentacion": "Frecuencia relativa = 20÷50 = 0.4; en porcentaje, 0.4 × 100 = 40%."
+          "tipo": "opcion_multiple",
+          "pregunta": "En un triángulo XYZ, PQ ‖ YZ (P en XY, Q en XZ). Si XP=5, PY=10 y XQ=8, ¿cuánto mide QZ?",
+          "opciones": [
+            "16",
+            "13",
+            "20",
+            "10"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "XP/PY = XQ/QZ → 5/10 = 8/QZ → QZ = (8×10)/5 = 16."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si un valor tiene frecuencia relativa 0.5, eso significa que representa el 50% de los datos totales.",
+          "enunciado": "Si una recta es paralela a un lado de un triángulo y corta a los otros dos lados, los divide en segmentos proporcionales.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: para convertir la frecuencia relativa a porcentaje se multiplica por 100, y 0.5 × 100 = 50%."
-        },
-        {
-          "tipo": "opcion_multiple",
-          "pregunta": "En una encuesta a 80 personas sobre su transporte favorito, 24 eligieron bicicleta. ¿Qué porcentaje del total eligió bicicleta?",
-          "opciones": ["30%", "24%", "3.3%", "56%"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "24 ÷ 80 = 0.3, y 0.3 × 100 = 30%."
+          "retroalimentacion": "Correcto: es el caso particular del Teorema de Tales aplicado a triángulos."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En una tabla de frecuencias, si la frecuencia relativa de una categoría es 0.15 y el total de datos es 200, su frecuencia absoluta es ___.",
-          "respuestaCorrecta": "30",
-          "retroalimentacion": "Frecuencia absoluta = frecuencia relativa × total = 0.15 × 200 = 30."
+          "frase": "En un triángulo con DE ‖ BC, AD=2, DB=5 y AE=6. Entonces EC = ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "AD/DB = AE/EC → 2/5 = 6/EC → EC = (6×5)/2 = 15."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "En el triángulo ABC con DE ‖ BC (D en AB, E en AC), relaciona cada pareja de segmentos con lo que representa.",
+          "columnaA": [
+            "AD y DB",
+            "AE y EC",
+            "DE y BC"
+          ],
+          "columnaB": [
+            "Segmentos en los que la paralela divide al lado AB",
+            "Segmentos en los que la paralela divide al lado AC",
+            "El lado paralelo y el lado original del triángulo (razón de semejanza)"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "AD-DB corresponden a AB, AE-EC corresponden a AC, y DE-BC son el lado paralelo comparado con el lado completo."
         }
       ]
     },
     {
       "numero": "32.3",
-      "titulo": "Construir y leer una tabla de frecuencias",
-      "explicacion": "Para construir una tabla de frecuencias se organizan los datos en categorías o valores, se cuenta cuántas veces aparece cada uno (frecuencia absoluta), y se agregan columnas de frecuencia relativa y porcentaje para facilitar la comparación. Leer correctamente una tabla implica identificar qué representa cada columna y usar las frecuencias para responder preguntas sin tener que regresar a los datos originales uno por uno.",
+      "titulo": "Calcular segmentos desconocidos",
+      "explicacion": "Para encontrar un segmento desconocido con el Teorema de Tales, primero identifica qué segmentos se corresponden entre las dos transversales (o entre los dos lados del triángulo), luego arma la proporción y resuélvela multiplicando en cruz. El valor 'x' puede aparecer en cualquier posición de la proporción, así que hay que tener cuidado de despejarlo correctamente.",
       "ejemplos": [
-        "Tabla de deporte favorito de 30 alumnos: Fútbol (fi=15, fr=0.5, 50%), Básquetbol (fi=9, fr=0.3, 30%), Voleibol (fi=6, fr=0.2, 20%). Sumando: 15+9+6=30 y 50%+30%+20%=100%, lo que confirma que la tabla está completa.",
-        "Si en una tabla de calificaciones de 25 alumnos la fila del 9 dice fi=10 y fr=0.4, entonces 10 alumnos sacaron 9, y representan el 40% del grupo."
+        "Tres calles paralelas cruzan dos avenidas. En la avenida 1 los tramos miden 6 m y 9 m; en la avenida 2, el tramo correspondiente al de 6 m mide 8 m. El tramo x correspondiente al de 9 m se calcula: 6/9 = 8/x → x = (9×8)/6 = 12 m.",
+        "En una proporción de Tales 4/10 = 6/x, se despeja x multiplicando en cruz: x = (10×6)/4 = 15."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una tabla de frecuencias sobre el número de hermanos de 40 alumnos muestra: 0 hermanos (fi=12), 1 hermano (fi=18), 2 hermanos (fi=7), 3 hermanos (fi=?). Si el total es 40, ¿cuál es la frecuencia absoluta de \"3 hermanos\"?",
-          "opciones": ["3", "37", "12", "18"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "12+18+7 = 37; como el total debe ser 40, la frecuencia faltante es 40 - 37 = 3."
+          "tipo": "llenar_frase",
+          "frase": "Dos rectas paralelas son cortadas por dos transversales. En la primera transversal los segmentos miden 4 cm y 10 cm; en la segunda, el segmento correspondiente al de 4 cm mide 6 cm. El segmento correspondiente al de 10 cm mide x = ___ cm.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "4/10 = 6/x → x = (10×6)/4 = 15 cm."
         },
         {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Una tabla registra el color favorito de 50 alumnos. Relaciona cada color con su frecuencia relativa correspondiente.",
-          "columnaA": ["Azul (fi=25)", "Rojo (fi=10)", "Verde (fi=15)"],
-          "columnaB": ["0.30", "0.50", "0.20"],
-          "parejasCorrectas": [1, 2, 0],
-          "retroalimentacion": "Azul: 25÷50=0.50; Rojo: 10÷50=0.20; Verde: 15÷50=0.30."
+          "tipo": "opcion_multiple",
+          "pregunta": "En un solar, tres cercas paralelas son cruzadas por dos senderos. En el sendero A los tramos son 5 m y 7 m; en el sendero B, el tramo correspondiente al de 5 m mide 15 m. ¿Cuánto mide el tramo correspondiente al de 7 m?",
+          "opciones": [
+            "21 m",
+            "17 m",
+            "10.7 m",
+            "35 m"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5/7 = 15/x → x = (7×15)/5 = 21 m."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "En una tabla de frecuencias bien construida, la columna de porcentajes siempre debe sumar 100% (o muy cerca, por redondeo).",
+          "enunciado": "En la proporción de Tales 3/5 = 9/x, el valor de x es 15.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: como cada dato pertenece a una sola categoría, los porcentajes de todas las categorías juntos representan el 100% del total."
+          "retroalimentacion": "3/5 = 9/x → x = (5×9)/3 = 15. La afirmación es correcta."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En una tabla sobre el medio de transporte de 60 alumnos, si \"caminando\" tiene fi=18 y \"bicicleta\" tiene fi=12, entre ambas categorías reúnen un ___% del total.",
-          "respuestaCorrecta": "50",
-          "retroalimentacion": "18+12=30 alumnos; 30÷60=0.5, que equivale al 50%."
+          "frase": "En un triángulo con DE ‖ BC, AD=6, DB=x, AE=9 y EC=12. El valor de x es ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "AD/DB = AE/EC → 6/x = 9/12 → x = (6×12)/9 = 8."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Una tienda escolar registró en una tabla las ventas de la semana: Lápiz (fi=40, 40%), Cuaderno (fi=35, 35%), Goma (fi=25, 25%). ¿Cuántos artículos se vendieron en total esa semana?",
-          "opciones": ["100", "40", "60", "75"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "Como los porcentajes suman 100% y la frecuencia absoluta de Lápiz (40) corresponde al 40%, el total es 40÷0.4 = 100 artículos, lo cual también se comprueba sumando 40+35+25=100."
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada proporción de Tales con el valor correcto de x.",
+          "columnaA": [
+            "2/3 = x/12",
+            "5/x = 10/4",
+            "x/7 = 6/14"
+          ],
+          "columnaB": [
+            "x = 8",
+            "x = 2",
+            "x = 3"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "2/3=x/12 → x=8; 5/x=10/4 → x=2; x/7=6/14 → x=3."
         }
       ]
     },
     {
       "numero": "32.4",
       "titulo": "Síntesis y aplicación",
-      "explicacion": "Recuerda: la frecuencia absoluta es el conteo directo de cuántas veces aparece un dato; la frecuencia relativa lo compara con el total dividiendo (fi÷total), y al multiplicar por 100 se obtiene el porcentaje. Una tabla de frecuencias completa debe cumplir dos comprobaciones: la suma de las frecuencias absolutas es igual al total de datos, y la suma de los porcentajes es igual a 100%. Usar estas comprobaciones ayuda a detectar errores y a interpretar la información con confianza.",
+      "explicacion": "Recuerda: el Teorema de Tales dice que rectas paralelas cortadas por transversales (o por los lados de un triángulo) forman segmentos proporcionales. Para resolver, identifica los segmentos correspondientes, arma la proporción y despeja el valor buscado multiplicando en cruz. Una de sus aplicaciones más útiles es medir alturas de forma indirecta: comparando la sombra de un objeto de altura conocida con la sombra de un objeto que no se puede medir directamente.",
+      "formula": "altura objeto / sombra objeto = altura referencia / sombra referencia",
       "ejemplos": [
-        "En una tabla de 30 alumnos sobre su mascota favorita: Perro (fi=15, 50%), Gato (fi=9, 30%), Otro (fi=6, 20%). Se comprueba: 15+9+6=30 y 50+30+20=100%, así que la tabla es correcta."
+        "Un asta de 3 m proyecta una sombra de 2 m. Al mismo tiempo, un árbol proyecta una sombra de 10 m. Su altura es (3×10)/2 = 15 m.",
+        "Un poste de 2 m proyecta una sombra de 3 m; un edificio cercano proyecta una sombra de 18 m al mismo tiempo, así que su altura es (2×18)/3 = 12 m."
       ],
       "puntosPorReactivo": 10,
       "estrellasMax": 3,
       "reactivos": [
         {
           "tipo": "opcion_multiple",
-          "pregunta": "Una tabla sobre 90 alumnos y su videojuego favorito muestra: Acción (fi=36), Deportes (fi=27), Estrategia (fi=?). Los porcentajes de Acción y Deportes son 40% y 30%. ¿Qué porcentaje corresponde a Estrategia?",
-          "opciones": ["30%", "27%", "36%", "10%"],
+          "pregunta": "Un poste de 2 m de altura proyecta una sombra de 3 m. En el mismo momento, un edificio proyecta una sombra de 18 m. ¿Cuál es la altura del edificio?",
+          "opciones": [
+            "12 m",
+            "27 m",
+            "9 m",
+            "15 m"
+          ],
           "respuestaCorrecta": 0,
-          "retroalimentacion": "Como los porcentajes deben sumar 100%, Estrategia = 100% - 40% - 30% = 30%, lo que coincide con fi=90-36-27=27 y 27÷90=0.3=30%."
-        },
-        {
-          "tipo": "relacionar_columnas",
-          "instruccion": "Relaciona cada concepto de tabla de frecuencias con su definición correcta.",
-          "columnaA": ["Frecuencia absoluta", "Frecuencia relativa", "Suma de frecuencias absolutas"],
-          "columnaB": ["Debe ser igual al total de datos", "Número de veces que aparece un dato", "Frecuencia absoluta dividida entre el total"],
-          "parejasCorrectas": [1, 2, 0],
-          "retroalimentacion": "Frecuencia absoluta: conteo directo; frecuencia relativa: fi÷total; la suma de frecuencias absolutas siempre iguala al total de datos."
+          "retroalimentacion": "2/3 = x/18 → x = (2×18)/3 = 12 m."
         },
         {
           "tipo": "llenar_frase",
-          "frase": "En una tabla de 200 encuestados sobre su red social favorita, si una categoría tiene frecuencia relativa 0.35, su frecuencia absoluta es ___.",
-          "respuestaCorrecta": "70",
-          "retroalimentacion": "Frecuencia absoluta = frecuencia relativa × total = 0.35 × 200 = 70."
+          "frase": "Una persona de 1.6 m de estatura proyecta una sombra de 2 m. Un árbol cercano proyecta una sombra de 7.5 m al mismo tiempo. La altura del árbol es ___ m.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "1.6/2 = x/7.5 → x = (1.6×7.5)/2 = 6 m."
         },
         {
           "tipo": "verdadero_falso",
-          "enunciado": "Si una tabla de frecuencias tiene un error de captura y una categoría quedó con un dato de más, la suma de frecuencias absolutas ya no coincidirá con el total real de datos recolectados.",
+          "enunciado": "El método de las sombras para medir alturas funciona porque, en el mismo momento del día, los rayos del sol forman triángulos semejantes con cualquier objeto vertical y su sombra.",
           "respuestaCorrecta": true,
-          "retroalimentacion": "Correcto: por eso comprobar que la suma de frecuencias absolutas coincida con el total es una forma útil de detectar errores en la tabla."
+          "retroalimentacion": "Correcto: como los rayos del sol llegan paralelos, los triángulos objeto-sombra son semejantes y sus lados son proporcionales (Teorema de Tales)."
         },
         {
-          "tipo": "opcion_multiple",
-          "pregunta": "Se registró el clima de 60 días: Soleado (fi=30), Nublado (fi=18), Lluvioso (fi=12). ¿Cuál es la frecuencia relativa de los días soleados o nublados juntos?",
-          "opciones": ["0.8", "0.5", "0.3", "1.0"],
-          "respuestaCorrecta": 0,
-          "retroalimentacion": "30+18=48 días; 48÷60=0.8, es decir, el 80% de los días fueron soleados o nublados."
+          "tipo": "llenar_frase",
+          "frase": "Una escalera recargada en una pared forma un triángulo con el suelo. Si a 2 m de la base de la escalera hay una marca de 1.5 m de altura sobre la pared, y la escalera llega hasta 4 m de la base, la escalera alcanza una altura de ___ m en la pared (usa 2/1.5 = 4/x).",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "2/1.5 = 4/x → x = (1.5×4)/2 = 3 m."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con el dato que permite aplicar el Teorema de Tales.",
+          "columnaA": [
+            "Sombra de un poste y de un edificio",
+            "Segmentos de una calle cruzada por avenidas paralelas",
+            "Lados de un triángulo cortados por una paralela a la base"
+          ],
+          "columnaB": [
+            "Razón altura/sombra igual para ambos objetos",
+            "Proporción entre los tramos que separan las avenidas",
+            "Segmentos proporcionales según el Teorema de Tales en triángulos"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "En cada caso se compara una razón de segmentos correspondientes formados por paralelas y transversales."
         }
       ]
     }
   ],
   "practicaExtra": [
     {
-      "tipo": "llenar_frase",
-      "frase": "Si en una encuesta a 50 alumnos, 15 dijeron que su materia favorita es Educación Física, la frecuencia relativa de esa respuesta es ___ (en decimal).",
-      "respuestaCorrecta": "0.3",
-      "retroalimentacion": "Frecuencia relativa = 15 ÷ 50 = 0.3, que equivale al 30% de los encuestados."
+      "tipo": "opcion_multiple",
+      "pregunta": "En un triángulo ABC, DE ‖ BC. Si AD=4, AB=10 (por lo que DB=6) y AE=5, ¿cuánto mide EC?",
+      "opciones": [
+        "7.5",
+        "6",
+        "8.3",
+        "12"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "AD/DB = AE/EC → 4/6 = 5/EC → EC = (5×6)/4 = 7.5."
     },
     {
       "tipo": "verdadero_falso",
-      "enunciado": "En una tabla de frecuencias, la frecuencia relativa siempre es un número mayor a 1.",
+      "enunciado": "El Teorema de Tales solo se puede aplicar cuando las dos transversales forman un ángulo recto entre sí.",
       "respuestaCorrecta": false,
-      "retroalimentacion": "Falso: la frecuencia relativa es una parte del total, así que siempre está entre 0 y 1 (o entre 0% y 100%)."
+      "retroalimentacion": "Falso: las transversales pueden cruzarse en cualquier ángulo; lo único indispensable es que las rectas cortadas sean paralelas."
     },
     {
-      "tipo": "opcion_multiple",
-      "pregunta": "Una tabla sobre 45 estudiantes y su fruta favorita muestra: Manzana (fi=18), Plátano (fi=15), Naranja (fi=12). ¿Qué porcentaje representa la manzana?",
-      "opciones": ["40%", "18%", "33%", "27%"],
-      "respuestaCorrecta": 0,
-      "retroalimentacion": "18 ÷ 45 = 0.4, que en porcentaje es 40%."
+      "tipo": "llenar_frase",
+      "frase": "Un árbol proyecta una sombra de 12 m mientras una estaca de 1 m de altura proyecta una sombra de 1.5 m. La altura del árbol es ___ m.",
+      "respuestaCorrecta": "8",
+      "retroalimentacion": "1/1.5 = x/12 → x = (1×12)/1.5 = 8 m."
     },
     {
       "tipo": "relacionar_columnas",
-      "instruccion": "Relaciona cada dato de una tabla sobre 40 alumnos y su día favorito con su frecuencia relativa.",
-      "columnaA": ["Sábado (fi=20)", "Viernes (fi=12)", "Domingo (fi=8)"],
-      "columnaB": ["0.20", "0.50", "0.30"],
-      "parejasCorrectas": [1, 2, 0],
-      "retroalimentacion": "Sábado: 20÷40=0.50; Viernes: 12÷40=0.30; Domingo: 8÷40=0.20."
+      "instruccion": "Relaciona cada término con su definición.",
+      "columnaA": [
+        "Segmentos proporcionales",
+        "Recta transversal",
+        "Triángulos semejantes"
+      ],
+      "columnaB": [
+        "Triángulos con ángulos iguales y lados en la misma razón",
+        "Recta que corta a las rectas paralelas",
+        "Segmentos que mantienen la misma razón entre sí"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
+      "retroalimentacion": "Los segmentos proporcionales guardan la misma razón, la transversal cruza a las paralelas, y los triángulos semejantes tienen ángulos iguales y lados proporcionales."
     }
   ]
 }
