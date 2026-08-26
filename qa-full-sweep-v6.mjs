@@ -12,8 +12,32 @@ function respuestaCorrecta(p) {
     case 'verdadero_falso': return { tipo: p.tipo, valor: p.respuestaCorrecta };
     case 'llenar_frase': return { tipo: p.tipo, valor: p.respuestaCorrecta };
     case 'relacionar_columnas': return { tipo: p.tipo, valor: p.parejasCorrectas };
+    case 'algoritmo_columnas': return { tipo: p.tipo, valor: null }; // se resuelve directo desde p.filas/p.ocultos en responder()
     default: throw new Error('tipo desconocido ' + p.tipo);
   }
+}
+
+/** Nombre legible de la operación de un `algoritmo_columnas` (Paso 18) —
+ * debe coincidir EXACTO con `nombreOperacion_` en app.js, porque el texto
+ * de apoyo que genera ("Completa las casillas para que la X sea correcta.")
+ * es lo primero que se usa para identificar el reactivo entre los barajados. */
+function nombreOperacionQA_(operacion) {
+  if (operacion === 'resta') return 'resta';
+  if (operacion === 'multiplicacion') return 'multiplicación';
+  return 'suma';
+}
+
+/** "Firma" de las cifras YA DADAS (no ocultas) de un `algoritmo_columnas`,
+ * fila por fila, en el mismo formato en que `innerText` las concatena en el
+ * DOM (signo + dígitos visibles, sin espacios, una fila por línea) — se usa
+ * para desambiguar entre varios reactivos de este tipo que comparten el
+ * mismo texto de apoyo genérico (misma operación) dentro del mismo subtema. */
+function firmaAlgoritmoColumnas_(reactivo) {
+  return reactivo.filas.map((fila, fi) => {
+    const ocultosFila = new Set((reactivo.ocultos && reactivo.ocultos[fi]) || []);
+    const dados = fila.valor.split('').map((ch, ci) => (ocultosFila.has(ci) ? '' : ch)).join('');
+    return `${fila.signo || ''}${dados}`;
+  }).join('\n');
 }
 
 /** El motor de variación (variarReactivos_ en app.js) mezcla el ORDEN de las
@@ -50,6 +74,14 @@ async function responder(page, prefijo, pregunta) {
     const selects = await page.locator(`select[data-preg="${prefijo}"]`).all();
     for (let j = 0; j < selects.length; j++) {
       await selects[j].selectOption({ label: pregunta.columnaB[r.valor[j]] });
+    }
+  } else if (r.tipo === 'algoritmo_columnas') {
+    for (let fi = 0; fi < pregunta.filas.length; fi++) {
+      const ocultosFila = (pregunta.ocultos && pregunta.ocultos[fi]) || [];
+      for (const ci of ocultosFila) {
+        const digito = pregunta.filas[fi].valor[ci];
+        await page.fill(`input[data-preg="${prefijo}"][data-fila="${fi}"][data-col="${ci}"]`, digito);
+      }
     }
   }
 }
@@ -160,6 +192,10 @@ async function probarPDA(page, grado, pda, consoleErrors) {
             // el innerText del <p> es "antes"+"después" pegados, sin el hueco.
             const [antes, despues] = r.frase.split('___');
             texto = `${antes || ''}${despues || ''}`;
+          } else if (r.tipo === 'algoritmo_columnas') {
+            // Texto de apoyo genérico (Paso 18) — igual para cualquier
+            // algoritmo_columnas de la misma operación, se desambigua abajo.
+            texto = `Completa las casillas para que la ${nombreOperacionQA_(r.operacion)} sea correcta.`;
           } else {
             texto = r.pregunta || r.enunciado || r.instruccion || '';
           }
@@ -173,8 +209,16 @@ async function probarPDA(page, grado, pda, consoleErrors) {
           // relacionar_columnas, o el CONJUNTO de opciones (como conjunto, no en
           // orden, porque sí se barajan) para opcion_multiple.
           const etiquetas = (await bloque.locator('span.flex-1').allInnerTexts()).map((t) => t.trim());
+          const filasAlgoritmo = await bloque.locator('[data-algoritmo-filas] > [data-fila-idx]').count();
           if (etiquetas.length > 0) {
             candidatos = candidatos.filter((r) => Array.isArray(r.columnaA) && JSON.stringify(r.columnaA) === JSON.stringify(etiquetas));
+          } else if (filasAlgoritmo > 0) {
+            // algoritmo_columnas (Paso 18): las cifras YA DADAS (no ocultas)
+            // nunca se barajan — se usan como huella para desambiguar entre
+            // varios reactivos de la misma operación en el mismo subtema.
+            const firmaDOM = (await bloque.locator('[data-algoritmo-filas] > [data-fila-idx]').allInnerTexts())
+              .map((t) => t.trim()).join('\n');
+            candidatos = candidatos.filter((r) => r.tipo === 'algoritmo_columnas' && firmaAlgoritmoColumnas_(r) === firmaDOM);
           } else {
             const opcionesRenderizadas = (await bloque.locator('label').allInnerTexts()).map((t) => t.trim()).sort();
             if (opcionesRenderizadas.length > 0) {
@@ -458,7 +502,7 @@ async function probarPDA(page, grado, pda, consoleErrors) {
         }
         await nodosCamino.first().click();
         await page.waitForURL('**/#/pda/ejercitate/**'); // confirma que el nodo es clickeable y navega, sin bloqueos
-        console.log('OK   Ejercítate — camino agrupado por categoría (4 encabezados, 36 nodos)');
+        console.log(`OK   Ejercítate — camino agrupado por categoría (4 encabezados, ${archivosEjercitate.length} nodos)`);
       } catch (e) {
         resultados.push({ grado: 'Ejercítate', id: 'camino-agrupado', ok: false, error: e.message });
         console.log(`FAIL Ejercítate — camino agrupado por categoría — ${e.message}`);

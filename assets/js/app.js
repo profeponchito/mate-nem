@@ -991,9 +991,67 @@ function renderizarPregunta_(pregunta, prefijo, color, valorPrevio) {
         </div>
       `;
 
+    case 'algoritmo_columnas':
+      return renderizarAlgoritmoColumnas_(pregunta, prefijo, c, valorPrevio);
+
     default:
       return '';
   }
+}
+
+/** Nombre legible de la operación de un `algoritmo_columnas`, para el texto de apoyo. */
+function nombreOperacion_(operacion) {
+  if (operacion === 'resta') return 'resta';
+  if (operacion === 'multiplicacion') return 'multiplicación';
+  return 'suma';
+}
+
+/** Renderiza un algoritmo vertical (suma/resta/multiplicación) con casillas para
+ * completar los dígitos que faltan, al estilo de una hoja de ejercicios de
+ * cuaderno (Paso 18): cada fila de `pregunta.filas` se alinea a la derecha,
+ * los dígitos ya dados se muestran como texto y los ocultos (`pregunta.ocultos`,
+ * mismo índice de fila) como una casilla `<input>` de un solo carácter. La
+ * fila con `esResultado:true` lleva una línea horizontal arriba, como en el
+ * algoritmo escrito a mano. `valorPrevio` (si existe) es un arreglo paralelo a
+ * `filas`, cada elemento un arreglo disperso indexado por columna con lo que
+ * el alumno ya había escrito ahí. */
+function renderizarAlgoritmoColumnas_(pregunta, prefijo, c, valorPrevio) {
+  const filas = pregunta.filas;
+  const ocultos = pregunta.ocultos || filas.map(() => []);
+  const anchoTotal = Math.max(...filas.map((f) => f.valor.length));
+
+  const filasHTML = filas.map((fila, fi) => {
+    const ocultosFila = new Set(ocultos[fi] || []);
+    const relleno = anchoTotal - fila.valor.length;
+    const celdasRelleno = `<span class="inline-block w-7 h-9" aria-hidden="true"></span>`.repeat(relleno);
+    const celdas = fila.valor.split('').map((ch, ci) => {
+      if (ch === '.') {
+        return `<span class="inline-flex items-end justify-center w-3 h-9 text-lg font-bold text-slate-700 pb-1.5">.</span>`;
+      }
+      if (ocultosFila.has(ci)) {
+        const previo = (Array.isArray(valorPrevio) && valorPrevio[fi] && valorPrevio[fi][ci] != null)
+          ? escapeHTML_(String(valorPrevio[fi][ci])) : '';
+        return `<input type="text" inputmode="numeric" maxlength="1" data-preg="${prefijo}" data-fila="${fi}" data-col="${ci}"
+          value="${previo}"
+          class="w-7 h-9 text-center text-lg font-bold border-2 ${c.inputBorder} focus:outline-none ${c.inputFocus} rounded-md mx-0.5">`;
+      }
+      return `<span class="inline-flex items-center justify-center w-7 h-9 text-lg font-bold text-slate-800">${escapeHTML_(ch)}</span>`;
+    }).join('');
+    const signo = fila.signo
+      ? `<span class="inline-flex items-center justify-center w-6 h-9 text-lg font-bold ${c.texto}">${escapeHTML_(fila.signo)}</span>`
+      : `<span class="inline-block w-6 h-9" aria-hidden="true"></span>`;
+    const claseResultado = fila.esResultado ? 'border-t-2 border-slate-700 pt-1.5 mt-1' : '';
+    return `<div class="flex items-center justify-end ${claseResultado}" data-fila-idx="${fi}">${signo}${celdasRelleno}${celdas}</div>`;
+  }).join('');
+
+  return `
+    <div class="mb-2">
+      ${pregunta.operacion ? `<p class="text-slate-500 text-sm mb-2">Completa las casillas para que la ${nombreOperacion_(pregunta.operacion)} sea correcta.</p>` : ''}
+      <div class="inline-flex flex-col items-end bg-white/70 rounded-xl px-3 py-2 border ${c.suave}" data-algoritmo-filas>
+        ${filasHTML}
+      </div>
+    </div>
+  `;
 }
 
 /** Lee del DOM la respuesta capturada para una pregunta, según su tipo. Devuelve null si falta algo. */
@@ -1014,6 +1072,22 @@ function leerRespuesta_(raiz, prefijo, tipo) {
     const selects = raiz.querySelectorAll(`select[data-preg="${prefijo}"]`);
     const valores = Array.from(selects).map((s) => (s.value === '' ? null : Number(s.value)));
     return valores.some((v) => v === null) ? null : valores;
+  }
+
+  if (tipo === 'algoritmo_columnas') {
+    const inputs = raiz.querySelectorAll(`input[data-preg="${prefijo}"]`);
+    if (inputs.length === 0) return null;
+    const respuesta = [];
+    let completo = true;
+    inputs.forEach((input) => {
+      const fi = Number(input.dataset.fila);
+      const ci = Number(input.dataset.col);
+      const valor = input.value.trim();
+      if (valor === '') completo = false;
+      if (!respuesta[fi]) respuesta[fi] = [];
+      respuesta[fi][ci] = valor;
+    });
+    return completo ? respuesta : null;
   }
 
   return null;

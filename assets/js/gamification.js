@@ -3,11 +3,14 @@
  * ----------------------------------------------------
  * Calcula puntaje, estrellas y retroalimentación de una mini-actividad
  * calificada (los 5 reactivos de un subtema, o cualquier lote de
- * reactivos), y evalúa preguntas individuales. Soporta 4 tipos de reactivo:
+ * reactivos), y evalúa preguntas individuales. Soporta 5 tipos de reactivo:
  *   - opcion_multiple    : respuesta = índice de la opción elegida
  *   - verdadero_falso    : respuesta = boolean
  *   - llenar_frase       : respuesta = string (se compara sin mayúsculas/acentos)
  *   - relacionar_columnas: respuesta = array de índices (uno por fila de columnaA)
+ *   - algoritmo_columnas : respuesta = array paralelo a `filas`, cada elemento
+ *     un array disperso indexado por columna con el dígito que escribió el
+ *     alumno en cada casilla oculta de esa fila (Paso 18)
  *
  * Cada PDA tiene 4 subtemas, cada uno con su propia mini-actividad
  * calificada (5 reactivos, resultado independiente). `calcularResultado()`
@@ -81,12 +84,26 @@ export function esRespuestaCorrecta(reactivo, respuesta) {
       if (!Array.isArray(respuesta) || respuesta.length !== reactivo.parejasCorrectas.length) return false;
       return respuesta.every((valor, i) => Number(valor) === reactivo.parejasCorrectas[i]);
 
+    case 'algoritmo_columnas':
+      if (!Array.isArray(respuesta)) return false;
+      return reactivo.filas.every((fila, fi) => {
+        const ocultosFila = (reactivo.ocultos && reactivo.ocultos[fi]) || [];
+        if (ocultosFila.length === 0) return true;
+        const filaRespuesta = respuesta[fi];
+        if (!Array.isArray(filaRespuesta)) return false;
+        return ocultosFila.every((ci) => String(filaRespuesta[ci]) === fila.valor[ci]);
+      });
+
     default:
       return false;
   }
 }
 
 function resumenPregunta_(reactivo) {
+  if (reactivo.tipo === 'algoritmo_columnas') {
+    const resultado = (reactivo.filas || []).find((f) => f.esResultado);
+    return `Algoritmo vertical (${reactivo.operacion || 'suma'})${resultado ? ` — resultado ${resultado.valor}` : ''}`;
+  }
   return reactivo.pregunta || reactivo.enunciado || reactivo.frase || reactivo.instruccion || '';
 }
 
