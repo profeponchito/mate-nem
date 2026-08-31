@@ -1,0 +1,111 @@
+{
+  "id": "2S-B1-PDA05-S2",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 30,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Multiplicar potencias de la misma base",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas que generan una expresión cuadrática. Identifica y usa las propiedades de los exponentes.",
+  "problematizacion": {
+    "contexto": "Una fábrica de dulces empaca los caramelos en cajas chicas: cada caja chica tiene x³ caramelos, y esas cajas chicas se acomodan dentro de cajas grandes, x⁴ cajas chicas por cada caja grande.",
+    "pregunta": "¿Qué expresión algebraica en potencias de x representa el total de caramelos que hay en una caja grande?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.2",
+      "titulo": "Multiplicar potencias de la misma base",
+      "explicacion": "Al multiplicar dos potencias que tienen la misma base, se conserva la base y se suman los exponentes.",
+      "formula": "xᵐ × xⁿ = xᵐ⁺ⁿ",
+      "ejemplos": [
+        "x³ × x⁴ = x^(3+4) = x⁷."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Simplifica: (x²)⁵ = x elevado a la ___.",
+          "respuestaCorrecta": "10",
+          "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 2×5=10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^5 × x^7 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "Se suman los exponentes: 5+7=12."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El desarrollo de (x+9)² es x² + 18x + ___.",
+          "respuestaCorrecta": "81",
+          "retroalimentacion": "El tercer término es el cuadrado del segundo: 9² = 81."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^8 × x^7 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "15",
+          "retroalimentacion": "Se suman los exponentes: 8+7=15."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El desarrollo de (x+4)² es x² + 8x + ___.",
+          "respuestaCorrecta": "16",
+          "retroalimentacion": "El tercer término es el cuadrado del segundo: 4² = 16."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Simplifica: x^6 × x^5",
+          "opciones": [
+            "x^11",
+            "x^30",
+            "x^1",
+            "2x^11"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Al multiplicar potencias de la misma base se suman los exponentes: 6+5=11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "x^10 × x^3 es igual a x^13.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Se suman los exponentes: 10+3=13."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al simplificar x^4 × x^9 se obtiene x elevado a la ___.",
+          "respuestaCorrecta": "13",
+          "retroalimentacion": "Se suman los exponentes: 4+9=13."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Simplifica: (x^4)^3 = x elevado a la ___.",
+          "respuestaCorrecta": "12",
+          "retroalimentacion": "Al elevar una potencia a otra potencia se multiplican los exponentes: 4×3=12."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado simplificado.",
+          "columnaA": [
+            "x^2×x^7",
+            "(x^3)^4",
+            "(x+6)²"
+          ],
+          "columnaB": [
+            "x²+12x+36",
+            "x^9",
+            "x^12"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "x^2×x^7=x^9; (x^3)^4=x^12; (x+6)²=x²+12x+36."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

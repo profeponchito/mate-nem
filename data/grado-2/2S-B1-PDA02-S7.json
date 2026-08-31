@@ -1,0 +1,176 @@
+{
+  "id": "2S-B1-PDA02-S7",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 14,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: MCD, mcm y propiedades",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Comprueba y argumenta si las operaciones cumplen las propiedades conmutativa, asociativa y distributiva. Aplica criterios de divisibilidad, máximo común divisor y mínimo común múltiplo.",
+  "problematizacion": {
+    "contexto": "Estás organizando la salida de fin de cursos y necesitas repartir 18 playeras y 24 gorras en el mayor número de paquetes iguales para los patrocinadores, además de calcular rápido el costo total multiplicando el número de paquetes por (precio de la playera + precio de la gorra).",
+    "pregunta": "¿Cuántos paquetes iguales puedes formar con las 18 playeras y 24 gorras, y qué propiedad usarías para calcular rápido el costo total?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.7",
+      "titulo": "Repaso integral: MCD, mcm y propiedades",
+      "explicacion": "Recuerda: el MCD es el mayor divisor común (sirve para repartir en partes iguales), el mcm es el menor múltiplo común (sirve para sincronizar eventos), y las operaciones cumplen las propiedades conmutativa, asociativa y distributiva.",
+      "ejemplos": [
+        "Para repartir 18 plumas y 24 lápices en el mayor número de bolsas iguales, se usa MCD(18,24)=6: 6 bolsas con 3 plumas y 4 lápices cada una."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El MCD de 18 y 24 es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "18=2×3², 24=2³×3. MCD = 2×3 = 6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el mcm de 14 y 21?",
+          "opciones": [
+            "35",
+            "42",
+            "7",
+            "294"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "mcm(14,21) = 42."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(6×3)×2=6×(3×2) es un ejemplo de la propiedad asociativa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: (6×3)×2=6×(3×2) corresponde a la propiedad asociativa."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 17 y 29 es 1.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 17 y 29 son números primos distintos, así que no comparten factores. MCD = 1."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "MCD de 20 y 50",
+            "mcm de 9 y 15",
+            "MCD de 13 y 26"
+          ],
+          "columnaB": [
+            "45",
+            "13",
+            "10"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "MCD de 20 y 50 = 10; mcm de 9 y 15 = 45; MCD de 13 y 26 = 13."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El mcm de 20 y 30 es ___.",
+          "respuestaCorrecta": "60",
+          "retroalimentacion": "20=2²×5, 30=2×3×5. mcm = 2²×3×5 = 60."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el MCD de 39 y 52?",
+          "opciones": [
+            "13",
+            "3",
+            "4",
+            "1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "39=3×13, 52=2²×13. MCD = 13."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "9×(2+6)=9×2+9×6 es un ejemplo de la propiedad distributiva.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "9×(2+6)=9×2+9×6 corresponde a la propiedad distributiva."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El MCD de 23 y 46 es 23.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 46=2×23, así que MCD(23,46) = 23."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada operación con el resultado que le corresponde.",
+          "columnaA": [
+            "MCD de 8 y 12",
+            "mcm de 10 y 15",
+            "MCD de 29 y 58"
+          ],
+          "columnaB": [
+            "29",
+            "4",
+            "30"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "MCD de 8 y 12 = 4; mcm de 10 y 15 = 30; MCD de 29 y 58 = 29."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "El MCD de 16 y 24 es ___.",
+      "respuestaCorrecta": "8",
+      "retroalimentacion": "16=2⁴, 24=2³×3. MCD = 2³ = 8."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál ejemplo muestra la propiedad conmutativa?",
+      "opciones": [
+        "2×(4+3)=2×4+2×3",
+        "(1+2)+3=1+(2+3)",
+        "6+9=9+6",
+        "(2×3)×4=2×(3×4)"
+      ],
+      "respuestaCorrecta": 2,
+      "retroalimentacion": "La conmutativa dice que el orden no altera el resultado: 6+9=9+6."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "El mcm de 5 y 7 es 35.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: como 5 y 7 no comparten factores, su mcm es el producto: 5×7=35."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada operación con su resultado.",
+      "columnaA": [
+        "MCD de 12 y 18",
+        "mcm de 6 y 8",
+        "MCD de 9 y 15"
+      ],
+      "columnaB": [
+        "3",
+        "24",
+        "6"
+      ],
+      "parejasCorrectas": [
+        2,
+        1,
+        0
+      ],
+      "retroalimentacion": "MCD(12,18)=6; mcm(6,8)=24; MCD(9,15)=3."
+    }
+  ]
+}

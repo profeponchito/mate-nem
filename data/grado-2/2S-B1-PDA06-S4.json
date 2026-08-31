@@ -1,0 +1,172 @@
+{
+  "id": "2S-B1-PDA06-S4",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 39,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
+  "problematizacion": {
+    "contexto": "Estás ahorrando para comprarte una consola: si al triple de lo que llevas ahorrado le sumas lo que ya tienes, obtienes $960, y justo esa semana la tienda le puso 15% de descuento a la consola.",
+    "pregunta": "¿Cuánto llevas ahorrado hasta ahora, y cuánto costaría la consola ya con el 15% de descuento aplicado?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: muchos problemas se resuelven planteando una ecuación lineal con la cantidad desconocida como variable. Para porcentajes, si un precio p tiene un descuento del r%, el precio final es p × (1 − r/100); si conoces el precio final, puedes despejar el precio original dividiendo entre ese mismo factor.",
+      "ejemplos": [
+        "Un número más el triple de sí mismo es 32 (x + 3x = 32) implica que x = 8. Correcto: 4x=32 → x=8."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $360 tiene 10% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$288",
+            "$342",
+            "$306",
+            "$324"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "360 × (1 − 0.10) = $324."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada planteamiento con su resultado.",
+          "columnaA": [
+            "x + 2x = 27",
+            "150 × (1 − 0.15)",
+            "x × 1.10 = 88"
+          ],
+          "columnaB": [
+            "80",
+            "127.50",
+            "9"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "x+2x=27 → x=9; 150×0.85=127.50; x×1.10=88 → x=80."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "8x + 8 = 104",
+            "2x - 2 = 0",
+            "6x - 5 = 43"
+          ],
+          "columnaB": [
+            "x=8",
+            "x=12",
+            "x=1"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "8x + 8 = 104 → x=12; 2x - 2 = 0 → x=1; 6x - 5 = 43 → x=8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "2x - 15 = -7",
+            "4x + 5 = 49",
+            "5x - 4 = 11"
+          ],
+          "columnaB": [
+            "x=3",
+            "x=4",
+            "x=11"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "2x - 15 = -7 → x=4; 4x + 5 = 49 → x=11; 5x - 4 = 11 → x=3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "9x - 2 = 34",
+            "5x - 7 = 68",
+            "3x + 2 = 11"
+          ],
+          "columnaB": [
+            "x=4",
+            "x=3",
+            "x=15"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "9x - 2 = 34 → x=4; 5x - 7 = 68 → x=15; 3x + 2 = 11 → x=3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $250 tiene 20% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$200",
+            "$225",
+            "$230",
+            "$210"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "250 × (1 − 0.20) = $200."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 5x + 15 = 45 es x = 6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5x = 30; x = 6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un número más el triple de sí mismo es 44 (x + 3x = 44). x = ___.",
+          "respuestaCorrecta": "11",
+          "retroalimentacion": "4x = 44; x = 44÷4 = 11."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un producto de $140 con 15% de descuento cuesta $130.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "140 × (1 − 0.15) = $119, no $130."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "3x - 4 = 17",
+            "7x + 3 = 45",
+            "x + 6x = 56"
+          ],
+          "columnaB": [
+            "6",
+            "8",
+            "7"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "3x-4=17 → x=7; 7x+3=45 → x=6; x+6x=56 → x=8."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

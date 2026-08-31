@@ -1,0 +1,141 @@
+{
+  "id": "2S-B1-PDA06-S3",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 38,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Despejar el precio original a partir de un porcentaje",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
+  "problematizacion": {
+    "contexto": "Viste unos tenis en oferta que ahora cuestan $560 porque tienen 30% de descuento, pero en la etiqueta ya no se alcanza a leer el precio original.",
+    "pregunta": "¿Cuál era el precio original de los tenis antes de aplicarles el 30% de descuento?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.3",
+      "titulo": "Despejar el precio original a partir de un porcentaje",
+      "explicacion": "Cuando se conoce el precio final después de un descuento o aumento, se puede despejar el precio original dividiendo entre el factor correspondiente (1 − descuento/100, o 1 + aumento/100).",
+      "ejemplos": [
+        "Playera con 20% de descuento y precio final $240: 240 = x(1 − 0.20) = 0.80x → x = 240 ÷ 0.80 = $300.",
+        "Producto con aumento del 10% que ahora cuesta $88: 88 = x×1.10 → x = 88÷1.10 = $80."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Después de un aumento del 10%, un producto cuesta $88. ¿Cuánto costaba antes del aumento?",
+          "opciones": [
+            "$78.80",
+            "$79.20",
+            "$80",
+            "$97"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "88 = x×1.10 → x = 88÷1.10 = 80."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo cuesta $180 y tiene 25% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$45",
+            "$135",
+            "$155",
+            "$225"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "180 × (1 − 0.25) = 180 × 0.75 = $135."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $170 tiene 15% de aumento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$195.5",
+            "$178.5",
+            "$187",
+            "$212.5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "170 × (1 + 0.15) = $195.5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $210 tiene 15% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$189",
+            "$178.5",
+            "$199.5",
+            "$168"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "210 × (1 − 0.15) = $178.5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $270 tiene 5% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$229.5",
+            "$270",
+            "$256.5",
+            "$243"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "270 × (1 − 0.05) = $256.5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un producto con 20% de aumento ahora cuesta $144. Su precio original era $___.",
+          "respuestaCorrecta": "120",
+          "retroalimentacion": "144 = x×1.20 → x = 144 ÷ 1.20 = $120."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un artículo de $400 con 25% de descuento cuesta $300.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 400 × (1 − 0.25) = $300."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un producto con 12% de aumento que ahora cuesta $112 costaba $100 antes.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 100 × 1.12 = $112."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $320 tiene 25% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$240",
+            "$260",
+            "$280",
+            "$300"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "320 × (1 − 0.25) = $240."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su resultado.",
+          "columnaA": [
+            "$150 con 20% de descuento",
+            "$60 con 50% de aumento",
+            "Precio original si final es $154 con 10% de aumento"
+          ],
+          "columnaB": [
+            "140",
+            "90",
+            "120"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "150×0.80=120; 60×1.50=90; 154÷1.10=140."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

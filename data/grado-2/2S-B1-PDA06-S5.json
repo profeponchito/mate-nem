@@ -1,0 +1,117 @@
+{
+  "id": "2S-B1-PDA06-S5",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 40,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: ecuaciones lineales sencillas y descuentos",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Modela y resuelve problemas cuyo planteamiento es una ecuación lineal. Resuelve problemas de porcentajes en diversas situaciones.",
+  "problematizacion": {
+    "contexto": "Para el torneo de futbol rápido de tu salón vendieron boletos: lo recaudado más el cuádruple de esa misma cantidad da un total de $315. Con parte de ese dinero, el comité compró balones que tenían 12% de descuento y quedaron en $220.",
+    "pregunta": "¿Cuánto se había recaudado antes de sumar el cuádruple, y cuál era el precio original de los balones antes del descuento?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.5",
+      "titulo": "Repaso: ecuaciones lineales sencillas y descuentos",
+      "explicacion": "Recuerda: para resolver un problema con una ecuación lineal, representas la cantidad desconocida con x y despejas paso a paso. Cuando un precio p tiene un descuento del r%, el precio final es p × (1 − r/100); si conoces el precio final, puedes encontrar el original dividiendo entre ese mismo factor.",
+      "ejemplos": [
+        "Un número más el cuádruple de sí mismo es 45 (x+4x=45): 5x=45 → x=9.",
+        "Un artículo con 12% de descuento quedó en $220: 220 ÷ 0.88 = $250 era su precio original."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 6x - 3 = 27 es x = 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "6x = 30; x = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un número más el cuádruple de sí mismo es 45 (x + 4x = 45) implica que x = 9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 5x=45 → x=9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un artículo con 12% de descuento quedó en $220. Su precio original era $___.",
+          "respuestaCorrecta": "250",
+          "retroalimentacion": "220 = x(1 − 0.12) = 0.88x → x = 220 ÷ 0.88 = $250."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 6x + 9 = 45. x = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "6x = 36; x = 36÷6 = 6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $150 tiene 20% de aumento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$180",
+            "$170",
+            "$165",
+            "$130"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "150 × (1 + 0.20) = $180."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un artículo de $90 tiene 30% de descuento. ¿Cuál es su precio final?",
+          "opciones": [
+            "$63",
+            "$60",
+            "$70",
+            "$27"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "90 × (1 − 0.30) = $63."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 8x + 4 = 36 es x = 4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8x = 32; x = 4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un producto con 15% de aumento quedó en $138. Su precio original era $___.",
+          "respuestaCorrecta": "120",
+          "retroalimentacion": "138 = x×1.15 → x = 138 ÷ 1.15 = $120."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x - 6 = 29. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "7x = 35; x = 35÷7 = 5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada situación con su resultado.",
+          "columnaA": [
+            "Un número más el quíntuple de sí mismo es 54 (x+5x=54)",
+            "Precio $95 con 20% de descuento",
+            "3x + 5 = 26"
+          ],
+          "columnaB": [
+            "76",
+            "7",
+            "9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "x+5x=54 → x=9; 95×0.80=76; 3x+5=26 → x=7."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

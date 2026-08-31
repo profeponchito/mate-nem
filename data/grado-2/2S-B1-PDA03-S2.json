@@ -1,0 +1,104 @@
+{
+  "id": "2S-B1-PDA03-S2",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 16,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "La constante de proporcionalidad (k)",
+  "contenido": "Resolución de problemas de proporcionalidad directa.",
+  "pda": "Resuelve problemas de proporcionalidad directa mediante el valor unitario, la constante de proporcionalidad y otros procedimientos.",
+  "problematizacion": {
+    "contexto": "En la tiendita escolar, 4 paquetes de galletas cuestan $60, pero en el precio de la caja no viene marcado el precio de un solo paquete. Un compañero quiere comprar solo 10 paquetes para revenderlos en el recreo y necesita saber cuánto le costará antes de decidir si le conviene el negocio.",
+    "pregunta": "¿Cuál es el precio de un solo paquete de galletas (la constante k), y cuánto pagará tu compañero por 10 paquetes?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.2",
+      "titulo": "La constante de proporcionalidad (k)",
+      "explicacion": "La constante de proporcionalidad k es el valor que relaciona ambas cantidades: k = y ÷ x. Una vez que se conoce k, se puede calcular el valor de y para cualquier x multiplicando por k. Este método también se llama 'valor unitario', porque k representa cuánto corresponde a una sola unidad (por ejemplo, el precio de un solo paquete).",
+      "formula": "k = y₁ ÷ x₁        y = k · x",
+      "ejemplos": [
+        "Si 4 paquetes de galletas cuestan $60, entonces k = 60 ÷ 4 = 15 (precio de un paquete). Para 10 paquetes: y = 15 × 10 = $150.",
+        "Si 3 kg de manzanas cuestan $54, entonces k = 54 ÷ 3 = 18 (precio por kg). Para 7 kg: y = 18 × 7 = $126."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 5 cuadernos cuestan $75, entonces 8 cuadernos cuestan $___.",
+          "respuestaCorrecta": "120",
+          "retroalimentacion": "k = 75 ÷ 5 = 15 por cuaderno. Entonces 8 × 15 = $120."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 9 kg de manzanas cuestan $63, entonces 11 kg de manzanas cuestan $___.",
+          "respuestaCorrecta": "77",
+          "retroalimentacion": "k = 63÷9 = 7 por kg. 11×7 = $77."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 11 litros de gasolina cuestan $66, entonces 15 litros de gasolina cuestan $___.",
+          "respuestaCorrecta": "90",
+          "retroalimentacion": "k = 66÷11 = 6 por litro. 15×6 = $90."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 5 boletos de cine cuestan $220, entonces 13 boletos de cine cuestan $___.",
+          "respuestaCorrecta": "572",
+          "retroalimentacion": "k = 220÷5 = 44 por boleto. 13×44 = $572."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 5 kg de manzanas cuestan $270, entonces 7 kg de manzanas cuestan $___.",
+          "respuestaCorrecta": "378",
+          "retroalimentacion": "k = 270÷5 = 54 por kg. 7×54 = $378."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si 6 kg de tomate cuestan $114, entonces 10 kg cuestan $___.",
+          "respuestaCorrecta": "190",
+          "retroalimentacion": "k = 114÷6 = 19 por kg. 10×19 = $190."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si 8 litros de leche cuestan $152, ¿cuál es el valor de k (precio por litro)?",
+          "opciones": [
+            "$17",
+            "$19",
+            "$21",
+            "$23"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "k = 152÷8 = 19 por litro."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si k = $12 por kg y compras 9 kg, ¿cuánto pagarás?",
+          "opciones": [
+            "$96",
+            "$108",
+            "$120",
+            "$132"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "y = k × x = 12 × 9 = $108."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 7 playeras cuestan $448, entonces k = $64 por playera.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "k = 448÷7 = 64 por playera."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si 12 cuadernos cuestan $300, entonces k = $20 por cuaderno.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "k = 300÷12 = 25 por cuaderno, no $20."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

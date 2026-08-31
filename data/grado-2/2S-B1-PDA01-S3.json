@@ -1,0 +1,147 @@
+{
+  "id": "2S-B1-PDA01-S3",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 3,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "La densidad de los números con signo",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Compara y ordena números con signo (enteros, fracciones y decimales) en la recta numérica y analiza en qué casos se cumple la propiedad de densidad.",
+  "problematizacion": {
+    "contexto": "Un compañero del club de ciencias dice que entre las temperaturas -2°C y -1°C que marcó el termómetro del salón en dos mediciones distintas no existe ninguna otra temperatura posible, porque según él son 'números seguidos'. Tú sospechas que eso no es cierto para las temperaturas, que sí pueden tomar cualquier valor con decimales.",
+    "pregunta": "¿Es verdad que entre -2 y -1 no existe ningún otro número con signo, o puedes encontrar otro (y otro, y otro más) entre ellos?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.3",
+      "titulo": "La densidad de los números con signo",
+      "explicacion": "Entre dos números con signo siempre existe otro número: a esto se le llama propiedad de densidad. A diferencia de los números enteros (donde entre -2 y -1 no hay otro entero), entre dos números con signo (incluyendo fracciones y decimales) siempre se puede encontrar uno más.",
+      "ejemplos": [
+        "Entre -2 y -1 está -1.5, y también -1.2, -1.9, etc.: hay infinitos números posibles.",
+        "Entre 0 y 1 está 0.5, y también 0.1, 0.99, etc."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número está entre -2 y -1 en la recta numérica?",
+          "opciones": [
+            "-3",
+            "-1.5",
+            "0",
+            "-2.5"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "-1.5 está entre -2 y -1, ya que -2 < -1.5 < -1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -0.5, 1/4, -2, 0",
+          "opciones": [
+            "-2, -0.5, 0, 1/4",
+            "1/4, 0, -0.5, -2",
+            "-0.5, -2, 0, 1/4",
+            "0, -0.5, -2, 1/4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1/4 = 0.25. Ordenados: -2 < -0.5 < 0 < 0.25."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor:",
+          "opciones": [
+            "-2.2, -0.7, 5, -1",
+            "5, -0.7, -1, -2.2",
+            "-1, 5, -2.2, -0.7",
+            "-0.7, -1, 5, -2.2"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "De mayor a menor: 5 > -0.7 > -1 > -2.2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor:",
+          "opciones": [
+            "-5, 1/2, -9/10, -3.2",
+            "1/2, -9/10, -3.2, -5",
+            "1/2, -5, -9/10, -3.2",
+            "-9/10, -3.2, 1/2, -5"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "De mayor a menor: 1/2 > -9/10 > -3.2 > -5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor:",
+          "opciones": [
+            "2.8, 1.2, -1/2, -1",
+            "2.8, -1/2, -1, 1.2",
+            "1.2, 2.8, -1/2, -1",
+            "-1, 2.8, -1/2, 1.2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 2.8 > 1.2 > -1/2 > -1."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Qué número está entre -0.6 y -0.5?",
+          "opciones": [
+            "-0.55",
+            "-0.7",
+            "-0.4",
+            "-1"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "-0.55 está entre -0.6 y -0.5, ya que -0.6 < -0.55 < -0.5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -3 y -2.5 existe al menos un número, por ejemplo -2.8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -3 < -2.8 < -2.5, así que sí existe un número entre ellos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Entre dos números con signo distintos siempre existe otro número: a esta propiedad se le llama propiedad de ___.",
+          "respuestaCorrecta": "densidad",
+          "retroalimentacion": "Se llama propiedad de densidad."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada intervalo con un número que se encuentre dentro de él.",
+          "columnaA": [
+            "Entre -5 y -4",
+            "Entre 0 y 1",
+            "Entre -2.2 y -2"
+          ],
+          "columnaB": [
+            "-4.5",
+            "0.5",
+            "-2.1"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-4.5 está entre -5 y -4; 0.5 está entre 0 y 1; -2.1 está entre -2.2 y -2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -0.3, 2, -4, 1/2",
+          "opciones": [
+            "-4, -0.3, 1/2, 2",
+            "2, 1/2, -0.3, -4",
+            "-0.3, -4, 1/2, 2",
+            "1/2, -0.3, -4, 2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "1/2 = 0.5. De menor a mayor: -4 < -0.3 < 0.5 < 2."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

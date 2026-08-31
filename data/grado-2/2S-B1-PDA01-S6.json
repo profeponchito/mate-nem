@@ -1,0 +1,142 @@
+{
+  "id": "2S-B1-PDA01-S6",
+  "grado": "2°",
+  "trimestre": "1",
+  "numero": 6,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: ordenar números con signo en la recta numérica",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Compara y ordena números con signo (enteros, fracciones y decimales) en la recta numérica y analiza en qué casos se cumple la propiedad de densidad.",
+  "problematizacion": {
+    "contexto": "En una tarde de trueques en el mercado sobre ruedas de tu colonia, cuatro puestos registran su saldo del día (ganancia o pérdida) como -4, 0.5, -1/2 y 2 pesos por artículo intercambiado. El organizador quiere premiar del puesto con peor saldo al de mejor saldo.",
+    "pregunta": "¿Cómo quedan ordenados los cuatro puestos del mercado, de menor a mayor saldo del día?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.6",
+      "titulo": "Repaso: ordenar números con signo en la recta numérica",
+      "explicacion": "Recuerda: para ordenar números con signo, primero exprésalos en la misma forma y luego colócalos en la recta numérica: los negativos con mayor valor absoluto van primero (son los menores), después el cero, y al final los positivos de menor a mayor. Además, entre dos números con signo siempre existe otro número más (densidad).",
+      "ejemplos": [
+        "Ordenando -4, 0.5, -1/2, 2: de menor a mayor queda -4 < -1/2 < 0.5 < 2."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -4, 0.5, -1/2, 2",
+          "opciones": [
+            "-4, -1/2, 0.5, 2",
+            "2, 0.5, -1/2, -4",
+            "-1/2, -4, 0.5, 2",
+            "0.5, -1/2, -4, 2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -4 < -1/2 (-0.5) < 0.5 < 2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor: -6, 3, -1.5, 0",
+          "opciones": [
+            "3, 0, -1.5, -6",
+            "-6, -1.5, 0, 3",
+            "3, -1.5, 0, -6",
+            "0, 3, -1.5, -6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 3 > 0 > -1.5 > -6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -4.1 y -4.05 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -4.1 y -4.05 existen infinitos números, por ejemplo -4.08."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -8, 2/5, -0.9, -1 es ___.",
+          "respuestaCorrecta": "2/5",
+          "retroalimentacion": "2/5 (0.4) está más a la derecha en la recta numérica, así que es el mayor."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con la comparación correcta.",
+          "columnaA": [
+            "-9 y -6",
+            "-1.8 y -1",
+            "3/5 y -0.2"
+          ],
+          "columnaB": [
+            "-1.8 < -1",
+            "3/5 > -0.2",
+            "-9 < -6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "-9 < -6; -1.8 < -1; 3/5 (0.6) > -0.2."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de menor a mayor: -3, 1.5, -0.2, 4",
+          "opciones": [
+            "-3, -0.2, 1.5, 4",
+            "4, 1.5, -0.2, -3",
+            "-0.2, -3, 1.5, 4",
+            "1.5, -0.2, -3, 4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De menor a mayor: -3 < -0.2 < 1.5 < 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Ordena de mayor a menor: -7, 2, -0.5, 5",
+          "opciones": [
+            "5, 2, -0.5, -7",
+            "-7, -0.5, 2, 5",
+            "2, 5, -0.5, -7",
+            "5, -0.5, 2, -7"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "De mayor a menor: 5 > 2 > -0.5 > -7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -6.3 y -6.25 no existe ningún otro número.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: por la propiedad de densidad, entre -6.3 y -6.25 existen infinitos números, por ejemplo -6.275."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -5, 3/10, -0.8, 6 es ___.",
+          "respuestaCorrecta": "-5",
+          "retroalimentacion": "-5 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada par de números con la comparación que le corresponde.",
+          "columnaA": [
+            "-12 y -8",
+            "-2.5 y -2",
+            "7/10 y -0.1"
+          ],
+          "columnaB": [
+            "7/10 > -0.1",
+            "-12 < -8",
+            "-2.5 < -2"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "-12 < -8; -2.5 < -2; 7/10 (0.7) > -0.1."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}
