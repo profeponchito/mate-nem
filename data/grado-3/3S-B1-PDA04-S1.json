@@ -1,0 +1,111 @@
+{
+  "id": "3S-B1-PDA04-S1",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 22,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "¿Qué es el reparto proporcional?",
+  "contenido": "Funciones.",
+  "pda": "Relaciona e interpreta la variación de dos cantidades a partir de su representación tabular, gráfica y algebraica. Explora diversos procedimientos para resolver problemas de reparto proporcional.",
+  "problematizacion": {
+    "contexto": "Tres amigos pusieron un puesto de aguas frescas en las vacaciones: uno aportó $3,000, otro $5,000 y otro $2,000 para comprar el equipo. Al final del verano ganaron $2,000 de utilidad y quieren repartirla de forma justa, según lo que invirtió cada quien.",
+    "pregunta": "¿Cuánto le corresponde a cada amigo si reparten la ganancia en proporción a lo que invirtió cada uno?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.1",
+      "titulo": "¿Qué es el reparto proporcional?",
+      "explicacion": "El reparto proporcional distribuye una cantidad total entre varias partes, en proporción a un valor de referencia (como la aportación de cada socio). Se calcula sumando todas las partes de referencia, y dividiendo la cantidad total entre esa suma para obtener el valor de cada 'parte', que se multiplica por la aportación de cada quien.",
+      "formula": "parte de cada quien = (aportación individual / suma total de aportaciones) × cantidad a repartir",
+      "ejemplos": [
+        "Suma total = 3000+5000+2000 = 10,000. Juan: (3000/10000)×2000 = $600. Luis: (5000/10000)×2000 = $1,000. Marco: (2000/10000)×2000 = $400."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten $500 proporcionalmente entre dos personas que aportaron $100 y $150. A la primera (la de $100) le tocan $200.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=250. (100/250)×500 = $200."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $217 en razón 4:3, a la parte de razón 4 le tocan $124.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "(4/7)×217 = $124."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si x se multiplica por 5 y y también se multiplica por 5, es una variación directa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "En variación directa, ambas cantidades cambian siempre en la misma proporción."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $75 en razón 4:1, a la parte de razón 4 le tocan $60.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "(4/5)×75 = $60."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si x se multiplica por 3 y y también se multiplica por 3, es una variación directa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "En variación directa, ambas cantidades cambian siempre en la misma proporción."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $360 proporcionalmente entre dos personas que aportaron $40 y $80. ¿Cuánto le toca a la de $80?",
+          "opciones": [
+            "$180",
+            "$200",
+            "$240",
+            "$120"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Suma=120. (80/120)×360 = $240."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Al repartir $150 en razón 2:3, a la parte de razón 3 le tocan $___.",
+          "respuestaCorrecta": "90",
+          "retroalimentacion": "Suma=5. (3/5)×150 = $90."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $180 en razón 5:1, a la parte de razón 5 le tocan $150.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=6. (5/6)×180 = $150."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si x se multiplica por 2 y y se divide entre 2, es una variación directa.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Eso es variación inversa; en variación directa ambas cantidades cambian siempre en la misma proporción."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada reparto proporcional con el resultado de la parte indicada.",
+          "columnaA": [
+            "$100 en razón 1:4 — parte de razón 1",
+            "$300 en razón 2:3 — parte de razón 2",
+            "$210 en razón 3:4 — parte de razón 3"
+          ],
+          "columnaB": [
+            "$120",
+            "$90",
+            "$20"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "$100 en razón 1:4 — parte de razón 1 = $20; $300 en razón 2:3 — parte de razón 2 = $120; $210 en razón 3:4 — parte de razón 3 = $90."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

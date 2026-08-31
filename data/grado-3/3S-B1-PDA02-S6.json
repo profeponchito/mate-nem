@@ -1,0 +1,137 @@
+{
+  "id": "3S-B1-PDA02-S6",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 13,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: despejar la base y volumen del cubo",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Representa algebraicamente áreas y volúmenes de cuerpos geométricos y calcula el valor de una variable en función de las otras.",
+  "problematizacion": {
+    "contexto": "En el taller de carpintería un compañero quiere hacer dos cosas: encontrar el lado de la base de una caja de madera si ya conoce su volumen y su altura, y después construir un banquito con forma de cubo perfecto del tamaño que él decida.",
+    "pregunta": "¿Cómo despejas el lado de la base en el primer caso y calculas el volumen del banquito cúbico en el segundo?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.6",
+      "titulo": "Repaso: despejar la base y volumen del cubo",
+      "explicacion": "Recuerda: para encontrar el lado de la base cuando conoces el volumen y la altura, despeja x² = V ÷ h y luego saca raíz cuadrada para obtener x. Cuando la altura es igual al lado de la base, el prisma se convierte en un cubo, cuyo volumen es x³.",
+      "ejemplos": [
+        "Un cubo con arista de 6 cm tiene volumen 6³ = 216 cm³.",
+        "Si V=192 y h=3, entonces x² = 192/3 = 64, por lo que x=8."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Un cubo tiene arista 6 cm. Su volumen es ___ cm³.",
+          "respuestaCorrecta": "216",
+          "retroalimentacion": "6³ = 216 cm³."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cubo tiene arista 7 cm. ¿Cuál es su volumen?",
+          "opciones": [
+            "21",
+            "49",
+            "343",
+            "147"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "El volumen del cubo es la arista al cubo: 7³ = 343."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una caja tiene volumen V=x²h. Si x=7 y h=5, ¿cuál es el volumen?",
+          "opciones": [
+            "245",
+            "75",
+            "35",
+            "210"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "V = 7²×5 = 49×5 = 245."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un cubo con arista 2 cm tiene volumen 8 cm³.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2³ = 8 cm³."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada descripción con su volumen.",
+          "columnaA": [
+            "cubo de arista 9 cm",
+            "x=4, h=9",
+            "x=5, h=7"
+          ],
+          "columnaB": [
+            "144",
+            "729",
+            "175"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "cubo arista 9: 9³=729; x=4,h=9: V=16×9=144; x=5,h=7: V=25×7=175."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Un cubo con arista 5 cm tiene volumen 125 cm³.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5³ = 125 cm³."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Si el volumen de un prisma es V=x²h, con V=294 y h=6, entonces x² = ___.",
+          "respuestaCorrecta": "49",
+          "retroalimentacion": "x² = V/h = 294/6 = 49."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cubo tiene arista 8 cm. ¿Cuál es su volumen?",
+          "opciones": [
+            "512",
+            "64",
+            "256",
+            "216"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El volumen del cubo es la arista al cubo: 8³ = 512."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una caja con x=6, h=7 tiene volumen V=x²h igual a 252.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "V = 6²×7 = 36×7 = 252."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada descripción con el volumen que le corresponde.",
+          "columnaA": [
+            "cubo de arista 3 cm",
+            "x=9, h=5",
+            "x=2, h=6"
+          ],
+          "columnaB": [
+            "405",
+            "24",
+            "27"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "cubo arista3: 3³=27. x=9,h=5: V=81×5=405. x=2,h=6: V=4×6=24."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "3S-B1-PDA04-S5",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 26,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: qué es un reparto proporcional y la variación directa",
+  "contenido": "Funciones.",
+  "pda": "Relaciona e interpreta la variación de dos cantidades a partir de su representación tabular, gráfica y algebraica. Explora diversos procedimientos para resolver problemas de reparto proporcional.",
+  "problematizacion": {
+    "contexto": "Dos primas ahorraron para un regalo familiar: una puso $60 y la otra $90, y ahora reciben $450 de un tío como agradecimiento que quieren repartirse según lo que aportó cada una. Aparte, revisan si el gasto en gasolina de un viaje familiar varía siempre en la misma proporción que los kilómetros recorridos.",
+    "pregunta": "¿Cuánto le toca a cada prima del regalo y cómo identificas si el gasto en gasolina es variación directa respecto a los kilómetros?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.5",
+      "titulo": "Repaso: qué es un reparto proporcional y la variación directa",
+      "explicacion": "Recuerda: en un reparto proporcional, sumas todos los valores de referencia y divides la cantidad total entre esa suma para saber cuánto vale cada 'parte'; luego multiplicas ese valor por la aportación de cada quien. Además, cuando dos cantidades cambian siempre en la misma proporción (si una se multiplica por un número, la otra también), hay una variación directa entre ellas.",
+      "ejemplos": [
+        "Se reparten $450 proporcionalmente entre dos personas que aportaron $60 y $90. Suma=150. La de $60: (60/150)×450=$180."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten $450 proporcionalmente entre dos personas que aportaron $60 y $90. A la primera (la de $60) le tocan $180.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=150. (60/150)×450 = $180."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $195 proporcionalmente entre dos personas con aportaciones en razón 2:3. A la de razón 3 le tocan $___.",
+          "respuestaCorrecta": "117",
+          "retroalimentacion": "Suma=5. (3/5)×195 = $117."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Si x se multiplica por 4 y y también se multiplica por 4, ¿qué tipo de variación es?",
+          "opciones": [
+            "Variación directa",
+            "Variación inversa",
+            "No hay variación",
+            "Variación cuadrática"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "Cuando ambas cantidades cambian siempre en la misma proporción, es una variación directa."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Al repartir $88 en razón 3:8, a la parte de razón 8 le tocan $70.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Suma=11. (8/11)×88 = $64, no $70."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $150 proporcionalmente entre dos personas con aportaciones en razón 1:4. A la de razón 4 le tocan $___.",
+          "respuestaCorrecta": "120",
+          "retroalimentacion": "Suma=5. (4/5)×150 = $120."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Se reparten $324 proporcionalmente entre dos personas con aportaciones en razón 4:5. ¿Cuánto le toca a la de razón 4?",
+          "opciones": [
+            "$120",
+            "$144",
+            "$160",
+            "$180"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "Suma=9. (4/9)×324 = $144."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Se reparten $99 proporcionalmente entre dos personas con aportaciones en razón 2:7. A la de razón 7 le tocan $77.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: suma=9. (7/9)×99 = $77."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Se reparten $270 proporcionalmente entre dos personas con aportaciones en razón 5:4. A la de razón 5 le tocan $___.",
+          "respuestaCorrecta": "150",
+          "retroalimentacion": "Suma=9. (5/9)×270 = $150."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Si x se multiplica por 6 y y también se multiplica por 6, es una variación directa.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "En variación directa, ambas cantidades cambian siempre en la misma proporción."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de estas situaciones NO es una variación directa?",
+          "opciones": [
+            "Al duplicar x, y se duplica",
+            "Al triplicar x, y se triplica",
+            "Al multiplicar x por 5, y se mantiene igual",
+            "Al multiplicar x por 4, y se multiplica por 4"
+          ],
+          "respuestaCorrecta": 2,
+          "retroalimentacion": "Si y no cambia al variar x, no hay variación directa (la razón entre ambas no es constante)."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

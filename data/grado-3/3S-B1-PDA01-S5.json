@@ -1,0 +1,131 @@
+{
+  "id": "3S-B1-PDA01-S5",
+  "grado": "3°",
+  "trimestre": "1",
+  "numero": 5,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: exponentes negativos y raíces cuadradas",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
+  "problematizacion": {
+    "contexto": "Antes de terminar el bloque, la maestra pone dos retos rápidos en el pizarrón: uno sobre una medicina que se diluye a la mitad de su concentración cada hora, y otro sobre un terreno familiar cuadrado del que solo conocen el área y quieren saber cuánto mide su barda.",
+    "pregunta": "¿Cómo resuelves cada reto: uno con exponente negativo y otro con raíz cuadrada?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.5",
+      "titulo": "Repaso: exponentes negativos y raíces cuadradas",
+      "explicacion": "Recuerda: un exponente negativo x⁻ⁿ significa tomar el recíproco, es decir, 1/xⁿ. La raíz cuadrada de un número es el valor que, multiplicado por sí mismo, da ese número. Estas dos ideas son la base para simplificar expresiones antes de escribirlas en notación científica.",
+      "ejemplos": [
+        "4⁻³ = 1/4³ = 1/64.",
+        "√400 = 20, porque 20 × 20 = 400."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "4⁻3 = 1/64.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "4⁻3 = 1/4³ = 1/64."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La raíz cuadrada de 361 es ___.",
+          "respuestaCorrecta": "19",
+          "retroalimentacion": "19 × 19 = 361."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 2⁻5?",
+          "opciones": [
+            "1/32",
+            "-32",
+            "32",
+            "1/10"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2⁻5 = 1/2^5 = 1/32."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "6⁻2",
+            "√900",
+            "3⁻2"
+          ],
+          "columnaB": [
+            "1/36",
+            "30",
+            "1/9"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "6⁻2 = 1/36; √900 = 30; 3⁻2 = 1/9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√441 = 21.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "21 × 21 = 441."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "7⁻2 = 1/49.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "7⁻2 = 1/7² = 1/49."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "La raíz cuadrada de 484 es ___.",
+          "respuestaCorrecta": "22",
+          "retroalimentacion": "22 × 22 = 484."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál es el resultado de 3⁻4?",
+          "opciones": [
+            "1/81",
+            "81",
+            "-81",
+            "1/12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3⁻4 = 1/3^4 = 1/81."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado correcto.",
+          "columnaA": [
+            "8⁻2",
+            "√576",
+            "5⁻3"
+          ],
+          "columnaB": [
+            "24",
+            "1/125",
+            "1/64"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "8⁻2 = 1/64; √576 = 24; 5⁻3 = 1/125."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "√784 = 28.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "28 × 28 = 784."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}
