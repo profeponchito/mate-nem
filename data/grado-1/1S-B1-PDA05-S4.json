@@ -1,0 +1,178 @@
+{
+  "id": "1S-B1-PDA05-S4",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 32,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "La maestra de Formación Cívica le pidió al grupo diseñar una jardinera rectangular para la entrada de la escuela y presentar, en una sola hoja, tanto la expresión que representa 'el costo total de las plantas' como el perímetro de la jardinera para calcular cuánta malla de contención necesitan.",
+    "pregunta": "¿Cómo se traduce la situación a una expresión algebraica y cómo se simplifica el perímetro de la jardinera para entregar el reporte completo?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: en álgebra usamos letras para representar cantidades desconocidas, y frases como 'el doble de' o 'el triple de' se traducen en multiplicaciones. El perímetro de una figura es la suma de todos sus lados: cuando algún lado depende de una variable, sumas y simplificas las expresiones agrupando los términos semejantes.",
+      "ejemplos": [
+        "El perímetro de un cuadrado de lado x es 4x. Suma todos los lados y agrupa los términos semejantes para simplificar el perímetro."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe algebraicamente 'la mitad de un número más 3'?",
+          "opciones": [
+            "x/2+3",
+            "x/2-3",
+            "x/2+12",
+            "x/2+5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'la mitad de un número más 3' se traduce como x/2+3."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+          "columnaA": [
+            "El doble de un número más 3",
+            "El triple de un número menos 5",
+            "La mitad de un número más 4"
+          ],
+          "columnaB": [
+            "3x-5",
+            "x/2+4",
+            "2x+3"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "'El doble más 3' es 2x+3; 'el triple menos 5' es 3x-5; 'la mitad más 4' es x/2+4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+          "columnaA": [
+            "El triple de un número menos 5",
+            "La mitad de un número más 9",
+            "El doble de un número menos 2"
+          ],
+          "columnaB": [
+            "3x-5",
+            "x/2+9",
+            "2x-2"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "'El triple de un número menos 5' es 3x-5; 'La mitad de un número más 9' es x/2+9; 'El doble de un número menos 2' es 2x-2."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+          "columnaA": [
+            "El cuádruple de un número más 3",
+            "La mitad de un número más 2",
+            "El triple de un número menos 9"
+          ],
+          "columnaB": [
+            "4x+3",
+            "3x-9",
+            "x/2+2"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "'El cuádruple de un número más 3' es 4x+3; 'La mitad de un número más 2' es x/2+2; 'El triple de un número menos 9' es 3x-9."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase del lenguaje común con su expresión algebraica.",
+          "columnaA": [
+            "El cuádruple de un número más 9",
+            "El triple de un número menos 4",
+            "El doble de un número más 4"
+          ],
+          "columnaB": [
+            "3x-4",
+            "2x+4",
+            "4x+9"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "'El cuádruple de un número más 9' es 4x+9; 'El triple de un número menos 4' es 3x-4; 'El doble de un número más 4' es 2x+4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cómo se escribe algebraicamente 'el triple de un número más 6'?",
+          "opciones": [
+            "3x+6",
+            "3x-6",
+            "6x+3",
+            "3(x+6)"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el triple de un número más 6' se traduce como 3x+6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'La mitad de un número menos 8' se escribe ___.",
+          "respuestaCorrecta": "x/2-8",
+          "retroalimentacion": "'la mitad de un número' es x/2, y 'menos 8' se resta: x/2-8."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perímetro de un cuadrado de lado x+5 es 4x+20.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "El cuadrado tiene 4 lados iguales de longitud x+5, entonces el perímetro es 4(x+5) = 4x+20."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un rectángulo tiene ancho x y largo x+9. ¿Cuál es su perímetro simplificado?",
+          "opciones": [
+            "4x+18",
+            "4x+9",
+            "2x+18",
+            "3x+18"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2(x) + 2(x+9) = 2x + 2x + 18 = 4x+18."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Une cada frase del lenguaje común con la expresión algebraica que le corresponde.",
+          "columnaA": [
+            "El cuádruple de un número más 7",
+            "El doble de un número menos 6",
+            "La mitad de un número más 12"
+          ],
+          "columnaB": [
+            "x/2+12",
+            "4x+7",
+            "2x-6"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "'El cuádruple más 7' es 4x+7; 'el doble menos 6' es 2x-6; 'la mitad más 12' es x/2+12."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

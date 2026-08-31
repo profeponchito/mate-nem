@@ -1,0 +1,112 @@
+{
+  "id": "1S-B1-PDA02-S2",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 9,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Comparar y ordenar en la recta numérica",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Reconoce la necesidad de los números negativos a partir de usar cantidades que tienen al cero como referencia. Compara y ordena números con signo en la recta numérica.",
+  "problematizacion": {
+    "contexto": "En el pronóstico del clima de esta noche, tu ciudad marca -3°C y una ciudad cercana en la montaña marca -8°C. Tu primo dice que hace más frío donde tú vives porque 3 es más chico que 8, y tú no estás seguro de si tiene razón.",
+    "pregunta": "¿En cuál de las dos ciudades hace más frío esta noche: la que marca -3°C o la que marca -8°C, y por qué?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.2",
+      "titulo": "Comparar y ordenar en la recta numérica",
+      "explicacion": "En la recta numérica, entre dos números el mayor es el que está más a la derecha. Esto significa que, entre dos negativos, el que tiene mayor valor absoluto (está 'más lejos' del cero) en realidad es el menor.",
+      "formula": "... -3 < -2 < -1 < 0 < 1 < 2 ...",
+      "ejemplos": [
+        "Comparar -5 y -2: -5 está más a la izquierda, entonces -5 < -2, aunque 5 sea mayor que 2 en valor absoluto.",
+        "Un submarino a -120 m está más profundo (más lejos del 0) que uno a -85 m, así que -120 < -85."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -7, -2, 5, -10 es ___.",
+          "respuestaCorrecta": "-10",
+          "retroalimentacion": "-10 está más a la izquierda que -7, -2 y 5, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 2, 19, -11, -10 es ___.",
+          "respuestaCorrecta": "-11",
+          "retroalimentacion": "-11 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 18, -9, 4, 15 es ___.",
+          "respuestaCorrecta": "-9",
+          "retroalimentacion": "-9 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 16, 19, -2, 7 es ___.",
+          "respuestaCorrecta": "-2",
+          "retroalimentacion": "-2 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 17, 13, -18, 14 es ___.",
+          "respuestaCorrecta": "-18",
+          "retroalimentacion": "-18 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -3, -8, 2, -1 es ___.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "2 es el único positivo de la lista, así que está más a la derecha y es el mayor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -6, 10, -12, 5 es ___.",
+          "respuestaCorrecta": "-12",
+          "retroalimentacion": "-12 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Entre -5 y -2, el número -5 es mayor.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: -5 < -2, porque -5 está más a la izquierda en la recta numérica."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Cuál de los siguientes números es el mayor: -20, -3, -15, -8?",
+          "opciones": [
+            "-20",
+            "-3",
+            "-15",
+            "-8"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "-3 es el menos negativo de la lista, así que es el mayor."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada par de números con el símbolo de comparación correcto.",
+          "columnaA": [
+            "-7 ___ -2",
+            "4 ___ -4",
+            "-9 ___ -9"
+          ],
+          "columnaB": [
+            "<",
+            ">",
+            "="
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "-7 < -2; 4 > -4; -9 = -9."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

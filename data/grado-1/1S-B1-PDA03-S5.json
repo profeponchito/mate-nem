@@ -1,0 +1,117 @@
+{
+  "id": "1S-B1-PDA03-S5",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 19,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: sumar y restar números con signo",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Reconoce el significado de las cuatro operaciones básicas al operar números con signo. Comprueba las propiedades conmutativa, asociativa y distributiva, e identifica y aplica la jerarquía de operaciones.",
+  "problematizacion": {
+    "contexto": "En el hospital donde revisan a tu abuelita, el elevador marca con números negativos los sótanos de estacionamiento. Entras en planta baja (nivel 0), bajas 2 niveles para dejar el coche, subes 5 para el consultorio y luego bajas 3 más para la farmacia.",
+    "pregunta": "¿En qué nivel del edificio terminas después de todos esos movimientos?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.5",
+      "titulo": "Repaso: sumar y restar números con signo",
+      "explicacion": "Recuerda: al sumar dos números con el mismo signo, se suman sus valores absolutos y se conserva ese signo; si los signos son diferentes, se restan los valores absolutos y se conserva el signo del que tiene mayor valor absoluto. Restar un número negativo equivale a sumar su opuesto.",
+      "ejemplos": [
+        "(-17) + (9): signos diferentes, 17-9=8, se conserva el signo del mayor (negativo): -8.",
+        "(20) - (-6) = 20 + 6 = 26."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-13) + 6 = -7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Signos diferentes: se resta 13-6=7 y se conserva el signo del mayor (negativo): -7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-5) - (-9) = -4.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: (-5) - (-9) = -5 + 9 = 4, no -4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-17) + (9) = ___.",
+          "respuestaCorrecta": "-8",
+          "retroalimentacion": "Signos diferentes: se resta 17-9=8 y se conserva el signo del mayor (negativo): -8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(20) - (-6) = ___.",
+          "respuestaCorrecta": "26",
+          "retroalimentacion": "Restar un negativo equivale a sumar: 20 - (-6) = 20 + 6 = 26."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una tienda vendió $380, pagó $150 de renta, recibió $60 de una devolución a favor y pagó $40 de transporte. ¿Cuál fue su balance final?",
+          "opciones": [
+            "$250",
+            "$230",
+            "$270",
+            "$210"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "380 − 150 + 60 − 40 = 250."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-11) + 4 = -7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Signos diferentes: se resta 11-4=7 y se conserva el signo del mayor (negativo): -7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-6) - (-10) = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "Restar un negativo equivale a sumar: -6 - (-10) = -6 + 10 = 4."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un elevador sube 12 pisos, baja 5, sube 3 y baja 8. ¿En qué piso relativo al inicio terminó?",
+          "opciones": [
+            "3",
+            "2",
+            "-2",
+            "0"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "12 - 5 + 3 - 8 = 2."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(-14) + 9",
+            "(18) - (-7)",
+            "(-3) - (5)"
+          ],
+          "columnaB": [
+            "25",
+            "-8",
+            "-5"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "(-14)+9=-5; 18-(-7)=25; (-3)-(5)=-8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-19) + (12) = ___.",
+          "respuestaCorrecta": "-7",
+          "retroalimentacion": "Signos diferentes: se resta 19-12=7 y se conserva el signo del mayor (negativo): -7."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

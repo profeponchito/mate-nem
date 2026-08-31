@@ -1,0 +1,172 @@
+{
+  "id": "1S-B1-PDA03-S4",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 18,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Síntesis y aplicación",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Reconoce el significado de las cuatro operaciones básicas al operar números con signo. Comprueba las propiedades conmutativa, asociativa y distributiva, e identifica y aplica la jerarquía de operaciones.",
+  "problematizacion": {
+    "contexto": "La cooperativa escolar de tu salón cierra el registro de toda la semana: gastó $450 en despensa, vendió productos por $300 el lunes y $120 el jueves, y además pagó $80 de flete, todo mezclado con montos que se repiten según cuántos productos se vendieron cada día.",
+    "pregunta": "Combinando sumas, restas, multiplicaciones y divisiones con signo en el orden correcto, ¿cuál fue el balance final de la cooperativa esa semana?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.4",
+      "titulo": "Síntesis y aplicación",
+      "explicacion": "Recuerda: para sumar o restar números con signo, si tienen el mismo signo se suman sus valores y se conserva el signo; si son de signos distintos, se restan los valores y se conserva el signo del mayor. Para multiplicar o dividir, la regla es más simple: signos iguales dan resultado positivo, signos diferentes dan resultado negativo. Y cuando hay varias operaciones juntas, primero se resuelven las multiplicaciones y divisiones, y después las sumas y restas.",
+      "ejemplos": [
+        "(-15) ÷ (-3) = 5. Correcto: signos iguales (negativo entre negativo) dan resultado positivo: 5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-4) × (6)",
+          "opciones": [
+            "-28",
+            "-24",
+            "-22",
+            "-26"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-4) × (6) = -24. Signos diferentes dan negativo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(-6) × (-4)",
+            "-8 + 5",
+            "(-20) ÷ 5"
+          ],
+          "columnaB": [
+            "-4",
+            "24",
+            "-3"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(-6)×(-4)=24; -8+5=-3; (-20)÷5=-4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(1) + (8)",
+            "(-4) × (-7)",
+            "(-3) × (6)"
+          ],
+          "columnaB": [
+            "-18",
+            "9",
+            "28"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(1) + (8)=9; (-4) × (-7)=28; (-3) × (6)=-18."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(6) - (12)",
+            "(4) × (3)",
+            "(11) - (7)"
+          ],
+          "columnaB": [
+            "-6",
+            "4",
+            "12"
+          ],
+          "parejasCorrectas": [
+            0,
+            2,
+            1
+          ],
+          "retroalimentacion": "(6) - (12)=-6; (4) × (3)=12; (11) - (7)=4."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada operación con su resultado.",
+          "columnaA": [
+            "(8) × (6)",
+            "(13) + (6)",
+            "(-4) × (9)"
+          ],
+          "columnaB": [
+            "19",
+            "48",
+            "-36"
+          ],
+          "parejasCorrectas": [
+            1,
+            0,
+            2
+          ],
+          "retroalimentacion": "(8) × (6)=48; (13) + (6)=19; (-4) × (9)=-36."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 6 - 4 × (-2), el resultado es 14.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 4×(-2)=-8; luego 6-(-8)=14."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "(-9) × (5) = ___.",
+          "respuestaCorrecta": "-45",
+          "retroalimentacion": "Signos diferentes dan negativo: (-9)×5=-45."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-36) ÷ (-4)",
+          "opciones": [
+            "-9",
+            "9",
+            "8",
+            "-8"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-36) ÷ (-4) = 9. Signos iguales dan positivo."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Empareja cada operación con su resultado correcto.",
+          "columnaA": [
+            "(-5) × (7)",
+            "2 + 6 × (-3)",
+            "(28) ÷ (-4)"
+          ],
+          "columnaB": [
+            "-7",
+            "-35",
+            "-16"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "(-5)×7=-35; 2+6×(-3)=-16; 28÷(-4)=-7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-6) × (-8) = 48.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Signos iguales dan resultado positivo: (-6)×(-8)=48."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 4 de 4 · Síntesis"
+    }
+  ]
+}

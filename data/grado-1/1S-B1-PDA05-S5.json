@@ -1,0 +1,116 @@
+{
+  "id": "1S-B1-PDA05-S5",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 33,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: traducir frases al lenguaje algebraico",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "En la rifa que organiza el grupo para el viaje de fin de cursos, el tesorero anuncia: 'el premio mayor será el cuádruple de lo recaudado en boletos, menos los 200 pesos que se gastaron en la impresión'. Antes de anunciarlo en el salón, quiere revisar que la expresión esté bien escrita.",
+    "pregunta": "Si x es lo recaudado en boletos, ¿qué expresión algebraica corresponde al premio mayor de la rifa?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.5",
+      "titulo": "Repaso: traducir frases al lenguaje algebraico",
+      "explicacion": "Recuerda: en algebra usamos una letra (variable) para representar un numero desconocido. Frases como 'el doble de', 'el triple de', 'el cuadruple de' o 'la mitad de' un numero se traducen en una multiplicacion (o division) por ese numero, y lo que se suma o resta despues se agrega tal cual.",
+      "ejemplos": [
+        "'El triple de un numero mas 8' se escribe 3x + 8."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El triple de un numero mas 8' se escribe ___.",
+          "respuestaCorrecta": "3x+8",
+          "retroalimentacion": "'el triple de un numero mas 8' se traduce como 3x+8."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El doble de un numero menos 9' se escribe ___.",
+          "respuestaCorrecta": "2x-9",
+          "retroalimentacion": "'el doble de un numero menos 9' se traduce como 2x-9."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La expresion 'la mitad de un numero menos 5' se escribe como x/2 - 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "'la mitad de un numero' es x/2, y 'menos 5' se resta: x/2-5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "'El cuadruple de un numero mas 6' se escribe como 4x+6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "'el cuadruple de un numero' es 4x, y 'mas 6' se suma: 4x+6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Como se escribe algebraicamente 'la mitad de un numero menos 7'?",
+          "opciones": [
+            "x/2-7",
+            "x/2+7",
+            "x/2-14",
+            "x-7/2"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'la mitad de un numero menos 7' se traduce como x/2-7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Como se escribe algebraicamente 'el triple de un numero menos 4'?",
+          "opciones": [
+            "3x-4",
+            "3x+4",
+            "4-3x",
+            "3(x-4)"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el triple de un numero menos 4' se traduce como 3x-4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "'El cuadruple de un numero menos 3' se escribe como 4x-3.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "'el cuadruple de un numero' es 4x, y 'menos 3' se resta: 4x-3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "'La mitad de un numero mas 10' se escribe como x/2+20.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "'la mitad de un numero mas 10' es x/2+10, no x/2+20."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El doble de un numero mas 11' se escribe ___.",
+          "respuestaCorrecta": "2x+11",
+          "retroalimentacion": "'el doble de un numero mas 11' se traduce como 2x+11."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase con su expresión algebraica.",
+          "columnaA": [
+            "El triple de un número más 5",
+            "El cuádruple de un número menos 2",
+            "La mitad de un número menos 6"
+          ],
+          "columnaB": [
+            "x/2-6",
+            "3x+5",
+            "4x-2"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "'El triple más 5' es 3x+5; 'el cuádruple menos 2' es 4x-2; 'la mitad menos 6' es x/2-6."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

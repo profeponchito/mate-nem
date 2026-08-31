@@ -1,0 +1,112 @@
+{
+  "id": "1S-B1-PDA06-S2",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 37,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Ecuaciones de la forma Ax + B = C",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax=B, Ax+B=C, Ax+B=Cx+D con el uso de las propiedades de la igualdad.",
+  "problematizacion": {
+    "contexto": "Diego ya tenía 150 pesos ahorrados en su alcancía y esta semana agregó tres veces su domingo para completar 430 pesos y así comprarse unos tenis nuevos.",
+    "pregunta": "Si x es el domingo semanal que recibió Diego, ¿cuánto fue ese domingo según la ecuación 3x + 150 = 430?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.2",
+      "titulo": "Ecuaciones de la forma Ax + B = C",
+      "explicacion": "Cuando la ecuación tiene un término que se suma o resta además del que multiplica a x, primero se despeja ese término (pasándolo al otro lado con la operación inversa) y después se despeja x dividiendo.",
+      "formula": "Ax + B = C  →  x = (C − B) / A",
+      "ejemplos": [
+        "x + 150 = 430  →  x = 430 − 150 = 280. Ana tenía $280 ahorrados.",
+        "3x + 4 = 19  →  3x = 19-4=15  →  x=15÷3=5."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 2x + 3 = x + 10. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "2x - x = 10 - 3 → x = 7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 9x + 7 = 16. x = ___.",
+          "respuestaCorrecta": "1",
+          "retroalimentacion": "9x = 16-7 = 9; x = 9÷9 = 1."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 9x - 2 = 7. x = ___.",
+          "respuestaCorrecta": "1",
+          "retroalimentacion": "9x = 7+2 = 9; x = 9÷9 = 1."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 3x + 5 = 17. x = ___.",
+          "respuestaCorrecta": "4",
+          "retroalimentacion": "3x = 17-5 = 12; x = 12÷3 = 4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x + 4 = 53. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "7x = 53-4 = 49; x = 49÷7 = 7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 5x + 6 = 31",
+          "opciones": [
+            "x=5",
+            "x=6",
+            "x=7",
+            "x=25"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5x = 31-6 = 25; x = 25÷5 = 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 8x - 5 = 27 es x = 4.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8x = 27+5 = 32; x = 32÷8 = 4."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 4x + 9 = 37. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "4x = 37-9 = 28; x = 28÷4 = 7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 6x - 8 = 34. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "6x = 34+8 = 42; x = 42÷6 = 7."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "2x + 7 = 19",
+            "5x - 7 = 33",
+            "3x + 8 = x + 16"
+          ],
+          "columnaB": [
+            "8",
+            "4",
+            "6"
+          ],
+          "parejasCorrectas": [
+            2,
+            0,
+            1
+          ],
+          "retroalimentacion": "2x+7=19 → x=6; 5x-7=33 → x=8; 3x+8=x+16 → x=4."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

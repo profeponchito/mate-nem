@@ -1,0 +1,111 @@
+{
+  "id": "1S-B1-PDA03-S1",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 15,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Sumar y restar números con signo",
+  "contenido": "Extensión del significado de las operaciones y sus relaciones inversas.",
+  "pda": "Reconoce el significado de las cuatro operaciones básicas al operar números con signo. Comprueba las propiedades conmutativa, asociativa y distributiva, e identifica y aplica la jerarquía de operaciones.",
+  "problematizacion": {
+    "contexto": "Tu mesada de la semana es de $150. El lunes gastas $40 en el break, el miércoles tu tía te da $30 extra por ayudarle en la casa, y el viernes tienes que pagar $60 para la cooperativa del salón.",
+    "pregunta": "Usando sumas y restas con números con signo, ¿cuánto dinero te queda al final de la semana?"
+  },
+  "subtemas": [
+    {
+      "numero": "3.1",
+      "titulo": "Sumar y restar números con signo",
+      "explicacion": "Al sumar números con signo, si tienen el mismo signo se suman sus valores absolutos y se conserva el signo; si tienen signos diferentes se restan los valores absolutos y se conserva el signo del que tiene mayor valor absoluto.",
+      "ejemplos": [
+        "-8 + 5: signos diferentes, 8-5=3, se conserva el signo del mayor (negativo): -3.",
+        "450 − 300 + 120 − 80 = 190. El balance final del comerciante fue +$190."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "(-15) ÷ (-3) = 5.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: signos iguales (negativo entre negativo) dan resultado positivo: 5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 5 + 3 × (-8), el resultado es -17.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Primero la multiplicación: 3×(-8)=-24; luego 5+(-24)=-19."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 9 + 8 × (9), el resultado es 83.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Primero la multiplicación: 8×(9)=72; luego 9+(72)=81."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 3 + 2 × (6), el resultado es 15.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 2×(6)=12; luego 3+(12)=15."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 9 - 5 × (-5), el resultado es 32.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Primero la multiplicación: -5×(-5)=25; luego 9+(25)=34."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión 6 + 4 × (-3), el resultado es -6.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 4×(-3)=-12; luego 6+(-12)=-6."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: (-20) ÷ (-4)",
+          "opciones": [
+            "-5",
+            "5",
+            "-4",
+            "4"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "(-20) ÷ (-4) = 5. Signos iguales dan resultado positivo."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "8 - 6 × (-2) = ___.",
+          "respuestaCorrecta": "20",
+          "retroalimentacion": "Primero la multiplicación: 6×(-2)=-12; luego 8-(-12)=20."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada expresión con su resultado.",
+          "columnaA": [
+            "7 + 2 × (-5)",
+            "(-12) ÷ (-4)",
+            "10 - 3 × (-2)"
+          ],
+          "columnaB": [
+            "16",
+            "-3",
+            "3"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "7+2×(-5)=-3; (-12)÷(-4)=3; 10-3×(-2)=16."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la expresión (-9) + 5 × (-2), el resultado es -19.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Primero la multiplicación: 5×(-2)=-10; luego -9+(-10)=-19."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 1 de 4 · Introductorio"
+    }
+  ]
+}

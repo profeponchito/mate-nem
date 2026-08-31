@@ -1,0 +1,103 @@
+{
+  "id": "1S-B1-PDA02-S5",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 12,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: por qué existen los negativos y cómo comparar dos números con signo",
+  "contenido": "Extensión de los números a positivos y negativos y su orden.",
+  "pda": "Reconoce la necesidad de los números negativos a partir de usar cantidades que tienen al cero como referencia. Compara y ordena números con signo en la recta numérica.",
+  "problematizacion": {
+    "contexto": "En la excursión al parque de aventuras, tu grupo exploró dos cuevas distintas: la cueva A está a -6 metros del nivel de entrada y la cueva B está a -14 metros. El guía pregunta cuál grupo llegó más profundo.",
+    "pregunta": "Entre -6 metros y -14 metros, ¿cuál profundidad es menor en la recta numérica, es decir, cuál cueva está más abajo?"
+  },
+  "subtemas": [
+    {
+      "numero": "2.5",
+      "titulo": "Repaso: por qué existen los negativos y cómo comparar dos números con signo",
+      "explicacion": "Recuerda: los números con signo describen cantidades opuestas respecto a una referencia (el cero), como profundidades y alturas. En la recta numérica, el número mayor siempre es el que está más a la derecha: entre dos negativos, el que parece 'más grande' en realidad es el menor, porque está más lejos del cero hacia la izquierda.",
+      "ejemplos": [
+        "Comparar -9 y -3: -9 está más a la izquierda, entonces -9 < -3, aunque 9 sea mayor que 3.",
+        "Un mirador a 30 m y una cueva a -18 m: el mirador está más lejos del nivel del río (0) que la cueva."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una cueva a -60 m es menos profunda que una a -45 m.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: -60 está más lejos del 0 hacia abajo que -45, así que la cueva a -60 m es MÁS profunda, no menos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-9 es mayor que -3.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: -9 < -3 en la recta numérica, porque -9 está más a la izquierda."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre -14, 8, -6, 11 es ___.",
+          "respuestaCorrecta": "-14",
+          "retroalimentacion": "-14 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -5, -19, 3, -1 es ___.",
+          "respuestaCorrecta": "3",
+          "retroalimentacion": "3 es el único positivo de la lista, así que está más a la derecha y es el mayor."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un excursionista está en un mirador a 30 m sobre el nivel del río, y un espeleólogo está en una cueva a -18 m del mismo nivel. ¿Quién está más lejos del nivel del río (del 0)?",
+          "opciones": [
+            "El excursionista (mirador)",
+            "El espeleólogo (cueva)",
+            "Ambos están a la misma distancia",
+            "No se puede saber"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El mirador está a 30 m de distancia del 0, y la cueva a 18 m; 30 es mayor que 18, así que el excursionista está más lejos."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "-25 es menor que -18.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: -25 < -18, porque -25 está más a la izquierda en la recta numérica."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una torre a 45 m está más lejos del suelo (0) que un sótano a -30 m.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: la torre está a 45 m del 0 y el sótano a 30 m; 45 es mayor que 30."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número mayor entre -8, -21, 6, -15 es ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "6 es el único positivo de la lista, así que está más a la derecha y es el mayor."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El número menor entre 9, -17, 2, -4 es ___.",
+          "respuestaCorrecta": "-17",
+          "retroalimentacion": "-17 está más a la izquierda en la recta numérica, así que es el menor."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un globo aerostático vuela a 55 m de altura y un buzo está a -40 m de profundidad, ambos respecto al nivel del suelo/mar. ¿Quién está más lejos del nivel de referencia (del 0)?",
+          "opciones": [
+            "El globo aerostático",
+            "El buzo",
+            "Ambos están a la misma distancia",
+            "No se puede saber"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El globo está a 55 m del 0 y el buzo a 40 m; 55 es mayor que 40, así que el globo está más lejos."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 1 de 3"
+    }
+  ]
+}

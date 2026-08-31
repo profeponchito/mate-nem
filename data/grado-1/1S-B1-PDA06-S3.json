@@ -1,0 +1,140 @@
+{
+  "id": "1S-B1-PDA06-S3",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 38,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Ecuaciones con la variable en ambos lados",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax=B, Ax+B=C, Ax+B=Cx+D con el uso de las propiedades de la igualdad.",
+  "problematizacion": {
+    "contexto": "Dos compañías de recarga de saldo ofrecen planes distintos: la compañía A cobra 2 pesos por cada mensaje más una renta de 3 pesos, y la compañía B cobra 1 peso por mensaje más una renta de 10 pesos. Valentina quiere saber después de cuántos mensajes ambos planes cuestan exactamente lo mismo.",
+    "pregunta": "¿Con qué cantidad de mensajes x el costo de ambos planes es igual, resolviendo 2x + 3 = x + 10?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.3",
+      "titulo": "Ecuaciones con la variable en ambos lados",
+      "explicacion": "Cuando la variable aparece en ambos lados de la igualdad (Ax+B=Cx+D), primero se agrupan los términos con x de un lado y los términos numéricos del otro, y después se despeja x.",
+      "ejemplos": [
+        "2x + 3 = x + 10  →  2x - x = 10 - 3  →  x = 7."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 3x + 4 = 19",
+          "opciones": [
+            "x=5",
+            "x=6.33",
+            "x=7.67",
+            "x=15"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "3x = 19-4=15; x=15÷3=5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 3x - 2 = 2x + 6",
+          "opciones": [
+            "x=4",
+            "x=8",
+            "x=-8",
+            "x=1.6"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "3x - 2x = 6 + 2 → x = 8."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 6x - 3 = 69",
+          "opciones": [
+            "x=11",
+            "x=15",
+            "x=13",
+            "x=12"
+          ],
+          "respuestaCorrecta": 3,
+          "retroalimentacion": "6x = 72; x = 72÷6 = 12."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 4x + 1 = 21",
+          "opciones": [
+            "x=6",
+            "x=5",
+            "x=2",
+            "x=4"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "4x = 20; x = 20÷4 = 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 4x + 3 = 15",
+          "opciones": [
+            "x=6",
+            "x=3",
+            "x=1",
+            "x=2"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "4x = 12; x = 12÷4 = 3."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solución de 5x - 4 = 3x + 10 es x = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "5x-3x = 10+4 → 2x=14 → x=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x - 5 = 3x + 19. x = ___.",
+          "respuestaCorrecta": "6",
+          "retroalimentacion": "7x-3x = 19+5 → 4x=24 → x=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 9x + 2 = 47. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "9x = 47-2 = 45; x = 45÷9 = 5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 6x + 7 = 2x + 27",
+          "opciones": [
+            "x=5",
+            "x=6",
+            "x=8",
+            "x=4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "6x-2x = 27-7 → 4x=20 → x=5."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "8x - 3 = 5x + 24",
+            "2x + 9 = 25",
+            "4x - 6 = 2x + 8"
+          ],
+          "columnaB": [
+            "7",
+            "9",
+            "8"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "8x-3=5x+24 → x=9; 2x+9=25 → x=8; 4x-6=2x+8 → x=7."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 3 de 4 · Avanzado"
+    }
+  ]
+}

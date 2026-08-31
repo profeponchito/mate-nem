@@ -1,0 +1,122 @@
+{
+  "id": "1S-B1-PDA05-S6",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 34,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: perimetros con expresiones algebraicas",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "En casa de Camila van a bardear el patio trasero con tablones de madera. El patio es un cuadrado de lado x metros, pero por la puerta de entrada, uno de los lados adicionales mide 6 metros más. Camila quiere calcular cuántos tablones lineales pedir en la maderería.",
+    "pregunta": "¿Cuál es la expresión algebraica simplificada que representa el perímetro total del patio de Camila?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.6",
+      "titulo": "Repaso: perimetros con expresiones algebraicas",
+      "explicacion": "Recuerda: el perimetro de una figura es la suma de todos sus lados. Cuando algun lado depende de una variable, sumas todas las expresiones y simplificas agrupando los terminos semejantes; un cuadrado o poligono regular de lado x tiene perimetro (numero de lados) x x.",
+      "ejemplos": [
+        "Un triangulo con lados x, 2x y x+6: perimetro = x + 2x + (x+6) = 4x + 6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perimetro de un rectangulo con ancho x y largo x+9 es ___.",
+          "respuestaCorrecta": "4x+18",
+          "retroalimentacion": "2(x) + 2(x+9) = 2x + 2x + 18 = 4x+18."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un triangulo tiene lados x, 2x y x+6. ¿Cual es su perimetro simplificado?",
+          "opciones": [
+            "4x+6",
+            "4x-6",
+            "3x+6",
+            "4x+12"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "x + 2x + (x+6) = 4x+6."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perimetro de un pentagono regular de lado x+2 es 5x+10.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Al tener 5 lados iguales de longitud x+2, el perimetro es 5(x+2) = 5x+10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El triple de un numero menos 10' se escribe ___.",
+          "respuestaCorrecta": "3x-10",
+          "retroalimentacion": "'el triple de un numero menos 10' se traduce como 3x-10."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "¿Como se escribe algebraicamente 'el cuadruple de un numero menos 5'?",
+          "opciones": [
+            "4x-5",
+            "4x+5",
+            "4x-20",
+            "xx-5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "'el cuadruple de un numero menos 5' se traduce como 4x-5."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un cuadrado tiene lado x+4. ¿Cual es su perimetro simplificado?",
+          "opciones": [
+            "4x+16",
+            "4x+4",
+            "4x+8",
+            "8x+4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "El cuadrado tiene 4 lados iguales de longitud x+4, entonces el perimetro es 4(x+4) = 4x+16."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perimetro de un triangulo con lados 2x, x+3 y x+7 es ___.",
+          "respuestaCorrecta": "4x+10",
+          "retroalimentacion": "2x + (x+3) + (x+7) = 4x+10."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "El perimetro de un rectangulo con ancho x y largo 4x es 10x.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "2(x) + 2(4x) = 2x + 8x = 10x."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El doble de un numero menos 12' se escribe ___.",
+          "respuestaCorrecta": "2x-12",
+          "retroalimentacion": "'el doble de un numero menos 12' se traduce como 2x-12."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada figura con su perímetro simplificado.",
+          "columnaA": [
+            "Cuadrado de lado x+6",
+            "Triángulo con lados x, x+1, 2x+1",
+            "Rectángulo con ancho x y largo 2x+3"
+          ],
+          "columnaB": [
+            "6x+6",
+            "4x+2",
+            "4x+24"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "Cuadrado x+6: 4(x+6)=4x+24. Triángulo x,x+1,2x+1: x+(x+1)+(2x+1)=4x+2. Rectángulo x,2x+3: 2x+2(2x+3)=6x+6."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}

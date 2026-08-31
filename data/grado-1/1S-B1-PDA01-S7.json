@@ -1,0 +1,177 @@
+{
+  "id": "1S-B1-PDA01-S7",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 7,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso integral: fracciones y decimales",
+  "contenido": "Expresión de fracciones como decimales y de decimales como fracciones.",
+  "pda": "Usa diversas estrategias al convertir números fraccionarios a decimales y viceversa.",
+  "problematizacion": {
+    "contexto": "En la kermés de tu escuela organizaron un maratón de trivias por equipos, y el marcador final se proyecta unas veces en fracciones ('tu equipo acertó 9/10') y otras en decimales ('el otro equipo obtuvo 0.85'), según qué pantalla mires.",
+    "pregunta": "Si tu equipo acertó 9/10 de las preguntas y el equipo rival obtuvo 0.85, ¿qué equipo tuvo mejor puntaje?"
+  },
+  "subtemas": [
+    {
+      "numero": "1.7",
+      "titulo": "Repaso integral: fracciones y decimales",
+      "explicacion": "Recuerda: toda fracción se puede escribir como decimal dividiendo, y todo decimal finito se puede escribir como fracción usando su valor posicional y simplificando. Estas conversiones sirven para comparar e interpretar cantidades sin importar en qué forma aparezcan, ya sea en una receta, una distancia recorrida o cualquier otra medición.",
+      "ejemplos": [
+        "17/20 = 17 ÷ 20 = 0.85.",
+        "0.36 = 36/100, y simplificando entre 4 queda 9/25."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "19/25 equivale a 0.76.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 19 ÷ 25 = 0.76."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.36 equivale a la fracción 4/25.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: 0.36 = 36/100, que simplificado entre 4 es 9/25, no 4/25."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "7/16 escrito como decimal es ___.",
+          "respuestaCorrecta": "0.4375",
+          "retroalimentacion": "7 ÷ 16 = 0.4375."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un ciclista completó 0.68 de la etapa de montaña. ¿Qué fracción simplificada representa esa distancia?",
+          "opciones": [
+            "17/25",
+            "3/20",
+            "7/25",
+            "13/20"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "0.68 = 68/100, que simplificado entre 4 es 17/25."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+          "columnaA": [
+            "13/25",
+            "1/25",
+            "17/50"
+          ],
+          "columnaB": [
+            "0.34",
+            "0.52",
+            "0.04"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "13/25 = 0.52; 1/25 = 0.04; 17/50 = 0.34."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "11/20 equivale a 0.55.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "Correcto: 11 ÷ 20 = 0.55."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "0.65 equivale a la fracción 3/5.",
+          "respuestaCorrecta": false,
+          "retroalimentacion": "Falso: 0.65 = 13/20, y 3/5 = 0.6, son distintos."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "5/8 escrito como decimal es ___.",
+          "respuestaCorrecta": "0.625",
+          "retroalimentacion": "5 ÷ 8 = 0.625."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Un tanque de riego se llenó hasta 0.44 de su capacidad. ¿Qué fracción simplificada representa esa cantidad?",
+          "opciones": [
+            "11/25",
+            "4/25",
+            "9/25",
+            "2/5"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "0.44 = 44/100, que simplificado entre 4 es 11/25."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+          "columnaA": [
+            "9/16",
+            "3/4",
+            "1/4"
+          ],
+          "columnaB": [
+            "0.5625",
+            "0.75",
+            "0.25"
+          ],
+          "parejasCorrectas": [
+            0,
+            1,
+            2
+          ],
+          "retroalimentacion": "9/16 = 0.5625; 3/4 = 0.75; 1/4 = 0.25."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 3 de 3"
+    }
+  ],
+  "practicaExtra": [
+    {
+      "tipo": "llenar_frase",
+      "frase": "3/8 = 3 ÷ 8 = ___.",
+      "respuestaCorrecta": "0.375",
+      "retroalimentacion": "3 ÷ 8 = 0.375."
+    },
+    {
+      "tipo": "opcion_multiple",
+      "pregunta": "¿Cuál es la expresión decimal de 9/20?",
+      "opciones": [
+        "0.45",
+        "0.9",
+        "0.29",
+        "4.5"
+      ],
+      "respuestaCorrecta": 0,
+      "retroalimentacion": "9 ÷ 20 = 0.45."
+    },
+    {
+      "tipo": "verdadero_falso",
+      "enunciado": "0.125 equivale a la fracción 1/8.",
+      "respuestaCorrecta": true,
+      "retroalimentacion": "Correcto: 0.125 = 125/1000, y simplificando queda 1/8."
+    },
+    {
+      "tipo": "relacionar_columnas",
+      "instruccion": "Relaciona cada fracción con su equivalente decimal.",
+      "columnaA": [
+        "1/5",
+        "3/10",
+        "7/8"
+      ],
+      "columnaB": [
+        "0.3",
+        "0.875",
+        "0.2"
+      ],
+      "parejasCorrectas": [
+        2,
+        0,
+        1
+      ],
+      "retroalimentacion": "1/5 = 0.2; 3/10 = 0.3; 7/8 = 0.875."
+    }
+  ]
+}

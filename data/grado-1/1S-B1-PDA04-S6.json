@@ -1,0 +1,136 @@
+{
+  "id": "1S-B1-PDA04-S6",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 27,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: aplicar la formula a problemas con figuras",
+  "contenido": "Regularidades y Patrones.",
+  "pda": "Representa algebraicamente una sucesión con progresión aritmética de figuras y números.",
+  "problematizacion": {
+    "contexto": "El comité de la kermés arma un arco de globos: la fila más baja lleva 3 globos, y según van subiendo las filas del arco, se necesitan 2 globos más en cada una.",
+    "pregunta": "¿Cuántos globos llevará la fila 10 del arco sin tener que armarlas todas para contarlos?"
+  },
+  "subtemas": [
+    {
+      "numero": "4.6",
+      "titulo": "Repaso: aplicar la formula a problemas con figuras",
+      "explicacion": "Recuerda: en problemas con figuras hechas de palillos, fichas o macetas, primero identificas el primer termino (a) y cuanto crece la figura en cada paso (d), y despues aplicas termino_n = a + (n-1) x d para no tener que dibujar todas las figuras.",
+      "ejemplos": [
+        "Una sucesion de macetas empieza en 5 y aumenta 2 en cada figura: a=5, d=2. termino_9 = 5 + (9-1)x2 = 5+16 = 21 macetas."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesion de figuras con macetas empieza en 5 macetas y aumenta 2 en cada figura. ¿Cuantas macetas tiene la figura 9?",
+          "opciones": [
+            "19",
+            "21",
+            "23",
+            "18"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "a=5, d=2. termino_9 = 5 + (9-1)x2 = 5+16 = 21."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=8 y d=-1, el termino 7 de la sucesion es ___.",
+          "respuestaCorrecta": "2",
+          "retroalimentacion": "termino_7 = 8 + (7-1)x-1 = 8-6 = 2."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "En la sucesion con a=10 y d=4, el termino 5 es 26.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "termino_5 = 10 + (5-1)x4 = 10+16 = 26."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Con a=2 y d=6, ¿cual es el termino 5 de la sucesion?",
+          "opciones": [
+            "20",
+            "26",
+            "32",
+            "24"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "termino_5 = 2 + (5-1)x6 = 2+24 = 26."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sucesion (dado a y d) con el valor del termino indicado.",
+          "columnaA": [
+            "a=3, d=5 -> termino 6",
+            "a=9, d=-3 -> termino 4",
+            "a=12, d=-2 -> termino 5"
+          ],
+          "columnaB": [
+            "4",
+            "28",
+            "0"
+          ],
+          "parejasCorrectas": [
+            1,
+            2,
+            0
+          ],
+          "retroalimentacion": "a=3,d=5: termino_6=3+5x5=28. a=9,d=-3: termino_4=9+3x-3=0. a=12,d=-2: termino_5=12+4x-2=4."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Una sucesion de fichas empieza en 3 fichas y aumenta 4 en cada figura. La figura 6 tiene 23 fichas.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "a=3, d=4. termino_6 = 3 + (6-1)x4 = 3+20 = 23."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Con a=7 y d=-2, el termino 6 de la sucesion es ___.",
+          "respuestaCorrecta": "-3",
+          "retroalimentacion": "termino_6 = 7 + (6-1)x-2 = 7-10 = -3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Una sucesion de palillos empieza en 4 palillos y aumenta 5 en cada figura. ¿Cuantos palillos tiene la figura 6?",
+          "opciones": [
+            "24",
+            "29",
+            "34",
+            "27"
+          ],
+          "respuestaCorrecta": 1,
+          "retroalimentacion": "a=4, d=5. termino_6 = 4 + (6-1)x5 = 4+25 = 29."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada sucesion de figuras (a y d) con el numero de elementos en la figura indicada.",
+          "columnaA": [
+            "a=6, d=3 -> figura 5",
+            "a=10, d=-2 -> figura 6",
+            "a=1, d=7 -> figura 4"
+          ],
+          "columnaB": [
+            "22",
+            "0",
+            "18"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "a=6,d=3,figura 5: 6+4x3=18. a=10,d=-2,figura 6: 10+5x-2=0. a=1,d=7,figura 4: 1+3x7=22."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "Con a=9 y d=-1, el termino 8 de la sucesion es 2.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "termino_8 = 9 + (8-1)x-1 = 9-7 = 2."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}

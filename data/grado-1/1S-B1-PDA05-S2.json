@@ -1,0 +1,112 @@
+{
+  "id": "1S-B1-PDA05-S2",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 30,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Perímetros como expresiones algebraicas",
+  "contenido": "Introducción al álgebra.",
+  "pda": "Interpreta y plantea diversas situaciones del lenguaje común al lenguaje algebraico y viceversa. Representa algebraicamente perímetros de figuras.",
+  "problematizacion": {
+    "contexto": "El papá de Iker va a poner malla ciclónica alrededor de un gallinero rectangular en el patio de su casa. Solo sabe que el ancho mide x metros y el largo mide el doble más 3 metros, y necesita calcular cuántos metros de malla comprar antes de ir a la ferretería.",
+    "pregunta": "¿Qué expresión algebraica representa el total de metros de malla que se necesitan para rodear el gallinero?"
+  },
+  "subtemas": [
+    {
+      "numero": "5.2",
+      "titulo": "Perímetros como expresiones algebraicas",
+      "explicacion": "El perímetro de una figura es la suma de todos sus lados. Cuando algún lado depende de una variable, el perímetro también se expresa algebraicamente sumando todos los lados.",
+      "formula": "Perímetro del rectángulo = 2(largo) + 2(ancho)",
+      "ejemplos": [
+        "Si el ancho es x y el largo es 2x+2, el perímetro es 2(2x+2) + 2(x) = 4x+4+2x = 6x+4.",
+        "Un cuadrado de lado x tiene 4 lados iguales, así que su perímetro es 4x."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro de un rectángulo con ancho x y largo x+5 es ___.",
+          "respuestaCorrecta": "4x+10",
+          "retroalimentacion": "2(x) + 2(x+5) = 2x + 2x + 10 = 4x+10."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El triple de un número menos 6' se escribe ___.",
+          "respuestaCorrecta": "3x-6",
+          "retroalimentacion": "'el triple de un número menos 6' se traduce como 3x-6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El triple de un número menos 2' se escribe ___.",
+          "respuestaCorrecta": "3x-2",
+          "retroalimentacion": "'el triple de un número menos 2' se traduce como 3x-2."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El doble de un número más 5' se escribe ___.",
+          "respuestaCorrecta": "2x+5",
+          "retroalimentacion": "'el doble de un número más 5' se traduce como 2x+5."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El doble de un número menos 3' se escribe ___.",
+          "respuestaCorrecta": "2x-3",
+          "retroalimentacion": "'el doble de un número menos 3' se traduce como 2x-3."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "El perímetro de un rectángulo con ancho x y largo x+3 es:",
+          "opciones": [
+            "4x+6",
+            "4x+3",
+            "2x+6",
+            "3x+6"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "2(x) + 2(x+3) = 2x + 2x + 6 = 4x+6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "'El triple de un número más 9' se escribe ___.",
+          "respuestaCorrecta": "3x+9",
+          "retroalimentacion": "'el triple de un número más 9' se traduce como 3x+9."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "El perímetro de un rectángulo con ancho x y largo 3x es ___.",
+          "respuestaCorrecta": "8x",
+          "retroalimentacion": "2(x) + 2(3x) = 2x + 6x = 8x."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "'El doble de un número menos 8' se escribe como 2x-8.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "'el doble de un número' es 2x, y 'menos 8' se resta: 2x-8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada frase con su expresión algebraica.",
+          "columnaA": [
+            "El triple de un número más 1",
+            "El doble de un número menos 4",
+            "El triple de un número menos 3"
+          ],
+          "columnaB": [
+            "3x-3",
+            "2x-4",
+            "3x+1"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "'El triple más 1' es 3x+1; 'el doble menos 4' es 2x-4; 'el triple menos 3' es 3x-3."
+        }
+      ],
+      "nivelEtiqueta": "Nivel 2 de 4 · Intermedio"
+    }
+  ]
+}

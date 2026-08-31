@@ -1,0 +1,122 @@
+{
+  "id": "1S-B1-PDA06-S6",
+  "grado": "1°",
+  "trimestre": "1",
+  "numero": 41,
+  "campoFormativo": "Saberes y Pensamiento Científico",
+  "eje": "Sentido numérico y pensamiento algebraico",
+  "titulo": "Repaso: ecuaciones con la variable en ambos lados",
+  "contenido": "Ecuaciones lineales y cuadráticas.",
+  "pda": "Resuelve ecuaciones de la forma Ax=B, Ax+B=C, Ax+B=Cx+D con el uso de las propiedades de la igualdad.",
+  "problematizacion": {
+    "contexto": "Dos rutas de camión llevan a Sofía a la escuela: la ruta 5 tiene una tarifa base de 3 pesos más 5 pesos por cada parada, y la ruta 12 tiene una tarifa base de 15 pesos más 3 pesos por parada. Sofía quiere saber después de cuántas paradas ambas rutas le cuestan lo mismo.",
+    "pregunta": "¿En qué número de paradas x se cumple que 5x + 3 = 3x + 15, es decir, cuestan igual ambas rutas de camión?"
+  },
+  "subtemas": [
+    {
+      "numero": "6.6",
+      "titulo": "Repaso: ecuaciones con la variable en ambos lados",
+      "explicacion": "Recuerda: cuando la x aparece en los dos lados de la igualdad, primero agrupas los terminos con x de un lado y los numeros del otro (usando operaciones inversas), y despues despejas x dividiendo entre su coeficiente.",
+      "ejemplos": [
+        "Resuelve 5x + 3 = 3x + 15: 5x-3x = 15-3 → 2x = 12 → x = 6."
+      ],
+      "puntosPorReactivo": 10,
+      "estrellasMax": 3,
+      "reactivos": [
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 5x + 3 = 3x + 15",
+          "opciones": [
+            "x=6",
+            "x=9",
+            "x=3",
+            "x=4"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5x-3x = 15-3 → 2x=12 → x=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 7x - 4 = 4x + 11. x = ___.",
+          "respuestaCorrecta": "5",
+          "retroalimentacion": "7x-4x = 11+4 → 3x=15 → x=5."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 8x - 1 = 5x + 20 es x = 7.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "8x-5x = 20+1 → 3x=21 → x=7."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 6x - 5 = 2x + 19",
+          "opciones": [
+            "x=6",
+            "x=4",
+            "x=8",
+            "x=3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "6x-2x = 19+5 → 4x=24 → x=6."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 4x + 6 = 2x + 20. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "4x-2x = 20-6 → 2x=14 → x=7."
+        },
+        {
+          "tipo": "verdadero_falso",
+          "enunciado": "La solucion de 9x - 2 = 6x + 25 es x = 9.",
+          "respuestaCorrecta": true,
+          "retroalimentacion": "9x-6x = 25+2 → 3x=27 → x=9."
+        },
+        {
+          "tipo": "opcion_multiple",
+          "pregunta": "Resuelve: 5x + 8 = 3x + 22",
+          "opciones": [
+            "x=7",
+            "x=6",
+            "x=14",
+            "x=3"
+          ],
+          "respuestaCorrecta": 0,
+          "retroalimentacion": "5x-3x = 22-8 → 2x=14 → x=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 8x - 6 = 5x + 15. x = ___.",
+          "respuestaCorrecta": "7",
+          "retroalimentacion": "8x-5x = 15+6 → 3x=21 → x=7."
+        },
+        {
+          "tipo": "llenar_frase",
+          "frase": "Resuelve: 3x + 9 = x + 25. x = ___.",
+          "respuestaCorrecta": "8",
+          "retroalimentacion": "3x-x = 25-9 → 2x=16 → x=8."
+        },
+        {
+          "tipo": "relacionar_columnas",
+          "instruccion": "Relaciona cada ecuación con su solución.",
+          "columnaA": [
+            "7x - 3 = 4x + 18",
+            "2x + 5 = x + 13",
+            "6x - 8 = 3x + 10"
+          ],
+          "columnaB": [
+            "6",
+            "8",
+            "7"
+          ],
+          "parejasCorrectas": [
+            2,
+            1,
+            0
+          ],
+          "retroalimentacion": "7x-3=4x+18 → x=7; 2x+5=x+13 → x=8; 6x-8=3x+10 → x=6."
+        }
+      ],
+      "nivelEtiqueta": "Repaso 2 de 3"
+    }
+  ]
+}
