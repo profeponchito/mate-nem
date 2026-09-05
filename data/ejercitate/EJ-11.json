@@ -48,9 +48,7 @@
             [
               0
             ],
-            [
-              0
-            ]
+            []
           ],
           "retroalimentacion": "28 + 45 = 73: en las unidades 8+5=13, escribes 3 y llevas 1; en las decenas 2+4+1=7."
         },
@@ -104,9 +102,7 @@
             [
               1
             ],
-            [
-              0
-            ]
+            []
           ],
           "retroalimentacion": "36 + 27 = 63: en las unidades 6+7=13, escribes 3 y llevas 1; en las decenas 3+2+1=6."
         },
@@ -133,9 +129,7 @@
             [
               1
             ],
-            [
-              1
-            ]
+            []
           ],
           "retroalimentacion": "52 - 27 = 25: en las unidades no alcanza (2-7), pides prestada 1 decena: 12-7=5; en las decenas, 4 (porque el 5 prestó 1) - 2 = 2."
         },
@@ -159,9 +153,7 @@
             [
               1
             ],
-            [
-              1
-            ],
+            [],
             [
               0
             ]
@@ -206,8 +198,7 @@
               0
             ],
             [
-              1,
-              2
+              1
             ]
           ],
           "retroalimentacion": "348 + 276 = 624: en las unidades 8+6=14, escribes 4 y llevas 1; en las decenas 4+7+1=12, escribes 2 y llevas 1; en las centenas 3+2+1=6."
@@ -236,8 +227,7 @@
               2
             ],
             [
-              0,
-              1
+              0
             ]
           ],
           "retroalimentacion": "523 - 267 = 256: en las unidades no alcanza (3-7), pides prestada 1 decena: 13-7=6; en las decenas, 1 (porque prestaron) - 6 tampoco alcanza, se pide prestado a las centenas: 11-6=5; en las centenas, 4 (porque prestaron) - 2 = 2."
@@ -266,7 +256,6 @@
               1
             ],
             [
-              0,
               2
             ]
           ],
@@ -296,9 +285,7 @@
               0,
               2
             ],
-            [
-              1
-            ]
+            []
           ],
           "retroalimentacion": "604 - 178 = 426: en las unidades no alcanza (4-8), pides prestada 1 decena; como las decenas son 0, el préstamo viaja a las centenas: las decenas quedan en 9 y las centenas bajan de 6 a 5. Unidades: 14-8=6; decenas: 9-7=2; centenas: 5-1=4."
         },
@@ -326,8 +313,7 @@
               1
             ],
             [
-              0,
-              1
+              0
             ]
           ],
           "retroalimentacion": "275 + 168 = 443: en las unidades 5+8=13, escribes 3 y llevas 1; en las decenas 7+6+1=14, escribes 4 y llevas 1; en las centenas 2+1+1=4."
@@ -396,8 +382,7 @@
               3
             ],
             [
-              1,
-              3
+              1
             ],
             [
               2
@@ -429,9 +414,7 @@
             [
               0
             ],
-            [
-              3
-            ]
+            []
           ],
           "retroalimentacion": "3899 + 2106 = 6005: en las unidades 9+6=15, escribes 5 y llevas 1; en las decenas 9+0+1=10, escribes 0 y llevas 1; en las centenas 8+1+1=10, escribes 0 y llevas 1; en los millares 3+2+1=6."
         },
@@ -568,8 +551,7 @@
               5
             ],
             [
-              0,
-              5
+              0
             ]
           ],
           "retroalimentacion": "384756 + 219268 = 604024: en las unidades 6+8=14, escribes 4 y llevas 1; en las decenas 5+6+1=12, escribes 2 y llevas 1; en las centenas 7+2+1=10, escribes 0 y llevas 1; en los millares 4+9+1=14, escribes 4 y llevas 1; en las decenas de millar 8+1+1=10, escribes 0 y llevas 1; en las centenas de millar 3+2+1=6."
@@ -697,8 +679,7 @@
           0
         ],
         [
-          1,
-          2
+          1
         ]
       ],
       "retroalimentacion": "539 + 274 = 813: en las unidades 9+4=13, escribes 3 y llevas 1; en las decenas 3+7+1=11, escribes 1 y llevas 1; en las centenas 5+2+1=8."
@@ -727,9 +708,7 @@
         [
           1
         ],
-        [
-          2
-        ]
+        []
       ],
       "retroalimentacion": "402 - 165 = 237: en las unidades no alcanza (2-5), pides prestada 1 decena: 12-5=7; en las decenas, como eran 0, también piden prestado a las centenas y se vuelven 9: 9-6=3; en las centenas, 3 (porque prestaron) - 1 = 2."
     },
@@ -758,8 +737,7 @@
           2
         ],
         [
-          0,
-          3
+          0
         ]
       ],
       "retroalimentacion": "3456 + 2789 = 6245: en las unidades 6+9=15, escribes 5 y llevas 1; en las decenas 5+8+1=14, escribes 4 y llevas 1; en las centenas 4+7+1=12, escribes 2 y llevas 1; en los millares 3+2+1=6."
@@ -789,9 +767,7 @@
           0,
           2
         ],
-        [
-          3
-        ]
+        []
       ],
       "retroalimentacion": "5123 - 2867 = 2256: en las unidades no alcanza (3-7), pides prestada 1 decena: 13-7=6; en las decenas, 1 (porque prestaron) - 6 tampoco alcanza, se pide prestado a las centenas: 11-6=5; en las centenas, 0 (porque prestaron) - 8 tampoco alcanza, se pide prestado a los millares: 10-8=2; en los millares, 4 (porque prestaron) - 2 = 2."
     }

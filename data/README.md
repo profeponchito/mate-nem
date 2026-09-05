@@ -567,3 +567,94 @@ nunca marcado como oculto, y 0 duplicados reales introducidos al
 comparar contra el resto del banco (159 archivos) por firma completa de
 contenido. Probado de punta a punta con Playwright junto con el resto del
 banco: **159/159**.
+
+## Paso 19: corrección de `algoritmo_columnas` — casillas únicamente resolubles ("criptogramas")
+
+El docente compartió 5 hojas de trabajo reales de la web (liveworksheets.com)
+tituladas explícitamente "Criptograma de suma/resta/multiplicación" y pidió
+que los 3 temas de algoritmos (`EJ-11`, `EJ-13`, `EJ-14`) del Paso 18 se
+corrigieran con ese mismo diseño. Analizando las imágenes se confirmó que
+un "criptograma numérico" (término usado en material escolar de habla
+hispana, sobre todo en Perú) **es exactamente el mismo mecanismo que
+`algoritmo_columnas`** — el algoritmo vertical con casillas vacías — así
+que no hizo falta ningún tipo de reactivo nuevo ni cambio de motor
+(`app.js`/`gamification.js` no se tocaron en este paso).
+
+### El bug real que las imágenes dejaron ver
+
+Comparando el diseño de las imágenes de referencia contra el contenido ya
+generado en el Paso 18, se detectó un problema de fondo: en varios
+reactivos, **dos celdas de la misma columna** del algoritmo estaban
+ocultas a la vez (por ejemplo, la cifra de las decenas de un sumando Y la
+cifra de las decenas del resultado, ambas ocultas en el mismo reactivo).
+Aritméticamente, una columna con dos incógnitas y una sola ecuación
+(`cifra_A + cifra_B + acarreo = cifra_resultado`) no tiene una solución
+única — un alumno podía completar las casillas con una combinación
+distinta a la registrada como correcta y aun así ser matemáticamente
+consistente con lo que se veía en pantalla, pero el motor lo habría
+calificado como error. Se confirmó el mismo problema en las
+multiplicaciones (`EJ-13`/`EJ-14`): columnas con la cifra del
+multiplicando Y la cifra correspondiente del resultado ocultas a la vez.
+En las imágenes de referencia, en cambio, **cada columna del algoritmo
+tiene como máximo una casilla vacía** — es lo que garantiza que el
+alumno pueda deducir cada cifra con aritmética pura, sin adivinar.
+
+### La corrección
+
+Se escribió un script de verificación/corrección que, para cada reactivo
+de `EJ-11`/`EJ-13`/`EJ-14` (calificados y de práctica extra — 84 en
+total), reconstruye las "columnas" del algoritmo según el tipo de
+operación:
+- **Suma/resta**: una sola ecuación por columna entre los 2 operandos y
+  el resultado.
+- **Multiplicación de 1 cifra**: una ecuación por columna entre el
+  multiplicando y el resultado (el multiplicador, al ser un solo dígito
+  reutilizado en todas las columnas, nunca se oculta — igual que en las
+  imágenes de referencia, donde el operador siempre está dado).
+- **Multiplicación de 2 cifras (productos parciales)**: tres ecuaciones
+  encadenadas — multiplicando×unidades del multiplicador = producto
+  parcial 1; multiplicando×decenas del multiplicador = producto parcial 2
+  (con su corrimiento); producto parcial 1 + producto parcial 2 =
+  resultado. El multiplicador tampoco se oculta nunca.
+
+Donde una columna tenía más de una celda oculta, el script conservó solo
+una (revelando las demás) siguiendo un orden de prioridad fijo, sin tocar
+los números originales del reactivo (`filas`) ni su `retroalimentacion` —
+es una corrección quirúrgica de **qué** se oculta, no de la aritmética ni
+de la narrativa pedagógica. También se detectó y corrigió que algunos
+reactivos de multiplicación de 2 cifras tenían el propio multiplicador
+parcialmente oculto (rompiendo la regla anterior); en esos casos se
+revelaron sus cifras.
+
+**Resultado de la corrección**: 75 celdas en conflicto resueltas en total
+(16 en `EJ-11`, 29 en `EJ-13`, 30 en `EJ-14`). Tras la corrección, 5
+reactivos de `EJ-14` quedaron con muy pocas casillas (algunos con solo 1,
+por ser verificaciones de división con decimales donde el resultado
+simplifica ceros finales — p. ej. `15 × 0.4 = 6` en vez de `= 6.0` — un
+caso donde el modelo de "columnas" no aplica igual porque el resultado
+tiene menos dígitos que el multiplicando). Se enriquecieron esos 5 casos
+agregando casillas en columnas que habían quedado sin ninguna oculta,
+verificando en cada caso que la solución seguía siendo única (en los 2
+casos de "resultado con ceros simplificados", ocultando el multiplicando
+completo en vez de un solo dígito, porque ahí la ecuación es una división
+directa con solución real única, no una cadena de columnas modulares).
+
+Se verificó el resultado final con un script independiente: **0
+columnas con más de una casilla oculta** en los 72 reactivos de los 3
+temas (228 casillas ocultas en total, entre 1 y 6 por reactivo), 0
+errores de esquema, y el mismo resultado de siempre en el resto del
+contenido (numeros y `retroalimentacion` sin cambios). Probado de punta a
+punta con Playwright junto con el resto del banco: **159/159**.
+
+### Extensión a otro tema ("si es posible en otras actividades")
+
+El pedido incluía, de forma condicional, extender el estilo de
+criptograma a otras actividades donde aplicara. Ningún otro tema de
+Ejercítate tiene una estructura de "algoritmo escrito verticalmente"
+como para justificar un rediseño completo, pero **`EJ-02` (Operaciones
+básicas)** sí encaja de forma natural como bonus: se agregaron 2
+reactivos `algoritmo_columnas` (una suma de 3 cifras, una multiplicación
+por 1 dígito) a su `practicaExtra` — contenido opcional y no calificado,
+sin tocar los 20 reactivos calificados existentes de ese tema. Ambos
+verificados con el mismo criterio de "una sola casilla oculta por
+columna".

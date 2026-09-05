@@ -306,6 +306,63 @@
         2
       ],
       "retroalimentacion": "45 + 18 = 63; 100 - 42 = 58; 6 × 11 = 66."
+    },
+    {
+      "tipo": "algoritmo_columnas",
+      "operacion": "suma",
+      "filas": [
+        {
+          "valor": "358"
+        },
+        {
+          "valor": "246",
+          "signo": "+"
+        },
+        {
+          "valor": "604",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "retroalimentacion": "358 + 246 = 604: en las unidades 8+6=14, escribes 4 y llevas 1; en las decenas 5+4+1=10, escribes 0 y llevas 1; en las centenas 3+2+1=6."
+    },
+    {
+      "tipo": "algoritmo_columnas",
+      "operacion": "multiplicacion",
+      "filas": [
+        {
+          "valor": "234"
+        },
+        {
+          "valor": "3",
+          "signo": "×"
+        },
+        {
+          "valor": "702",
+          "esResultado": true
+        }
+      ],
+      "ocultos": [
+        [
+          1
+        ],
+        [],
+        [
+          0,
+          2
+        ]
+      ],
+      "retroalimentacion": "234 × 3: 3×4=12, escribes 2 y llevas 1; 3×3=9+1=10, escribes 0 y llevas 1; 3×2=6+1=7. Resultado: 702."
     }
   ]
 }
